@@ -38,7 +38,6 @@ p {
 .opt1 {
     width: 360px;
     float: left;
-    text-align: left;
 }
 .opt2 {
     margin-bottom: 5px;
@@ -303,6 +302,11 @@ input[type="checkbox"] {
     min-width: 500px;
     height: 100vh;
     max-height: 600px;
+}
+#graphOpt {
+    text-align: right;
+    width: calc(100% - 1em);
+    min-width: 480px;
 }
 #graph .wrap_checkbox {
     text-align: left;
