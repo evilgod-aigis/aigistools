@@ -618,7 +618,8 @@ funcs.createHTML.modal.Create = type => {
     
     tippy(".tooltip-ts", {
         placement: "top-start",
-        allowHTML: true
+        allowHTML: true,
+        maxWidth: "1000px"
     });
 }
 
