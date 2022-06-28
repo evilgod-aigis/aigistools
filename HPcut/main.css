@@ -37,9 +37,8 @@ p {
 }
 .opt1 {
     width: 360px;
-    display: inline-block;
+    float: left;
     text-align: left;
-    vertical-align: top;
 }
 .opt2 {
     margin-bottom: 5px;
@@ -242,7 +241,7 @@ input[type="checkbox"] {
 }
 .modalAttr {
     margin-right: 5px;
-    width: 10em;
+    width: 12em;
 }
 .modalClass {
     margin-right: 5px;
@@ -250,7 +249,7 @@ input[type="checkbox"] {
 }
 .modalNote {
     margin-right: 5px;
-    width: 11em;
+    width: 12em;
 }
 .modalTarget {
     width: 5em;
@@ -265,7 +264,7 @@ input[type="checkbox"] {
 }
 #addUnitAlart {
     margin: 10px 0;
-    min-height: 3em;
+    min-height: 4em;
     color: red;
 }
 #modalFooter {
