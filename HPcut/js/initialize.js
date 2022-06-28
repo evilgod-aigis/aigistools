@@ -14,10 +14,12 @@ window.addEventListener("DOMContentLoaded", () => {
     
     tippy(".tooltip-t", {
         placement: "top",
-        allowHTML: true
+        allowHTML: true,
+        maxWidth: "1000px"
     });
     tippy(".tooltip-ts", {
         placement: "top-start",
-        allowHTML: true
+        allowHTML: true,
+        maxWidth: "1000px"
     });
 });
