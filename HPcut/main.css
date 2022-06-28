@@ -36,8 +36,9 @@ p {
     overflow: hidden;
 }
 .opt1 {
-    width: 400px;
+    width: 360px;
     display: inline-block;
+    text-align: left;
     vertical-align: top;
 }
 .opt2 {
@@ -91,6 +92,12 @@ p {
 input {
     margin: 0;
     padding: 0;
+}
+.number1 {
+    width: 50px;
+}
+.number2 {
+    width: 80px;
 }
 input[type="checkbox"] {
     margin-right: 3px;
