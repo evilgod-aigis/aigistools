@@ -302,24 +302,27 @@
                     <canvas id="canvas">ここにグラフが表示されるよ</canvas>
                 </div>
                 <!--グラフオプション-->
-                <div class="opt1" style="text-align: right; width: calc(100% - 1em); min-width: 480px;">
-                    <!--グラフライン表示/非表示(スキル発動時発生型)-->
-                    <div class="opt2">
-                        <div id="graphline_onSkillAct"></div>
-                    </div>
-                    <!--グラフライン表示/非表示(攻撃ヒット時発生型)-->
-                    <div class="opt2">
-                        <div id="graphline_onHit"></div>
-                    </div>
-                    <!--ツールチップソート-->
-                    <div class="opt2">
-                        <div class="optcap10em">
-                            <label for="sortGraphTooltip" class="tooltip-ts" data-tippy-content="ONにするとグラフのツールチップが<br>HPソート(昇順)で表示される">
-                                ツールチップソート：
-                            </label>
+                <div style="width: 100%; min-width: 480px;">
+                    <div class="inline-block" style="width: calc(100% - 215px); min-width: 265px;"></div>
+                    <div class="opt1" style="width: max-content;">
+                        <!--グラフライン表示/非表示(スキル発動時発生型)-->
+                        <div class="opt2">
+                            <div id="graphline_onSkillAct"></div>
                         </div>
-                        <div class="optset">
-                            <input type="checkbox" id="sortGraphTooltip" onclick="graph.sortGraphTooltip=this.checked">
+                        <!--グラフライン表示/非表示(攻撃ヒット時発生型)-->
+                        <div class="opt2">
+                            <div id="graphline_onHit"></div>
+                        </div>
+                        <!--ツールチップソート-->
+                        <div class="opt2">
+                            <div class="optcap10em">
+                                <label for="sortGraphTooltip" class="tooltip-ts" data-tippy-content="ONにするとグラフのツールチップが<br>HPソート(昇順)で表示される">
+                                    ツールチップソート：
+                                </label>
+                            </div>
+                            <div class="optset">
+                                <input type="checkbox" id="sortGraphTooltip" onclick="graph.sortGraphTooltip=this.checked">
+                            </div>
                         </div>
                     </div>
                 </div>
