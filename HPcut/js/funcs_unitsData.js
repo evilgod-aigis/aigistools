@@ -288,6 +288,26 @@ funcs.unitsData.CorrectSkill = unit => {
             dur.A = dur_uncorr.A;
             dur.B = dur_uncorr.B;
     }
+    //スキル時間延長(固定値)
+    let bufferInfo = _.findLast(lists.buff.skillExtend_fixed.list, { buffer: unitName, awaken: AW });
+    let extend = 0;
+    if(bufferInfo !== undefined) {
+        extend = Math.max(extend, bufferInfo.value);
+    }
+    const elems_checkbox = document.querySelectorAll("#skillExtend_fixed input");
+    const checked = [];
+    _.forEach(elems_checkbox, elem => {
+        if(elem.checked) {
+            checked.push(new Function(`return ${elem.value}`)());
+        }
+    });
+    checked.forEach(buffer => {
+        bufferInfo = _.find(lists.buff.skillExtend_fixed.list, { buffer: buffer.buffer, awaken: buffer.awaken });
+        extend = Math.max(extend, bufferInfo.value * funcs.unitsData.IsTarget(unit, bufferInfo));
+    });
+    dur.A += extend;
+    if(toggle) dur.B += extend;
+    
     //初動の計算
     const specialWT = _.find(lists.specialWT, { unitName: unitName, rarity: rarity, skillAwaken: AW });
     if(specialWT !== undefined) {
@@ -558,7 +578,7 @@ funcs.unitsData.SetAtkInterval = unit => {
             //硬直短縮(スキル)
             //自身による効果
             if(index !== 0) {
-                bufferInfo = _.findLast(num.hasteSkill, { buffer: unitName, awaken: skillAW });
+                bufferInfo = _.findLast(lists.buff.hasteSkill.list, { buffer: unitName, awaken: skillAW });
                 if(bufferInfo !== undefined) {
                     atkCooldownBySkill = Math.max(atkCooldownBySkill, bufferInfo.atkCooldown);
                 }
