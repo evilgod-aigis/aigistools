@@ -324,12 +324,12 @@ lists.buff.hasteTeam.updateTable = [ false, true ];
 lists.buff.hasteTeam.list = [
     {
         id: null, buffer: "エルダードラゴンメイガス", awaken: "覚2a?", showAwaken: false,
-        rate: 40, disabled: true,
+        rate: 20, disabled: true,
         AndOr: "or", target: [
             { attribution: [ "竜族" ] },
             { note: [ "ドラゴンライダー系", "ドラグーン系" ] }
         ],
-        tooltip: "[編成] 属性：竜族(ドラゴンライダー・ドラグーン系含)の攻撃硬直-40%"
+        tooltip: "[配置] 属性：竜族(ドラゴンライダー・ドラグーン系含)の攻撃硬直-20%"
     },
     {
         id: null, buffer: "恋慕の堕天使ソフィー", awaken: "覚醒", showAwaken: false,
@@ -428,7 +428,7 @@ lists.buff.hasteSkill.list = [
         ],
         tooltip:
         "[スキル・射程内] クラス：ウィッチ系・<br>\
-         　　　　　　 クロノウィッチ系の攻撃硬直6f化(範囲内)"
+         　　　　　　 クロノウィッチ系の攻撃硬直6f化"
     },
     {
         id: null, buffer: "時の調停者トワ", awaken: "覚醒", showAwaken: true,
@@ -442,7 +442,7 @@ lists.buff.hasteSkill.list = [
         ],
         tooltip:
         "[スキル・射程内] クラス：メイジ系・ウィッチ系・<br>\
-         　　　　　　 クロノウィッチ系の攻撃硬直6f化(範囲内)"
+         　　　　　　 クロノウィッチ系の攻撃硬直6f化"
     },
     {
         id: null, buffer: "胡喜美", awaken: "通常", showAwaken: false,
@@ -456,7 +456,7 @@ lists.buff.hasteSkill.list = [
         AndOr: "or", target: [
             { unitClass: [ "アーチャー系", "下級アーチャー", "ちびアーチャー", "ちびアルテミス", "アーチャー", "スナイパー", "アルテミス", "セレーネ", "ラピッドシューター" ] }
         ],
-        tooltip: "[スキル・射程内] クラス：アーチャー系の攻撃硬直2f化(通常)"
+        tooltip: "[スキル・射程内] クラス：アーチャー系の攻撃硬直2f化"
     },
     {
         id: null, buffer: "お祭り夕涼みココロ", awaken: "覚醒", showAwaken: false,
@@ -468,7 +468,7 @@ lists.buff.hasteSkill.list = [
         id: null, buffer: "付与魔術師ハーニィ", awaken: "通常", showAwaken: false,
         atkCooldown: 11, disabled: false,
         AndOr: "or", target: [ { deployType: [ "近接型" ] } ],
-        tooltip: "[スキル・射程内] 近接ユニットの攻撃硬直6f化(範囲内)"
+        tooltip: "[スキル・射程内] 近接ユニットの攻撃硬直6f化"
     }
 ];
 
