@@ -1,21 +1,21 @@
 function importJS() {
     const scripts = [
-        "./js/list_buff.js"
-        , "./js/list_selfBuff.js"
-        , "./js/list_special.js"
-        , "./js/list_units_onSkillAct.js"
-        , "./js/list_units_onHit.js"
-        , "./js/list_attr.js"
-        , "./js/numericalValue.js"
-        , "./js/updateHistory.js"
-        , "./js/funcs.js"
-        , "./js/funcs_createHTML.js"
-        , "./js/funcs_createModal.js"
-        , "./js/funcs_unitsData.js"
-        , "./js/funcs_graph.js"
-        , "./js/initialize.js"
+        "list_buff"
+        , "list_selfBuff"
+        , "list_special"
+        , "list_units_onSkillAct"
+        , "list_units_onHit"
+        , "list_attr"
+        , "numericalValue"
+        , "updateHistory"
+        , "funcs"
+        , "funcs_createHTML"
+        , "funcs_createModal"
+        , "funcs_unitsData"
+        , "funcs_graph"
+        , "initialize"
     ];
-    scripts.forEach(elem => document.write(`<script src="${elem}"></script>`));
+    scripts.forEach(elem => document.write(`<script src="./HPcut/js/${elem}.js"></script>`));
 }
 
 importJS();
