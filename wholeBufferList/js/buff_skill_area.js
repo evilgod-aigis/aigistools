@@ -1,0 +1,629 @@
+// 範囲スキル
+buff.skill_area = {};
+buff.skill_area.picked = [];
+buff.skill_area.sortedBy = "id";
+buff.skill_area.list = [
+    {
+        name: "王子", cl: "王子", skill: "通常"
+        , stats: {
+            atk: [ "×1.12", "〜1.21" ]
+            , def: [ "×1.12", "〜1.21" ]
+        }
+        , note: "全体"
+    }
+    , {
+        name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×2.5", mr: "×2.5" }
+    }
+    , {
+        name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "覚醒"
+        , stats: { hp: "+30%", mr: "×1.3" }
+    }
+    , {
+        name: "イムラウ", rarity: "白", cl: "ピューティアー", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×2.8", mr: "×1.5" }
+    }
+    , {
+        name: "イムラウ", rarity: "白", cl: "ピューティアー", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.5", mr: "×2.8" }
+    }
+    , {
+        name: "ベルニス/花嫁", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "100/秒", "50/15f" ] }
+    }
+    , {
+        name: "ヘイオス/クリスマス", rarity: "黒", cl: "ダークファイター", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.5" }
+    }
+    , {
+        name: "ルヴェア", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.4" }
+        , note: "発動時配置6人以上"
+    }
+    , {
+        name: "ルヴェア", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.7" }
+        , note: "発動時配置5人以下"
+    }
+    , {
+        name: "マリレーヌ", rarity: "白", cl: "魔法剣士", AW: "覚醒前", skill: "通常"
+        , stats: { rege: [ "40/秒", "20/15f" ] }
+    }
+    , {
+        name: "マリレーヌ", rarity: "白", cl: "魔法剣士", AW: "覚醒後", skill: "通常"
+        , stats: { rege: [ "40/秒", "20/15f" ] }
+    }
+    , {
+        name: "エクス", rarity: "黒", cl: "神官戦士", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.5" }
+    }
+    , {
+        name: "エクス", rarity: "黒", cl: "神官戦士", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.5" }
+    }
+    , {
+        name: "エクス", rarity: "黒", cl: "神官戦士", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×2.0" }
+    }
+    , {
+        name: "エクス/バレンタイン", rarity: "黒", cl: "神官戦士", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×2.5" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "エレット/バレンタイン", rarity: "白", cl: "神官戦士", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: "非バレンタイン"
+    }
+    , {
+        name: "エレット/バレンタイン", rarity: "白", cl: "神官戦士", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: "非バレンタイン"
+    }
+    , {
+        name: "ちびエクス", rarity: "ちび", cl: "神官戦士", skill: "通常"
+        , stats: { def: "×1.5" }
+    }
+    , {
+        name: "クラマ", rarity: "黒", cl: "天狗", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
+        name: "クラマ", rarity: "黒", cl: "天狗", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
+        name: "レミィ", rarity: "黒", cl: "雷公", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+    }
+    , {
+        name: "クーコ", rarity: "黒", cl: "風伯", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.9" }
+    }
+    , {
+        name: "クーコ/浴衣", rarity: "黒", cl: "風伯", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { def: "×1.3" }
+    }
+    , {
+        name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "覚醒前", skill: "通常"
+        , stats: { hp: "+30%" }
+    }
+    , {
+        name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "覚醒後", skill: "通常"
+        , stats: { hp: "+30%" }
+    }
+    , {
+        name: "太公望/正月", rarity: "白", cl: "真人", AW: "覚醒後", skill: "覚醒"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "タチバナ", rarity: "黒", cl: "鬼刃忍", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.6" }
+    }
+    , {
+        name: "エスネア", rarity: "黒", cl: "デモンルーン", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.5" }
+    }
+    , {
+        name: "ハリナ/水着", rarity: "黒", cl: "エンプレス", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [ "非サマー", "非帝国" ]
+    }
+    , {
+        name: "タツミ", rarity: "黒", cl: "戦巫女", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.4", eva: "30%" }
+    }
+    , {
+        name: "タツミ", rarity: "黒", cl: "戦巫女", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.4", eva: "30%" }
+    }
+    , {
+        name: "タツミ", rarity: "黒", cl: "戦巫女", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.4", def: "×1.7" }
+    }
+    , {
+        name: "コウメ", rarity: "白", cl: "戦巫女", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.8" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "コウメ", rarity: "白", cl: "戦巫女", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.8" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "コウメ", rarity: "白", cl: "戦巫女", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.5" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "リタ/水着", rarity: "白", cl: "アーチャー", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
+        name: "リタ/水着", rarity: "白", cl: "アーチャー", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
+        name: "サーシャ", rarity: "白", cl: "メイジ", AW: "覚醒前", skill: "通常"
+        , stats: { eva: "50%" }
+    }
+    , {
+        name: "サーシャ", rarity: "白", cl: "メイジ", AW: "覚醒後", skill: "通常"
+        , stats: { eva: "50%" }
+    }
+    , {
+        name: "サーシャ", rarity: "白", cl: "メイジ", AW: "覚醒後", skill: "覚醒"
+        , stats: { eva: "50%" }
+    }
+    , {
+        name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×2.0" }
+    }
+    , {
+        name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×2.0" }
+    }
+    , {
+        name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×2.5" }
+    }
+    , {
+        name: "リアナ", rarity: "黒", cl: "ヒーラー", AW: "覚醒前", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "リアナ", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "リアナ", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "アウローラ", rarity: "黒", cl: "ヒーラー", AW: "覚醒前", skill: "通常"
+        , stats: { mr: "×2.0" }
+    }
+    , {
+        name: "アウローラ", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "通常"
+        , stats: { mr: "×2.0" }
+    }
+    , {
+        name: "アウローラ", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { mr: "×2.0" }
+    }
+    , {
+        name: "アウローラ/水着", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.5" }
+    }
+    , {
+        name: "シンディ", rarity: "金", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.5" }
+    }
+    , {
+        name: "ちびイリス", rarity: "ちび", cl: "ヒーラー", skill: "通常"
+        , stats: { def: "×2.0" }
+    }
+    , {
+        name: "ちびリアナ", rarity: "ちび", cl: "ヒーラー", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "ピックル", rarity: "金", cl: "ヴァンパイアハンター", AW: "覚醒後", skill: "覚醒"
+        , stats: { other: "" }
+        , note: "オート"
+    }
+    , {
+        name: "シナト", rarity: "白", cl: "後衛戦術家", AW: "覚醒後", skill: "覚醒"
+        , stats: { ct: "-100%" }
+    }
+    , {
+        name: "レオナ/水着", rarity: "白", cl: "後衛戦術家", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+    }
+    , {
+        name: "リンネ", rarity: "黒", cl: "風水使い", AW: "覚醒前", skill: "通常"
+        , stats: { eva: "50%" }
+    }
+    , {
+        name: "リンネ", rarity: "黒", cl: "風水使い", AW: "覚醒後", skill: "通常"
+        , stats: { eva: "50%" }
+    }
+    , {
+        name: "リンネ", rarity: "黒", cl: "風水使い", AW: "覚醒後", skill: "覚醒"
+        , stats: { eva: "30%" }
+    }
+    , {
+        name: "リンネ/花嫁", rarity: "黒", cl: "風水使い", AW: "覚醒前", skill: "通常"
+        , stats: { eva: "50%" }
+    }
+    , {
+        name: "リンネ/花嫁", rarity: "黒", cl: "風水使い", AW: "覚醒後", skill: "通常"
+        , stats: { eva: "50%" }
+    }
+    , {
+        name: "リンネ/花嫁", rarity: "黒", cl: "風水使い", AW: "覚醒後", skill: "覚醒"
+        , stats: { eva: "100%" }
+    }
+    , {
+        name: "ちびリンネ", rarity: "ちび", cl: "風水使い", skill: "通常"
+        , stats: { eva: "50%" }
+    }
+    , {
+        name: "アーリー", rarity: "白", cl: "クロノウィッチ", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , note: "発動時オート"
+    }
+    , {
+        name: "フィオレ", rarity: "黒", cl: "ドルイド", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
+        name: "レーレン", rarity: "白", cl: "アルケミスト", AW: "覚醒後", skill: "覚醒"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "ブランシュ", rarity: "白", cl: "魔物使い", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2" }
+    }
+    , {
+        name: "ブランシュ", rarity: "白", cl: "魔物使い", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2" }
+    }
+    , {
+        name: "ベルディナート", rarity: "白", cl: "ダークプリースト", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.7" }
+    }
+    , {
+        name: "ディエーラ", rarity: "黒", cl: "マーチャント", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.2" }
+    }
+    , {
+        name: "ディエーラ", rarity: "黒", cl: "マーチャント", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.2" }
+    }
+    , {
+        name: "ちびディエーラ", rarity: "ちび", cl: "マーチャント", skill: "通常"
+        , stats: { def: "×1.2" }
+    }
+    , {
+        name: "ラピス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.5" }
+    }
+    , {
+        name: "ラピス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.5" }
+    }
+    , {
+        name: "ラピス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.5", mr: "×1.4" }
+    }
+    , {
+        name: "ラピス/水着", rarity: "黒", cl: "デモンサモナー", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.5" }
+    }
+    , {
+        name: "ラピス/水着", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.5" }
+    }
+    , {
+        name: "ラピス/水着", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3", mr: "×1.3" }
+    }
+    , {
+        name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3", mr: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3", mr: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.2" }
+    }
+    , {
+        name: "ちびラピス", rarity: "ちび", cl: "デモンサモナー", skill: "覚醒"
+        , stats: { atk: "×1.5", mr: "×1.4" }
+    }
+    , {
+        name: "シャオメイ", rarity: "白", cl: "エレメンタラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.5" }
+    }
+    , {
+        name: "セノーテ", rarity: "白", cl: "エレメンタラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "ユキヒメ/学園", rarity: "白", cl: "エレメンタラー", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3", mr: "×1.3" }
+    }
+    , {
+        name: "ユキヒメ/学園", rarity: "白", cl: "エレメンタラー", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3", mr: "×1.3" }
+    }
+    , {
+        name: "リズリー", rarity: "黒", cl: "道化師", AW: "覚醒前", skill: "通常"
+        , stats: { ct: "-50%", eva: "50%" }
+    }
+    , {
+        name: "リズリー", rarity: "黒", cl: "道化師", AW: "覚醒後", skill: "通常"
+        , stats: { ct: "-50%", eva: "50%" }
+    }
+    , {
+        name: "リズリー", rarity: "黒", cl: "道化師", AW: "覚醒後", skill: "覚醒"
+        , stats: { eva: "50%" }
+    }
+    , {
+        name: "リズリー/温泉", rarity: "黒", cl: "道化師", AW: "覚醒前", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "リズリー/温泉", rarity: "黒", cl: "道化師", AW: "覚醒後", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "リズリー/温泉", rarity: "黒", cl: "道化師", AW: "覚醒後", skill: "覚醒"
+        , stats: { ct: "-60%", abn: "-100%" }
+    }
+    , {
+        name: "シンフー", rarity: "黒", cl: "幻獣使い", AW: "覚醒前", skill: "通常"
+        , stats: { draw: "(○)", redep: "60秒" }
+    }
+    , {
+        name: "シンフー", rarity: "黒", cl: "幻獣使い", AW: "覚醒後", skill: "通常"
+        , stats: { draw: "(○)", redep: "60秒" }
+    }
+    , {
+        name: "シンフー", rarity: "黒", cl: "幻獣使い", AW: "覚醒後", skill: "覚醒"
+        , stats: { draw: "(○)", redep: "60秒" }
+    }
+    , {
+        name: "ツキコ", rarity: "黒", cl: "幻獣使い", AW: "覚醒前", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "ツキコ", rarity: "黒", cl: "幻獣使い", AW: "覚醒後", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "ツキコ/水着", rarity: "黒", cl: "幻獣使い", AW: "覚醒前", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "ツキコ/水着", rarity: "黒", cl: "幻獣使い", AW: "覚醒後", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "ホリー", rarity: "白", cl: "幻獣使い", AW: "覚醒後", skill: "覚醒"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "カリン", rarity: "白", cl: "幻獣使い", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { draw: "○" }
+    }
+    , {
+        name: "エレオノーラ", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒前", skill: "通常"
+        , stats: { range: "×1.2" }
+    }
+    , {
+        name: "エレオノーラ", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒後", skill: "通常"
+        , stats: { range: "×1.2" }
+    }
+    , {
+        name: "エレオノーラ/水着", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3", range: "×1.3" }
+    }
+    , {
+        name: "ソニア", rarity: "白", cl: "ルーンアコライト", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.8" }
+    }
+    , {
+        name: "ちびエレオノーラ", rarity: "ちび", cl: "ルーンアコライト", skill: "通常"
+        , stats: { range: "×1.2" }
+    }
+    , {
+        name: "メアリ", rarity: "黒", cl: "ロード", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.6" }
+    }
+    , {
+        name: "ハルフゥ", rarity: "黒", cl: "シービショップ", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×2.0", mr: "×1.8" }
+    }
+    , {
+        name: "コマ", rarity: "黒", cl: "狛犬", AW: "覚醒後", skill: "覚醒"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "コマ/花嫁", rarity: "黒", cl: "狛犬", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2" }
+    }
+    , {
+        name: "コマ/花嫁", rarity: "黒", cl: "狛犬", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2" }
+    }
+    , {
+        name: "マルティナ", rarity: "白", cl: "幻術士", AW: "覚醒前", skill: "通常"
+        , stats: { eva: "50%" }
+    }
+    , {
+        name: "マルティナ", rarity: "白", cl: "幻術士", AW: "覚醒後", skill: "通常"
+        , stats: { eva: "50%" }
+    }
+    , {
+        name: "マルティナ", rarity: "白", cl: "幻術士", AW: "覚醒後", skill: "覚醒"
+        , stats: { eva: "70%" }
+    }
+    , {
+        name: "ラタトスク", rarity: "黒", cl: "ハーバリスト", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.4", mr: "×1.4", rege: [ "100/秒", "50/15f" ] }
+    }
+    , {
+        name: "ラタトスク", rarity: "黒", cl: "ハーバリスト", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.4", mr: "×1.4", rege: [ "100/秒", "50/15f" ] }
+    }
+    , {
+        name: "ローズ", rarity: "白", cl: "ハーバリスト", AW: "覚醒前", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "ローズ", rarity: "白", cl: "ハーバリスト", AW: "覚醒後", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "ローズ", rarity: "白", cl: "ハーバリスト", AW: "覚醒後", skill: "覚醒"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "シュカ", rarity: "白", cl: "霊宝つくもがみ", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+    }
+    , {
+        name: "シュカ", rarity: "白", cl: "霊宝つくもがみ", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+    }
+    , {
+        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
+        , stats: { eva: "30%" }
+    }
+    , {
+        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
+        , stats: { eva: "30%" }
+    }
+    , {
+        name: "エリザベス", rarity: "黒", cl: "王女【七つの大罪】", AW: "覚醒前", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "エリザベス", rarity: "黒", cl: "王女【七つの大罪】", AW: "覚醒後", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "クラリス・ツァインブルグ", rarity: "黒", cl: "新米刑事【流星WA】", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.5", mr: "×1.4" }
+    }
+    , {
+        name: [ "クラリス・", "ツァインブルグ" ], rarity: "黒", cl: "新米刑事【流星WA】", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.5", mr: "×1.4" }
+    }
+    , {
+        name: "守護の聖樹", rarity: "トークン", AW: "覚醒後"
+        , stats: { def: "×2.0" }
+        , note: "ベルニス/クリスマス"
+    }
+    , {
+        name: "お守りエッグ", rarity: "トークン", AW: "覚醒後"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , note: [ "リーフ/バニー", "タラニア/バニー", "ニーヴ/バニー" ]
+    }
+    , {
+        name: "破魔の聖樹", rarity: "トークン", AW: "覚醒後"
+        , stats: { atk: "×1.4" }
+        , note: "シャルロット/クリスマス"
+    }
+    , {
+        name: "かまいたちユキ", rarity: "トークン", AW: "覚醒前"
+        , stats: { def: "×1.6", mr: "×1.6" }
+        , note: "群青姉妹"
+    }
+    , {
+        name: "疾風かまいたちユキ", rarity: "トークン", AW: "覚醒後"
+        , stats: { def: "×1.6", mr: "×1.6" }
+        , note: "群青姉妹"
+    }
+    , {
+        name: "シャドー", rarity: "トークン", AW: "覚醒後"
+        , stats: { other: "" }
+        , note: [ "リタ/水着", "隠密付与" ]
+    }
+    , {
+        name: "かぼちゃ馬車", rarity: "トークン", AW: "覚醒後"
+        , stats: { atk: "×1.2" }
+        , note: "デスピア/ハロウィン"
+    }
+    , {
+        name: "ウェディングケーキ", rarity: "トークン", AW: "覚醒後"
+        , stats: { atk: "×1.3" }
+        , note: "エターナー/花嫁"
+    }
+    , {
+        name: "ルベドアタノール", rarity: "トークン", AW: "覚醒後"
+        , stats: { def: "×1.5" }
+        , note: "ニコル"
+    }
+    , {
+        name: "アウローラ(幻影)", rarity: "トークン", AW: "覚醒前"
+        , stats: { mr: "×2.0" }
+        , note: "マルティナ"
+    }
+    , {
+        name: "アウローラ(幻影)", rarity: "トークン", AW: "覚醒後"
+        , stats: { mr: "×2.0" }
+        , note: "マルティナ"
+    }
+    , {
+        name: "世界樹の苗", rarity: "トークン", AW: "覚醒後"
+        , stats: { atk: "×1.3" }
+        , note: "ラタトスク"
+    }
+];
+
+/*
+
+    , {
+        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        , stats: { : "" }
+    }
+    
+    黒 白 青 金 ちび トークン
+    
+    覚醒前 覚醒後 覚1 覚2a 覚2b
+    
+    常時 非 通常 覚醒
+    
+    hp atk def mr range cost wt ct dur atkCd
+    
+    rege: [ "/秒", "/f" ]
+    
+    poison abn eva nul redep other
+    
+    draw
+    ○
+    (○)
+    
+    target note 全体 発動時 分類未確認
+    
+    正月 水着 浴衣 バニー 花嫁
+    
+    お正月 温泉 バレンタイン 学園 エッグハント
+    
+    ジューンブライド サマー ハロウィン クリスマス
+
+*/
