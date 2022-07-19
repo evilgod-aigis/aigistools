@@ -248,7 +248,7 @@ debuff.team = [
     , {
         name: "ラヴクラフト", rarity: "白", cl: "水底の支配者【GBM】", AW: "覚醒後"
         , stats: { atk: "-15%" }
-        , target: { attr: [ "魚人" ] }
+        , target: { attr: [ "魚人", "水棲" ] }
     }
 ];
 
