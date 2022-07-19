@@ -578,7 +578,7 @@ table.CreateTable_mixture.type = (_div) => {
             const name = `${stat}-${type}`;
             const newTableAreaSub = document.createElement("div");
             newTableAreaSub.id = `table-area_${name}`;
-            newTableAreaSub.className = "table-area-sub";
+            newTableAreaSub.className = "table-area-sub inline-block";
             const newTableName = document.createElement("span");
             newTableName.className = "table-name";
             newTableName.innerHTML = `区分：${table.word[type]}`;
@@ -734,7 +734,11 @@ table.ApplyFilter = () => {
                 tableAreaSubs[i].classList.remove("is-unshown");
                 shownRowIndexes.splice(0);
                 shownRowIndexes.push(...HideRows(tableAreaSubs[i], name));
-                if(shownRowIndexes.length === 0) return;
+                if(shownRowIndexes.length === 0) {
+                    tableAreaSubs[i].classList.remove("inline-block");
+                    return;
+                }
+                tableAreaSubs[i].classList.add("inline-block");
                 allNone = false;
                 const debuffTable = tableAreaSubs[i].getElementsByTagName("table")[0];
                 const ths = debuffTable.querySelectorAll(`th:nth-child(${colIndex})`);
