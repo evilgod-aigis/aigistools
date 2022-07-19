@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>アイギス バフ(無差別)一覧</title>
+        <link type="text/css" rel="stylesheet" href="./wholeBufferList/css/main.css">
+    </head>
+    
+    <body>
+        <div id="header">
+            アイギス バフ(無差別)一覧
+            <span style="margin-left: 2em; font-size: 18px; display: inline-block;">
+                バフ検索は<a href="https://evilgod-aigis.github.io/aigistools/searchBuffer.html">こちら</a>
+            </span>
+        </div>
+        
+        <div id="contents">
+            <div id="filters"></div>
+            <div id="tables"></div>
+        </div>
+        
+        <div id="footer">
+            <div class="inline-block">
+                概要：
+            </div>
+            <div class="inline-block" style="width: calc(100% - 3.5em);">
+                <p>
+                    <span class="revision">バフ検索の副産物</span>　特に対象を指定しないバフの一覧
+                </p>
+                <p>
+                    表は攻撃力・防御力バフの区分で分けられているので、他のバフの区分は各自調べてくだちい
+                </p>
+                <p>
+                    ページ右上のボタンからフィルタ設定ができる
+                </p>
+                <p>
+                    該当するものがない行・列は自動的に非表示となる
+                </p>
+                <p>
+                    表の見出しをクリックするとソートできる(一部無効)
+                </p>
+                <p>
+                    フィルタ設定を変えるとソートはリセットされる
+                </p>
+                <p>
+                    不具合報告や意見・要望がある方は<a href="https://docs.google.com/forms/d/e/1FAIpQLSemyP4z1Vrn7-6-Iqv2QfsWHYXQ6lWj_fqQ_CChEKr6sI6OaQ/viewform" target="_blank">こちらから</a>
+                </p>
+                <details id="explain">
+                    <summary>表内の表現について</summary>
+                    <div>
+                        <div>
+                            レアリティ
+                        </div>
+                        <div>
+                            <p>黒　：☆6 ブラック</p>
+                            <p>白　：☆5 プラチナ</p>
+                            <p>青　：サファイア</p>
+                            <p>金　：☆4 ゴールド</p>
+                            <p>ちび：☆4 ゴールド(ちび)</p>
+                            <p>銀　：☆3 シルバー</p>
+                            <p>銅　：☆2 ブロンズ</p>
+                            <p>鉄　：☆1 アイアン</p>
+                            <p>トークン→備考に所持者を記載</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            覚醒等
+                        </div>
+                        <div>
+                            <p>CC　：クラスチェンジ</p>
+                            <p>覚1&ensp;：第一覚醒</p>
+                            <p>覚2a：第二覚醒(黒の選択時の左側)</p>
+                            <p>覚2b：第二覚醒(黒の選択時の右側)</p>
+                            <table border="1">
+                                <tr>
+                                    <td colspan="2">覚醒前</td>
+                                    <td colspan="2">覚醒後</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">CC前</td>
+                                    <td rowspan="2">CC後</td>
+                                    <td rowspan="2">覚1</td>
+                                    <td>覚2a</td>
+                                </tr>
+                                <tr>
+                                    <td>覚2b</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            スキル
+                        </div>
+                        <div>
+                            <p>空欄：基本的にスキルに関係ない</p>
+                            <p>非　：非スキル中</p>
+                            <p>括弧は回数の条件を示す</p>
+                            <p>　奇　：奇数(1, 3, 5, …)回目</p>
+                            <p>　偶　：偶数(2, 4, 6, …)回目</p>
+                            <p>　3n-2：1, 4, 7, … 回目</p>
+                            <p>　3n-1：2, 5, 8, … 回目</p>
+                            <p>　3n　：3, 6, 9, … 回目</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            HP〜再出撃
+                        </div>
+                        <div>
+                            <p>加算バフの%表示はバッファーのステータスを参照</p>
+                            <p>「*」はクラス特性やアビリティの%に掛かる</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            備考
+                        </div>
+                        <div>
+                            <p>区分が範囲系でないもので、<br>「範囲」と書かれていなければ全体効果</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <div id="updated">
+                公開日：2022/07/19(火)
+                <details id="update-history"></details>
+            </div>
+            <div id="link-area">
+                <div>
+                    <div class="inline-block">
+                        本家：
+                    </div>
+                    <div class="inline-block">
+                        <p>
+                            <a href="http://pc-play.games.dmm.co.jp/play/aigis/" target="_blank">千年戦争アイギスR</a>
+                        </p>
+                        <p>
+                            <a href="http://pc-play.games.dmm.com/play/aigisc/" target="_blank">千年戦争アイギス</a>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="inline-block">
+                        参考：
+                    </div>
+                    <div class="inline-block">
+                        <p>
+                            <a href="https://wikiwiki.jp/aigiszuki/" target="_blank" rel="noopener noreferrer">千年戦争アイギス攻略 Wiki*</a>
+                        </p>
+                        <p>
+                            <a href="https://seesaawiki.jp/aigis/" target="_blank" rel="noopener noreferrer">千年戦争アイギスSeeSaaWiki</a>
+                        </p>
+                        <p>
+                            <a href="https://aigis.fandom.com/wiki/Aigis_Wiki" target="_blank" rel="noopener noreferrer">Aigis Wiki | Fandom</a>
+                        </p>
+                        <p>
+                            <a href="http://www116.sakura.ne.jp/~kuromoji/aigis.htm" target="_blank">くろもじ屋'</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 2em;">ツール集へ<a href="https://evilgod-aigis.github.io/aigistools/">戻る</a></p>
+            </div>
+        </div>
+        
+        <script src="https://unpkg.com/popper.js@1"></script>
+        <script src="https://unpkg.com/tippy.js@5"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+        <script src="./wholeBufferList/js/import.js"></script>
+    </body>
+</html>
