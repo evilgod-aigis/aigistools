@@ -463,6 +463,13 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "ちびスイレン", rarity: "ちび", cl: "ドラゴンライダー", skill: "通常"
+        , stats: {
+            mr: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
         name: "マーガレット/水着", rarity: "白", cl: "ボウライダー", AW: "覚醒前", skill: "通常"
         , stats: {
             def: { value: "-50%", type: "area" }
