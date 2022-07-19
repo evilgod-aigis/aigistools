@@ -1,0 +1,339 @@
+body {
+    padding: 0;
+    margin: 10px;
+    font-size: 14px;
+}
+p {
+    margin: 0;
+}
+summary {
+    cursor: pointer;
+}
+.inactive {
+    position: relative;
+}
+.inactive::after {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.is-shown {
+    display: block !important;
+}
+.is-unshown {
+    display: none !important;
+}
+.revision {
+    text-decoration: line-through;
+}
+
+#header {
+    margin: 10px 0 30px;
+    padding: 0;
+    font-size: 24px;
+}
+
+/* 検索エリア */
+#target-info {
+    max-width: 1000px;
+}
+#target-info table {
+    border-collapse: collapse;
+    border-left: none;
+    border-right: none;
+}
+#target-info table th {
+    min-width: 4em;
+    background-color: rgb(240, 240, 240);
+}
+#target-info table th
+, #target-info table td {
+    border-left: none;
+    border-right: none;
+}
+#target-info form {
+    margin: 3px;
+}
+#target-info label {
+    margin-right: 1em;
+    display: inline-block;
+}
+#target-info input[type="radio"] {
+    margin-right: 3px;
+    width: 12px;
+    height: 12px;
+    vertical-align: center;
+}
+#target-info input[type="checkbox"] {
+    margin-right: 3px;
+    width: 12px;
+    height: 12px;
+    vertical-align: center;
+}
+#target-info select {
+    margin: 3px 0 3px 6px;
+    width: 14em;
+}
+#target-info table button {
+    margin: 3px;
+ }
+#search {
+    margin: 3px;
+    width: 100%;
+}
+/* 検索エリア ここまで */
+
+/* フィルタ */
+#filters {
+    position: sticky;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+}
+#toggler-filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    border: 2px solid orange;
+    border-radius: 4px;
+    width: 5.5em;
+    height: 25px;
+    display: block;
+    cursor: pointer;
+    z-index: 100;
+}
+#filter-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px 0 10px 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border: 2px solid orange;
+    border-radius: 4px;
+    background: white;
+    max-width: 400px;
+    display: none;
+}
+#filter-content button {
+    margin-right: 5px;
+}
+.filter-area {
+    margin-top: 10px;
+}
+.filter-title-area {
+    width: 6em;
+    display: inline-block;
+    vertical-align: top;
+}
+.filter-title::after {
+    content: "：";
+    width: 1em;
+    display: block;
+    float: right;
+}
+.filter-checkbox-area {
+    width: calc(100% - 6em);
+    display: inline-block;
+    vertical-align: top;
+}
+#filters label {
+    margin-right: 1em;
+    display: inline-block;
+}
+#filters input[type="checkbox"] {
+    margin-right: 3px;
+    width: 12px;
+    height: 12px;
+    vertical-align: center;
+}
+/* フィルタ ここまで */
+
+/* テーブル */
+#tables {
+    padding-top: 10px;
+}
+.table-area {
+    margin-top: 40px;
+}
+.table-name {
+    font-size: 18px;
+}
+.table-empty::after {
+    content: "：該当なし";
+}
+.table-scroll {
+    overflow: auto;
+    border: 1px solid black;
+    max-width: max-content;
+    max-height: max(500px, 40vh);
+}
+#tables table {
+    color: black;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: max-content;
+    font-size: 14px;
+    white-space: nowrap;
+}
+#tables table th {
+    position: sticky;
+    top: 0;
+    background-color: rgb(200, 200, 200);
+    border: 1px solid black;
+    z-index: 1;
+}
+#tables table th:nth-of-type(2) {
+    left: 0;
+    z-index: 2;
+}
+#tables table .sortable {
+    color: rgb(0, 0, 180);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#tables table .sortable:hover {
+    color: rgb(50, 50, 220);
+    background-color: rgb(220, 220, 220);
+}
+#tables table tbody {
+    /*white-space: nowrap;*/
+}
+#tables table td {
+    background-color: white;
+    border: 1px solid black;
+}
+/* id */
+#tables table th:nth-of-type(1)
+, #tables table td:nth-of-type(1) {
+    min-width: 2em;
+    max-width: 2em;
+    display: none;
+}
+/* ユニット */
+#tables table td:nth-of-type(2) {
+    position: sticky;
+    left: 0;
+    min-width: 12em;
+    max-width: max-content;
+    z-index: 1;
+}
+/* レア */
+#tables table td:nth-of-type(3) {
+    min-width: 2.5em;
+    max-width: 2.5em;
+    text-align: center;
+    white-space: normal;
+}
+/* 覚醒等 */
+#tables table td:nth-of-type(4) {
+    min-width: 3.5em;
+    max-width: max-content;
+    text-align: center;
+}
+/* スキル */
+#tables table td:nth-of-type(5) {
+    min-width: 3.5em;
+    max-width: max-content;
+    text-align: center;
+}
+/* HP ~ 再出撃 */
+#tables table td:nth-of-type(n+6):nth-last-of-type(n+3) {
+    min-width: 3.5em;
+    max-width: 5em;
+    text-align: right;
+}
+/* 撤退扱い */
+#tables table td:nth-last-of-type(4) {
+    min-width: 3.5em;
+    max-width: 3.5em;
+    text-align: center !important;
+}
+/* 対象 */
+#tables table td:nth-last-of-type(2) {
+    min-width: 13em;
+    max-width: 15em;
+    white-space: normal;
+}
+/* 備考 */
+#tables table td:nth-last-of-type(1) {
+    min-width: 12em;
+    max-width: max-content;
+}
+#tables .cell-filled {
+    background-color: rgb(255, 200, 100);
+}
+/* テーブル ここまで */
+
+/* フッタ */
+#footer {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 12px;
+    width: 100%;
+}
+#explain {
+    margin-top: 3px;
+}
+#explain div {
+    display: table-row;
+}
+#explain div div {
+    padding: 2px;
+    display: table-cell;
+    border: 1px solid black;
+}
+#explain div div:nth-of-type(1) {
+    min-width: 6em;
+    background-color: rgb(240, 240, 240);
+}
+#explain table {
+    border-collapse: collapse;
+    font-size: 12px;
+}
+#explain table td {
+    min-width: 3em;
+    text-align: center;
+}
+#updated {
+    margin: 10px 0;
+}
+#update-content {
+    margin-left: 3.5em;
+    margin-right: 1em;
+    padding: 5px;
+    height: 100px;
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+.update-elem {
+    margin-bottom: 1em;
+    width: 100%;
+    overflow: hidden;
+}
+.update-date {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+}
+.update-detail {
+    margin-left: 1em;
+    width: calc(100% - 1em);
+    overflow: hidden;
+}
+#link-area {
+    margin: 10px 0;
+    overflow: hidden;
+}
+/*フッタ　ここまで*/
