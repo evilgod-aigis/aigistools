@@ -530,13 +530,13 @@ table.CreateTable_mixture.domain = (_div) => {
             newTr.appendChild(newTd);
             
             newTd = document.createElement("td");
-            newTd.innerHTML += _.map(showType, stat =>
+            newTd.innerHTML = _.map(showType, stat =>
                 `${table.word[stat].replace(/<br>/g, "")}：${table.word[debuffer.stats[stat].type]}`
             ).join("<br>");
             if("note" in debuffer) {
                 if(showType.length !== 0) newTd.innerHTML += "<br>";
                 if("other" in debuffer.stats) newTd.className = "cell-filled";
-                newTd.innerHTML = Array.isArray(debuffer.note) ? debuffer.note.join("<br>") : debuffer.note;
+                newTd.innerHTML += Array.isArray(debuffer.note) ? debuffer.note.join("<br>") : debuffer.note;
             }
             newTr.appendChild(newTd);
             newTbody.appendChild(newTr);
