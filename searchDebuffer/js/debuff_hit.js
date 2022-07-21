@@ -89,6 +89,11 @@ debuff.hit = [
         , attr: "物理", dur: "179f"
     }
     , {
+        name: "ヴァイス/水着", rarity: "白", cl: "ソードマスター", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "-25%" }
+        , attr: "物理", dur: "?f"
+    }
+    , {
         name: "ラクシャーサ", rarity: "黒", cl: "魔神", AW: "覚醒後"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "119f"
