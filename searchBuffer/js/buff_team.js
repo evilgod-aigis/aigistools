@@ -793,6 +793,11 @@ buff.team.list = [
         ]
     }
     , {
+        name: "ヴァイス/水着", rarity: "白", cl: "ソードマスター", AW: "覚醒後"
+        , stats: { cost: "-1" }
+        , target: [ { season: [ "サマー" ], depType: [ "近接" ] } ]
+    }
+    , {
         name: "サオシュ/温泉", rarity: "白", cl: "魔神", AW: "覚醒後"
         , stats: { poison: "-100%", abn: "-100%" }
         , target: { race: [ "デーモン系" ] }
@@ -1090,6 +1095,12 @@ buff.team.list = [
         name: "シャディア/正月", rarity: "黒", cl: "魔王親衛隊", AW: "覚醒後"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { season: [ "お正月" ] }
+    }
+    , {
+        name: "雷鳴大妖ぬえ", cl: "ぬえ", AW: "覚2a"
+        , stats: { atkCd: "-?%" }
+        , target: { race: [ "妖怪" ] }
+        , note: "ぬえ系"
     }
     , {
         name: "イルムガルト", rarity: "白", cl: "デーモンロード", AW: "覚醒後"
