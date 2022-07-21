@@ -1098,7 +1098,7 @@ buff.team.list = [
     }
     , {
         name: "雷鳴大妖ぬえ", cl: "ぬえ", AW: "覚2a"
-        , stats: { atkCd: "-?%" }
+        , stats: { atkCd: "-20%" }
         , target: { race: [ "妖怪" ] }
         , note: "ぬえ系"
     }
