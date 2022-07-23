@@ -826,7 +826,7 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
     const trs = debuffTable.querySelectorAll("tbody tr");
     const trs_array = Array.from(trs);
     const isSub = table.mixture === "type"
-        && !_.includes(table.debuffTable.common, _debuffType)
+        && !_.includes(table.debuffType.common, _debuffType)
         && _.includes(table.stats, _colName);
     if(_allowReverse && _colName === table.list[_debuffType].sortedBy) {
         if(_colName === "id"
