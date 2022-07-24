@@ -1,8 +1,5 @@
 // 属性スキル
-buff.skill_cat = {};
-buff.skill_cat.picked = [];
-buff.skill_cat.sortedBy = "id";
-buff.skill_cat.list = [
+buff.skill_cat = [
     {
         name: "ヘレナ", rarity: "白", cl: "前衛戦術家", AW: "覚醒前", skill: "通常(奇)"
         , stats: { def: "×1.2" }
@@ -46,8 +43,13 @@ buff.skill_cat.list = [
         , note: "範囲"
     }
     , {
-        name: "ダルフィア", rarity: "白", cl: "騎士【封緘】", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        name: "ダルフィア", rarity: "白", cl: "騎士【封緘】", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.1" }
+    }
+    , {
+        name: "ダルフィア", rarity: "白", cl: "騎士【封緘】", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.1" }
+        , note: "永続"
     }
 ];
 

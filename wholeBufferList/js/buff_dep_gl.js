@@ -1,8 +1,5 @@
 // 全体配置
-buff.dep_gl = {};
-buff.dep_gl.picked = [];
-buff.dep_gl.sortedBy = "id";
-buff.dep_gl.list = [
+buff.dep_gl = [
     {
         name: "王子【神器装備】", cl: "王子"
         , stats: { atk: "+20%", def: "+20%", other: "" }

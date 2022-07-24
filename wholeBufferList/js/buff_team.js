@@ -1,10 +1,7 @@
 const buff = {};
 
 // 編成
-buff.team = {};
-buff.team.picked = [];
-buff.team.sortedBy = "id";
-buff.team.list = [
+buff.team = [
     {
         name: "王子【神器装備】", cl: "王子"
         , stats: { hp: "+10%" }

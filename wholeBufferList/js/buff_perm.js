@@ -1,8 +1,5 @@
 // 永続
-buff.perm = {};
-buff.perm.picked = [];
-buff.perm.sortedBy = "id";
-buff.perm.list = [
+buff.perm = [
     {
         name: "ホルテウス", rarity: "黒", cl: "ファラオ", AW: "覚醒後", skill: "通常"
         , stats: { hp: "×1.15", atk: "×1.15", def: "×1.15" }

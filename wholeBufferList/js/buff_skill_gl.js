@@ -1,8 +1,5 @@
 // 全体スキル
-buff.skill_gl = {};
-buff.skill_gl.picked = [];
-buff.skill_gl.sortedBy = "id";
-buff.skill_gl.list = [
+buff.skill_gl = [
     {
         name: "王子【英雄王】", cl: "王子", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2", other: "" }
@@ -19,6 +16,7 @@ buff.skill_gl.list = [
     , {
         name: "トラム", rarity: "黒", cl: "銀腕の神話", AW: "覚醒後", skill: "通常"
         , stats: { rege: [ "150/秒", "75/15f" ] }
+        , note: "永続"
     }
     , {
         name: "トラム", rarity: "白", cl: "銀腕の神話", AW: "覚醒後", skill: "通常"
@@ -31,6 +29,7 @@ buff.skill_gl.list = [
     , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "300/秒", "1500/150f" ] }
+        , note: "永続"
     }
     , {
         name: "ケイティ/学園", rarity: "白", cl: "ソルジャー", AW: "覚醒前", skill: "通常"
@@ -85,10 +84,12 @@ buff.skill_gl.list = [
     , {
         name: "エルドラ/正月", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
         , stats: { nul: "25%" }
+        , note: "永続"
     }
     , {
         name: "エルドラ/正月", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "通常"
         , stats: { nul: "25%" }
+        , note: "永続"
     }
     , {
         name: "チヨメ/温泉", rarity: "黒", cl: "忍者", AW: "覚醒前", skill: "通常"
@@ -99,17 +100,23 @@ buff.skill_gl.list = [
         , stats: { rege: [ "150/秒", "75/15f" ] }
     }
     , {
+        name: "コーネリア", rarity: "黒", cl: "ダークファイター", AW: "覚醒後", skill: "覚醒"
+        , stats: { nul: "20%" }
+    }
+    , {
         name: "アリス/バレンタイン", rarity: "黒", cl: "モンク", AW: "覚醒前", skill: "通常"
         , stats: { rege: [ "60/秒", "30/15f" ] }
+        , note: "永続"
     }
     , {
         name: "アリス/バレンタイン", rarity: "黒", cl: "モンク", AW: "覚醒後", skill: "通常"
         , stats: { rege: [ "60/秒", "30/15f" ] }
+        , note: "永続"
     }
     , {
         name: "マツリ/正月", rarity: "黒", cl: "前衛戦術家", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+10%", atk: "×1.1", def: "×1.1", other: "" }
-        , note: "オート"
+        , note: [ "オート", "永続" ]
     }
     , {
         name: "ウズメ", rarity: "白", cl: "前衛戦術家", AW: "覚醒前", skill: "通常"
@@ -128,7 +135,7 @@ buff.skill_gl.list = [
         , stats: { atk: "×1.3" }
     }
     , {
-        name: "ウズメ", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "覚醒(3〜)"
+        name: "ウズメ", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: { atk: "×1.35" }
     }
     , {
@@ -146,12 +153,12 @@ buff.skill_gl.list = [
     , {
         name: "レオラ", rarity: "白", cl: "前衛戦術家", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.15", def: "×1.15", other: "" }
-        , note: "オート"
+        , note: [ "オート", "永続" ]
     }
     , {
         name: "レオラ", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.15", def: "×1.15", other: "" }
-        , note: "オート"
+        , note: [ "オート", "永続" ]
     }
     , {
         name: "レオラ", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "覚醒"
@@ -160,20 +167,22 @@ buff.skill_gl.list = [
     , {
         name: "ルヴェア", rarity: "白", cl: "前衛戦術家", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.15" }
+        , note: "永続"
     }
     , {
         name: "ルヴェア", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.15" }
+        , note: "永続"
     }
     , {
         name: "レオラ/水着", rarity: "白", cl: "前衛戦術家", AW: "覚醒前", skill: "通常"
         , stats: { other: "" }
-        , note: "オート"
+        , note: [ "オート", "永続" ]
     }
     , {
         name: "レオラ/水着", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "通常"
         , stats: { other: "" }
-        , note: "オート"
+        , note: [ "オート", "永続" ]
     }
     , {
         name: "タラニア/バニー", rarity: "白", cl: "魔法剣士", AW: "覚醒前", skill: "通常"
@@ -211,10 +220,12 @@ buff.skill_gl.list = [
     , {
         name: "鬼刃姫/正月", rarity: "黒", cl: "鬼", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+20%" }
+        , note: "永続"
     }
     , {
         name: "鬼刃姫/正月", rarity: "黒", cl: "鬼", AW: "覚醒後", skill: "通常"
         , stats: { hp: "+20%" }
+        , note: "永続"
     }
     , {
         name: "鬼刃姫/正月", rarity: "黒", cl: "鬼", AW: "覚醒後", skill: "覚醒"
@@ -246,6 +257,10 @@ buff.skill_gl.list = [
     , {
         name: "ちびオーガスタ", rarity: "ちび", cl: "料理人", skill: "覚醒"
         , stats: { atk: "×1.3" }
+    }
+    , {
+        name: "シラヌイ", rarity: "白", cl: "ぬりかべ", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.6" }
     }
     , {
         name: "シラヌイ", rarity: "白", cl: "ぬりかべ", AW: "覚醒後", skill: "通常"
@@ -320,7 +335,7 @@ buff.skill_gl.list = [
         , stats: { def: "×1.6" }
     }
     , {
-        name: "レン", rarity: "白", cl: "後衛戦術家", AW: "覚醒後", skill: "覚醒(3〜)"
+        name: "レン", rarity: "白", cl: "後衛戦術家", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: { def: "×1.7" }
     }
     , {
@@ -372,6 +387,7 @@ buff.skill_gl.list = [
     , {
         name: "アンナ/アイドル", rarity: "黒", cl: "政務官", skill: "通常"
         , stats: { rege: [ "20/秒", "10/15f" ] }
+        , note: "永続"
     }
     , {
         name: "シャルル", rarity: "白", cl: "アルケミスト", AW: "覚醒後", skill: "覚醒"
@@ -400,10 +416,12 @@ buff.skill_gl.list = [
     , {
         name: "ルフレ", rarity: "黒", cl: "エレメンタラー", AW: "覚醒前", skill: "通常"
         , stats: { rege: [ "40/秒", "20/15f" ] }
+        , note: "永続"
     }
     , {
         name: "ルフレ", rarity: "黒", cl: "エレメンタラー", AW: "覚醒後", skill: "通常"
         , stats: { rege: [ "40/秒", "20/15f" ] }
+        , note: "永続"
     }
     , {
         name: "ユキヒメ/学園", rarity: "白", cl: "エレメンタラー", AW: "覚醒後", skill: "覚醒(1)"
@@ -414,7 +432,7 @@ buff.skill_gl.list = [
         , stats: { atk: "×1.3", def: "×1.3", mr: "×1.2" }
     }
     , {
-        name: "ユキヒメ/学園", rarity: "白", cl: "エレメンタラー", AW: "覚醒後", skill: "覚醒(3〜)"
+        name: "ユキヒメ/学園", rarity: "白", cl: "エレメンタラー", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: { atk: "×1.4", def: "×1.3", mr: "×1.2" }
     }
     , {
@@ -432,6 +450,7 @@ buff.skill_gl.list = [
     , {
         name: "リズリー/温泉", rarity: "黒", cl: "道化師", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "120/秒", "60/15f" ] }
+        , note: "永続"
     }
     , {
         name: "リェプル", rarity: "白", cl: "道化師", AW: "覚醒前", skill: "通常"
@@ -446,15 +465,17 @@ buff.skill_gl.list = [
     , {
         name: "リェプル", rarity: "白", cl: "道化師", AW: "覚醒後", skill: "覚醒"
         , stats: { ct: "-50%" }
-        , note: "発動時HP-50%"
+        , note: [ "発動時HP-50%", "永続" ]
     }
     , {
         name: "ルメディア", rarity: "白", cl: "ライフリンカー", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+20%" }
+        , note: "永続"
     }
     , {
         name: "ルメディア", rarity: "白", cl: "ライフリンカー", AW: "覚醒後", skill: "通常"
         , stats: { hp: "+20%" }
+        , note: "永続"
     }
     , {
         name: "ルメディア", rarity: "白", cl: "ライフリンカー", AW: "覚醒後", skill: "覚醒"
@@ -475,18 +496,19 @@ buff.skill_gl.list = [
     , {
         name: "シンフー", rarity: "黒", cl: "幻獣使い", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "40/秒", "20/15f" ] }
+        , note: "永続"
     }
     , {
         name: "ホリー", rarity: "白", cl: "幻獣使い", AW: "覚醒前", skill: "通常"
         , stats: { redep: "15秒" }
         , target: "死亡・撤退最後1体"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "ホリー", rarity: "白", cl: "幻獣使い", AW: "覚醒後", skill: "通常"
         , stats: { redep: "10秒" }
         , target: "死亡・撤退最後1体"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "ホリー", rarity: "白", cl: "幻獣使い", AW: "覚醒後", skill: "覚醒"
@@ -497,6 +519,7 @@ buff.skill_gl.list = [
     , {
         name: "エレオノーラ", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒後", skill: "覚醒"
         , stats: { range: "×1.1" }
+        , note: "永続"
     }
     , {
         name: "ソニア", rarity: "白", cl: "ルーンアコライト", AW: "覚醒前", skill: "通常"
@@ -514,13 +537,13 @@ buff.skill_gl.list = [
         name: "シャイーナ", rarity: "白", cl: "ルーンアコライト", AW: "覚醒前", skill: "通常"
         , stats: { redep: "15秒" }
         , target: "死亡・撤退最後3体"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "シャイーナ", rarity: "白", cl: "ルーンアコライト", AW: "覚醒後", skill: "通常"
         , stats: { redep: "15秒" }
         , target: "死亡・撤退最後3体"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "コマ/花嫁", rarity: "黒", cl: "狛犬", AW: "覚醒後", skill: "覚醒"
@@ -563,16 +586,31 @@ buff.skill_gl.list = [
         , stats: { def: "×1.25" }
     }
     , {
-        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常"
+        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(～2)"
         , stats: { atk: "×1.2" }
     }
     , {
-        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常"
+        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(3～)"
+        , stats: { atk: "×1.2" }
+        , note: "永続"
+    }
+    , {
+        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常(～2)"
         , stats: { atk: "×1.2" }
     }
     , {
-        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒"
+        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常(3～)"
+        , stats: { atk: "×1.2" }
+        , note: "永続"
+    }
+    , {
+        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(～2)"
         , stats: { atk: "×1.3" }
+    }
+    , {
+        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: { atk: "×1.3" }
+        , note: "永続"
     }
     , {
         name: "ラヴクラフト", rarity: "白", cl: "水底の支配者【GBM】", AW: "覚醒前", skill: "通常"
@@ -593,27 +631,27 @@ buff.skill_gl.list = [
         , note: "分類未確認"
     }
     , {
-        name: "お神輿", rarity: "トークン", AW: "覚醒後"
+        name: "お神輿", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.1" }
-        , note: [ "レミィ/浴衣", "分類未確認" ]
+        , note: [ "レミィ/浴衣", "永続", "分類未確認" ]
     }
     , {
-        name: "かぼちゃ馬車", rarity: "トークン", AW: "覚醒後"
+        name: "かぼちゃ馬車", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { rege: [ "40/秒", "20/15f" ] }
-        , note: "デスピア/ハロウィン"
+        , note: [ "デスピア/ハロウィン", "永続" ]
     }
     , {
-        name: "スチームタンク", rarity: "トークン", AW: "覚醒後"
+        name: "スチームタンク", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { rege: [ "80/秒", "40/15f" ] }
-        , note: "マキナ"
+        , note: [ "マキナ", "永続" ]
     }
     , {
-        name: "王子【英雄王】(幻影)", rarity: "トークン", AW: "覚醒後"
+        name: "王子【英雄王】(幻影)", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2", other: "" }
         , note: [ "タリエ", "オート" ]
     }
     , {
-        name: "世界樹の苗", rarity: "トークン", AW: "覚醒後"
+        name: "世界樹の苗", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { redep: "30秒" }
         , target: "死亡・撤退最後1体"
         , note: [ "ラタトスク", "発動時" ]

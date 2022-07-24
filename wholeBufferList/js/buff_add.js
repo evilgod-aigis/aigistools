@@ -1,12 +1,9 @@
 // 加算
-buff.add = {};
-buff.add.picked = [];
-buff.add.sortedBy = "id";
-buff.add.list = [
+buff.add = [
     {
         name: "王子【太鼓】", cl: "王子", skill: "通常"
         , stats: { atk: "30%", def: "30%" }
-        , note: "範囲"
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "トゥアン", rarity: "黒", cl: "バーバリアンクイーン", AW: "覚醒後", skill: "通常"
@@ -31,17 +28,17 @@ buff.add.list = [
     , {
         name: "ディアナ/水着", rarity: "黒", cl: "インペリアルナイト", AW: "覚醒前", skill: "通常"
         , stats: { atk: "12%" }
-        , note: "範囲"
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "ディアナ/水着", rarity: "黒", cl: "インペリアルナイト", AW: "覚醒後", skill: "通常"
         , stats: { atk: "12%" }
-        , note: "範囲"
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "アスラハ", rarity: "黒", cl: "グランドナイト", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "15%" }
-        , note: "範囲"
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "シャディア/正月", rarity: "黒", cl: "魔王親衛隊", AW: "覚醒後", skill: "覚醒"
@@ -76,12 +73,12 @@ buff.add.list = [
     , {
         name: "ミヤビ", rarity: "黒", cl: "ダンサー", AW: "覚醒前", skill: "通常"
         , stats: { atk: "*7", def: "*7" }
-        , note: "範囲"
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "ミヤビ", rarity: "黒", cl: "ダンサー", AW: "覚醒後", skill: "通常"
         , stats: { atk: "*7", def: "*7" }
-        , note: "範囲"
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "ミヤビ", rarity: "黒", cl: "ダンサー", AW: "覚醒後", skill: "覚醒"
@@ -109,7 +106,7 @@ buff.add.list = [
         , note: "範囲"
     }
     , {
-        name: "マーニー", rarity: "白", cl: "ダンサー", AW: "覚醒後", skill: "覚醒(3〜)"
+        name: "マーニー", rarity: "白", cl: "ダンサー", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: { atk: "*13", def: "*13" }
         , note: "範囲"
     }
@@ -126,7 +123,7 @@ buff.add.list = [
     , {
         name: "ワルツ", rarity: "白", cl: "ダンサー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "*4", def: "*4" }
-        , note: "範囲"
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "ハナ", rarity: "白", cl: "ダンサー", AW: "覚醒前", skill: "通常"
@@ -206,7 +203,7 @@ buff.add.list = [
     , {
         name: "ブレリア/クリスマス", rarity: "白", cl: "ダンサー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "*4", def: "*4" }
-        , note: "範囲"
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "ナターリエ", rarity: "金", cl: "ダンサー", AW: "覚醒前", skill: "通常"
@@ -256,7 +253,7 @@ buff.add.list = [
     , {
         name: "ちびミヤビ", rarity: "ちび", cl: "ダンサー", skill: "通常"
         , stats: { atk: "*7", def: "*7" }
-        , note: "範囲"
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "シャルキー", rarity: "銀", cl: "ダンサー", AW: "覚醒前", skill: "通常"
