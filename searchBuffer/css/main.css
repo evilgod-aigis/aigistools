@@ -94,6 +94,7 @@ summary {
 /* フィルタ */
 #filters {
     position: sticky;
+    position: -webkit-sticky;   /* Safari */
     top: 10px;
     right: 10px;
     z-index: 99;
@@ -122,7 +123,6 @@ summary {
     border-radius: 4px;
     background: white;
     max-width: 400px;
-    display: none;
 }
 #filter-content button {
     margin-right: 5px;
@@ -187,6 +187,7 @@ summary {
 }
 #tables table th {
     position: sticky;
+    position: -webkit-sticky;   /* Safari */
     top: 0;
     background-color: rgb(200, 200, 200);
     border: 1px solid black;
@@ -222,6 +223,7 @@ summary {
 /* ユニット */
 #tables table td:nth-of-type(2) {
     position: sticky;
+    position: -webkit-sticky;   /* Safari */
     left: 0;
     min-width: 12em;
     max-width: max-content;
