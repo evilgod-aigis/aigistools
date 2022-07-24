@@ -24,10 +24,6 @@ table.sortDir = {
 
 table.rarity = [ "黒", "白", "青", "金", "ちび", "銀", "銅", "鉄", "トークン", "空欄" ];
 table.AW = [ "CC前", "CC後", "CC55", "覚醒前", "覚醒後", "覚1", "覚2a", "覚2b" ];
-table.AW_rep = Object.assign(..._.map(table.AW, (key, i) => {
-    if(i <= table.AW.indexOf("覚醒前")) return { [key]: "覚醒前" }
-    else return { [key]: "覚醒後" }
-}));
 table.attr = [ "物理", "魔法", "貫通" ];
 table.debuffType = {};
 table.debuffType.common = [ "team", "hit", "scalar" ];
@@ -58,37 +54,89 @@ table.debuffType.type = {
         , color: "rgba(100, 100, 100, 0.3)"
     }
 };
-table.list = {};
-_.forEach(table.debuffType.common, type => table.list[type] = { picked: [], sortedBy: "id" });
-_.forEach(table.debuffType.domain, type => table.list[type] = { picked: [], sortedBy: "id" });
-_.forEach(table.debuffType.type, (obj, stat) =>
-    _.forEach(obj.list, type =>
-        table.list[`${stat}-${type}`] = { picked: [], sortedBy: "id" }
-    )
-);
 table.stats = [ "hp", "atk", "def", "mr", "atkCd", "stop" ];
 table.before = [ "id", "name", "rarity", "AW", "skill" ];
 table.after = [ "attr", "dur", "target", "note" ];
-table.column = [ ...table.before, ...table.stats, ...table.after ];
-table.sortable = [ "id", "rarity", ...table.stats, "attr", "dur", "value" ];
 
 
-// フィルタ設定生成
-table.CreateFilter = () => {
-    _.forEachRight(table.debuffType.common, (type, i) => {
-        if(!(type in debuff)) table.debuffType.common.splice(i, 1);
-    })
+// 特殊なオブジェクト生成
+table.SetObjects = () => {
+    // 全タイプに亘って空なオプションを探し、消す
+    delete table.empty;
+    table.empty = {};
+    options = [ "rarity", "AW" ];
+    _.forEach(options, opt => {
+        table.empty[opt] = {};
+        _.forEach(table[opt], key => table.empty[opt][key] = true);
+    });
+    _.forEach(table.debuffType.common, type => {
+        _.forEach(debuff[type], debuffer => {
+            if("rarity" in debuffer)
+                table.empty.rarity[debuffer.rarity] = false;
+            else
+                table.empty.rarity["空欄"] = false;
+                
+            if("AW" in debuffer)
+                table.empty.AW[debuffer.AW] = false;
+        });
+    });
+    _.forEach(debuff.mixture, debuffer => {
+        if("rarity" in debuffer)
+            table.empty.rarity[debuffer.rarity] = false;
+        else
+            table.empty.rarity["空欄"] = false;
+            
+        if("AW" in debuffer)
+            table.empty.AW[debuffer.AW] = false;
+    });
+    _.forEach(table.empty, (optObj, opt) => {
+        _.forEach(optObj, (isEmpty, key) => {
+            if(isEmpty) table[opt].splice(table[opt].indexOf(key), 1);
+        });
+    });
+    // 表の見出し
+    table.column = [];
+    table.column.push(...table.before);
+    table.column.push(...table.stats);
+    table.column.push(...table.after);
+    // 表のソート可能な列
+    table.sortable = [ "id", "rarity", ...table.stats, "attr", "dur", "value" ];
+    
+    // picked: 検索条件に合うものを入れる
+    // sortedBy: 今何でソートされているか
+    delete table.list;
+    table.list = {};
+    _.forEach(table.debuffType.common, type => table.list[type] = { picked: [], sortedBy: "id" });
+    _.forEach(table.debuffType.domain, type => table.list[type] = { picked: [], sortedBy: "id" });
+    _.forEach(table.debuffType.type, (obj, stat) =>
+        _.forEach(obj.list, type =>
+            table.list[`${stat}-${type}`] = { picked: [], sortedBy: "id" }
+        )
+    );
+    
     // フィルタ設定保存用
+    delete table.filter;
     table.filter = {};
-    table.filter.rarity = Object.assign(..._.map(table.rarity, key => ({ [key]: true })));
+    table.filter.rarity = {};
+    _.forEach(table.rarity, rarity => table.filter.rarity[rarity] = true);
     table.filter.AW = { "覚醒前": false, "覚醒後": true };
-    table.filter.debuffType = Object.assign(..._.map(table.debuffType.common, key => ({ [key]: true })));
-    table.filter.stats = Object.assign(..._.map(table.stats, key => ({ [key]: true })));
+    table.filter.debuffType = {};
+    _.forEach(table.debuffType.common, type => table.filter.debuffType[type] = true);
+    table.filter.stats = {};
+    _.forEach(table.stats, stat => table.filter.stats[stat] = true);
     table.filter.stats.forceMode = false;
     table.filter.stats.other = true;
     
+    // 覚醒前か後か(フィルタ用)
+    delete table.AW_rep;
+    table.AW_rep = {};
+    _.forEach(table.AW, (AW, i) => table.AW_rep[AW] = i <= table.AW.indexOf("覚醒前") ? "覚醒前" : "覚醒後");
+}
+
+// フィルタ設定生成
+table.CreateFilter = () => {
     // html
-    const CreateButtons = (element) => {
+    const CreateButtons = element => {
         _.forEach({ "全部ON": true, "全部OFF": false }, (checked, text) => {
             const newButton = document.createElement("button");
             newButton.type = "button";
@@ -105,7 +153,8 @@ table.CreateFilter = () => {
     newButton.innerHTML = "フィルタ";
     filters.appendChild(newButton);
     const filterCont = document.createElement("div");
-    filterCont.id = "filter-content"
+    filterCont.id = "filter-content";
+    filterCont.className = "is-unshown";
     filterCont.innerHTML = `
         <span style="font-size: 18px;">
             フィルタ設定
@@ -113,100 +162,49 @@ table.CreateFilter = () => {
     `;
     CreateButtons(filterCont);
     
-    let newFliterArea, newTitleArea, newTitle, newCheckboxArea, newLabel, newBr;
+    let newFliterArea, newTitleArea, newTitle, newCheckboxArea, newLabel, newCheckbox, newBr;
+    const CreateFilterArea = (title, filterType) => {
+        newFliterArea = document.createElement("div");
+        newFliterArea.className = "filter-area";
+        newTitleArea = document.createElement("div");
+        newTitleArea.className = "filter-title-area";
+        newTitle = document.createElement("span");
+        newTitle.className = "filter-title";
+        newTitle.innerHTML = title;
+        newTitleArea.appendChild(newTitle);
+        newFliterArea.appendChild(newTitleArea);
+        newCheckboxArea = document.createElement("div");
+        newCheckboxArea.id = `filter_${filterType}`;
+        newCheckboxArea.className = "filter-checkbox-area";
+        CreateButtons(newCheckboxArea);
+        newBr = document.createElement("br");
+        newCheckboxArea.appendChild(newBr);
+        CreatCheckbox(newCheckboxArea, filterType);
+        newFliterArea.appendChild(newCheckboxArea);
+        filterCont.appendChild(newFliterArea);
+    }
+    const CreatCheckbox = (element, filterType, except = []) => {
+        _.forEach(table.filter[filterType], (checked, key) => {
+            if(_.includes(except, key)) return;
+            newLabel = document.createElement("label");
+            newCheckbox = document.createElement("input");
+            newCheckbox.type = "checkbox";
+            if(checked) newCheckbox.setAttribute("checked", "true");
+            newCheckbox.setAttribute("onchange", `table.filter.${filterType}.${key}=this.checked; table.ApplyFilter()`);
+            newLabel.appendChild(newCheckbox);
+            newLabel.innerHTML += key in table.word ? table.word[key].replace(/<br>/g, "") : key;
+            element.appendChild(newLabel);
+        });
+    }
     
     // rarity
-    newFliterArea = document.createElement("div");
-    newFliterArea.className = "filter-area";
-    newTitleArea = document.createElement("div");
-    newTitleArea.className = "filter-title-area";
-    newTitle = document.createElement("span");
-    newTitle.className = "filter-title";
-    newTitle.innerHTML = "レアリティ";
-    newTitleArea.appendChild(newTitle);
-    newFliterArea.appendChild(newTitleArea);
-    newCheckboxArea = document.createElement("div");
-    newCheckboxArea.id = "filter_rarity";
-    newCheckboxArea.className = "filter-checkbox-area";
-    CreateButtons(newCheckboxArea);
-    newBr = document.createElement("br");
-    newCheckboxArea.appendChild(newBr);
-    _.forEach(table.rarity, elem => {
-        newLabel = document.createElement("label");
-        newLabel.innerHTML = `
-            <input
-                type="checkbox"
-                checked
-                onchange="table.filter.rarity['${elem}']=this.checked; table.ApplyFilter()"
-            >
-            ${elem}
-        `;
-        newCheckboxArea.appendChild(newLabel);
-    });
-    newFliterArea.appendChild(newCheckboxArea);
-    filterCont.appendChild(newFliterArea);
+    CreateFilterArea("レアリティ", "rarity");
     
     // AW
-    newFliterArea = document.createElement("div");
-    newFliterArea.className = "filter-area";
-    newTitleArea = document.createElement("div");
-    newTitleArea.className = "filter-title-area";
-    newTitle = document.createElement("span");
-    newTitle.className = "filter-title";
-    newTitle.innerHTML = "覚醒";
-    newTitleArea.appendChild(newTitle);
-    newFliterArea.appendChild(newTitleArea);
-    newCheckboxArea = document.createElement("div");
-    newCheckboxArea.id = "filter_AW";
-    newCheckboxArea.className = "filter-checkbox-area";
-    CreateButtons(newCheckboxArea);
-    newBr = document.createElement("br");
-    newCheckboxArea.appendChild(newBr);
-    _.forEach([ "覚醒前", "覚醒後" ], elem => {
-        newLabel = document.createElement("label");
-        newLabel.innerHTML = `
-            <input
-                type="checkbox"
-                ${elem === "覚醒前" ? "" : `checked
-                `}onchange="table.filter.AW['${elem}']=this.checked; table.ApplyFilter()"
-            >
-            ${elem}
-        `;
-        newCheckboxArea.appendChild(newLabel);
-    });
-    newFliterArea.appendChild(newCheckboxArea);
-    filterCont.appendChild(newFliterArea);
+    CreateFilterArea("覚醒", "AW");
     
-    // debuffType
-    newFliterArea = document.createElement("div");
-    newFliterArea.className = "filter-area";
-    newTitleArea = document.createElement("div");
-    newTitleArea.className = "filter-title-area";
-    newTitle = document.createElement("span");
-    newTitle.className = "filter-title";
-    newTitle.innerHTML = "区分";
-    newTitleArea.appendChild(newTitle);
-    newFliterArea.appendChild(newTitleArea);
-    newCheckboxArea = document.createElement("div");
-    newCheckboxArea.id = "filter_debuffType";
-    newCheckboxArea.className = "filter-checkbox-area";
-    CreateButtons(newCheckboxArea);
-    newBr = document.createElement("br");
-    newCheckboxArea.appendChild(newBr);
-    _.forEach(table.debuffType.common, elem => {
-        newLabel = document.createElement("label");
-        newLabel.innerHTML = `
-            <input
-                type="checkbox"
-                checked
-                onchange="table.filter.debuffType.${elem}=this.checked; table.ApplyFilter()"
-            >
-            ${table.word[elem]}
-        `;
-        newCheckboxArea.appendChild(newLabel);
-    });
-    newFliterArea.appendChild(newCheckboxArea);
-    filterCont.appendChild(newFliterArea);
+    // buffType
+    CreateFilterArea("区分", "debuffType");
     
     // stats
     newFliterArea = document.createElement("div");
@@ -217,7 +215,7 @@ table.CreateFilter = () => {
     newTitle.className = "filter-title tooltip-ts";
     newTitle.setAttribute(
         "data-tippy-content"
-        , "チェックしたバフを持つユニットをすべて表示"
+        , "チェックしたバフを持つユニットがすべて表示される"
     );
     newTitle.innerHTML = "種類";
     newTitleArea.appendChild(newTitle);
@@ -240,18 +238,7 @@ table.CreateFilter = () => {
     CreateButtons(newCheckboxArea);
     newBr = document.createElement("br");
     newCheckboxArea.appendChild(newBr);
-    _.forEach(table.stats, elem => {
-        newLabel = document.createElement("label");
-        newLabel.innerHTML = `
-            <input
-                type="checkbox"
-                checked
-                onchange="table.filter.stats.${elem}=this.checked; table.ApplyFilter()"
-            >
-            ${table.word[elem].replace(/<br>/g, "")}
-        `;
-        newCheckboxArea.appendChild(newLabel);
-    });
+    CreatCheckbox(newCheckboxArea, "stats", [ "forceMode", "other" ]);
     /*
     newLabel = document.createElement("label");
     newLabel.className = "tooltip-b";
@@ -276,33 +263,33 @@ table.CreateFilter = () => {
 // フィルタ表示/非表示
 table.ToggleFilterShown = (_this) => {
     const filterCont = document.getElementById("filter-content");
-    if(filterCont.classList.contains("is-shown")) {
-        filterCont.classList.remove("is-shown");
-        _this.innerHTML = "フィルタ";
-    } else {
-        filterCont.classList.add("is-shown");
+    if(filterCont.classList.contains("is-unshown")) {
+        filterCont.classList.remove("is-unshown");
         _this.innerHTML = "閉じる";
+    } else {
+        filterCont.classList.add("is-unshown");
+        _this.innerHTML = "フィルタ";
     }
 }
 // フィルタ一括ON/OFF
 table.ToggleAllFilter = (_element, _checked) => {
     const labels = _element.getElementsByTagName("label");
     _.forEach(labels, label => {
-        if(label.classList.contains("except")) return;
-        label.firstElementChild.checked = _checked;
+        if(!label.classList.contains("except")) label.firstElementChild.checked = _checked;
     });
     
-    const category = _element.id.substr(_element.id.indexOf("_") + 1);
-    if(category in table.filter)
+    const category = _element.id.substring(_element.id.indexOf("_") + 1);
+    if(category in table.filter) {
         _.forEach(table.filter[category], (_, key) => {
             if(key !== "forceMode") table.filter[category][key] = _checked;
         });
-    else
+    } else {
         _.forEach(table.filter, optObj =>
             _.forEach(optObj, (_, key) => {
-                optObj[key] = _checked;
+                if(key !== "forceMode") optObj[key] = _checked;
             })
         );
+    }
     
     table.ApplyFilter();
 }
@@ -311,151 +298,73 @@ table.ToggleAllFilter = (_element, _checked) => {
 table.CreateTable = () => {
     const tables = document.getElementById("tables");
     tables.innerHTML = "";
-    
-    _.forEach(table.debuffType.common, type => {
-        // 検索条件に合うdebufferをpickedに入れる
-        table.list[type].picked = _.filter(debuff[type], debuffer => target.IsMatch(debuffer.target));
-        
-        const newTableArea = document.createElement("div");
-        newTableArea.id = `table-area_${type}`;
-        newTableArea.className = "table-area";
-        const newTableName = document.createElement("span");
-        newTableName.className = "table-name";
-        newTableName.innerHTML = `${table.word[type]}デバフ`;
-        newTableArea.appendChild(newTableName);
-        const newScroller = document.createElement("div");
-        newScroller.className = "table-scroll";
-        const newTable = document.createElement("table");
-        newTable.id = `table_${type}`;
-        const newThead = document.createElement("thead");
-        let newTr = document.createElement("tr");
-        _.forEach(table.column, elem => {
-            const newTh = document.createElement("th");
-            if(_.includes(table.sortable, elem)) {
-                newTh.className = "sortable";
-                newTh.setAttribute("onclick", `table.Sort("${type}", "${elem}")`);
-            }
-            newTh.innerHTML = table.word[elem];
-            newTr.appendChild(newTh);
-        });
-        newThead.appendChild(newTr);
-        newTable.appendChild(newThead);
-        
-        const newTbody = document.createElement("tbody");
-        _.forEach(table.list[type].picked, debuffer => {
-            newTr = document.createElement("tr");
-            _.forEach(table.before, elem => {
-                const newTd = document.createElement("td");
-                if(elem in debuffer) {
-                    newTd.innerHTML = Array.isArray(debuffer[elem]) ? debuffer[elem].join("<br>") : debuffer[elem];
-                }
-                newTr.appendChild(newTd);
+    _.forEach(table.list, type => type.picked.splice(0));
+    // 共通部分
+    _.forEach(table.debuffType.common, type =>
+        table.list[type].picked = _.filter(debuff[type], debuffer => target.IsMatch(debuffer.target))
+    );
+    table.CreateTableSub(tables, table.debuffType.common, true);
+    // 非共通部分
+    switch(table.mixture) {
+        case "domain":
+            _.forEach(debuff.mixture, debuffer => {
+                if(target.IsMatch(debuffer.target)) table.list[debuffer.domain].picked.push(debuffer);
             });
-            _.forEach(table.stats, elem => {
-                const newTd = document.createElement("td");
-                if(elem in debuffer.stats) {
-                    newTd.className = "cell-filled";
-                    newTd.innerHTML = Array.isArray(debuffer.stats[elem]) ? debuffer.stats[elem].join("<br>") : debuffer.stats[elem];
-                }
-                newTr.appendChild(newTd);
+            table.CreateTableSub(tables, table.debuffType.domain, false);
+            break;
+        case "type":
+            _.forEach(debuff.mixture, debuffer => {
+                if(!target.IsMatch(debuffer.target)) return;
+                _.forEach(debuffer.stats, (obj, stat) => {
+                    if("type" in obj) table.list[`${stat}-${obj.type}`].picked.push(debuffer);
+                })
             });
-            
-            let newTd = document.createElement("td");
-            if("attr" in debuffer) {
-                if(debuffer.attr[0] !== "?")
-                    newTd.className = `cell-attr_${table.eng[debuffer.attr]}`;
-                newTd.innerHTML = Array.isArray(debuffer.attr) ? debuffer.attr.join("<br>") : debuffer.attr;
-            }
-            newTr.appendChild(newTd);
-            
-            newTd = document.createElement("td");
-            if("dur" in debuffer) {
-                newTd.innerHTML = Array.isArray(debuffer.dur) ? debuffer.dur.join("<br>") : debuffer.dur;
-            }
-            newTr.appendChild(newTd);
-            
-            newTd = document.createElement("td");
-            if("target" in debuffer) {
-                let textArr = [];
-                if(Array.isArray(debuffer.target)) {
-                    _.forEach(debuffer.target, and => {
-                        let textArrSub = [ "" ];
-                        _.forEach(and, (arr, cat) => {
-                            _.forEach(textArrSub, (text, i) =>
-                                textArrSub[i] = _.map(
-                                    arr
-                                    , target => `${text}${text !== "" ? "&" : ""}${target}`
-                                )
-                            );
-                            textArrSub = _.flatten(textArrSub);
-                        });
-                        textArr.push(...textArrSub);
-                    });
-                } else {
-                    textArr.push("");
-                    _.forEach(debuffer.target, (arr, cat) => {
-                        _.forEach(textArr, (text, i) => 
-                            textArr[i] = _.map(
-                                arr
-                                , target => `${text}${text !== "" ? "&" : ""}${target}`
-                            )
-                        );
-                        textArr = _.flatten(textArr);
-                    });
-                }
-                newTd.innerHTML = `
-                    <span class="inline-block">${textArr.join(`、</span>
-                    <span class="inline-block">`)}</span>
-                `;
-            }
-            newTr.appendChild(newTd);
-            
-            newTd = document.createElement("td");
-            if("note" in debuffer) {
-                if("other" in debuffer.stats) newTd.className = "cell-filled";
-                newTd.innerHTML = Array.isArray(debuffer.note) ? debuffer.note.join("<br>") : debuffer.note;
-            }
-            newTr.appendChild(newTd);
-            newTbody.appendChild(newTr);
-        });
-        newTable.appendChild(newTbody);
-        newScroller.appendChild(newTable);
-        newTableArea.appendChild(newScroller);
-        tables.appendChild(newTableArea);
-    });
-    const newMixture = document.createElement("div");
-    table.CreateTable_mixture[table.mixture](newMixture);
+            _.forEach(table.debuffType.type, (obj, stat) => {
+                if(obj.list.length === 0) return;
+                
+                const newTableArea = document.createElement("div");
+                newTableArea.id = `table-area_${stat}`;
+                newTableArea.className = "table-area";
+                newTableArea.style.backgroundColor = obj.color;
+                const newStat = document.createElement("span");
+                newStat.className = "table-stat";
+                newStat.innerHTML = `${table.word[stat].replace(/<br>/g, "")}デバフ`;
+                newTableArea.appendChild(newStat);
+                table.CreateTableSub(newTableArea, obj.list, false, stat);
+                tables.appendChild(newTableArea);
+            });
+            break;
+    }
     
     table.ApplyFilter();
 }
-table.CreateTable_mixture = {};
-// 効果範囲優先
-table.CreateTable_mixture.domain = (_div) => {
-    // 検索条件に合うdebufferをpickedに入れる
-    _.forEach(table.debuffType.domain, type => table.list[type].picked.splice(0));
-    _.forEach(debuff.mixture, debuffer => {
-        if(!target.IsMatch(debuffer.target)) return;
-        table.list[debuffer.domain].picked.push(debuffer);
-    });
-    _.forEach(table.debuffType.domain, type => {
+table.CreateTableSub = (_element, _list, _isCommon, _stat = "") => {
+    const isDomain = !_isCommon && table.mixture === "domain";
+    const isType = !_isCommon && table.mixture === "type";
+    const column = isType ? [ ...table.before, "value", "target", "note" ] : table.column;
+    _.forEach(_list, type => {
+        const name = isType ? `${_stat}-${type}` : type;
         const newTableArea = document.createElement("div");
-        newTableArea.id = `table-area_${type}`;
-        newTableArea.className = "table-area";
+        newTableArea.id = `table-area_${name}`;
+        newTableArea.className = isType ? "table-area-sub inline-block" : "table-area";
         const newTableName = document.createElement("span");
         newTableName.className = "table-name";
-        newTableName.innerHTML = `効果範囲：${table.word[type]}`;
+        newTableName.innerHTML =
+            _isCommon ? `${table.word[type]}デバフ`
+            : isDomain ? `効果範囲：${table.word[type]}`
+            : `区分：${table.word[type]}`;
         newTableArea.appendChild(newTableName);
         const newScroller = document.createElement("div");
         newScroller.className = "table-scroll";
         const newTable = document.createElement("table");
-        newTable.id = `table_${type}`;
+        newTable.id = `table_${name}`;
         const newThead = document.createElement("thead");
         let newTr = document.createElement("tr");
-        _.forEach(table.column, elem => {
+        _.forEach(column, elem => {
             const newTh = document.createElement("th");
             if(_.includes(table.sortable, elem)) {
                 newTh.className = "sortable";
-                newTh.setAttribute("onclick", `table.Sort("${type}", "${elem}")`);
+                newTh.setAttribute("onclick", `table.Sort("${name}", "${elem === "value" ? _stat : elem}")`);
             }
             newTh.innerHTML = table.word[elem];
             newTr.appendChild(newTh);
@@ -464,7 +373,7 @@ table.CreateTable_mixture.domain = (_div) => {
         newTable.appendChild(newThead);
         
         const newTbody = document.createElement("tbody");
-        _.forEach(table.list[type].picked, debuffer => {
+        _.forEach(table.list[name].picked, debuffer => {
             newTr = document.createElement("tr");
             _.forEach(table.before, elem => {
                 const newTd = document.createElement("td");
@@ -474,24 +383,46 @@ table.CreateTable_mixture.domain = (_div) => {
                 newTr.appendChild(newTd);
             });
             const showType = [];
-            _.forEach(table.stats, elem => {
-                const newTd = document.createElement("td");
-                if(elem in debuffer.stats) {
-                    newTd.className = "cell-filled";
-                    newTd.innerHTML = Array.isArray(debuffer.stats[elem].value)
-                        ? debuffer.stats[elem].value.join("<br>")
-                        : debuffer.stats[elem].value;
-                    if(debuffer.stats[elem].type !== debuffer.domain)
-                        showType.push(elem);
+            if(isType) {
+                let newTd = document.createElement("td");
+                newTd.className = "cell-filled";
+                newTd.innerHTML = Array.isArray(debuffer.stats[_stat].value)
+                    ? debuffer.stats[_stat].value.join("<br>")
+                    : debuffer.stats[_stat].value;
+                newTr.appendChild(newTd);
+            } else {
+                _.forEach(table.stats, elem => {
+                    const newTd = document.createElement("td");
+                    if(elem in debuffer.stats) {
+                        newTd.className = "cell-filled";
+                        if(_isCommon)
+                            newTd.innerHTML = Array.isArray(debuffer.stats[elem])
+                                ? debuffer.stats[elem].join("<br>")
+                                : debuffer.stats[elem];
+                        else {
+                            newTd.innerHTML = Array.isArray(debuffer.stats[elem].value)
+                                ? debuffer.stats[elem].value.join("<br>")
+                                : debuffer.stats[elem].value;
+                            if(debuffer.stats[elem].type !== debuffer.domain)
+                                showType.push(elem);
+                        }
+                    }
+                    newTr.appendChild(newTd);
+                });
+                // attr
+                let newTd = document.createElement("td");
+                if("attr" in debuffer) {
+                    if(debuffer.attr[0] !== "?") newTd.className = `cell-attr_${table.eng[debuffer.attr]}`;
+                    newTd.innerHTML = Array.isArray(debuffer.attr) ? debuffer.attr.join("<br>") : debuffer.attr;
                 }
                 newTr.appendChild(newTd);
-            });
-            // attr
-            let newTd = document.createElement("td");
-            newTr.appendChild(newTd);
-            // dur
-            newTd = document.createElement("td");
-            newTr.appendChild(newTd);
+                // dur
+                newTd = document.createElement("td");
+                if("dur" in debuffer) {
+                    newTd.innerHTML = Array.isArray(debuffer.dur) ? debuffer.dur.join("<br>") : debuffer.dur;
+                }
+                newTr.appendChild(newTd);
+            }
             
             newTd = document.createElement("td");
             if("target" in debuffer) {
@@ -499,12 +430,9 @@ table.CreateTable_mixture.domain = (_div) => {
                 if(Array.isArray(debuffer.target)) {
                     _.forEach(debuffer.target, and => {
                         let textArrSub = [ "" ];
-                        _.forEach(and, (arr, cat) => {
+                        _.forEach(and, arr => {
                             _.forEach(textArrSub, (text, i) =>
-                                textArrSub[i] = _.map(
-                                    arr
-                                    , target => `${text}${text !== "" ? "&" : ""}${target}`
-                                )
+                                textArrSub[i] = _.map(arr, target =>`${text}${text !== "" ? "&" : ""}${target}`)
                             );
                             textArrSub = _.flatten(textArrSub);
                         });
@@ -512,12 +440,9 @@ table.CreateTable_mixture.domain = (_div) => {
                     });
                 } else {
                     textArr.push("");
-                    _.forEach(debuffer.target, (arr, cat) => {
+                    _.forEach(debuffer.target, arr => {
                         _.forEach(textArr, (text, i) => 
-                            textArr[i] = _.map(
-                                arr
-                                , target => `${text}${text !== "" ? "&" : ""}${target}`
-                            )
+                            textArr[i] = _.map(arr, target => `${text}${text !== "" ? "&" : ""}${target}`)
                         );
                         textArr = _.flatten(textArr);
                     });
@@ -530,6 +455,8 @@ table.CreateTable_mixture.domain = (_div) => {
             newTr.appendChild(newTd);
             
             newTd = document.createElement("td");
+            const showDomain = isType
+                && ((debuffer.domain === "area" && type !== "area") || (debuffer.domain === "global" && type === "area"));
             newTd.innerHTML = _.map(showType, stat =>
                 `${table.word[stat].replace(/<br>/g, "")}：${table.word[debuffer.stats[stat].type]}`
             ).join("<br>");
@@ -537,142 +464,16 @@ table.CreateTable_mixture.domain = (_div) => {
                 if(showType.length !== 0) newTd.innerHTML += "<br>";
                 if("other" in debuffer.stats) newTd.className = "cell-filled";
                 newTd.innerHTML += Array.isArray(debuffer.note) ? debuffer.note.join("<br>") : debuffer.note;
+                if(showDomain) newTd.innerHTML += "<br>";
             }
+            if(showDomain) newTd.innerHTML += table.word[debuffer.domain];
             newTr.appendChild(newTd);
             newTbody.appendChild(newTr);
         });
         newTable.appendChild(newTbody);
         newScroller.appendChild(newTable);
         newTableArea.appendChild(newScroller);
-        tables.appendChild(newTableArea);
-    });
-}
-// 区分優先
-table.CreateTable_mixture.type = (_div) => {
-    // 検索条件に合うdebufferをpickedに入れる
-    _.forEach(table.debuffType.type, (obj, stat) =>
-        _.forEach(obj.list, type =>
-            table.list[`${stat}-${type}`].picked.splice(0)
-        )
-    );
-    _.forEach(debuff.mixture, debuffer => {
-        if(!target.IsMatch(debuffer.target)) return;
-        _.forEach(debuffer.stats, (obj, stat) => {
-            if(!("type" in obj)) return;
-            table.list[`${stat}-${obj.type}`].picked.push(debuffer);
-        })
-    });
-    _.forEach(table.debuffType.type, (obj, stat) => {
-        if(obj.list.length === 0) return;
-        
-        const newTableArea = document.createElement("div");
-        newTableArea.id = `table-area_${stat}`;
-        newTableArea.className = "table-area";
-        newTableArea.style.backgroundColor = obj.color;
-        const newStat = document.createElement("span");
-        newStat.className = "table-stat";
-        newStat.innerHTML = `${table.word[stat].replace(/<br>/g, "")}デバフ`;
-        newTableArea.appendChild(newStat);
-        
-        _.forEach(obj.list, type => {
-            const name = `${stat}-${type}`;
-            const newTableAreaSub = document.createElement("div");
-            newTableAreaSub.id = `table-area_${name}`;
-            newTableAreaSub.className = "table-area-sub inline-block";
-            const newTableName = document.createElement("span");
-            newTableName.className = "table-name";
-            newTableName.innerHTML = `区分：${table.word[type]}`;
-            newTableAreaSub.appendChild(newTableName);
-            const newScroller = document.createElement("div");
-            newScroller.className = "table-scroll";
-            const newTable = document.createElement("table");
-            newTable.id = `table_${name}`;
-            const newThead = document.createElement("thead");
-            let newTr = document.createElement("tr");
-            _.forEach([ ...table.before, "value", "target", "note" ], elem => {
-                const newTh = document.createElement("th");
-                if(_.includes(table.sortable, elem)) {
-                    newTh.className = "sortable";
-                    newTh.setAttribute("onclick", `table.Sort("${name}", "${elem === "value" ? stat : elem}")`);
-                }
-                newTh.innerHTML = table.word[elem];
-                newTr.appendChild(newTh);
-            });
-            newThead.appendChild(newTr);
-            newTable.appendChild(newThead);
-            
-            const newTbody = document.createElement("tbody");
-            _.forEach(table.list[`${name}`].picked, debuffer => {
-                newTr = document.createElement("tr");
-                _.forEach(table.before, elem => {
-                    const newTd = document.createElement("td");
-                    if(elem in debuffer) {
-                        newTd.innerHTML = Array.isArray(debuffer[elem]) ? debuffer[elem].join("<br>") : debuffer[elem];
-                    }
-                    newTr.appendChild(newTd);
-                });
-                let newTd = document.createElement("td");
-                newTd.className = "cell-filled";
-                newTd.innerHTML = Array.isArray(debuffer.stats[stat].value)
-                    ? debuffer.stats[stat].value.join("<br>")
-                    : debuffer.stats[stat].value;
-                newTr.appendChild(newTd);
-                
-                newTd = document.createElement("td");
-                if("target" in debuffer) {
-                    let textArr = [];
-                    if(Array.isArray(debuffer.target)) {
-                        _.forEach(debuffer.target, and => {
-                            let textArrSub = [ "" ];
-                            _.forEach(and, (arr, cat) => {
-                                _.forEach(textArrSub, (text, i) =>
-                                    textArrSub[i] = _.map(
-                                        arr
-                                        , target => `${text}${text !== "" ? "&" : ""}${target}`
-                                    )
-                                );
-                                textArrSub = _.flatten(textArrSub);
-                            });
-                            textArr.push(...textArrSub);
-                        });
-                    } else {
-                        textArr.push("");
-                        _.forEach(debuffer.target, (arr, cat) => {
-                            _.forEach(textArr, (text, i) => 
-                                textArr[i] = _.map(
-                                    arr
-                                    , target => `${text}${text !== "" ? "&" : ""}${target}`
-                                )
-                            );
-                            textArr = _.flatten(textArr);
-                        });
-                    }
-                    newTd.innerHTML = `
-                        <span class="inline-block">${textArr.join(`、</span>
-                        <span class="inline-block">`)}</span>
-                    `;
-                }
-                newTr.appendChild(newTd);
-                
-                newTd = document.createElement("td");
-                const showDomain = (debuffer.domain === "area" && type !== "area")
-                    || (debuffer.domain === "global" && type === "area");
-                if("note" in debuffer) {
-                    if("other" in debuffer.stats) newTd.className = "cell-filled";
-                    newTd.innerHTML = Array.isArray(debuffer.note) ? debuffer.note.join("<br>") : debuffer.note;
-                    if(showDomain) newTd.innerHTML += "<br>";
-                }
-                if(showDomain) newTd.innerHTML += table.word[debuffer.domain];
-                newTr.appendChild(newTd);
-                newTbody.appendChild(newTr);
-            });
-            newTable.appendChild(newTbody);
-            
-            newScroller.appendChild(newTable);
-            newTableAreaSub.appendChild(newScroller);
-            newTableArea.appendChild(newTableAreaSub);
-        });
-        tables.appendChild(newTableArea);
+        _element.appendChild(newTableArea);
     });
 }
 
@@ -694,10 +495,10 @@ table.ApplyFilter = () => {
         const tableArea = document.getElementById(`table-area_${type}`);
         if((type in table.filter.debuffType && !table.filter.debuffType[type])
         || (isStat && !table.filter.stats[type])) {
-            tableArea.style.display = "none";
+            tableArea.classList.add("is-unshown");
             return;
         }
-        tableArea.style.display = "block";
+        tableArea.classList.remove("is-unshown");
         
         // 行の処理
         const HideRows = (tableArea, tableName) => {
@@ -708,17 +509,17 @@ table.ApplyFilter = () => {
                 if(((!("rarity" in debuffer) && table.filter.rarity["空欄"]) || table.filter.rarity[debuffer.rarity])
                     && (!("AW" in debuffer) || table.filter.AW[table.AW_rep[debuffer.AW]])
                     && _.some(debuffer.stats, (_, stat) => table.filter.stats[stat])) {
-                    trs[i].style.display = "table-row";
+                    trs[i].classList.remove("is-unshown");
                     shownRowIndexes.push(i);
                 } else
-                    trs[i].style.display = "none";
+                    trs[i].classList.add("is-unshown");
             });
             const tableNameElem = tableArea.getElementsByClassName("table-name")[0];
             if(shownRowIndexes.length === 0) {
-                debuffTable.parentElement.style.display = "none";
+                debuffTable.parentElement.classList.add("is-unshown");
                 tableNameElem.classList.add("table-empty");
             } else {
-                debuffTable.parentElement.style.display = "block";
+                debuffTable.parentElement.classList.remove("is-unshown");
                 tableNameElem.classList.remove("table-empty");
             }
             return shownRowIndexes;
@@ -744,8 +545,8 @@ table.ApplyFilter = () => {
                 const ths = debuffTable.querySelectorAll(`th:nth-child(${colIndex})`);
                 const tds = debuffTable.querySelectorAll(`td:nth-child(${colIndex})`);
                 if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === "")) {
-                    _.forEach(ths, th => th.style.display = "none");
-                    _.forEach(tds, td => td.style.display = "none");
+                    _.forEach(ths, th => th.classList.add("is-unshown"));
+                    _.forEach(tds, td => td.classList.add("is-unshown"));
                 }
                 table.Sort(name, "id", false);
             });
@@ -765,8 +566,7 @@ table.ApplyFilter = () => {
         const debuffTable = tableArea.getElementsByTagName("table")[0];
         const empty = [];
         let colIndex = table.before.indexOf("AW") + 1;
-        let ths;
-        let tds;
+        let ths, tds;
         _.forEach([ "AW", "skill" ], colName => {
             ths = debuffTable.querySelectorAll(`th:nth-child(${colIndex})`);
             tds = debuffTable.querySelectorAll(`td:nth-child(${colIndex})`);
@@ -784,12 +584,12 @@ table.ApplyFilter = () => {
             tds = debuffTable.querySelectorAll(`td:nth-child(${colIndex})`);
             if(!ths || !tds) return;
             if(table.filter.stats.forceMode && !isShown) {
-                _.forEach(ths, th => th.style.display = "none");
-                _.forEach(tds, td => td.style.display = "none");
+                _.forEach(ths, th => th.classList.add("is-unshown"));
+                _.forEach(tds, td => td.classList.add("is-unshown"));
                 empty.push(stat);
             } else {
-                _.forEach(ths, th => th.style.display = "table-cell");
-                _.forEach(tds, td => td.style.display = "table-cell");
+                _.forEach(ths, th => th.classList.remove("is-unshown"));
+                _.forEach(tds, td => td.classList.remove("is-unshown"));
                 if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === ""))
                     empty.push(stat);
             }
@@ -812,8 +612,8 @@ table.ApplyFilter = () => {
             ths = debuffTable.querySelectorAll(`th:nth-child(${colIndex})`);
             tds = debuffTable.querySelectorAll(`td:nth-child(${colIndex})`);
             if(!ths || !tds) return;
-            _.forEach(ths, th => th.style.display = "none");
-            _.forEach(tds, td => td.style.display = "none");
+            _.forEach(ths, th => th.classList.add("is-unshown"));
+            _.forEach(tds, td => td.classList.add("is-unshown"));
         });
         
         table.Sort(type, "id", false);
@@ -829,9 +629,7 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
         && !_.includes(table.debuffType.common, _debuffType)
         && _.includes(table.stats, _colName);
     if(_allowReverse && _colName === table.list[_debuffType].sortedBy) {
-        if(_colName === "id"
-        || _colName === "rarity"
-        || isSub)
+        if(_colName === "id" || _colName === "rarity" || isSub)
             trs_array.reverse();
         else {
             const colIndex = table.column.indexOf(_colName);
@@ -911,15 +709,15 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
                 switch(text_a[0]) {
                     case "×":
                         priority_a = 2;
-                        value_a = Number.parseFloat(text_a.substr(1));
+                        value_a = Number.parseFloat(text_a.substring(1));
                         break;
                     case "*":
                         priority_a = 3;
-                        value_a = Number.parseFloat(text_a.substr(1));
+                        value_a = Number.parseFloat(text_a.substring(1));
                         break;
                     case "m":
                         priority_a = 4;
-                        value_a = Number.parseFloat(text_a.substr(3));
+                        value_a = Number.parseFloat(text_a.substring(3));
                         break;
                     default:
                         if(_.includes(text_a, "%")) priority_a = 0;
@@ -928,15 +726,15 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
                 switch(text_b[0]) {
                     case "×":
                         priority_b = 2;
-                        value_b = Number.parseFloat(text_b.substr(1));
+                        value_b = Number.parseFloat(text_b.substring(1));
                         break;
                     case "*":
                         priority_b = 3;
-                        value_b = Number.parseFloat(text_b.substr(1));
+                        value_b = Number.parseFloat(text_b.substring(1));
                         break;
                     case "m":
                         priority_b = 4;
-                        value_b = Number.parseFloat(text_b.substr(3));
+                        value_b = Number.parseFloat(text_b.substring(3));
                         break;
                     default:
                         if(_.includes(text_b, "%")) priority_b = 0;
@@ -954,9 +752,10 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
     }
     
     _.forEach(
-        _.map(trs_array, tr => [ tr.style.display, tr.innerHTML ])
+        _.map(trs_array, tr => [ [ ...tr.classList ], tr.innerHTML ])
         , (html, i) => {
-            trs[i].style.display = html[0];
+            trs[i].classList.remove(...trs[i].classList);
+            trs[i].classList.add(...html[0]);
             trs[i].innerHTML = html[1];
         }
     );

@@ -12,40 +12,44 @@ target.attr = [
 target.selected = {};
 
 target.CreateForm = () => {
+    const targetInfo = document.getElementById("target-info");
+    targetInfo.innerHTML = "";
+    const newTable = document.createElement("table");
+    newTable.setAttribute("border", "1");
+    
+    let newTr, newTh, newTd, newForm, newLabel, newCheckbox, newRadio, newBr;
+    
+    /*
     const CreateRadioForm = (category, tr, colspan) => {
-        const newTh = document.createElement("th");
+        newTh = document.createElement("th");
         newTh.colSpan = colspan;
         newTh.innerHTML = target.word[category];
         tr.appendChild(newTh);
-        const newTd = document.createElement("td");
-        const newForm = document.createElement("form");
+        newTd = document.createElement("td");
+        newForm = document.createElement("form");
         newForm.id = `target-info_${category}`;
         
-        const CreateRadio = value => {
-            const newLabel = document.createElement("label");
-            const newRadio = document.createElement("input");
-            newRadio.type = "radio";
-            newRadio.name = "options";
-            newRadio.value = value;
-            newLabel.appendChild(newRadio);
-            newLabel.innerHTML += value;
-            newForm.appendChild(newLabel);
-        }
-        _.forEach([ "すべて含める", "すべて含めない" ], (value, i) => CreateRadio(value));
-        const newBr = document.createElement("br");
+        CreateRadio(newForm, "すべて含める");
+        CreateRadio(newForm, "すべて含めない");
+        newBr = document.createElement("br");
         newForm.appendChild(newBr);
-        _.forEach(target[category], value => CreateRadio(value));
+        _.forEach(target[category], value => CreateRadio(newForm, value));
         newForm.options[1].checked = true;
         newTd.appendChild(newForm);
         tr.appendChild(newTd);
         newTable.appendChild(tr);
     }
-    const targetInfo = document.getElementById("target-info");
-    targetInfo.innerHTML = "";
-    const newTable = document.createElement("table");
-    newTable.border = "1";
-    
-    let newTr, newTh, newTd, newLabel, newCheckbox, newBr;
+    const CreateRadio = (form, value) => {
+        newLabel = document.createElement("label");
+        newRadio = document.createElement("input");
+        newRadio.type = "radio";
+        newRadio.name = "options";
+        newRadio.value = value;
+        newLabel.appendChild(newRadio);
+        newLabel.innerHTML += value;
+        form.appendChild(newLabel);
+    }
+    */
     
     // attr
     newTr = document.createElement("tr");
@@ -143,9 +147,7 @@ target.CreateForm = () => {
 // 属性一括ON/OFF
 target.ToggleAllAttr = _checked => {
     const othersForm = document.getElementById("target-info_attr");
-    _.forEach(othersForm.options, option => {
-        option.checked = _checked;
-    });
+    _.forEach(othersForm.options, option => { option.checked = _checked; });
 }
 
 // 検索実行
@@ -175,11 +177,9 @@ target.IsMatch = _target => {
             let matchSub = true;
             _.forEach(and, (arr, cat) => {
                 if(Array.isArray(target.selected[cat]))
-                    matchSub &= _.reduce(
-                        target.selected[cat]
-                        , (result, selected) => result |= _.includes(arr, selected)
-                        , false
-                    );
+                    matchSub &= _.reduce(target.selected[cat], (result, selected) =>
+                        result |= _.includes(arr, selected)
+                    , false);
                 else matchSub &= _.includes(arr, target.selected[cat]);
             });
             match |= matchSub;
@@ -189,11 +189,9 @@ target.IsMatch = _target => {
         match = true;
         _.forEach(_target, (arr, cat) => {
             if(Array.isArray(target.selected[cat]))
-                match &= _.reduce(
-                    target.selected[cat]
-                    , (result, selected) => result |= _.includes(arr, selected)
-                    , false
-                );
+                match &= _.reduce(target.selected[cat], (result, selected) =>
+                    result |= _.includes(arr, selected)
+                , false);
             else match &= _.includes(arr, target.selected[cat]);
         });
     }

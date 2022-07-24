@@ -55,7 +55,7 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
-        name: "王子【神槍】", cl: "王子", skill: "通常"
+        name: "王子【ドゥン】", cl: "王子", skill: "通常"
         , stats: {
             def: { value: "-40%", type: "area" }
             , mr: { value: "-40%", type: "area" }
@@ -63,7 +63,7 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
-        name: "王子【神槍】", cl: "王子", skill: "通常(奇)"
+        name: "王子【水着】", cl: "王子", skill: "通常(奇)"
         , stats: {
             def: { value: "-30%", type: "area" }
             , mr: { value: "-30%", type: "area" }
@@ -159,7 +159,7 @@ debuff.mixture = [
             atk: { value: "-15%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "物理"
+        , note: [ "物理", "永続" ]
     }
     , {
         name: "アンジェリーネ", rarity: "黒", cl: "プリンセス", AW: "覚醒後", skill: "通常"
@@ -167,7 +167,7 @@ debuff.mixture = [
             atk: { value: "-15%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "物理"
+        , note: [ "物理", "永続" ]
     }
     , {
         name: "アンジェリーネ", rarity: "黒", cl: "プリンセス", AW: "覚醒後", skill: "覚醒"
@@ -320,6 +320,7 @@ debuff.mixture = [
             , mr: { value: "-15%", type: "global" }
         }
         , domain: "global"
+        , note: "永続"
     }
     , {
         name: "ルヴェア", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "通常"
@@ -328,6 +329,7 @@ debuff.mixture = [
             , mr: { value: "-15%", type: "global" }
         }
         , domain: "global"
+        , note: "永続"
     }
     , {
         name: "ルヴェア/バレンタイン", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "覚醒"
@@ -412,6 +414,7 @@ debuff.mixture = [
             mr: { value: "-20", type: "fixed" }
         }
         , domain: "global"
+        , note: "永続"
     }
     , {
         name: "シルセス", rarity: "黒", cl: "メイジアーマー", AW: "覚醒後", skill: "通常"
@@ -419,6 +422,7 @@ debuff.mixture = [
             mr: { value: "-20", type: "fixed" }
         }
         , domain: "global"
+        , note: "永続"
     }
     , {
         name: "シルセス", rarity: "黒", cl: "メイジアーマー", AW: "覚醒後", skill: "覚醒"
@@ -447,6 +451,7 @@ debuff.mixture = [
             mr: { value: "-20", type: "fixed" }
         }
         , domain: "global"
+        , note: "永続"
     }
     , {
         name: "スイレン", rarity: "白", cl: "ドラゴンライダー", AW: "覚醒前", skill: "通常"
@@ -492,7 +497,7 @@ debuff.mixture = [
         }
         , domain: "global"
         , target: { attr: [ "魚人", "水棲" ] }
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "サンドラ/水着", rarity: "白", cl: "ソードマスター", AW: "覚醒後", skill: "通常"
@@ -501,7 +506,7 @@ debuff.mixture = [
         }
         , domain: "global"
         , target: { attr: [ "魚人", "水棲" ] }
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "空神", cl: "天狗", AW: "覚2a"
@@ -531,6 +536,7 @@ debuff.mixture = [
             mr: { value: "-10", type: "fixed" }
         }
         , domain: "global"
+        , note: "永続"
     }
     , {
         name: "ミスリア", rarity: "白", cl: "鍛冶職人", AW: "覚醒後", skill: "通常"
@@ -538,6 +544,7 @@ debuff.mixture = [
             mr: { value: "-10", type: "fixed" }
         }
         , domain: "global"
+        , note: "永続"
     }
     , {
         name: "シールインヘリット", cl: "モンスターブレイカー", AW: "覚2a"
@@ -644,7 +651,7 @@ debuff.mixture = [
             , mr: { value: "-50%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "エスネア/学園", rarity: "黒", cl: "デモンルーン", AW: "覚醒後", skill: "通常"
@@ -653,7 +660,7 @@ debuff.mixture = [
             , mr: { value: "-50%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "イザムバード", rarity: "黒", cl: "スチームナイト", AW: "覚醒後", skill: "覚醒"
@@ -733,6 +740,7 @@ debuff.mixture = [
         }
         , domain: "global"
         , target: { attr: [ "魚人", "水棲" ] }
+        , note: "永続"
     }
     , {
         name: "アルタ", rarity: "黒", cl: "オートマタ", AW: "覚醒後", skill: "覚醒(1)"
@@ -756,7 +764,7 @@ debuff.mixture = [
         ] }
     }
     , {
-        name: "アルタ", rarity: "黒", cl: "オートマタ", AW: "覚醒後", skill: "覚醒(3〜)"
+        name: "アルタ", rarity: "黒", cl: "オートマタ", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: {
             atk: { value: "-30%", type: "noAttr" }
             , def: { value: "-30%", type: "area" }
@@ -767,6 +775,7 @@ debuff.mixture = [
             , "神獣", "魔獣", "妖獣", "獣", "獣人", "植物"
             , "妖怪", "アンデッド", "デーモン", "天使"
         ] }
+        , note: "永続"
     }
     , {
         name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "覚醒(1)"
@@ -786,7 +795,7 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
-        name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "覚醒(3〜)"
+        name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: {
             atk: { value: "-20%", type: "noAttr" }
             , def: { value: "-50%", type: "area" }
@@ -815,6 +824,7 @@ debuff.mixture = [
             mr: { value: "-50%", type: "global" }
         }
         , domain: "global"
+        , note: "永続"
     }
     , {
         name: "オデット", rarity: "白", cl: "メイジ", AW: "覚醒前", skill: "通常"
@@ -875,7 +885,7 @@ debuff.mixture = [
             stop: { value: "14f", type: "area" }
         }
         , domain: "area"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "アウローラ/水着", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "通常"
@@ -883,7 +893,7 @@ debuff.mixture = [
             stop: { value: "14f", type: "area" }
         }
         , domain: "area"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "デスピア/ハロウィン", rarity: "黒", cl: "ウィッチ", AW: "覚醒後", skill: "覚醒"
@@ -1082,7 +1092,7 @@ debuff.mixture = [
             stop: { value: "89f", type: "area" }
         }
         , domain: "area"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "アーリー", rarity: "白", cl: "クロノウィッチ", AW: "覚醒後", skill: "通常"
@@ -1090,7 +1100,7 @@ debuff.mixture = [
             stop: { value: "89f", type: "area" }
         }
         , domain: "area"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "アーリー", rarity: "白", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒(1)"
@@ -1109,7 +1119,7 @@ debuff.mixture = [
         , note: "発動時"
     }
     , {
-        name: "アーリー", rarity: "白", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒(3〜)"
+        name: "アーリー", rarity: "白", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: {
             stop: { value: "239f", type: "area" }
         }
@@ -1122,7 +1132,7 @@ debuff.mixture = [
             stop: { value: "149f", type: "area" }
         }
         , domain: "area"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "通常"
@@ -1130,7 +1140,7 @@ debuff.mixture = [
             stop: { value: "149f", type: "area" }
         }
         , domain: "area"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "覚醒"
@@ -1138,7 +1148,7 @@ debuff.mixture = [
             stop: { value: "209f", type: "area" }
         }
         , domain: "area"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "シャルル", rarity: "白", cl: "アルケミスト", AW: "覚醒前", skill: "通常"
@@ -1146,7 +1156,6 @@ debuff.mixture = [
             def: { value: "-50%", type: "global" }
         }
         , domain: "global"
-        , note: "発動時"
     }
     , {
         name: "シャルル", rarity: "白", cl: "アルケミスト", AW: "覚醒後", skill: "通常"
@@ -1154,7 +1163,6 @@ debuff.mixture = [
             def: { value: "-50%", type: "global" }
         }
         , domain: "global"
-        , note: "発動時"
     }
     , {
         name: "シャルル", rarity: "白", cl: "アルケミスト", AW: "覚醒後", skill: "覚醒"
@@ -1162,7 +1170,6 @@ debuff.mixture = [
             def: { value: "-50%", type: "global" }
         }
         , domain: "global"
-        , note: "発動時"
     }
     , {
         name: "レーレン", rarity: "白", cl: "アルケミスト", AW: "覚醒前", skill: "通常"
@@ -1246,6 +1253,7 @@ debuff.mixture = [
             atk: { value: "*1.5", type: "noAttr" }
         }
         , domain: "area"
+        , note: "永続"
     }
     , {
         name: "オロチヒメ", rarity: "黒", cl: "呪術使い", AW: "覚醒後", skill: "通常"
@@ -1253,6 +1261,7 @@ debuff.mixture = [
             atk: { value: "*1.5", type: "noAttr" }
         }
         , domain: "area"
+        , note: "永続"
     }
     , {
         name: "オロチヒメ", rarity: "黒", cl: "呪術使い", AW: "覚醒後", skill: "覚醒"
@@ -1372,6 +1381,7 @@ debuff.mixture = [
             atk: { value: "*1.5", type: "noAttr" }
         }
         , domain: "area"
+        , note: "永続"
     }
     , {
         name: "エンチャンター", cl: "エンチャンター", AW: "覚醒前", skill: "通常"
@@ -1438,7 +1448,7 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
-        name: "ハーニィ", rarity: "白", cl: "エンチャンター", AW: "覚醒後", skill: "覚醒(3〜)"
+        name: "ハーニィ", rarity: "白", cl: "エンチャンター", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: {
             mr: { value: "-30%", type: "global" }
         }
@@ -1450,7 +1460,7 @@ debuff.mixture = [
             atk: { value: "-10%", type: "noAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "ツァーユ", rarity: "黒", cl: "フェンリルシャーマン", AW: "覚1", skill: "通常"
@@ -1458,7 +1468,7 @@ debuff.mixture = [
             atk: { value: "-10%", type: "noAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "ツァーユ", rarity: "黒", cl: "フェンリルシャーマン", AW: "覚1", skill: "覚醒"
@@ -1474,7 +1484,7 @@ debuff.mixture = [
             atk: { value: "-10%", type: "noAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "ツァーユ", rarity: "黒", cl: "フェンリルシャーマン", AW: "覚2a", skill: "覚醒"
@@ -1491,7 +1501,7 @@ debuff.mixture = [
             , def: { value: "-10%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "ツァーユ", rarity: "黒", cl: "フェンリルシャーマン", AW: "覚2b", skill: "覚醒"
@@ -1539,7 +1549,7 @@ debuff.mixture = [
         }
         , domain: "global"
         , target: { attr: [ "デーモン" ] }
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "覚醒"
@@ -1548,6 +1558,7 @@ debuff.mixture = [
             , mr: { value: "-10%", type: "area" }
         }
         , domain: "area"
+        , note: "永続"
     }
     , {
         name: "アイラ", rarity: "白", cl: "デモンサモナー", AW: "覚醒後", skill: "覚醒"
@@ -1629,7 +1640,7 @@ debuff.mixture = [
             stop: { value: "389f", type: "area" }
         }
         , domain: "area"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "モトリー", rarity: "白", cl: "道化師", AW: "覚醒後", skill: "通常"
@@ -1637,7 +1648,7 @@ debuff.mixture = [
             stop: { value: "389f", type: "area" }
         }
         , domain: "area"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "モトリー", rarity: "白", cl: "道化師", AW: "覚醒後", skill: "覚醒"
@@ -1645,7 +1656,7 @@ debuff.mixture = [
             stop: { value: "389f", type: "area" }
         }
         , domain: "area"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "影獣の依代", cl: "幻獣使い", AW: "覚2b", skill: [ "通常", "覚醒" ]
@@ -1685,7 +1696,7 @@ debuff.mixture = [
             stop: { value: "239f", type: "area" }
         }
         , domain: "area"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "パトリシア", rarity: "白", cl: "支援工兵", AW: "覚醒後", skill: "通常"
@@ -1693,7 +1704,7 @@ debuff.mixture = [
             stop: { value: "239f", type: "area" }
         }
         , domain: "area"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "ヘカティエ/水着", rarity: "白", cl: "儀式魔術師", AW: "覚醒前", skill: "通常"
@@ -1717,7 +1728,7 @@ debuff.mixture = [
             stop: { value: "149f", type: "global" }
         }
         , domain: "global"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "ヤシマ", rarity: "黒", cl: "妖狸", AW: "覚醒後", skill: [ "通常", "覚醒" ]
@@ -1725,7 +1736,7 @@ debuff.mixture = [
             stop: { value: "149f", type: "global" }
         }
         , domain: "global"
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "スカウト", cl: "スカウト", AW: "覚醒前"
@@ -1769,7 +1780,7 @@ debuff.mixture = [
             , mr: { value: "-20%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "カーナ", rarity: "白", cl: "スカウト", AW: "覚醒後", skill: "覚醒"
@@ -1785,6 +1796,14 @@ debuff.mixture = [
             atk: { value: "-10%", type: "noAttr" }
         }
         , domain: "global"
+    }
+    , {
+        name: "孫堅", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒前", skill: "通常"
+        , stats: {
+            stop: { value: "59f", type: "global" }
+        }
+        , domain: "global"
+        , note: "発動時"
     }
     , {
         name: "孫堅", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒後", skill: "通常"
@@ -1823,7 +1842,7 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
-        name: "バン", rarity: "白", cl: "盗賊【七つの大罪】", AW: "覚醒後", skill: "覚醒(3〜)"
+        name: "バン", rarity: "白", cl: "盗賊【七つの大罪】", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: {
             atk: { value: "-15%", type: "noAttr" }
         }
@@ -1870,7 +1889,7 @@ debuff.mixture = [
             stop: { value: "119f", type: "area" }
         }
         , domain: "area"
-        , note: [ "アンブレ", "発動時" ]
+        , note: [ "アンブレ", "発動時", "ボム" ]
     }
     , {
         name: "上位イビルアイ", rarity: "トークン", AW: "覚醒後", skill: "通常"
@@ -1878,7 +1897,7 @@ debuff.mixture = [
             stop: { value: "119f", type: "area" }
         }
         , domain: "area"
-        , note: [ "アンブレ", "発動時" ]
+        , note: [ "アンブレ", "発動時", "ボム" ]
     }
     , {
         name: "かまいたちトキ", rarity: "トークン", AW: "覚醒前", skill: "通常"
@@ -1922,7 +1941,7 @@ debuff.mixture = [
             def: { value: "-50%", type: "global" }
         }
         , domain: "global"
-        , note: "マキナ"
+        , note: [ "マキナ", "永続" ]
     }
     , {
         name: "ツァーユ(幻影)", rarity: "トークン", AW: "覚醒後", skill: "通常"
@@ -1930,7 +1949,7 @@ debuff.mixture = [
             atk: { value: "-10%", type: "noAttr" }
         }
         , domain: "area"
-        , note: [ "リュティエ", "分類未確認" ]
+        , note: [ "リュティエ", "永続", "分類未確認" ]
     }
 ];
 

@@ -15,6 +15,7 @@ debuff.hit = [
         name: "マルゴット", rarity: "黒", cl: "ソルジャー", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
         , attr: "物理", dur: "59f"
+        , note: "ボム"
     }
     , {
         name: "エルデ", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"
@@ -42,11 +43,13 @@ debuff.hit = [
         name: "アリエッタ", rarity: "青", cl: "ダークファイター", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "89f"
+        , note: "ボム"
     }
     , {
         name: "アリエッタ", rarity: "青", cl: "ダークファイター", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "89f"
+        , note: "ボム"
     }
     , {
         name: "マツリ/正月", rarity: "黒", cl: "前衛戦術家", AW: "覚醒前"
@@ -77,16 +80,19 @@ debuff.hit = [
         name: "ジークリンデ", rarity: "黒", cl: "ソードマスター", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
         , attr: "貫通", dur: "89f"
+        , note: "ボム"
     }
     , {
-        name: "ジークリンデ/水着", rarity: "黒", cl: "ソードマスター", AW: "覚醒後", skill: "覚醒(〜2)"
+        name: "ジークリンデ/水着", rarity: "黒", cl: "ソードマスター", AW: "覚醒後", skill: "覚醒(～2)"
         , stats: { stop: "○" }
         , attr: "物理", dur: "89f"
+        , note: "ボム"
     }
     , {
-        name: "ジークリンデ/水着", rarity: "黒", cl: "ソードマスター", AW: "覚醒後", skill: "覚醒(3〜)"
+        name: "ジークリンデ/水着", rarity: "黒", cl: "ソードマスター", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: { stop: "○" }
         , attr: "物理", dur: "179f"
+        , note: "ボム"
     }
     , {
         name: "ヴァイス/水着", rarity: "白", cl: "ソードマスター", AW: "覚醒後", skill: "覚醒"
@@ -128,17 +134,19 @@ debuff.hit = [
         name: "ランヒルド", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "-20%" }
         , attr: "物理", dur: "29f"
+        , note: "永続"
     }
     , {
         name: "フーコ/浴衣", rarity: "白", cl: "風伯", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
         , attr: "物理", dur: "14f"
+        , note: "永続"
     }
     , {
         name: "胡喜美", rarity: "白", cl: "邪仙", AW: "覚醒後", skill: "覚醒(奇)"
         , stats: { atk: "-20%" }
         , attr: "魔法", dur: "29f"
-        , note: "偶数回目発動まで"
+        , note: [ "ボム", "偶数回目発動まで" ]
     }
     , {
         name: "魔王親衛隊", cl: "魔王親衛隊", AW: "覚醒前"
@@ -229,7 +237,7 @@ debuff.hit = [
         , attr: "物理", dur: "7f"
     }
     , {
-        name: "スカー", rarity: "黒", cl: "シャークウォリアー", skill: "通常"
+        name: "スカー", rarity: "黒", cl: "シャークウォリアー"
         , stats: { def: "-30%" }
         , attr: "物理", dur: "59f"
     }
@@ -237,11 +245,13 @@ debuff.hit = [
         name: "ポミエ/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , attr: "貫通", dur: "59f"
+        , note: "ボム"
     }
     , {
         name: "ポミエ/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , attr: "貫通", dur: "59f"
+        , note: "ボム"
     }
     , {
         name: "クレア/学園", rarity: "白", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"
@@ -257,16 +267,19 @@ debuff.hit = [
         name: "ミコト", rarity: "黒", cl: "陰陽師", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "149f"
+        , note: "ボム"
     }
     , {
         name: "ミコト", rarity: "黒", cl: "陰陽師", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "149f"
+        , note: "ボム"
     }
     , {
         name: "ミコト", rarity: "黒", cl: "陰陽師", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
         , attr: "貫通", dur: "209f"
+        , note: "ボム"
     }
     , {
         name: "ミコト/水着", rarity: "黒", cl: "陰陽師", AW: "覚醒前", skill: "通常"
@@ -282,6 +295,7 @@ debuff.hit = [
         name: "ちびミコト", rarity: "ちび", cl: "陰陽師", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "149f"
+        , note: "ボム"
     }
     , {
         name: "カノン/クリスマス", rarity: "白", cl: "砲術士", AW: "覚醒後"
@@ -293,6 +307,7 @@ debuff.hit = [
         name: "カノン/クリスマス", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
         , attr: "物理", dur: "149f"
+        , note: "ボム"
     }
     , {
         name: "トワ/学園", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"
@@ -308,61 +323,73 @@ debuff.hit = [
         name: "ココロ", rarity: "白", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "129f"
+        , note: "ボム"
     }
     , {
         name: "ココロ", rarity: "白", cl: "クロノウィッチ", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "129f"
+        , note: "ボム"
     }
     , {
         name: "ココロ", rarity: "白", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "129f"
+        , note: "ボム"
     }
     , {
         name: "ココロ/浴衣", rarity: "白", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "59f"
+        , note: "ボム"
     }
     , {
         name: "ココロ/浴衣", rarity: "白", cl: "クロノウィッチ", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "59f"
+        , note: "ボム"
     }
     , {
         name: "リゼット", rarity: "青", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
         , attr: "?", dur: "149f"
+        , note: "ボム"
     }
     , {
         name: "ププル", rarity: "白", cl: "ドルイド", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "59f"
+        , note: "ボム"
     }
     , {
         name: "ププル", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "59f"
+        , note: "ボム"
     }
     , {
         name: "ププル", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
         , attr: "貫通", dur: "59f"
+        , note: "ボム"
     }
     , {
         name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒前", skill: "通常"
         , stats: { def: "-50%" }
         , attr: "魔法", dur: "149f"
+        , note: "ボム"
     }
     , {
         name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "通常"
         , stats: { def: "-50%" }
         , attr: "魔法", dur: "149f"
+        , note: "ボム"
     }
     , {
         name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "-80%" }
         , attr: "魔法", dur: "209f"
+        , note: "ボム"
     }
     , {
         name: "アルケミスト", cl: "アルケミスト", AW: "CC前"
@@ -407,16 +434,19 @@ debuff.hit = [
         name: "アニータ", rarity: "白", cl: "シーフ", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , attr: "物理", dur: "129f"
+        , note: "ボム"
     }
     , {
         name: "アニータ", rarity: "白", cl: "シーフ", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , attr: "物理", dur: "129f"
+        , note: "ボム"
     }
     , {
         name: "アニータ", rarity: "白", cl: "シーフ", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
         , attr: "物理", dur: "225f?"
+        , note: "ボム"
     }
     , {
         name: "オロチヒメ/正月", rarity: "黒", cl: "呪術使い", AW: "覚醒後", skill: "非"
@@ -500,6 +530,7 @@ debuff.hit = [
         name: "ポタル", rarity: "白", cl: "スカイウォリアー", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
         , attr: "物理", dur: "59f"
+        , note: "ボム"
     }
     , {
         name: "戯曲作家【GBM】", cl: "戯曲作家【GBM】", AW: "覚醒前"
@@ -516,11 +547,13 @@ debuff.hit = [
         name: "グリモワール", rarity: "黒", cl: "物語を渡る者【GBM】", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "59f"
+        , note: "ボム"
     }
     , {
         name: "グリモワール", rarity: "黒", cl: "物語を渡る者【GBM】", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , attr: "魔法", dur: "59f"
+        , note: "ボム"
     }
     , {
         name: "ラヴクラフト", rarity: "白", cl: "水底の支配者【GBM】", AW: "覚醒後", skill: "覚醒"
@@ -601,8 +634,6 @@ debuff.hit = [
         , attr: "物理", dur: "89f"
         , note: [ "ルパン", "死亡時" ]
     }
-    /*
-    */
 ];
 
 /*
