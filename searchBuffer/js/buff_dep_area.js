@@ -1,8 +1,5 @@
 // 範囲配置
-buff.dep_area = {};
-buff.dep_area.picked = [];
-buff.dep_area.sortedBy = "id";
-buff.dep_area.list = [
+buff.dep_area = [
     {
         name: "竜砲騎士隊長", cl: "ドラグーン", AW: "覚2a"
         , stats: { atk: "+10%", def: "+10%" }

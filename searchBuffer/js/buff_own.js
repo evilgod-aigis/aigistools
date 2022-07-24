@@ -1,8 +1,5 @@
 // 所持
-buff.own = {};
-buff.own.picked = [];
-buff.own.sortedBy = "id";
-buff.own.list = [
+buff.own = [
     {
         name: "アトナテス", rarity: "黒", cl: "魔竜騎士", AW: "覚醒後"
         , stats: { atk: "+5%" }

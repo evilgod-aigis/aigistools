@@ -1,8 +1,5 @@
 // 範囲スキル
-buff.skill_area = {};
-buff.skill_area.picked = [];
-buff.skill_area.sortedBy = "id";
-buff.skill_area.list = [
+buff.skill_area = [
     {
         name: "グレン/学園", rarity: "白", cl: "天狗", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.2" }
@@ -39,11 +36,13 @@ buff.skill_area.list = [
         name: "シナト", rarity: "白", cl: "後衛戦術家", AW: "覚醒前", skill: "通常"
         , stats: { ct: "-100%" }
         , target: { depType: [ "遠距離" ] }
+        , note: "ボム"
     }
     , {
         name: "シナト", rarity: "白", cl: "後衛戦術家", AW: "覚醒後", skill: "通常"
         , stats: { ct: "-100%" }
         , target: { depType: [ "遠距離" ] }
+        , note: "ボム"
     }
     , {
         name: "トワ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"

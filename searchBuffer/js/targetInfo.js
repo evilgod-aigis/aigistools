@@ -178,7 +178,7 @@ target.CreateForm = () => {
     const targetInfo = document.getElementById("target-info");
     targetInfo.innerHTML = "";
     const newTable = document.createElement("table");
-    newTable.border = "1";
+    newTable.setAttribute("border", "1");
     
     let newTr, newTh, newTd, newForm, newLabel, newRadio, newCheckbox, newBr;
     
@@ -191,26 +191,27 @@ target.CreateForm = () => {
         newForm = document.createElement("form");
         newForm.id = `target-info_${category}`;
         
-        const CreateRadio = value => {
-            newLabel = document.createElement("label");
-            newRadio = document.createElement("input");
-            newRadio.type = "radio";
-            newRadio.name = "options";
-            newRadio.value = value;
-            newLabel.appendChild(newRadio);
-            newLabel.innerHTML += value;
-            newForm.appendChild(newLabel);
-        }
-        _.forEach([ "すべて含める", "すべて含めない" ], (value, i) => CreateRadio(value));
+        CreateRadio(newForm, "すべて含める");
+        CreateRadio(newForm, "すべて含めない");
         newBr = document.createElement("br");
         newForm.appendChild(newBr);
-        _.forEach(target[category], value => CreateRadio(value));
+        _.forEach(target[category], value => CreateRadio(newForm, value));
         newForm.options[1].checked = true;
         newTd.appendChild(newForm);
         tr.appendChild(newTd);
         newTable.appendChild(tr);
     }
-    
+    const CreateRadio = (form, value) => {
+        newLabel = document.createElement("label");
+        newRadio = document.createElement("input");
+        newRadio.type = "radio";
+        newRadio.name = "options";
+        newRadio.value = value;
+        newLabel.appendChild(newRadio);
+        newLabel.innerHTML += value;
+        form.appendChild(newLabel);
+    }
+
     // all
     newTr = document.createElement("tr");
     newTh = document.createElement("th");
@@ -328,14 +329,12 @@ target.CreateForm = () => {
     targetInfo.appendChild(newButton);
     
     const depTypeForm = document.getElementById("target-info_depType");
-    _.forEach(
-        depTypeForm.options
-        , option => option.addEventListener("change", target.CreateClassOptions)
+    _.forEach(depTypeForm.options, option =>
+        option.addEventListener("change", target.CreateClassOptions)
     );
     const raceForm = document.getElementById("target-info_race");
     _.forEach(raceForm.options, option => {
-        if(option.value === "竜人")
-            option.addEventListener("change", target.CheckDragon);
+        if(option.value === "竜人") option.addEventListener("change", target.CheckDragon);
     });
     
     target.CreateClassOptions();
@@ -366,8 +365,7 @@ target.CreateClassOptions = () => {
         newOption.value = value;
         newOption.selected = match;
         newOption.innerHTML = value;
-        if(value !== "すべて含める" && value !== "すべて含めない")
-            newOption.innerHTML += "系";
+        if(value !== "すべて含める" && value !== "すべて含めない") newOption.innerHTML += "系";
         clSelect.add(newOption);
         return match;
     }
@@ -409,47 +407,42 @@ target.AutoCheck = _cl => {
     if(!valid.checked) return;
     
     // depType
-    const depType = _.findKey(
-        target.cl
-        , depType => _.includes(_.flatten(_.toArray(depType)), _cl)
+    const depType = _.findKey(target.cl, depType =>
+        _.includes(_.flatten(_.toArray(depType)), _cl)
     );
     if(depType === undefined) return;
     const depTypeForm = document.getElementById("target-info_depType");
-    _.forEach(depTypeForm.options, elem => {
-        elem.checked = elem.value === depType
-    });
+    _.forEach(depTypeForm.options, elem => { elem.checked = elem.value === depType; });
     
     // home, race
     _.forEach([ "home", "race" ], category => {
         const key = _.findKey(target.count[category], arr => _.includes(arr, _cl));
         if(key === undefined) return;
         const form = document.getElementById(`target-info_${category}`);
-        _.forEach(form.options, elem => {
-            elem.checked = elem.value === key
-        });
+        _.forEach(form.options, elem => { elem.checked = elem.value === key; });
     });
     
     // others
     const othersForm = document.getElementById("target-info_others");
     _.forEach(othersForm.options, elem => {
-        if(_.includes(target.count.others[elem.value], _cl))
-            elem.checked = true;
+        if(_.includes(target.count.others[elem.value], _cl)) elem.checked = true;
     });
 }
 
 // 属性等その他一括ON/OFF
 target.ToggleAllOthers = _checked => {
     const othersForm = document.getElementById("target-info_others");
-    _.forEach(othersForm.options, option => {
-        option.checked = _checked;
-    });
+    _.forEach(othersForm.options, option => { option.checked = _checked; });
 }
 
 // 竜人→竜族チェック
 target.CheckDragon = () => {
     const othersForm = document.getElementById("target-info_others");
     _.forEach(othersForm.options, option => {
-        if(option.value === "竜族") option.checked = true;
+        if(option.value === "竜族") {
+            option.checked = true;
+            return false;
+        }
     });
 }
 
@@ -466,9 +459,8 @@ target.Search = () => {
         target.selected.cl = _.map(clSelect.children, option => option.value);
         _.drop(target.selected.cl, 2);
     } else if(target.selected.depType === "遠近距離") {
-        const depTypeCount = _.findKey(
-            target.count.depType
-            , depType => _.includes(_.flatten(_.toArray(depType)), target.selected.cl)
+        const depTypeCount = _.findKey(target.count.depType, depType =>
+            _.includes(_.flatten(_.toArray(depType)), target.selected.cl)
         );
         if(depTypeCount !== undefined)
             target.selected.depType = [ "遠近距離", depTypeCount ];
@@ -502,11 +494,9 @@ target.IsMatch = _target => {
                     return false;
                 }
                 if(Array.isArray(target.selected[cat]))
-                    matchSub &= _.reduce(
-                        target.selected[cat]
-                        , (result, selected) => result |= _.includes(arr, selected)
-                        , false
-                    );
+                    matchSub &= _.reduce(target.selected[cat], (result, selected) =>
+                        result |= _.includes(arr, selected)
+                    , false);
                 else matchSub &= _.includes(arr, target.selected[cat]);
             });
             match |= matchSub;
@@ -524,11 +514,9 @@ target.IsMatch = _target => {
                 return false;
             }
             if(Array.isArray(target.selected[cat]))
-                match &= _.reduce(
-                    target.selected[cat]
-                    , (result, selected) => result |= _.includes(arr, selected)
-                    , false
-                );
+                match &= _.reduce(target.selected[cat], (result, selected) =>
+                    result |= _.includes(arr, selected)
+                , false);
             else match &= _.includes(arr, target.selected[cat]);
         });
     }

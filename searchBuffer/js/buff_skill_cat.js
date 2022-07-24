@@ -1,8 +1,5 @@
 // 属性スキル
-buff.skill_cat = {};
-buff.skill_cat.picked = [];
-buff.skill_cat.sortedBy = "id";
-buff.skill_cat.list = [
+buff.skill_cat = [
     {
         name: "王子【水着】", cl: "王子", skill: "通常(偶)"
         , stats: { atk: "×1.1" }
@@ -37,13 +34,13 @@ buff.skill_cat.list = [
         name: "マルゴット", rarity: "黒", cl: "ソルジャー", AW: "覚醒前", skill: "通常"
         , stats: { def: "×1.2" }
         , target: { depType: [ "近接" ] }
-        , note: "分類未確認"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "マルゴット", rarity: "黒", cl: "ソルジャー", AW: "覚醒後", skill: "通常"
         , stats: { def: "×1.2" }
         , target: { depType: [ "近接" ] }
-        , note: "分類未確認"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "アルティア/水着", rarity: "黒", cl: "ソルジャー", AW: "覚醒前", skill: "通常"
@@ -64,6 +61,7 @@ buff.skill_cat.list = [
         name: "ケイティ/正月", rarity: "白", cl: "ソルジャー", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+50%", atk: "×1.5", def: "×1.5" }
         , target: { cl: [ "ソルジャー" ] }
+        , note: "永続"
     }
     , {
         name: "ノーマ", rarity: "白", cl: "ソルジャー", AW: "覚醒後", skill: "覚醒"
@@ -74,11 +72,13 @@ buff.skill_cat.list = [
         name: "フリア", rarity: "黒", cl: "ワルキューレ", AW: "覚醒前", skill: "通常"
         , stats: { draw: "(○)", redep: "40秒" }
         , target: { race: [ "人間", "天使", "鳥人" ] }
+        , note: "永続"
     }
     , {
         name: "フリア", rarity: "黒", cl: "ワルキューレ", AW: "覚醒後", skill: "通常"
         , stats: { draw: "(○)", redep: "40秒" }
         , target: { race: [ "人間", "天使", "鳥人" ] }
+        , note: "永続"
     }
     , {
         name: "ヨシノ", rarity: "黒", cl: "プリンセス", AW: "覚醒前", skill: "通常"
@@ -99,6 +99,7 @@ buff.skill_cat.list = [
         name: "ヨシノ", rarity: "黒", cl: "プリンセス", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.3", cost: "-50%", redep: "40秒" }
         , target: { home: [ "東の国" ] }
+        , note: "永続"
     }
     , {
         name: "ロゼット/正月", rarity: "金", cl: "プリンセス", AW: "覚醒前", skill: "通常"
@@ -132,6 +133,7 @@ buff.skill_cat.list = [
         name: "アマンダ", rarity: "黒", cl: "バンデット", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+70%", cost: "-30%" }
         , target: { cl: [ "バンデット" ] }
+        , note: "永続"
     }
     , {
         name: "ヒバリ/バレンタイン", rarity: "黒", cl: "サムライ", AW: "覚醒前", skill: "通常"
@@ -167,9 +169,16 @@ buff.skill_cat.list = [
         name: "アリス/バレンタイン", rarity: "黒", cl: "モンク", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.25", def: "×1.25" }
         , target: { cl: [ "王子" ] }
+        , note: "永続"
     }
     , {
-        name: "アリス/バレンタイン", rarity: "黒", cl: "モンク", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        name: "アリス/バレンタイン", rarity: "黒", cl: "モンク", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.25", def: "×1.25" }
+        , target: { cl: [ "王子" ] }
+        , note: "永続"
+    }
+    , {
+        name: "アリス/バレンタイン", rarity: "黒", cl: "モンク", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.25", def: "×1.25" }
         , target: { cl: [ "王子" ] }
     }
@@ -190,6 +199,7 @@ buff.skill_cat.list = [
             { home: [ "白の帝国" ] }
             , { season: [ "サマー" ] }
         ]
+        , note: "永続"
     }
     , {
         name: "レオラ/水着", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "通常"
@@ -198,6 +208,7 @@ buff.skill_cat.list = [
             { home: [ "白の帝国" ] }
             , { season: [ "サマー" ] }
         ]
+        , note: "永続"
     }
     , {
         name: "レオラ/水着", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "覚醒"
@@ -273,7 +284,7 @@ buff.skill_cat.list = [
         , note: "オート"
     }
     , {
-        name: "イズナ", rarity: "白", cl: "妖狐", AW: "覚醒後", skill: "覚醒(3〜)"
+        name: "イズナ", rarity: "白", cl: "妖狐", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: { atk: "×1.5", other: "" }
         , target: { race: [ "妖怪" ] }
         , note: "オート"
@@ -310,6 +321,7 @@ buff.skill_cat.list = [
         name: "フィナン", rarity: "白", cl: "メイジアーマー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.3" }
         , target: { cl: [ "ヘビーアーマー", "神官戦士", "メイジアーマー", "重装砲兵" ] }
+        , note: "永続"
     }
     , {
         name: "セーラ", rarity: "黒", cl: "メイド", AW: "覚醒前", skill: "通常"
@@ -339,17 +351,26 @@ buff.skill_cat.list = [
         name: "アリエル", rarity: "黒", cl: "メイド", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { cl: [ "神官戦士", "ヒーラー", "ビショップ", "ルーンアコライト", "アコライト" ] }
+        , note: "永続"
     }
     , {
         name: "アリエル", rarity: "黒", cl: "メイド", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { cl: [ "神官戦士", "ヒーラー", "ビショップ", "ルーンアコライト", "アコライト" ] }
+        , note: "永続"
     }
     , {
-        name: "アリエル", rarity: "黒", cl: "メイド", AW: "覚醒後", skill: "覚醒"
+        name: "アリエル", rarity: "黒", cl: "メイド", AW: "覚醒後", skill: "覚醒(～2)"
         , stats: { atk: "×1.8", def: "×1.8", mr: "×1.8", other: "" }
         , target: { cl: [ "神官戦士", "ヒーラー", "ビショップ", "ルーンアコライト", "アコライト" ] }
         , note: "隠密付与"
+    }
+    , {
+        name: "アリエル", rarity: "黒", cl: "メイド", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: { atk: "×1.8", def: "×1.8", mr: "×1.8", other: "" }
+        , target: { cl: [ "神官戦士", "ヒーラー", "ビショップ", "ルーンアコライト", "アコライト" ] }
+        , note: "隠密付与"
+        , note: "永続"
     }
     , {
         name: "セーラ/水着", rarity: "黒", cl: "メイド", AW: "覚醒前", skill: "通常"
@@ -379,7 +400,7 @@ buff.skill_cat.list = [
             , { season: [ "サマー" ] }
             , { others: [ "全プリンセス系" ] }
         ]
-        , note: "分類未確認"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "リーナ", rarity: "白", cl: "メイド", AW: "覚醒後", skill: "覚醒"
@@ -400,6 +421,7 @@ buff.skill_cat.list = [
         name: "サクラ", rarity: "白", cl: "メイド", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , target: { home: [ "東の国" ] }
+        , note: "永続"
     }
     , {
         name: "ちびセーラ", rarity: "ちび", cl: "メイド", skill: "通常"
@@ -412,26 +434,26 @@ buff.skill_cat.list = [
     , {
         name: "アリシア", rarity: "白", cl: "ロイヤルガード", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×2.0" }
-        , target: [ { cl: [
+        , target: { cl: [
             "王子", "ワルキューレ", "ペガサスライダー"
             , "ドラゴンライダー", "魔竜騎士", "ロイヤルガード"
-        ] } ]
+        ] }
     }
     , {
         name: "アリシア", rarity: "白", cl: "ロイヤルガード", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×2.0" }
-        , target: [ { cl: [
+        , target: { cl: [
             "王子", "ワルキューレ", "ペガサスライダー"
             , "ドラゴンライダー", "魔竜騎士", "ロイヤルガード"
-        ] } ]
+        ] }
     }
     , {
         name: "ちびアリシア", rarity: "ちび", cl: "ロイヤルガード", skill: "通常"
         , stats: { atk: "×2.0" }
-        , target: [ { cl: [
+        , target: { cl: [
             "王子", "ワルキューレ", "ペガサスライダー"
             , "ドラゴンライダー", "魔竜騎士", "ロイヤルガード"
-        ] } ]
+        ] }
     }
     , {
         name: "メフィスト/水着", rarity: "黒", cl: "魔神", AW: "覚醒前", skill: "通常"
@@ -463,16 +485,19 @@ buff.skill_cat.list = [
         name: "カスミ", rarity: "白", cl: "ぬらりひょん", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+10%", atk: "×1.1", def: "×1.1" }
         , target: { race: [ "妖怪" ] }
+        , note: "永続"
     }
     , {
         name: "ディアナ", rarity: "黒", cl: "インペリアルナイト", AW: "覚醒前", skill: "通常"
         , stats: { cost: "-30%" }
         , target: { home: [ "白の帝国" ] }
+        , note: "永続"
     }
     , {
         name: "ディアナ", rarity: "黒", cl: "インペリアルナイト", AW: "覚醒後", skill: "通常"
         , stats: { cost: "-30%" }
         , target: { home: [ "白の帝国" ] }
+        , note: "永続"
     }
     , {
         name: "ティニー", rarity: "黒", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"
@@ -533,202 +558,164 @@ buff.skill_cat.list = [
     , {
         name: "サンディー", rarity: "白", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
-        , target: {
-            cl: [
-                "王子", "ソルジャー", "サムライ", "ダークファイター"
-                , "前衛戦術家", "ソードマスター", "インペリアルナイト"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ソルジャー", "サムライ", "ダークファイター"
+            , "前衛戦術家", "ソードマスター", "インペリアルナイト"
+        ] }
     }
     , {
         name: "サンディー", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
-        , target: {
-            cl: [
-                "王子", "ソルジャー", "サムライ", "ダークファイター"
-                , "前衛戦術家", "ソードマスター", "インペリアルナイト"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ソルジャー", "サムライ", "ダークファイター"
+            , "前衛戦術家", "ソードマスター", "インペリアルナイト"
+        ] }
     }
     , {
         name: "サンディー", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"
         , stats: { atk: "×1.2", def: "×1.2" }
-        , target: {
-            cl: [
-                "王子", "ソルジャー", "サムライ", "ダークファイター"
-                , "前衛戦術家", "ソードマスター", "インペリアルナイト"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ソルジャー", "サムライ", "ダークファイター"
+            , "前衛戦術家", "ソードマスター", "インペリアルナイト"
+        ] }
+        , note: "永続"
     }
     , {
         name: "サンディー", rarity: "白", cl: "鍛冶職人", AW: "覚2a", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.2" }
-        , target: {
-            cl: [
-                "王子", "ソルジャー", "サムライ", "ダークファイター"
-                , "前衛戦術家", "ソードマスター", "インペリアルナイト"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ソルジャー", "サムライ", "ダークファイター"
+            , "前衛戦術家", "ソードマスター", "インペリアルナイト"
+        ] }
     }
     , {
         name: "サンディー", rarity: "白", cl: "鍛冶職人", AW: "覚2a", skill: "覚醒"
         , stats: { atk: "×1.3", def: "×1.2" }
-        , target: {
-            cl: [
-                "王子", "ソルジャー", "サムライ", "ダークファイター"
-                , "前衛戦術家", "ソードマスター", "インペリアルナイト"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ソルジャー", "サムライ", "ダークファイター"
+            , "前衛戦術家", "ソードマスター", "インペリアルナイト"
+        ] }
+        , note: "永続"
     }
     , {
         name: "キャラット", rarity: "白", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
-        , target: {
-            cl: [
-                "王子", "ヘビーアーマー", "神官戦士", "メイジアーマー"
-                , "ロイヤルガード", "重装砲兵", "グランドナイト"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ヘビーアーマー", "神官戦士", "メイジアーマー"
+            , "ロイヤルガード", "重装砲兵", "グランドナイト"
+        ] }
     }
     , {
         name: "キャラット", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
-        , target: {
-            cl: [
-                "王子", "ヘビーアーマー", "神官戦士", "メイジアーマー"
-                , "ロイヤルガード", "重装砲兵", "グランドナイト"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ヘビーアーマー", "神官戦士", "メイジアーマー"
+            , "ロイヤルガード", "重装砲兵", "グランドナイト"
+        ] }
     }
     , {
         name: "キャラット", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"
         , stats: { atk: "×1.2", def: "×1.4" }
-        , target: {
-            cl: [
-                "王子", "ヘビーアーマー", "神官戦士", "メイジアーマー"
-                , "ロイヤルガード", "重装砲兵", "グランドナイト"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ヘビーアーマー", "神官戦士", "メイジアーマー"
+            , "ロイヤルガード", "重装砲兵", "グランドナイト"
+        ] }
     }
     , {
         name: "キャラット", rarity: "白", cl: "鍛冶職人", AW: "覚2b", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
-        , target: {
-            cl: [
-                "王子", "ヘビーアーマー", "神官戦士", "メイジアーマー"
-                , "ロイヤルガード", "重装砲兵", "グランドナイト"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ヘビーアーマー", "神官戦士", "メイジアーマー"
+            , "ロイヤルガード", "重装砲兵", "グランドナイト"
+        ] }
     }
     , {
         name: "キャラット", rarity: "白", cl: "鍛冶職人", AW: "覚2b", skill: "覚醒"
         , stats: { atk: "×1.3", def: "×1.5" }
-        , target: {
-            cl: [
-                "王子", "ヘビーアーマー", "神官戦士", "メイジアーマー"
-                , "ロイヤルガード", "重装砲兵", "グランドナイト"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ヘビーアーマー", "神官戦士", "メイジアーマー"
+            , "ロイヤルガード", "重装砲兵", "グランドナイト"
+        ] }
     }
     , {
         name: "ルミアン", rarity: "白", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3" }
-        , target: {
-            cl: [
-                "王子", "ワルキューレ", "ペガサスライダー", "ドラゴンライダー"
-                , "魔竜騎士", "ボウライダー", "グリフィンライダー"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ワルキューレ", "ペガサスライダー", "ドラゴンライダー"
+            , "魔竜騎士", "ボウライダー", "グリフィンライダー"
+        ] }
     }
     , {
         name: "ルミアン", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "通常"
         , stats: { atk: "×1.3" }
-        , target: {
-            cl: [
-                "王子", "ワルキューレ", "ペガサスライダー", "ドラゴンライダー"
-                , "魔竜騎士", "ボウライダー", "グリフィンライダー"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ワルキューレ", "ペガサスライダー", "ドラゴンライダー"
+            , "魔竜騎士", "ボウライダー", "グリフィンライダー"
+        ] }
     }
     , {
         name: "ルミアン", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"
         , stats: { atk: "×1.3" }
-        , target: {
-            cl: [
-                "王子", "ワルキューレ", "ペガサスライダー", "ドラゴンライダー"
-                , "魔竜騎士", "ボウライダー", "グリフィンライダー"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ワルキューレ", "ペガサスライダー", "ドラゴンライダー"
+            , "魔竜騎士", "ボウライダー", "グリフィンライダー"
+        ] }
     }
     , {
         name: "ルミアン", rarity: "白", cl: "鍛冶職人", AW: "覚2a", skill: "通常"
         , stats: { atk: "×1.4" }
-        , target: {
-            cl: [
-                "王子", "ワルキューレ", "ペガサスライダー", "ドラゴンライダー"
-                , "魔竜騎士", "ボウライダー", "グリフィンライダー"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ワルキューレ", "ペガサスライダー", "ドラゴンライダー"
+            , "魔竜騎士", "ボウライダー", "グリフィンライダー"
+        ] }
     }
     , {
         name: "ルミアン", rarity: "白", cl: "鍛冶職人", AW: "覚2a", skill: "覚醒"
         , stats: { atk: "×1.4" }
-        , target: {
-            cl: [
-                "王子", "ワルキューレ", "ペガサスライダー", "ドラゴンライダー"
-                , "魔竜騎士", "ボウライダー", "グリフィンライダー"
-            ]
-        }
+        , target: { cl: [
+            "王子", "ワルキューレ", "ペガサスライダー", "ドラゴンライダー"
+            , "魔竜騎士", "ボウライダー", "グリフィンライダー"
+        ] }
     }
     , {
         name: "フィスティア", rarity: "白", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+40%", atk: "×1.2" }
-        , target: {
-            cl: [
-                "王子", "バンデット", "アベンジャー", "モンク"
-                , "グラディエーター", "モンスターブレイカー"
-            ]
-        }
+        , target: { cl: [
+            "王子", "バンデット", "アベンジャー", "モンク"
+            , "グラディエーター", "モンスターブレイカー"
+        ] }
     }
     , {
         name: "フィスティア", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "通常"
         , stats: { hp: "+40%", atk: "×1.2", dur: "+5秒" }
-        , target: {
-            cl: [
-                "王子", "バンデット", "アベンジャー", "モンク"
-                , "グラディエーター", "モンスターブレイカー"
-            ]
-        }
+        , target: { cl: [
+            "王子", "バンデット", "アベンジャー", "モンク"
+            , "グラディエーター", "モンスターブレイカー"
+        ] }
     }
     , {
         name: "フィスティア", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"
         , stats: { hp: "+30%", atk: "×1.3", dur: "+5秒" }
-        , target: {
-            cl: [
-                "王子", "バンデット", "アベンジャー", "モンク"
-                , "グラディエーター", "モンスターブレイカー"
-            ]
-        }
+        , target: { cl: [
+            "王子", "バンデット", "アベンジャー", "モンク"
+            , "グラディエーター", "モンスターブレイカー"
+        ] }
     }
     , {
         name: "フィスティア", rarity: "白", cl: "鍛冶職人", AW: "覚2a", skill: "通常"
         , stats: { hp: "+40%", atk: "×1.3", dur: "+5秒" }
-        , target: {
-            cl: [
-                "王子", "バンデット", "アベンジャー", "モンク"
-                , "グラディエーター", "モンスターブレイカー"
-            ]
-        }
+        , target: { cl: [
+            "王子", "バンデット", "アベンジャー", "モンク"
+            , "グラディエーター", "モンスターブレイカー"
+        ] }
     }
     , {
         name: "フィスティア", rarity: "白", cl: "鍛冶職人", AW: "覚2a", skill: "覚醒"
         , stats: { hp: "+30%", atk: "×1.4", dur: "+5秒" }
-        , target: {
-            cl: [
-                "王子", "バンデット", "アベンジャー", "モンク"
-                , "グラディエーター", "モンスターブレイカー"
-            ]
-        }
+        , target: { cl: [
+            "王子", "バンデット", "アベンジャー", "モンク"
+            , "グラディエーター", "モンスターブレイカー"
+        ] }
     }
     , {
         name: "ミスリア", rarity: "白", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"
@@ -737,6 +724,7 @@ buff.skill_cat.list = [
             { cl: [ "王子", "魔法剣士" ] }
             , { others: [ "全プリンセス系" ] }
         ]
+        , note: "永続"
     }
     , {
         name: "ミスリア", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "通常"
@@ -745,6 +733,7 @@ buff.skill_cat.list = [
             { cl: [ "王子", "魔法剣士" ] }
             , { others: [ "全プリンセス系" ] }
         ]
+        , note: "永続"
     }
     , {
         name: "ミスリア", rarity: "白", cl: "鍛冶職人", AW: "覚2a", skill: "通常"
@@ -753,6 +742,7 @@ buff.skill_cat.list = [
             { cl: [ "王子", "魔法剣士" ] }
             , { others: [ "全プリンセス系" ] }
         ]
+        , note: "永続"
     }
     , {
         name: "ゴルドー", rarity: "金", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"
@@ -858,9 +848,15 @@ buff.skill_cat.list = [
         , target: { race: [ "妖怪" ] }
     }
     , {
-        name: "ツグミ", rarity: "黒", cl: "ぬえ", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        name: "ツグミ", rarity: "黒", cl: "ぬえ", AW: "覚醒後", skill: "通常"
         , stats: { draw: "(○)", redep: "30秒" }
         , target: { race: [ "妖怪" ] }
+    }
+    , {
+        name: "ツグミ", rarity: "黒", cl: "ぬえ", AW: "覚醒後", skill: "覚醒"
+        , stats: { draw: "(○)", redep: "30秒" }
+        , target: { race: [ "妖怪" ] }
+        , note: "永続"
     }
     , {
         name: "イルムガルト", rarity: "白", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
@@ -908,6 +904,7 @@ buff.skill_cat.list = [
         name: "アシュリン", rarity: "白", cl: "料理人", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.1", def: "×1.1" }
         , target: { others: [ "アンデッド" ] }
+        , note: "永続"
     }
     , {
         name: "ヤマブキ", rarity: "金", cl: "料理人", AW: "覚醒前", skill: "通常"
@@ -923,6 +920,7 @@ buff.skill_cat.list = [
         name: "ヤマブキ", rarity: "金", cl: "料理人", AW: "覚醒後", skill: "覚醒"
         , stats: { range: "×1.1" }
         , target: { others: [ "弓兵" ] }
+        , note: "永続"
     }
     , {
         name: "エフネ/正月", rarity: "白", cl: "デモンルーン", AW: "覚醒後", skill: "覚醒"
@@ -986,6 +984,7 @@ buff.skill_cat.list = [
             { season: [ "クリスマス" ] }
             , { others: [ "魔術師" ] }
         ]
+        , note: "永続"
     }
     , {
         name: "テュト/クリスマス", rarity: "黒", cl: "メイジ", AW: "覚醒後", skill: "通常"
@@ -994,6 +993,7 @@ buff.skill_cat.list = [
             { season: [ "クリスマス" ] }
             , { others: [ "魔術師" ] }
         ]
+        , note: "永続"
     }
     , {
         name: "メーリス/学園", rarity: "白", cl: "メイジ", AW: "覚醒前", skill: "通常"
@@ -1030,6 +1030,7 @@ buff.skill_cat.list = [
         name: "デューオ/クリスマス", rarity: "黒", cl: "パイレーツ", AW: "覚醒後", skill: "通常"
         , stats: { atkCd: "8f化", cost: "-30%" }
         , target: { season: [ "クリスマス" ] }
+        , note: "永続"
     }
     , {
         name: "エキドナ", rarity: "白", cl: "ドラゴンシャーマン", AW: "覚醒後", skill: "覚醒"
@@ -1045,6 +1046,7 @@ buff.skill_cat.list = [
         name: "ペドラ", rarity: "白", cl: "ドラゴンシャーマン", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { others: [ "竜族" ] }
+        , note: "永続"
     }
     , {
         name: "シホ", rarity: "白", cl: "シャーマン", AW: "覚醒前", skill: "通常"
@@ -1090,11 +1092,13 @@ buff.skill_cat.list = [
         name: "ソラノ/クリスマス", rarity: "白", cl: "サモナー", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { season: [ "クリスマス" ] }
+        , note: "永続"
     }
     , {
         name: "ソラノ/クリスマス", rarity: "白", cl: "サモナー", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2", draw: "(○)", redep: "40秒" }
         , target: { season: [ "クリスマス" ] }
+        , note: "永続"
     }
     , {
         name: "ソラノ/クリスマス", rarity: "白", cl: "サモナー", AW: "覚醒後", skill: "覚醒"
@@ -1171,6 +1175,7 @@ buff.skill_cat.list = [
         name: "ブレリア/クリスマス", rarity: "白", cl: "ダンサー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.1", def: "×1.1" }
         , target: { season: [ "クリスマス" ] }
+        , note: "永続"
     }
     , {
         name: "ナターリエ", rarity: "金", cl: "ダンサー", AW: "覚醒前", skill: "通常"
@@ -1210,7 +1215,7 @@ buff.skill_cat.list = [
         , target: { sex: [ "男性" ] }
     }
     , {
-        name: "シャルキー/バレンタイン", rarity: "金", cl: "ダンサー", AW: "覚醒後", skill: "覚醒(3〜)"
+        name: "シャルキー/バレンタイン", rarity: "金", cl: "ダンサー", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: { atk: "×1.1" }
         , target: { sex: [ "男性" ] }
     }
@@ -1264,6 +1269,7 @@ buff.skill_cat.list = [
             { season: [ "ハロウィン" ] }
             , { others: [ "アンデッド" ] }
         ]
+        , note: "永続"
     }
     , {
         name: "トワ/学園", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒"
@@ -1275,6 +1281,7 @@ buff.skill_cat.list = [
         name: "トトノ/正月", rarity: "白", cl: "マーチャント", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { others: [ "GG持ち" ] }
+        , note: "永続"
     }
     , {
         name: "ミネット", rarity: "白", cl: "マーチャント", AW: "覚醒前", skill: "通常"
@@ -1302,17 +1309,33 @@ buff.skill_cat.list = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
-        name: "ツキコ", rarity: "黒", cl: "幻獣使い", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        name: "ツキコ", rarity: "黒", cl: "幻獣使い", AW: "覚醒後", skill: "通常"
         , stats: { draw: "(○)", redep: "25秒" }
         , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "ツキコ", rarity: "黒", cl: "幻獣使い", AW: "覚醒後", skill: "覚醒"
+        , stats: { draw: "(○)", redep: "25秒" }
+        , target: { home: [ "白の帝国" ] }
+        , note: "永続"
     }
     , {
         name: "ツキコ/水着", rarity: "黒", cl: "幻獣使い", AW: "覚醒前", skill: "通常"
         , stats: { draw: "(○)", redep: "40秒" }
         , target: { season: [ "サマー" ] }
+        , note: "永続"
     }
     , {
-        name: "ツキコ/水着", rarity: "黒", cl: "幻獣使い", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        name: "ツキコ/水着", rarity: "黒", cl: "幻獣使い", AW: "覚醒後", skill: "通常"
+        , stats: { draw: "(○)", redep: "40秒" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "サマー" ] }
+        ]
+        , note: "永続"
+    }
+    , {
+        name: "ツキコ/水着", rarity: "黒", cl: "幻獣使い", AW: "覚醒後", skill: "覚醒"
         , stats: { draw: "(○)", redep: "40秒" }
         , target: [
             { home: [ "白の帝国" ] }
@@ -1333,11 +1356,13 @@ buff.skill_cat.list = [
         name: "アルレット", rarity: "黒", cl: "発明家", AW: "覚醒前", skill: "通常"
         , stats: { range: "×1.2" }
         , target: { others: [ "機械" ] }
+        , note: "永続"
     }
     , {
         name: "アルレット", rarity: "黒", cl: "発明家", AW: "覚醒後", skill: "通常"
         , stats: { range: "×1.2" }
         , target: { others: [ "機械" ] }
+        , note: "永続"
     }
     , {
         name: "タバサ", rarity: "白", cl: "発明家", AW: "覚醒前", skill: "通常"
@@ -1353,6 +1378,7 @@ buff.skill_cat.list = [
         name: "タバサ", rarity: "白", cl: "発明家", AW: "覚醒後", skill: "覚醒"
         , stats: { draw: "○" }
         , target: { others: [ "機械" ] }
+        , note: "永続"
     }
     , {
         name: "ヘンドリカ", rarity: "白", cl: "発明家", AW: "覚醒前", skill: "通常"
@@ -1368,16 +1394,19 @@ buff.skill_cat.list = [
         name: "ヘンドリカ", rarity: "白", cl: "発明家", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.1", def: "×1.1" }
         , target: { others: [ "機械" ] }
+        , note: "永続"
     }
     , {
         name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { others: [ "深海適応" ] }
+        , note: "永続"
     }
     , {
         name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { others: [ "深海適応" ] }
+        , note: "永続"
     }
     , {
         name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
@@ -1416,7 +1445,7 @@ buff.skill_cat.list = [
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , target: { depType: [ "遠距離" ] }
-        , note: "分類未確認"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "カーナ", rarity: "白", cl: "スカウト", AW: "覚醒前", skill: "通常"
@@ -1437,16 +1466,19 @@ buff.skill_cat.list = [
         name: "ミリアム", rarity: "白", cl: "スカウト", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2" }
         , target: { depType: [ "遠距離" ] }
+        , note: "永続"
     }
     , {
         name: "ミリアム", rarity: "白", cl: "スカウト", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2" }
         , target: { depType: [ "遠距離" ] }
+        , note: "永続"
     }
     , {
         name: "ミリアム", rarity: "白", cl: "スカウト", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.1", range: "×1.1" }
         , target: { depType: [ "遠距離" ] }
+        , note: "永続"
     }
     , {
         name: "アルスラーン", rarity: "白", cl: "王太子", AW: "覚醒前", skill: "通常"
@@ -1454,19 +1486,37 @@ buff.skill_cat.list = [
         , target: { home: [ "パルス王国" ] }
     }
     , {
-        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常"
+        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(～2)"
         , stats: { draw: "○" }
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常"
+        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(3～)"
+        , stats: { draw: "○" }
+        , target: { depType: [ "近接" ] }
+        , note: "永続"
+    }
+    , {
+        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常(～2)"
         , stats: { draw: "○" }
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒"
+        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常(3～)"
+        , stats: { draw: "○" }
+        , target: { depType: [ "近接" ] }
+        , note: "永続"
+    }
+    , {
+        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(～2)"
         , stats: { draw: "(○)", redep: "40秒" }
         , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: { draw: "(○)", redep: "40秒" }
+        , target: { depType: [ "近接" ] }
+        , note: "永続"
     }
     , {
         name: "鳳統", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常"
@@ -1484,13 +1534,13 @@ buff.skill_cat.list = [
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "阿形の獅子", rarity: "トークン", AW: "覚醒前"
+        name: "阿形の獅子", rarity: "トークン", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { cl: [ "狛犬" ] }
         , note: "コマ"
     }
     , {
-        name: "阿形の大獅子", rarity: "トークン", AW: "覚醒後"
+        name: "阿形の大獅子", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { cl: [ "狛犬" ] }
         , note: "コマ"

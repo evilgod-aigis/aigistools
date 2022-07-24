@@ -1,10 +1,5 @@
 // 全体スキル
-buff.skill_gl = {};
-buff.skill_gl.picked = [];
-buff.skill_gl.sortedBy = "id";
-buff.skill_gl.list = [
-    {
-    }
+buff.skill_gl = [
 ];
 
 /*

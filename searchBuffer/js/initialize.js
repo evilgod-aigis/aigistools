@@ -1,9 +1,10 @@
-_.forEach(buff, type => {
-    _.forEach(type.list, (buffer, i) => buffer.id = i);
-    Object.freeze(type.list);
-});
+_.forEach(buff, type =>
+    _.forEach(type, (buffer, i) => buffer.id = i)
+);
+Object.freeze(buff);
 
 window.addEventListener("DOMContentLoaded", () => {
+    table.SetObjects();
     target.CreateForm();
     table.CreateFilter();
     createHTML.UpdateHistory();

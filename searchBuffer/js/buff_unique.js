@@ -1,8 +1,5 @@
 // その他
-buff.unique = {};
-buff.unique.picked = [];
-buff.unique.sortedBy = "id";
-buff.unique.list = [
+buff.unique = [
     // ダモクレスの剣
     {
         name: "ちびロゼット", rarity: "ちび", cl: "プリンセス"

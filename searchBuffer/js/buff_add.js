@@ -1,8 +1,5 @@
 // 加算
-buff.add = {};
-buff.add.picked = [];
-buff.add.sortedBy = "id";
-buff.add.list = [
+buff.add = [
     {
         name: "モーティマ/学園", rarity: "白", cl: "バンデット", AW: "覚醒前"
         , stats: { hp: "max1000", atk: "max400", def: "max400" }
@@ -108,7 +105,13 @@ buff.add.list = [
         , note: "範囲"
     }
     , {
-        name: "アンナ(水着以外)", rarity: "黒", cl: "政務官", skill: "通常"
+        name: "アンナ", rarity: "黒", cl: "政務官", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "アンナ/メイド", rarity: "黒", cl: "政務官", skill: "通常"
         , stats: { atk: "*10", def: "*10" }
         , target: { cl: [ "王子" ] }
         , note: "範囲"
@@ -117,7 +120,19 @@ buff.add.list = [
         name: "アンナ/水着", rarity: "黒", cl: "政務官", skill: "通常(2〜)"
         , stats: { atk: "*12", def: "*12" }
         , target: { cl: [ "王子" ] }
+        , note: [ "範囲", "永続" ]
+    }
+    , {
+        name: "アンナ/戦場", rarity: "黒", cl: "政務官", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
         , note: "範囲"
+    }
+    , {
+        name: "アンナ/アイドル", rarity: "黒", cl: "政務官", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "マレブランケ", rarity: "黒", cl: "ダークプリースト", AW: "覚醒後"

@@ -4,7 +4,7 @@ const createHTML = {};
 createHTML.UpdateHistory = () => {
     const history = document.getElementById("update-history");
     if(updateHistory.length === 0) {
-        history.style.display = "none";
+        history.classList.add("is-unshown");
         return;
     }
     

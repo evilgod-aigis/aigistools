@@ -1,37 +1,34 @@
 // 永続
-buff.perm = {};
-buff.perm.picked = [];
-buff.perm.sortedBy = "id";
-buff.perm.list = [
+buff.perm = [
     {
         name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒後", skill: "覚醒(1)"
         , stats: { hp: "×1.2" }
         , target: { others: [ "竜族" ] }
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒後", skill: "覚醒(2)"
         , stats: { atk: "×1.2" }
         , target: { others: [ "竜族" ] }
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
         name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒後", skill: "覚醒(3)"
         , stats: { def: "×1.2" }
         , target: { others: [ "竜族" ] }
-        , note: "発動時"
+        , note: [ "発動時", "ボム" ]
     }
     , {
-        name: "斎主の獅子", rarity: "トークン", AW: "覚醒前"
+        name: "斎主の獅子", rarity: "トークン", AW: "覚醒前", skill: "通常"
         , stats: { hp: "×1.5" }
         , target: { cl: [ "狛犬" ] }
-        , note: [ "コマ/花嫁", "発動時" ]
+        , note: [ "コマ/花嫁", "発動時", "ボム" ]
     }
     , {
-        name: "斎主の大獅子", rarity: "トークン", AW: "覚醒後"
+        name: "斎主の大獅子", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { hp: "×1.5" }
         , target: { cl: [ "狛犬" ] }
-        , note: [ "コマ/花嫁", "発動時" ]
+        , note: [ "コマ/花嫁", "発動時", "ボム" ]
     }
 ];
 
