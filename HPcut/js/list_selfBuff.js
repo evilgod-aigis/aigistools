@@ -92,5 +92,7 @@ lists.selfBuff.redMapEff = [
     { id: null, buffer: "キャプテン", map: "深海", rate: 50 },
     { id: null, buffer: "キングオブパイレーツ", map: "深海", rate: 50 },
     { id: null, buffer: "ネプチューン", map: "深海", rate: 50 },
-    { id: null, buffer: "エル・ドラゴ", map: "深海", rate: 50 }
+    { id: null, buffer: "エル・ドラゴ", map: "深海", rate: 50 },
+    //{ id: null, buffer: "水遁遊戯ハツネ", skill: "覚醒", map: "深海", rate: 50 },
+    { id: null, buffer: "夏陽海仙 竜吉公主", map: "深海", rate: 50 }
 ];

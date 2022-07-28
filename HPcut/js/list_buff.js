@@ -59,7 +59,7 @@ lists.buff.rWT.list = [
         ],
         tooltip:
         "[編成] 属性：ジューンブライド・<br>\
-         　　　　　 竜族(ドラゴンライダー・ドラグーン系含)の初動-20%"
+         　　　　　　 竜族(ドラゴンライダー・ドラグーン系含)の初動-20%"
     },
     {
         id: null, buffer: "竜姫婚姻譚メリュジアナ", awaken: "覚醒", showAwaken: true,
@@ -70,7 +70,7 @@ lists.buff.rWT.list = [
         ],
         tooltip:
         "[編成] 属性：ジューンブライド・<br>\
-         　　　　　 竜族(ドラゴンライダー・ドラグーン系含)の初動-25%"
+         　　　　　　 竜族(ドラゴンライダー・ドラグーン系含)の初動-25%"
     },
     {
         id: null, buffer: "波斬りの剣士サンドラ", awaken: "覚醒", showAwaken: false,
@@ -81,7 +81,7 @@ lists.buff.rWT.list = [
         ],
         tooltip:
         "[編成] クラス：ソードマスター系、<br>\
-         　　　　　 属性：サマーの初動-30%"
+         　　　 属性：サマーの初動-30%"
     },
     {
         id: null, buffer: "闇炎の魔将イルムガルト", awaken: "覚醒", showAwaken: false,
@@ -169,7 +169,7 @@ lists.buff.rCT.list = [
         ],
         tooltip:
         "[配置] クラス：ランスマスター系・<br>\
-         　　　　　 ワルキューレ系・ロイヤルガード系の再動-50%"
+         　　　　　　　 ワルキューレ系・ロイヤルガード系の再動-50%"
     },
     {
         id: null, buffer: "犬神ツムジ", awaken: "覚醒", showAwaken: false,
@@ -184,7 +184,7 @@ lists.buff.rCT.list = [
         ],
         tooltip:
         "[配置] クラス：犬神系・陰陽師系・<br>\
-         　　　　　 邪仙系・呪術使い系の再動-50%"
+         　　　　　　　 邪仙系・呪術使い系の再動-50%"
     },
     {
         id: null, buffer: "ねこみみ購買部ミネット", awaken: "覚醒", showAwaken: false,
@@ -304,7 +304,7 @@ lists.buff.skillExtend_fixed.list = [
                 "王子", "王子【神器装備】", "王子【ケラウノス】", "王子【砂漠】", "王子【獣装】",
                 "王子【巨像】", "王子【風護】", "王子【英魂】", "王子【ダーク】", "王子【英雄王】",
                 "王子【四神】", "王子【神槍】", "王子【ナンディ】", "王子【海鎮】", "王子【ドゥン】",
-                "王子【焔竜】", "王子【祝賀】", "王子【太鼓】", "王子【幼少】", "ちび王子",
+                "王子【焔竜】", "王子【祝賀】", "王子【太鼓】", "王子【水着】", "王子【幼少】", "ちび王子",
                 "バンデット系", "ちびバンデット", "ちびデストロイヤー", "下級バンデット", "バンデット", "バーサーカー", "デストロイヤー", "フューリーブリガンド", "オブリタレイター",
                 "モンク系", "ちびモンク", "ちび拳聖", "モンク", "マスターモンク", "拳聖", "拳王", "修羅",
                 "アベンジャー系", "ちびアベンジャー", "ちびデスアベンジャー", "アベンジャー", "デスアベンジャー", "ヴェンデッタ", "リヴェンジェンス",
@@ -314,14 +314,20 @@ lists.buff.skillExtend_fixed.list = [
         ],
         tooltip:
         "[スキル・全体] 王子とクラス：バンデット系・モンク系・アベンジャー系・<br>\
-         　　　　　グラディエーター系・モンスターブレイカー系のスキル時間+5秒"
+         　　　　　　　 グラディエーター系・モンスターブレイカー系のスキル時間+5秒"
     }
 ];
 
-//硬直短縮(編成バフ)リスト
+//硬直短縮リスト
 lists.buff.hasteTeam = {};
 lists.buff.hasteTeam.updateTable = [ false, true ];
 lists.buff.hasteTeam.list = [
+    {
+        id: null, buffer: "雷鳴大妖ぬえ", awaken: "覚2a", showAwaken: false,
+        rate: 20, disabled: false,
+        AndOr: "or", target: [ { attribution: [ "妖怪" ] } ],
+        tooltip: "[編成] 属性：妖怪の攻撃硬直-20%"
+    },
     {
         id: null, buffer: "エルダードラゴンメイガス", awaken: "覚2a?", showAwaken: false,
         rate: 20, disabled: true,
@@ -339,7 +345,7 @@ lists.buff.hasteTeam.list = [
                 "王子", "王子【神器装備】", "王子【ケラウノス】", "王子【砂漠】", "王子【獣装】",
                 "王子【巨像】", "王子【風護】", "王子【英魂】", "王子【ダーク】", "王子【英雄王】",
                 "王子【四神】", "王子【神槍】", "王子【ナンディ】", "王子【海鎮】", "王子【ドゥン】",
-                "王子【焔竜】", "王子【祝賀】", "王子【太鼓】", "王子【幼少】", "ちび王子"
+                "王子【焔竜】", "王子【祝賀】", "王子【太鼓】", "王子【水着】", "王子【幼少】", "ちび王子"
             ] }
         ],
         tooltip: "[編成] 自身と王子の攻撃硬直-40%"
@@ -391,11 +397,11 @@ lists.buff.hasteTeam.list = [
         ],
         tooltip:
         "[編成] クラス：砲術士系・重装砲兵系・<br>\
-         　　　　　 モンスタースレイヤー系の攻撃硬直-30%"
+         　　　　　　　 モンスタースレイヤー系の攻撃硬直-30%"
     }
 ];
 
-//硬直短縮(スキル)リスト
+//硬直短縮(固定値化)リスト
 lists.buff.hasteSkill = {};
 lists.buff.hasteSkill.updateTable = [ false, true ];
 lists.buff.hasteSkill.list = [
@@ -428,7 +434,7 @@ lists.buff.hasteSkill.list = [
         ],
         tooltip:
         "[スキル・射程内] クラス：ウィッチ系・<br>\
-         　　　　　　 クロノウィッチ系の攻撃硬直6f化"
+         　　　　　　　　　　　　 クロノウィッチ系の攻撃硬直6f化"
     },
     {
         id: null, buffer: "時の調停者トワ", awaken: "覚醒", showAwaken: true,
@@ -442,7 +448,7 @@ lists.buff.hasteSkill.list = [
         ],
         tooltip:
         "[スキル・射程内] クラス：メイジ系・ウィッチ系・<br>\
-         　　　　　　 クロノウィッチ系の攻撃硬直6f化"
+         　　　　　　　　　　　　 クロノウィッチ系の攻撃硬直6f化"
     },
     {
         id: null, buffer: "胡喜美", awaken: "通常", showAwaken: false,
@@ -480,29 +486,33 @@ lists.buff.giveDmgMul.list = [
         id: null, buffer: "超古代発明家アルレット", awaken: "未覚醒", showAwaken: true,
         rate: 15, disabled: false,
         AndOr: "or", target: [ { "-": [] } ],
-        tooltip: "[編成] 飛行敵に対して<br>\
-        　　　　　 全味方の攻撃力が15%上昇"
+        tooltip:
+        "[編成] 飛行敵に対して<br>\
+         　　　 全味方の攻撃力が15%上昇"
     },
     {
         id: null, buffer: "超古代発明家アルレット", awaken: "覚醒", showAwaken: true,
         rate: 20, disabled: false,
         AndOr: "or", target: [ { "-": [] } ],
-        tooltip: "[編成] 飛行敵に対して<br>\
-        　　　　　 全味方の攻撃力が20%上昇"
+        tooltip:
+        "[編成] 飛行敵に対して<br>\
+         　　　 全味方の攻撃力が20%上昇"
     },
     {
         id: null, buffer: "奇想の発明家タバサ", awaken: "未覚醒", showAwaken: true,
         rate: 10, disabled: false,
         AndOr: "or", target: [ { "-": [] } ],
-        tooltip: "[編成] 神獣・魔獣・妖獣・獣・獣人・水棲に対して<br>\
-        　　　　　 全味方の攻撃力が10%上昇"
+        tooltip:
+        "[編成] 神獣・魔獣・妖獣・獣・獣人・水棲に対して<br>\
+         　　　 全味方の攻撃力が10%上昇"
     },
     {
         id: null, buffer: "奇想の発明家タバサ", awaken: "覚醒", showAwaken: true,
         rate: 15, disabled: false,
         AndOr: "or", target: [ { "-": [] } ],
-        tooltip: "[編成] 神獣・魔獣・妖獣・獣・獣人・水棲に対して<br>\
-        　　　　　 全味方の攻撃力が15%上昇"
+        tooltip:
+        "[編成] 神獣・魔獣・妖獣・獣・獣人・水棲に対して<br>\
+         　　　 全味方の攻撃力が15%上昇"
     },
     {
         id: null, buffer: "帝国発明家ヘンドリカ", awaken: "未覚醒", showAwaken: true,
@@ -514,9 +524,10 @@ lists.buff.giveDmgMul.list = [
         id: null, buffer: "帝国発明家ヘンドリカ", awaken: "覚醒", showAwaken: true,
         rate: 15, disabled: false,
         AndOr: "or", target: [ { "-": [] } ],
-        tooltip: "[編成] 天使に対して全味方の攻撃力が15%上昇<br>\
-        　　　　　 竜族に対して属性：帝国の攻撃力が15%上昇<br>\
-        　　　　　 (敵の属性は特に指定してないので、2行目は特に意味ない)"
+        tooltip:
+        "[編成] 天使に対して全味方の攻撃力が15%上昇<br>\
+         　　　 竜族に対して属性：帝国の攻撃力が15%上昇<br>\
+         　　　 (敵の属性は特に指定してないので、2行目は特に意味ない)"
     }
 ];
 
