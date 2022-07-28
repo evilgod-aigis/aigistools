@@ -492,19 +492,19 @@ debuff.hit = [
     , {
         name: "ラトゥール/浴衣", rarity: "白", cl: "道化師", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
-        , attr: "物理", dur: "?f"
+        , attr: "物理", dur: "149f"
         , note: "確率20%?で貫通"
     }
     , {
         name: "ラトゥール/浴衣", rarity: "白", cl: "道化師", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
-        , attr: "物理", dur: "?f"
+        , attr: "物理", dur: "149f"
         , note: "確率20%?で貫通"
     }
     , {
         name: "ラトゥール/浴衣", rarity: "白", cl: "道化師", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
-        , attr: "貫通", dur: "?f"
+        , attr: "貫通", dur: "4f"
         , note: "確率20%?で貫通"
     }
     , {
