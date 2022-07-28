@@ -778,6 +778,22 @@ debuff.mixture = [
         , note: "永続"
     }
     , {
+        name: "シラヌイ/浴衣", rarity: "白", cl: "ぬりかべ", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "シラヌイ/浴衣", rarity: "白", cl: "ぬりかべ", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
         name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "覚醒(1)"
         , stats: {
             mr: { value: "-50%", type: "area" }

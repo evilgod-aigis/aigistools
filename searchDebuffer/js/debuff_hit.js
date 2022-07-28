@@ -97,8 +97,7 @@ debuff.hit = [
     , {
         name: "ヴァイス/水着", rarity: "白", cl: "ソードマスター", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "-25%" }
-        , attr: "物理", dur: "?f"
-        , note: "分類未確認"
+        , attr: "物理", dur: "29f"
     }
     , {
         name: "ラクシャーサ", rarity: "黒", cl: "魔神", AW: "覚醒後"
@@ -479,6 +478,36 @@ debuff.hit = [
         , attr: "物理", dur: "19f"
     }
     , {
+        name: "ラトゥール", rarity: "白", cl: "道化師", AW: "覚醒前"
+        , stats: { stop: "○" }
+        , attr: "物理", dur: "4f"
+        , note: "確率20%?で貫通"
+    }
+    , {
+        name: "ラトゥール", rarity: "白", cl: "道化師", AW: "覚醒後"
+        , stats: { stop: "○" }
+        , attr: "物理", dur: "4f"
+        , note: "確率20%?で貫通"
+    }
+    , {
+        name: "ラトゥール/浴衣", rarity: "白", cl: "道化師", AW: "覚醒前", skill: "通常"
+        , stats: { stop: "○" }
+        , attr: "物理", dur: "?f"
+        , note: "確率20%?で貫通"
+    }
+    , {
+        name: "ラトゥール/浴衣", rarity: "白", cl: "道化師", AW: "覚醒後", skill: "通常"
+        , stats: { stop: "○" }
+        , attr: "物理", dur: "?f"
+        , note: "確率20%?で貫通"
+    }
+    , {
+        name: "ラトゥール/浴衣", rarity: "白", cl: "道化師", AW: "覚醒後", skill: "覚醒"
+        , stats: { stop: "○" }
+        , attr: "貫通", dur: "?f"
+        , note: "確率20%?で貫通"
+    }
+    , {
         name: "マルレーン", rarity: "黒", cl: "支援工兵", AW: "覚醒前", skill: "通常"
         , stats: { atkCd: "+30f" }
         , attr: "物理", dur: "?f"
@@ -496,7 +525,7 @@ debuff.hit = [
     , {
         name: "パトリシア/水着", rarity: "白", cl: "支援工兵", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
-        , attr: "物理", dur: "?f"
+        , attr: "物理", dur: "14f"
     }
     , {
         name: "ドラグーン", cl: "ドラグーン", AW: "覚醒前"
