@@ -230,6 +230,14 @@ buff.skill_area = [
         , stats: { def: "×1.5" }
     }
     , {
+        name: "リアナ/浴衣", rarity: "黒", cl: "ヒーラー", AW: "覚醒前", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "リアナ/浴衣", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
         name: "シンディ", rarity: "金", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "×1.5" }
     }
@@ -590,6 +598,11 @@ buff.skill_area = [
         name: "シャドー", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { other: "" }
         , note: [ "リタ/水着", "隠密付与", "永続(自壊)" ]
+    }
+    , {
+        name: "破魔の風鈴", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        , stats: { abn: "-100%", rege: [ "40/秒", "?/?f" ] }
+        , note: "リアナ/浴衣"
     }
     , {
         name: "かぼちゃ馬車", rarity: "トークン", AW: "覚醒後", skill: "通常"
