@@ -1119,6 +1119,14 @@ buff.team = [
         , target: { cl: [ "テンプルナイト" ] }
     }
     , {
+        name: "シラヌイ/浴衣", rarity: "白", cl: "ぬりかべ", AW: "覚醒後"
+        , stats: { def: "+5%" }
+        , target: [
+            { race: [ "妖怪" ] }
+            , { season: [ "サマー" ] }
+        ]
+    }
+    , {
         name: "カザキリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚醒前"
         , stats: { other: "" }
         , target: { home: [ "東の国" ], depType: [ "近接" ] }
@@ -1131,7 +1139,7 @@ buff.team = [
         , note: "追撃(24%)付与"
     }
     , {
-        name: "アレクシア", rarity: "白", cl: "戦巫女", AW: "覚醒後"
+        name: "コウメ", rarity: "白", cl: "戦巫女", AW: "覚醒後"
         , stats: { atk: "+7%" }
         , target: { cl: [ "戦巫女", "シャーマン", "陰陽師", "符術士" ] }
     }

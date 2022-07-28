@@ -1012,6 +1012,12 @@ buff.skill_cat = [
         , note: "範囲"
     }
     , {
+        name: "リアナ/浴衣", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { redep: "25秒" }
+        , target: { season: [ "サマー", "死亡・撤退最後1体" ] }
+        , note: "発動時"
+    }
+    , {
         name: "デスピア/ハロウィン", rarity: "黒", cl: "ウィッチ", AW: "覚醒前", skill: "通常"
         , stats: { atkCd: "6f化" }
         , target: { season: [ "ハロウィン" ] }
@@ -1226,7 +1232,7 @@ buff.skill_cat = [
     }
     , {
         name: "メルアビス", rarity: "黒", cl: "ネクロマンサー", AW: "覚醒後", skill: "覚醒"
-        , stats: { other: "" }
+        , stats: { redep: "20秒" }
         , target: { others: [ "アンデッド", "死亡・撤退最後1体" ] }
         , note: "発動時"
     }
