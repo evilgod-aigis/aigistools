@@ -601,7 +601,7 @@ buff.skill_area = [
     }
     , {
         name: "破魔の風鈴", rarity: "トークン", AW: "覚醒後", skill: "通常"
-        , stats: { abn: "-100%", rege: [ "40/秒", "?/?f" ] }
+        , stats: { abn: "-100%", rege: [ "40/秒", "20/15f" ] }
         , note: "リアナ/浴衣"
     }
     , {
