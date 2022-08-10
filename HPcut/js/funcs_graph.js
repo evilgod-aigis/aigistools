@@ -10,12 +10,8 @@ funcs.graph.SetGraphData = (updateTable = [ false, false ]) => {
     funcs.unitsData.CountUnits();
     const execSetters = updateTable[0] || updateTable[1];
     const evilPrincess = [
-        "ちびイビルプリンセス",
-        "ちびイビルクイーン",
-        "イビルプリンセス",
-        "イビルクイーン",
-        "イビルシーカー",
-        "デスブリンガー",
+        "ちびイビルプリンセス","ちびイビルクイーン",
+        "イビルプリンセス", "イビルクイーン", "イビルシーカー", "デスブリンガー",
     ];
     const borderDash = [
         [

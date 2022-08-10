@@ -422,6 +422,37 @@ lists.units.onSkillAct.list = [
         id: null,
         added: false,
         unitInfo: {
+            unitName: "夏祭りの金魚姫スキュレ", deployType: "近接型", rarity: "白",
+            unitClass: {
+                selectable: true, selected: "イビルシーカー",
+                options: [ "イビルクイーン", "イビルシーカー" ]
+            },
+            attribution: [ "サマー" ],
+            affection: { percentage: null, bonus: "その他", changeRate: null },
+            note: [ "女性", "HP回復不可", "魔界適応", "深海適応" ]
+        },
+        skill: {
+            awaken: {
+                selectable: true, selected: "覚醒",
+                options: [ "通常", "覚醒" ]
+            },
+            target: [ "全敵", "全敵" ],
+            WT: { A: null, B: null },
+            CT: { A: null, B: null },
+            CT_uncorr: [ { A: 50, B: null }, { A: 50, B: null } ],
+            dur: { A: null, B: null },
+            dur_uncorr: [ { A: 25, B: null }, { A: 20, B: null } ],
+            firstTime: null, interval: null,
+            trigger: [ "-", "-" ], trans: [ "-", "-" ],
+            HPred: [ null, null ], HPred_uncorr: [ 15, 15 ],
+            mulByNum: [ [ 1 ], [ 1 ] ],
+            dmgMul: { options: [ "-", "-" ], mul: [ 1, 1 ], target: [ null, null ] }
+        }
+    },
+    {
+        id: null,
+        added: false,
+        unitInfo: {
             unitName: "降魔の戦姫トコヨ", deployType: "近接型", rarity: "青",
             unitClass: {
                 selectable: true, selected: "イビルシーカー",
