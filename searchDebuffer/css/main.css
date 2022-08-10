@@ -285,13 +285,13 @@ summary {
 #tables .cell-filled {
     background-color: rgb(255, 200, 100);
 }
-#tables .cell-attr_physical {
+#tables .cell-atkAttr_physical {
     background-color: rgb(255, 255, 255);
 }
-#tables .cell-attr_magical {
+#tables .cell-atkAttr_magical {
     background-color: rgb(255, 255, 50);
 }
-#tables .cell-attr_true {
+#tables .cell-atkAttr_true {
     background-color: rgb(255, 50, 255);
 }
 /* テーブル ここまで */
