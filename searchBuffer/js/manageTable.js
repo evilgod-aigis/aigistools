@@ -147,11 +147,11 @@ table.CreateFilter = () => {
         CreateButtons(newCheckboxArea);
         newBr = document.createElement("br");
         newCheckboxArea.appendChild(newBr);
-        CreatCheckbox(newCheckboxArea, filterType);
+        CreateCheckbox(newCheckboxArea, filterType);
         newFliterArea.appendChild(newCheckboxArea);
         filterCont.appendChild(newFliterArea);
     }
-    const CreatCheckbox = (element, filterType, except = []) => {
+    const CreateCheckbox = (element, filterType, except = []) => {
         _.forEach(table.filter[filterType], (checked, key) => {
             if(_.includes(except, key)) return;
             newLabel = document.createElement("label");
@@ -206,7 +206,7 @@ table.CreateFilter = () => {
     CreateButtons(newCheckboxArea);
     newBr = document.createElement("br");
     newCheckboxArea.appendChild(newBr);
-    CreatCheckbox(newCheckboxArea, "stats", [ "forceMode", "other" ]);
+    CreateCheckbox(newCheckboxArea, "stats", [ "forceMode", "other" ]);
     newLabel = document.createElement("label");
     newLabel.className = "tooltip-b";
     newLabel.setAttribute(

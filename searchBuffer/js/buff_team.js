@@ -231,6 +231,14 @@ buff.team = [
         , target: { race: [ "獣人" ] }
     }
     , {
+        name: "スキュレ/浴衣", rarity: "白", cl: "イビルプリンセス", AW: "覚醒後"
+        , stats: { hp: "+5%" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "深海適応" ] }
+        ]
+    }
+    , {
         name: "レオーネ", rarity: "黒", cl: "バンデット", AW: "覚醒後"
         , stats: { hp: "+7%", atk: "+7%", def: "+7%" }
         , target: { race: [ "獣人" ] }
