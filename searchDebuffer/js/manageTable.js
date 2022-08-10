@@ -7,7 +7,7 @@ table.word = {
     , id: "id", name: "ユニット", rarity: "レア", cl: "クラス", AW: "覚醒等", skill: "スキル"
     
     , hp: "HP", atk: "攻撃力", def: "防御力", mr: "魔法<br>耐性", atkCd: "攻撃<br>硬直", stop: "停止"
-    , attr: "属性", dur: "継続"
+    , atkAttr: "攻撃<br>属性", dur: "継続"
     , value: "数値"
     , target: "対象", note: "備考"
 }
@@ -24,7 +24,7 @@ table.sortDir = {
 
 table.rarity = [ "黒", "白", "青", "金", "ちび", "銀", "銅", "鉄", "トークン", "空欄" ];
 table.AW = [ "CC前", "CC後", "CC55", "覚醒前", "覚醒後", "覚1", "覚2a", "覚2b" ];
-table.attr = [ "物理", "魔法", "貫通" ];
+table.atkAttr = [ "物理", "魔法", "貫通" ];
 table.debuffType = {};
 table.debuffType.common = [ "team", "hit", "scalar" ];
 table.debuffType.domain = [ "area", "global" ];
@@ -56,7 +56,7 @@ table.debuffType.type = {
 };
 table.stats = [ "hp", "atk", "def", "mr", "atkCd", "stop" ];
 table.before = [ "id", "name", "rarity", "AW", "skill" ];
-table.after = [ "attr", "dur", "target", "note" ];
+table.after = [ "atkAttr", "dur", "target", "note" ];
 
 
 // 特殊なオブジェクト生成
@@ -100,7 +100,7 @@ table.SetObjects = () => {
     table.column.push(...table.stats);
     table.column.push(...table.after);
     // 表のソート可能な列
-    table.sortable = [ "id", "rarity", ...table.stats, "attr", "dur", "value" ];
+    table.sortable = [ "id", "rarity", ...table.stats, "atkAttr", "dur", "value" ];
     
     // picked: 検索条件に合うものを入れる
     // sortedBy: 今何でソートされているか
@@ -179,11 +179,11 @@ table.CreateFilter = () => {
         CreateButtons(newCheckboxArea);
         newBr = document.createElement("br");
         newCheckboxArea.appendChild(newBr);
-        CreatCheckbox(newCheckboxArea, filterType);
+        CreateCheckbox(newCheckboxArea, filterType);
         newFliterArea.appendChild(newCheckboxArea);
         filterCont.appendChild(newFliterArea);
     }
-    const CreatCheckbox = (element, filterType, except = []) => {
+    const CreateCheckbox = (element, filterType, except = []) => {
         _.forEach(table.filter[filterType], (checked, key) => {
             if(_.includes(except, key)) return;
             newLabel = document.createElement("label");
@@ -238,7 +238,7 @@ table.CreateFilter = () => {
     CreateButtons(newCheckboxArea);
     newBr = document.createElement("br");
     newCheckboxArea.appendChild(newBr);
-    CreatCheckbox(newCheckboxArea, "stats", [ "forceMode", "other" ]);
+    CreateCheckbox(newCheckboxArea, "stats", [ "forceMode", "other" ]);
     /*
     newLabel = document.createElement("label");
     newLabel.className = "tooltip-b";
@@ -308,7 +308,14 @@ table.CreateTable = () => {
     switch(table.mixture) {
         case "domain":
             _.forEach(debuff.mixture, debuffer => {
-                if(target.IsMatch(debuffer.target)) table.list[debuffer.domain].picked.push(debuffer);
+                if(target.IsMatch(debuffer.target)) //table.list[debuffer.domain].picked.push(debuffer);
+                {
+                    try {
+                        table.list[debuffer.domain].picked.push(debuffer);
+                    } catch(e) {
+                        console.log(e)
+                    }
+                }
             });
             table.CreateTableSub(tables, table.debuffType.domain, false);
             break;
@@ -409,11 +416,11 @@ table.CreateTableSub = (_element, _list, _isCommon, _stat = "") => {
                     }
                     newTr.appendChild(newTd);
                 });
-                // attr
+                // atkAttr
                 let newTd = document.createElement("td");
-                if("attr" in debuffer) {
-                    if(debuffer.attr[0] !== "?") newTd.className = `cell-attr_${table.eng[debuffer.attr]}`;
-                    newTd.innerHTML = Array.isArray(debuffer.attr) ? debuffer.attr.join("<br>") : debuffer.attr;
+                if("atkAttr" in debuffer) {
+                    if(debuffer.atkAttr[0] !== "?") newTd.className = `cell-atkAttr_${table.eng[debuffer.atkAttr]}`;
+                    newTd.innerHTML = Array.isArray(debuffer.atkAttr) ? debuffer.atkAttr.join("<br>") : debuffer.atkAttr;
                 }
                 newTr.appendChild(newTd);
                 // dur
@@ -479,6 +486,31 @@ table.CreateTableSub = (_element, _list, _isCommon, _stat = "") => {
 
 // フィルタ適用
 table.ApplyFilter = () => {
+    // 行の処理用
+    const HideRows = (tableArea, tableName) => {
+        const debuffTable = tableArea.getElementsByTagName("table")[0];
+        const trs = debuffTable.querySelectorAll("tbody tr");
+        const shownRowIndexes = [];
+        _.forEach(table.list[tableName].picked, (debuffer, i) => {
+            if(((!("rarity" in debuffer) && table.filter.rarity["空欄"]) || table.filter.rarity[debuffer.rarity])
+                && (!("AW" in debuffer) || table.filter.AW[table.AW_rep[debuffer.AW]])
+                && _.some(debuffer.stats, (_, stat) => table.filter.stats[stat])) {
+                trs[i].classList.remove("is-unshown");
+                shownRowIndexes.push(i);
+            } else
+                trs[i].classList.add("is-unshown");
+        });
+        const tableNameElem = tableArea.getElementsByClassName("table-name")[0];
+        if(shownRowIndexes.length === 0) {
+            debuffTable.parentElement.classList.add("is-unshown");
+            tableNameElem.classList.add("table-empty");
+        } else {
+            debuffTable.parentElement.classList.remove("is-unshown");
+            tableNameElem.classList.remove("table-empty");
+        }
+        return shownRowIndexes;
+    }
+    
     const tableAreaNames = [ ...table.debuffType.common ];
     switch(table.mixture) {
         case "domain":
@@ -499,31 +531,6 @@ table.ApplyFilter = () => {
             return;
         }
         tableArea.classList.remove("is-unshown");
-        
-        // 行の処理
-        const HideRows = (tableArea, tableName) => {
-            const debuffTable = tableArea.getElementsByTagName("table")[0];
-            const trs = debuffTable.querySelectorAll("tbody tr");
-            const shownRowIndexes = [];
-            _.forEach(table.list[tableName].picked, (debuffer, i) => {
-                if(((!("rarity" in debuffer) && table.filter.rarity["空欄"]) || table.filter.rarity[debuffer.rarity])
-                    && (!("AW" in debuffer) || table.filter.AW[table.AW_rep[debuffer.AW]])
-                    && _.some(debuffer.stats, (_, stat) => table.filter.stats[stat])) {
-                    trs[i].classList.remove("is-unshown");
-                    shownRowIndexes.push(i);
-                } else
-                    trs[i].classList.add("is-unshown");
-            });
-            const tableNameElem = tableArea.getElementsByClassName("table-name")[0];
-            if(shownRowIndexes.length === 0) {
-                debuffTable.parentElement.classList.add("is-unshown");
-                tableNameElem.classList.add("table-empty");
-            } else {
-                debuffTable.parentElement.classList.remove("is-unshown");
-                tableNameElem.classList.remove("table-empty");
-            }
-            return shownRowIndexes;
-        }
         
         const shownRowIndexes = [];
         if(isStat) {
@@ -547,6 +554,9 @@ table.ApplyFilter = () => {
                 if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === "")) {
                     _.forEach(ths, th => th.classList.add("is-unshown"));
                     _.forEach(tds, td => td.classList.add("is-unshown"));
+                } else {
+                    _.forEach(ths, th => th.classList.remove("is-unshown"));
+                    _.forEach(tds, td => td.classList.remove("is-unshown"));
                 }
                 table.Sort(name, "id", false);
             });
@@ -660,18 +670,18 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
                 if(rarity_b === "") return -1;
                 return table.rarity.indexOf(rarity_a) - table.rarity.indexOf(rarity_b);
             });
-        } else if(_colName === "attr") {
+        } else if(_colName === "atkAttr") {
             trs_array.sort((a, b) => {
                 const tds_a = a.children;
                 const tds_b = b.children;
                 const id_a = Number(tds_a[colIndex_id].innerHTML);
                 const id_b = Number(tds_b[colIndex_id].innerHTML);
-                const attr_a = tds_a[colIndex].innerHTML;
-                const attr_b = tds_b[colIndex].innerHTML;
-                if(attr_a === attr_b) return id_a - id_b;
-                if(attr_a === "") return 1;
-                if(attr_b === "") return -1;
-                return table.attr.indexOf(attr_a) - table.attr.indexOf(attr_b);
+                const atkAttr_a = tds_a[colIndex].innerHTML;
+                const atkAttr_b = tds_b[colIndex].innerHTML;
+                if(atkAttr_a === atkAttr_b) return id_a - id_b;
+                if(atkAttr_a === "") return 1;
+                if(atkAttr_b === "") return -1;
+                return table.atkAttr.indexOf(atkAttr_a) - table.atkAttr.indexOf(atkAttr_b);
             });
         } else if(_colName === "dur") {
             trs_array.sort((a, b) => {
@@ -705,7 +715,7 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
                 let priority_a = 1;
                 let priority_b = 1;
                 let value_a;
-                let valur_b;
+                let value_b;
                 switch(text_a[0]) {
                     case "×":
                         priority_a = 2;

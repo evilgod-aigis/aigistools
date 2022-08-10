@@ -1,7 +1,7 @@
 const target = {};
 
 target.word = {
-    attr: "属性"
+    attr: "属性", atkAttr: "攻撃属性"
 };
 
 target.attr = [
@@ -9,6 +9,7 @@ target.attr = [
     , "デーモン", "魔神", "天使", "天界人", "神", "神獣", "魔獣", "妖獣", "獣", "獣人"
     , "植物", "インセクト", "魚人", "水棲", "機械", "アーマー", "英傑"
 ];
+target.atkAttr = [ "物理", "魔法", "貫通" ];
 target.selected = {};
 
 target.CreateForm = () => {
@@ -51,19 +52,35 @@ target.CreateForm = () => {
     }
     */
     
+    const CreateButtons = (td, category) => {
+        _.forEach({ "全部ON": true, "全部OFF": false }, (checked, text) => {
+            const newButton = document.createElement("button");
+            newButton.type = "button";
+            newButton.setAttribute("onclick", `target.ToggleAll("${category}", ${checked})`);
+            newButton.innerHTML = text;
+            td.appendChild(newButton);
+        });
+    }
+    const CreateCheckboxes = (form, category) => {
+        _.forEach(target[category], value => {
+            newLabel = document.createElement("label");
+            newCheckbox = document.createElement("input");
+            newCheckbox.type = "checkbox";
+            newCheckbox.name = "options";
+            newCheckbox.value = value;
+            newLabel.appendChild(newCheckbox);
+            newLabel.innerHTML += value;
+            form.appendChild(newLabel);
+        });
+    }
+    
     // attr
     newTr = document.createElement("tr");
     newTh = document.createElement("th");
     newTh.innerHTML = target.word["attr"];
     newTr.appendChild(newTh);
     newTd = document.createElement("td");
-    _.forEach({ "全部ON": true, "全部OFF": false }, (checked, text) => {
-        const newButton = document.createElement("button");
-        newButton.type = "button";
-        newButton.setAttribute("onclick", `target.ToggleAllAttr(${checked})`);
-        newButton.innerHTML = text;
-        newTd.appendChild(newButton);
-    });
+    CreateButtons(newTd, "attr");
     newForm = document.createElement("form");
     newForm.id = "target-info_attr";
     newLabel = document.createElement("label");
@@ -77,16 +94,21 @@ target.CreateForm = () => {
     newForm.appendChild(newLabel);
     newBr = document.createElement("br");
     newForm.appendChild(newBr);
-    _.forEach(target.attr, value => {
-        newLabel = document.createElement("label");
-        newCheckbox = document.createElement("input");
-        newCheckbox.type = "checkbox";
-        newCheckbox.name = "options";
-        newCheckbox.value = value;
-        newLabel.appendChild(newCheckbox);
-        newLabel.innerHTML += value;
-        newForm.appendChild(newLabel);
-    });
+    CreateCheckboxes(newForm, "attr");
+    newTd.appendChild(newForm);
+    newTr.appendChild(newTd);
+    newTable.appendChild(newTr);
+    
+    // atkAttr
+    newTr = document.createElement("tr");
+    newTh = document.createElement("th");
+    newTh.innerHTML = target.word["atkAttr"];
+    newTr.appendChild(newTh);
+    newTd = document.createElement("td");
+    CreateButtons(newTd, "atkAttr");
+    newForm = document.createElement("form");
+    newForm.id = "target-info_atkAttr";
+    CreateCheckboxes(newForm, "atkAttr");
     newTd.appendChild(newForm);
     newTr.appendChild(newTd);
     newTable.appendChild(newTr);
@@ -145,17 +167,20 @@ target.CreateForm = () => {
 }
 
 // 属性一括ON/OFF
-target.ToggleAllAttr = _checked => {
-    const othersForm = document.getElementById("target-info_attr");
-    _.forEach(othersForm.options, option => { option.checked = _checked; });
+target.ToggleAll = (_category, _checked) => {
+    const form = document.getElementById(`target-info_${_category}`);
+    _.forEach(form.options, option => { option.checked = _checked; });
 }
 
 // 検索実行
 target.Search = () => {
-    const attrForm = document.getElementById("target-info_attr");
-    target.selected.attr = [];
-    _.forEach(attrForm.options, option => {
-        if(option.checked) target.selected.attr.push(option.value);
+    const categories = [ "attr", "atkAttr" ];
+    _.forEach(categories, cat => {
+        const form = document.getElementById(`target-info_${cat}`);
+        target.selected[cat] = [];
+        _.forEach(form.options, option => {
+            if(option.checked) target.selected[cat].push(option.value);
+        });
     });
     
     table.mixture = document.getElementById("target-info_tableOption").options.value;

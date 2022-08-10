@@ -159,7 +159,8 @@ debuff.mixture = [
             atk: { value: "-15%", type: "limAttr" }
         }
         , domain: "global"
-        , note: [ "物理", "永続" ]
+        , target: { atkAttr: [ "物理" ] }
+        , note: "永続"
     }
     , {
         name: "アンジェリーネ", rarity: "黒", cl: "プリンセス", AW: "覚醒後", skill: "通常"
@@ -167,7 +168,8 @@ debuff.mixture = [
             atk: { value: "-15%", type: "limAttr" }
         }
         , domain: "global"
-        , note: [ "物理", "永続" ]
+        , target: { atkAttr: [ "物理" ] }
+        , note: "永続"
     }
     , {
         name: "アンジェリーネ", rarity: "黒", cl: "プリンセス", AW: "覚醒後", skill: "覚醒"
@@ -175,7 +177,7 @@ debuff.mixture = [
             atk: { value: "-25%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "物理"
+        , target: { atkAttr: [ "物理" ] }
     }
     , {
         name: "オリヴィエ/花嫁", rarity: "黒", cl: "プリンセス", AW: "覚醒後", skill: "覚醒"
@@ -226,6 +228,33 @@ debuff.mixture = [
         }
         , domain: "global"
         , note: "発動時"
+    }
+    , {
+        name: "スキュレ/浴衣", rarity: "白", cl: "イビルプリンセス", AW: "覚醒前", skill: "通常"
+        , stats: {
+            atk: { value: "-10%", type: "limAttr" }
+        }
+        , domain: "global"
+        , target: { atkAttr: [ "魔法" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "スキュレ/浴衣", rarity: "白", cl: "イビルプリンセス", AW: "覚醒後", skill: "通常"
+        , stats: {
+            atk: { value: "-10%", type: "limAttr" }
+        }
+        , domain: "global"
+        , target: { atkAttr: [ "魔法" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "スキュレ/浴衣", rarity: "白", cl: "イビルプリンセス", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            def: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , target: { atkAttr: [ "魔法" ] }
+        , note: "分類未確認"
     }
     , {
         name: "チヨメ", rarity: "黒", cl: "忍者", AW: "覚醒後"
@@ -304,7 +333,7 @@ debuff.mixture = [
             atk: { value: "-20%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "物理"
+        , target: { atkAttr: [ "物理" ] }
     }
     , {
         name: "ちびコーネリア", rarity: "ちび", cl: "ダークファイター", skill: "通常"
@@ -642,7 +671,7 @@ debuff.mixture = [
             atk: { value: "-25%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "物理"
+        , target: { atkAttr: [ "物理" ] }
     }
     , {
         name: "エスネア/学園", rarity: "黒", cl: "デモンルーン", AW: "覚醒前", skill: "通常"
@@ -848,7 +877,7 @@ debuff.mixture = [
             atk: { value: "-20%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "魔法"
+        , target: { atkAttr: [ "魔法" ] }
     }
     , {
         name: "オデット", rarity: "白", cl: "メイジ", AW: "覚醒後", skill: "通常"
@@ -856,7 +885,7 @@ debuff.mixture = [
             atk: { value: "-20%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "魔法"
+        , target: { atkAttr: [ "魔法" ] }
     }
     , {
         name: "オデット", rarity: "白", cl: "メイジ", AW: "覚醒後", skill: "覚醒"
@@ -871,7 +900,7 @@ debuff.mixture = [
             atk: { value: "-15%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "物理"
+        , target: { atkAttr: [ "物理" ] }
     }
     , {
         name: "ミェール", rarity: "金", cl: "メイジ", AW: "覚醒後", skill: "通常"
@@ -879,7 +908,7 @@ debuff.mixture = [
             atk: { value: "-15%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "物理"
+        , target: { atkAttr: [ "物理" ] }
     }
     , {
         name: "ミェール", rarity: "金", cl: "メイジ", AW: "覚醒後", skill: "覚醒"
@@ -1018,7 +1047,7 @@ debuff.mixture = [
             atk: { value: "-15%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "物理"
+        , target: { atkAttr: [ "物理" ] }
     }
     , {
         name: "レーヴ", rarity: "白", cl: "ビショップ", AW: "覚醒後", skill: "通常"
@@ -1026,7 +1055,7 @@ debuff.mixture = [
             atk: { value: "-15%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "物理"
+        , target: { atkAttr: [ "物理" ] }
     }
     , {
         name: "レーヴ", rarity: "白", cl: "ビショップ", AW: "覚醒後", skill: "覚醒"
@@ -1034,7 +1063,7 @@ debuff.mixture = [
             atk: { value: "-15%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "物理"
+        , target: { atkAttr: [ "物理" ] }
     }
     , {
         name: "レオナ/水着", rarity: "白", cl: "後衛戦術家", AW: "覚醒前", skill: "通常"
@@ -1193,7 +1222,7 @@ debuff.mixture = [
             atk: { value: "-15%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "物理"
+        , target: { atkAttr: [ "物理" ] }
     }
     , {
         name: "レーレン", rarity: "白", cl: "アルケミスト", AW: "覚醒後", skill: "通常"
@@ -1201,7 +1230,7 @@ debuff.mixture = [
             atk: { value: "-15%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "物理"
+        , target: { atkAttr: [ "物理" ] }
     }
     , {
         name: "アイーダ", rarity: "白", cl: "レンジャー", AW: "覚醒後", skill: "覚醒"
@@ -1688,7 +1717,7 @@ debuff.mixture = [
             atk: { value: "-30%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "魔法"
+        , target: { atkAttr: [ "魔法" ] }
     }
     , {
         name: "カリン", rarity: "白", cl: "幻獣使い", AW: "覚醒後", skill: "通常"
@@ -1696,7 +1725,7 @@ debuff.mixture = [
             atk: { value: "-30%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "魔法"
+        , target: { atkAttr: [ "魔法" ] }
     }
     , {
         name: "カリン", rarity: "白", cl: "幻獣使い", AW: "覚醒後", skill: "覚醒"
@@ -1704,7 +1733,7 @@ debuff.mixture = [
             atk: { value: "-70%", type: "limAttr" }
         }
         , domain: "global"
-        , note: "魔法"
+        , target: { atkAttr: [ "魔法" ] }
     }
     , {
         name: "パトリシア", rarity: "白", cl: "支援工兵", AW: "覚醒前", skill: "通常"
@@ -2006,7 +2035,9 @@ debuff.mixture = [
     
     植物 インセクト 魚人 水棲 機械 アーマー 英傑
     
-    note 発動時 分類未確認 物理 魔法
+    atkAttr 物理 魔法 貫通
+    
+    note 発動時 分類未確認
     
     正月 温泉 バレンタイン 学園 バニー
     
