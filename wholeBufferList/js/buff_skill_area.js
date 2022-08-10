@@ -11,7 +11,7 @@ buff.skill_area = [
     }
     , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "覚醒"
-        , stats: { hp: "+30%", mr: "×1.3" }
+        , stats: { hp: "+30%", atk: "×1.3" }
         , note: "永続"
     }
     , {

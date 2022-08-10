@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2022/08/11(木)",
+        detail: [
+            "イムラウ(黒)の覚醒スキルの間違いを訂正(報告感謝です)&ensp;<span style='color: white;'>コピペの弊害ってやつ</span>"
+        ]
+    }
+    , {
         date: "2022/07/28(木)",
         detail: [
             "リアナ/浴衣を追加"
