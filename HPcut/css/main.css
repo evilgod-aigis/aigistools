@@ -6,6 +6,9 @@ body {
 p {
     margin: 0;
 }
+summary {
+    cursor: pointer;
+}
 #header {
     margin: 10px 0;
     padding: 0;
@@ -21,7 +24,7 @@ p {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(255,255,255,.5);
+    background: rgba(255, 255, 255, 0.5);
 }
 .inline-block {
     display: inline-block;
