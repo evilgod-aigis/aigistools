@@ -117,7 +117,7 @@ lists.units.onSkillAct.list = [
                 selectable: false, selected: "呪術使い系",
                 options: [ "呪術使い系" ]
             },
-            attribution: [ "人間", "お正月" ],
+            attribution: [ "人間", "魔術師", "東の国", "お正月" ],
             affection: { percentage: 150, bonus: "再動短縮", changeRate: null },
             note: [ "女性", "状態異常無効" ]
         },
@@ -458,7 +458,7 @@ lists.units.onSkillAct.list = [
                 selectable: true, selected: "イビルシーカー",
                 options: [ "イビルクイーン", "イビルシーカー" ]
             },
-            attribution: [ "なし" ],
+            attribution: [ "東の国" ],
             affection: { percentage: null, bonus: "その他", changeRate: null },
             note: [ "女性", "HP回復不可", "魔界適応" ]
         },
