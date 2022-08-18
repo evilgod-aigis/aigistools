@@ -745,6 +745,56 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
+        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
+        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"
+        , stats: { atk: "×1.3", def: "×1.1" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
+        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"
+        , stats: { ct: "-60%" }
+        , target: { cl: [ "皇帝" ] }
+    }
+    , {
+        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚2b", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
+        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚2b", skill: "覚醒"
+        , stats: { atk: "×1.4", def: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "ゴルドー", rarity: "金", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: [
@@ -868,6 +918,24 @@ buff.skill_cat = [
         name: "イルムガルト", rarity: "白", cl: "デーモンロード", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.6", mr: "+15" }
         , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "アブグルント", rarity: "白", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.4" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { race: [ "デーモン系" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
+        name: "アブグルント", rarity: "白", cl: "デーモンロード", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.4" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { race: [ "デーモン系" ] }
+        ]
         , note: "分類未確認"
     }
     , {
@@ -1282,6 +1350,21 @@ buff.skill_cat = [
         , stats: { draw: "(○)", redep: "40秒" }
         , target: { depType: [ "遠距離" ] }
         , note: "手動撤退も再出撃可能"
+    }
+    , {
+        name: "ロミルダ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"
+        , stats: { ct: "-50%" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
+        name: "ロミルダ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒後", skill: "通常"
+        , stats: { ct: "-50%" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
+        name: "ロミルダ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒"
+        , stats: { ct: "-50%" }
+        , target: { depType: [ "近接" ] }
     }
     , {
         name: "トトノ/正月", rarity: "白", cl: "マーチャント", AW: "覚醒後", skill: "覚醒"

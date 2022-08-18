@@ -614,6 +614,22 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚醒前"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚醒後"
+        , stats: { atk: "+15%", def: "+15%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
         name: "ゴルドー", rarity: "金", cl: "鍛冶職人", AW: "覚醒前"
         , stats: { atk: "+10%", def: "+10%" }
         , target: [

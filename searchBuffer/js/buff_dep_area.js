@@ -1,6 +1,18 @@
 // 範囲配置
 buff.dep_area = [
     {
+        name: "トゥーダ", rarity: "黒", cl: "神官戦士", AW: "覚醒前"
+        , stats: { def: "+10%" }
+        , target: { depType: [ "近接" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "トゥーダ", rarity: "黒", cl: "神官戦士", AW: "覚醒後"
+        , stats: { def: "+15%" }
+        , target: { depType: [ "近接" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "竜砲騎士隊長", cl: "ドラグーン", AW: "覚2a"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { others: [ "竜族" ] }

@@ -1,4 +1,4 @@
-function importJS() {
+(function() {
     const scripts = [
         "buff_team"
         , "buff_own"
@@ -17,6 +17,4 @@ function importJS() {
         , "initialize"
     ];
     scripts.forEach(elem => document.write(`<script src="./searchBuffer/js/${elem}.js"></script>`));
-}
-
-importJS();
+})();

@@ -977,6 +977,22 @@ buff.team = [
         ]
     }
     , {
+        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚醒前"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚醒後"
+        , stats: { atk: "+5%", def: "+10%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
         name: "ゴルドー", rarity: "金", cl: "鍛冶職人", AW: "覚醒前"
         , stats: { atk: "+5%", def: "+5%" }
         , target: [
@@ -1110,6 +1126,14 @@ buff.team = [
         name: "イルムガルト", rarity: "白", cl: "デーモンロード", AW: "覚醒後"
         , stats: { cost: "-1", wt: "-30%" }
         , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
+    }
+    , {
+        name: "アブグルント", rarity: "白", cl: "デーモンロード", AW: "覚醒後"
+        , stats: { atk: "+5%" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { race: [ "デーモン系" ] }
+        ]
     }
     , {
         name: "ヴィアベル", rarity: "黒", cl: "アクアナイト", AW: "覚醒前"
