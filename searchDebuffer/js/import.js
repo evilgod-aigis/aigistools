@@ -1,4 +1,4 @@
-function importJS() {
+(function() {
     const scripts = [
         "debuff_team"
         , "debuff_mixture"
@@ -11,6 +11,4 @@ function importJS() {
         , "initialize"
     ];
     scripts.forEach(elem => document.write(`<script src="./searchDebuffer/js/${elem}.js"></script>`));
-}
-
-importJS();
+})();

@@ -240,7 +240,6 @@ debuff.hit = [
         , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "59f"
     }
-    //
     , {
         name: "フーイェン", rarity: "白", cl: "武侠", AW: "覚醒前", skill: "通常"
         , stats: { def: "-40%" }
@@ -253,7 +252,6 @@ debuff.hit = [
         , atkAttr: "物理", dur: "?f"
         , note: "分類未確認"
     }
-    //
     , {
         name: "ポミエ/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
@@ -331,6 +329,12 @@ debuff.hit = [
         name: "トワ/学園", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "19f"
+    }
+    , {
+        name: "ロミルダ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "ココロ", rarity: "白", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"
