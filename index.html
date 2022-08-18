@@ -14,18 +14,32 @@
         </div>
         
         <div id="contents">
-            <p>
-                <a href="https://evilgod-aigis.github.io/aigistools/searchBuffer.html">バフ検索</a>
-            </p>
-            <p>
-                <a href="https://evilgod-aigis.github.io/aigistools/wholeBufferList.html">バフ(無差別)一覧</a>
-            </p>
-            <p>
-                <a href="https://evilgod-aigis.github.io/aigistools/searchDebuffer.html">デバフ検索</a>
-            </p>
-            <p>
-                <a href="https://evilgod-aigis.github.io/aigistools/HPcut.html">割合ダメージグラフ</a>
-            </p>
+            <script>
+                (function() {
+                    const sites = [
+                        { eng: "searchBuffer", jap: "バフ検索" }
+                        , { eng: "wholeBufferList", jap: "バフ(無差別)一覧" }
+                        , { eng: "searchDebuffer", jap: "デバフ検索" }
+                        , { eng: "HPcut", jap: "割合ダメージグラフ" }
+                    ];
+                    const now = new Date();
+                    sites.forEach(site => {
+                        const xhr = new XMLHttpRequest();
+                        xhr.open("GET", `https://evilgod-aigis.github.io/aigistools/${site.eng}/js/updateHistory.js`, false);
+                        xhr.send();
+                        Function(xhr.responseText.replace("const ", ""))();
+                        const dateArray = updateHistory[0].date.split("/").map(elem => parseInt(elem));
+                        const date = new Date(dateArray[0], dateArray[1] - 1, dateArray[2]);
+                        const diff = (now - date) / 1000 / 60 / 60/ 24;
+                        document.write(`
+                            <p>
+                                <a href="https://evilgod-aigis.github.io/aigistools/${site.eng}.html">${site.jap}</a>
+                                <span class="last-update">(更新：<span class="${diff < 3 ? "text-red" : ""}">${updateHistory[0].date}</span>)</span>
+                            </p>
+                        `);
+                    });
+                })();
+            </script>
         </div>
         <div id="footer"></div>
     </body>

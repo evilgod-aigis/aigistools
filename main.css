@@ -1,8 +1,17 @@
 p {
     margin: 0 0 5px 0;
 }
+a {
+    font-size: 18px;
+}
 #header {
     margin: 10px 0 30px;
     padding: 0;
     font-size: 24px;
+}
+.last-update {
+    font-size: 12px;
+}
+.text-red {
+    color: red;
 }
