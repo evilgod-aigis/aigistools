@@ -912,13 +912,11 @@ buff.skill_cat = [
         name: "イルムガルト", rarity: "白", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.6", mr: "+15" }
         , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
-        , note: "分類未確認"
     }
     , {
         name: "イルムガルト", rarity: "白", cl: "デーモンロード", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.6", mr: "+15" }
         , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
-        , note: "分類未確認"
     }
     , {
         name: "アブグルント", rarity: "白", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
@@ -927,7 +925,6 @@ buff.skill_cat = [
             { home: [ "白の帝国" ] }
             , { race: [ "デーモン系" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "アブグルント", rarity: "白", cl: "デーモンロード", AW: "覚醒後", skill: "通常"
@@ -936,7 +933,6 @@ buff.skill_cat = [
             { home: [ "白の帝国" ] }
             , { race: [ "デーモン系" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "オーガスタ/バレンタイン", rarity: "黒", cl: "料理人", AW: "覚醒後", skill: "覚醒"
@@ -1021,7 +1017,7 @@ buff.skill_cat = [
         name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.5" }
         , target: { home: [ "白の帝国" ] }
-        , note: [ "範囲", "分類未確認" ]
+        , note: "範囲"
     }
     , {
         name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒前", skill: "通常"
@@ -1039,6 +1035,12 @@ buff.skill_cat = [
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { atk: "×1.35", def: "×1.35" }
+        , target: { home: [ "白の帝国" ] }
+        , note: "分類未確認"
     }
     , {
         name: "キャロップ", rarity: "白", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"

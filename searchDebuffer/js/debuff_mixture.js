@@ -232,20 +232,18 @@ debuff.mixture = [
     , {
         name: "スキュレ/浴衣", rarity: "白", cl: "イビルプリンセス", AW: "覚醒前", skill: "通常"
         , stats: {
-            atk: { value: "-10%", type: "limAttr" }
+            atk: { value: "-10%", type: "noAttr" }
         }
         , domain: "global"
         , target: { atkAttr: [ "魔法" ] }
-        , note: "分類未確認"
     }
     , {
         name: "スキュレ/浴衣", rarity: "白", cl: "イビルプリンセス", AW: "覚醒後", skill: "通常"
         , stats: {
-            atk: { value: "-10%", type: "limAttr" }
+            atk: { value: "-10%", type: "noAttr" }
         }
         , domain: "global"
         , target: { atkAttr: [ "魔法" ] }
-        , note: "分類未確認"
     }
     , {
         name: "スキュレ/浴衣", rarity: "白", cl: "イビルプリンセス", AW: "覚醒後", skill: "覚醒"
@@ -254,7 +252,6 @@ debuff.mixture = [
         }
         , domain: "area"
         , target: { atkAttr: [ "魔法" ] }
-        , note: "分類未確認"
     }
     , {
         name: "チヨメ", rarity: "黒", cl: "忍者", AW: "覚醒後"

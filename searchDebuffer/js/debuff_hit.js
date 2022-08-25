@@ -332,9 +332,8 @@ debuff.hit = [
     }
     , {
         name: "ロミルダ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒"
-        , stats: { atkCd: "+?f" }
+        , stats: { atkCd: "+30f" }
         , atkAttr: "魔法", dur: "?f"
-        , note: "分類未確認"
     }
     , {
         name: "ココロ", rarity: "白", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"

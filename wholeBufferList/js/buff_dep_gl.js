@@ -215,6 +215,11 @@ buff.dep_gl = [
         , note: "魔界-100%"
     }
     , {
+        name: "皇帝【覚醒】", cl: "皇帝", AW: "覚醒後"
+        , stats: { other: "" }
+        , note: "魔界-100%"
+    }
+    , {
         name: "ヴェロッテ/ハロウィン", rarity: "金", cl: "パイレーツ", AW: "覚醒後"
         , stats: { def: "+5%", mr: "+5", cost: "+1" }
     }

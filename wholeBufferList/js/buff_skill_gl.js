@@ -253,7 +253,6 @@ buff.skill_gl = [
     , {
         name: "アブグルント", rarity: "白", cl: "デーモンロード", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.15" }
-        , note: "分類未確認"
     }
     , {
         name: "オーガスタ", rarity: "黒", cl: "料理人", AW: "覚醒前", skill: "通常"
