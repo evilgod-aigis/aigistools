@@ -1647,6 +1647,16 @@ buff.team = [
         , target: { home: [ "白の帝国" ], depType: [ "近接" ] }
     }
     , {
+        name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒前"
+        , stats: { atkCd: "-?%" }
+        , target: { race: [ "獣人" ] }
+    }
+    , {
+        name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒後"
+        , stats: { atkCd: "-?%" }
+        , target: { race: [ "獣人" ] }
+    }
+    , {
         name: "発明家", cl: "発明家", AW: "覚醒前"
         , stats: { atk: "+5%", wt: "-20%" }
         , target: { others: [ "機械" ] }
@@ -1696,6 +1706,12 @@ buff.team = [
             { race: [ "鳥人" ] }
             , { season: [ "ハロウィン" ] }
         ]
+    }
+    , {
+        name: "ラシティ", rarity: "黒", cl: "スカイシューター", AW: "覚醒後"
+        , stats: { other: "" }
+        , target: { others: [ "弓兵" ] }
+        , note: "天界-100%"
     }
     , {
         name: "アルスラーン", rarity: "白", cl: "王太子", AW: "覚醒前"

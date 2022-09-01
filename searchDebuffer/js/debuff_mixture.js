@@ -366,6 +366,15 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "ちびルヴェア", rarity: "ちび", cl: "前衛戦術家", skill: "通常"
+        , stats: {
+            def: { value: "-15%", type: "global" }
+            , mr: { value: "-15%", type: "global" }
+        }
+        , domain: "global"
+        , note: "永続"
+    }
+    , {
         name: "イングリッド", rarity: "黒", cl: "魔法剣士", AW: "覚醒前", skill: "通常"
         , stats: {
             mr: { value: "-50%", type: "area" }

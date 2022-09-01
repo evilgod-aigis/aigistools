@@ -185,6 +185,11 @@ buff.skill_gl = [
         , note: [ "オート", "永続" ]
     }
     , {
+        name: "ちびルヴェア", rarity: "ちび", cl: "前衛戦術家", skill: "通常"
+        , stats: { atk: "×1.15" }
+        , note: "永続"
+    }
+    , {
         name: "タラニア/バニー", rarity: "白", cl: "魔法剣士", AW: "覚醒前", skill: "通常"
         , stats: { nul: "50%" }
     }

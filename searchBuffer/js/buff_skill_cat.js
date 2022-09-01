@@ -1434,6 +1434,12 @@ buff.skill_cat = [
         ]
     }
     , {
+        name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: { race: [ "獣人" ] }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "リィーリ", rarity: "青", cl: "デモンシャーマン", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+30%" }
         , target: { cl: [ "魔神" ] }

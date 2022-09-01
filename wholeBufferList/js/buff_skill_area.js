@@ -487,6 +487,16 @@ buff.skill_area = [
         , stats: { def: "×1.6" }
     }
     , {
+        name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.4" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.4" }
+        , note: "分類未確認"
+    }
+    , {
         name: "ハルフゥ", rarity: "黒", cl: "シービショップ", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "×2.0", mr: "×1.8" }
     }
