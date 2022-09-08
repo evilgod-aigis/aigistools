@@ -1437,7 +1437,7 @@ buff.skill_cat = [
         name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { race: [ "獣人" ] }
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "リィーリ", rarity: "青", cl: "デモンシャーマン", AW: "覚醒前", skill: "通常"
@@ -1504,6 +1504,12 @@ buff.skill_cat = [
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { others: [ "深海適応" ] }
         , note: "永続"
+    }
+    , {
+        name: "コラリー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , target: { others: [ "竜族" ] }
+        , note: "分類未確認"
     }
     , {
         name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"

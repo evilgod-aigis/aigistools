@@ -1648,12 +1648,12 @@ buff.team = [
     }
     , {
         name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒前"
-        , stats: { atkCd: "-?%" }
+        , stats: { atkCd: "-25%" }
         , target: { race: [ "獣人" ] }
     }
     , {
         name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒後"
-        , stats: { atkCd: "-?%" }
+        , stats: { atkCd: "-35%" }
         , target: { race: [ "獣人" ] }
     }
     , {
