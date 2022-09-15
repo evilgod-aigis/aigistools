@@ -202,6 +202,16 @@ buff.dep_gl = [
         , note: "エンプレス系"
     }
     , {
+        name: "ムルーア", rarity: "黒", cl: "シーソルジャー", AW: "覚醒前"
+        , stats: { other: "" }
+        , note: "深海-20%"
+    }
+    , {
+        name: "ムルーア", rarity: "黒", cl: "シーソルジャー", AW: "覚醒後"
+        , stats: { other: "" }
+        , note: "深海-25%"
+    }
+    , {
         name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒後"
         , stats: { mr: "+5" }
     }

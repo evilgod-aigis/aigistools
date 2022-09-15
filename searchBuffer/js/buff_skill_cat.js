@@ -1023,13 +1023,11 @@ buff.skill_cat = [
         name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒前", skill: "通常"
         , stats: { def: "×1.8" }
         , target: { depType: [ "近接" ] }
-        , note: "分類未確認"
     }
     , {
         name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "通常"
         , stats: { def: "×1.8" }
         , target: { depType: [ "近接" ] }
-        , note: "分類未確認"
     }
     , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒前", skill: "通常"
@@ -1531,6 +1529,18 @@ buff.skill_cat = [
         name: "ヨユキ", rarity: "黒", cl: "夜行さん", AW: "覚醒後", skill: "覚醒"
         , stats: { cost: "-30%" }
         , target: { race: [ "妖怪" ] }
+    }
+    , {
+        name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: { others: [ "GG持ち" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: { others: [ "GG持ち" ] }
+        , note: "分類未確認"
     }
     , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"

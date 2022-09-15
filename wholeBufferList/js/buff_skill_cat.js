@@ -38,19 +38,6 @@ buff.skill_cat = [
         , note: "範囲"
     }
     , {
-        name: "リヴル/ハロウィン", rarity: "白", cl: "デモンサモナー", AW: "覚醒後", skill: "覚醒"
-        , stats: { atk: "×1.5" }
-        , note: "範囲"
-    }
-    , {
-        name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒前", skill: "通常"
-        , stats: { atk: "×1.4" }
-    }
-    , {
-        name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒後", skill: "通常"
-        , stats: { atk: "×1.4" }
-    }
-    , {
         name: "ダルフィア", rarity: "白", cl: "騎士【封緘】", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.1" }
     }

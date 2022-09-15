@@ -1176,6 +1176,11 @@ buff.team = [
         , target: { cl: [ "戦巫女", "シャーマン", "陰陽師", "符術士" ] }
     }
     , {
+        name: "ファルア", rarity: "白", cl: "サベージファイター", AW: "覚醒後"
+        , stats: { atk: "+5%" }
+        , target: { home: [ "砂漠の国" ] }
+    }
+    , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒後"
         , stats: { hp: "+10%" }
         , target: { home: [ "白の帝国" ] }

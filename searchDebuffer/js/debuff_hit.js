@@ -253,6 +253,18 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
+        name: "サベージウォーチーフ", cl: "サベージファイター", AW: "覚1"
+        , stats: { atk: "-5%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "サベージファイター系", "分類未確認" ]
+    }
+    , {
+        name: "サベージジェネラル", cl: "サベージファイター", AW: "覚2a"
+        , stats: { atk: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "サベージファイター系", "分類未確認" ]
+    }
+    , {
         name: "ポミエ/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "59f"

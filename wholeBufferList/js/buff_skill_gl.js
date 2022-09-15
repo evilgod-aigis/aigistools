@@ -581,6 +581,24 @@ buff.skill_gl = [
         , note: "発動時"
     }
     , {
+        name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"
+        , stats: { hp: "+30%" }
+    }
+    , {
+        name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: "非GG持ち"
+    }
+    , {
+        name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "通常"
+        , stats: { hp: "+30%" }
+    }
+    , {
+        name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: "非GG持ち"
+    }
+    , {
         name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
         , stats: { nul: "30%" }
     }

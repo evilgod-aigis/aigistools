@@ -210,7 +210,7 @@ lists.units.onSkillAct.list = [
                 selectable: false, selected: "ドラゴンライダー系",
                 options: [ "ドラゴンライダー系" ]
             },
-            attribution: [ "人間", "ジューンブライド" ],
+            attribution: [ "人間", "騎兵", "ジューンブライド" ],
             affection: { percentage: null, bonus: "その他", changeRate: null },
             note: [ "女性", "ドラゴンライダー系" ]
         },

@@ -363,18 +363,23 @@ buff.skill_area = [
     }
     , {
         name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒前", skill: "通常"
-        , stats: { atk: "×1.3", mr: "×1.3" }
+        , stats: { atk: "×1.4", mr: "×1.4" }
         , note: "分類未確認"
     }
     , {
         name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "通常"
-        , stats: { atk: "×1.3", mr: "×1.3" }
+        , stats: { atk: "×1.4", mr: "×1.4" }
         , note: "分類未確認"
     }
     , {
         name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , note: "永続"
+    }
+    , {
+        name: "リヴル/ハロウィン", rarity: "白", cl: "デモンサモナー", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.5" }
+        , note: "範囲"
     }
     , {
         name: "ちびラピス", rarity: "ちび", cl: "デモンサモナー", skill: "覚醒"
@@ -487,6 +492,14 @@ buff.skill_area = [
         , stats: { def: "×1.6" }
     }
     , {
+        name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.4" }
+    }
+    , {
+        name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.4" }
+    }
+    , {
         name: "ハルフゥ", rarity: "黒", cl: "シービショップ", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "×2.0", mr: "×1.8" }
     }
@@ -542,6 +555,10 @@ buff.skill_area = [
     , {
         name: "シュカ", rarity: "白", cl: "霊宝つくもがみ", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
+    }
+    , {
+        name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "覚醒"
+        , stats: { abn: "-100%" }
     }
     , {
         name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"

@@ -205,6 +205,13 @@ debuff.mixture = [
         , note: "発動時"
     }
     , {
+        name: "ちびシビラ", rarity: "ちび", cl: "プリンセス", skill: "覚醒"
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+        }
+        , domain: "global"
+    }
+    , {
         name: "エストリエ", rarity: "白", cl: "ヴァンパイアプリンセス", AW: "覚醒後", skill: [ "通常", "覚醒" ]
         , stats: {
             stop: { value: "119f", type: "global" }
@@ -834,7 +841,6 @@ debuff.mixture = [
             mr: { value: "-50%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "覚醒(2)"
@@ -843,7 +849,6 @@ debuff.mixture = [
             , mr: { value: "-50%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "覚醒(3～)"
@@ -853,7 +858,6 @@ debuff.mixture = [
             , mr: { value: "-50%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "エステル", rarity: "黒", cl: "メイジ", AW: "覚醒前", skill: "通常"
@@ -1840,6 +1844,14 @@ debuff.mixture = [
         }
         , domain: "area"
         , note: "発動時"
+    }
+    , {
+        name: "レフカ", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒前", skill: "通常"
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "ねんどろいどシビラ", rarity: "青", cl: "ねんどろいどプリンセス", skill: "通常"

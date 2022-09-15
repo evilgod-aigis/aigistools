@@ -375,6 +375,18 @@ lists.buff.hasteTeam.list = [
         tooltip: "[編成] 属性：帝国の近接ユニットの攻撃硬直-35%"
     },
     {
+        id: null, buffer: "金獣の領主リンクス", awaken: "未覚醒", showAwaken: true,
+        rate: 25, disabled: true,
+        AndOr: "or", target: [ { attribution: [ "獣人" ] } ],
+        tooltip: "[編成] 属性：獣人の攻撃硬直-25%"
+    },
+    {
+        id: null, buffer: "金獣の領主リンクス", awaken: "覚醒", showAwaken: true,
+        rate: 35, disabled: true,
+        AndOr: "or", target: [ { attribution: [ "獣人" ] } ],
+        tooltip: "[編成] 属性：獣人の攻撃硬直-35%"
+    },
+    {
         id: null, buffer: "雷光の魔剣士タラニア", awaken: "覚醒", showAwaken: false,
         rate: 20, disabled: true,
         AndOr: "or", target: [
