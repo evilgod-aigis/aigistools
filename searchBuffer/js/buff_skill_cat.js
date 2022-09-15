@@ -1534,13 +1534,11 @@ buff.skill_cat = [
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { others: [ "GG持ち" ] }
-        , note: "分類未確認"
     }
     , {
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { others: [ "GG持ち" ] }
-        , note: "分類未確認"
     }
     , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"
