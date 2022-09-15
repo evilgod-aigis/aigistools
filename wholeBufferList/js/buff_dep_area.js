@@ -17,8 +17,18 @@ buff.dep_area = [
     }
     , {
         name: "コンカラー", cl: "ロード", AW: "覚2b"
-        , stats: { atk: "+15%" }
+        , stats: { atk: "×1.15" }
         , note: "ロード系"
+    }
+    , {
+        name: "森林霊符", rarity: "トークン", AW: "覚醒前"
+        , stats: { atk: "×1.1", def: "×1.1" }
+        , note: [ "リャオレン", "分類未確認" ]
+    }
+    , {
+        name: "大森林霊符", rarity: "トークン", AW: "覚醒後"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , note: [ "リャオレン", "分類未確認" ]
     }
 ];
 

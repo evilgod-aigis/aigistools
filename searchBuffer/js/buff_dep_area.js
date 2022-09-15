@@ -2,17 +2,17 @@
 buff.dep_area = [
     {
         name: "トゥーダ", rarity: "黒", cl: "神官戦士", AW: "覚醒前"
-        , stats: { def: "+10%" }
+        , stats: { def: "×1.1" }
         , target: { depType: [ "近接" ] }
     }
     , {
         name: "トゥーダ", rarity: "黒", cl: "神官戦士", AW: "覚醒後"
-        , stats: { def: "+15%" }
+        , stats: { def: "×1.15" }
         , target: { depType: [ "近接" ] }
     }
     , {
         name: "竜砲騎士隊長", cl: "ドラグーン", AW: "覚2a"
-        , stats: { atk: "+10%", def: "+10%" }
+        , stats: { atk: "×1.1", def: "×1.1" }
         , target: { others: [ "竜族" ] }
         , note: "ドラグーン系"
     }
