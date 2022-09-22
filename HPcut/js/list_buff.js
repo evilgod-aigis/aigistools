@@ -540,6 +540,22 @@ lists.buff.giveDmgMul.list = [
         "[編成] 天使に対して全味方の攻撃力が15%上昇<br>\
          　　　 竜族に対して属性：帝国の攻撃力が15%上昇<br>\
          　　　 (敵の属性は特に指定してないので、2行目は特に意味ない)"
+    },
+    {
+        id: null, buffer: "天性の発明家マギー", awaken: "未覚醒", showAwaken: true,
+        rate: 10, disabled: false,
+        AndOr: "or", target: [ { "-": [] } ],
+        tooltip:
+        "[編成] アーマー・ゴーレムに対して<br>\
+         　　　 全味方の攻撃力が10%上昇"
+    },
+    {
+        id: null, buffer: "天性の発明家マギー", awaken: "覚醒", showAwaken: true,
+        rate: 15, disabled: false,
+        AndOr: "or", target: [ { "-": [] } ],
+        tooltip:
+        "[編成] アーマー・ゴーレムに対して<br>\
+         　　　 全味方の攻撃力が15%上昇"
     }
 ];
 

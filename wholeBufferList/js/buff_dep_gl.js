@@ -386,6 +386,11 @@ buff.dep_gl = [
         , note: "地形-30%"
     }
     , {
+        name: "深き海の巫女", cl: "シービショップ", AW: "覚2a"
+        , stats: { rege: [ "30/秒", "?/?f" ] }
+        , note: "シービショップ系"
+    }
+    , {
         name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前"
         , stats: { other: "" }
         , note: "深海-30%"

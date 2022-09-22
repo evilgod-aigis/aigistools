@@ -500,6 +500,16 @@ buff.skill_area = [
         , stats: { atk: "×1.4" }
     }
     , {
+        name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.3" }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "ハルフゥ", rarity: "黒", cl: "シービショップ", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "×2.0", mr: "×1.8" }
     }

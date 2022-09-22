@@ -557,6 +557,21 @@ debuff.hit = [
         , atkAttr: "物理", dur: "14f"
     }
     , {
+        name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒前", skill: "通常"
+        , stats: { def: "-30%" }
+        , atkAttr: "貫通", dur: "?f"
+    }
+    , {
+        name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒後", skill: "通常"
+        , stats: { def: "-30%" }
+        , atkAttr: "貫通", dur: "?f"
+    }
+    , {
+        name: "タイダルビショップ", cl: "シービショップ", AW: "覚2b"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
         name: "ドラグーン", cl: "ドラグーン", AW: "覚醒前"
         , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "29f"

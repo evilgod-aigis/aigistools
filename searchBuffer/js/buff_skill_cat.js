@@ -1492,6 +1492,12 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒後", skill: "覚醒"
+        , stats: { hp: "+30%" }
+        , target: { others: [ "機械" ] }
+        , note: "永続"
+    }
+    , {
         name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { others: [ "深海適応" ] }
