@@ -16,6 +16,11 @@ buff.dep_area = [
         , note: "ヒーラー系"
     }
     , {
+        name: "ソシエ/ハロウィン", rarity: "黒", cl: "モンスタースレイヤー", AW: "覚醒後"
+        , stats: { atk: "×1.1" }
+        , note: "分類未確認"
+    }
+    , {
         name: "コンカラー", cl: "ロード", AW: "覚2b"
         , stats: { atk: "×1.15" }
         , note: "ロード系"

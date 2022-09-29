@@ -61,6 +61,11 @@ buff.team = [
         , target: { season: [ "サマー" ] }
     }
     , {
+        name: "王子【天羽々斬】", cl: "王子"
+        , stats: { hp: "+15%", atk: "+7%" }
+        , target: { home: [ "東の国" ] }
+    }
+    , {
         name: "ちび王子", cl: "王子"
         , stats: { atk: "+15%" }
         , target: { others: [ "ちび" ] }
@@ -1560,6 +1565,16 @@ buff.team = [
         , stats: { atk: "+7%", def: "+7%" }
         , target: { race: [ "獣人" ] }
         , note: "フェンリルシャーマン系"
+    }
+    , {
+        name: "ソシエ/ハロウィン", rarity: "黒", cl: "モンスタースレイヤー", AW: "覚醒前"
+        , stats: { range: "+5" }
+        , target: { season: [ "ハロウィン" ] }
+    }
+    , {
+        name: "ソシエ/ハロウィン", rarity: "黒", cl: "モンスタースレイヤー", AW: "覚醒後"
+        , stats: { range: "+10" }
+        , target: { season: [ "ハロウィン" ] }
     }
     , {
         name: "ヒルデ", rarity: "白", cl: "モンスタースレイヤー", AW: "覚醒後"

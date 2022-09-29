@@ -76,6 +76,10 @@ buff.dep_gl = [
         , stats: { atk: "+15%", def: "+15%" }
     }
     , {
+        name: "王子【天羽々斬】", cl: "王子"
+        , stats: { atk: "+20%", def: "+20%" }
+    }
+    , {
         name: "王子【幼少】", cl: "王子"
         , stats: { atk: "+10%", def: "+10%" }
     }

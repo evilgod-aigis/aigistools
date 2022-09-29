@@ -565,6 +565,14 @@ buff.skill_gl = [
         , note: [ "発動時", "ボム" ]
     }
     , {
+        name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒前", skill: "通常"
+        , stats: { rege: [ "100/秒", "?/?f" ] }
+    }
+    , {
+        name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒後", skill: "通常"
+        , stats: { rege: [ "100/秒", "?/?f" ] }
+    }
+    , {
         name: "コマ/花嫁", rarity: "黒", cl: "狛犬", AW: "覚醒後", skill: "覚醒"
         , stats: { nul: "50%" }
     }
