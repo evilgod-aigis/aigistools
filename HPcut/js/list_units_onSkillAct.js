@@ -346,14 +346,14 @@ lists.units.onSkillAct.list = [
             target: [ "全敵", "全敵" ],
             WT: { A: null, B: null },
             CT: { A: null, B: null },
-            CT_uncorr: [ { A: 40, B: null }, { A: 35, B: null } ],
+            CT_uncorr: [ { A: 20, B: null }, { A: 35, B: null } ],
             dur: { A: null, B: null },
             dur_uncorr: [ { A: 40, B: null }, { A: Infinity, B: null } ],
             firstTime: null, interval: null,
             trigger: [ "-", "-" ], trans: [ "-", "-" ],
             HPred: [ null, null ], HPred_uncorr: [ 10, 10 ],
             mulByNum: [ [ 1 ], [ 1 ] ],
-            dmgMul: { options: [ "なし", "なし" ], mul: [ 1.5, 1.5 ], target: [ "人間", "人間" ] }
+            dmgMul: { options: [ "なし", "なし" ], mul: [ 1.8, 1.5 ], target: [ "人間", "人間" ] }
         }
     },
     {
@@ -478,6 +478,37 @@ lists.units.onSkillAct.list = [
             HPred: [ null, null ], HPred_uncorr: [ 15, 15 ],
             mulByNum: [ [ 1 ], [ 1 ] ],
             dmgMul: { options: [ "-", "-" ], mul: [ 1, 1 ], target: [ null, null ] }
+        }
+    },
+    {
+        id: null,
+        added: false,
+        unitInfo: {
+            unitName: "ちびミサ", deployType: "近接型", rarity: "金",
+            unitClass: {
+                selectable: false, selected: "ちびイビルプリンセス",
+                options: [ "ちびイビルプリンセス" ]
+            },
+            attribution: [ "ちび", "ハロウィン" ],
+            affection: { percentage: null, bonus: null, changeRate: null },
+            note: [ "女性", "HP回復不可", "魔界適応" ]
+        },
+        skill: {
+            awaken: {
+                selectable: false, selected: "通常",
+                options: [ "通常", "覚醒" ]
+            },
+            target: [ "全敵", null ],
+            WT: { A: null, B: null },
+            CT: { A: null, B: null },
+            CT_uncorr: [ { A: 20, B: null }, { A: null, B: null } ],
+            dur: { A: null, B: null },
+            dur_uncorr: [ { A: 40, B: null }, { A: null, B: null } ],
+            firstTime: null, interval: null,
+            trigger: [ "-", null ], trans: [ "-", null ],
+            HPred: [ null, null ], HPred_uncorr: [ 10, null ],
+            mulByNum: [ [ 1 ], null ],
+            dmgMul: { options: [ "なし", null ], mul: [ 1.8, null ], target: [ "人間", null ] }
         }
     }
 ];

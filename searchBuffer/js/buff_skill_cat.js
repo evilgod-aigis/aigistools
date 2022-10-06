@@ -9,13 +9,12 @@ buff.skill_cat = [
         name: "王子【天羽々斬】", cl: "王子", skill: "通常(～2)"
         , stats: { def: "×1.3" }
         , target: { home: [ "東の国" ] }
-        , note: "分類未確認"
     }
     , {
         name: "王子【天羽々斬】", cl: "王子", skill: "通常(3～)"
         , stats: { def: "×1.3" }
         , target: { home: [ "東の国" ] }
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "ちび王子", cl: "王子", skill: "通常"

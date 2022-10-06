@@ -12,7 +12,8 @@ buff.dep_gl = [
     }
     , {
         name: "王子【砂漠】", cl: "王子"
-        , stats: { atk: "+20%", def: "+20%" }
+        , stats: { atk: "+20%", def: "+20%", other: "" }
+        , note: "地形-50%"
     }
     , {
         name: "王子【獣装】", cl: "王子"
