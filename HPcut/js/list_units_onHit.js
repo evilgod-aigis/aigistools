@@ -194,7 +194,7 @@ lists.units.onHit.list = [
             atkInterval_uncorr: [
                 { startup: 9, remain: 12, cooldown: 31 },
                 { startup: 9, remain: 12, cooldown: 31 },
-                { startup: 13, remain: 37, cooldown: 2 }
+                { startup: 13, remain: 9/*37*/, cooldown: 2 }
             ]
         },
         skill: {
