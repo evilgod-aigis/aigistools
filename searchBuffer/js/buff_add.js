@@ -140,6 +140,16 @@ buff.add = [
         , target: { home: [ "白の帝国" ] }
         , note: "範囲"
     }
+    , {
+        name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒前"
+        , stats: { hp: "max2250", atk: "max1050", def: "max1050" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
+        name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒後"
+        , stats: { hp: "max3000", atk: "max1500", def: "max1500" }
+        , target: { home: [ "恋姫" ] }
+    }
 ];
 
 /*

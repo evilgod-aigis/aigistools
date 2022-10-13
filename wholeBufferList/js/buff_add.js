@@ -266,6 +266,21 @@ buff.add = [
         , note: [ "範囲", "幻獣使い系" ]
     }
     , {
+        name: "関羽 雲長", rarity: "黒", cl: "武将【恋姫】", AW: "覚醒後", skill: "覚醒(1)"
+        , stats: { atk: "10%" }
+        , note: "範囲"
+    }
+    , {
+        name: "関羽 雲長", rarity: "黒", cl: "武将【恋姫】", AW: "覚醒後", skill: "覚醒(2)"
+        , stats: { atk: "20%" }
+        , note: "範囲"
+    }
+    , {
+        name: "関羽 雲長", rarity: "黒", cl: "武将【恋姫】", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: { atk: "30%" }
+        , note: "範囲"
+    }
+    , {
         name: "刀剣霊符", rarity: "トークン", AW: "覚醒前"
         , stats: { atk: "+100", def: "+100" }
         , note: [ "リャオレン", "範囲", "分類未確認" ]

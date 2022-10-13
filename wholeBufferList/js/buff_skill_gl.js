@@ -631,6 +631,20 @@ buff.skill_gl = [
         , stats: { def: "×1.25" }
     }
     , {
+        name: "孫権 仲謀", rarity: "白", cl: "君主【恋姫】", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.3" }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "孫策 伯符", rarity: "黒", cl: "小覇王【恋姫】", AW: "覚醒後", skill: "覚醒(2)"
+        , stats: { hp: "+40%" }
+    }
+    , {
+        name: "孫策 伯符", rarity: "黒", cl: "小覇王【恋姫】", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: { hp: "+40%" }
+        , note: "永続"
+    }
+    , {
         name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(～2)"
         , stats: { atk: "×1.2" }
     }
@@ -655,6 +669,41 @@ buff.skill_gl = [
     , {
         name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: { atk: "×1.3" }
+        , note: "永続"
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(1)"
+        , stats: { atk: "×1.2", draw: "(○)", redep: "?秒" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(2～)"
+        , stats: { atk: "×1.2", draw: "(○)", redep: "?秒" }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常(1)"
+        , stats: { atk: "×1.2", draw: "(○)", redep: "?秒" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常(2～)"
+        , stats: { atk: "×1.2", draw: "(○)", redep: "?秒" }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(1)"
+        , stats: { atk: "×1.15", range: "×1.1" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(2～)"
+        , stats: { atk: "×1.15", range: "×1.1" }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "80/秒", "?/?f" ] }
         , note: "永続"
     }
     , {

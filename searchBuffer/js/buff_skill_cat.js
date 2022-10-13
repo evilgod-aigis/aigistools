@@ -1647,6 +1647,17 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(1)"
+        , stats: { ct: "-50%" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(2～)"
+        , stats: { ct: "-50%" }
+        , target: { depType: [ "遠距離" ] }
+        , note: "永続"
+    }
+    , {
         name: "鳳統", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常"
         , stats: { draw: "○" }
         , target: { depType: [ "近接" ] }
@@ -1660,6 +1671,12 @@ buff.skill_cat = [
         name: "鳳統", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒"
         , stats: { draw: "(○)", redep: "40秒" }
         , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.4", def: "×1.4" }
+        , target: { home: [ "恋姫" ] }
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "阿形の獅子", rarity: "トークン", AW: "覚醒前", skill: "通常"

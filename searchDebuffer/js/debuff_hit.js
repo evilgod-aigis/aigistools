@@ -606,6 +606,36 @@ debuff.hit = [
         , note: "ボム"
     }
     , {
+        name: "奸雄【恋姫】", cl: "奸雄【恋姫】", AW: "覚醒前"
+        , stats: { atk: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "覇王【恋姫】", cl: "奸雄【恋姫】", AW: "覚1"
+        , stats: { atk: "-25%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "奸雄【恋姫】系", "分類未確認" ]
+    }
+    , {
+        name: "勇士【恋姫】", cl: "勇士【恋姫】", AW: "覚醒前"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "軍神【恋姫】", cl: "勇士【恋姫】", AW: "覚1"
+        , stats: { def: "-25%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "勇士【恋姫】系", "分類未確認" ]
+    }
+    , {
+        name: "黄蓋 公覆", rarity: "白", cl: "弓将【恋姫】", AW: "覚醒後"
+        , stats: { atk: "-15%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "戯曲作家【GBM】", cl: "戯曲作家【GBM】", AW: "覚醒前"
         , stats: { atk: "-7%", def: "-7%" }
         , atkAttr: "物理", dur: "59f"

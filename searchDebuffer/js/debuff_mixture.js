@@ -1877,18 +1877,76 @@ debuff.mixture = [
         , note: "発動時"
     }
     , {
-        name: "鳳統", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常"
+        name: "孫権 仲謀", rarity: "白", cl: "君主【恋姫】", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "孫権 仲謀", rarity: "白", cl: "君主【恋姫】", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常"
         , stats: {
             def: { value: "-20%", type: "global" }
+            , mr: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-20%", type: "global" }
+            , mr: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "鳳統", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "global" }
         }
         , domain: "global"
     }
     , {
         name: "鳳統", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常"
         , stats: {
-            def: { value: "-20%", type: "global" }
+            def: { value: "-30%", type: "global" }
         }
         , domain: "global"
+    }
+    , {
+        name: "鳳統", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "黄蓋 公覆", rarity: "白", cl: "弓将【恋姫】", AW: "覚醒前", skill: "通常"
+        , stats: {
+            mr: { value: "-60%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "黄蓋 公覆", rarity: "白", cl: "弓将【恋姫】", AW: "覚醒後", skill: "通常"
+        , stats: {
+            mr: { value: "-60%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "バン", rarity: "白", cl: "盗賊【七つの大罪】", AW: "覚醒後", skill: "覚醒(1)"

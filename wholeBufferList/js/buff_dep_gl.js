@@ -434,6 +434,10 @@ buff.dep_gl = [
         , stats: { def: "+10%" }
     }
     , {
+        name: "孫策 伯符", rarity: "黒", cl: "小覇王【恋姫】", AW: "覚醒後"
+        , stats: { atk: "+7%" }
+    }
+    , {
         name: "軍師【恋姫】", cl: "軍師【恋姫】", AW: "覚醒前"
         , stats: { ct: "-30%" }
     }
@@ -441,6 +445,16 @@ buff.dep_gl = [
         name: "大軍師【恋姫】", cl: "軍師【恋姫】", AW: "覚1"
         , stats: { ct: "-40%" }
         , note: "軍師【恋姫】系"
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前"
+        , stats: { other: "" }
+        , note: "地形-30%"
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後"
+        , stats: { other: "" }
+        , note: "地形-50%"
     }
     , {
         name: "キング", rarity: "黒", cl: "妖精【七つの大罪】", AW: "覚醒後", skill: "非"

@@ -21,7 +21,7 @@ lists.buff.rWT.list = [
         id: null, buffer: "ドミヌスサクルム", awaken: "覚2a", showAwaken: false,
         rate: 40, disabled: false,
         AndOr: "or", target: [ { "-": [] } ],
-        compound: [ "rCT" ],
+        //compound: [ "rCT" ],
         tooltip:
         "[編成] 全味方の初動-40%<br>\
         [配置] 全味方の再動-30%"
@@ -43,6 +43,18 @@ lists.buff.rWT.list = [
         rate: 30, disabled: true,
         AndOr: "or", target: [ { attribution: [ "機械" ] } ],
         tooltip: "[編成] 属性：機械の初動-30%"
+    },
+    {
+        id: null, buffer: "小覇王【恋姫】", awaken: "未覚醒", showAwaken: false,
+        rate: 10, disabled: false,
+        AndOr: "or", target: [ { "-": [] } ],
+        tooltip: "[編成] 全味方の初動-10%"
+    },
+    {
+        id: null, buffer: "風雲児【恋姫】", awaken: "覚醒", showAwaken: false,
+        rate: 20, disabled: false,
+        AndOr: "or", target: [ { "-": [] } ],
+        tooltip: "[編成] 全味方の初動-20%"
     },
     {
         id: null, buffer: "白浴衣の弓乙女ナナリー", awaken: "覚醒", showAwaken: false,
@@ -134,7 +146,7 @@ lists.buff.rCT.list = [
         id: null, buffer: "ドミヌスサクルム", awaken: "覚2a", showAwaken: false,
         rate: 30, disabled: false,
         AndOr: "or", target: [ { "-": [] } ],
-        compound: [ "rWT" ],
+        //compound: [ "rWT" ],
         tooltip:
         "[編成] 全味方の初動-40%<br>\
         [配置] 全味方の再動-30%"
@@ -410,7 +422,21 @@ lists.buff.hasteTeam.list = [
         tooltip:
         "[編成] クラス：砲術士系・重装砲兵系・<br>\
          　　　　　　　 モンスタースレイヤー系の攻撃硬直-30%"
+    }/*短縮率が分かり次第解禁
+    *//*,
+    {
+        id: null, buffer: "孫策 伯符", awaken: "未覚醒", showAwaken: true,
+        rate: , disabled: false,
+        AndOr: "or", target: [ { "-": [] } ],
+        tooltip: "[編成] 全味方の攻撃硬直-%"
+    },
+    {
+        id: null, buffer: "孫策 伯符", awaken: "覚醒", showAwaken: true,
+        rate: , disabled: false,
+        AndOr: "or", target: [ { "-": [] } ],
+        tooltip: "[編成] 全味方の攻撃硬直-%"
     }
+    */
 ];
 
 //硬直短縮(固定値化)リスト

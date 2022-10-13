@@ -191,6 +191,11 @@ buff.team = [
         , target: { cl: [ "王子" ] }
     }
     , {
+        name: "ジュリア/ハロウィン", rarity: "白", cl: "プリンセス", AW: "覚醒後"
+        , stats: { hp: "+10%" }
+        , target: { season: [ "ハロウィン" ] }
+    }
+    , {
         name: "ロゼット/正月", rarity: "金", cl: "プリンセス", AW: "覚醒前"
         , stats: { atk: "+5%" }
         , target: { rarity: [ "金" ] }
@@ -1739,9 +1744,44 @@ buff.team = [
         , target: { home: [ "パルス王国" ] }
     }
     , {
+        name: "趙雲", rarity: "白", cl: "武将【恋姫】", AW: "覚醒後"
+        , stats: { cost: "-2" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
+        name: "劉備", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒前"
+        , stats: { def: "+7%" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
+        name: "劉備", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒後"
+        , stats: { def: "+10%" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
         name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後"
         , stats: { atk: "+10%", def: "+10%" }
-        , target: { cl: [ "武将【恋姫】", "君主【恋姫】" ] }
+        , target: { home: [ "恋姫" ], depType: [ "近接" ] }
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前"
+        , stats: { hp: "+7%", atk: "+7%" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後"
+        , stats: { hp: "+10%", atk: "+10%" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
+        name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒前"
+        , stats: { hp: "+7%" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
+        name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒後"
+        , stats: { hp: "+10%" }
+        , target: { home: [ "恋姫" ] }
     }
     , {
         name: "エリザベス", rarity: "黒", cl: "王女【七つの大罪】", AW: "覚醒前"

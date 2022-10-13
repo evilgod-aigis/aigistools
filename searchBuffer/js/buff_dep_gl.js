@@ -925,6 +925,16 @@ buff.dep_gl = [
         , target: { sex: [ "女性" ] }
     }
     , {
+        name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒前"
+        , stats: { draw: "○" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
+        name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒後"
+        , stats: { draw: "○" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
         name: "メリオダス", rarity: "黒", cl: "騎士【七つの大罪】", AW: "覚醒前"
         , stats: { atk: "+15%" }
         , target: { others: [ "＜七つの大罪＞" ] }

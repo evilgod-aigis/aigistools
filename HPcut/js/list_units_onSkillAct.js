@@ -329,6 +329,37 @@ lists.units.onSkillAct.list = [
         id: null,
         added: false,
         unitInfo: {
+            unitName: "孫権 仲謀", deployType: "近接型", rarity: "白",
+            unitClass: {
+                selectable: false, selected: "君主【恋姫】系",
+                options: [ "君主【恋姫】系" ]
+            },
+            attribution: [ "人間", "恋姫" ],
+            affection: { percentage: null, bonus: "その他", changeRate: null },
+            note: [ "女性" ]
+        },
+        skill: {
+            awaken: {
+                selectable: false, selected: "通常",
+                options: [ "通常", "覚醒" ]
+            },
+            target: [ "全員", null ],
+            WT: { A: null, B: null },
+            CT: { A: null, B: null },
+            CT_uncorr: [  { A: 40, B: null }, { A: null, B: null } ],
+            dur: { A: null, B: null },
+            dur_uncorr: [ { A: 20, B: null }, { A: null, B: null } ],
+            firstTime: null, interval: null,
+            trigger: [ "-", null ], trans: [ "-", null ],
+            HPred: [ null, null ], HPred_uncorr: [ 10, null ],
+            mulByNum: [ [ 1 ], null ],
+            dmgMul: { options: [ "-", null ], mul: [ 1, null ], target: [ null, null ] }
+        }
+    },
+    {
+        id: null,
+        added: false,
+        unitInfo: {
             unitName: "祝祭の南瓜姫ミサ", deployType: "近接型", rarity: "黒",
             unitClass: {
                 selectable: true, selected: "イビルクイーン",

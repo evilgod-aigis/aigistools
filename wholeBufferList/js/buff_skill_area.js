@@ -98,6 +98,11 @@ buff.skill_area = [
         , note: "永続"
     }
     , {
+        name: "エレカ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒後", skill: "覚醒"
+        , stats: { other: "" }
+        , note: "貫通化"
+    }
+    , {
         name: "クーコ", rarity: "黒", cl: "風伯", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "×1.9" }
         , note: "永続"
@@ -577,6 +582,26 @@ buff.skill_area = [
     , {
         name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
         , stats: { eva: "30%" }
+    }
+    , {
+        name: "孫策 伯符", rarity: "黒", cl: "小覇王【恋姫】", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "孫策 伯符", rarity: "黒", cl: "小覇王【恋姫】", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , note: "貫通化"
+    }
+    , {
+        name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , note: "貫通化"
     }
     , {
         name: "エリザベス", rarity: "黒", cl: "王女【七つの大罪】", AW: "覚醒前", skill: "通常"
