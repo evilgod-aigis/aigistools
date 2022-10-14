@@ -189,11 +189,11 @@ buff.team = [
     }
     , {
         name: "孫策 伯符", rarity: "黒", cl: "小覇王【恋姫】", AW: "覚醒前"
-        , stats: { atkCd: "-?%" }
+        , stats: { atkCd: "-20%" }
     }
     , {
         name: "孫策 伯符", rarity: "黒", cl: "小覇王【恋姫】", AW: "覚醒後"
-        , stats: { atkCd: "-?%" }
+        , stats: { atkCd: "-20%" }
     }
 ];
 
