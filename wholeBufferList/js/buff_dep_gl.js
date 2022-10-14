@@ -438,6 +438,10 @@ buff.dep_gl = [
         , stats: { atk: "+7%" }
     }
     , {
+        name: "孫尚香", rarity: "白", cl: "王女【恋姫】", AW: "覚醒後"
+        , stats: { atk: "+5%", def: "+5%" }
+    }
+    , {
         name: "軍師【恋姫】", cl: "軍師【恋姫】", AW: "覚醒前"
         , stats: { ct: "-30%" }
     }

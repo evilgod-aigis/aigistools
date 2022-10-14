@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2022/10/14(金)"
+        , detail: [
+            "孫尚香を追加"
+        ]
+    }
+    , {
         date: "2022/10/13(木)"
         , detail: [
             "恋姫キャラを追加"
