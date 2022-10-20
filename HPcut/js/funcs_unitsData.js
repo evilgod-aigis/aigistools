@@ -510,15 +510,16 @@ funcs.unitsData.SetInterval = (unit, type) => {
 //攻撃間隔
 funcs.unitsData.SetAtkInterval = unit => {
     if(!("atkInterval" in unit.unitInfo)) return;
-    const hasteRate = funcs.unitsData.GetRate(unit, "hasteTeam");
+    const hasteRate = funcs.unitsData.GetRate(unit, "haste");
     const redMapEffRate = funcs.unitsData.GetRate(unit, "redMapEff");
     const unitName = unit.unitInfo.unitName;
+    const unitClass = unit.unitInfo.unitClass.selected;
     const rarity = unit.unitInfo.rarity;
     const aff = unit.unitInfo.affection;    //object
     const skillAW = unit.skill.awaken.selected;
     const indexes = [ 0, [ "通常", "覚醒" ].indexOf(skillAW) + 1 ];
     let corr = NaN;
-    let atkCooldownBySkill = 0;
+    let atkCooldown_fixed = 0;
     let bufferInfo;
     //150%ボーナスの補正値
     if(aff.bonus !== null && aff.bonus !== "その他") {
@@ -552,9 +553,9 @@ funcs.unitsData.SetAtkInterval = unit => {
             aff.changeRate = -Math.round(corr * (aff.percentage - 100) * 2);
             break;
     }
-    //硬直短縮(スキル)
+    //硬直短縮(固定値化)
     //選択したオプションによる効果
-    const elems_checkbox = document.querySelectorAll("#hasteSkill input");
+    const elems_checkbox = document.querySelectorAll("#hasteFixed input");
     const checked = [];
     _.forEach(elems_checkbox, elem => {
         if(elem.checked) {
@@ -562,29 +563,38 @@ funcs.unitsData.SetAtkInterval = unit => {
         }
     });
     checked.forEach(buffer => {
-        bufferInfo = _.find(lists.buff.hasteSkill.list, { buffer: buffer.buffer, awaken: buffer.awaken });
-        atkCooldownBySkill = Math.max(atkCooldownBySkill, bufferInfo.atkCooldown * funcs.unitsData.IsTarget(unit, bufferInfo));
+        bufferInfo = _.find(lists.buff.hasteFixed.list, { buffer: buffer.buffer, awaken: buffer.awaken });
+        atkCooldown_fixed = Math.max(atkCooldown_fixed, bufferInfo.atkCooldown * funcs.unitsData.IsTarget(unit, bufferInfo));
     });
     
     indexes.forEach((index, i) => {
         const atkStartup = unit.unitInfo.atkInterval_uncorr[index].startup;
         const atkRemain = unit.unitInfo.atkInterval_uncorr[index].remain;
         let atkCooldown = unit.unitInfo.atkInterval_uncorr[index].cooldown;
-        
+        //第二覚醒等で変化するもの
+        bufferInfo = _.find(lists.selfBuff.hasteFixed, { buffer: unitName });
+        if(bufferInfo !== undefined) {
+            atkCooldown = bufferInfo.atkCooldown;
+        }
+        bufferInfo = _.find(lists.selfBuff.hasteFixed, { buffer: unitClass });
+        if(bufferInfo !== undefined) {
+            atkCooldown = bufferInfo.atkCooldown;
+        }
+            
         if(atkStartup !== null) {
             if(aff.bonus === "攻撃硬直") {
                 atkCooldown = Math.ceil((atkCooldown - 1) * (1 + aff.changeRate / 100) + 1);
             }
-            //硬直短縮(スキル)
+            //硬直短縮(固定値化)
             //自身による効果
             if(index !== 0) {
-                bufferInfo = _.findLast(lists.buff.hasteSkill.list, { buffer: unitName, awaken: skillAW });
+                bufferInfo = _.findLast(lists.buff.hasteFixed.list, { buffer: unitName, awaken: skillAW });
                 if(bufferInfo !== undefined) {
-                    atkCooldownBySkill = Math.max(atkCooldownBySkill, bufferInfo.atkCooldown);
+                    atkCooldown_fixed = Math.max(atkCooldown_fixed, bufferInfo.atkCooldown);
                 }
             }
             //                 ↓ceil?
-            atkCooldown = Math.floor(((atkCooldownBySkill > 0 ? atkCooldownBySkill : atkCooldown) - 1) * (1 - hasteRate) + 1);
+            atkCooldown = Math.floor(((atkCooldown_fixed > 0 ? atkCooldown_fixed : atkCooldown) - 1) * (1 - hasteRate) + 1);
             if(!_.includes(unit.unitInfo.note, "状態異常無効")) {
                 atkCooldown += num.incAtkCooldown_enemy.value * 2;
             }

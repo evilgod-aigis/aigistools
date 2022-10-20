@@ -61,8 +61,8 @@ lists.units.onHit.list = [
         unitInfo: {
             unitName: "犬神シロ", deployType: "近接型", rarity: "黒",
             unitClass: {
-                selectable: false, selected: "犬神系",
-                options: [ "犬神系" ]
+                selectable: true, selected: "お犬さま",
+                options: [ "犬神系", "お犬さま" ]
             },
             attribution: [ "妖怪", "東の国" ],
             affection: { percentage: null, bonus: "その他", changeRate: null },
@@ -101,8 +101,8 @@ lists.units.onHit.list = [
         unitInfo: {
             unitName: "犬神ツムジ", deployType: "近接型", rarity: "白",
             unitClass: {
-                selectable: false, selected: "犬神系",
-                options: [ "犬神系" ]
+                selectable: true, selected: "お犬さま",
+                options: [ "犬神系", "お犬さま" ]
             },
             attribution: [ "妖怪", "東の国" ],
             affection: { percentage: 150, bonus: "攻撃硬直", changeRate: null },

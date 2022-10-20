@@ -65,13 +65,18 @@ lists.selfBuff.skillExtend = [
     { id: null, buffer: "水霊使いセノーテ", rate: 15 }
 ];
 
-//硬直短縮(編成バフ)リスト
-lists.selfBuff.hasteTeam = [
+//硬直短縮リスト
+lists.selfBuff.haste = [
     { id: null, buffer: "鉄泉の守護者レアン", rate: 40 },
     { id: null, buffer: "晴着の看板娘ジュノン", rate: 40 },
     //{ id: null, buffer: "水龍騎士スイレン", rate: 50 },
     //{ id: null, buffer: "屍骸道士ランファ", rate: 60 },
     { id: null, buffer: "絆鎖の救命師シアーシャ", rate: 40 }
+];
+
+//硬直短縮(固定値化)リスト
+lists.selfBuff.hasteFixed = [
+    { id: null, buffer: "お犬さま", atkCooldown: 26 }
 ];
 
 //鈍化(マップ)軽減リスト

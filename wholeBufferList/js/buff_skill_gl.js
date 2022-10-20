@@ -566,11 +566,11 @@ buff.skill_gl = [
     }
     , {
         name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒前", skill: "通常"
-        , stats: { rege: [ "100/秒", "?/?f" ] }
+        , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
         name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒後", skill: "通常"
-        , stats: { rege: [ "100/秒", "?/?f" ] }
+        , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
         name: "コマ/花嫁", rarity: "黒", cl: "狛犬", AW: "覚醒後", skill: "覚醒"
@@ -703,7 +703,7 @@ buff.skill_gl = [
     }
     , {
         name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒後", skill: "覚醒"
-        , stats: { rege: [ "80/秒", "?/?f" ] }
+        , stats: { rege: [ "80/秒", "40/15f" ] }
         , note: "永続"
     }
     , {

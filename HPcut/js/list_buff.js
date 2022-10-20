@@ -331,9 +331,9 @@ lists.buff.skillExtend_fixed.list = [
 ];
 
 //硬直短縮リスト
-lists.buff.hasteTeam = {};
-lists.buff.hasteTeam.updateTable = [ false, true ];
-lists.buff.hasteTeam.list = [
+lists.buff.haste = {};
+lists.buff.haste.updateTable = [ false, true ];
+lists.buff.haste.list = [
     {
         id: null, buffer: "雷鳴大妖ぬえ", awaken: "覚2a", showAwaken: false,
         rate: 20, disabled: false,
@@ -432,9 +432,9 @@ lists.buff.hasteTeam.list = [
 ];
 
 //硬直短縮(固定値化)リスト
-lists.buff.hasteSkill = {};
-lists.buff.hasteSkill.updateTable = [ false, true ];
-lists.buff.hasteSkill.list = [
+lists.buff.hasteFixed = {};
+lists.buff.hasteFixed.updateTable = [ false, true ];
+lists.buff.hasteFixed.list = [
     {
         id: null, buffer: "叡智の杖", awaken: "-", showAwaken: false,
         atkCooldown: 21, disabled: false,

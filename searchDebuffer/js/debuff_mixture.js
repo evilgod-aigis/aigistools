@@ -684,7 +684,7 @@ debuff.mixture = [
             atk: { value: "-10%", type: "noAttr" }
         }
         , domain: "area"
-        , note: [ "犬神系", "分類未確認" ]
+        , note: "犬神系"
     }
     , {
         name: "アヅミ", rarity: "白", cl: "料理人", AW: "覚醒後", skill: "覚醒"

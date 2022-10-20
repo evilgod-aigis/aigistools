@@ -188,13 +188,13 @@ debuff.hit = [
     }
     , {
         name: "お犬さま", cl: "犬神", AW: "覚2a", skill: [ "通常", "覚醒" ]
-        , stats: { atkCd: "+?f" }
+        , stats: { atkCd: "+30f" }
         , atkAttr: "?", dur: "?f"
         , note: "犬神系"
     }
     , {
         name: "厄神霊犬", cl: "犬神", AW: "覚2b", skill: [ "通常", "覚醒" ]
-        , stats: { atkCd: "+?f" }
+        , stats: { atkCd: "+30f" }
         , atkAttr: "?", dur: "?f"
         , note: "犬神系"
     }
@@ -580,7 +580,7 @@ debuff.hit = [
     }
     , {
         name: "タイダルビショップ", cl: "シービショップ", AW: "覚2b"
-        , stats: { atkCd: "+?f" }
+        , stats: { atkCd: "+30f" }
         , atkAttr: "魔法", dur: "?f"
     }
     , {
