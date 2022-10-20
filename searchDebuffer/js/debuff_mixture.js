@@ -679,6 +679,14 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "厄神霊犬", cl: "犬神", AW: "覚2b", skill: [ "通常", "覚醒" ]
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: [ "犬神系", "分類未確認" ]
+    }
+    , {
         name: "アヅミ", rarity: "白", cl: "料理人", AW: "覚醒後", skill: "覚醒"
         , stats: {
             atk: { value: "-25%", type: "limAttr" }
@@ -1817,7 +1825,6 @@ debuff.mixture = [
             , mr: { value: "-50%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒後", skill: "通常"
@@ -1826,7 +1833,6 @@ debuff.mixture = [
             , mr: { value: "-50%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒後", skill: "覚醒"
@@ -1835,7 +1841,7 @@ debuff.mixture = [
             , mr: { value: "-20%", type: "global" }
         }
         , domain: "global"
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "カーナ", rarity: "白", cl: "スカウト", AW: "覚醒後", skill: "覚醒"
@@ -1930,7 +1936,6 @@ debuff.mixture = [
             atk: { value: "-15%", type: "noAttr" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "黄蓋 公覆", rarity: "白", cl: "弓将【恋姫】", AW: "覚醒前", skill: "通常"
@@ -1938,7 +1943,6 @@ debuff.mixture = [
             mr: { value: "-60%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "黄蓋 公覆", rarity: "白", cl: "弓将【恋姫】", AW: "覚醒後", skill: "通常"

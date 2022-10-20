@@ -176,14 +176,26 @@ debuff.hit = [
         , atkAttr: "物理", dur: "29f"
     }
     , {
-        name: "犬神", cl: "犬神", AW: "覚醒前"
+        name: "犬神", cl: "犬神", AW: "覚醒前", skill: "通常"
         , stats: { atkCd: "+30f" }
         , atkAttr: "?", dur: "119f"
     }
     , {
-        name: "犬神頭", cl: "犬神", AW: "覚1"
+        name: "犬神頭", cl: "犬神", AW: "覚1", skill: [ "通常", "覚醒" ]
         , stats: { atkCd: "+30f" }
         , atkAttr: "?", dur: "119f"
+        , note: "犬神系"
+    }
+    , {
+        name: "お犬さま", cl: "犬神", AW: "覚2a", skill: [ "通常", "覚醒" ]
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "?", dur: "?f"
+        , note: "犬神系"
+    }
+    , {
+        name: "厄神霊犬", cl: "犬神", AW: "覚2b", skill: [ "通常", "覚醒" ]
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "?", dur: "?f"
         , note: "犬神系"
     }
     , {

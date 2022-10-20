@@ -1561,19 +1561,17 @@ buff.skill_cat = [
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.5", range: "×1.3" }
         , target: { depType: [ "遠距離" ] }
-        , note: "分類未確認"
     }
     , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.5", range: "×1.3" }
         , target: { depType: [ "遠距離" ] }
-        , note: "分類未確認"
     }
     , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , target: { depType: [ "遠距離" ] }
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "カーナ", rarity: "白", cl: "スカウト", AW: "覚醒前", skill: "通常"
