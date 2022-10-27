@@ -1026,6 +1026,15 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "クルス", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: {
+            stop: { value: "?f", type: "area" }
+        }
+        , domain: "area"
+        , target: { attr: [ "アンデッド" ] }
+        , note: "発動時"
+    }
+    , {
         name: "ヒューナ", rarity: "白", cl: "ヴァンパイアハンター", AW: "覚醒後", skill: "覚醒"
         , stats: {
             def: { value: "-50%", type: "area" }
@@ -1883,6 +1892,15 @@ debuff.mixture = [
         , note: "発動時"
     }
     , {
+        name: "孫堅 文台", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: {
+            def: { value: "-20%", type: "global" }
+            , mr: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
         name: "孫権 仲謀", rarity: "白", cl: "君主【恋姫】", AW: "覚醒前", skill: "通常"
         , stats: {
             def: { value: "-50%", type: "area" }
@@ -1899,22 +1917,38 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
-        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常"
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(1)"
         , stats: {
             def: { value: "-20%", type: "global" }
             , mr: { value: "-20%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
-        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常"
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(2～)"
         , stats: {
             def: { value: "-20%", type: "global" }
             , mr: { value: "-20%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
+        , note: "永続"
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常(1)"
+        , stats: {
+            def: { value: "-20%", type: "global" }
+            , mr: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+    }
+    , {
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常(2～)"
+        , stats: {
+            def: { value: "-20%", type: "global" }
+            , mr: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+        , note: "永続"
     }
     , {
         name: "鳳統", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常"

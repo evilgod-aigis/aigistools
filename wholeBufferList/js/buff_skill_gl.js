@@ -674,32 +674,29 @@ buff.skill_gl = [
     , {
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(1)"
         , stats: { atk: "×1.2", draw: "(○)", redep: "?秒" }
-        , note: "分類未確認"
     }
     , {
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(2～)"
         , stats: { atk: "×1.2", draw: "(○)", redep: "?秒" }
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常(1)"
         , stats: { atk: "×1.2", draw: "(○)", redep: "?秒" }
-        , note: "分類未確認"
     }
     , {
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常(2～)"
         , stats: { atk: "×1.2", draw: "(○)", redep: "?秒" }
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(1)"
         , stats: { atk: "×1.15", range: "×1.1" }
-        , note: "分類未確認"
     }
     , {
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(2～)"
         , stats: { atk: "×1.15", range: "×1.1" }
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒後", skill: "覚醒"
