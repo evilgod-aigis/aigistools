@@ -23,6 +23,15 @@ buff.skill_gl = [
         , stats: { rege: [ "200/秒", "100/15f" ] }
     }
     , {
+        name: "アヤカシの王", cl: "アヤカシの王", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { atk: "×1.15" }
+    }
+    , {
+        name: "山ン本五郎左衛門", rarity: "黒", cl: "アヤカシの王", AW: "覚醒後", skill: "覚醒"
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "通常"
         , stats: { rege: [ "1000/秒", "2000/60f" ] }
     }

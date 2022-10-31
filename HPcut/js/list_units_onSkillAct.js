@@ -521,7 +521,7 @@ lists.units.onSkillAct.list = [
                 options: [ "ちびイビルプリンセス" ]
             },
             attribution: [ "ちび", "ハロウィン" ],
-            affection: { percentage: null, bonus: null, changeRate: null },
+            affection: { percentage: null, bonus: "その他", changeRate: null },
             note: [ "女性", "HP回復不可", "魔界適応" ]
         },
         skill: {
