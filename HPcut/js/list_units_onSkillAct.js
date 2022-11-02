@@ -527,7 +527,7 @@ lists.units.onSkillAct.list = [
         skill: {
             awaken: {
                 selectable: false, selected: "通常",
-                options: [ "通常", "覚醒" ]
+                options: [ "通常", null ]
             },
             target: [ "全敵", null ],
             WT: { A: null, B: null },
@@ -540,6 +540,37 @@ lists.units.onSkillAct.list = [
             HPred: [ null, null ], HPred_uncorr: [ 10, null ],
             mulByNum: [ [ 1 ], null ],
             dmgMul: { options: [ "なし", null ], mul: [ 1.8, null ], target: [ "人間", null ] }
+        }
+    },
+    {
+        id: null,
+        added: false,
+        unitInfo: {
+            unitName: "ちびスキュレ", deployType: "近接型", rarity: "金",
+            unitClass: {
+                selectable: false, selected: "ちびイビルプリンセス",
+                options: [ "ちびイビルプリンセス" ]
+            },
+            attribution: [ "ちび" ],
+            affection: { percentage: null/*100*/, bonus: null/*"時間延長"*/, changeRate: null },
+            note: [ "女性", "HP回復不可", "魔界適応", "深海適応" ]
+        },
+        skill: {
+            awaken: {
+                selectable: false, selected: "通常",
+                options: [ "通常", null ]
+            },
+            target: [ "全敵", null ],
+            WT: { A: null, B: null },
+            CT: { A: null, B: null },
+            CT_uncorr: [ { A: 35, B: null }, { A: null, B: null } ],
+            dur: { A: null, B: null },
+            dur_uncorr: [ { A: 30, B: null }, { A: null, B: null } ],
+            firstTime: null, interval: null,
+            trigger: [ "-", null ], trans: [ "-", null ],
+            HPred: [ null, null ], HPred_uncorr: [ 10, null ],
+            mulByNum: [ [ 1 ], [ 1 ] ],
+            dmgMul: { options: [ "なし", null ], mul: [ 1.5, null ], target: [ "魔法敵", null ] }
         }
     }
 ];

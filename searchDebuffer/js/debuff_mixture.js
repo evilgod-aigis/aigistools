@@ -868,6 +868,22 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "ナシート", rarity: "白", cl: "サベージファイター", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ナシート", rarity: "白", cl: "サベージファイター", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
         name: "エステル", rarity: "黒", cl: "メイジ", AW: "覚醒前", skill: "通常"
         , stats: {
             mr: { value: "-80%", type: "global" }
@@ -2150,6 +2166,8 @@ debuff.mixture = [
     植物 インセクト 魚人 水棲 機械 アーマー 英傑
     
     atkAttr 物理 魔法 貫通
+    
+    cond 地上 飛行
     
     note 発動時 分類未確認
     

@@ -1191,6 +1191,16 @@ buff.team = [
         , target: { home: [ "砂漠の国" ] }
     }
     , {
+        name: "ナシート", rarity: "白", cl: "サベージファイター", AW: "覚醒前"
+        , stats: { wt: "-30%" }
+        , target: { home: [ "砂漠の国" ] }
+    }
+    , {
+        name: "ナシート", rarity: "白", cl: "サベージファイター", AW: "覚醒後"
+        , stats: { wt: "-50%" }
+        , target: { home: [ "砂漠の国" ] }
+    }
+    , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒後"
         , stats: { hp: "+10%" }
         , target: { home: [ "白の帝国" ] }

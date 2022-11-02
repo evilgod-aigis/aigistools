@@ -164,6 +164,12 @@ debuff.team = [
         , target: { attr: [ "人間", "天界人" ] }
     }
     , {
+        name: "サベージクラッシャー", cl: "サベージファイター", AW: "覚2b"
+        , stats: { def: "-15%" }
+        , target: { cond: [ "地上" ] }
+        , note: "サベージファイター系"
+    }
+    , {
         name: "ジャッジメント", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚2b"
         , stats: { atk: "-15%" }
         , target: { attr: [ "アンデッド" ] }
@@ -281,6 +287,10 @@ debuff.team = [
     天使 天界人 神 神獣 魔獣 妖獣 獣 獣人
     
     植物 インセクト 魚人 水棲 機械 アーマー 英傑
+    
+    atkAttr 物理 魔法 貫通
+    
+    cond 地上 飛行
     
     note
     

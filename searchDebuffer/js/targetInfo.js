@@ -1,7 +1,7 @@
 const target = {};
 
 target.word = {
-    attr: "属性", atkAttr: "攻撃属性"
+    attr: "属性", atkAttr: "攻撃属性", cond: "状態"
 };
 
 target.attr = [
@@ -10,6 +10,7 @@ target.attr = [
     , "植物", "インセクト", "魚人", "水棲", "機械", "アーマー", "英傑"
 ];
 target.atkAttr = [ "物理", "魔法", "貫通" ];
+target.cond = [ "地上", "飛行" ];
 target.selected = {};
 
 target.CreateForm = () => {
@@ -77,7 +78,7 @@ target.CreateForm = () => {
     // attr
     newTr = document.createElement("tr");
     newTh = document.createElement("th");
-    newTh.innerHTML = target.word["attr"];
+    newTh.innerHTML = target.word[ "attr" ];
     newTr.appendChild(newTh);
     newTd = document.createElement("td");
     CreateButtons(newTd, "attr");
@@ -99,10 +100,26 @@ target.CreateForm = () => {
     newTr.appendChild(newTd);
     newTable.appendChild(newTr);
     
+    const categories = [ "atkAttr", "cond" ];
+    _.forEach(categories, cat => {
+        newTr = document.createElement("tr");
+        newTh = document.createElement("th");
+        newTh.innerHTML = target.word[cat];
+        newTr.appendChild(newTh);
+        newTd = document.createElement("td");
+        CreateButtons(newTd, cat);
+        newForm = document.createElement("form");
+        newForm.id = `target-info_${cat}`;
+        CreateCheckboxes(newForm, cat);
+        newTd.appendChild(newForm);
+        newTr.appendChild(newTd);
+        newTable.appendChild(newTr);
+    });
     // atkAttr
+    /*
     newTr = document.createElement("tr");
     newTh = document.createElement("th");
-    newTh.innerHTML = target.word["atkAttr"];
+    newTh.innerHTML = target.word[ "atkAttr" ];
     newTr.appendChild(newTh);
     newTd = document.createElement("td");
     CreateButtons(newTd, "atkAttr");
@@ -112,6 +129,7 @@ target.CreateForm = () => {
     newTd.appendChild(newForm);
     newTr.appendChild(newTd);
     newTable.appendChild(newTr);
+    */
     
     // table option
     newTr = document.createElement("tr");
@@ -131,7 +149,7 @@ target.CreateForm = () => {
             {
                 value: "domain"
                 , label: "効果範囲優先"
-                , tooltip: "効果範囲：範囲/全体で分ける<br>同一ユニットによる効果か分かりやすい"
+                , tooltip: "効果範囲(範囲/全体)で分ける<br>同一ユニットによる効果か分かりやすい"
             }
             , {
                 value: "type"
@@ -174,7 +192,7 @@ target.ToggleAll = (_category, _checked) => {
 
 // 検索実行
 target.Search = () => {
-    const categories = [ "attr", "atkAttr" ];
+    const categories = [ "attr", "atkAttr", "cond" ];
     _.forEach(categories, cat => {
         const form = document.getElementById(`target-info_${cat}`);
         target.selected[cat] = [];

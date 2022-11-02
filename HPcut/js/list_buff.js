@@ -104,6 +104,18 @@ lists.buff.rWT.list = [
         tooltip: "[編成] 属性：デーモン・オーク・ゴブリンの初動-30%"
     },
     {
+        id: null, buffer: "砂漠の傭兵ナシート", awaken: "未覚醒", showAwaken: true,
+        rate: 30, disabled: true,
+        AndOr: "or", target: [ { attribution: [ "砂漠の国" ] } ],
+        tooltip: "[編成] 属性：砂漠の国の初動-30%"
+    },
+    {
+        id: null, buffer: "砂漠の傭兵ナシート", awaken: "覚醒", showAwaken: true,
+        rate: 50, disabled: true,
+        AndOr: "or", target: [ { attribution: [ "砂漠の国" ] } ],
+        tooltip: "[編成] 属性：砂漠の国の初動-50%"
+    },
+    {
         id: null, buffer: "陰陽師タマミ", awaken: "覚醒", showAwaken: false,
         rate: 25, disabled: false,
         AndOr: "or", target: [ { rarity: [ "白" ] } ],
