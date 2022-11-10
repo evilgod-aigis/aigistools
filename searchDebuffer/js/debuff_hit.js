@@ -746,13 +746,13 @@ debuff.hit = [
     , {
         name: "アイスエレメンタル", rarity: "トークン", AW: "覚醒前"
         , stats: { stop: "○" }
-        , atkAttr: "魔法", dur: "9f"
+        , atkAttr: "魔法", dur: "?f"
         , note: [ "ユキヒメ", "ユキヒメ/学園" ]
     }
     , {
         name: "上級アイスエレメンタル", rarity: "トークン", AW: "覚醒後"
         , stats: { stop: "○" }
-        , atkAttr: "魔法", dur: "9f"
+        , atkAttr: "魔法", dur: "19f"
         , note: [ "ユキヒメ", "ユキヒメ/学園" ]
     }
     , {

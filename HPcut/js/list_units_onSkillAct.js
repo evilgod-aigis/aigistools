@@ -272,7 +272,7 @@ lists.units.onSkillAct.list = [
                 selectable: false, selected: "デモンシャーマン系",
                 options: [ "デモンシャーマン系" ]
             },
-            attribution: [ "人間" ],
+            attribution: [ "人間", "魔界" ],
             affection: { percentage: null, bonus: "その他", changeRate: null },
             note: [ "女性", "HP回復不可", "魔界適応" ]
         },
@@ -365,7 +365,7 @@ lists.units.onSkillAct.list = [
                 selectable: true, selected: "イビルクイーン",
                 options: [ "イビルクイーン", "イビルシーカー", "デスブリンガー" ]
             },
-            attribution: [ "ハロウィン" ],
+            attribution: [ "魔界", "ハロウィン" ],
             affection: { percentage: null, bonus: "その他", changeRate: null },
             note: [ "女性", "HP回復不可", "魔界適応" ]
         },
@@ -396,7 +396,7 @@ lists.units.onSkillAct.list = [
                 selectable: true, selected: "デスブリンガー",
                 options: [ "イビルクイーン", "デスブリンガー" ]
             },
-            attribution: [ "なし" ],
+            attribution: [ "魔界" ],
             affection: { percentage: 100, bonus: "時間延長", changeRate: null },
             note: [ "女性", "HP回復不可", "魔界適応", "深海適応" ]
         },
@@ -427,7 +427,7 @@ lists.units.onSkillAct.list = [
                 selectable: true, selected: "デスブリンガー",
                 options: [ "イビルクイーン", "デスブリンガー" ]
             },
-            attribution: [ "なし" ],
+            attribution: [ "魔界" ],
             affection: { percentage: null, bonus: "その他", changeRate: null },
             note: [ "女性", "HP回復不可", "魔界適応" ]
         },
@@ -458,7 +458,7 @@ lists.units.onSkillAct.list = [
                 selectable: true, selected: "イビルシーカー",
                 options: [ "イビルクイーン", "イビルシーカー" ]
             },
-            attribution: [ "サマー" ],
+            attribution: [ "魔界", "サマー" ],
             affection: { percentage: null, bonus: "その他", changeRate: null },
             note: [ "女性", "HP回復不可", "魔界適応", "深海適応" ]
         },
@@ -489,7 +489,7 @@ lists.units.onSkillAct.list = [
                 selectable: true, selected: "イビルシーカー",
                 options: [ "イビルクイーン", "イビルシーカー" ]
             },
-            attribution: [ "東の国" ],
+            attribution: [ "東の国", "魔界" ],
             affection: { percentage: null, bonus: "その他", changeRate: null },
             note: [ "女性", "HP回復不可", "魔界適応" ]
         },
@@ -520,7 +520,7 @@ lists.units.onSkillAct.list = [
                 selectable: false, selected: "ちびイビルプリンセス",
                 options: [ "ちびイビルプリンセス" ]
             },
-            attribution: [ "ちび", "ハロウィン" ],
+            attribution: [ "魔界", "ちび", "ハロウィン" ],
             affection: { percentage: null, bonus: "その他", changeRate: null },
             note: [ "女性", "HP回復不可", "魔界適応" ]
         },
@@ -551,7 +551,7 @@ lists.units.onSkillAct.list = [
                 selectable: false, selected: "ちびイビルプリンセス",
                 options: [ "ちびイビルプリンセス" ]
             },
-            attribution: [ "ちび" ],
+            attribution: [ "魔界", "ちび" ],
             affection: { percentage: null/*100*/, bonus: null/*"時間延長"*/, changeRate: null },
             note: [ "女性", "HP回復不可", "魔界適応", "深海適応" ]
         },

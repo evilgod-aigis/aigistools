@@ -250,7 +250,7 @@ buff.team = [
     }
     , {
         name: "レオーネ", rarity: "黒", cl: "バンデット", AW: "覚醒後"
-        , stats: { hp: "+7%", atk: "+7%", def: "+7%" }
+        , stats: { hp: "+10%", atk: "+10%", def: "+10%" }
         , target: { race: [ "獣人" ] }
     }
     , {
@@ -1118,8 +1118,8 @@ buff.team = [
     }
     , {
         name: "シャディア", rarity: "黒", cl: "魔王親衛隊", AW: "覚醒後"
-        , stats: { hp: "+10%" }
-        , target: { race: [ "デーモン系" ] }
+        , stats: { hp: "+15%" }
+        , target: { others: [ "魔界" ] }
     }
     , {
         name: "シャディア/正月", rarity: "黒", cl: "魔王親衛隊", AW: "覚醒後"

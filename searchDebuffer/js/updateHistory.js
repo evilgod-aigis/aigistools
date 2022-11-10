@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2022/11/10(木)"
+        , detail: [
+            "調整を反映"
+        ]
+    }
+    , {
         date: "2022/11/02(水)"
         , detail: [
             "検索条件に状態を追加"

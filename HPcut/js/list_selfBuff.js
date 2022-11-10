@@ -34,7 +34,7 @@ lists.selfBuff.rCT = [
     { id: null, buffer: "修羅", rate: 45 },
     { id: null, buffer: "ボウライダーマスター", rate: 45 },
     { id: null, buffer: "デッドリーエッジ", rate: 40 },
-    { id: null, buffer: "剣神", rate: 40 },
+    { id: null, buffer: "剣神", rate: 50 },
     { id: null, buffer: "天魔天狗", rate: 45 },
     { id: null, buffer: "ラピッドシューター", rate: 45 },
     { id: null, buffer: "ネプチューン", rate: 45 },

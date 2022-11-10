@@ -1044,7 +1044,7 @@ debuff.mixture = [
     , {
         name: "クルス", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚醒後", skill: [ "通常", "覚醒" ]
         , stats: {
-            stop: { value: "?f", type: "area" }
+            stop: { value: "239f", type: "area" }
         }
         , domain: "area"
         , target: { attr: [ "アンデッド" ] }
@@ -1914,7 +1914,6 @@ debuff.mixture = [
             , mr: { value: "-20%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "孫権 仲謀", rarity: "白", cl: "君主【恋姫】", AW: "覚醒前", skill: "通常"

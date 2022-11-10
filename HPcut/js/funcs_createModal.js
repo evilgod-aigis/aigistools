@@ -321,6 +321,7 @@ funcs.createHTML.modal.Create = type => {
                                 <select class="modalAttr tooltip-ts" data-tippy-content="種族"></select>
                                 <select class="modalAttr tooltip-ts" data-tippy-content="種族以外" onchange="funcs.createHTML.modal.CreateAttrOptions()"></select><br>
                                 <select class="modalAttr tooltip-ts" data-tippy-content="種族以外" onchange="funcs.createHTML.modal.CreateAttrOptions()"></select>
+                                <select class="modalAttr tooltip-ts" data-tippy-content="種族以外" onchange="funcs.createHTML.modal.CreateAttrOptions()"></select><br>
                                 <select class="modalAttr tooltip-ts" data-tippy-content="種族以外" onchange="funcs.createHTML.modal.CreateAttrOptions()"></select>
                             </div>
                         </div>

@@ -584,6 +584,21 @@ buff.skill_area = [
         , stats: { eva: "30%" }
     }
     , {
+        name: "イエラ", rarity: "白", cl: "スカイヒーラー", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "イエラ", rarity: "白", cl: "スカイヒーラー", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "イエラ", rarity: "白", cl: "スカイヒーラー", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , note: "分類未確認"
+    }
+    , {
         name: "孫策 伯符", rarity: "黒", cl: "小覇王【恋姫】", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
         , note: "分類未確認"
