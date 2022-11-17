@@ -520,7 +520,7 @@ lists.units.onSkillAct.list = [
                 selectable: false, selected: "ちびイビルプリンセス",
                 options: [ "ちびイビルプリンセス" ]
             },
-            attribution: [ "魔界", "ちび", "ハロウィン" ],
+            attribution: [ "ちび", "魔界", "ハロウィン" ],
             affection: { percentage: null, bonus: "その他", changeRate: null },
             note: [ "女性", "HP回復不可", "魔界適応" ]
         },

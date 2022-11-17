@@ -455,8 +455,7 @@ table.CreateTableSub = (_element, _list, _isCommon, _stat = "") => {
                     });
                 }
                 newTd.innerHTML = `
-                    <span class="inline-block">${textArr.join(`、</span>
-                    <span class="inline-block">`)}</span>
+                    <span class="inline-block">${textArr.join(`、</span><span class="inline-block">`)}</span>
                 `;
             }
             newTr.appendChild(newTd);

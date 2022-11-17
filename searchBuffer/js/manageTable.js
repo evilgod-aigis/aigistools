@@ -340,8 +340,7 @@ table.CreateTable = () => {
                     });
                 }
                 newTd.innerHTML = `
-                    <span class="inline-block">${textArr.join(`、</span>
-                    <span class="inline-block">`)}</span>
+                    <span class="inline-block">${textArr.join(`、</span><span class="inline-block">`)}</span>
                 `;
             }
             newTr.appendChild(newTd);

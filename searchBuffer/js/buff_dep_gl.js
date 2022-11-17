@@ -698,6 +698,14 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "ヤハール", rarity: "白", cl: "デーモンロード", AW: "覚醒後"
+        , stats: { atk: "+7%", def: "+7%" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { others: [ "アンデッド" ] }
+        ]
+    }
+    , {
         name: "シロ", rarity: "黒", cl: "犬神", AW: "覚醒後"
         , stats: { rege: [ "40/秒", "20/15f" ] }
         , target: { race: [ "妖怪" ] }

@@ -147,6 +147,18 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "ロタン", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: { others: [ "ドラゴン" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ロタン", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: { others: [ "ドラゴン" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "ヒバリ/バレンタイン", rarity: "黒", cl: "サムライ", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.1", def: "×1.1" }
         , target: { cl: [ "王子" ] }
@@ -1531,6 +1543,12 @@ buff.skill_cat = [
         , stats: { atk: "×1.2" }
         , target: { sex: [ "女性" ] }
         , note: "範囲"
+    }
+    , {
+        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , target: { depType: [ "近接" ] }
+        , note: "分類未確認"
     }
     , {
         name: "ヨユキ", rarity: "黒", cl: "夜行さん", AW: "覚醒前", skill: "通常"

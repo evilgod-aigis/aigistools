@@ -679,6 +679,14 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "ヤハール", rarity: "白", cl: "デーモンロード", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            def: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "厄神霊犬", cl: "犬神", AW: "覚2b", skill: [ "通常", "覚醒" ]
         , stats: {
             atk: { value: "-10%", type: "noAttr" }
@@ -1809,6 +1817,24 @@ debuff.mixture = [
         }
         , domain: "area"
         , note: "分類未確認"
+    }
+    , {
+        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: [ "通常", "覚醒" ]
+        , stats: {
+            stop: { value: "?f", type: "global" }
+        }
+        , domain: "global"
+        , target: { attr: [ "天使", "天界人", "神" ] }
+        , note: "発動時"
+    }
+    , {
+        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: {
+            stop: { value: "?f", type: "global" }
+        }
+        , domain: "global"
+        , target: { attr: [ "天使", "天界人", "神" ] }
+        , note: "発動時"
     }
     , {
         name: "ヤシマ", rarity: "黒", cl: "妖狸", AW: "覚醒前", skill: "通常"
