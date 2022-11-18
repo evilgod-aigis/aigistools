@@ -150,13 +150,11 @@ buff.skill_cat = [
         name: "ロタン", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { others: [ "ドラゴン" ] }
-        , note: "分類未確認"
     }
     , {
         name: "ロタン", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { others: [ "ドラゴン" ] }
-        , note: "分類未確認"
     }
     , {
         name: "ヒバリ/バレンタイン", rarity: "黒", cl: "サムライ", AW: "覚醒前", skill: "通常"
