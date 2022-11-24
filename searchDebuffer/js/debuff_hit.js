@@ -226,6 +226,12 @@ debuff.hit = [
         , note: "死亡時"
     }
     , {
+        name: "スチームフォートレス", cl: "スチームナイト", AW: "覚2a"
+        , stats: { atk: "-15%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "スチームナイト系", "分類未確認" ]
+    }
+    , {
         name: "ハリナ", rarity: "黒", cl: "エンプレス", AW: "覚醒前", skill: "非"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "7f"

@@ -721,6 +721,15 @@ debuff.mixture = [
         , note: [ "永続", "分類未確認" ]
     }
     , {
+        name: "重機関騎士", cl: "スチームナイト", AW: "覚2b", skill: [ "通常", "覚醒" ]
+        , stats: {
+            def: { value: "-30%", type: "area" }
+            , mr: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "スチームナイト系", "分類未確認" ]
+    }
+    , {
         name: "イザムバード", rarity: "黒", cl: "スチームナイト", AW: "覚醒後", skill: "覚醒"
         , stats: {
             atk: { value: "-15%", type: "noAttr" }
@@ -2084,6 +2093,14 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "変わり身の幻", rarity: "トークン", AW: "覚醒後"
+        , stats: {
+            def: { value: "-40%", type: "death" }
+        }
+        , domain: "global"
+        , note: [ "リヴン(黒)", "継続:20秒", "暫定的な分類" ]
+    }
+    , {
         name: "イビルアイ", rarity: "トークン", AW: "覚醒前", skill: "通常"
         , stats: {
             stop: { value: "119f", type: "area" }
@@ -2178,7 +2195,7 @@ debuff.mixture = [
     
     domain area global
     
-    type noAttr limAttr clAttr fixed
+    type noAttr limAttr death clAttr fixed
     
     target
     

@@ -28,6 +28,11 @@ buff.dep_gl = [
         , stats: { atk: "+20%", def: "+20%", nul: "5%" }
     }
     , {
+        name: "王子【風護】", cl: "王子"
+        , stats: { atk: "+20%", def: "+20%", nul: "10%" }
+        , note: "Lv3以上"
+    }
+    , {
         name: "王子【英魂】", cl: "王子"
         , stats: { atk: "+20%", def: "+20%" }
     }
@@ -42,6 +47,11 @@ buff.dep_gl = [
     , {
         name: "王子【四神】", cl: "王子"
         , stats: { atk: "+20%", def: "+20%", rege: [ "60/秒", "30/15f" ] }
+    }
+    , {
+        name: "王子【四神】", cl: "王子"
+        , stats: { atk: "+20%", def: "+20%", rege: [ "80/秒", "40/15f" ] }
+        , note: "Lv3以上"
     }
     , {
         name: "王子【神槍】", cl: "王子"
@@ -87,6 +97,10 @@ buff.dep_gl = [
     , {
         name: "ちび王子", cl: "王子"
         , stats: { atk: "+10%", def: "+10%" }
+    }
+    , {
+        name: "ルキファ", rarity: "白", cl: "黎明の翼", AW: "覚醒後"
+        , stats: { rege: [ "50/秒", "25/15f" ] }
     }
     , {
         name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒後"

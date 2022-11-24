@@ -2,7 +2,7 @@ const table = {};
 
 table.word = {
     team: "編成", area: "範囲", global: "全体", noAttr: "属性不問", limAttr: "属性指定"
-    , clAttr: "クラス特性", fixed: "固定値", hit: "攻撃命中", scalar: "スカラー"
+    , death: "死亡時", clAttr: "クラス特性", fixed: "固定値", hit: "攻撃命中", scalar: "スカラー"
     
     , id: "id", name: "ユニット", rarity: "レア", cl: "クラス", AW: "覚醒等", skill: "スキル"
     
@@ -38,7 +38,7 @@ table.debuffType.type = {
         , color: "rgba(255, 0, 0, 0.3)"
     }
     , def: {
-        list: [ "area", "global" ]
+        list: [ "area", "global", "death" ]
         , color: "rgba(0, 0, 255, 0.3)"
     }
     , mr: {
