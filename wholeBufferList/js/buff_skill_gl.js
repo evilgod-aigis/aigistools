@@ -32,6 +32,14 @@ buff.skill_gl = [
         , note: "隠密付与"
     }
     , {
+        name: "イルドナ", rarity: "黒", cl: "暁光の神話", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "100/秒", "?/?f" ] }
+    }
+    , {
+        name: "イルドナ", rarity: "白", cl: "暁光の神話", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "100/秒", "?/?f" ] }
+    }
+    , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "通常"
         , stats: { rege: [ "1000/秒", "2000/60f" ] }
     }

@@ -103,6 +103,10 @@ buff.dep_gl = [
         , stats: { rege: [ "50/秒", "25/15f" ] }
     }
     , {
+        name: "暁光の神話", cl: "暁光の神話", AW: "覚醒後"
+        , stats: { nul: "15%" }
+    }
+    , {
         name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒後"
         , stats: { atk: "+7%", def: "+7%" }
     }

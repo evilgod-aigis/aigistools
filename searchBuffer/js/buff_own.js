@@ -87,6 +87,16 @@ buff.own = [
         ]
     }
     , {
+        name: "イルドナ", rarity: "黒", cl: "暁光の神話", AW: "覚醒後"
+        , stats: { def: "+5%" }
+        , target: { sex: [ "男性" ] }
+    }
+    , {
+        name: "イルドナ", rarity: "白", cl: "暁光の神話", AW: "覚醒後"
+        , stats: { def: "+3%" }
+        , target: { sex: [ "男性" ] }
+    }
+    , {
         name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒後"
         , stats: { atk: "+5%", range: "+10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }
