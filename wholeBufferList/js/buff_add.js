@@ -26,6 +26,11 @@ buff.add = [
         , note: "範囲"
     }
     , {
+        name: "グレーテル/クリスマス", rarity: "白", cl: "ダークストーカー", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "20%" }
+        , note: "範囲"
+    }
+    , {
         name: "ディアナ/水着", rarity: "黒", cl: "インペリアルナイト", AW: "覚醒前", skill: "通常"
         , stats: { atk: "12%" }
         , note: [ "範囲", "永続" ]

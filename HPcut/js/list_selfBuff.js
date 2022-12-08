@@ -15,6 +15,7 @@ lists.selfBuff.rWT = [
     { id: null, buffer: "主天使セフィーレ", rate: 60 },
     { id: null, buffer: "堕天系お掃除当番クロエ", rate: 50 },
     { id: null, buffer: "帝国機甲士クリスタ", rate: 30 },
+    { id: null, buffer: "聖闇の送り主グレーテル", rate: 25 },
     { id: null, buffer: "封機の剣士エレカ", rate: 60 },
     { id: null, buffer: "信仰の槍士コルム", rate: 50 },
     { id: null, buffer: "帝国魔術師イルマ", rate: 50 },

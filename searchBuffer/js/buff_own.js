@@ -66,9 +66,9 @@ buff.own = [
         , target: { home: [ "東の国" ] }
     }
     , {
-        name: "リヴン", rarity: "黒", cl: "トゥルーブラッド", AW: "覚醒後"
-        , stats: { atk: "+5%" }
-        , target: { others: [ "アンデッド" ] }
+        name: "山ン本五郎左衛門", rarity: "白", cl: "アヤカシの王", AW: "覚醒後"
+        , stats: { def: "+3%" }
+        , target: { home: [ "東の国" ] }
     }
     , {
         name: "ルキファ", rarity: "黒", cl: "黎明の翼", AW: "覚醒後"
@@ -85,6 +85,16 @@ buff.own = [
             { race: [ "天使", "天界人" ] }
             , { others: [ "魔界" ] }
         ]
+    }
+    , {
+        name: "リヴン", rarity: "黒", cl: "トゥルーブラッド", AW: "覚醒後"
+        , stats: { atk: "+5%" }
+        , target: { others: [ "アンデッド" ] }
+    }
+    , {
+        name: "リヴン", rarity: "白", cl: "トゥルーブラッド", AW: "覚醒後"
+        , stats: { def: "+3%" }
+        , target: { others: [ "アンデッド" ] }
     }
     , {
         name: "イルドナ", rarity: "黒", cl: "暁光の神話", AW: "覚醒後"

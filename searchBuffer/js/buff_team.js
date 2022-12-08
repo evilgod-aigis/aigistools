@@ -833,6 +833,11 @@ buff.team = [
         , target: { race: [ "デーモン系" ] }
     }
     , {
+        name: "グレーテル/クリスマス", rarity: "白", cl: "ダークストーカー", AW: "覚醒後"
+        , stats: { hp: "+5%" }
+        , target: { season: [ "クリスマス" ] }
+    }
+    , {
         name: "シノ", rarity: "黒", cl: "ぬらりひょん", AW: "覚醒前"
         , stats: { cost: "-1" }
         , target: { race: [ "妖怪" ] }

@@ -6,6 +6,11 @@ buff.skill_area = [
         , note: [ "全体", "永続" ]
     }
     , {
+        name: "山ン本五郎左衛門", rarity: "白", cl: "アヤカシの王", AW: "覚醒後", skill: "覚醒"
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "通常"
         , stats: { def: "×2.5", mr: "×2.5" }
     }
@@ -83,6 +88,16 @@ buff.skill_area = [
         , note: "永続"
     }
     , {
+        name: "グレーテル/クリスマス", rarity: "白", cl: "ダークストーカー", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.4" }
+        , target: "分類未確認"
+    }
+    , {
+        name: "グレーテル/クリスマス", rarity: "白", cl: "ダークストーカー", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.4" }
+        , target: "分類未確認"
+    }
+    , {
         name: "クラマ", rarity: "黒", cl: "天狗", AW: "覚醒前", skill: "通常"
         , stats: { other: "" }
         , note: "隠密付与"
@@ -133,6 +148,14 @@ buff.skill_area = [
     , {
         name: "タチバナ", rarity: "黒", cl: "鬼刃忍", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "×1.6" }
+    }
+    , {
+        name: "ハルモニア/クリスマス", rarity: "黒", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
+        , stats: { rege: [ "100/秒", "?/?f" ] }
+    }
+    , {
+        name: "ハルモニア/クリスマス", rarity: "黒", cl: "デーモンロード", AW: "覚醒後", skill: "通常"
+        , stats: { rege: [ "100/秒", "?/?f" ] }
     }
     , {
         name: "エスネア", rarity: "黒", cl: "デモンルーン", AW: "覚醒後", skill: "覚醒"

@@ -1,6 +1,11 @@
 // 命中
 debuff.hit = [
     {
+        name: "山ン本五郎左衛門", rarity: "白", cl: "アヤカシの王", AW: "覚醒後"
+        , stats: { def: "-35%" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
         name: "ユージェン", rarity: "黒", cl: "チェイスハンター", AW: "覚醒後", skill: "通常"
         , stats: { atk: "-50%", def: "-20%" }
         , atkAttr: "物理", dur: "29f"
@@ -228,8 +233,8 @@ debuff.hit = [
     , {
         name: "スチームフォートレス", cl: "スチームナイト", AW: "覚2a"
         , stats: { atk: "-15%" }
-        , atkAttr: "物理", dur: "?f"
-        , note: [ "スチームナイト系", "分類未確認" ]
+        , atkAttr: "物理", dur: "59f"
+        , note: "スチームナイト系"
     }
     , {
         name: "ハリナ", rarity: "黒", cl: "エンプレス", AW: "覚醒前", skill: "非"
