@@ -1879,6 +1879,24 @@ debuff.mixture = [
         , note: "スカウト系"
     }
     , {
+        name: "スカウトジェネラル", cl: "スカウト", AW: "覚2a"
+        , stats: {
+            def: { value: "-55%", type: "area" }
+            , mr: { value: "-55%", type: "clAttr" }
+        }
+        , domain: "area"
+        , note: [ "スカウト系", "分類未確認" ]
+    }
+    , {
+        name: "ファントムリコン", cl: "スカウト", AW: "覚2b"
+        , stats: {
+            def: { value: "-50%", type: "area" }
+            , mr: { value: "-50%", type: "clAttr" }
+        }
+        , domain: "area"
+        , note: [ "スカウト系", "分類未確認" ]
+    }
+    , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"
         , stats: {
             def: { value: "-50%", type: "global" }
