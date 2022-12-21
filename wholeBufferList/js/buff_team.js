@@ -108,6 +108,16 @@ buff.team = [
         , note: "奇跡の盾(16%)付与"
     }
     , {
+        name: "魔王城", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚醒前"
+        , stats: { other: "" }
+        , note: "貫通攻撃(16%)付与"
+    }
+    , {
+        name: "魔王城", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚醒後"
+        , stats: { other: "" }
+        , note: "貫通攻撃(16%)付与"
+    }
+    , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後"
         , stats: { def: "+7%" }
     }

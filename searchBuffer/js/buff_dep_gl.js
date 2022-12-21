@@ -895,6 +895,11 @@ buff.dep_gl = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
+        name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒後"
+        , stats: { def: "+5%" }
+        , target: { season: [ "クリスマス" ] }
+    }
+    , {
         name: "夜行さん", cl: "夜行さん", AW: "覚醒前"
         , stats: { cost: "-2" }
         , target: { race: [ "妖怪" ] }

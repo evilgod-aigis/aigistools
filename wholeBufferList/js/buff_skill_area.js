@@ -90,12 +90,10 @@ buff.skill_area = [
     , {
         name: "グレーテル/クリスマス", rarity: "白", cl: "ダークストーカー", AW: "覚醒前", skill: "通常"
         , stats: { def: "×1.4" }
-        , target: "分類未確認"
     }
     , {
         name: "グレーテル/クリスマス", rarity: "白", cl: "ダークストーカー", AW: "覚醒後", skill: "通常"
         , stats: { def: "×1.4" }
-        , target: "分類未確認"
     }
     , {
         name: "クラマ", rarity: "黒", cl: "天狗", AW: "覚醒前", skill: "通常"
@@ -587,6 +585,14 @@ buff.skill_area = [
         , note: "ボム"
     }
     , {
+        name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒前", skill: "通常"
+        , stats: { eva: "30%" }
+    }
+    , {
+        name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒後", skill: "通常"
+        , stats: { eva: "30%" }
+    }
+    , {
         name: "シュカ", rarity: "白", cl: "霊宝つくもがみ", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
     }
@@ -723,6 +729,11 @@ buff.skill_area = [
         name: "世界樹の苗", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.3" }
         , note: "ラタトスク"
+    }
+    , {
+        name: "きらめく聖樹", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        , stats: { eva: "30%" }
+        , note: "ローズ/クリスマス"
     }
 ];
 

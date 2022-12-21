@@ -254,6 +254,14 @@ buff.skill_gl = [
         , stats: { hp: "+50%" }
     }
     , {
+        name: "シロガネ", rarity: "白", cl: "鬼刃忍", AW: "覚醒前", skill: "通常"
+        , stats: { rege: [ "80/秒", "?/?f" ] }
+    }
+    , {
+        name: "シロガネ", rarity: "白", cl: "鬼刃忍", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "80/秒", "?/?f" ] }
+    }
+    , {
         name: "デーモンロード", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
         , stats: { cost: "-15%" }
     }

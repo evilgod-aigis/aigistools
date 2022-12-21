@@ -1828,6 +1828,14 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            stop: { value: "?f", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "ボム", "発動時"]
+    }
+    , {
         name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: [ "通常", "覚醒" ]
         , stats: {
             stop: { value: "?f", type: "global" }
