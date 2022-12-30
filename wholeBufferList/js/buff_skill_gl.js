@@ -254,6 +254,11 @@ buff.skill_gl = [
         , stats: { hp: "+50%" }
     }
     , {
+        name: "ウルカノ", rarity: "黒", cl: "鍛冶職人", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , note: "分類未確認"
+    }
+    , {
         name: "シロガネ", rarity: "白", cl: "鬼刃忍", AW: "覚醒前", skill: "通常"
         , stats: { rege: [ "80/秒", "?/?f" ] }
     }

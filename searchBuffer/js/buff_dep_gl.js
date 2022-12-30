@@ -544,6 +544,22 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "ウルカノ", rarity: "黒", cl: "鍛冶職人", AW: "覚醒前"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { sex: [ "女性" ], depType: [ "遠距離" ] }
+        ]
+    }
+    , {
+        name: "ウルカノ", rarity: "黒", cl: "鍛冶職人", AW: "覚醒前"
+        , stats: { atk: "+15%", def: "+15%", ct: "-30%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { sex: [ "女性" ], depType: [ "遠距離" ] }
+        ]
+    }
+    , {
         name: "サンディー", rarity: "白", cl: "鍛冶職人", AW: "覚醒前"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { cl: [
@@ -921,6 +937,11 @@ buff.dep_gl = [
         , stats: { atk: "+15%" }
         , target: { others: [ "竜族" ] }
         , note: "ドラゴンメイジ系"
+    }
+    , {
+        name: "アスバール", rarity: "黒", cl: "魔界総帥", AW: "覚醒後"
+        , stats: { atk: "+10%", def: "+10%", draw: "○" }
+        , target: { others: [ "魔界" ] }
     }
     , {
         name: "パリオス", rarity: "黒", cl: "スカイウォリアー", AW: "覚醒後"
