@@ -552,7 +552,7 @@ buff.dep_gl = [
         ]
     }
     , {
-        name: "ウルカノ", rarity: "黒", cl: "鍛冶職人", AW: "覚醒前"
+        name: "ウルカノ", rarity: "黒", cl: "鍛冶職人", AW: "覚醒後"
         , stats: { atk: "+15%", def: "+15%", ct: "-30%" }
         , target: [
             { cl: [ "王子" ] }
