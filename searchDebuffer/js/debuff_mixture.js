@@ -1859,7 +1859,6 @@ debuff.mixture = [
             atk: { value: "-10%", type: "noAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "魔界大総帥", cl: "魔界総帥", AW: "覚1"
@@ -1867,7 +1866,7 @@ debuff.mixture = [
             atk: { value: "-14%", type: "noAttr" }
         }
         , domain: "area"
-        , note: [ "魔界総帥系", "分類未確認" ]
+        , note: "魔界総帥系"
     }
     , {
         name: "萌芽の亜神", cl: "魔界総帥", AW: "覚2a"
@@ -1875,7 +1874,7 @@ debuff.mixture = [
             atk: { value: "-16%", type: "noAttr" }
         }
         , domain: "area"
-        , note: [ "魔界総帥系", "分類未確認" ]
+        , note: "魔界総帥系"
     }
     , {
         name: "雷嵐の魔界荒神", cl: "魔界総帥", AW: "覚2b"
@@ -1883,7 +1882,7 @@ debuff.mixture = [
             atk: { value: "-20%", type: "noAttr" }
         }
         , domain: "area"
-        , note: [ "魔界総帥系", "分類未確認" ]
+        , note: "魔界総帥系"
     }
     , {
         name: "アスバール", rarity: "黒", cl: "魔界総帥", AW: "覚醒前", skill: "通常"
@@ -1891,7 +1890,6 @@ debuff.mixture = [
             atk: { value: "*1.5", type: "noAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "アスバール", rarity: "黒", cl: "魔界総帥", AW: "覚醒後", skill: "通常"
@@ -1899,7 +1897,6 @@ debuff.mixture = [
             atk: { value: "*1.5", type: "noAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "ヤシマ", rarity: "黒", cl: "妖狸", AW: "覚醒前", skill: "通常"

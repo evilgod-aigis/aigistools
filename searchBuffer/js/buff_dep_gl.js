@@ -741,6 +741,18 @@ buff.dep_gl = [
         , stats: { ct: "-50%" }
         , target: { cl: [ "邪仙", "犬神", "陰陽師", "呪術使い" ] }
     }
+    /*  情報が出次第
+    , {
+        name: "トゥーリ", rarity: "黒", cl: "テンプルナイト", AW: "覚醒前"
+        , stats: { cost: "-?" }
+        , target: { cl: [ "テンプルナイト" ] }
+    }
+    */
+    , {
+        name: "トゥーリ", rarity: "黒", cl: "テンプルナイト", AW: "覚醒後"
+        , stats: { cost: "-2" }
+        , target: { cl: [ "テンプルナイト" ] }
+    }
     , {
         name: "デシレア", rarity: "白", cl: "テンプルナイト", AW: "覚醒前"
         , stats: { def: "+5%" }

@@ -33,11 +33,11 @@ buff.skill_gl = [
     }
     , {
         name: "イルドナ", rarity: "黒", cl: "暁光の神話", AW: "覚醒後", skill: "覚醒"
-        , stats: { rege: [ "100/秒", "?/?f" ] }
+        , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
         name: "イルドナ", rarity: "白", cl: "暁光の神話", AW: "覚醒後", skill: "覚醒"
-        , stats: { rege: [ "100/秒", "?/?f" ] }
+        , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "通常"

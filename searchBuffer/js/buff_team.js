@@ -66,6 +66,11 @@ buff.team = [
         , target: { home: [ "東の国" ] }
     }
     , {
+        name: "王子【正月】", cl: "王子"
+        , stats: { hp: "+10%", def: "+10%" }
+        , target: { season: [ "お正月" ] }
+    }
+    , {
         name: "ちび王子", cl: "王子"
         , stats: { atk: "+15%" }
         , target: { others: [ "ちび" ] }

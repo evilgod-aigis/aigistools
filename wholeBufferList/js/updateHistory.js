@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2022/12/31(土)"
+        , detail: [
+            "王子【正月】を追加"
+        ]
+    }
+    , {
         date: "2022/12/30(金)"
         , detail: [
             "ウルカノを追加"
