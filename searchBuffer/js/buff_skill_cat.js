@@ -1600,7 +1600,7 @@ buff.skill_cat = [
         , note: "分類未確認"
     }
     , {
-        name: "メシナ/お正月", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前", skill: "覚醒"
+        name: "メシナ/お正月", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { season: [ "お正月" ] }
         , note: "分類未確認"
