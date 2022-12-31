@@ -613,6 +613,16 @@ debuff.hit = [
         , atkAttr: "魔法", dur: "?f"
     }
     , {
+        name: "メシナ/お正月", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: "メシナ/お正月", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
         name: "ドラグーン", cl: "ドラグーン", AW: "覚醒前"
         , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "29f"

@@ -1594,6 +1594,18 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "メシナ/お正月", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: { season: [ "お正月" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "メシナ/お正月", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前", skill: "覚醒"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: { season: [ "お正月" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "コラリー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.3" }
         , target: { others: [ "竜族" ] }
