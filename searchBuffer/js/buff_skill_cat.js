@@ -135,6 +135,11 @@ buff.skill_cat = [
         , note: "終了時HP-70%"
     }
     , {
+        name: "ちびヨシノ", rarity: "ちび", cl: "プリンセス", skill: "通常"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: { cl: [ "サムライ", "忍者" ] }
+    }
+    , {
         name: "ピリカ", rarity: "白", cl: "イビルプリンセス", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.4", other: "" }
         , target: { race: [ "獣人" ] }

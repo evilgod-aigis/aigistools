@@ -89,6 +89,11 @@ buff.dep_gl = [
         , target: { home: [ "東の国" ] }
     }
     , {
+        name: "ちびヨシノ", rarity: "ちび", cl: "プリンセス"
+        , stats: { draw: "○" }
+        , target: { home: [ "東の国" ] }
+    }
+    , {
         name: "アマンダ", rarity: "黒", cl: "バンデット", AW: "覚醒後"
         , stats: { atk: "+10%" }
         , target: { depType: [ "近接" ] }
