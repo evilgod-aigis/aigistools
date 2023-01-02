@@ -71,6 +71,11 @@ buff.team = [
         , target: { season: [ "お正月" ] }
     }
     , {
+        name: "王子【玉兎】", cl: "王子"
+        , stats: { atk: "+7%", def: "+7%" }
+        , target: { year: [ "2023年" ] }
+    }
+    , {
         name: "ちび王子", cl: "王子"
         , stats: { atk: "+15%" }
         , target: { others: [ "ちび" ] }

@@ -23,7 +23,12 @@ buff.dep_gl = [
     , {
         name: "王子【ドゥン】", cl: "王子"
         , stats: { draw: "○" }
-        , target: { year: [ "2021年" ] }
+        , target: { year: [ "2022年" ] }
+    }
+    , {
+        name: "王子【玉兎】", cl: "王子"
+        , stats: { draw: "○" }
+        , target: { year: [ "2023年" ] }
     }
     , {
         name: "ソラス", rarity: "白", cl: "占星術師", AW: "覚醒後"
@@ -746,13 +751,6 @@ buff.dep_gl = [
         , stats: { ct: "-50%" }
         , target: { cl: [ "邪仙", "犬神", "陰陽師", "呪術使い" ] }
     }
-    /*  情報が出次第
-    , {
-        name: "トゥーリ", rarity: "黒", cl: "テンプルナイト", AW: "覚醒前"
-        , stats: { cost: "-?" }
-        , target: { cl: [ "テンプルナイト" ] }
-    }
-    */
     , {
         name: "トゥーリ", rarity: "黒", cl: "テンプルナイト", AW: "覚醒後"
         , stats: { cost: "-2" }
