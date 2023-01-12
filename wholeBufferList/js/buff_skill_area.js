@@ -58,6 +58,16 @@ buff.skill_area = [
         , stats: { rege: [ "40/秒", "20/15f" ] }
     }
     , {
+        name: "シエナ/温泉", rarity: "白", cl: "魔法剣士", AW: "覚醒前", skill: "通常"
+        , stats: { mr: "×1.4" }
+        , note:"分類未確認"
+    }
+    , {
+        name: "シエナ/温泉", rarity: "白", cl: "魔法剣士", AW: "覚醒後", skill: "通常"
+        , stats: { mr: "×1.4" }
+        , note:"分類未確認"
+    }
+    , {
         name: "エクス", rarity: "黒", cl: "神官戦士", AW: "覚醒前", skill: "通常"
         , stats: { def: "×1.5" }
         , note: "永続"
@@ -334,6 +344,16 @@ buff.skill_area = [
     }
     , {
         name: "フィオレ", rarity: "黒", cl: "ドルイド", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
+        name: "フィオレ/温泉", rarity: "黒", cl: "ドルイド", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
+        name: "フィオレ/温泉", rarity: "黒", cl: "ドルイド", AW: "覚醒後", skill: "通常"
         , stats: { other: "" }
         , note: "隠密付与"
     }

@@ -330,6 +330,11 @@ buff.team = [
         , target: { home: [ "東の国" ] }
     }
     , {
+        name: "アカネ/温泉", rarity: "白", cl: "サムライ", AW: "覚醒後"
+        , stats: { hp: "+5%" }
+        , target: { season: [ "温泉" ] }
+    }
+    , {
         name: "コジュウロウ", rarity: "金", cl: "サムライ", AW: "覚醒後"
         , stats: { def: "+7%" }
         , target: { cl: [ "サムライ", "忍者" ] }
@@ -413,6 +418,22 @@ buff.team = [
         name: "シエナ", rarity: "白", cl: "魔法剣士", AW: "覚醒後"
         , stats: { cost: "-1" }
         , target: { cl: [ "魔法剣士", "メイジアーマー" ] }
+    }
+    , {
+        name: "シエナ/温泉", rarity: "白", cl: "魔法剣士", AW: "覚醒前"
+        , stats: { hp: "+5%", atk: "+5%", def: "+5%", cost: "+1" }
+        , target: [
+            { cl: [ "魔法剣士" ] }
+            , { season: [ "温泉" ] }
+        ]
+    }
+    , {
+        name: "シエナ/温泉", rarity: "白", cl: "魔法剣士", AW: "覚醒後"
+        , stats: { hp: "+7%", atk: "+7%", def: "+7%", cost: "+1" }
+        , target: [
+            { cl: [ "魔法剣士" ] }
+            , { season: [ "温泉" ] }
+        ]
     }
     , {
         name: "タラニア", rarity: "白", cl: "魔法剣士", AW: "覚醒後"
