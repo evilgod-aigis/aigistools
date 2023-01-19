@@ -51,6 +51,21 @@ buff.add = [
         , note: "範囲"
     }
     , {
+        name: "小悪魔アイドル", cl: "小悪魔アイドル", AW: "覚1"
+        , stats: { atk: "5%", def: "5%" }
+        , note: "範囲"
+    }
+    , {
+        name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "*4" }
+        , note: [ "範囲", "永続" ]
+    }
+    , {
+        name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "*7", def: "*7" }
+        , note: "範囲"
+    }
+    , {
         name: "ダンサー", cl: "ダンサー", AW: "CC前"
         , stats: { atk: "10%", def: "10%" }
         , note: "範囲"

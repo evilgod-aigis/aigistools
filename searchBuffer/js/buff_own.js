@@ -171,6 +171,11 @@ buff.own = [
         , stats: { hp: "+5%" }
         , target: { season: [ "お正月" ] }
     }
+    , {
+        name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後"
+        , stats: { atk: "+1%" }
+        , target: { depType: [ "近接" ] }
+    }
 ];
 
 /*

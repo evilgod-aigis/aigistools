@@ -294,6 +294,12 @@ debuff.hit = [
         , note: [ "サベージファイター系", "分類未確認" ]
     }
     , {
+        name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "貫通", dur: "?f"
+        , note: "永続"
+    }
+    , {
         name: "ポミエ/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "59f"
@@ -649,6 +655,12 @@ debuff.hit = [
         name: "オヴェリー", rarity: "白", cl: "ロケットトルーパー", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "-50%" }
         , atkAttr: "物理", dur: "299f"
+    }
+    , {
+        name: "ゼニスウォリアー", cl: "スカイウォリアー", AW: "覚2a"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "スカイウォリアー系", "分類未確認" ]
     }
     , {
         name: "ポタル", rarity: "白", cl: "スカイウォリアー", AW: "覚醒後", skill: "覚醒"
