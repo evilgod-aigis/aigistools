@@ -75,6 +75,22 @@ target.CreateForm = () => {
         });
     }
     
+    // all
+    newTr = document.createElement("tr");
+    newTh = document.createElement("th");
+    newTh.innerHTML = "全部";
+    newTr.appendChild(newTh);
+    newTd = document.createElement("td");
+    _.forEach({ "ON": true, "OFF": false }, (checked, text) => {
+        const newButton = document.createElement("button");
+        newButton.type = "button";
+        newButton.setAttribute("onclick", `target.ToggleAll("all", ${checked})`);
+        newButton.innerHTML = text;
+        newTd.appendChild(newButton);
+    });
+    newTr.appendChild(newTd);
+    newTable.appendChild(newTr);
+    
     // attr
     newTr = document.createElement("tr");
     newTh = document.createElement("th");
@@ -186,8 +202,13 @@ target.CreateForm = () => {
 
 // 属性一括ON/OFF
 target.ToggleAll = (_category, _checked) => {
-    const form = document.getElementById(`target-info_${_category}`);
-    _.forEach(form.options, option => { option.checked = _checked; });
+    if(_category === "all") {
+        const checkboxes = document.querySelectorAll("#target-info input[type='checkbox']");
+        _.forEach(checkboxes, checkbox => { checkbox.checked = _checked; });
+    } else {
+        const form = document.getElementById(`target-info_${_category}`);
+        _.forEach(form.options, option => { option.checked = _checked; });
+    }
 }
 
 // 検索実行

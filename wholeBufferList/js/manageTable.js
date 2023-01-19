@@ -515,12 +515,41 @@ table.Sort = (_buffType, _colName, _allowReverse = true) => {
         table.list[_buffType].sortedBy = _colName;
     }
     
-    _.forEach(
-        _.map(trs_array, tr => [ [ ...tr.classList ], tr.innerHTML ])
-        , (html, i) => {
-            trs[i].classList.remove(...trs[i].classList);
-            trs[i].classList.add(...html[0]);
-            trs[i].innerHTML = html[1];
-        }
-    );
+    if(_buffType === "unique") {
+        let preType;
+        _.forEach(
+            _.map(trs_array, tr => ({
+                id: parseInt(tr.textContent)
+                , classList: [ ...tr.classList ]
+                , innerHTML: tr.innerHTML
+            }))
+            , (html, i) => {
+                trs[i].classList.remove(...trs[i].classList);
+                trs[i].classList.add(...html.classList);
+                trs[i].innerHTML = html.innerHTML;
+                
+                if(trs[i].children[0].classList.contains("dbl-line")) {
+                    _.forEach(trs[i].children, td => td.classList.remove("dbl-line"));
+                }
+                const type = buff.unique[html.id].type;
+                if(!trs[i].classList.contains("is-unshown")) {
+                    if(preType && type !== preType)
+                        _.forEach(trs[i].children, td => td.classList.add("dbl-line"));
+                    preType = type;
+                }
+            }
+        );
+    } else {
+        _.forEach(
+            _.map(trs_array, tr => ({
+                classList: [ ...tr.classList ]
+                , innerHTML: tr.innerHTML
+            }))
+            , (html, i) => {
+                trs[i].classList.remove(...trs[i].classList);
+                trs[i].classList.add(...html.classList);
+                trs[i].innerHTML = html.innerHTML;
+            }
+        );
+    }
 }

@@ -216,6 +216,9 @@ summary {
 #tables .cell-filled {
     background-color: rgb(255, 200, 100);
 }
+#tables .dbl-line {
+    border-top-width: 4px;
+}
 /* テーブル ここまで */
 
 /* フッタ */
