@@ -296,7 +296,7 @@ debuff.hit = [
     , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
-        , atkAttr: "貫通", dur: "?f"
+        , atkAttr: "貫通", dur: "14f"
         , note: "永続"
     }
     , {

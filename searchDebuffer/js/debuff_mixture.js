@@ -1830,7 +1830,7 @@ debuff.mixture = [
     , {
         name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒後", skill: "覚醒"
         , stats: {
-            stop: { value: "?f", type: "area" }
+            stop: { value: "14f", type: "area" }
         }
         , domain: "area"
         , note: [ "ボム", "発動時"]

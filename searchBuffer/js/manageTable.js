@@ -546,16 +546,6 @@ table.Sort = (_buffType, _colName, _allowReverse = true) => {
         table.list[_buffType].sortedBy = _colName;
     }
     
-    /*
-    _.forEach(
-        _.map(trs_array, tr => [ [ ...tr.classList ], tr.innerHTML ])
-        , (html, i) => {
-            trs[i].classList.remove(...trs[i].classList);
-            trs[i].classList.add(...html[0]);
-            trs[i].innerHTML = html[1];
-        }
-    );
-    */
     if(_buffType === "unique") {
         let preType;
         _.forEach(

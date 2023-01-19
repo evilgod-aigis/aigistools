@@ -38,32 +38,36 @@ buff.unique = [
         , note: [ "ヤシキノカミ", "(座敷わらし系)", "区分：乗算マス", "継続:80秒" ]
     }
     
-    // レライエ死亡時
-    , {
-        name: "レライエ", rarity: "白", cl: "デモンシャーマン", AW: "覚醒後"
-        , stats: { atk: "×1.2" }
-        , type: "Leraye"
-        , note: [ "区分：レライエ死亡時", "死亡時", "継続:20秒" ]
-    }
-    , {
-        name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒後"
-        , stats: { atk: "×1.15", def: "×1.15" }
-        , type: "Leraye"
-        , note: [ "区分：レライエ死亡時", "死亡時", "継続:30秒", "分類未確認" ]
-    }
-    
-    // デモンルーン死亡時
+    // 死亡時
     , {
         name: "デモンルーン", cl: "デモンルーン", AW: "覚醒前"
-        , stats: { atk: "×1.1" }
-        , type: "demon-rune"
-        , note: [ "区分：デモンルーン死亡時", "死亡時", "継続:10秒" ]
+        , stats: { atk: "+10%" }
+        , type: "death"
+        , note: [ "区分：死亡時", "死亡時", "継続:10秒" ]
     }
     , {
         name: "デモンハイルーン", cl: "デモンルーン", AW: "覚1"
-        , stats: { atk: "×1.15" }
-        , type: "demon-rune"
-        , note: [ "区分：デモンルーン死亡時", "死亡時", "継続:10秒", "デモンルーン系" ]
+        , stats: { atk: "+15%" }
+        , type: "death"
+        , note: [ "区分：死亡時", "死亡時", "継続:10秒", "デモンルーン系" ]
+    }
+    , {
+        name: "エス★エフ", cl: "小悪魔アイドル", AW: "覚醒後"
+        , stats: { atk: "+10%", def: "+10%" }
+        , type: "death"
+        , note: [ "区分：死亡時", "死亡時", "継続:30秒" ]
+    }
+    , {
+        name: "レライエ", rarity: "白", cl: "デモンシャーマン", AW: "覚醒後"
+        , stats: { atk: "+20%" }
+        , type: "death"
+        , note: [ "区分：死亡時", "死亡時", "継続:20秒" ]
+    }
+    , {
+        name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒後"
+        , stats: { atk: "+15%", def: "+15%" }
+        , type: "death"
+        , note: [ "区分：死亡時", "死亡時", "継続:30秒" ]
     }
     
     // ルキファ死亡時
@@ -78,14 +82,6 @@ buff.unique = [
         , stats: { def: "+10%", mr: "+10%" }
         , type: "Lukifer"
         , note: [ "区分：ルキファ死亡時", "死亡時範囲", "継続:永続", "分類未確認" ]
-    }
-    
-    // エス★エフ死亡時
-    , {
-        name: "エス★エフ", cl: "小悪魔アイドル", AW: "覚醒後"
-        , stats: { atk: "×1.1", def: "×1.1" }
-        , type: "SF"
-        , note: [ "区分：エス★エフ死亡時", "死亡時", "継続:30秒", "分類未確認" ]
     }
     
     // 猫又
@@ -376,7 +372,7 @@ buff.unique = [
     
     type
     
-    spot_mul Leraye demon-rune Lukifer SF nekomata
+    spot_mul death Lukifer nekomata
     
     special atk-up_mag dmg-red dmg-red_mag
     

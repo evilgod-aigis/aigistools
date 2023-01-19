@@ -16,20 +16,20 @@ buff.unique = [
        , note: [ "区分：ダモクレスの剣", "終了時HP-50%" ]
     }
     
-    // レライエ死亡時
+    // 死亡時
     , {
         name: "レライエ", rarity: "白", cl: "デモンシャーマン", AW: "覚醒後"
-        , stats: { atk: "×1.3" }
+        , stats: { atk: "+30%" }
         , target: { race: [ "デーモン系" ] }
-        , type: "Leraye"
-        , note: [ "区分：レライエ死亡時", "死亡時", "継続:20秒" ]
+        , type: "death"
+        , note: [ "区分：死亡時", "死亡時", "継続:20秒" ]
     }
     , {
         name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒後"
-        , stats: { atk: "×1.25", def: "×1.25" }
+        , stats: { atk: "+25%", def: "+25%" }
         , target: { season: [ "ハロウィン" ] }
-        , type: "Leraye"
-        , note: [ "区分：レライエ死亡時", "死亡時", "継続:30秒", "分類未確認" ]
+        , type: "death"
+        , note: [ "区分：死亡時", "死亡時", "継続:30秒" ]
     }
     
     // 特効
@@ -105,7 +105,7 @@ buff.unique = [
     
     type
     
-    spot_mul damocles Leraye demon-rune Lukifer SF nekomata
+    spot_mul damocles death Lukifer nekomata
     
     special atk-up_mag dmg-red dmg-red_mag
     
