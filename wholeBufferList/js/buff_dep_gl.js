@@ -436,6 +436,16 @@ buff.dep_gl = [
         , stats: { nul: "7%" }
     }
     , {
+        name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒前"
+        , stats: { other: "" }
+        , note: "天界-20%"
+    }
+    , {
+        name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒後"
+        , stats: { other: "" }
+        , note: "天界-30%"
+    }
+    , {
         name: "シィル", rarity: "白", cl: "アコライト", AW: "覚醒前"
         , stats: { nul: "5%" }
     }

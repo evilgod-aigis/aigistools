@@ -167,22 +167,30 @@ buff.team = [
         , note: "フェンリルシャーマン系"
     }
     , {
-        name: "シンフー", rarity: "黒", cl: " 幻獣使い", AW: "覚醒後"
+        name: "シンフー", rarity: "黒", cl: "幻獣使い", AW: "覚醒後"
         , stats: { hp: "+5%" }
     }
     , {
-        name: "ハルフゥ", rarity: "黒", cl: " シービショップ", AW: "覚醒後"
+        name: "ハルフゥ", rarity: "黒", cl: "シービショップ", AW: "覚醒後"
         , stats: { other: "" }
         , note: "深海-30%"
     }
     , {
-        name: "イーファ", rarity: "黒", cl: " ドラグーン", AW: "覚醒後"
+        name: "イーファ", rarity: "黒", cl: "ドラグーン", AW: "覚醒後"
         , stats: { hp: "+10%" }
     }
     , {
         name: "ヤシキノカミ", cl: "座敷わらし", AW: "覚2b"
         , stats: { rege: [ "30/秒", "15/15f" ] }
         , note: "座敷わらし系"
+    }
+    , {
+        name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒前"
+        , stats: { mr: "+5" }
+    }
+    , {
+        name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒後"
+        , stats: { mr: "+10" }
     }
     , {
         name: "孫権 仲謀", rarity: "白", cl: "君主【恋姫】", AW: "覚醒後"

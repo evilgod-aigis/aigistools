@@ -588,7 +588,6 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { sex: [ "女性" ], depType: [ "遠距離" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "ウルカノ", rarity: "黒", cl: "鍛冶職人", AW: "覚1", skill: "通常"
@@ -597,7 +596,6 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { sex: [ "女性" ], depType: [ "遠距離" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "ウルカノ", rarity: "黒", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"
@@ -606,7 +604,6 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { sex: [ "女性" ], depType: [ "遠距離" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "ウルカノ", rarity: "黒", cl: "鍛冶職人", AW: "覚2a", skill: "通常"
@@ -615,7 +612,6 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { sex: [ "女性" ], depType: [ "遠距離" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "ウルカノ", rarity: "黒", cl: "鍛冶職人", AW: "覚2a", skill: "覚醒"
@@ -624,7 +620,6 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { sex: [ "女性" ], depType: [ "遠距離" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "ウルカノ", rarity: "黒", cl: "鍛冶職人", AW: "覚2b", skill: "通常"
@@ -633,7 +628,6 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { sex: [ "女性" ], depType: [ "遠距離" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "ウルカノ", rarity: "黒", cl: "鍛冶職人", AW: "覚2b", skill: "覚醒"
@@ -642,7 +636,6 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { sex: [ "女性" ], depType: [ "遠距離" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "サンディー", rarity: "白", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"

@@ -23,6 +23,12 @@ debuff.hit = [
         , note: "ボム"
     }
     , {
+        name: "ディーナ", rarity: "黒", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "エルデ", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "?f"

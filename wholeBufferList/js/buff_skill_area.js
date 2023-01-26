@@ -231,11 +231,11 @@ buff.skill_area = [
     }
     , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒前", skill: "通常"
-        , stats: { def: "×2.0" }
+        , stats: { def: "×2.0", rege: [ "60/秒", "?/?f" ] }
     }
     , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "通常"
-        , stats: { def: "×2.0" }
+        , stats: { def: "×2.0", rege: [ "60/秒", "?/?f" ] }
     }
     , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
@@ -283,7 +283,7 @@ buff.skill_area = [
     }
     , {
         name: "ちびイリス", rarity: "ちび", cl: "ヒーラー", skill: "通常"
-        , stats: { def: "×2.0" }
+        , stats: { def: "×2.0", rege: [ "60/秒", "?/?f" ] }
     }
     , {
         name: "ちびリアナ", rarity: "ちび", cl: "ヒーラー", skill: "通常"
@@ -635,6 +635,11 @@ buff.skill_area = [
     , {
         name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
         , stats: { eva: "30%" }
+    }
+    , {
+        name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "250/秒", "?/?f" ] }
+        , note: "永続"
     }
     , {
         name: "イエラ", rarity: "白", cl: "スカイヒーラー", AW: "覚醒前", skill: "通常"

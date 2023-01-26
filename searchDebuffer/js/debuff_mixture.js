@@ -149,7 +149,7 @@ debuff.mixture = [
     , {
         name: "シビラ", rarity: "黒", cl: "プリンセス", AW: "覚醒後", skill: "覚醒"
         , stats: {
-            atk: { value: "-15%", type: "noAttr" }
+            atk: { value: "-20%", type: "noAttr" }
         }
         , domain: "global"
     }
@@ -207,7 +207,7 @@ debuff.mixture = [
     , {
         name: "ちびシビラ", rarity: "ちび", cl: "プリンセス", skill: "覚醒"
         , stats: {
-            atk: { value: "-15%", type: "noAttr" }
+            atk: { value: "-20%", type: "noAttr" }
         }
         , domain: "global"
     }
@@ -1983,7 +1983,40 @@ debuff.mixture = [
         , note: "発動時"
     }
     , {
-        name: "レフカ", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒前", skill: "通常"
+        name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+            , mr: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "レフカ", rarity: "白", cl: "スカイヒーラー", AW: "覚醒前", skill: "通常"
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "レフカ", rarity: "白", cl: "スカイヒーラー", AW: "覚醒後", skill: "通常"
         , stats: {
             atk: { value: "-15%", type: "noAttr" }
         }
