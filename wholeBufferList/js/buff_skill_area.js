@@ -231,11 +231,11 @@ buff.skill_area = [
     }
     , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒前", skill: "通常"
-        , stats: { def: "×2.0", rege: [ "60/秒", "?/?f" ] }
+        , stats: { def: "×2.0", rege: [ "60/秒", "30/15f" ] }
     }
     , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "通常"
-        , stats: { def: "×2.0", rege: [ "60/秒", "?/?f" ] }
+        , stats: { def: "×2.0", rege: [ "60/秒", "30/15f" ] }
     }
     , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
@@ -283,7 +283,7 @@ buff.skill_area = [
     }
     , {
         name: "ちびイリス", rarity: "ちび", cl: "ヒーラー", skill: "通常"
-        , stats: { def: "×2.0", rege: [ "60/秒", "?/?f" ] }
+        , stats: { def: "×2.0", rege: [ "60/秒", "30/15f" ] }
     }
     , {
         name: "ちびリアナ", rarity: "ちび", cl: "ヒーラー", skill: "通常"
@@ -638,7 +638,7 @@ buff.skill_area = [
     }
     , {
         name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒後", skill: "覚醒"
-        , stats: { rege: [ "250/秒", "?/?f" ] }
+        , stats: { rege: [ "250/秒", "125/15f" ] }
         , note: "永続"
     }
     , {

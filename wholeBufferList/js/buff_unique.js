@@ -127,6 +127,12 @@ buff.unique = [
         , type: "nekomata"
         , note: [ "区分：猫又", "範囲" ]
     }
+    , {
+        name: "ちびコハル", rarity: "ちび", cl: "猫又", skill: "通常"
+        , stats: { atk: "*2.0", def: "*2.0" }
+        , type: "nekomata"
+        , note: [ "区分：猫又", "範囲" ]
+    }
     
     // 特効
     , {

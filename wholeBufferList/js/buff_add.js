@@ -26,6 +26,11 @@ buff.add = [
         , note: "範囲"
     }
     , {
+        name: "ちびヘイオス", rarity: "ちび", cl: "ダークファイター", skill: "通常"
+        , stats: { def: "50%" }
+        , note: "範囲"
+    }
+    , {
         name: "グレーテル/クリスマス", rarity: "白", cl: "ダークストーカー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "20%" }
         , note: "範囲"
