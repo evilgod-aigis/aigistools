@@ -626,12 +626,12 @@ debuff.hit = [
     }
     , {
         name: "メシナ/お正月", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前"
-        , stats: { atkCd: "+?f" }
+        , stats: { atkCd: "+30f" }
         , atkAttr: "魔法", dur: "?f"
     }
     , {
         name: "メシナ/お正月", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後"
-        , stats: { atkCd: "+?f" }
+        , stats: { atkCd: "+30f" }
         , atkAttr: "魔法", dur: "?f"
     }
     , {
@@ -656,6 +656,44 @@ debuff.hit = [
         , stats: { def: "-40%" }
         , atkAttr: "物理", dur: "29f"
         , note: "ドラグーン系"
+    }
+    , {
+        name: "雪娘", cl: "雪娘", AW: "覚醒前"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "氷雪姫の怪", cl: "雪娘", AW: "覚1"
+        , stats: { def: "-40%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "雪娘系", "分類未確認" ]
+    }
+    , {
+        name: "雪花のあやかし姫", cl: "雪娘", AW: "覚2a"
+        , stats: { def: "-50%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "雪娘系", "分類未確認" ]
+    }
+    /*
+    , {
+        name: "雪祇の娘", cl: "雪娘", AW: "覚2b"
+        , stats: { def: "-%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "雪娘系", "分類未確認" ]
+    }
+    */
+    , {
+        name: "ふゆの", rarity: "白", cl: "雪娘", AW: "覚醒前", skill: "通常"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ふゆの", rarity: "白", cl: "雪娘", AW: "覚醒後", skill: "通常"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "オヴェリー", rarity: "白", cl: "ロケットトルーパー", AW: "覚醒後", skill: "覚醒"

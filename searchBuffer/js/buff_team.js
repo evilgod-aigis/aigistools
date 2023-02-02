@@ -1795,6 +1795,11 @@ buff.team = [
         , target: { others: [ "魔界" ] }
     }
     , {
+        name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒後"
+        , stats: { cost: "-1" }
+        , target: { sex: [ "男性" ] }
+    }
+    , {
         name: "ヤシマ", rarity: "黒", cl: "妖狸", AW: "覚醒後"
         , stats: { hp: "+20%" }
         , target: { race: [ "妖怪" ] }

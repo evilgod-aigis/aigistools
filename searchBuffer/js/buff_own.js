@@ -176,6 +176,11 @@ buff.own = [
         , stats: { atk: "+1%" }
         , target: { depType: [ "近接" ] }
     }
+    , {
+        name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒後"
+        , stats: { hp: "+1%" }
+        , target: { depType: [ "遠距離" ] }
+    }
 ];
 
 /*

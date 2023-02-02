@@ -6,6 +6,26 @@ buff.add = [
         , note: [ "範囲", "永続" ]
     }
     , {
+        name: "王子【ファンダム】", cl: "王子"
+        , stats: { atk: "10%", def: "10%" }
+        , note: "範囲"
+    }
+    , {
+        name: "王子【ファンダム】", cl: "王子", skill: "通常(1)"
+        , stats: { atk: "*3", def: "*3" }
+        , note: "範囲"
+    }
+    , {
+        name: "王子【ファンダム】", cl: "王子", skill: "通常(2)"
+        , stats: { atk: "*5", def: "*5" }
+        , note: "範囲"
+    }
+    , {
+        name: "王子【ファンダム】", cl: "王子", skill: "通常(3～)"
+        , stats: { atk: "*7", def: "*7" }
+        , note: "範囲"
+    }
+    , {
         name: "トゥアン", rarity: "黒", cl: "バーバリアンクイーン", AW: "覚醒後", skill: "通常"
         , stats: { atk: "10%" }
         , note: "範囲"
@@ -289,6 +309,21 @@ buff.add = [
         name: "聖獣使い", cl: "幻獣使い", AW: "覚2a"
         , stats: { mr: "+15" }
         , note: [ "範囲", "幻獣使い系" ]
+    }
+    , {
+        name: "アイドル召喚士", cl: "アイドル召喚士", AW: "覚1"
+        , stats: { atk: "5%" }
+        , note: "範囲"
+    }
+    , {
+        name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "*5" }
+        , note: "範囲"
+    }
+    , {
+        name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "*3" }
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "セレスティアルヒーラー", cl: "スカイヒーラー", AW: "覚2b"
