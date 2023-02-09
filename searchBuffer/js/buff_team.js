@@ -1819,6 +1819,16 @@ buff.team = [
         , note: "天界-100%"
     }
     , {
+        name: "ミリアム/バレンタイン", rarity: "白", cl: "スカウト", AW: "覚醒前"
+        , stats: { hp: "+3%", atk: "+3%" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
+        name: "ミリアム/バレンタイン", rarity: "白", cl: "スカウト", AW: "覚醒後"
+        , stats: { hp: "+5%", atk: "+5%" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
         name: "アルスラーン", rarity: "白", cl: "王太子", AW: "覚醒前"
         , stats: { atk: "+5%", def: "+5%" }
         , target: { home: [ "パルス王国" ] }

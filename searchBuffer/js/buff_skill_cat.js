@@ -1604,10 +1604,13 @@ buff.skill_cat = [
         , note: "分類未確認"
     }
     , {
-        name: "コラリー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後", skill: "覚醒"
-        , stats: { atk: "×1.3" }
-        , target: { others: [ "竜族" ] }
-        , note: "分類未確認"
+        name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.4" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { sex: [ "女性" ] }
+        ]
+        , note: [ "範囲", "分類未確認" ]
     }
     , {
         name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
@@ -1635,6 +1638,12 @@ buff.skill_cat = [
         name: "ヨユキ", rarity: "黒", cl: "夜行さん", AW: "覚醒後", skill: "覚醒"
         , stats: { cost: "-30%" }
         , target: { race: [ "妖怪" ] }
+    }
+    , {
+        name: "コラリー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , target: { others: [ "竜族" ] }
+        , note: "分類未確認"
     }
     , {
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"
@@ -1694,6 +1703,30 @@ buff.skill_cat = [
         , stats: { atk: "×1.1", range: "×1.1" }
         , target: { depType: [ "遠距離" ] }
         , note: "永続"
+    }
+    , {
+        name: "ミリアム/バレンタイン", rarity: "白", cl: "スカウト", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { depType: [ "遠距離" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ミリアム/バレンタイン", rarity: "白", cl: "スカウト", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { depType: [ "遠距離" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ミリアム/バレンタイン", rarity: "白", cl: "スカウト", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , target: { season: [ "バレンタイン" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ミリアム/バレンタイン", rarity: "白", cl: "スカウト", AW: "覚醒後", skill: "覚醒"
+        , stats: { range: "×1.2" }
+        , target: { depType: [ "遠距離" ] }
+        , note: "分類未確認"
     }
     , {
         name: "アルスラーン", rarity: "白", cl: "王太子", AW: "覚醒前", skill: "通常"

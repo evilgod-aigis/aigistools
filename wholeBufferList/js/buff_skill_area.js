@@ -596,6 +596,16 @@ buff.skill_area = [
         , stats: { def: "×1.4", mr: "×1.4", rege: [ "100/秒", "50/15f" ] }
     }
     , {
+        name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , note: "分類未確認"
+    }
+    , {
         name: "ローズ", rarity: "白", cl: "ハーバリスト", AW: "覚醒前", skill: "通常"
         , stats: { abn: "-100%" }
     }

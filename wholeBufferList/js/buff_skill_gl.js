@@ -59,6 +59,10 @@ buff.skill_gl = [
         , note: "分類未確認"
     }
     , {
+        name: "ちび一般兵A", rarity: "ちび", cl: "ソルジャー", skill: "通常"
+        , stats: { draw: "○" }
+    }
+    , {
         name: "エレイン/水着", rarity: "金", cl: "ワルキューレ", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+20%" }
     }
@@ -618,6 +622,14 @@ buff.skill_gl = [
         , note: "発動時"
     }
     , {
+        name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒前", skill: "通常"
+        , stats: { rege: [ "100/秒", "?/?f" ] }
+    }
+    , {
+        name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { rege: [ "150/秒", "?/?f" ] }
+    }
+    , {
         name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
         , stats: { nul: "30%" }
     }
@@ -785,6 +797,12 @@ buff.skill_gl = [
         , stats: { redep: "30秒" }
         , target: "死亡・撤退最後1体"
         , note: [ "ラタトスク", "発動時" ]
+    }
+    , {
+        name: "世界樹のカカオ苗", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        , stats: { redep: "?秒" }
+        , target: "死亡・撤退最後1体"
+        , note: [ "ラタトスク/バレンタイン", "発動時" ]
     }
 ];
 
