@@ -276,6 +276,22 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "エスタ", rarity: "黒", cl: "ペガサスライダー", AW: "覚醒前", skill: "通常"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "エスタ", rarity: "黒", cl: "ペガサスライダー", AW: "覚醒後", skill: "通常"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
         name: "コーネリア", rarity: "黒", cl: "ダークファイター", AW: "覚醒前", skill: "通常"
         , stats: {
             atk: { value: "-30%", type: "noAttr" }
