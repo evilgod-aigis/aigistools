@@ -590,6 +590,12 @@ debuff.hit = [
         , note: "確率20%?で貫通"
     }
     , {
+        name: "戦闘工兵大隊長", cl: "支援工兵", AW: "覚2b"
+        , stats: { atk: "-15%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "支援工兵系", "分類未確認" ]
+    }
+    , {
         name: "マルレーン", rarity: "黒", cl: "支援工兵", AW: "覚醒前", skill: "通常"
         , stats: { atkCd: "+30f" }
         , atkAttr: "物理", dur: "?f"

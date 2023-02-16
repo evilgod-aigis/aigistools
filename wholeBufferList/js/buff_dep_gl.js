@@ -416,6 +416,11 @@ buff.dep_gl = [
         , note: "ロード系"
     }
     , {
+        name: "戦闘工兵大隊長", cl: "支援工兵", AW: "覚2b"
+        , stats: { cost: "-2" }
+        , note: "支援工兵系"
+    }
+    , {
         name: "パトリシア/水着", rarity: "白", cl: "支援工兵", AW: "覚醒後"
         , stats: { other: "" }
         , note: "地形-30%"
