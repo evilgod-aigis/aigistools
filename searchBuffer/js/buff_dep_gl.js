@@ -881,6 +881,16 @@ buff.dep_gl = [
         , target: { cl: [ "ワルキューレ", "ボウライダー", "ドルイド", "レンジャー" ] }
     }
     , {
+        name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒前"
+        , stats: { atk: "+5%" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒後"
+        , stats: { atk: "+10%" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
         name: "ブランシュ", rarity: "白", cl: "魔物使い", AW: "覚醒後"
         , stats: { atk: "+10%" }
         , target: { race: [ "獣人" ] }
@@ -940,6 +950,11 @@ buff.dep_gl = [
         , stats: { cost: "-3" }
         , target: { race: [ "妖怪" ] }
         , note: "夜行さん系"
+    }
+    , {
+        name: "デリア", rarity: "白", cl: "ドラグーン", AW: "覚醒後"
+        , stats: { mr: "+10" }
+        , target: { depType: [ "遠距離" ] }
     }
     , {
         name: [ "エルダードラゴン", "メイガス" ], cl: "ドラゴンメイジ", AW: "覚2a"

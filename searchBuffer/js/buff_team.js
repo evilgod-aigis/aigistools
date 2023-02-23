@@ -781,6 +781,26 @@ buff.team = [
             , { season: [ "サマー" ], depType: [ "遠距離" ] }
         ]
     }
+    , {
+        name: "ソーマ/メイド", rarity: "白", cl: "メイド", AW: "覚醒前"
+        , stats: { hp: "+5%" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "ソーマ/メイド", rarity: "白", cl: "メイド", AW: "覚醒前"
+        , stats: { atk: "+3%" }
+        , target: { others: [ "弓兵" ] }
+    }
+    , {
+        name: "ソーマ/メイド", rarity: "白", cl: "メイド", AW: "覚醒後"
+        , stats: { hp: "+10%" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "ソーマ/メイド", rarity: "白", cl: "メイド", AW: "覚醒後"
+        , stats: { atk: "+5%" }
+        , target: { others: [ "弓兵" ] }
+    }
     /*
     , {
         name: "ヒカゲ", rarity: "青", cl: "メイド", AW: "覚醒前"
@@ -1253,6 +1273,21 @@ buff.team = [
         , target: { home: [ "砂漠の国" ] }
     }
     , {
+        name: "ティルト", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒後"
+        , stats: { hp: "+15%" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "ヘーレ", rarity: "白", cl: "隧道掘削兵", AW: "覚醒前"
+        , stats: { hp: "+5%", def: "+5%" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "ヘーレ", rarity: "白", cl: "隧道掘削兵", AW: "覚醒後"
+        , stats: { hp: "+7%", def: "+7%" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒後"
         , stats: { hp: "+10%" }
         , target: { home: [ "白の帝国" ] }
@@ -1597,6 +1632,16 @@ buff.team = [
         , target: { race: [ "エルフ系", "ドワーフ" ] }
     }
     , {
+        name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒前"
+        , stats: { cost: "-1" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒後"
+        , stats: { cost: "-2" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
         name: "フウカ/正月", rarity: "金", cl: "レンジャー", AW: "覚醒後"
         , stats: { cost: "-1" }
         , target: { season: [ "お正月" ] }
@@ -1778,6 +1823,16 @@ buff.team = [
         name: "ジゼル", rarity: "黒", cl: "ドラグーン", AW: "覚醒後"
         , stats: { cost: "-3" }
         , target: { others: [ "竜族" ] }
+    }
+    , {
+        name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒前"
+        , stats: { atk: "+5%" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒後"
+        , stats: { atk: "+7%" }
+        , target: { home: [ "白の帝国" ] }
     }
     , {
         name: "ロカ", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"

@@ -450,6 +450,15 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "ソーマ/メイド", rarity: "白", cl: "メイド", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { others: [ "弓兵" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "ちびセーラ", rarity: "ちび", cl: "メイド", skill: "通常"
         , stats: { def: "×1.8" }
         , target: [
@@ -1447,6 +1456,16 @@ buff.skill_cat = [
         name: "ロミルダ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒"
         , stats: { ct: "-50%" }
         , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.7" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.7" }
+        , target: { cl: [ "王子" ] }
     }
     , {
         name: "トトノ/正月", rarity: "白", cl: "マーチャント", AW: "覚醒後", skill: "覚醒"

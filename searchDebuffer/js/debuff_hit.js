@@ -300,6 +300,47 @@ debuff.hit = [
         , note: [ "サベージファイター系", "分類未確認" ]
     }
     , {
+        name: "ティルト", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒後", skill: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "119f"
+    }
+    , {
+        name: "隧道掘削兵", cl: "隧道掘削兵", AW: "覚醒前"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "隧道構築隊長", cl: "隧道掘削兵", AW: "覚1"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "隧道掘削兵系", "分類未確認" ]
+    }
+    , {
+        name: "トンネルコンストラクター", cl: "隧道掘削兵", AW: "覚2a"
+        , stats: { def: "-40%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "隧道掘削兵系", "分類未確認" ]
+    }
+    , {
+        name: "ヘーレ", rarity: "白", cl: "隧道掘削兵", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ヘーレ", rarity: "白", cl: "隧道掘削兵", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ヘーレ", rarity: "白", cl: "隧道掘削兵", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "-50%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "14f"
@@ -384,6 +425,24 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "149f"
         , note: "ボム"
+    }
+    , {
+        name: "ハイデマリー", rarity: "白", cl: "砲術士", AW: "覚醒前", skill: "通常"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ハイデマリー", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "通常"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ハイデマリー", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "トワ/学園", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"
@@ -662,6 +721,12 @@ debuff.hit = [
         , stats: { def: "-40%" }
         , atkAttr: "物理", dur: "29f"
         , note: "ドラグーン系"
+    }
+    , {
+        name: "デリア", rarity: "白", cl: "ドラグーン", AW: "覚醒後", skill: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "雪娘", cl: "雪娘", AW: "覚醒前"

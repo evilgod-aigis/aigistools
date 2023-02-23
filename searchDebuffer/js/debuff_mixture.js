@@ -281,7 +281,6 @@ debuff.mixture = [
             atk: { value: "-10%", type: "noAttr" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "エスタ", rarity: "黒", cl: "ペガサスライダー", AW: "覚醒後", skill: "通常"
@@ -289,7 +288,6 @@ debuff.mixture = [
             atk: { value: "-10%", type: "noAttr" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "コーネリア", rarity: "黒", cl: "ダークファイター", AW: "覚醒前", skill: "通常"
@@ -914,6 +912,22 @@ debuff.mixture = [
             def: { value: "-30%", type: "global" }
         }
         , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ティルト", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ティルト", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
         , note: "分類未確認"
     }
     , {
@@ -1868,6 +1882,22 @@ debuff.mixture = [
         , domain: "global"
         , target: { attr: [ "天使", "天界人", "神" ] }
         , note: "発動時"
+    }
+    , {
+        name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒前"
+        , stats: {
+            mr: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒後"
+        , stats: {
+            mr: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "魔界総帥", cl: "魔界総帥", AW: "覚醒前"
