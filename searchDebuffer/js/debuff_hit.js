@@ -725,8 +725,7 @@ debuff.hit = [
     , {
         name: "デリア", rarity: "白", cl: "ドラグーン", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
-        , atkAttr: "物理", dur: "?f"
-        , note: "分類未確認"
+        , atkAttr: "物理", dur: "14f"
     }
     , {
         name: "雪娘", cl: "雪娘", AW: "覚醒前"

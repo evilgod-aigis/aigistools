@@ -772,6 +772,11 @@ buff.dep_gl = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "帝国軍旗", rarity: "金", cl: "帝国軍旗"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒後"
         , stats: { def: "+10%" }
         , target: { season: [ "温泉" ] }

@@ -19,6 +19,7 @@ lists.specialWT = [
     { unitName: "冥神近衛騎士ティルト", rarity: "黒", skillAwaken: "覚醒", WT: 0 },
     { unitName: "風竜魔術士コラリー", rarity: "白", skillAwaken: "覚醒", WT: 0 },
     { unitName: "宝船", rarity: "金", skillAwaken: "通常", WT: 0 },
+    { unitName: "帝国軍旗", rarity: "金", skillAwaken: "通常", WT: 0 },
 ];
 
 //特殊な好感度ボーナス

@@ -119,7 +119,7 @@ buff.unique = [
     
     spot_mul damocles death Lukifer nekomata
     
-    special atk-up_mag dmg-red dmg-red_mag
+    special atk-up_mag dmg-red
     
     note
     

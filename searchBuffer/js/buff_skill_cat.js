@@ -1132,6 +1132,12 @@ buff.skill_cat = [
         , note: "分類未確認"
     }
     , {
+        name: "帝国軍旗", rarity: "金", cl: "帝国軍旗", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { home: [ "白の帝国" ] }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "キャロップ", rarity: "白", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.4" }
         , target: { cl: [ "ボウライダー", "アーチャー" ] }

@@ -1886,18 +1886,16 @@ debuff.mixture = [
     , {
         name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒前"
         , stats: {
-            mr: { value: "-20%", type: "area" }
+            mr: { value: "-20%", type: "clAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒後"
         , stats: {
-            mr: { value: "-25%", type: "area" }
+            mr: { value: "-25%", type: "clAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "魔界総帥", cl: "魔界総帥", AW: "覚醒前"

@@ -326,6 +326,18 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減(属性不問)", "-30%" ]
     }
     , {
+        name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減(魔法)", "-40%(範囲)" ]
+    }
+    , {
+        name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減(魔法)", "-40%(範囲)" ]
+    }
+    , {
         name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
@@ -344,28 +356,16 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減(物理)", "-20%(範囲)", "ルーンアコライト系" ]
     }
     , {
-        name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒前", skill: "通常"
-        , stats: { other: "" }
-        , type: "dmg-red_mag"
-        , note: [ "区分：魔法被ダメージ軽減", "-40%(範囲)" ]
-    }
-    , {
-        name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒後", skill: "通常"
-        , stats: { other: "" }
-        , type: "dmg-red_mag"
-        , note: [ "区分：魔法被ダメージ軽減", "-40%(範囲)" ]
-    }
-    , {
         name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒前", skill: "通常"
         , stats: { other: "" }
-        , type: "dmg-red_mag"
-        , note: [ "区分：魔法被ダメージ軽減", "-50%(範囲)", "分類未確認" ]
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減(魔法)", "-50%(範囲)" ]
     }
     , {
         name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒後", skill: "通常"
         , stats: { other: "" }
-        , type: "dmg-red_mag"
-        , note: [ "区分：魔法被ダメージ軽減", "-50%(範囲)", "分類未確認" ]
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減(魔法)", "-50%(範囲)" ]
     }
 ];
 
@@ -398,7 +398,7 @@ buff.unique = [
     
     spot_mul death Lukifer nekomata
     
-    special atk-up_mag dmg-red dmg-red_mag
+    special atk-up_mag dmg-red
     
     note
     
