@@ -1509,6 +1509,22 @@ buff.team = [
         , target: { cl: [ "前衛戦術家", "後衛戦術家" ] }
     }
     , {
+        name: "シナト/バニー", rarity: "白", cl: "後衛戦術家", AW: "覚醒前"
+        , stats: { atk: "+5%" }
+        , target: {
+            cl: [ "前衛戦術家", "後衛戦術家" ]
+            , season: [ "エッグハント" ]
+        }
+    }
+    , {
+        name: "シナト/バニー", rarity: "白", cl: "後衛戦術家", AW: "覚醒後"
+        , stats: { atk: "+7%" }
+        , target: {
+            cl: [ "前衛戦術家", "後衛戦術家" ]
+            , season: [ "エッグハント" ]
+        }
+    }
+    , {
         name: "タマミ", rarity: "白", cl: "陰陽師", AW: "覚醒後"
         , stats: { wt: "-25%" }
         , target: { rarity: [ "白" ] }
@@ -1838,6 +1854,22 @@ buff.team = [
         name: "ロカ", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
         , stats: { def: "+7%" }
         , target: { others: [ "竜族" ] }
+    }
+    , {
+        name: "カラザ/バニー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
+        , stats: { hp: "+5%" }
+        , target: {
+            others: [ "竜族" ]
+            , season: [ "エッグハント" ]
+        }
+    }
+    , {
+        name: "カラザ/バニー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
+        , stats: { hp: "+7%" }
+        , target: {
+            others: [ "竜族" ]
+            , season: [ "エッグハント" ]
+        }
     }
     , {
         name: "アスバール", rarity: "黒", cl: "魔界総帥", AW: "覚醒前"

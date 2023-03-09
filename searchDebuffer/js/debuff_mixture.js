@@ -620,6 +620,16 @@ debuff.mixture = [
         , note: "モンスターブレイカー系"
     }
     , {
+        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            atk: { value: "-50%", type: "noAttr" }
+            , def: { value: "-50%", type: "area" }
+            , mr: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "アデライド", rarity: "黒", cl: "グランドナイト", AW: "覚醒後", skill: "覚醒"
         , stats: {
             def: { value: "-90%", type: "area" }

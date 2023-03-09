@@ -147,6 +147,18 @@ debuff.hit = [
         , note: "永続"
     }
     , {
+        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "フーコ/浴衣", rarity: "白", cl: "風伯", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "14f"

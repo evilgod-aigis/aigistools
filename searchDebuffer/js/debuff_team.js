@@ -74,6 +74,24 @@ debuff.team = [
         , stats: { def: "-15%" }
     }
     , {
+        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前"
+        , stats: { hp: "-10%", def: "-20%" }
+        , target: { attr: [ "デーモン" ] }
+    }
+    , {
+        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前"
+        , stats: { atk: "-5%" }
+    }
+    , {
+        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前"
+        , stats: { hp: "-15%", def: "-25%" }
+        , target: { attr: [ "デーモン" ] }
+    }
+    , {
+        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前"
+        , stats: { atk: "-7%" }
+    }
+    , {
         name: "エレーヌ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒前"
         , stats: { hp: "-10%", atk: "-20%" }
         , target: { attr: [ "巨人" ] }

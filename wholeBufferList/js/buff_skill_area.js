@@ -304,6 +304,10 @@ buff.skill_area = [
         , stats: { atk: "×1.3" }
     }
     , {
+        name: "シナト/バニー", rarity: "白", cl: "後衛戦術家", AW: "覚醒後", skill: "覚醒"
+        , stats: { atkCd: "?f化" }
+    }
+    , {
         name: "リンネ", rarity: "黒", cl: "風水使い", AW: "覚醒前", skill: "通常"
         , stats: { eva: "50%" }
     }
