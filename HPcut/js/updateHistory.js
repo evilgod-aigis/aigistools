@@ -7,7 +7,6 @@ const updateHistory = [
         ]
     },
     */
-    /*
     {
         date: "2023/03/09(木)",
         detail: [
@@ -15,7 +14,6 @@ const updateHistory = [
             , "硬直短縮(固定値化)オプションに「疾風軍師の祝福祭シナト」を追加"
         ]
     },
-    */
     {
         date: "2022/11/10(木)",
         detail: [

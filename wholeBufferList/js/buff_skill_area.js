@@ -305,7 +305,7 @@ buff.skill_area = [
     }
     , {
         name: "シナト/バニー", rarity: "白", cl: "後衛戦術家", AW: "覚醒後", skill: "覚醒"
-        , stats: { atkCd: "?f化" }
+        , stats: { atkCd: "1f化" }
     }
     , {
         name: "リンネ", rarity: "黒", cl: "風水使い", AW: "覚醒前", skill: "通常"

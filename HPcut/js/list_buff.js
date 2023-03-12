@@ -506,14 +506,12 @@ lists.buff.hasteFixed.list = [
         ],
         tooltip: "[スキル・射程内] クラス：アーチャー系の攻撃硬直2f化"
     },
-    /*
     {
         id: null, buffer: "疾風軍師の祝福祭シナト", awaken: "覚醒", showAwaken: false,
-        atkCooldown: undefined, disabled: true,
+        atkCooldown: 2, disabled: true,
         AndOr: "or", target: [ { "-": [] } ],
-        tooltip: "[スキル・射程内] 全味方の攻撃硬直f化"
+        tooltip: "[スキル・射程内] 全味方の攻撃硬直1f化"
     },
-    */
     {
         id: null, buffer: "お祭り夕涼みココロ", awaken: "覚醒", showAwaken: false,
         atkCooldown: 11, disabled: true,
