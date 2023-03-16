@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2023/03/16(木)"
+        , detail: [
+            "調整を反映"
+        ]
+    }
+    , {
         date: "2023/03/09(木)"
         , detail: [
             "シナト/バニーを追加"

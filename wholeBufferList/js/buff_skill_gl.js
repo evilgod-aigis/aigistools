@@ -437,6 +437,10 @@ buff.skill_gl = [
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
+        name: "ハナ", rarity: "白", cl: "ダンサー", skill: "覚醒"
+        , stats: { rege: [ "40/秒", "?/?f" ] }
+    }
+    , {
         name: "アンナ/アイドル", rarity: "黒", cl: "政務官", skill: "通常"
         , stats: { rege: [ "20/秒", "10/15f" ] }
         , note: "永続"

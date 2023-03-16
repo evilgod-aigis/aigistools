@@ -295,6 +295,16 @@ buff.skill_area = [
         , note: [ "オート", "永続" ]
     }
     , {
+        name: "キキョウ", rarity: "黒", cl: "シャーマン", AW: "覚醒後", skill: "通常(奇)"
+        , stats: { def: "×1.1" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "キキョウ", rarity: "黒", cl: "シャーマン", AW: "覚醒後", skill: "通常(偶)"
+        , stats: { atk: "×1.1" }
+        , note: "分類未確認"
+    }
+    , {
         name: "シナト", rarity: "白", cl: "後衛戦術家", AW: "覚醒後", skill: "覚醒"
         , stats: { ct: "-100%" }
         , note: "ボム"

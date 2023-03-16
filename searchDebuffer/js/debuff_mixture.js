@@ -293,15 +293,19 @@ debuff.mixture = [
         name: "コーネリア", rarity: "黒", cl: "ダークファイター", AW: "覚醒前", skill: "通常"
         , stats: {
             atk: { value: "-30%", type: "noAttr" }
+            , def: { value: "-30%", type: "global" }
         }
         , domain: "global"
+        , note: "分類未確認"
     }
     , {
         name: "コーネリア", rarity: "黒", cl: "ダークファイター", AW: "覚醒後", skill: "通常"
         , stats: {
             atk: { value: "-30%", type: "noAttr" }
+            , def: { value: "-30%", type: "global" }
         }
         , domain: "global"
+        , note: "分類未確認"
     }
     , {
         name: "暗黒騎士", rarity: "黒", cl: "ダークファイター", AW: "覚醒前", skill: "通常"
@@ -357,8 +361,10 @@ debuff.mixture = [
         name: "ちびコーネリア", rarity: "ちび", cl: "ダークファイター", skill: "通常"
         , stats: {
             atk: { value: "-30%", type: "noAttr" }
+            , def: { value: "-30%", type: "global" }
         }
         , domain: "global"
+        , note: "分類未確認"
     }
     , {
         name: "ルヴェア", rarity: "白", cl: "前衛戦術家", AW: "覚醒前", skill: "通常"

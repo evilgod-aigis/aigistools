@@ -772,6 +772,11 @@ buff.dep_gl = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "レジナレア", rarity: "白", cl: "シールダー", AW: "覚醒後"
+        , stats: { draw: "○" }
+        , target: { cl: [ "ヘビーアーマー", "シールダー" ] }
+    }
+    , {
         name: "帝国軍旗", rarity: "金", cl: "帝国軍旗"
         , stats: { atk: "+5%", def: "+5%" }
         , target: { home: [ "白の帝国" ] }

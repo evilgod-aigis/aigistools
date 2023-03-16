@@ -529,6 +529,11 @@ buff.team = [
         ]
     }
     , {
+        name: "グレース", rarity: "黒", cl: "メイジアーマー", AW: "覚醒前"
+        , stats: { mr: "+5" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
         name: "グレース", rarity: "黒", cl: "メイジアーマー", AW: "覚醒後"
         , stats: { mr: "+10" }
         , target: { depType: [ "近接" ] }
@@ -1258,6 +1263,11 @@ buff.team = [
         , target: { cl: [ "戦巫女", "シャーマン", "陰陽師", "符術士" ] }
     }
     , {
+        name: "フェイロン", rarity: "白", cl: "武侠", AW: "覚醒後"
+        , stats: { hp: "+5%" }
+        , target: { home: [ "華の国" ] }
+    }
+    , {
         name: "ファルア", rarity: "白", cl: "サベージファイター", AW: "覚醒後"
         , stats: { atk: "+5%" }
         , target: { home: [ "砂漠の国" ] }
@@ -1286,6 +1296,16 @@ buff.team = [
         name: "ヘーレ", rarity: "白", cl: "隧道掘削兵", AW: "覚醒後"
         , stats: { hp: "+7%", def: "+7%" }
         , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "レジナレア", rarity: "白", cl: "シールダー", AW: "覚醒前"
+        , stats: { hp: "+5%" }
+        , target: { cl: [ "ヘビーアーマー", "シールダー" ] }
+    }
+    , {
+        name: "レジナレア", rarity: "白", cl: "シールダー", AW: "覚醒後"
+        , stats: { hp: "+10%" }
+        , target: { cl: [ "ヘビーアーマー", "シールダー" ] }
     }
     , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒後"
