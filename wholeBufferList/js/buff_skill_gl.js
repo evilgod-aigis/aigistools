@@ -295,12 +295,10 @@ buff.skill_gl = [
     , {
         name: "オーガスタ", rarity: "黒", cl: "料理人", AW: "覚醒前", skill: "通常"
         , stats: { abn: "-100%" }
-        , note: "発動時"
     }
     , {
         name: "オーガスタ", rarity: "黒", cl: "料理人", AW: "覚醒後", skill: "通常"
         , stats: { abn: "-100%" }
-        , note: "発動時"
     }
     , {
         name: "オーガスタ", rarity: "黒", cl: "料理人", AW: "覚醒後", skill: "覚醒"
@@ -309,6 +307,10 @@ buff.skill_gl = [
     , {
         name: "ちびオーガスタ", rarity: "ちび", cl: "料理人", skill: "覚醒"
         , stats: { atk: "×1.3" }
+    }
+    , {
+        name: "アレグロ", rarity: "銅", cl: "料理人", AW: "覚醒前", skill: "覚醒"
+        , stats: { rege: [ "20/秒", "?/?f" ] }
     }
     , {
         name: "シラヌイ", rarity: "白", cl: "ぬりかべ", AW: "覚醒前", skill: "通常"

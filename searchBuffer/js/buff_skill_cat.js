@@ -1078,6 +1078,12 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "マグリカ", rarity: "銀", cl: "料理人", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { rarity: [ "銀" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "エフネ/正月", rarity: "白", cl: "デモンルーン", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.6" }
         , target: [

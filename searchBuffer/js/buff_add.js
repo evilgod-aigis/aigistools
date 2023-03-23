@@ -99,6 +99,16 @@ buff.add = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "マグリカ", rarity: "銀", cl: "料理人", AW: "覚醒前"
+        , stats: { hp: "max1200", atk: "max600", def: "max600" }
+        , target: { rarity: [ "銀", "銅", "鉄" ] }
+    }
+    , {
+        name: "アレグロ", rarity: "銅", cl: "料理人", AW: "覚醒前"
+        , stats: { hp: "max1200", atk: "max600", def: "max600" }
+        , target: { rarity: [ "銅", "鉄" ] }
+    }
+    , {
         name: "政務官", cl: "政務官"
         , stats: { atk: "10%", def: "10%" }
         , target: { cl: [ "王子" ] }

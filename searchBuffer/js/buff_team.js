@@ -554,6 +554,11 @@ buff.team = [
         , target: { season: [ "学園" ] }
     }
     , {
+        name: "ちびグレース", rarity: "ちび", cl: "メイジアーマー"
+        , stats: { mr: "+5" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
         name: "ティファ/クリスマス", rarity: "黒", cl: "ドラゴンライダー", AW: "覚醒後"
         , stats: { atk: "+10%", mr: "+5" }
         , target: { season: [ "クリスマス" ] }
@@ -1842,6 +1847,16 @@ buff.team = [
         name: "アルレット", rarity: "黒", cl: "発明家", AW: "覚醒後"
         , stats: { cost: "-2" }
         , target: { others: [ "機械" ] }
+    }
+    , {
+        name: "イヲナミ", rarity: "白", cl: "シービショップ", AW: "覚醒前"
+        , stats: { hp: "+5%" }
+        , target: { others: [ "深海適応" ] }
+    }
+    , {
+        name: "イヲナミ", rarity: "白", cl: "シービショップ", AW: "覚醒後"
+        , stats: { hp: "+10%" }
+        , target: { others: [ "深海適応" ] }
     }
     , {
         name: "シュカ", rarity: "白", cl: "霊宝つくもがみ", AW: "覚醒前"
