@@ -93,6 +93,15 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラ", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            def: { value: "-30%", type: "global" }
+            , mr: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
         name: "エルデ", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒前", skill: "通常"
         , stats: {
             def: { value: "-50%", type: "area" }

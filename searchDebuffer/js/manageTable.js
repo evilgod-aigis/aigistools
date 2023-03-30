@@ -101,7 +101,7 @@ table.SetObjects = () => {
     table.column.push(...table.stats);
     table.column.push(...table.after);
     // 表のソート可能な列
-    table.sortable = [ "id", "rarity", ...table.stats, "atkAttr", "dur"/*, "value"*/ ];
+    table.sortable = [ "id", "rarity", ...table.stats, "atkAttr", "dur" ];
     
     // picked: 検索条件に合うものを入れる
     // sortedBy: 今何でソートされているか
