@@ -611,6 +611,7 @@ funcs.unitsData.SetAtkInterval = unit => {
 //HP減少率
 funcs.unitsData.SetHPred = unit => {
     let dmgMul = 1 + funcs.unitsData.GetRate(unit, "giveDmgMul");
+    const takenDmg = 1 + funcs.unitsData.GetRate(unit, "takenDmg");
     const unitName = unit.unitInfo.unitName;
     const unitClass = unit.unitInfo.unitClass.selected;
     const skillAW = unit.skill.awaken.selected;
@@ -634,7 +635,7 @@ funcs.unitsData.SetHPred = unit => {
         if(unit.skill.dmgMul.options[i] === "あり") {
             dmgMul = Math.max(dmgMul, unit.skill.dmgMul.mul[i]);
         }
-        unit.skill.HPred[i] = HPred * dmgMul;
+        unit.skill.HPred[i] = HPred * dmgMul * takenDmg;
     }
 }
 

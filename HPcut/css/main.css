@@ -96,9 +96,11 @@ input {
 }
 .number1 {
     width: 50px;
+    text-align: right;
 }
 .number2 {
     width: 80px;
+    text-align: right;
 }
 input[type="checkbox"] {
     margin-right: 3px;

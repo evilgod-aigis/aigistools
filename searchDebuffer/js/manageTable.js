@@ -3,6 +3,7 @@ const table = {};
 table.word = {
     team: "編成", area: "範囲", global: "全体", noAttr: "属性不問", limAttr: "属性指定"
     , death: "死亡時", clAttr: "クラス特性", fixed: "固定値", hit: "攻撃命中", scalar: "スカラー"
+    , takenDmg: "被ダメージ"
     
     , id: "id", name: "ユニット", rarity: "レア", cl: "クラス", AW: "覚醒等", skill: "スキル"
     
@@ -26,7 +27,7 @@ table.rarity = [ "黒", "白", "青", "金", "ちび", "銀", "銅", "鉄", "ト
 table.AW = [ "CC前", "CC後", "CC55", "覚醒前", "覚醒後", "覚1", "覚2a", "覚2b" ];
 table.atkAttr = [ "物理", "魔法", "貫通" ];
 table.debuffType = {};
-table.debuffType.common = [ "team", "hit", "scalar" ];
+table.debuffType.common = [ "team", "hit", "scalar", "takenDmg" ];
 table.debuffType.domain = [ "area", "global" ];
 table.debuffType.type = {
     hp: {
@@ -54,7 +55,7 @@ table.debuffType.type = {
         , color: "rgba(100, 100, 100, 0.3)"
     }
 };
-table.stats = [ "hp", "atk", "def", "mr", "atkCd", "stop" ];
+table.stats = [ "hp", "atk", "def", "mr", "atkCd", "stop", "value" ];
 table.before = [ "id", "name", "rarity", "AW", "skill" ];
 table.after = [ "atkAttr", "dur", "target", "note" ];
 
@@ -100,7 +101,7 @@ table.SetObjects = () => {
     table.column.push(...table.stats);
     table.column.push(...table.after);
     // 表のソート可能な列
-    table.sortable = [ "id", "rarity", ...table.stats, "atkAttr", "dur", "value" ];
+    table.sortable = [ "id", "rarity", ...table.stats, "atkAttr", "dur"/*, "value"*/ ];
     
     // picked: 検索条件に合うものを入れる
     // sortedBy: 今何でソートされているか
@@ -238,7 +239,7 @@ table.CreateFilter = () => {
     CreateButtons(newCheckboxArea);
     newBr = document.createElement("br");
     newCheckboxArea.appendChild(newBr);
-    CreateCheckbox(newCheckboxArea, "stats", [ "forceMode", "other" ]);
+    CreateCheckbox(newCheckboxArea, "stats", [ "value", "forceMode", "other" ]);
     /*
     newLabel = document.createElement("label");
     newLabel.className = "tooltip-b";
@@ -371,7 +372,7 @@ table.CreateTableSub = (_element, _list, _isCommon, _stat = "") => {
             const newTh = document.createElement("th");
             if(_.includes(table.sortable, elem)) {
                 newTh.className = "sortable";
-                newTh.setAttribute("onclick", `table.Sort("${name}", "${elem === "value" ? _stat : elem}")`);
+                newTh.setAttribute("onclick", `table.Sort("${name}", "${isType && elem === "value" ? _stat : elem}")`);
             }
             newTh.innerHTML = table.word[elem];
             newTr.appendChild(newTh);

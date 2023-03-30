@@ -1313,6 +1313,11 @@ buff.team = [
         , target: { cl: [ "ヘビーアーマー", "シールダー" ] }
     }
     , {
+        name: "女王子", rarity: "黒", cl: "女王子", AW: "覚醒後"
+        , stats: { hp: "+5%", mr: "+5" }
+        , target: { sex: [ "女性" ] }
+    }
+    , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒後"
         , stats: { hp: "+10%" }
         , target: { home: [ "白の帝国" ] }

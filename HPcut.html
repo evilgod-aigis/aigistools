@@ -91,12 +91,25 @@
                     <!--特攻付与-->
                     <div class="opt2">
                         <div class="optcap8em">
-                            <span class="tooltip-ts" data-tippy-content="倍率が最大のものを適用(暫定)">
+                            <span class="tooltip-ts" data-tippy-content="倍率が最大のものを適用">
                                 特攻付与：
                             </span>
                         </div>
                         <div class="optset">
                             <div id="giveDmgMul"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="opt1">
+                    <!--被ダメ増加-->
+                    <div class="opt2">
+                        <div class="optcap8em">
+                            <span class="tooltip-ts" data-tippy-content="倍率が最大のものを適用(暫定)">
+                                被ダメ増加：
+                            </span>
+                        </div>
+                        <div class="optset">
+                            <div id="takenDmg"></div>
                         </div>
                     </div>
                 </div>
@@ -140,11 +153,11 @@
                             <span
                                 class="tooltip-ts"
                                 data-tippy-content="
-                                    「対象」が「全員/全敵」のユニットに適用可能<br>
+                                    「対象」が「全員/全敵/射程内」および「2体」以上のユニットに適用可能<br>
                                     クラーケン系やライフリンク公爵のように<br>
                                     本体以外の被ダメージが本体にも入るやつ<br><br>
                                     　例）スキル時に全敵HP10%減少させるユニット<br>
-                                    　　　敵本体のHPが10,000、本体にリンクしている敵の合計HPが5,000のとき、<br>
+                                    　　　敵本体のHPが10,000、本体にリンクしている敵のHPが5,000のとき、<br>
                                     　　　・1回目：割合ダメージ；本体10,000*0.1=1,000、リンク5,000*0.1=500<br>
                                     　　　　　　　 HPリンク　　；本体に500追加ダメージ<br>
                                     　　　　　　　 →本体HP；10,000-(1,000+500)=8,500、リンクHP；5,000-500=4,500<br>
@@ -166,7 +179,7 @@
                             <span class="tooltip-ts" data-tippy-content="
                                 「対象」が「射程内/○体」のユニットに適用可能<br>
                                 射程が有限、もしくは表記が「○%(分の)ダメージ」の場合、<br>
-                                マルチヒット数と同じだけの回数の割合ダメージが発生する<br><br>
+                                最大でマルチヒット数と同じだけの回数の割合ダメージが発生する<br><br>
                                 　例）射程あり3体マルチ+HP10%ダメージのユニットの射程内に、<br>
                                 　　➀敵本体+1体(計2体)がいる場合：本体が2回割合ダメージを喰らい、<br>
                                 　　　　　　　　　　　　　　　　　　{1-(1-0.1)^2}*100=19% のダメージ<br>

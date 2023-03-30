@@ -595,6 +595,33 @@ lists.buff.giveDmgMul.list = [
     }
 ];
 
+//被ダメ増加
+lists.buff.takenDmg = {};
+lists.buff.takenDmg.updateTable = [ true, true ];
+lists.buff.takenDmg.list = [
+    {
+        id: null, buffer: "カースウィスパラー", awaken: "覚醒", showAwaken: false,
+        rate: 10, disabled: false,
+        AndOr: "or", target: [ { "-": [] } ],
+        tooltip:
+        "[範囲] 被ダメージが10%上昇"
+    },
+    {
+        id: null, buffer: "災禍を律す者モルフェサ(黒)", awaken: "通常", showAwaken: true,
+        rate: 15, disabled: false,
+        AndOr: "or", target: [ { "-": [] } ],
+        tooltip:
+        "[範囲] 被ダメージが15%上昇"
+    },
+    {
+        id: null, buffer: "災禍を律す者モルフェサ(黒)", awaken: "覚醒", showAwaken: true,
+        rate: 30, disabled: false,
+        AndOr: "or", target: [ { "-": [] } ],
+        tooltip:
+        "[範囲] 被ダメージが30%上昇"
+    }
+];
+
 //鈍化(マップ)軽減リスト
 lists.buff.redMapEff = {};
 lists.buff.redMapEff.updateTable = [ false, true ];

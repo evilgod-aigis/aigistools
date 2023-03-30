@@ -777,6 +777,16 @@ buff.dep_gl = [
         , target: { cl: [ "ヘビーアーマー", "シールダー" ] }
     }
     , {
+        name: "女王子", rarity: "黒", cl: "女王子", AW: "覚醒前"
+        , stats: { atk: "-5%" }
+        , target: { sex: [ "男性" ] }
+    }
+    , {
+        name: "女王子", rarity: "黒", cl: "女王子", AW: "覚醒後"
+        , stats: { atk: "-5%" }
+        , target: { sex: [ "男性" ] }
+    }
+    , {
         name: "帝国軍旗", rarity: "金", cl: "帝国軍旗"
         , stats: { atk: "+5%", def: "+5%" }
         , target: { home: [ "白の帝国" ] }

@@ -4,6 +4,7 @@
         , "debuff_mixture"
         , "debuff_hit"
         , "debuff_scalar"
+        , "debuff_takenDmg"
         , "updateHistory"
         , "createHTML"
         , "targetInfo"

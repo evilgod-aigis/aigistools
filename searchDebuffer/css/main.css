@@ -278,7 +278,7 @@ summary {
     max-width: max-content;
 }
 /* 命中 停止, 属性 */
-#table_hit td:nth-last-of-type(5)
+#table_hit td:nth-last-of-type(6)
 , #table_hit td:nth-last-of-type(4) {
     text-align: center !important;
 }

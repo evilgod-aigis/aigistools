@@ -936,7 +936,6 @@ debuff.mixture = [
             def: { value: "-30%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "ティルト", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒後", skill: "通常"
@@ -944,7 +943,6 @@ debuff.mixture = [
             def: { value: "-30%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "エステル", rarity: "黒", cl: "メイジ", AW: "覚醒前", skill: "通常"
