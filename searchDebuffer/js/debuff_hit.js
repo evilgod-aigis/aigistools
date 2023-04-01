@@ -51,6 +51,11 @@ debuff.hit = [
         , atkAttr: "物理", dur: "9f"
     }
     , {
+        name: "ちびチヨメ", rarity: "ちび", cl: "忍者", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "9f"
+    }
+    , {
         name: "アリエッタ", rarity: "青", cl: "ダークファイター", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "89f"

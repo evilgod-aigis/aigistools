@@ -1129,13 +1129,11 @@ buff.skill_cat = [
         name: "女王子", rarity: "黒", cl: "女王子", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+50%", atk: "×1.2", def: "×1.2" }
         , target: { sex: [ "女性" ] }
-        , note: "分類未確認"
     }
     , {
         name: "女王子", rarity: "黒", cl: "女王子", AW: "覚醒後", skill: "通常"
         , stats: { hp: "+50%", atk: "×1.2", def: "×1.2" }
         , target: { sex: [ "女性" ] }
-        , note: "分類未確認"
     }
     , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒前", skill: "通常"
