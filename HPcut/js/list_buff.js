@@ -619,6 +619,20 @@ lists.buff.takenDmg.list = [
         AndOr: "or", target: [ { "-": [] } ],
         tooltip:
         "[範囲] 被ダメージが30%上昇"
+    },
+    {
+        id: null, buffer: "災禍を律す者モルフェサ(白)", awaken: "通常", showAwaken: true,
+        rate: 15, disabled: false,
+        AndOr: "or", target: [ { "-": [] } ],
+        tooltip:
+        "[範囲] 被ダメージが15%上昇"
+    },
+    {
+        id: null, buffer: "災禍を律す者モルフェサ(白)", awaken: "覚醒", showAwaken: true,
+        rate: 20, disabled: false,
+        AndOr: "or", target: [ { "-": [] } ],
+        tooltip:
+        "[範囲] 被ダメージが20%上昇"
     }
 ];
 

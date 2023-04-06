@@ -259,6 +259,10 @@ buff.dep_gl = [
         , stats: { def: "+15%" }
     }
     , {
+        name: "ちびアラン", rarity: "ちび", cl: "儀仗軍神"
+        , stats: { def: "+15%" }
+    }
+    , {
         name: "皇帝", cl: "皇帝", AW: "覚醒前"
         , stats: { other: "" }
         , note: "魔界-100%"

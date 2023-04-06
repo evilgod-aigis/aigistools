@@ -63,6 +63,15 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "王子【ドゥン】", cl: "王子", skill: "通常"
+        , stats: {
+            def: { value: "-50%", type: "area" }
+            , mr: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "Lv4", "分類未確認" ]
+    }
+    , {
         name: "王子【水着】", cl: "王子", skill: "通常(奇)"
         , stats: {
             def: { value: "-30%", type: "area" }
@@ -99,6 +108,22 @@ debuff.mixture = [
             , mr: { value: "-30%", type: "global" }
         }
         , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒後", skill: "通常"
+        , stats: {
+            mr: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "area"
         , note: "分類未確認"
     }
     , {
@@ -916,6 +941,30 @@ debuff.mixture = [
     }
     , {
         name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+            , def: { value: "-50%", type: "area" }
+            , mr: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "ちびアラン", rarity: "ちび", cl: "儀仗軍神", skill: "覚醒(1)"
+        , stats: {
+            mr: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "ちびアラン", rarity: "ちび", cl: "儀仗軍神", skill: "覚醒(2)"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+            , mr: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "ちびアラン", rarity: "ちび", cl: "儀仗軍神", skill: "覚醒(3～)"
         , stats: {
             atk: { value: "-20%", type: "noAttr" }
             , def: { value: "-50%", type: "area" }

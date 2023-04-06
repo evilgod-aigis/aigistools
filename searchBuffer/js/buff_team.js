@@ -38,6 +38,12 @@ buff.team = [
         , target: { year: [ "2021年" ] }
     }
     , {
+        name: "王子【ナンディ】", cl: "王子"
+        , stats: { hp: "+10%", atk: "+10%", def: "+10%" }
+        , target: { year: [ "2021年" ] }
+        , note: "Lv3以上"
+    }
+    , {
         name: "王子【海鎮】", cl: "王子"
         , stats: { atk: "+10%" }
         , target: [
@@ -46,9 +52,24 @@ buff.team = [
         ]
     }
     , {
+        name: "王子【海鎮】", cl: "王子"
+        , stats: { hp: "+10%", atk: "+20%" }
+        , target: [
+            { cl: [ "セーラー", "アクアナイト", "パイレーツ" ] }
+            , { race: [ "魚人" ] }
+        ]
+        , note: "Lv3以上"
+    }
+    , {
         name: "王子【ドゥン】", cl: "王子"
         , stats: { atk: "+7%", def: "+7%" }
         , target: { year: [ "2022年" ] }
+    }
+    , {
+        name: "王子【ドゥン】", cl: "王子"
+        , stats: { hp: "+10%", atk: "+10%", def: "+10%" }
+        , target: { year: [ "2022年" ] }
+        , note: "Lv3以上"
     }
     , {
         name: "王子【焔竜】", cl: "王子"
