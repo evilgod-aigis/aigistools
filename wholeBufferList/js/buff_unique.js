@@ -201,25 +201,25 @@ buff.unique = [
         name: "メリュジアナ", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
-        , note: [ "区分：ダメージ上昇", "魔法永続" ]
+        , note: [ "区分：ダメージ上昇(魔法)", "魔法永続" ]
     }
     , {
         name: "メリュジアナ/花嫁", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
-        , note: [ "区分：ダメージ上昇", "魔法永続" ]
+        , note: [ "区分：ダメージ上昇(魔法)", "魔法永続" ]
     }
     , {
         name: "メリュジアナ/花嫁", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
-        , note: [ "区分：ダメージ上昇", "魔法永続" ]
+        , note: [ "区分：ダメージ上昇(魔法)", "魔法永続" ]
     }
     , {
         name: "メリュジアナ/花嫁", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.3" }
         , type: "atk-up_mag"
-        , note: [ "区分：ダメージ上昇", "魔法永続" ]
+        , note: [ "区分：ダメージ上昇(魔法)", "魔法永続" ]
     }
     , {
         name: "ちびメリュジアナ", rarity: "ちび", cl: "ドラゴンプリンセス", skill: "通常"
@@ -255,19 +255,19 @@ buff.unique = [
         name: "ハイエンチャンター", cl: "エンチャンター", AW: "覚1", skill: [ "通常", "覚醒" ]
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
-        , note: [ "区分：ダメージ上昇", "魔法エンチャンター系" ]
+        , note: [ "区分：ダメージ上昇(魔法)", "魔法エンチャンター系" ]
     }
     , {
         name: "ゴーレムマスター", cl: "エンチャンター", AW: "覚2a", skill: [ "通常", "覚醒" ]
         , stats: { atk: "×1.25" }
         , type: "atk-up_mag"
-        , note: [ "区分：ダメージ上昇", "魔法エンチャンター系" ]
+        , note: [ "区分：ダメージ上昇(魔法)", "魔法エンチャンター系" ]
     }
     , {
         name: "グランドエンチャンター", cl: "エンチャンター", AW: "覚2b", skill: [ "通常", "覚醒" ]
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
-        , note: [ "区分：ダメージ上昇", "魔法エンチャンター系" ]
+        , note: [ "区分：ダメージ上昇(魔法)", "魔法エンチャンター系" ]
     }
     , {
         name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後", skill: "覚醒"
@@ -277,6 +277,13 @@ buff.unique = [
     }
     
     // 被ダメージ軽減
+    , {
+        name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "覚醒"
+        , stats: { other: "" }
+        , type: "dmg-red_selfSkill"
+        , note: [ "区分：被ダメージ軽減(自己/スキル)", "物理-20%(範囲)" ]
+    }
+    
     , {
         name: "ベルニス/花嫁", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"
         , stats: { other: "" }
@@ -337,12 +344,14 @@ buff.unique = [
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "魔法-40%(範囲)" ]
     }
+    /*
     , {
         name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "物理-20%(範囲)", "分類未確認" ]
     }
+    */
     , {
         name: "ソウルレゾナンサー", cl: "ライフリンカー", AW: "覚2a", skill: [ "通常", "覚醒" ]
         , stats: { other: "" }
@@ -404,7 +413,7 @@ buff.unique = [
     
     spot_mul death Lukifer nekomata
     
-    special atk-up_mag dmg-red
+    special atk-up_mag dmg-red_selfSkill dmg-red
     
     note
     

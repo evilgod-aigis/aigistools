@@ -116,7 +116,6 @@ debuff.mixture = [
             mr: { value: "-50%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒後", skill: "覚醒"
@@ -124,7 +123,6 @@ debuff.mixture = [
             atk: { value: "-20%", type: "noAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "エルデ", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒前", skill: "通常"

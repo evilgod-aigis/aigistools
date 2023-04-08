@@ -149,6 +149,12 @@ lists.buff.rCT = {};
 lists.buff.rCT.updateTable = [ true, false ];
 lists.buff.rCT.list = [
     {
+        id: null, buffer: "流転の本", awaken: "-", showAwaken: false,
+        rate: 30, disabled: false,
+        AndOr: "or", target: [ { attribution: [ "魔術師" ] } ],
+        tooltip: "[スキル・全体] 属性：魔術師の再動-30%"
+    },
+    {
         id: null, buffer: "妖狐絢爛", awaken: "覚2a", showAwaken: false,
         rate: 50, disabled: false,
         AndOr: "or", target: [ { attribution: [ "妖怪" ] } ],
@@ -158,7 +164,7 @@ lists.buff.rCT.list = [
         id: null, buffer: "ドミヌスサクルム", awaken: "覚2a", showAwaken: false,
         rate: 30, disabled: false,
         AndOr: "or", target: [ { "-": [] } ],
-        //compound: [ "rWT" ],
+        compound: [ "rWT" ],
         tooltip:
         "[編成] 全味方の初動-40%<br>\
         [配置] 全味方の再動-30%"
@@ -452,6 +458,12 @@ lists.buff.hasteFixed.list = [
         atkCooldown: 21, disabled: false,
         AndOr: "or", target: [ { attribution: [ "魔術師" ] } ],
         tooltip: "[スキル・全体] 属性：魔術師の攻撃硬直11f化"
+    },
+    {
+        id: null, buffer: "狂暴の翼", awaken: "-", showAwaken: false,
+        atkCooldown: 11, disabled: false,
+        AndOr: "or", target: [ { attribution: [ "魔界" ] } ],
+        tooltip: "[スキル・全体] 属性：魔界の攻撃硬直6f化"
     },
     {
         id: null, buffer: "秋祭の大魔女デスピア", awaken: "通常", showAwaken: false,
