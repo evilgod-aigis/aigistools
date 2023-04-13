@@ -2145,6 +2145,21 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "魔法使い【ランス】", cl: "魔法使い【ランス】", AW: "覚醒前"
+        , stats: {
+            mr: { value: "-15%", type: "clAttr" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "四魔女【ランス】", cl: "魔法使い【ランス】", AW: "覚1"
+        , stats: {
+            mr: { value: "-30%", type: "clAttr" }
+        }
+        , domain: "area"
+        , note: "魔法使い【ランス】系"
+    }
+    , {
         name: "孫堅", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒前", skill: "通常"
         , stats: {
             stop: { value: "59f", type: "global" }

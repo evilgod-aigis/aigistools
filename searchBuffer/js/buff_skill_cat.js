@@ -456,7 +456,6 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { others: [ "弓兵" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "ちびセーラ", rarity: "ちび", cl: "メイド", skill: "通常"

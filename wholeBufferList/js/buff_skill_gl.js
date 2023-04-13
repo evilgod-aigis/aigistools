@@ -263,11 +263,11 @@ buff.skill_gl = [
     }
     , {
         name: "シロガネ", rarity: "白", cl: "鬼刃忍", AW: "覚醒前", skill: "通常"
-        , stats: { rege: [ "80/秒", "?/?f" ] }
+        , stats: { rege: [ "80/秒", "40/15f" ] }
     }
     , {
         name: "シロガネ", rarity: "白", cl: "鬼刃忍", AW: "覚醒後", skill: "覚醒"
-        , stats: { rege: [ "80/秒", "?/?f" ] }
+        , stats: { rege: [ "80/秒", "40/15f" ] }
     }
     , {
         name: "デーモンロード", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
@@ -347,6 +347,10 @@ buff.skill_gl = [
     , {
         name: "シンディ", rarity: "金", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "90/秒", "45/15f" ] }
+    }
+    , {
+        name: "ちびドゥマルデ", rarity: "ちび", cl: "ヒーラー", skill: "通常"
+        , stats: { rege: [ "60/秒", "30/15f" ] }
     }
     , {
         name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒前", skill: "通常(3n-2)"
@@ -440,7 +444,7 @@ buff.skill_gl = [
     }
     , {
         name: "ハナ", rarity: "白", cl: "ダンサー", skill: "覚醒"
-        , stats: { rege: [ "40/秒", "?/?f" ] }
+        , stats: { rege: [ "40/秒", "20/15f" ] }
     }
     , {
         name: "アンナ/アイドル", rarity: "黒", cl: "政務官", skill: "通常"
@@ -633,7 +637,7 @@ buff.skill_gl = [
     }
     , {
         name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒後", skill: [ "通常", "覚醒" ]
-        , stats: { rege: [ "150/秒", "?/?f" ] }
+        , stats: { rege: [ "150/秒", "75/15f" ] }
     }
     , {
         name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"

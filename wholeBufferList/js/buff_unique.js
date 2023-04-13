@@ -201,25 +201,25 @@ buff.unique = [
         name: "メリュジアナ", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
-        , note: [ "区分：ダメージ上昇(魔法)", "魔法永続" ]
+        , note: [ "区分：ダメージ上昇(魔法)", "永続" ]
     }
     , {
         name: "メリュジアナ/花嫁", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
-        , note: [ "区分：ダメージ上昇(魔法)", "魔法永続" ]
+        , note: [ "区分：ダメージ上昇(魔法)", "永続" ]
     }
     , {
         name: "メリュジアナ/花嫁", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
-        , note: [ "区分：ダメージ上昇(魔法)", "魔法永続" ]
+        , note: [ "区分：ダメージ上昇(魔法)", "永続" ]
     }
     , {
         name: "メリュジアナ/花嫁", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.3" }
         , type: "atk-up_mag"
-        , note: [ "区分：ダメージ上昇(魔法)", "魔法永続" ]
+        , note: [ "区分：ダメージ上昇(魔法)", "永続" ]
     }
     , {
         name: "ちびメリュジアナ", rarity: "ちび", cl: "ドラゴンプリンセス", skill: "通常"
@@ -272,6 +272,18 @@ buff.unique = [
     , {
         name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2" }
+        , type: "atk-up_mag"
+        , note: "区分：ダメージ上昇(魔法)"
+    }
+    , {
+        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , type: "atk-up_mag"
+        , note: "区分：ダメージ上昇(魔法)"
+    }
+    , {
+        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
     }
@@ -381,6 +393,18 @@ buff.unique = [
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "魔法-50%(範囲)" ]
+    }
+    , {
+        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "魔法-30%(範囲)" ]
+    }
+    , {
+        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "魔法-40%(範囲)" ]
     }
 ];
 

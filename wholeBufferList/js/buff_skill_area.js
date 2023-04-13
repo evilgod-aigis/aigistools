@@ -163,11 +163,11 @@ buff.skill_area = [
     }
     , {
         name: "ハルモニア/クリスマス", rarity: "黒", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
-        , stats: { rege: [ "100/秒", "?/?f" ] }
+        , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
         name: "ハルモニア/クリスマス", rarity: "黒", cl: "デーモンロード", AW: "覚醒後", skill: "通常"
-        , stats: { rege: [ "100/秒", "?/?f" ] }
+        , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
         name: "エスネア", rarity: "黒", cl: "デモンルーン", AW: "覚醒後", skill: "覚醒"

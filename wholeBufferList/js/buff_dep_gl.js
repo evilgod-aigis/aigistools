@@ -216,7 +216,7 @@ buff.dep_gl = [
     }
     , {
         name: "ソーマ/メイド", rarity: "白", cl: "メイド", AW: "覚醒後"
-        , stats: { rege: [ "20/秒", "?/?f" ] }
+        , stats: { rege: [ "20/秒", "10/15f" ] }
     }
     , {
         name: "バロウス", rarity: "白", cl: "魔神", AW: "覚醒後"

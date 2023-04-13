@@ -1982,6 +1982,11 @@ buff.team = [
         , target: { home: [ "パルス王国" ] }
     }
     , {
+        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒前"
+        , stats: { range: "+10" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
         name: "趙雲", rarity: "白", cl: "武将【恋姫】", AW: "覚醒後"
         , stats: { cost: "-2" }
         , target: { home: [ "恋姫" ] }

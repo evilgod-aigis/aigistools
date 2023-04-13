@@ -772,13 +772,13 @@ debuff.hit = [
     */
     , {
         name: "ふゆの", rarity: "白", cl: "雪娘", AW: "覚醒前", skill: "通常"
-        , stats: { atkCd: "+?f" }
+        , stats: { atkCd: "+30f" }
         , atkAttr: "物理", dur: "?f"
         , note: "分類未確認"
     }
     , {
         name: "ふゆの", rarity: "白", cl: "雪娘", AW: "覚醒後", skill: "通常"
-        , stats: { atkCd: "+?f" }
+        , stats: { atkCd: "+30f" }
         , atkAttr: "物理", dur: "?f"
         , note: "分類未確認"
     }
@@ -798,6 +798,24 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "59f"
         , note: "ボム"
+    }
+    , {
+        name: "ホーネット派魔人【ランス】", cl: "ホーネット派魔人【ランス】", AW: "覚醒前"
+        , stats: { def: "-15%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "魔人【ランス】", cl: "ホーネット派魔人【ランス】", AW: "覚醒前"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "ホーネット派魔人【ランス】系", "分類未確認" ]
+    }
+    , {
+        name: "見当かなみ", rarity: "黒", cl: "忍者【ランス】", AW: "覚醒後", skill: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "永続"
     }
     , {
         name: "奸雄【恋姫】", cl: "奸雄【恋姫】", AW: "覚醒前"
