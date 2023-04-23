@@ -121,7 +121,7 @@ funcs.createHTML.Opt_number = (option, obj) => {
                 "
                 ${obj.use ? "checked" : ""}
             >
-            <span class="inactive">`
+            <span ${obj.use ? "" : `class="inactive"`}>`
             : ""
         }
         <label${hasMin
@@ -143,7 +143,7 @@ funcs.createHTML.Opt_number = (option, obj) => {
                     ${saveData.db ? `funcs.saveData.UpdateData('numeral', '${option}.value', Number(this.value)); ` : ""
                     }funcs.graph.SetGraphData('${option}')
                 "
-                ${hasUse ? "disabled" : ""}
+                ${hasUse && !obj.use ? "disabled" : ""}
             >${obj.txt[2]}
         </label>`;
     
@@ -169,7 +169,7 @@ funcs.createHTML.Opt_number = (option, obj) => {
                         ${saveData.db ? `funcs.saveData.UpdateData('numeral', '${option}.value2', Number(this.value)); ` : ""
                         }funcs.graph.SetGraphData('${option}')
                     "
-                    ${hasUse ? "disabled" : ""}
+                    ${hasUse && !obj.use ? "disabled" : ""}
                 >${obj.txt2[2]}
             </label>`;
         
