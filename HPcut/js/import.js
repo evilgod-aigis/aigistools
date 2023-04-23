@@ -1,4 +1,5 @@
-function importJS() {
+const isPC = !navigator.userAgent.match(/iPhone|Android.+Mobile/);
+(() => {
     const scripts = [
         "list_buff"
         , "list_selfBuff"
@@ -6,16 +7,20 @@ function importJS() {
         , "list_units_onSkillAct"
         , "list_units_onHit"
         , "list_attr"
-        , "numericalValue"
+        , "numeral"
         , "updateHistory"
         , "funcs"
         , "funcs_createHTML"
         , "funcs_createModal"
         , "funcs_unitsData"
         , "funcs_graph"
+        , "customFlow"
+        , "saveData"
         , "initialize"
     ];
-    scripts.forEach(elem => document.write(`<script src="./HPcut/js/${elem}.js"></script>`));
-}
-
-importJS();
+    _.forEach(scripts, elem => document.write(`<script src="./HPcut/js/${elem}.js"></script>`));
+    window.addEventListener("DOMContentLoaded", () => {
+        funcs.SetBufferDisplay();
+        funcs.saveData.OpenDB();
+    });
+})();

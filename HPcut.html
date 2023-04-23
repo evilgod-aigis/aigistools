@@ -10,13 +10,23 @@
 
     <body>
         <div id="header">
-            <span>アイギス 割合ダメージグラフ</span>
+            <div class="inline-block"><span>アイギス 割合ダメージグラフ</span></div>
+            <div class="inline-block" style="float: right;">
+                <label
+                    class="inline-block tooltip-t"
+                    data-tippy-content="グラフの切り替えは対象外"
+                    style="text-align: right;"
+                >
+                    <input type="checkbox" id="toggleSequent" onchange="funcs.graph.ToggleSequent(!this.checked)">
+                    更新ボタンを押すまでグラフを更新しない<br>(何か変えるたびに止まる人向け)
+                </label>
+            </div>
         </div>
         
         <div id="contents">
             <div id="main">
                 <div class="opt1">
-                    <!--初動短縮-->
+                    <!-- 初動短縮 -->
                     <div class="opt2">
                         <div class="optcap8em">
                             <span class="tooltip-ts" data-tippy-content="短縮率が最大のものを適用">
@@ -27,7 +37,7 @@
                             <div id="rWT"></div>
                         </div>
                     </div>
-                    <!--再動短縮-->
+                    <!-- 再動短縮 -->
                     <div class="opt2">
                         <div class="optcap8em">
                             <span class="tooltip-ts" data-tippy-content="短縮率が最大のものを適用">
@@ -41,7 +51,7 @@
                     </div>
                 </div>
                 <div class="opt1">
-                    <!--スキル時間延長-->
+                    <!-- スキル時間延長 -->
                     <div class="opt2">
                         <div class="optcap8em">
                             <span class="tooltip-ts" data-tippy-content="延長率が最大のものを適用">
@@ -50,12 +60,12 @@
                         </div>
                         <div class="optset">
                             <div id="skillExtend"></div>
-                            <div id="skillExtend_fixed"></div>
+                            <div id="skillExtendFixed"></div>
                         </div>
                     </div>
                 </div>
                 <div class="opt1">
-                    <!--硬直短縮-->
+                    <!-- 硬直短縮 -->
                     <div class="opt2">
                         <div class="optcap8em">
                             <span class="tooltip-ts" data-tippy-content="短縮率が最大のものを適用">
@@ -66,7 +76,7 @@
                             <div id="haste"></div>
                         </div>
                     </div>
-                    <!--硬直短縮(固定値化)-->
+                    <!-- 硬直短縮(固定値化) -->
                     <div class="opt2">
                         <div class="optcap8em">
                             <span
@@ -88,10 +98,10 @@
                     </div>
                 </div>
                 <div class="opt1">
-                    <!--特攻付与-->
+                    <!-- 特攻付与 -->
                     <div class="opt2">
                         <div class="optcap8em">
-                            <span class="tooltip-ts" data-tippy-content="倍率が最大のものを適用">
+                            <span class="tooltip-ts" data-tippy-content="倍率が最大のものを適用(暫定)">
                                 特攻付与：
                             </span>
                         </div>
@@ -101,7 +111,7 @@
                     </div>
                 </div>
                 <div class="opt1">
-                    <!--被ダメ増加-->
+                    <!-- 被ダメ増加 -->
                     <div class="opt2">
                         <div class="optcap8em">
                             <span class="tooltip-ts" data-tippy-content="倍率が最大のものを適用(暫定)">
@@ -114,18 +124,7 @@
                     </div>
                 </div>
                 <div class="opt1">
-                    <!--撤退再出撃-->
-                    <div class="opt2">
-                        <div class="optcap8em">
-                            <span class="tooltip-ts" data-tippy-content="ONにすると撤退&設定した秒数後に<br>再出撃する場合を含めた最短パターンで計算">
-                                撤退再出撃：
-                            </span>
-                        </div>
-                        <div class="optset">
-                            <div id="redeployInterval"></div>
-                        </div>
-                    </div>
-                    <!--時間-->
+                    <!-- 時間 -->
                     <div class="opt2">
                         <div class="optcap8em">
                             <span class="tooltip-ts" data-tippy-content="グラフに表示する最大秒数">
@@ -136,7 +135,18 @@
                             <div id="timeCap"></div>
                         </div>
                     </div>
-                    <!--最大敵HP-->
+                    <!-- 撤退再出撃 -->
+                    <div class="opt2">
+                        <div class="optcap8em">
+                            <span class="tooltip-ts" data-tippy-content="ONにすると撤退&設定した秒数後に<br>再出撃する場合を含めた最短パターンで計算">
+                                撤退再出撃：
+                            </span>
+                        </div>
+                        <div class="optset">
+                            <div id="redeployInterval"></div>
+                        </div>
+                    </div>
+                    <!-- 最大敵HP -->
                     <div class="opt2">
                         <div class="optcap8em">
                             <span>
@@ -147,7 +157,7 @@
                             <div id="maxHP"></div>
                         </div>
                     </div>
-                    <!--HPリンク-->
+                    <!-- HPリンク -->
                     <div class="opt2">
                         <div class="optcap8em">
                             <span
@@ -157,13 +167,13 @@
                                     クラーケン系やライフリンク公爵のように<br>
                                     本体以外の被ダメージが本体にも入るやつ<br><br>
                                     　例）スキル時に全敵HP10%減少させるユニット<br>
-                                    　　　敵本体のHPが10,000、本体にリンクしている敵のHPが5,000のとき、<br>
+                                    　　　敵本体のHPが10,000、本体にリンクしているHP5,000の敵が2体いるとき、<br>
                                     　　　・1回目：割合ダメージ；本体10,000*0.1=1,000、リンク5,000*0.1=500<br>
-                                    　　　　　　　 HPリンク　　；本体に500追加ダメージ<br>
-                                    　　　　　　　 →本体HP；10,000-(1,000+500)=8,500、リンクHP；5,000-500=4,500<br>
-                                    　　　・2回目：割合ダメージ；本体8,500*0.1=850、リンク4,500*0.1=450<br>
-                                    　　　　　　　 HPリンク　　；本体に450追加ダメージ<br>
-                                    　　　　　　　 →本体HP；8,500-(850+450)=7,200、リンクHP；4,500-450=4,050
+                                    　　　　　　　 HPリンク　　；本体に500*2追加ダメージ<br>
+                                    　　　　　　　 →本体HP；10,000-(1,000+500*2)=8,000、リンクHP；5,000-500=4,500<br>
+                                    　　　・2回目：割合ダメージ；本体8,000*0.1=800、リンク4,500*0.1=450<br>
+                                    　　　　　　　 HPリンク　　；本体に450*2追加ダメージ<br>
+                                    　　　　　　　 →本体HP；8,000-(800+450*2)=6,300、リンクHP；4,500-450=4,050
                                 "
                             >
                                 HPリンク：
@@ -173,19 +183,22 @@
                             <div id="linkedHP"></div>
                         </div>
                     </div>
-                    <!--引き付け(敵)-->
+                    <!-- 引き付け(敵) -->
                     <div class="opt2">
                         <div class="optcap8em">
-                            <span class="tooltip-ts" data-tippy-content="
-                                「対象」が「射程内/○体」のユニットに適用可能<br>
-                                射程が有限、もしくは表記が「○%(分の)ダメージ」の場合、<br>
-                                最大でマルチヒット数と同じだけの回数の割合ダメージが発生する<br><br>
-                                　例）射程あり3体マルチ+HP10%ダメージのユニットの射程内に、<br>
-                                　　➀敵本体+1体(計2体)がいる場合：本体が2回割合ダメージを喰らい、<br>
-                                　　　　　　　　　　　　　　　　　　{1-(1-0.1)^2}*100=19% のダメージ<br>
-                                　　➁敵本体+4体(計5体)がいる場合：本体が3回割合ダメージを喰らい、<br>
-                                　　　　　　　　　　　　　　　　　　{1-(1-0.1)^3}*100=27.1% のダメージ
-                            ">
+                            <span
+                                class="tooltip-ts"
+                                data-tippy-content="
+                                    「対象」が「射程内/○体」のユニットに適用可能<br>
+                                    射程が有限、もしくは表記が「○%(分の)ダメージ」の場合、<br>
+                                    最大でマルチヒット数と同じだけの回数の割合ダメージが発生する<br><br>
+                                    　例）射程あり3体マルチ+HP10%ダメージのユニットの射程内に、<br>
+                                    　　➀敵本体+1体(計2体)がいる場合：本体が2回割合ダメージを喰らい、<br>
+                                    　　　　　　　　　　　　　　　　　　{1-(1-0.1)^2}*100=19% のダメージ<br>
+                                    　　➁敵本体+4体(計5体)がいる場合：本体が3回割合ダメージを喰らい、<br>
+                                    　　　　　　　　　　　　　　　　　　{1-(1-0.1)^3}*100=27.1% のダメージ
+                                "
+                            >
                                 引き付け(敵)：
                             </span>
                         </div>
@@ -193,7 +206,7 @@
                             <div id="simultHit"></div>
                         </div>
                     </div>
-                    <!--DPS-->
+                    <!-- DPS -->
                     <div class="opt2">
                         <div class="optcap8em">
                             <span class="tooltip-ts" data-tippy-content="普通のダメージも一緒に計算<br>上の最大敵HPと合わせて設定してね">
@@ -204,7 +217,7 @@
                             <div id="DPS"></div>
                         </div>
                     </div>
-                    <!--攻撃硬直増加(状態異常)-->
+                    <!-- 攻撃硬直増加(状態異常) -->
                     <div class="opt2">
                         <div class="optcap8em">
                             <span class="tooltip-ts" data-tippy-content="クモの魔物等の攻撃による攻撃硬直増加(30fps)">
@@ -215,7 +228,7 @@
                             <div id="incAtkCooldown_enemy"></div>
                         </div>
                     </div>
-                    <!--攻撃硬直増加(マップ効果)-->
+                    <!-- 攻撃硬直増加(マップ効果) -->
                     <div class="opt2">
                         <div class="optcap8em">
                             <span
@@ -248,9 +261,25 @@
             </div>
             
             <div id="unitsData">
-                <!--ユニットデータテーブル-->
+                <!-- ユニットデータテーブル -->
                 <table id="unitsTable" border="1">
-                    <!--スキル発動時発生型-->
+                    <colgroup>
+                        <col class="col1">
+                        <col class="col2">
+                        <col class="col3">
+                        <col class="col4">
+                        <col class="col5">
+                        <col class="col6">
+                        <col class="col7">
+                        <col class="col8">
+                        <col class="col9">
+                        <col class="col10">
+                        <col class="col11">
+                        <col class="col12">
+                        <col class="col13">
+                        <col class="col14">
+                    </colgroup>
+                    <!-- スキル発動時発生型 -->
                     <thead>
                         <tr class="unitsHead">
                             <th>名前</th>
@@ -270,12 +299,22 @@
                             <th class="tooltip-t" data-tippy-content="HP減少が発生する間隔">
                                 間隔
                             </th>
-                            <th>減少率</th>
+                            <th class="tooltip-t" data-tippy-content="小数第3位まで表示">
+                                減少率
+                            </th>
                             <th>特攻</th>
+                            <th
+                                class="down-triangle"
+                                onclick="
+                                    document.getElementById('table_onSkillAct').classList.toggle('is-unshown');
+                                    this.classList.toggle('up-triangle');
+                                    this.classList.toggle('down-triangle');
+                                "
+                            ></th>
                         </tr>
                     </thead>
                     <tbody id="table_onSkillAct"></tbody>
-                    <!--攻撃ヒット時発生型-->
+                    <!-- 攻撃ヒット時発生型 -->
                     <thead>
                         <tr class="unitsHead">
                             <th rowspan="2">名前</th>
@@ -291,8 +330,19 @@
                                 攻撃間隔(30fps)
                             </th>
                             <th style="display:none"></th>
-                            <th rowspan="2">減少率</th>
+                            <th rowspan="2" class="tooltip-t" data-tippy-content="小数第3位まで表示">
+                                減少率
+                            </th>
                             <th rowspan="2">特攻</th>
+                            <th
+                                rowspan="2"
+                                class="down-triangle"
+                                onclick="
+                                    document.getElementById('table_onHit').classList.toggle('is-unshown');
+                                    this.classList.toggle('up-triangle');
+                                    this.classList.toggle('down-triangle');
+                                "
+                            ></th>
                         </tr>
                         <tr class="unitsHead">
                             <th class="tooltip-t" data-tippy-content="今のところここの値は使ってないよ">
@@ -303,29 +353,129 @@
                     </thead>
                     <tbody id="table_onHit"></tbody>
                 </table>
+                <table id="customFlowTable" border="1">
+                    <colgroup>
+                        <col class="col1">
+                        <col class="col2">
+                        <col class="col3">
+                        <col class="col4">
+                        <col class="col5">
+                        <col class="col6">
+                        <col class="col7">
+                    </colgroup>
+                    <thead id="customFlowHead">
+                        <tr>
+                            <th colspan="7" style="height: 2em;">
+                                フロー(単一の敵に対して複数のユニットを使うシミュレーション用)
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>No.</th>
+                            <th>スキル発動時発生型</th>
+                            <th>攻撃ヒット時発生型</th>
+                            <th>バッファー</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="customFlowBody"></tbody>
+                </table>
             </div>
-            <!--ユニットデータ追加用モーダル(スキル発動時発生型)-->
-            <div id="modal_onSkillAct" class="modal"></div>
-            <!--ユニットデータ追加用モーダル(攻撃ヒット時発生型)-->
-            <div id="modal_onHit" class="modal"></div>
+            <!-- モーダル -->
+            <div id="modal" class="is-unshown"></div>
             
             <div id="graph">
-                <!--グラフ-->
+                <!-- グラフ -->
                 <div id="graphArea">
-                    <canvas id="canvas">ここにグラフが表示されるよ</canvas>
+                    <div id="chart"></div>
                 </div>
-                <!--グラフオプション-->
+                <!-- グラフオプション -->
                 <div id="graphOpt">
                     <div class="inline-block" style="text-align: left; width: max-content;">
-                        <!--グラフライン表示/非表示(スキル発動時発生型)-->
+                        <div class="opt2">
+                            <button type="button" id="updateGraphBtn" onclick="funcs.graph.SetGraphData('update')">グラフを更新</button>
+                        </div>
+                        <!-- グラフライン表示/非表示(スキル発動時発生型) -->
                         <div class="opt2">
                             <div id="graphline_onSkillAct"></div>
                         </div>
-                        <!--グラフライン表示/非表示(攻撃ヒット時発生型)-->
+                        <!-- グラフライン表示/非表示(攻撃ヒット時発生型) -->
                         <div class="opt2">
                             <div id="graphline_onHit"></div>
                         </div>
-                        <!--ツールチップソート-->
+                        <!-- グラフ切り替え -->
+                        <div class="opt2">
+                            <div class="optcap10em">
+                                <span class="tooltip-ts" data-tippy-content="フローが1つでもあると設定可能">
+                                    グラフ切り替え：
+                                </span>
+                            </div>
+                            <div class="optset inactive">
+                                <form id="switchGraph">
+                                    <label>
+                                        <input type="radio" name="switchGraph" value="Individual" onchange="funcs.graph.SwitchGraph(this.value)" checked disabled>
+                                        個別
+                                    </label>
+                                    <br>
+                                    <label>
+                                        <input type="radio" name="switchGraph" value="Flow" onchange="funcs.graph.SwitchGraph(this.value)" disabled>
+                                        フロー
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- グラフ軽量化 -->
+                        <div class="opt2">
+                            <div class="optcap10em">
+                                <span>
+                                    グラフ軽量化：
+                                </span>
+                            </div>
+                            <div class="optset">
+                                <form id="shinGraph">
+                                    <label
+                                        class="tooltip-ts"
+                                        data-tippy-content="
+                                            「通常」 + DPSを設定したときのグラフが軽量化<br>
+                                            ただし、凡例に表示される値は<br>
+                                            割合ダメージが発生する前後で最も近いタイミングのものとなる
+                                        "
+                                    >
+                                        <input type="radio" name="shinGraph" value="2" onchange="funcs.graph.SetGraphData()">
+                                        最大
+                                    </label>
+                                    <br>
+                                    <label
+                                        class="tooltip-ts"
+                                        data-tippy-content="
+                                            最小プロット間隔がウィンドウ幅や秒数によって変化(1f～30f)<br>
+                                            攻撃ヒット時発生型のグラフが若干ガタつく可能性あり(値自体は正確(なはず))<br>
+                                            「なし」同様、DPS0以外のときは重くなる
+                                        "
+                                    >
+                                        <input type="radio" name="shinGraph" value="1" onchange="funcs.graph.SetGraphData()" checked>
+                                        通常
+                                    </label>
+                                    <br>
+                                    <label
+                                        class="tooltip-ts"
+                                        data-tippy-content="
+                                            最小プロット間隔が1fで固定<br>
+                                            HPに変化がない区間はプロットしていないので、<br>
+                                            DPS0のときは大して重くないが、<br>
+                                            DPS0以外のときは滅茶苦茶重くなる(でも凡例に表示される値は正確)<br>
+                                            PCのスペックに自信がある人用
+                                        "
+                                    >
+                                        <input type="radio" name="shinGraph" value="0" onchange="funcs.graph.SetGraphData()">
+                                        なし
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- ツールチップソート -->
+                        <!--
                         <div class="opt2">
                             <div class="optcap10em">
                                 <label for="sortGraphTooltip" class="tooltip-ts" data-tippy-content="ONにするとグラフのツールチップが<br>HPソート(昇順)で表示される">
@@ -336,6 +486,7 @@
                                 <input type="checkbox" id="sortGraphTooltip" onclick="graph.sortGraphTooltip=this.checked">
                             </div>
                         </div>
+                        -->
                     </div>
                 </div>
             </div>
@@ -348,11 +499,13 @@
             <div class="inline-block" style="width: calc(100% - 3.5em);">
                 <p>いろいろチェック付けたり選択したりしてHPの変化を楽しんでね</p>
                 <p>攻撃ヒット時発生型の攻撃間隔は海外版wikiの60fpsの値を元に計算したから誤差があるかもしれない</p>
-                <p><span style="text-decoration: line-through;">自己バフはまだ実装してないから[追加]でクラスを修羅とか天魔天狗とかに設定しても再動短縮とかスキル時間延長とか反映されない</span> 2021/05/27(木)追加 (漏れがあるかもしれない)</p>
-                <p>グラフの色が見分けづらいのは<span style="text-decoration: line-through;">仕様です</span> すまん<!--　(変更したいときは下の折り畳み参照)--></p>
-                <p>グラフは凡例の名前をクリックすると表示/非表示を切り替え可能</p>
-                <p>グラフは右クリックから画像として保存できる模様</p>
-                <p>[2022/10/09(日)追記] 確率で攻撃力アップするものも割合ダメージに影響するようだが、<span style="text-decoration: line-through;">実装とか面倒なので</span>グラフには反映されていない</p>
+                <p>グラフについて</p>
+                <p style="margin-left: 1em;">・グラフエリアの上のスクロールバーでズーム可能</p>
+                <p style="margin-left: 1em;">・十字はカーソルオーバー中は追従、クリックするとカーソルを外してもその位置に戻る(ダブルクリックで解除)</p>
+                <p style="margin-left: 1em;">・凡例の名前をクリックすると表示/非表示を切り替え可能</p>
+                <p style="margin-left: 1em;">・フローを作ってもグラフの右下の「グラフ切り替え」を「フロー」にしないと表示されないので注意</p>
+                <p style="margin-left: 1em;">・右上の[･･･]から画像として保存可能</p>
+                <p>確率で攻撃力アップするものも割合ダメージに影響するようだが、<span style="text-decoration: line-through;">実装とか面倒なので</span>グラフには反映されていない</p>
                 <p>不具合報告や意見・要望がある方は<a href="https://docs.google.com/forms/d/e/1FAIpQLSemyP4z1Vrn7-6-Iqv2QfsWHYXQ6lWj_fqQ_CChEKr6sI6OaQ/viewform" target="_blank">こちらから</a></p>
                 <p><span style="color: white;">レイアウトのセンスがほしい</span></p>
             </div>
@@ -415,13 +568,19 @@
                 <p style="margin-top: 2em;">ツール集へ<a href="https://evilgod-aigis.github.io/aigistools/">戻る</a></p>
             </div>
         </div>
-
+        
+        <!-- ツールチップ -->
         <script src="https://unpkg.com/popper.js@1"></script>
         <script src="https://unpkg.com/tippy.js@5"></script>
+        <!-- lodash -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-crosshair@1.1.6"></script>
+        <!-- amCharts5 -->
+        <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/themes/Responsive.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/plugins/exporting.js"></script>
+        <!-- my js -->
         <script src="./HPcut/js/import.js"></script>
     </body>
-
 </html>

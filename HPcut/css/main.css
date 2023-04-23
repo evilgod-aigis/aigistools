@@ -9,10 +9,11 @@ p {
 summary {
     cursor: pointer;
 }
-#header {
-    margin: 10px 0;
-    padding: 0;
-    font-size: 18px;
+input[type="number"] {
+    text-align: right;
+}
+table {
+    border-collapse: collapse;
 }
 .inactive {
     position: relative;
@@ -30,8 +31,22 @@ summary {
     display: inline-block;
     vertical-align: top;
 }
+.is-unshown {
+    display: none !important;
+}
+#header {
+    margin: 10px 0;
+    padding: 0;
+    overflow: hidden;
+}
+#header span {
+    font-size: 24px;
+}
+#contents {
+    margin-top: 20px;
+}
 
-/*設定部分*/
+/* 設定部分 */
 #main {
     margin-bottom: 10px;
     padding: 0;
@@ -89,6 +104,7 @@ summary {
 }
 .box {
     text-align: left;
+    white-space: nowrap;
 }
 input {
     margin: 0;
@@ -96,11 +112,9 @@ input {
 }
 .number1 {
     width: 50px;
-    text-align: right;
 }
 .number2 {
     width: 80px;
-    text-align: right;
 }
 input[type="checkbox"] {
     margin-right: 3px;
@@ -111,49 +125,89 @@ input[type="checkbox"] {
     height: 20px;
     line-height: 1;
 }
-/*設定部分　ここまで*/
+/* 設定部分　ここまで */
 
-/*ユニットデータテーブル*/
+/* ユニットデータテーブル */
 #unitsData {
     margin-bottom: 10px;
     padding: 0;
     height: auto;
+    width: fit-content;
     clear: both;
 }
-#unitsTable {
+#unitsTable, #customFlowTable {
     font-size: 14px;
     font-weight: normal;
-    border-collapse: collapse;
+    width: 100%;
+    max-width: 85em;
 }
-.unitsHead {
+.unitsHead, #customFlowHead {
     text-align: center;
-    background-color: rgb(200, 200, 200);
+    background: rgb(200, 200, 200);
 }
-#unitsTable td:nth-child(1) { width: 12em; text-align: left;}       /*名前*/
-#unitsTable td:nth-child(2) { width: 8.5em; text-align: left;}      /*属性*/
-#unitsTable td:nth-child(3) { width: 9.5em; text-align: left;}      /*その他*/
-#unitsTable td:nth-child(4) { width: 4.5em; text-align: center;}    /*配置型*/
-#unitsTable td:nth-child(5) { width: 2.5em; text-align: center;}    /*レア*/
-#unitsTable td:nth-child(6) { width: 10.5em; text-align: left;}     /*クラス*/
-#unitsTable td:nth-child(7) { width: 8.5em; text-align: left;}      /*好感度*/
-#unitsTable td:nth-child(8) { width: 3.5em; text-align: center;}    /*スキル*/
-#unitsTable td:nth-child(9) { width: 3.5em; text-align: center;}    /*対象*/
-#unitsTable td:nth-child(10) { width: 5em; text-align: right;}      /*初回*/
-#unitsTable td:nth-child(11) { width: 5em; text-align: right;}      /*間隔*/
-#unitsTable td:nth-child(12) { width: 3.5em; text-align: right;}    /*減少率*/
-#unitsTable td:nth-child(13) { width: 3em; text-align: center;}     /*特攻*/
-#unitsTable td:nth-child(14) { width: 3.5em; text-align: center;}   /*削除*/
-.delUnitBtn {
+#customFlowTable {
+    table-layout: fixed;
+}
+#unitsTable th:nth-child(14) {
+    font-size: 24px;
+    cursor: pointer;
+}
+#unitsTable th:nth-child(14).up-triangle::after {
+    content: "▲";
+}
+#unitsTable th:nth-child(14).down-triangle::after {
+    content: "▼";
+}
+#unitsTable .col1 { width: 12em; }      /* 名前 */
+#unitsTable .col2 { width: 8.5em; }     /* 属性 */
+#unitsTable .col3 { width: 9.5em; }     /* その他 */
+#unitsTable .col4 { width: 4.5em; }   /* 配置型 */
+#unitsTable .col5 { width: 2.5em; }   /* レア */
+#unitsTable .col6 { width: 10.5em; }    /* クラス */
+#unitsTable .col7 { width: 8.5em; }     /* 好感度 */
+#unitsTable .col8 { width: 3.5em; }   /* スキル */
+#unitsTable .col9 { width: 3.5em; }   /* 対象 */
+#unitsTable .col10 { width: 5em; }     /* 初回 */
+#unitsTable .col11 { width: 5em; }     /* 間隔 */
+#unitsTable .col12 { width: 4.5em; }   /* 減少率 */
+#unitsTable .col13 { width: 3em; }    /* 特攻 */
+#unitsTable .col14 { width: 3.5em; }  /* 削除 */
+/* 名前, 属性, その他, クラス, 好感度 */
+#unitsTable td:nth-child(1)
+, #unitsTable td:nth-child(2)
+, #unitsTable td:nth-child(3)
+, #unitsTable td:nth-child(6)
+, #unitsTable td:nth-child(7) {
+    text-align: left;
+}
+/* 配置型, レア, スキル, 対象, 特攻, 削除 */
+#unitsTable td:nth-child(4)
+, #unitsTable td:nth-child(5)
+, #unitsTable td:nth-child(8)
+, #unitsTable td:nth-child(9)
+, #unitsTable td:nth-child(13)
+, #unitsTable td:nth-child(14) {
+    text-align: center;
+}
+/* 初回, 間隔, 減少率 */
+#unitsTable td:nth-child(10)
+, #unitsTable td:nth-child(11)
+, #unitsTable td:nth-child(12) {
+    text-align: right;
+}
+.delUnitBtn, .addUnitBtn, .flowLogBtn, .editFlowBtn, .delFlowBtn, .addFlowBtn {
     width: 100%;
 }
-.unitAddBtn {
-    width: 100%;
+#customFlowTable .col1 {
+    width: 3em;
 }
-/*ユニットデータテーブル　ここまで*/
+#customFlowTable .col5, #customFlowTable .col6, #customFlowTable .col7 {
+    width: 3.5em;
+}
+/* ユニットデータテーブル　ここまで */
 
-/*モーダル*/
-.modal {
-    display: none;
+/* モーダル */
+#modal {
     z-index: 1;
     position: fixed;
     top: 0;
@@ -161,13 +215,10 @@ input[type="checkbox"] {
     height: 100%;
     width: 100%;
 }
-.isShown {
-    display: block;
-}
 #overlay {
     height: 120%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 #modalContent {
     position: absolute;
@@ -175,29 +226,30 @@ input[type="checkbox"] {
     left: 50%;
     transform: translate(-50%,-50%);
     
-    min-height: auto;
-    max-height: 95%;
-    /*min-width: min-content;*/
-    max-width: 840px;
-    padding: 1em;
+    padding: 2vh 2vw;
     border: 2px solid orange;
     border-radius: 5px;
     background: white;
-    overflow: auto;
+    max-height: 95vh;
+    width: 730px;
+    max-width: 90%;
 }
 #modalHeader {
     margin-bottom: 10px;
     font-size: 18px;
+    min-height: 28px;
 }
 #modalBody {
     margin: 0;
     padding: 0;
-    overflow: auto;
+    max-height: calc(95vh - 160px);
+    overflow-x: none;
+    overflow-y: scroll;
 }
 .modalOpt1 {
     margin-bottom: 10px;
     padding: 0;
-    min-width: 500px;
+    width: 100%;
     max-width: 100%;
     display: inline-block;
     vertical-align: top;
@@ -210,14 +262,12 @@ input[type="checkbox"] {
 .modalOpt3 {
     margin: 0 10px 10px 0;
     padding: 0;
-    display: inline-block;
-    vertical-align: top;
 }
 .modalOptset1 {
     margin: 0;
     padding: 0;
     height: auto;
-    width: auto;
+    width: calc(100% - 10em);
     display: inline-block;
     vertical-align: top;
 }
@@ -225,15 +275,24 @@ input[type="checkbox"] {
     margin: 0;
     padding: 0;
     height: auto;
-    width: auto;
+    width: calc(100% - 9em);
     display: inline-block;
     vertical-align: top;
 }
-.modal .box {
+.modalOptset3 {
+    margin: 0;
+    padding: 2px 5px;
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+#modal .box {
     margin: 0;
     padding: 0;
 }
-.modal input[type="number"] {
+#modal input[type="number"] {
     width: 50px;
 }
 .reqMark::after {
@@ -243,20 +302,15 @@ input[type="checkbox"] {
 #modalName {
     width: 12em;
 }
-.modalAttr {
+.modalAttr, .modalClass, .modalNote {
     margin-right: 5px;
     width: 12em;
 }
-.modalClass {
-    margin-right: 5px;
-    width: 12em;
-}
-.modalNote {
-    margin-right: 5px;
-    width: 12em;
+.modalNext {
+    width: 3em !important;
 }
 .modalTarget {
-    width: 5em;
+    width: 7.5em;
 }
 .modalDmgMulTarget {
     width: 5em;
@@ -274,6 +328,9 @@ input[type="checkbox"] {
 #modalFooter {
     margin: 0;
     padding: 0;
+    min-height: 120px;
+    max-height: 120px;
+    position: relative;
 }
 #modalFooter button {
     vertical-align: 0;
@@ -283,30 +340,258 @@ input[type="checkbox"] {
 }
 .buttonArea {
     margin: 0 auto;
-    width: max-content;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
 }
-/*モーダル　ここまで*/
+/* モーダル　ここまで */
 
-/*グラフのところ*/
-#graph {
-    margin-bottom: 10px;
+/* ガントチャート */
+#modalGantt {
+    margin: 20px 0 0 0;
     padding: 0;
-    width: auto;
+    width: 100%;
+}
+#modalGantt table {
+    width: 100%;
+}
+#modalGantt table tr {
+    height: 30px;
+}
+#modalGantt table th:nth-of-type(1)
+, #modalGantt table td:nth-of-type(1) {
+    width: 17em;
+    text-align: center;
+    position: relative;
+}
+#modalGantt table th:nth-of-type(3)
+, #modalGantt table td:nth-of-type(3) {
+    width: 3.5em;
+    text-align: center;
+}
+#modalGantt table .addGanttBtn {
+    position: absolute;
+    right: 5px;
+}
+.ganttTimeArea {
+    margin: 0;
+    height: 30px;
+    position: relative;
+}
+.ganttTimeArea div {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    position: absolute;
+}
+.time-0 {
+    left: 0;
+}
+.time-50 {
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.time-100 {
+    right: 0;
+}
+.unselectable {
+    color: black;
+    background: #cccc;
+}
+.ganttBarArea {
+    margin: 0 10px;
+    height: 30px;
+    width: calc(100% - 20px);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    position: relative;
+}
+.ganttBarArea .vLine {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: calc(25% - 0.5px);
+    border-right: 1px dashed black;
+    display: inline-block;
+}
+.ganttBar {
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    display: inline-block;
+}
+.ganttBar.onSkillAct {
+    background: #f00c;
+}
+.ganttBar.onHit {
+    background: #00fc;
+}
+.ganttBar.buffer {
+    background: #0f0c;
+}
+.ganttBar .end {
+    margin: 0;
+    padding: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    cursor: ew-resize;
+}
+.ganttBar .end.left {
+    border-left: 10px solid black;
+    left: 0;
+}
+.ganttBar .end.right {
+    border-right: 10px solid black;
+    right: 0;
+}
+.tooltip-ganttUnit, .tooltip-bar {
+    z-index: 2;
+    border: 2px solid orange;
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    margin: 0;
+    padding: 2px;
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    /* top: -100%; */
+    left: 50%;
+    transform: translate(-50%, 0%);
+    cursor: auto;
+}
+.tooltip-ganttUnit {
+    text-align: left;
+    bottom: 2em;
+}
+.tooltip-ganttUnit select {
+    margin-left: 3px;
+}
+.tooltip-bar {
+    /* top: -50px; */
+    bottom: 25px;
+}
+.tooltip-bar input[type="number"] {
+    margin-left: 3px;
+}
+.tooltip-bar .sec {
+    width: 3.5em !important;
+}
+.tooltip-bar .frame {
+    width: 2.5em !important;
+}
+#ganttAlart {
+    margin: 10px 0;
+    min-height: 1em;
+    color: red;
+}
+/* ガントチャート　ここまで */
+
+/* フロー行動ログ */
+.modalFlowLog {
+    width: 100%;
+}
+.modalFlowLog table th {
+    background: #cccc;
+}
+#modalFlowLogConfig .col1 { width: 5em; }
+#modalFlowLogConfig .col2 { width: 8em; }
+#modalFlowLogConfig .col3 { width: 5em; }
+#modalFlowLogConfig .col4 { width: 13em; }
+#modalFlowLogConfig form {
+    padding-left: 5px;
+}
+#modalFlowLogConfig label {
+    display: block;
+}
+#modalFlowLogConfig .clickable {
+    margin-left: 5px;
+    cursor: pointer;
+}
+#modalFlowLogTable {
+    margin-top: 20px;
+}
+#modalFlowLogTable .col1 { width: 4.5em; }
+#modalFlowLogTable .col2 { min-width: 7em; }
+#modalFlowLogTable .col3 { min-width: 7em; }
+#modalFlowLogTable .col4 { width: 6em; }
+#modalFlowLogTable td:nth-of-type(1)
+, #modalFlowLogTable td:nth-of-type(4) {
+    padding-right: 3px;
+    text-align: right;
+}
+#modalFlowLogTable td:nth-of-type(3) {
+    padding: 0 3px;
+}
+.modalFlowLog .onSkillAct div
+, .modalFlowLog .onHit div
+, .modalFlowLog .buffer_deploy div
+, .modalFlowLog .buffer_skill div {
+    margin: 0 4px;
+    padding-left: 1em;
+    height: 100%;
+    position: relative;
+}
+.modalFlowLog .onSkillAct div::after
+, .modalFlowLog .onHit div::after
+, .modalFlowLog .buffer_deploy div::after
+, .modalFlowLog .buffer_skill div::after {
+    content: "";
+    border-radius: 100%;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    transform: translate(0%, -50%);
+}
+.modalFlowLog .onSkillAct div::after {
+    background: #f009;
+}
+.modalFlowLog .onHit div::after {
+    background: #00f9;
+}
+.modalFlowLog .buffer_deploy div::after {
+    background: #0f09;
+}
+.modalFlowLog .buffer_skill div::after {
+    background: linear-gradient(120deg, #0f09 0%, #0f09 50%, #0ffb 50%, #0ffb 100%);
+}
+#modalFlowLogTable span {
+    min-width: 5.5em;
+    display: inline-block;
+    white-space: nowrap;
+}
+/* フロー行動ログ */
+
+/* グラフのところ */
+#graph {
+    margin: 10px 0;
+    padding: 0;
     height: auto;
+    width: auto;
     clear: both;
 }
 #graphArea {
     margin: 0;
     padding: 0;
+    width: 100%;
     min-width: 500px;
-    height: 100vh;
-    max-height: 600px;
 }
-#canvas {
-    width: auto;
+#updateGraphBtn {
+    height: 2em;
+    width: 100%;
+}
+#chart {
+    min-height: 100vh;
+    width: 100%;
     min-width: 500px;
-    height: 100vh;
-    max-height: 600px;
 }
 #graphOpt {
     text-align: right;
@@ -337,9 +622,9 @@ input[type="checkbox"] {
     color: white;
     background: rgb(100, 100, 100);
 }
-/*グラフのところ　ここまで*/
+/* グラフのところ　ここまで */
 
-/*フッタ*/
+/* フッタ */
 #footer {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -384,4 +669,4 @@ input[type="checkbox"] {
     margin: 10px 0;
     overflow: hidden;
 }
-/*フッタ　ここまで*/
+/* フッタ　ここまで */

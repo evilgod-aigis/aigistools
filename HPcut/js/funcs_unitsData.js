@@ -1,670 +1,573 @@
 funcs.unitsData = {};
 
-//ユニット追加
+// ユニット追加
 funcs.unitsData.AddUnit = type => {
     if(!(type in lists.units)) return;
     
-    const newUnitData = _.cloneDeep(lists.units[type].template);
-    const isAddable = document.getElementsByClassName("reqMark").length === 0;
-    const inputs = {
-        "ユニット名": document.getElementById("modalName").value,
-        "属性": _.compact(_.map(document.getElementsByClassName("modalAttr"), elem => elem.value)),
-        "配置型": document.getElementById("modalDepType").value,
-        "レアリティ": document.getElementById("modalRarity").value,
-        "クラス": _.compact(_.map(document.getElementsByClassName("modalClass"), elem => elem.value)),
-        "好感度ボーナス": document.getElementById("modalAff").value,
-        "その他": _.compact(_.map(document.getElementsByClassName("modalNote"), elem => elem.value)),
-        "攻撃間隔": {
-            "非スキル中": _.map(document.getElementsByClassName("modalAtkInt-0"), elem => elem.value),
-            "通常スキル中": _.map(document.getElementsByClassName("modalAtkInt-1"), elem => elem.value),
-            "覚醒スキル中": _.map(document.getElementsByClassName("modalAtkInt-2"), elem => elem.value)
-        },
-        "対象": _.map(document.getElementsByClassName("modalTarget"), elem => elem.value),
-        "スキル遷移": _.map(document.getElementsByClassName("modalTrans"), elem => elem.value),
-        "HP減少発生": _.map(document.getElementsByClassName("modalTrig"), elem => elem.value),
-        "再動": {
-            A: _.map(document.getElementsByClassName("modalCT_A"), elem => elem.value),
-            B: _.map(document.getElementsByClassName("modalCT_B"), elem => elem.value)
-        },
-        "継続": {
-            A: _.map(document.getElementsByClassName("modalDur_A"), elem => elem.value),
-            B: _.map(document.getElementsByClassName("modalDur_B"), elem => elem.value)
-        },
-        "HP減少率": _.map(document.getElementsByClassName("modalHPred"), elem => elem.value),
-        "特攻": {
-            "倍率": _.map(document.getElementsByClassName("modalDmgMul"), elem => elem.value),
-            "対象": _.map(document.getElementsByClassName("modalDmgMulTarget"), elem => elem.value)
-        },
-        "スキル回数倍率": [
-            _.map(document.getElementsByClassName("modalMulByNum-0"), elem => Number(elem.value)),
-            _.map(document.getElementsByClassName("modalMulByNum-1"), elem => Number(elem.value))
-        ]
-    };
-    const checked = {
-        "スキル": [
-            document.getElementById("check_modalSkillInfo-0").checked,
-            document.getElementById("check_modalSkillInfo-1").checked
-        ],
-        "特攻": [
-            document.getElementById("check_modalDmgMul-0").checked,
-            document.getElementById("check_modalDmgMul-1").checked
-        ]
-    };
-    if(type === "onHit") {
-        checked["攻撃間隔"] = [
-            document.getElementById("check_modalAtkInt-0").checked,
-            document.getElementById("check_modalAtkInt-1").checked,
-            document.getElementById("check_modalAtkInt-2").checked
-        ];
-    }
-    const atkIntTerm = [ "非スキル中", "通常スキル中", "覚醒スキル中" ];
-    const skillState = [ "通常", "覚醒" ];
-    
-    if(isAddable) {
-        newUnitData.id = lists.units[type].list.slice(-1)[0].id + 1;
-        newUnitData.added = true;
-        
-        const info = newUnitData.unitInfo;
-        info.unitName = inputs["ユニット名"];
-        info.attribution = inputs["属性"];
-        if(info.attribution.length === 0) {
-            info.attribution.push("なし");
+    const isOnHit = type === "onHit";
+    const skillState = {};
+    if(document.getElementById("check_modalSkillInfo-0").checked) skillState["通常"] = 0;
+    if(document.getElementById("check_modalSkillInfo-1").checked) skillState["覚醒"] = 1;
+    const noHPred = {};
+    _.forEach(skillState, (index, state) => {
+        const modalSkillInfo = document.getElementById(`modalSkillInfo-${index}`);
+        noHPred[state] = _.every(modalSkillInfo.getElementsByClassName("modalOptset3"), elem => 
+            !(elem.getElementsByClassName("modalTarget")[0].value && Number(elem.getElementsByClassName("modalHPred")[0].value))
+        );
+    });
+    if(document.getElementsByClassName("reqMark").length || _.some(noHPred, bool => bool)) {
+        const lackTerms = _.intersection(
+            [ "ユニット名", "配置型", "レアリティ", "クラス", "好感度ボーナス" ]
+            , _.map(document.getElementsByClassName("reqMark"), elem => elem.innerText)
+        );
+        if(isOnHit) {
+            const checkbox_modalAtkInt0 = document.getElementById("check_modalAtkInt-0");
+            if(checkbox_modalAtkInt0.checked && checkbox_modalAtkInt0.parentElement.getElementsByClassName("reqMark").length)
+                lackTerms.push("非スキル中の攻撃間隔");
+            _.forEach(skillState, (index, state) => {
+                if(document.getElementById(`check_modalAtkInt-${index + 1}`).parentElement.getElementsByClassName("reqMark").length)
+                    lackTerms.push(`${state}スキル中の攻撃間隔`);
+            });
         }
-        info.deployType = inputs["配置型"];
-        info.rarity = inputs["レアリティ"];
-        info.unitClass.selectable = inputs["クラス"].length > 1;
-        info.unitClass.selected = inputs["クラス"][0];
-        info.unitClass.options = inputs["クラス"];
-        info.affection.bonus = inputs["好感度ボーナス"];
-        switch(info.affection.bonus) {
-            case "再動短縮":
-            case "攻撃硬直":
-                info.affection.percentage = 150;
-                break;
-            case "時間延長":
-                info.affection.percentage = 100;
-                break;
-        }
-        info.note = inputs["その他"];
-        if(type === "onHit") {
-            for(let i = 0; i < 3; ++i) {
-                if(!checked["攻撃間隔"][i]) continue;
-                info.atkInterval_uncorr[i].startup = Number(inputs["攻撃間隔"][atkIntTerm[i]][0]);
-                info.atkInterval_uncorr[i].remain = Number(inputs["攻撃間隔"][atkIntTerm[i]][1]);
-                info.atkInterval_uncorr[i].cooldown = Number(inputs["攻撃間隔"][atkIntTerm[i]][2]);
-            }
-        }
-        
-        const skill = newUnitData.skill;
-        for(let i = 0; i < 2; ++i) {
-            if(!checked["スキル"][i]) continue;
-            skill.awaken.selected = skillState[i];
-            skill.target[i] = inputs["対象"][i];
-            skill.trans[i] = inputs["スキル遷移"][i];
-            skill.CT_uncorr[i].A = Number(inputs["再動"].A[i]);
-            skill.dur_uncorr[i].A = Number(inputs["継続"].A[i]);
-            skill.HPred_uncorr[i] = Number(inputs["HP減少率"][i]);
-            if(checked["特攻"][i]) {
-                skill.dmgMul.options[i] = "あり";
-                skill.dmgMul.mul[i] = Number(inputs["特攻"]["倍率"][i]);
-                skill.dmgMul.target[i] = inputs["特攻"]["対象"][i];
-            }
-            skill.mulByNum[i] = inputs["スキル回数倍率"][i];
-            
-            switch(skill.trans[i]) {
-                case "-":
-                    if(type === "onHit") {
-                        skill.trigger[i] = "スキル中hit";
-                    }
-                    break;
-                case "交互":
-                case "初回A":
-                    skill.trigger[i] = inputs["HP減少発生"][i];
-                    skill.CT_uncorr[i].B = Number(inputs["再動"].B[i]);
-                    skill.dur_uncorr[i].B = Number(inputs["継続"].B[i]);
-                    break;
-            }
-        }
-        if(checked["スキル"][0] && checked["スキル"][1]) {
-            skill.awaken.selectable = true;
-            skill.awaken.selected = "通常";
-        }
-        
-        lists.units[type].list.push(newUnitData);
-        ++lists.units[type].num.added;
-        funcs.createHTML.modal.Destroy(type);
-        funcs.graph.SetGraphData([ "onSkillAct", "onHit" ].map(ty => ty === type));
-    } else {
-        const reqTerms = [ "ユニット名", "配置型", "レアリティ", "好感度ボーナス" ];
-        const lackTerms = [];
-        
-        reqTerms.forEach(reqTerm => {
-            if(inputs[reqTerm] === "") {
-                lackTerms.push(reqTerm);
-            }
+        _.forEach(skillState, (index, state) => {
+            const modalSkillInfo = document.getElementById(`modalSkillInfo-${index}`);
+            if(modalSkillInfo.getElementsByClassName("reqMark").length)
+                lackTerms.push(`${state}スキル`);
+            else if(noHPred[state])
+                lackTerms.push(`${state}スキルのHP減少率(全てなしか0になっている)`);
         });
-        if(_.isEmpty(inputs["クラス"])) {
-            lackTerms.push("クラス");
-        }
-        if(type === "onHit") {
-            for(let i = 0; i < 3; ++i) {
-                if(!checked["攻撃間隔"][i]) continue;
-                if(_.compact(inputs["攻撃間隔"][atkIntTerm[i]]).length !== 3) {
-                    lackTerms.push(`${atkIntTerm[i]}の攻撃間隔`);
+        
+        document.getElementById("addUnitAlart").innerHTML = `
+            ※以下の事項が記入されてません<br>
+            <span class="inline-block">${lackTerms.join("、</span><span class='inline-block'>")}</span>
+        `;
+        return;
+    }
+    const newUnitData = _.cloneDeep(lists.units[type].template);
+    const inputs = {
+        unitName: document.getElementById("modalName").value
+        , attr: _.compact(_.map(document.getElementsByClassName("modalAttr"), elem => elem.value))
+        , depType: document.getElementById("modalDepType").value
+        , rarity: document.getElementById("modalRarity").value
+        , cl: _.compact(_.map(document.getElementsByClassName("modalClass"), elem => elem.value))
+        , aff: document.getElementById("modalAff").value
+        , note: _.compact(_.map(document.getElementsByClassName("modalNote"), elem => elem.value))
+        , atkInt: {}
+        , skillInfo: {}
+    };
+    if(isOnHit) {
+        if(document.getElementById("check_modalAtkInt-0").checked)
+            inputs.atkInt.notSkill = _.map(document.getElementsByClassName("modalAtkInt-0"), elem => Number(elem.value) * 2);
+        else inputs.atkInt.notSkill = [ null, null, null ];
+    }
+    _.forEach(skillState, (index, state) => {
+        if(isOnHit)
+            inputs.atkInt[state] = _.map(document.getElementsByClassName(`modalAtkInt-${index + 1}`), elem => Number(elem.value) * 2);
+        inputs.skillInfo[state] = []
+        _.forEach(document.getElementById(`modalSkillInfo-${index}`).getElementsByClassName("modalOptset3"), (elem, i) => {
+            const obj = {
+                CT: Number(elem.getElementsByClassName("modalCT")[0].value)
+                , dur: Number(elem.getElementsByClassName("modalDur")[0].value)
+                , next: Number(elem.getElementsByClassName("modalNext")[0].value) - 1
+            };
+            inputs.skillInfo[state].push(obj);
+            const target = elem.getElementsByClassName("modalTarget")[0].value;
+            if(target) {
+                const HPred = Number(elem.getElementsByClassName("modalHPred")[0].value);
+                if(HPred) {
+                    obj.target = target;
+                    obj.HPred = HPred;
+                    const simult = Number(elem.getElementsByClassName("modalSimult")[0].value);
+                    if(target === "射程内") {
+                        if(simult > 0) obj.simult = simult;
+                        else obj.simult = Infinity;
+                    }
                 }
             }
-        }
-        for(let i = 0; i < 2; ++i) {
-            if(!checked["スキル"][i]) continue;
-            switch(inputs["スキル遷移"][i]) {
-                case "交互":
-                case "初回A":
-                    if(inputs["HP減少発生"][i] === ""
-                    || inputs["再動"].B[i] === ""
-                    || inputs["継続"].B[i] === "") {
-                        lackTerms.push(`${skillState[i]}スキル`);
-                        continue;
-                    }
-                case "-":
-                    if(inputs["再動"].A[i] === ""
-                    || inputs["継続"].A[i] === ""
-                    || inputs["HP減少率"][i] === ""
-                    || (checked["特攻"][i] && inputs["特攻"]["倍率"][i] === "")) {
-                        lackTerms.push(`${skillState[i]}スキル`);
-                        continue;
-                    }
-                    break;
+            if(elem.getElementsByClassName("check_modalWT")[0].checked)
+                obj.WT = Number(elem.getElementsByClassName("modalWT")[0].value);
+            if(elem.getElementsByClassName("check_modalDmgMul")[0].checked) {
+                obj.dmgMul = {};
+                obj.dmgMul.mul = Number(elem.getElementsByClassName("modalDmgMul")[0].value);
+                obj.dmgMul.target = elem.getElementsByClassName("modalDmgMulTarget")[0].value;
             }
-        }
-        
-        const elem_addUnitAlart = document.getElementById("addUnitAlart");
-        elem_addUnitAlart.innerHTML = `
-            ※以下の事項が記入されてません<br>
-            ${lackTerms.join("、")}
-        `;
+            if(obj.next < 0) {
+                obj.next = i + 1;
+                inputs.skillInfo[state].push({CT: Infinity, dur: Infinity, next: i + 1});
+                return false;
+            } else if(obj.next <= i) return false;
+        })
+    });
+    
+    newUnitData.id = _.last(lists.units[type].list).id + 1;
+    newUnitData.added = true;
+    
+    const info = newUnitData.unitInfo;
+    info.unitName = inputs.unitName;
+    info.attribution = inputs.attr;
+    if(info.attribution.length === 0) {
+        info.attribution.push("なし");
     }
+    info.deployType = inputs.depType;
+    info.rarity = inputs.rarity;
+    info.unitClass.selected = inputs.cl[0];
+    if(inputs.cl.length > 1) info.unitClass.options = inputs.cl;
+    info.affection.bonus = inputs.aff;
+    switch(info.affection.bonus) {
+        case "再動短縮":
+        case "攻撃硬直":
+            info.affection.percentage = 150;
+            break;
+        case "時間延長":
+            if(isOnHit) info.affection.percentage = 150;
+            else info.affection.percentage = 100;
+            break;
+    }
+    info.note = inputs.note;
+    if(isOnHit) {
+        _.forEach(inputs.atkInt, (arr, state) => {
+            info.atkInterval.corr[state] = { startup: null, remain: null, cooldown: null };
+            info.atkInterval.uncorr[state] = { startup: arr[0], remain: arr[1], cooldown: arr[2] };
+            if(state !== "notSkill" && inputs.atkInt.notSkill[0] !== null && !_.isEqual(inputs.atkInt.notSkill, arr))
+                info.atkInterval.uncorr[state].isFixed = true;
+        });
+    }
+    
+    newUnitData.skill.selected = Object.keys(skillState)[0];
+    _.forEach(skillState, (noUse, state) => {
+        const skill = newUnitData.skill.detail[state] = [];
+        _.forEach(inputs.skillInfo[state], (skillInfo, i) => {
+            skill.push({
+                corr: { WT: null, CT: null, dur: null }
+                , uncorr: { CT: skillInfo.CT, dur: skillInfo.dur }
+                , next: skillInfo.next
+            });
+            const obj = skill[i];
+            if("target" in skillInfo) {
+                obj.target = skillInfo.target;
+                obj.corr.HPred = null;
+                obj.uncorr.HPred = skillInfo.HPred;
+                if("simult" in skillInfo) obj.simult = skillInfo.simult;
+            }
+            if("WT" in skillInfo) obj.uncorr.WT = skillInfo.WT;
+            if("dmgMul" in skillInfo) {
+                obj.dmgMul = {};
+                obj.dmgMul.checked = false;
+                obj.dmgMul.mul = skillInfo.dmgMul.mul;
+                obj.dmgMul.target = skillInfo.dmgMul.target;
+            }
+        });
+    });
+    funcs.unitsData.SetBufferInfo(newUnitData);    
+    lists.units[type].list.push(newUnitData);
+    if(saveData.db) funcs.saveData.UpdateData("added", `${type}[${lists.units[type].num.added}]`, newUnitData);
+    ++lists.units[type].num.added;
+    funcs.createHTML.modal.Destroy(type);
+    funcs.SetBuffDisabled(type, newUnitData);
+    funcs.graph.SetGraphData("add", type, newUnitData);
 }
-//ユニット削除
+// ユニット削除
 funcs.unitsData.DeleteUnit = (type, id) => {
     if(!(type in lists.units)) return;
     
     const index = _.findIndex(lists.units[type].list, { id: id });
     lists.units[type].list.splice(index, 1);
-    --lists.units[type].num.added; 
-    funcs.graph.SetGraphData([ "onSkillAct", "onHit" ].map(ty => ty === type));
+    if(saveData.db) funcs.saveData.DeleteData("added", `${type}[${index - lists.units[type].num.notEP - lists.units[type].num.EP}]`);
+    --lists.units[type].num.added;
+    funcs.SetBuffDisabled();
+    const tableBody = document.getElementById(`table_${type}`);
+    tableBody.children[index].remove();
+    const seriesIndex = type === "onSkillAct" ? index : index + lists.units.onSkillAct.list.length;
+    graph.chart.series.removeIndex(seriesIndex);
+    graph.legend.itemContainers.removeIndex(seriesIndex);
 }
 
-//ユニットがバフ等の対象か判定
-funcs.unitsData.IsTarget = (unit, info) => {
-    const unitInfos = {
-        deployType: [unit.unitInfo.deployType], //array
-        rarity: unit.unitInfo.rarity,
-        unitClass: unit.unitInfo.unitClass.selected,
-        attribution: unit.unitInfo.attribution,        //array
-        note: unit.unitInfo.note                //array
-    };
-    unitInfos.deployType.push(_.findKey(lists.depTypeCount, arr => _.includes(arr, unitInfos.unitClass)));
-    const IsTargetSub = target => {
-        const key = Object.keys(target)[0];
-        if(key in unitInfos) {
-            if(Array.isArray(unitInfos[key])) {
-                return !_.isEmpty(_.intersection(target[key], unitInfos[key]));
-            } else {
-                return _.includes(target[key], unitInfos[key]);
-            }
-        } else {
-            return 1;
-        }
-    }
-    let isTarget = 0;
-    if(info.AndOr === "and") {
-        isTarget = 1;
-        info.target.forEach(tar => isTarget &= IsTargetSub(tar));
-    } else if(info.AndOr === "or") {
-        isTarget = 0;
-        info.target.forEach(tar => isTarget |= IsTargetSub(tar));
-    }
-    return isTarget;
-}
-
-//好感度ボーナス込みの初動・再動
-funcs.unitsData.CorrectSkill = unit => {
+// 自身がバッファーならその情報を保持させる
+funcs.unitsData.SetBufferInfo = (unit, isBuffer = false) => {
+    if(isBuffer && !("unitInfo" in unit)) return;
+    delete unit.buff;
+    delete unit.selfBuff;
+    const asBuffer = {}, selfBuff = {};
     const unitName = unit.unitInfo.unitName;
     const rarity = unit.unitInfo.rarity;
-    const AW = unit.skill.awaken.selected;
-    const aff = unit.unitInfo.affection;    //object
-    const WT = unit.skill.WT;               //object
-    const CT = unit.skill.CT;               //object
-    const dur = unit.skill.dur;             //object
-    const index = [ "通常", "覚醒" ].indexOf(AW);
-    const CT_uncorr = unit.skill.CT_uncorr[index];      //object
-    const dur_uncorr = unit.skill.dur_uncorr[index];    //object
-    const toggle = CT_uncorr.B !== null;
-    let corr = NaN;
-    //150%ボーナスの補正値
-    if(aff.bonus !== null && aff.bonus !== "その他") {
-        if(_.includes(unit.unitInfo.attribution, "ちび")) {
-            corr = 0.15;
-        } else {
-            corr = Number(_.findKey(lists.specialAff[aff.bonus][rarity], arr => _.includes(arr, unitName)));
+    const unitClass = unit.unitInfo.unitClass;
+    const RT_array = Object.keys(lists.RearguardTactician);
+    _.forEach(lists.selfBuff, (list, buffType) => {
+        const buffs = [];
+        _.forEach(_.filter(list, { buffer: unitName }), bufferInfo => {
+            if("rarity" in bufferInfo && bufferInfo.rarity !== rarity) return;
+            buffs.push(bufferInfo);
+        });
+        if("options" in unitClass) 
+            _.forEach(unitClass.options, cl => _.forEach(_.filter(list, { buffer: cl }), bufferInfo => buffs.push(bufferInfo)));
+        else
+            _.forEach(_.filter(list, { buffer: unitClass.selected }), bufferInfo => buffs.push(bufferInfo));
+        if(buffs.length) selfBuff[buffType] = buffs;
+    });
+    if(isBuffer) {
+        if(_.size(selfBuff)) unit.unitInfo.selfBuff = selfBuff;
+        return;
+    }
+    _.forEach(lists.buff, (buff, buffType) => {
+        if(buffType === "rCTdepType") {
+            const unitClass_RT = "options" in unitClass
+                ? _.intersection(unitClass.options, RT_array)
+                : _.intersection([ unitClass.selected ], RT_array);
+            if(unitClass_RT.length) {
+                asBuffer.rCTdepType = {};
+                _.forEach(unitClass_RT, cl => asBuffer.rCTdepType[cl] = lists.RearguardTactician[cl]);
+            }
+            return;
+        }
+        const buffs = [];
+        _.forEach(_.filter(buff.list, { buffer: unitName }), bufferInfo => {
+            if("rarity" in bufferInfo && bufferInfo.rarity !== rarity) return;
+            buffs.push(bufferInfo);
+        });
+        if("options" in unitClass) 
+            _.forEach(unitClass.options, cl => _.forEach(_.filter(buff.list, { buffer: cl }), bufferInfo => buffs.push(bufferInfo)));
+        else
+            _.forEach(_.filter(buff.list, { buffer: unitClass.selected }), bufferInfo => buffs.push(bufferInfo));
+        if(buffs.length) asBuffer[buffType] = buffs;
+    });
+    if(_.size(asBuffer)) unit.buff = asBuffer;
+    if(_.size(selfBuff)) unit.selfBuff = selfBuff;
+}
+
+// 指定されたバフ量を返す
+funcs.unitsData.GetBuffValue = (unit, buffType, isRate = true, withSelfBuff = true) => {
+    if(!(buffType in lists.buff)) return;
+    const unitName = unit.unitInfo.unitName;
+    const unitClass = unit.unitInfo.unitClass.selected;
+    const depTypes = [ unit.unitInfo.deployType ];
+    if(depTypes[0] === "遠近距離型") {
+        const depTypeCount = _.findKey(lists.depTypeCount, arr => _.includes(arr, unitClass));
+        if(depTypeCount) depTypes.push(depTypeCount);
+    }
+    let buffValue = 0;
+    let buffValue_self = 0;
+    let bufferInfo;
+    const list = lists.buff[buffType].list;
+    if(buffType === "rCT") {
+        // 配置型の再動短縮
+        let rCTdepType = lists.buff.rCTdepType.list;
+        _.forEach(depTypes, depType => buffValue = Math.max(buffValue, rCTdepType[depType]));
+        // 自身による効果
+        if("buff" in unit && "rCTdepType" in unit.buff) {
+            rCTdepType = unit.buff.rCTdepType[unitClass];
+            _.forEach(depTypes, depType => buffValue = Math.max(buffValue, rCTdepType[depType]));
         }
     }
-    if(_.isNaN(corr)) {
-        switch(rarity) {
-            case "黒":
-                corr = 0.25; 
-                break;
-            case "白":
-            case "青":
-                corr = 0.2;
-                break;
-            case "金":
-                corr = 0.18;
-                break;
-        }
-        if(_.includes(unit.unitInfo.note, "男性")) {
-            corr = _.floor(corr * 0.9, 2);
-        }
+    // 自身による効果
+    if("buff" in unit && buffType in unit.buff) {
+        _.forEach(_.filter(unit.buff[buffType], { buffer: unitName }), bufferInfo => {
+            if(withSelfBuff || bufferInfo.req !== "skill")
+                buffValue = Math.max(buffValue, bufferInfo.value * funcs.unitsData.IsTarget(unit, bufferInfo));
+        });
+        // 順番的にユニット名→クラス名(未覚醒→覚醒)で入れているので後ろから探したほうが早いはず
+        bufferInfo = _.findLast(unit.buff[buffType], { buffer: unitClass });
+        if(bufferInfo && (withSelfBuff || bufferInfo.req !== "skill"))
+            buffValue = Math.max(buffValue, bufferInfo.value * funcs.unitsData.IsTarget(unit, bufferInfo));
     }
-    //CT・スキル時間の計算
+    // 自己バフ
+    if("selfBuff" in unit && buffType in unit.selfBuff && withSelfBuff) {
+        bufferInfo = _.find(unit.selfBuff[buffType], { buffer: unitName });
+        if(bufferInfo) buffValue_self = bufferInfo.value;
+        bufferInfo = _.find(unit.selfBuff[buffType], { buffer: unitClass });
+        // 個人のバフと職バフが重なったら加算? 乗算? 最大値?
+        if(bufferInfo) buffValue_self += bufferInfo.value;
+    }
+    // 選択したオプションによる効果
+    _.forEach(_.filter(document.getElementById(buffType).getElementsByTagName("input"), elem => elem.checked), elem => {
+        bufferInfo = _.find(list, { id: Number(elem.value) });
+        buffValue = Math.max(buffValue, bufferInfo.value * funcs.unitsData.IsTarget(unit, bufferInfo));
+    });
+    
+    if(buffType === "skillExtend") return (100 + buffValue) * (100 + buffValue_self) / 10000.0 - 1.0;
+    if(buffType === "haste") return [ buffValue / 100.0, buffValue_self / 100.0 ];
+    if(isRate) return Math.max(buffValue, buffValue_self) / 100.0;
+    return Math.max(buffValue, buffValue_self);
+}
+
+// ユニットがバフ等の対象か判定
+funcs.unitsData.IsTarget = (unit, info) => {
+    if(!("target" in info)) return true;
+    
+    const unitInfos = {
+        deployType: [ unit.unitInfo.deployType ]    // array
+        , rarity: unit.unitInfo.rarity
+        , unitClass: unit.unitInfo.unitClass.selected
+        , attribution: unit.unitInfo.attribution    // array
+        , note: unit.unitInfo.note                  // array
+    };
+    if(unitInfos.deployType[0] === "遠近距離型") {
+        const depTypeCount = _.findKey(lists.depTypeCount, arr => _.includes(arr, unitInfos.unitClass));
+        if(depTypeCount) unitInfos.deployType.push(depTypeCount);
+    }
+    
+    return _.some(info.target, tar =>
+        _.every(tar, (arr, key) => {
+            if(Array.isArray(unitInfos[key])) {
+                return !_.isEmpty(_.intersection(arr, unitInfos[key]));
+            } else {
+                return _.includes(arr, unitInfos[key])
+                    || (key === "unitClass" && _.includes(arr, "王子") && _.includes(unitInfos.unitClass, "王子"));
+            }
+        })
+    );
+}
+
+// 好感度ボーナス込みの初動・再動
+funcs.unitsData.CorrectSkill = (unit, withBuff = true) => {
+    const rateByAff = { CT: 1.0, dur: 1.0 };
+    const unitName = unit.unitInfo.unitName;
+    const rarity = unit.unitInfo.rarity;
+    const aff = unit.unitInfo.affection;    // object
+    const AW = unit.skill.selected;
+    const skill = unit.skill.detail[AW];   // array
+    const IsBomb = (obj) => obj.uncorr.dur < 5 || ((unitName === "爆砲の新兵カノン" || unitName === "聖夜の祝星砲カノン") && AW === "覚醒" && obj.uncorr.dur === 5)
+    
+    let corr = 0.0;
+    let corr_WT = 1.0;
+    // 150%ボーナスの補正値
+    switch(rarity) {
+        case "黒":
+            corr = 0.25;
+            break;
+        case "白":
+            corr = 0.2;
+            corr_WT = 0.5;
+            break;
+        case "青":
+            corr = 0.2;
+            corr_WT = 0.6;
+            break;
+        case "金":
+            corr = 0.18;
+            corr_WT = 0.66;
+            break;
+    }
+    if(_.includes(unit.unitInfo.note, "男性")) corr = _.floor(corr * 0.9, 2);
+    if(_.includes(unit.unitInfo.attribution, "ちび")) corr = 0.15;
+    if(aff.bonus in lists.specialAff) {
+        const corr_specail = Number(_.findKey(lists.specialAff[aff.bonus][rarity], arr => _.includes(arr, unitName)));
+        if(!isNaN(corr_specail)) corr = corr_specail;
+    }
+    
+    // 好感度150%ボーナス
     switch(aff.bonus) {
         case "再動短縮":
             aff.changeRate = -Math.round(corr * (aff.percentage - 100) * 2);
-            CT.A = CT_uncorr.A * (1 + aff.changeRate / 100);
-            if(toggle) CT.B = CT_uncorr.B * (1 + aff.changeRate / 100);
-            dur.A = dur_uncorr.A;
-            dur.B = dur_uncorr.B;
+            rateByAff.CT += aff.changeRate / 100;
             break;
         case "時間延長":
             aff.changeRate = Math.round(corr * (aff.percentage - 100) * 2);
-            CT.A = CT_uncorr.A;
-            CT.B = CT_uncorr.B;
-            dur.A = dur_uncorr.A * (1 + aff.changeRate / 100);
-            if(toggle) dur.B = dur_uncorr.B * (1 + aff.changeRate / 100);
+            rateByAff.dur += aff.changeRate / 100;
             break;
-        default:
-            CT.A = CT_uncorr.A;
-            CT.B = CT_uncorr.B;
-            dur.A = dur_uncorr.A;
-            dur.B = dur_uncorr.B;
     }
-    //スキル時間延長(固定値)
-    let bufferInfo = _.findLast(lists.buff.skillExtend_fixed.list, { buffer: unitName, awaken: AW });
-    let extend = 0;
-    if(bufferInfo !== undefined) {
-        extend = Math.max(extend, bufferInfo.value);
-    }
-    const elems_checkbox = document.querySelectorAll("#skillExtend_fixed input");
-    const checked = [];
-    _.forEach(elems_checkbox, elem => {
-        if(elem.checked) {
-            checked.push(new Function(`return ${elem.value}`)());
-        }
-    });
-    checked.forEach(buffer => {
-        bufferInfo = _.find(lists.buff.skillExtend_fixed.list, { buffer: buffer.buffer, awaken: buffer.awaken });
-        extend = Math.max(extend, bufferInfo.value * funcs.unitsData.IsTarget(unit, bufferInfo));
-    });
-    dur.A += extend;
-    if(toggle) dur.B += extend;
     
-    //初動の計算
-    const specialWT = _.find(lists.specialWT, { unitName: unitName, rarity: rarity, skillAwaken: AW });
-    if(specialWT !== undefined) {
-        WT.A = specialWT.WT;
+    if(withBuff) {
+        const buffValue = {
+            WT: 1.0 - funcs.unitsData.GetBuffValue(unit, "rWT")
+            , CT: 1.0 - funcs.unitsData.GetBuffValue(unit, "rCT", true, false)
+            , dur: 1.0 + funcs.unitsData.GetBuffValue(unit, "skillExtend")
+            , dur_fixed: funcs.unitsData.GetBuffValue(unit, "skillExtendFixed", false)
+        };
+        _.forEach(skill, obj => {
+            if("WT" in obj.uncorr) obj.corr.WT = obj.uncorr.WT * buffValue.WT;
+            else {
+                if(rarity === "黒") obj.corr.WT = (AW === "通常" ? 1 : 5) * buffValue.WT;
+                else obj.corr.WT = obj.uncorr.CT * corr_WT * buffValue.WT;
+            }
+            obj.corr.CT = obj.uncorr.CT * rateByAff.CT * buffValue.CT;
+            if(IsBomb(obj)) obj.corr.dur = obj.uncorr.dur;
+            else obj.corr.dur = obj.uncorr.dur * rateByAff.dur * buffValue.dur + buffValue.dur_fixed;
+        });
     } else {
-        switch(rarity) {
-            case "黒":
-                WT.A = AW === "通常" ? 1 : 5;
-                if(toggle) WT.B = AW === "通常" ? 1 : 5;
-                break;
-            case "白":
-                WT.A = CT_uncorr.A * 0.5;
-                if(toggle) WT.B = CT_uncorr.B * 0.5;
-                break;
-            case "青":
-                WT.A = CT_uncorr.A * 0.6;
-                if(toggle) WT.B = CT_uncorr.B * 0.6;
-                break;
-            case "金":
-                WT.A = CT_uncorr.A * 0.66;
-                if(toggle) WT.B = CT_uncorr.B * 0.66;
-                break;
-            default:
-                WT.A = CT_uncorr.A;
-                if(toggle) WT.B = CT_uncorr.B;
-        }
-    }
-}
-
-//指定されたバフの率を返す
-funcs.unitsData.GetRate = (unit, term) => {
-    if(!(term in lists.buff)) return;
-    const unitName = unit.unitInfo.unitName;
-    const unitClass = unit.unitInfo.unitClass.selected;
-    let buffRate = 0;
-    let bufferInfo;
-    if(term === "rCT") {
-        //近接型・遠距離型・遠近距離型の再動短縮
-        bufferInfo = _.find(lists.buff.rCTdepType.list, { deployType: unit.unitInfo.deployType });
-        buffRate = bufferInfo.rate;
-    }
-    //自身による効果
-    bufferInfo = _.findLast(lists.buff[term].list, { buffer: unitName });
-    if(bufferInfo !== undefined) {
-        buffRate = Math.max(buffRate, bufferInfo.rate);
-    }
-    bufferInfo = _.findLast(lists.buff[term].list, { buffer: unitClass });
-    if(bufferInfo !== undefined) {
-        buffRate = Math.max(buffRate, bufferInfo.rate);
-    }
-    if(term in lists.selfBuff) {
-        bufferInfo = _.find(lists.selfBuff[term], { buffer: unitName });
-        if(bufferInfo !== undefined) {
-            buffRate = Math.max(buffRate, bufferInfo.rate);
-        }
-        bufferInfo = _.find(lists.selfBuff[term], { buffer: unitClass });
-        if(bufferInfo !== undefined) {
-            buffRate = Math.max(buffRate, bufferInfo.rate);
-        }
-    }
-    //選択したオプションによる効果
-    const elems_checkbox = document.querySelectorAll(`#${term} input`);
-    const checked = [];
-    _.forEach(elems_checkbox, elem => {
-        if(elem.checked) {
-            checked.push(new Function(`return ${elem.value}`)());
-        }
-    });
-    checked.forEach(buffer => {
-        bufferInfo = _.find(lists.buff[term].list, { buffer: buffer.buffer, awaken: buffer.awaken });
-        buffRate = Math.max(buffRate, bufferInfo.rate * funcs.unitsData.IsTarget(unit, bufferInfo));
-    });
-    return buffRate / 100;
-}
-
-//初回HP減少発生までの時間
-//  攻撃ヒット時発生型で非スキル中hitとか出てきたら要編集
-funcs.unitsData.SetFirstTime = unit => {
-    funcs.unitsData.CorrectSkill(unit);
-    const WTred = funcs.unitsData.GetRate(unit, "rWT");
-    const CTred = funcs.unitsData.GetRate(unit, "rCT");
-    const extend = funcs.unitsData.GetRate(unit, "skillExtend");
-    const unitName = unit.unitInfo.unitName;
-    const index = [ "通常", "覚醒" ].indexOf(unit.skill.awaken.selected);
-    const isBomb = {
-        A: (unit.skill.dur.A < 5) || ((unitName === "爆砲の新兵カノン" || unitName === "聖夜の祝星砲カノン") && index === 1 && unit.skill.dur.A === 5),
-        B: unit.skill.dur.B < 5
-    };
-    const WT = {
-        A: unit.skill.WT.A * (1 - WTred),
-        B: unit.skill.WT.B * (1 - WTred)
-    };
-    const CT = {
-        A: unit.skill.CT.A * (1 - CTred),
-        B: unit.skill.CT.B * (1 - CTred)
-    };
-    const dur = {
-        A: unit.skill.dur.A * (1 + extend * !isBomb.A),
-        B: unit.skill.dur.B * (1 + extend * !isBomb.B)
-    };
-    
-    let firstTime = WT.A;
-    if(unit.skill.trigger[index] === "B"
-    || unit.skill.trigger[index] === "スキル中hitB") {
-        let delta = dur.A + CT.A;
-        if(num.redeployInterval.use) {
-            delta =
-                Math.min(
-                    delta,
-                    num.redeployInterval.value + WT.B
-                );
-        }
-        firstTime += delta;
-    }
-    unit.skill.firstTime = firstTime;
-}
-
-//スキル点火時を基点としたHP減少発生の間隔
-//  攻撃ヒット時発生型で非スキル中hitとか出てきたら要編集
-funcs.unitsData.SetInterval = (unit, type) => {
-    //funcs.unitsData.CorrectSkill(unit);
-    const WTred = funcs.unitsData.GetRate(unit, "rWT");
-    const CTred = funcs.unitsData.GetRate(unit, "rCT");
-    const extend = funcs.unitsData.GetRate(unit, "skillExtend");
-    const unitName = unit.unitInfo.unitName;
-    const index = [ "通常", "覚醒" ].indexOf(unit.skill.awaken.selected);
-    const isBomb = {
-        A: (unit.skill.dur.A < 5) || ((unitName === "爆砲の新兵カノン" || unitName === "聖夜の祝星砲カノン") && index === 1 && unit.skill.dur.A === 5),
-        B: unit.skill.dur.B < 5
-    };
-    const WT = {
-        A: unit.skill.WT.A * (1 - WTred),
-        B: unit.skill.WT.B * (1 - WTred)
-    };
-    const CT = {
-        A: unit.skill.CT.A * (1 - CTred),
-        B: unit.skill.CT.B * (1 - CTred)
-    };
-    const dur = {
-        A: unit.skill.dur.A * (1 + extend * !isBomb.A),
-        B: unit.skill.dur.B * (1 + extend * !isBomb.B)
-    };
-    
-    let interval = 0;
-    let intervalRedeploy = 0;
-    switch(unit.skill.trans[index]) {
-        case "-":
-            interval = dur.A + CT.A;
-            intervalRedeploy = num.redeployInterval.value + WT.A + (type === "onSkillAct" ? 0 : dur.A);
-            break;
-        case "交互":
-            interval = dur.A + CT.A + dur.B + CT.B;
-            switch(unit.skill.trigger[index]) {
-                case "スキル中hitA":
-                    intervalRedeploy =
-                        dur.A + num.redeployInterval.value
-                        + Math.min(
-                            WT.B + dur.B + CT.B,    //A終了直後撤退
-                            CT.A + WT.A,            //B点火直後撤退
-                            WT.B + num.redeployInterval.value + WT.A    //B点火直後撤退+A終了直後撤退
-                        );
-                    break;
-                case "スキル中hitB":
-                    intervalRedeploy =
-                        dur.B + num.redeployInterval.value
-                        + Math.min(
-                            WT.A + dur.A + CT.A,    //B終了直後撤退
-                            WT.B + CT.B,            //A点火直後撤退
-                            WT.A + num.redeployInterval.value + WT.B    //A点火直後撤退+B終了直後撤退
-                        );
-                    break;
-                default:
-                    intervalRedeploy =
-                        num.redeployInterval.value
-                        + Math.min(
-                            WT.A + dur.A + CT.A,    //B点火直後撤退
-                            WT.B + dur.B + CT.B,    //A点火直後撤退
-                            num.redeployInterval.value + WT.A + WT.B    //A点火直後撤退+B点火直後撤退
-                        );
+        _.forEach(skill, obj => {
+            if("WT" in obj.uncorr) obj.corr.WT = obj.uncorr.WT;
+            else {
+                if(rarity === "黒") obj.corr.WT = (AW === "通常" ? 1 : 5);
+                else obj.corr.WT = obj.uncorr.CT * corr_WT;
             }
-            break;
-        case "初回A":
-            switch(unit.skill.trigger[index]) {
-                case "A":
-                case "スキル中hitA":
-                    interval = Infinity;
-                    intervalRedeploy = Infinity;
-                    break;
-                case "B":
-                case "スキル中hitB":
-                    interval = dur.B + CT.B;
-                    intervalRedeploy = num.redeployInterval.value + WT.B + (type === "onSkillAct" ? 0 : dur.B);
-                    break;
-            }
-            break;
+            obj.corr.CT = obj.uncorr.CT * rateByAff.CT;
+            if(IsBomb(obj)) obj.corr.dur = obj.uncorr.dur;
+            else obj.corr.dur = obj.uncorr.dur * rateByAff.dur;
+        });
     }
-    unit.skill.interval = num.redeployInterval.use ? Math.min(interval, intervalRedeploy) : interval;
 }
 
-//攻撃間隔
-funcs.unitsData.SetAtkInterval = unit => {
+// HP減少発生タイミング(初回/間隔)
+// 攻撃間隔(非スキル中/スキル中)
+funcs.unitsData.GetTimingOrAtkInt = (type, unit) => {
+    if(!(type in lists.units)) return;
+    
+    const AW = unit.skill.selected;
+    
+    switch(type) {
+        case "onSkillAct":
+            const skill = unit.skill.detail[AW];    // array
+            let now = skill[0];                     // object
+            let times = 0; 
+            // timing[0]: 初回まで, timing[1]: 間隔
+            const timing = [ now.corr.WT, 0 ];
+            let delta;
+            while(true) {
+                if("target" in now && times++) break;
+                const next = skill[now.next];       // object
+                delta = now.corr.dur + now.corr.CT;
+                if(num.redeployInterval.use) delta = Math.min(delta, num.redeployInterval.value + next.corr.WT);
+                timing[times] += delta;
+                now = next;
+            }
+            return _.map(timing, t => `${t.toFixed(2)}秒`);
+        case "onHit":
+            const atkIntervalInfo = unit.unitInfo.atkInterval.corr;
+            const atkInterval = [ null, null ];
+            _.forEach([ atkIntervalInfo.notSkill, atkIntervalInfo[AW] ], (atkInt, i) => {
+                if(atkInt.startup)
+                    atkInterval[i] = Math.floor((atkInt.startup + atkInt.remain - 1) / 2) + Math.floor((atkInt.cooldown - 1) / 2) + 2;
+            });
+            return _.map(atkInterval, atkInt => atkInt ? `${atkInt}f` : "-");
+    }
+}
+
+// 攻撃間隔
+funcs.unitsData.CorrectAtkInterval = (unit, withBuff = true) => {
     if(!("atkInterval" in unit.unitInfo)) return;
-    const hasteRate = funcs.unitsData.GetRate(unit, "haste");
-    const redMapEffRate = funcs.unitsData.GetRate(unit, "redMapEff");
     const unitName = unit.unitInfo.unitName;
     const unitClass = unit.unitInfo.unitClass.selected;
     const rarity = unit.unitInfo.rarity;
-    const aff = unit.unitInfo.affection;    //object
-    const skillAW = unit.skill.awaken.selected;
-    const indexes = [ 0, [ "通常", "覚醒" ].indexOf(skillAW) + 1 ];
-    let corr = NaN;
-    let atkCooldown_fixed = 0;
+    const aff = unit.unitInfo.affection;    // object
+    const keys = [ "notSkill", ...Object.keys(unit.skill.detail) ];
+    let corr = 0.0;
     let bufferInfo;
-    //150%ボーナスの補正値
-    if(aff.bonus !== null && aff.bonus !== "その他") {
-        if(_.includes(unit.unitInfo.attribution, "ちび")) {
-            corr = 0.10;
-        } else {
-            corr = Number(_.findKey(lists.specialAff[aff.bonus][rarity], arr => _.includes(arr, unitName)));
-        }
+    // 150%ボーナスの補正値
+    switch(rarity) {
+        case "黒":
+            corr = 0.18; 
+            break;
+        case "白":
+        case "青":
+            corr = 0.14;
+            break;
+        case "金":
+            corr = 0.13;
+            break;
     }
-    if(_.isNaN(corr)) {
-        switch(rarity) {
-            case "黒":
-                corr = 0.18; 
-                break;
-            case "白":
-            case "青":
-                corr = 0.14;
-                break;
-            case "金":
-                corr = 0.13;
-                break;
-        }
-        if(_.includes(unit.unitInfo.note, "男性")) {
-            corr = _.floor(corr * 0.95, 2);
-        }
+    if(_.includes(unit.unitInfo.note, "男性")) corr = _.floor(corr * 0.95, 2);
+    if(_.includes(unit.unitInfo.attribution, "ちび")) corr = 0.10;
+    if(aff.bonus in lists.specialAff) {
+        const corr_specail = Number(_.findKey(lists.specialAff[aff.bonus][rarity], arr => _.includes(arr, unitName)));
+        if(!isNaN(corr_specail)) corr = corr_specail;
     }
-    //攻撃速度の計算
-    //好感度ボーナス
+    
+    // 攻撃速度の計算
+    // 好感度ボーナス
+    let rate = 1.0;
     switch(aff.bonus) {
         case "攻撃硬直":
             aff.changeRate = -Math.round(corr * (aff.percentage - 100) * 2);
+            rate = 1 + aff.changeRate / 100;
             break;
     }
-    //硬直短縮(固定値化)
-    //選択したオプションによる効果
-    const elems_checkbox = document.querySelectorAll("#hasteFixed input");
-    const checked = [];
-    _.forEach(elems_checkbox, elem => {
-        if(elem.checked) {
-            checked.push(new Function(`return ${elem.value}`)());
-        }
-    });
-    checked.forEach(buffer => {
-        bufferInfo = _.find(lists.buff.hasteFixed.list, { buffer: buffer.buffer, awaken: buffer.awaken });
-        atkCooldown_fixed = Math.max(atkCooldown_fixed, bufferInfo.atkCooldown * funcs.unitsData.IsTarget(unit, bufferInfo));
-    });
     
-    indexes.forEach((index, i) => {
-        const atkStartup = unit.unitInfo.atkInterval_uncorr[index].startup;
-        const atkRemain = unit.unitInfo.atkInterval_uncorr[index].remain;
-        let atkCooldown = unit.unitInfo.atkInterval_uncorr[index].cooldown;
-        //第二覚醒等で変化するもの
-        bufferInfo = _.find(lists.selfBuff.hasteFixed, { buffer: unitName });
-        if(bufferInfo !== undefined) {
-            atkCooldown = bufferInfo.atkCooldown;
+    // 第二覚醒等で変化するもの(min? max? 個人とクラスが被ったときはどうか?)
+    const changed = { startup: Infinity, remain: Infinity, cooldown: Infinity };
+    if("selfBuff" in unit && "hasteFixed" in unit.selfBuff) {
+        bufferInfo = _.find(unit.selfBuff.hasteFixed, { buffer: unitName });
+        if(bufferInfo) changed[bufferInfo.change] = bufferInfo.value;
+        bufferInfo = _.find(unit.selfBuff.hasteFixed, { buffer: unitClass });
+        if(bufferInfo) changed[bufferInfo.change] = Math.min(changed[bufferInfo.change], bufferInfo.value);
+    }
+    
+    if(withBuff) {
+        const buffValue = {
+            haste: _.map(funcs.unitsData.GetBuffValue(unit, "haste"), rate => 1.0 - rate)
+            , atkCD_fixed: funcs.unitsData.GetBuffValue(unit, "hasteFixed", false, false)
+            , redMapEff: 1.0 - funcs.unitsData.GetBuffValue(unit, "redMapEff")
         }
-        bufferInfo = _.find(lists.selfBuff.hasteFixed, { buffer: unitClass });
-        if(bufferInfo !== undefined) {
-            atkCooldown = bufferInfo.atkCooldown;
-        }
+        _.forEach(keys, key => {
+            const isNotFixed = !("isFixed" in unit.unitInfo.atkInterval.uncorr[key]);
+            const atkStartup = Number.isFinite(changed.startup) && isNotFixed ? changed.startup : unit.unitInfo.atkInterval.uncorr[key].startup;
+            if(!atkStartup) return;
             
-        if(atkStartup !== null) {
-            if(aff.bonus === "攻撃硬直") {
-                atkCooldown = Math.ceil((atkCooldown - 1) * (1 + aff.changeRate / 100) + 1);
-            }
-            //硬直短縮(固定値化)
-            //自身による効果
-            if(index !== 0) {
-                bufferInfo = _.findLast(lists.buff.hasteFixed.list, { buffer: unitName, awaken: skillAW });
-                if(bufferInfo !== undefined) {
-                    atkCooldown_fixed = Math.max(atkCooldown_fixed, bufferInfo.atkCooldown);
-                }
-            }
-            //                 ↓ceil?
-            atkCooldown = Math.floor(((atkCooldown_fixed > 0 ? atkCooldown_fixed : atkCooldown) - 1) * (1 - hasteRate) + 1);
-            if(!_.includes(unit.unitInfo.note, "状態異常無効")) {
+            const atkRemain = Number.isFinite(changed.remain) && isNotFixed ? changed.remain : unit.unitInfo.atkInterval.uncorr[key].remain;
+            let atkCooldown = Number.isFinite(changed.cooldown) && isNotFixed ? changed.cooldown : unit.unitInfo.atkInterval.uncorr[key].cooldown;
+            
+            if(aff.bonus === "攻撃硬直") atkCooldown = Math.ceil((atkCooldown - 1) * rate + 1);
+            atkCooldown = buffValue.atkCD_fixed
+                ? Math.floor((buffValue.atkCD_fixed - 1) * buffValue.haste[0] + 1)
+                : Math.floor((atkCooldown - 1) * _.min(buffValue.haste) + 1);
+            //         ↑ceil?
+            if(!_.includes(unit.unitInfo.note, "状態異常無効"))
                 atkCooldown += num.incAtkCooldown_enemy.value * 2;
-            }
-            if(!_.includes(unit.unitInfo.note, "深海適応")) {
-                atkCooldown += Math.ceil(num.incAtkCooldown_map.value * (1 - redMapEffRate)) * 2;
-            }
-            unit.unitInfo.atkInterval[i].startup = atkStartup;
-            unit.unitInfo.atkInterval[i].remain = atkRemain;
-            unit.unitInfo.atkInterval[i].cooldown = atkCooldown;
-        }
-    });
-}
-
-//HP減少率
-funcs.unitsData.SetHPred = unit => {
-    let dmgMul = 1 + funcs.unitsData.GetRate(unit, "giveDmgMul");
-    const takenDmg = 1 + funcs.unitsData.GetRate(unit, "takenDmg");
-    const unitName = unit.unitInfo.unitName;
-    const unitClass = unit.unitInfo.unitClass.selected;
-    const skillAW = unit.skill.awaken.selected;
-    const skillState = [ "通常", "覚醒" ];
-    for(let i = 0; i < 2; ++i) {
-        switch(unitClass) {
-            case "ちびイビルプリンセス":
-            case "ちびイビルクイーン":
-            case "イビルプリンセス":
-            case "イビルクイーン":
-            case "デスブリンガー":
-                unit.skill.HPred_uncorr[i] = 10;
-                break;
-            case "イビルシーカー":
-                unit.skill.HPred_uncorr[i] = 15;
-                break;
-        }
-        
-        let HPred = unit.skill.HPred_uncorr[i];
-        if(HPred === null) continue;
-        if(unit.skill.dmgMul.options[i] === "あり") {
-            dmgMul = Math.max(dmgMul, unit.skill.dmgMul.mul[i]);
-        }
-        unit.skill.HPred[i] = HPred * dmgMul * takenDmg;
+            if(!_.includes(unit.unitInfo.note, "深海適応"))
+                atkCooldown += Math.ceil(num.incAtkCooldown_map.value * buffValue.redMapEff) * 2;
+            unit.unitInfo.atkInterval.corr[key].startup = atkStartup;
+            unit.unitInfo.atkInterval.corr[key].remain = atkRemain;
+            unit.unitInfo.atkInterval.corr[key].cooldown = atkCooldown;
+        });
+    } else {
+        _.forEach(keys, key => {
+            const isNotFixed = !("isFixed" in unit.unitInfo.atkInterval.uncorr[key]);
+            const atkStartup = Number.isFinite(changed.startup) && isNotFixed ? changed.startup : unit.unitInfo.atkInterval.uncorr[key].startup;
+            if(!atkStartup) return;
+            
+            const atkRemain = Number.isFinite(changed.remain) && isNotFixed ? changed.remain : unit.unitInfo.atkInterval.uncorr[key].remain;
+            let atkCooldown = Number.isFinite(changed.cooldown) && isNotFixed ? changed.cooldown : unit.unitInfo.atkInterval.uncorr[key].cooldown;
+            
+            if(aff.bonus === "攻撃硬直") atkCooldown = Math.ceil((atkCooldown - 1) * rate + 1);
+            unit.unitInfo.atkInterval.corr[key].startup = atkStartup;
+            unit.unitInfo.atkInterval.corr[key].remain = atkRemain;
+            unit.unitInfo.atkInterval.corr[key].cooldown = atkCooldown;
+        });
     }
 }
 
-//ユニット数カウント
+// HP減少率
+funcs.unitsData.SetHPred = (unit, withBuff = true) => {
+    //const unitName = unit.unitInfo.unitName;
+    const unitClass = unit.unitInfo.unitClass.selected;
+    const HPred = _.includes(lists.evilPrincess, unitClass)
+        ? (unitClass === "イビルシーカー" ? 15 : 10)
+        : null;
+    
+    if(withBuff) {
+        const buffValue = {
+            dmgMul: 1.0 + funcs.unitsData.GetBuffValue(unit, "giveDmgMul")
+            , takenDmg: 1.0 + funcs.unitsData.GetBuffValue(unit, "takenDmg")
+        };
+        _.forEach(unit.skill.detail[unit.skill.selected], obj => {
+            if(!("target" in obj)) return;
+            if(HPred) obj.uncorr.HPred = HPred;
+            if("dmgMul" in obj && obj.dmgMul.checked)
+                obj.corr.HPred = obj.uncorr.HPred * Math.max(buffValue.dmgMul, obj.dmgMul.mul) * buffValue.takenDmg;
+            else obj.corr.HPred = obj.uncorr.HPred * buffValue.dmgMul * buffValue.takenDmg;
+        });
+    } else {
+        if(!HPred) return;
+        _.forEach(unit.skill.detail[unit.skill.selected], obj => {
+            if(!("target" in obj)) return;
+            obj.uncorr.HPred = HPred;
+        });
+    }
+}
+
+// ユニット数カウント
 funcs.unitsData.CountUnits = () => {
-    const evilPrincess = [
-        "ちびイビルプリンセス",
-        "ちびイビルクイーン",
-        "イビルプリンセス",
-        "イビルクイーン",
-        "イビルシーカー",
-        "デスブリンガー",
-    ];
     _.forEach([ "onSkillAct", "onHit" ], type => {
         const sum = _.reduce(lists.units[type].num, (sum, n) => sum + n, 0);
         if(lists.units[type].list.length === sum) return;
-        //保持しているユニット数データと異なる場合に数え直し
+        // 保持しているユニット数データと異なる場合に数え直し
         _.forEach(lists.units[type].num, (n, key) => lists.units[type].num[key] = 0);
-        lists.units[type].list.forEach(unit => {
-            if(unit.added) {
-                //追加分
-                ++lists.units[type].num.added;
-            } else if(_.includes(evilPrincess, unit.unitInfo.unitClass.selected)) {
-                //イビルプリンセス系
-                ++lists.units[type].num.EP;
-            } else {
-                //非イビルプリンセス系
-                ++lists.units[type].num.notEP;
-            }
+        _.forEach(lists.units[type].list, unit => {
+            if("added" in unit)
+                ++lists.units[type].num.added;  // 追加分
+            else if(_.includes(lists.evilPrincess, unit.unitInfo.unitClass.selected))
+                ++lists.units[type].num.EP;     // イビルプリンセス系
+            else
+                ++lists.units[type].num.notEP;  // 非イビルプリンセス系
         });
     });
 }
