@@ -351,7 +351,7 @@ buff.skill_cat = [
     }
     , {
         name: "セーラ", rarity: "黒", cl: "メイド", AW: "覚醒前", skill: "通常"
-        , stats: { def: "×1.8" }
+        , stats: { def: "×2.0" }
         , target: [
             { cl: [ "王子", "皇帝" ] }
             , { others: [ "全プリンセス系" ] }
@@ -359,7 +359,7 @@ buff.skill_cat = [
     }
     , {
         name: "セーラ", rarity: "黒", cl: "メイド", AW: "覚醒後", skill: "通常"
-        , stats: { def: "×1.8" }
+        , stats: { def: "×2.0" }
         , target: [
             { cl: [ "王子", "皇帝" ] }
             , { others: [ "全プリンセス系" ] }
@@ -367,7 +367,7 @@ buff.skill_cat = [
     }
     , {
         name: "セーラ", rarity: "黒", cl: "メイド", AW: "覚醒後", skill: "覚醒"
-        , stats: { atk: "×1.7", def: "×1.5" }
+        , stats: { atk: "×2.0", def: "×1.5" }
         , target: [
             { cl: [ "王子", "皇帝" ] }
             , { others: [ "全プリンセス系" ] }
@@ -1457,6 +1457,16 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "トワ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"
+        , stats: { atkCd: "6f化" }
+        , target: { cl: [ "ウィッチ", "クロノウィッチ" ] }
+    }
+    , {
+        name: "トワ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒後", skill: "通常"
+        , stats: { atkCd: "6f化" }
+        , target: { cl: [ "ウィッチ", "クロノウィッチ" ] }
+    }
+    , {
         name: "トワ/学園", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒"
         , stats: { draw: "(○)", redep: "40秒" }
         , target: { depType: [ "遠距離" ] }
@@ -1476,6 +1486,11 @@ buff.skill_cat = [
         name: "ロミルダ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒"
         , stats: { ct: "-50%" }
         , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "ちびトワ", rarity: "ちび", cl: "クロノウィッチ", skill: "通常"
+        , stats: { atkCd: "6f化" }
+        , target: { cl: [ "ウィッチ", "クロノウィッチ" ] }
     }
     , {
         name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒前", skill: "通常"

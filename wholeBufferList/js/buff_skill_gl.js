@@ -239,6 +239,14 @@ buff.skill_gl = [
         , stats: { hp: "+40%" }
     }
     , {
+        name: "プロエ", rarity: "黒", cl: "戦の聖霊", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.1" }
+    }
+    , {
+        name: "プロエ", rarity: "黒", cl: "戦の聖霊", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.1" }
+    }
+    , {
         name: "サギリ", rarity: "白", cl: "ぬらりひょん", AW: "覚醒後", skill: "覚醒"
         , stats: { other: "" }
         , note: "隠密付与"
@@ -319,6 +327,10 @@ buff.skill_gl = [
     , {
         name: "シラヌイ", rarity: "白", cl: "ぬりかべ", AW: "覚醒後", skill: "通常"
         , stats: { def: "×1.6" }
+    }
+    , {
+        name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "100/秒", "?/?f" ] }
     }
     , {
         name: "リアナ", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"

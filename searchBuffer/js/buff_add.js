@@ -109,6 +109,16 @@ buff.add = [
         , target: { rarity: [ "銅", "鉄" ] }
     }
     , {
+        name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒前"
+        , stats: { hp: "max300", atk: "max150", def: "max150" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒後"
+        , stats: { hp: "max600", atk: "max300", def: "max300" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
         name: "政務官", cl: "政務官"
         , stats: { atk: "10%", def: "10%" }
         , target: { cl: [ "王子" ] }

@@ -523,8 +523,8 @@ lists.buff.hasteFixed.list = [
         ]
         , compound: { haste: [ { buffer: "時の調停者トワ" } ] }
         , tooltip: "\
-            [スキル・射程内] クラス：ウィッチ系・<br>\
-            　　　　　　　　　　　　 クロノウィッチ系の攻撃硬直6f化\
+            [スキル・全体] クラス：ウィッチ系・<br>\
+            　　　　　　　　　　　 クロノウィッチ系の攻撃硬直6f化\
         "
         , unitInfo: {
             unitName: "時の調停者トワ", deployType: "遠距離型", rarity: "黒"
@@ -537,17 +537,10 @@ lists.buff.hasteFixed.list = [
     , {
         id: null, buffer: "時の調停者トワ", awaken: "覚醒", showAwaken: true
         , value: 11, disabled: null, req: "skill"
-        , target: [
-            { unitClass: [
-                "メイジ系", "下級メイジ", "ちびメイジ", "ちびアークメイジ", "メイジ", "ウォーロック", "アークメイジ", "メイガスアデプト", "メイジデストラクト"
-                , "ウィッチ系", "ちびウィッチ", "ちびアークウィッチ", "ウィッチ", "ロードウィッチ", "アークウィッチ", "ホーリーウィッチ", "ソーサレス"
-                , "クロノウィッチ系", "ちびクロノウィッチ", "ちびアーククロノウィッチ", "クロノウィッチ", "アーククロノウィッチ", "クロノマスター", "クロノマンサー"
-            ] }
-        ]
+        , target: [ { attribution: [ "魔術師" ] } ]
         , compound: { haste: [ { buffer: "時の調停者トワ" } ] }
         , tooltip: "\
-            [スキル・射程内] クラス：メイジ系・ウィッチ系・<br>\
-            　　　　　　　　　　　　 クロノウィッチ系の攻撃硬直6f化\
+            [スキル・射程内] 属性：魔術師の攻撃硬直6f化\
         "
         , unitInfo: {
             unitName: "時の調停者トワ", deployType: "遠距離型", rarity: "黒"

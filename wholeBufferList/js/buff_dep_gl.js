@@ -471,6 +471,10 @@ buff.dep_gl = [
         , stats: { nul: "10%" }
     }
     , {
+        name: "シーラ・ヘルマン", rarity: "黒", cl: "初代大統領【ランス】", AW: "覚醒後"
+        , stats: { def: "+10%" }
+    }
+    , {
         name: "孫堅", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒後"
         , stats: { atk: "+10%" }
     }

@@ -1849,7 +1849,7 @@ funcs.createHTML.modal.Create_customFlowLog = index => {
     
     const txt = `
         <div id="overlay" onclick="funcs.createHTML.modal.Destroy_customFlow()"></div>
-        <div id="modalContent" style="max-width: calc(50em + 2vw);">
+        <div id="modalContent" style="width: 50em;">
             <div id="modalHeader">
                 <span>フロー#${index + 1} 行動ログ</span>
             </div>

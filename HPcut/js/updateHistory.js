@@ -8,6 +8,12 @@ const updateHistory = [
     }
     */
     {
+        date: "2023/04/27(木)",
+        detail: [
+            "調整を反映"
+        ]
+    }
+    , {
         date: "2023/04/23(日)",
         detail: [
             "フローを追加"

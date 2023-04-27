@@ -494,9 +494,6 @@ input[type="checkbox"] {
 /* ガントチャート　ここまで */
 
 /* フロー行動ログ */
-.modalFlowLog {
-    width: 100%;
-}
 .modalFlowLog table th {
     background: #cccc;
 }

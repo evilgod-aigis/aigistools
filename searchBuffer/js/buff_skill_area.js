@@ -45,29 +45,14 @@ buff.skill_area = [
         , note: "ボム"
     }
     , {
-        name: "トワ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"
-        , stats: { atkCd: "6f化" }
-        , target: { cl: [ "ウィッチ", "クロノウィッチ" ] }
-    }
-    , {
-        name: "トワ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒後", skill: "通常"
-        , stats: { atkCd: "6f化" }
-        , target: { cl: [ "ウィッチ", "クロノウィッチ" ] }
-    }
-    , {
         name: "トワ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒"
         , stats: { atkCd: "6f化" }
-        , target: { cl: [ "メイジ", "ウィッチ", "クロノウィッチ" ] }
+        , target: { others: [ "魔術師" ] }
     }
     , {
         name: "ココロ/浴衣", rarity: "白", cl: "クロノウィッチ", AW: "覚醒後", skill: "覚醒"
         , stats: { atkCd: "6f化" }
         , target: { season: [ "サマー" ], depType: [ "遠距離" ] }
-    }
-    , {
-        name: "ちびトワ", rarity: "ちび", cl: "クロノウィッチ", skill: "通常"
-        , stats: { atkCd: "6f化" }
-        , target: { cl: [ "ウィッチ", "クロノウィッチ" ] }
     }
     , {
         name: "フィオレ", rarity: "黒", cl: "ドルイド", AW: "覚醒前", skill: "通常"

@@ -208,6 +208,16 @@ buff.skill_area = [
         , note: "分類未確認"
     }
     , {
+        name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , note: "分類未確認"
+    }
+    , {
         name: "リタ/水着", rarity: "白", cl: "アーチャー", AW: "覚醒前", skill: "通常"
         , stats: { other: "" }
         , note: "隠密付与"
@@ -677,6 +687,14 @@ buff.skill_area = [
     , {
         name: "イエラ", rarity: "白", cl: "スカイヒーラー", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: { atk: "×1.2", def: "×1.2" }
+    }
+    , {
+        name: "シーラ・ヘルマン", rarity: "黒", cl: "初代大統領【ランス】", AW: "覚醒前", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "シーラ・ヘルマン", rarity: "黒", cl: "初代大統領【ランス】", AW: "覚醒後", skill: "通常"
+        , stats: { abn: "-100%" }
     }
     , {
         name: "孫策 伯符", rarity: "黒", cl: "小覇王【恋姫】", AW: "覚醒前", skill: "通常"

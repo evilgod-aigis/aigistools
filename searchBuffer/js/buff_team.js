@@ -127,6 +127,11 @@ buff.team = [
         , target: { cl: [ "ソルジャー", "ヘビーアーマー" ] }
     }
     , {
+        name: "ジェイク", rarity: "白", cl: "ソルジャー", AW: "覚醒後"
+        , stats: { hp: "+7%" }
+        , target: { sex: [ "男性" ] }
+    }
+    , {
         name: "ケイティ/正月", rarity: "白", cl: "ソルジャー", AW: "覚醒後"
         , stats: { mr: "+10" }
         , target: { cl: [ "ソルジャー" ] }
@@ -1346,7 +1351,7 @@ buff.team = [
     , {
         name: "アーシェラ", rarity: "黒", cl: "アーチャー", AW: "覚醒後"
         , stats: { atk: "+10%" }
-        , target: { cl: [ "ボウライダー", "アーチャー", "レンジャー" ] }
+        , target: { others: [ "弓兵" ] }
     }
     , {
         name: "ナナリー/浴衣", rarity: "黒", cl: "アーチャー", AW: "覚醒前"

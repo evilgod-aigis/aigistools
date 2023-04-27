@@ -783,6 +783,16 @@ buff.dep_gl = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "シャジャル", rarity: "黒", cl: "サベージファイター", AW: "覚醒前"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: { home: [ "砂漠の国" ] }
+    }
+    , {
+        name: "シャジャル", rarity: "黒", cl: "サベージファイター", AW: "覚醒後"
+        , stats: { atk: "+15%", def: "+15%", draw: "○" }
+        , target: { home: [ "砂漠の国" ] }
+    }
+    , {
         name: "レジナレア", rarity: "白", cl: "シールダー", AW: "覚醒後"
         , stats: { draw: "○" }
         , target: { cl: [ "ヘビーアーマー", "シールダー" ] }
