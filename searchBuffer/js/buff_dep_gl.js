@@ -270,6 +270,22 @@ buff.dep_gl = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
+        name: "キュウビ/学園", rarity: "黒", cl: "妖狐", AW: "覚醒前"
+        , stats: { draw: "○" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "学園" ] }
+        ]
+    }
+    , {
+        name: "キュウビ/学園", rarity: "黒", cl: "妖狐", AW: "覚醒後"
+        , stats: { draw: "○" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "学園" ] }
+        ]
+    }
+    , {
         name: "堕姫", rarity: "白", cl: "妖狐", AW: "覚醒後"
         , stats: { atk: "-5%" }
         , target: { sex: [ "男性" ] }
@@ -1013,6 +1029,12 @@ buff.dep_gl = [
         name: "アスバール", rarity: "黒", cl: "魔界総帥", AW: "覚醒後"
         , stats: { atk: "+10%", def: "+10%", draw: "○" }
         , target: { others: [ "魔界" ] }
+    }
+    , {
+        name: "魔王の玉座", rarity: "金", cl: "魔王の玉座"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: { others: [ "魔界" ] }
+        , note: "無差別バフと合わせて+15%"
     }
     , {
         name: "パリオス", rarity: "黒", cl: "スカイウォリアー", AW: "覚醒後"

@@ -299,16 +299,20 @@ table.CreateTable = () => {
             newTr = document.createElement("tr");
             _.forEach(table.before, elem => {
                 const newTd = document.createElement("td");
-                if(elem in buffer) {
+                if(elem in buffer)
                     newTd.innerHTML = Array.isArray(buffer[elem]) ? buffer[elem].join("<br>") : buffer[elem];
-                }
                 newTr.appendChild(newTd);
             });
             _.forEach(table.stats, elem => {
                 const newTd = document.createElement("td");
                 if(elem in buffer.stats) {
                     newTd.className = "cell-filled";
-                    newTd.innerHTML = Array.isArray(buffer.stats[elem]) ? buffer.stats[elem].join("<br>") : buffer.stats[elem];
+                    if(Array.isArray(buffer.stats[elem]))
+                        newTd.innerHTML = buffer.stats[elem].join("<br>");
+                    else if(buffer.stats[elem][0] === "m" && buffer.stats[elem].length === 6)
+                        newTd.innerHTML = `max<span style="margin-left: 0.5em;">${buffer.stats[elem].substring(3)}</span>`;
+                    else
+                        newTd.innerHTML = buffer.stats[elem];
                 }
                 newTr.appendChild(newTd);
             });
@@ -320,9 +324,7 @@ table.CreateTable = () => {
                         let textArrSub = [ "" ];
                         _.forEach(and, (arr, cat) => {
                             _.forEach(textArrSub, (text, i) =>
-                                textArrSub[i] = _.map(arr, target =>
-                                    `${text}${text !== "" ? "&" : ""}${target}${cat === "cl" ? "系" : ""}`
-                                )
+                                textArrSub[i] = _.map(arr, target => `${text}${text !== "" ? "&" : ""}${target}${cat === "cl" ? "系" : ""}`)
                             );
                             textArrSub = _.flatten(textArrSub);
                         });
@@ -331,10 +333,8 @@ table.CreateTable = () => {
                 } else {
                     textArr.push("");
                     _.forEach(buffer.target, (arr, cat) => {
-                        _.forEach(textArr, (text, i) => 
-                            textArr[i] = _.map(arr, target =>
-                                `${text}${text !== "" ? "&" : ""}${target}${cat === "cl" ? "系" : ""}`
-                            )
+                        _.forEach(textArr, (text, i) =>
+                            textArr[i] = _.map(arr, target => `${text}${text !== "" ? "&" : ""}${target}${cat === "cl" ? "系" : ""}`)
                         );
                         textArr = _.flatten(textArr);
                     });
@@ -378,9 +378,11 @@ table.ApplyFilter = () => {
         const trs = buffTable.querySelectorAll("tbody tr");
         const shownRowIndexes = [];
         _.forEach(table.list[type].picked, (buffer, i) => {
-            if(((!("rarity" in buffer) && table.filter.rarity["空欄"]) || table.filter.rarity[buffer.rarity])
+            if(
+                ((!("rarity" in buffer) && table.filter.rarity["空欄"]) || table.filter.rarity[buffer.rarity])
                 && (!("AW" in buffer) || table.filter.AW[table.AW_rep[buffer.AW]])
-                && _.some(buffer.stats, (_, stat) => table.filter.stats[stat])) {
+                && _.some(buffer.stats, (_, stat) => table.filter.stats[stat])
+            ) {
                 trs[i].classList.remove("is-unshown");
                 shownRowIndexes.push(i);
             } else
@@ -470,16 +472,16 @@ table.Sort = (_buffType, _colName, _allowReverse = true) => {
         const colIndex = table.column.indexOf(_colName);
         if(_colName === "id") {
             trs_array.sort((a, b) => 
-                Number(a.children[colIndex_id].innerHTML) - Number(b.children[colIndex_id].innerHTML)
+                Number(a.children[colIndex_id].innerText) - Number(b.children[colIndex_id].innerText)
             );
         } else if(_colName === "rarity") {
             trs_array.sort((a, b) => {
                 const tds_a = a.children;
                 const tds_b = b.children;
-                const id_a = Number(tds_a[colIndex_id].innerHTML);
-                const id_b = Number(tds_b[colIndex_id].innerHTML);
-                const rarity_a = tds_a[colIndex].innerHTML;
-                const rarity_b = tds_b[colIndex].innerHTML;
+                const id_a = Number(tds_a[colIndex_id].innerText);
+                const id_b = Number(tds_b[colIndex_id].innerText);
+                const rarity_a = tds_a[colIndex].innerText;
+                const rarity_b = tds_b[colIndex].innerText;
                 if(rarity_a === rarity_b) return id_a - id_b;
                 if(rarity_a === "") return 1;
                 if(rarity_b === "") return -1;
@@ -490,10 +492,10 @@ table.Sort = (_buffType, _colName, _allowReverse = true) => {
             trs_array.sort((a, b) => {
                 const tds_a = a.children;
                 const tds_b = b.children;
-                const id_a = Number(tds_a[colIndex_id].innerHTML);
-                const id_b = Number(tds_b[colIndex_id].innerHTML);
-                const text_a = tds_a[colIndex].innerHTML;
-                const text_b = tds_b[colIndex].innerHTML;
+                const id_a = Number(tds_a[colIndex_id].innerText);
+                const id_b = Number(tds_b[colIndex_id].innerText);
+                const text_a = tds_a[colIndex].innerText;
+                const text_b = tds_b[colIndex].innerText;
                 if(text_a === text_b) return id_a - id_b;
                 if(text_a === "") return 1;
                 if(text_b === "") return -1;

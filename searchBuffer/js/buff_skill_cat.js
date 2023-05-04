@@ -288,6 +288,24 @@ buff.skill_cat = [
         , note: "オート"
     }
     , {
+        name: "キュウビ/学園", rarity: "黒", cl: "妖狐", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "学園" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
+        name: "キュウビ/学園", rarity: "黒", cl: "妖狐", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "学園" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "イズナ", rarity: "白", cl: "妖狐", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2" }
         , target: { race: [ "妖怪" ] }
@@ -1193,8 +1211,8 @@ buff.skill_cat = [
     , {
         name: "リアナ/浴衣", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
         , stats: { redep: "25秒" }
-        , target: { season: [ "サマー", "死亡・撤退最後1体" ] }
-        , note: "発動時"
+        , target: { season: [ "サマー" ] }
+        , note: [ "発動時", "死亡・撤退最後1体" ]
     }
     , {
         name: "デスピア/ハロウィン", rarity: "黒", cl: "ウィッチ", AW: "覚醒前", skill: "通常"
@@ -1412,8 +1430,8 @@ buff.skill_cat = [
     , {
         name: "メルアビス", rarity: "黒", cl: "ネクロマンサー", AW: "覚醒後", skill: "覚醒"
         , stats: { redep: "20秒" }
-        , target: { others: [ "アンデッド", "死亡・撤退最後1体" ] }
-        , note: "発動時"
+        , target: { others: [ "アンデッド" ] }
+        , note: [ "発動時", "死亡・撤退最後1体" ]
     }
     , {
         name: "メルアビス/水着", rarity: "黒", cl: "ネクロマンサー", AW: "覚醒前", skill: "通常"

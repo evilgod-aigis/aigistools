@@ -872,6 +872,14 @@ debuff.mixture = [
         , note: "永続"
     }
     , {
+        name: "ちびヴィアベル", rarity: "ちび", cl: "アクアナイト", skill: "通常"
+        , stats: {
+            atk: { value: "-40%", type: "noAttr" }
+        }
+        , domain: "global"
+        , target: { attr: [ "魚人", "水棲" ] }
+    }
+    , {
         name: "アルタ", rarity: "黒", cl: "オートマタ", AW: "覚醒後", skill: "覚醒(1)"
         , stats: {
             atk: { value: "-30%", type: "noAttr" }
@@ -1391,6 +1399,22 @@ debuff.mixture = [
         }
         , domain: "global"
         , target: { atkAttr: [ "物理" ] }
+    }
+    , {
+        name: "ロヴィニア/学園", rarity: "黒", cl: "レンジャー", AW: "覚醒後", skill: "非"
+        , stats: {
+            def: { value: "-15%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ロヴィニア/学園", rarity: "黒", cl: "レンジャー", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "アイーダ", rarity: "白", cl: "レンジャー", AW: "覚醒後", skill: "覚醒"

@@ -335,13 +335,13 @@ buff.dep_gl = [
     , {
         name: "大参謀", cl: "後衛戦術家", AW: "覚2a"
         , stats: { ct: "-35%" }
-        , target: "非遠距離"
+        , target: { not: [ "depType" ], depType: [ "遠距離" ] }
         , note: "後衛戦術家系"
     }
     , {
         name: "バトルストラテジスト", cl: "後衛戦術家", AW: "覚2b"
         , stats: { ct: "-35%" }
-        , target: "非近接"
+        , target: { not: [ "depType" ], depType: [ "近接" ] }
         , note: "後衛戦術家系"
     }
     , {
@@ -451,6 +451,11 @@ buff.dep_gl = [
     , {
         name: "ロカ", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
         , stats: { nul: "7%" }
+    }
+    , {
+        name: "魔王の玉座", rarity: "金", cl: "魔王の玉座"
+        , stats: { atk: "+5%", def: "+5%", other: "" }
+        , note: "魔界-50%"
     }
     , {
         name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒前"

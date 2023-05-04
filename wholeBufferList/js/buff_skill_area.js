@@ -89,12 +89,12 @@ buff.skill_area = [
     , {
         name: "エレット/バレンタイン", rarity: "白", cl: "神官戦士", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3" }
-        , target: "非バレンタイン"
+        , target: { not: [ "season" ], season: [ "バレンタイン" ] }
     }
     , {
         name: "エレット/バレンタイン", rarity: "白", cl: "神官戦士", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.3" }
-        , target: "非バレンタイン"
+        , target: { not: [ "season" ], season: [ "バレンタイン" ] }
     }
     , {
         name: "ちびエクス", rarity: "ちび", cl: "神官戦士", skill: "通常"
@@ -176,7 +176,10 @@ buff.skill_area = [
     , {
         name: "ハリナ/水着", rarity: "黒", cl: "エンプレス", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2", def: "×1.2" }
-        , target: [ "非サマー", "非帝国" ]
+        , target: [
+            { not: [ "season" ], season: [ "サマー" ] }
+            , { not: [ "home" ], home: [ "帝国" ] }
+        ]
     }
     , {
         name: "タツミ", rarity: "黒", cl: "戦巫女", AW: "覚醒前", skill: "通常"

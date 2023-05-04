@@ -155,12 +155,6 @@ buff.add = [
         , note: [ "範囲", "永続" ]
     }
     , {
-        name: "マレブランケ", rarity: "黒", cl: "ダークプリースト", AW: "覚醒後"
-        , stats: { mr: "+20" }
-        , target: { home: [ "白の帝国" ] }
-        , note: "範囲"
-    }
-    , {
         name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒前"
         , stats: { hp: "max2250", atk: "max1050", def: "max1050" }
         , target: { home: [ "恋姫" ] }

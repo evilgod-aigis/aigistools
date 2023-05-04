@@ -447,8 +447,7 @@ buff.skill_gl = [
     , {
         name: "ファルネ", rarity: "黒", cl: "サモナー", AW: "覚醒後", skill: [ "通常", "覚醒" ]
         , stats: { redep: "20秒" }
-        , target: "死亡最後1体"
-        , note: "発動時"
+        , note: [ "発動時", "死亡最後1体" ]
     }
     , {
         name: "ピピン", rarity: "白", cl: "風水使い", AW: "覚醒後", skill: "覚醒"
@@ -575,20 +574,17 @@ buff.skill_gl = [
     , {
         name: "ホリー", rarity: "白", cl: "幻獣使い", AW: "覚醒前", skill: "通常"
         , stats: { redep: "15秒" }
-        , target: "死亡・撤退最後1体"
-        , note: [ "発動時", "ボム" ]
+        , note: [ "発動時", "死亡・撤退最後1体", "ボム" ]
     }
     , {
         name: "ホリー", rarity: "白", cl: "幻獣使い", AW: "覚醒後", skill: "通常"
         , stats: { redep: "10秒" }
-        , target: "死亡・撤退最後1体"
-        , note: [ "発動時", "ボム" ]
+        , note: [ "発動時", "死亡・撤退最後1体", "ボム" ]
     }
     , {
         name: "ホリー", rarity: "白", cl: "幻獣使い", AW: "覚醒後", skill: "覚醒"
         , stats: { redep: "10秒" }
-        , target: "死亡・撤退最後1体"
-        , note: "発動時"
+        , note: [ "発動時", "死亡・撤退最後1体" ]
     }
     , {
         name: "エレオノーラ", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒後", skill: "覚醒"
@@ -610,14 +606,12 @@ buff.skill_gl = [
     , {
         name: "シャイーナ", rarity: "白", cl: "ルーンアコライト", AW: "覚醒前", skill: "通常"
         , stats: { redep: "15秒" }
-        , target: "死亡・撤退最後3体"
-        , note: [ "発動時", "ボム" ]
+        , note: [ "発動時", "死亡・撤退最後3体", "ボム" ]
     }
     , {
         name: "シャイーナ", rarity: "白", cl: "ルーンアコライト", AW: "覚醒後", skill: "通常"
         , stats: { redep: "15秒" }
-        , target: "死亡・撤退最後3体"
-        , note: [ "発動時", "ボム" ]
+        , note: [ "発動時", "死亡・撤退最後3体", "ボム" ]
     }
     , {
         name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒前", skill: "通常"
@@ -634,14 +628,12 @@ buff.skill_gl = [
     , {
         name: "ヘカティエ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前", skill: "通常"
         , stats: { redep: "10秒" }
-        , target: "死亡・撤退最後1体"
-        , note: "発動時"
+        , note: [ "発動時", "死亡・撤退最後1体" ]
     }
     , {
         name: "ヘカティエ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後", skill: "通常"
         , stats: { redep: "10秒" }
-        , target: "死亡・撤退最後1体"
-        , note: "発動時"
+        , note: [ "発動時", "死亡・撤退最後1体" ]
     }
     , {
         name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒前", skill: "通常"
@@ -676,7 +668,7 @@ buff.skill_gl = [
     , {
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
-        , target: "非GG持ち"
+        , target: { not: [ "others" ], others: [ "GG持ち" ] }
     }
     , {
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "通常"
@@ -685,7 +677,7 @@ buff.skill_gl = [
     , {
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
-        , target: "非GG持ち"
+        , target: { not: [ "others" ], others: [ "GG持ち" ] }
     }
     , {
         name: "劉備", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒前", skill: "通常"
@@ -817,14 +809,12 @@ buff.skill_gl = [
     , {
         name: "世界樹の苗", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { redep: "30秒" }
-        , target: "死亡・撤退最後1体"
-        , note: [ "ラタトスク", "発動時" ]
+        , note: [ "ラタトスク", "発動時", "死亡・撤退最後1体" ]
     }
     , {
         name: "世界樹のカカオ苗", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { redep: "?秒" }
-        , target: "死亡・撤退最後1体"
-        , note: [ "ラタトスク/バレンタイン", "発動時" ]
+        , note: [ "ラタトスク/バレンタイン", "発動時", "死亡・撤退最後1体" ]
     }
 ];
 

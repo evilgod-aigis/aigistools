@@ -314,7 +314,7 @@ table.CreateTable = () => {
                     try {
                         table.list[debuffer.domain].picked.push(debuffer);
                     } catch(e) {
-                        console.log(e)
+                        console.log(e);
                     }
                 }
             });
@@ -439,9 +439,7 @@ table.CreateTableSub = (_element, _list, _isCommon, _stat = "") => {
                     _.forEach(debuffer.target, and => {
                         let textArrSub = [ "" ];
                         _.forEach(and, arr => {
-                            _.forEach(textArrSub, (text, i) =>
-                                textArrSub[i] = _.map(arr, target =>`${text}${text !== "" ? "&" : ""}${target}`)
-                            );
+                            _.forEach(textArrSub, (text, i) => textArrSub[i] = _.map(arr, target =>`${text}${text !== "" ? "&" : ""}${target}`));
                             textArrSub = _.flatten(textArrSub);
                         });
                         textArr.push(...textArrSub);
@@ -449,9 +447,7 @@ table.CreateTableSub = (_element, _list, _isCommon, _stat = "") => {
                 } else {
                     textArr.push("");
                     _.forEach(debuffer.target, arr => {
-                        _.forEach(textArr, (text, i) => 
-                            textArr[i] = _.map(arr, target => `${text}${text !== "" ? "&" : ""}${target}`)
-                        );
+                        _.forEach(textArr, (text, i) => textArr[i] = _.map(arr, target => `${text}${text !== "" ? "&" : ""}${target}`));
                         textArr = _.flatten(textArr);
                     });
                 }
@@ -492,9 +488,11 @@ table.ApplyFilter = () => {
         const trs = debuffTable.querySelectorAll("tbody tr");
         const shownRowIndexes = [];
         _.forEach(table.list[tableName].picked, (debuffer, i) => {
-            if(((!("rarity" in debuffer) && table.filter.rarity["空欄"]) || table.filter.rarity[debuffer.rarity])
+            if(
+                ((!("rarity" in debuffer) && table.filter.rarity["空欄"]) || table.filter.rarity[debuffer.rarity])
                 && (!("AW" in debuffer) || table.filter.AW[table.AW_rep[debuffer.AW]])
-                && _.some(debuffer.stats, (_, stat) => table.filter.stats[stat])) {
+                && _.some(debuffer.stats, (_, stat) => table.filter.stats[stat])
+            ) {
                 trs[i].classList.remove("is-unshown");
                 shownRowIndexes.push(i);
             } else
@@ -643,10 +641,7 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
             trs_array.reverse();
         else {
             const colIndex = table.column.indexOf(_colName);
-            const trs_filled = _.takeWhile(
-                trs_array
-                , tr => tr.children[colIndex].innerHTML !== ""
-            );
+            const trs_filled = _.takeWhile(trs_array, tr => tr.children[colIndex].innerHTML !== "");
             trs_filled.reverse();
             _.forEach(trs_filled, (tr, i) => trs_array[i] = tr);
         }
@@ -655,16 +650,16 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
         const colIndex = isSub ? table.before.length : table.column.indexOf(_colName);
         if(_colName === "id") {
             trs_array.sort((a, b) => 
-                Number(a.children[colIndex_id].innerHTML) - Number(b.children[colIndex_id].innerHTML)
+                Number(a.children[colIndex_id].innerText) - Number(b.children[colIndex_id].innerText)
             );
         } else if(_colName === "rarity") {
             trs_array.sort((a, b) => {
                 const tds_a = a.children;
                 const tds_b = b.children;
-                const id_a = Number(tds_a[colIndex_id].innerHTML);
-                const id_b = Number(tds_b[colIndex_id].innerHTML);
-                const rarity_a = tds_a[colIndex].innerHTML;
-                const rarity_b = tds_b[colIndex].innerHTML;
+                const id_a = Number(tds_a[colIndex_id].innerText);
+                const id_b = Number(tds_b[colIndex_id].innerText);
+                const rarity_a = tds_a[colIndex].innerText;
+                const rarity_b = tds_b[colIndex].innerText;
                 if(rarity_a === rarity_b) return id_a - id_b;
                 if(rarity_a === "") return 1;
                 if(rarity_b === "") return -1;
@@ -674,10 +669,10 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
             trs_array.sort((a, b) => {
                 const tds_a = a.children;
                 const tds_b = b.children;
-                const id_a = Number(tds_a[colIndex_id].innerHTML);
-                const id_b = Number(tds_b[colIndex_id].innerHTML);
-                const atkAttr_a = tds_a[colIndex].innerHTML;
-                const atkAttr_b = tds_b[colIndex].innerHTML;
+                const id_a = Number(tds_a[colIndex_id].innerText);
+                const id_b = Number(tds_b[colIndex_id].innerText);
+                const atkAttr_a = tds_a[colIndex].innerText;
+                const atkAttr_b = tds_b[colIndex].innerText;
                 if(atkAttr_a === atkAttr_b) return id_a - id_b;
                 if(atkAttr_a === "") return 1;
                 if(atkAttr_b === "") return -1;
@@ -687,10 +682,10 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
             trs_array.sort((a, b) => {
                 const tds_a = a.children;
                 const tds_b = b.children;
-                const id_a = Number(tds_a[colIndex_id].innerHTML);
-                const id_b = Number(tds_b[colIndex_id].innerHTML);
-                const dur_a = tds_a[colIndex].innerHTML;
-                const dur_b = tds_b[colIndex].innerHTML;
+                const id_a = Number(tds_a[colIndex_id].innerText);
+                const id_b = Number(tds_b[colIndex_id].innerText);
+                const dur_a = tds_a[colIndex].innerText;
+                const dur_b = tds_b[colIndex].innerText;
                 if(dur_a === dur_b) return id_a - id_b;
                 if(dur_a === "") return 1;
                 if(dur_b === "") return -1;
@@ -705,10 +700,10 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
             trs_array.sort((a, b) => {
                 const tds_a = a.children;
                 const tds_b = b.children;
-                const id_a = Number(tds_a[colIndex_id].innerHTML);
-                const id_b = Number(tds_b[colIndex_id].innerHTML);
-                const text_a = tds_a[colIndex].innerHTML;
-                const text_b = tds_b[colIndex].innerHTML;
+                const id_a = Number(tds_a[colIndex_id].innerText);
+                const id_b = Number(tds_b[colIndex_id].innerText);
+                const text_a = tds_a[colIndex].innerText;
+                const text_b = tds_b[colIndex].innerText;
                 if(text_a === text_b) return id_a - id_b;
                 if(text_a === "") return 1;
                 if(text_b === "") return -1;
@@ -762,11 +757,14 @@ table.Sort = (_debuffType, _colName, _allowReverse = true) => {
     }
     
     _.forEach(
-        _.map(trs_array, tr => [ [ ...tr.classList ], tr.innerHTML ])
+        _.map(trs_array, tr => ({
+            classList: [ ...tr.classList ]
+            , innerHTML: tr.innerHTML
+        }))
         , (html, i) => {
             trs[i].classList.remove(...trs[i].classList);
-            trs[i].classList.add(...html[0]);
-            trs[i].innerHTML = html[1];
+            trs[i].classList.add(...html.classList);
+            trs[i].innerHTML = html.innerHTML;
         }
     );
 }

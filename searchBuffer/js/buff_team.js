@@ -411,6 +411,11 @@ buff.team = [
         , target: { cl: [ "アベンジャー", "ソードマスター", "ランスマスター" ] }
     }
     , {
+        name: "レティシア/学園", rarity: "白", cl: "アベンジャー", AW: "覚醒後"
+        , stats: { hp: "+10%" }
+        , target: { season: [ "学園" ] }
+    }
+    , {
         name: "リン", rarity: "白", cl: "モンク", AW: "覚醒後"
         , stats: { atk: "+7%" }
         , target: { cl: [ "モンク", "グラディエーター" ] }
@@ -1264,6 +1269,11 @@ buff.team = [
         , target: { others: [ "深海適応" ] }
     }
     , {
+        name: "ちびヴィアベル", rarity: "ちび", cl: "アクアナイト"
+        , stats: { def: "+5%", cost: "-1" }
+        , target: { others: [ "深海適応" ] }
+    }
+    , {
         name: "アレクシア", rarity: "白", cl: "テンプルナイト", AW: "覚醒後"
         , stats: { hp: "+7%" }
         , target: { cl: [ "テンプルナイト" ] }
@@ -1712,6 +1722,16 @@ buff.team = [
         name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒後"
         , stats: { cost: "-2" }
         , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "ロヴィニア/学園", rarity: "黒", cl: "レンジャー", AW: "覚醒前"
+        , stats: { abn: "-80%" }
+        , target: { season: [ "学園" ] }
+    }
+    , {
+        name: "ロヴィニア/学園", rarity: "黒", cl: "レンジャー", AW: "覚醒後"
+        , stats: { abn: "-100%" }
+        , target: { season: [ "学園" ] }
     }
     , {
         name: "フウカ/正月", rarity: "金", cl: "レンジャー", AW: "覚醒後"

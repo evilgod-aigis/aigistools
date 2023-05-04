@@ -68,6 +68,12 @@ debuff.hit = [
         , note: "ボム"
     }
     , {
+        name: "レティシア/学園", rarity: "白", cl: "アベンジャー", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { atk: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "マツリ/正月", rarity: "黒", cl: "前衛戦術家", AW: "覚醒前"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "7f"
