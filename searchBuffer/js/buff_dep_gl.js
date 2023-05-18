@@ -171,6 +171,16 @@ buff.dep_gl = [
         , target: { home: [ "東の国" ] }
     }
     , {
+        name: "サクヤ/学園", rarity: "白", cl: "サムライ", AW: "覚醒前"
+        , stats: { rege: [ "30/秒", "?/?f" ] }
+        , target: { season: [ "学園" ] }
+    }
+    , {
+        name: "サクヤ/学園", rarity: "白", cl: "サムライ", AW: "覚醒後"
+        , stats: { rege: [ "50/秒", "?/?f" ] }
+        , target: { season: [ "学園" ] }
+    }
+    , {
         name: "ジーニア", rarity: "白", cl: "ペガサスライダー", AW: "覚醒後"
         , stats: { draw: "○" }
         , target: { cl: [ "ペガサスライダー" ] }

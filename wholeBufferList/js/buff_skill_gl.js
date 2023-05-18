@@ -51,12 +51,10 @@ buff.skill_gl = [
     , {
         name: "ケイティ/学園", rarity: "白", cl: "ソルジャー", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
-        , note: "分類未確認"
     }
     , {
         name: "ケイティ/学園", rarity: "白", cl: "ソルジャー", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
-        , note: "分類未確認"
     }
     , {
         name: "ちび一般兵A", rarity: "ちび", cl: "ソルジャー", skill: "通常"
@@ -650,16 +648,6 @@ buff.skill_gl = [
     , {
         name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
         , stats: { nul: "30%" }
-    }
-    , {
-        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
-        , stats: { akt: "×1.15" }
-        , note: "分類未確認"
-    }
-    , {
-        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
-        , stats: { akt: "×1.15" }
-        , note: "分類未確認"
     }
     , {
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"

@@ -17,6 +17,7 @@ lists.selfBuff.rWT = [
     , { id: null, buffer: "帝国機甲士クリスタ", value: 30 }
     , { id: null, buffer: "聖闇の送り主グレーテル", value: 25 }
     , { id: null, buffer: "封機の剣士エレカ", value: 60 }
+    , { id: null, buffer: "普賢", value: 40 }
     , { id: null, buffer: "信仰の槍士コルム", value: 50 }
     , { id: null, buffer: "帝国魔術師イルマ", value: 50 }
     , { id: null, buffer: "炎のサンタ召喚士ソラノ", value: 40 }
@@ -90,6 +91,7 @@ lists.selfBuff.hasteFixed = [
     , { id: null, buffer: "オークブレイバー", value: 8, change: "remain" }
     , { id: null, buffer: "シナツヒコ", value: 31, change: "cooldown" }
     , { id: null, buffer: "お犬さま", value: 26, change: "cooldown" }
+    , { id: null, buffer: "アクアナイト", value: 25, change: "cooldown" }
     //, { id: null, buffer: "サベージジェネラル", value: null, change: "cooldown" }
     , { id: null, buffer: "ラピッドシューター", value: 26, change: "cooldown" }
     , { id: null, buffer: "メイジデストラクト", value: 77, change: "cooldown" }

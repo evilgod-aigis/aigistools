@@ -1215,6 +1215,17 @@ buff.team = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "普賢", rarity: "白", cl: "真人", AW: "覚醒後"
+        , stats: { def: "+5%" }
+        , target: { cl: [ "仙人", "仙猿", "真人" ] }
+        /*
+        [
+            { cl: [ "仙猿", "真人" ] }
+            , { race: [ "仙人" ] }
+        ]
+        */
+    }
+    , {
         name: "王妃人", rarity: "白", cl: "邪仙", AW: "覚醒後"
         , stats: { atk: "+7%" }
         , target: { race: [ "仙人", "妖怪" ] }

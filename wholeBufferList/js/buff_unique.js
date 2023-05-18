@@ -99,7 +99,7 @@ buff.unique = [
     }
     , {
         name: "もののけ猫明神", cl: "猫又", AW: "覚2a"
-        , stats: { atk: "-7%", def: "-7%" }
+        , stats: { atk: "-3%", def: "-3%" }
         , type: "nekomata"
         , note: [ "区分：猫又", "範囲", "猫又系" ]
     }
@@ -268,6 +268,24 @@ buff.unique = [
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
         , note: [ "区分：ダメージ上昇(魔法)", "魔法エンチャンター系" ]
+    }
+    , {
+        name: "アンリ", rarity: "黒", cl: "エンチャンター", AW: "覚1", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , type: "atk-up_mag"
+        , note: "区分：ダメージ上昇(魔法)"
+    }
+    , {
+        name: "アンリ", rarity: "黒", cl: "エンチャンター", AW: "覚2a", skill: "覚醒"
+        , stats: { atk: "×1.35" }
+        , type: "atk-up_mag"
+        , note: "区分：ダメージ上昇(魔法)"
+    }
+    , {
+        name: "アンリ", rarity: "黒", cl: "エンチャンター", AW: "覚2b", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , type: "atk-up_mag"
+        , note: "区分：ダメージ上昇(魔法)"
     }
     , {
         name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後", skill: "覚醒"

@@ -60,12 +60,10 @@ buff.skill_area = [
     , {
         name: "シエナ/温泉", rarity: "白", cl: "魔法剣士", AW: "覚醒前", skill: "通常"
         , stats: { mr: "×1.4" }
-        , note:"分類未確認"
     }
     , {
         name: "シエナ/温泉", rarity: "白", cl: "魔法剣士", AW: "覚醒後", skill: "通常"
         , stats: { mr: "×1.4" }
-        , note:"分類未確認"
     }
     , {
         name: "エクス", rarity: "黒", cl: "神官戦士", AW: "覚醒前", skill: "通常"
@@ -310,12 +308,10 @@ buff.skill_area = [
     , {
         name: "キキョウ", rarity: "黒", cl: "シャーマン", AW: "覚醒後", skill: "通常(奇)"
         , stats: { def: "×1.1" }
-        , note: "分類未確認"
     }
     , {
         name: "キキョウ", rarity: "黒", cl: "シャーマン", AW: "覚醒後", skill: "通常(偶)"
         , stats: { atk: "×1.1" }
-        , note: "分類未確認"
     }
     , {
         name: "シナト", rarity: "白", cl: "後衛戦術家", AW: "覚醒後", skill: "覚醒"

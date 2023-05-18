@@ -38,6 +38,14 @@ buff.skill_cat = [
         , note: "範囲"
     }
     , {
+        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.15" }
+    }
+    , {
+        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.15" }
+    }
+    , {
         name: "ダルフィア", rarity: "白", cl: "騎士【封緘】", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.1" }
     }

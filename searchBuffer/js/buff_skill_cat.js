@@ -859,7 +859,6 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { home: [ "白の帝国" ], depType: [ "近接" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "通常"
@@ -868,7 +867,6 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { home: [ "白の帝国" ], depType: [ "近接" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"
@@ -877,10 +875,9 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { home: [ "白の帝国" ], depType: [ "近接" ] }
         ]
-        , note: "分類未確認"
     }
     , {
-        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"
+        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚醒", skill: "覚醒"
         , stats: { ct: "-60%" }
         , target: { cl: [ "皇帝" ] }
     }
@@ -891,7 +888,6 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { home: [ "白の帝国" ], depType: [ "近接" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚2b", skill: "覚醒"
@@ -900,7 +896,6 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { home: [ "白の帝国" ], depType: [ "近接" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "ゴルドー", rarity: "金", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"
@@ -1694,7 +1689,6 @@ buff.skill_cat = [
         name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.3" }
         , target: { depType: [ "近接" ] }
-        , note: "分類未確認"
     }
     , {
         name: "ヨユキ", rarity: "黒", cl: "夜行さん", AW: "覚醒前", skill: "通常"

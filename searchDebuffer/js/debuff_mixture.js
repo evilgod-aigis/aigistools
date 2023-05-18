@@ -108,7 +108,6 @@ debuff.mixture = [
             , mr: { value: "-30%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒後", skill: "通常"
@@ -328,7 +327,6 @@ debuff.mixture = [
             , def: { value: "-30%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "コーネリア", rarity: "黒", cl: "ダークファイター", AW: "覚醒後", skill: "通常"
@@ -337,7 +335,6 @@ debuff.mixture = [
             , def: { value: "-30%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "暗黒騎士", rarity: "黒", cl: "ダークファイター", AW: "覚醒前", skill: "通常"
@@ -603,6 +600,15 @@ debuff.mixture = [
         , note: [ "発動時", "ボム" ]
     }
     , {
+        name: "シェイド", rarity: "白", cl: "ダークストーカー", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "global"
+        , target: { attr: [ "天使" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "空神", cl: "天狗", AW: "覚2a"
         , stats: {
             def: { value: "-20%", type: "area" }
@@ -656,6 +662,33 @@ debuff.mixture = [
         }
         , domain: "global"
         , note: "モンスターブレイカー系"
+    }
+    , {
+        name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-15%", type: "area" }
+            , mr: { value: "-15%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-15%", type: "area" }
+            , mr: { value: "-15%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            def: { value: "-25%", type: "area" }
+            , mr: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後", skill: "覚醒"
@@ -1228,7 +1261,7 @@ debuff.mixture = [
     , {
         name: "レーヴ", rarity: "白", cl: "ビショップ", AW: "覚醒後", skill: "覚醒"
         , stats: {
-            atk: { value: "-15%", type: "limAttr" }
+            atk: { value: "-20%", type: "limAttr" }
         }
         , domain: "global"
         , target: { atkAttr: [ "物理" ] }
@@ -2076,7 +2109,7 @@ debuff.mixture = [
             , mr: { value: "-55%", type: "clAttr" }
         }
         , domain: "area"
-        , note: [ "スカウト系", "分類未確認" ]
+        , note: "スカウト系"
     }
     , {
         name: "ファントムリコン", cl: "スカウト", AW: "覚2b"
@@ -2085,7 +2118,7 @@ debuff.mixture = [
             , mr: { value: "-50%", type: "clAttr" }
         }
         , domain: "area"
-        , note: [ "スカウト系", "分類未確認" ]
+        , note: "スカウト系"
     }
     , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"
@@ -2151,7 +2184,6 @@ debuff.mixture = [
             atk: { value: "-15%", type: "noAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "レフカ", rarity: "白", cl: "スカイヒーラー", AW: "覚醒後", skill: "通常"
@@ -2159,7 +2191,6 @@ debuff.mixture = [
             atk: { value: "-15%", type: "noAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "ねんどろいどシビラ", rarity: "青", cl: "ねんどろいどプリンセス", skill: "通常"

@@ -25,8 +25,7 @@ debuff.hit = [
     , {
         name: "ディーナ", rarity: "黒", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "-30%" }
-        , atkAttr: "物理", dur: "?f"
-        , note: "分類未確認"
+        , atkAttr: "物理", dur: "59f"
     }
     , {
         name: "エルデ", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"
@@ -362,6 +361,12 @@ debuff.hit = [
         , stats: { atk: "-50%" }
         , atkAttr: "物理", dur: "?f"
         , note: "分類未確認"
+    }
+    , {
+        name: "アメノマヒトツノカミ", cl: "一目の竜", AW: "覚2a"
+        , stats: { def: "-25%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "一目の竜系", "分類未確認" ]
     }
     , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
