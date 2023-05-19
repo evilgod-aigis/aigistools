@@ -825,7 +825,7 @@ debuff.hit = [
     , {
         name: "見当かなみ", rarity: "黒", cl: "忍者【ランス】", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
-        , atkAttr: "物理", dur: "?f"
+        , atkAttr: "物理", dur: "7f"
         , note: "永続"
     }
     , {

@@ -172,12 +172,12 @@ buff.dep_gl = [
     }
     , {
         name: "サクヤ/学園", rarity: "白", cl: "サムライ", AW: "覚醒前"
-        , stats: { rege: [ "30/秒", "?/?f" ] }
+        , stats: { rege: [ "30/秒", "15/15f" ] }
         , target: { season: [ "学園" ] }
     }
     , {
         name: "サクヤ/学園", rarity: "白", cl: "サムライ", AW: "覚醒後"
-        , stats: { rege: [ "50/秒", "?/?f" ] }
+        , stats: { rege: [ "50/秒", "25/15f" ] }
         , target: { season: [ "学園" ] }
     }
     , {
