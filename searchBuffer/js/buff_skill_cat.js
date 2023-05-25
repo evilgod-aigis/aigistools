@@ -1712,6 +1712,18 @@ buff.skill_cat = [
         , note: "分類未確認"
     }
     , {
+        name: "ロカ/ジューンブライド", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.2" }
+        , target: { sex: [ "女性" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ロカ/ジューンブライド", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.2" }
+        , target: { sex: [ "女性" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { others: [ "GG持ち" ] }
@@ -1736,6 +1748,18 @@ buff.skill_cat = [
         , stats: { atk: "×1.2" }
         , target: { depType: [ "遠距離" ] }
         , note: "永続"
+    }
+    , {
+        name: "レナータ/ジューンブライド", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"
+        , stats: { hp: "+30%", atk: "×1.3" }
+        , target: { season: [ "ジューンブライド" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "レナータ/ジューンブライド", rarity: "黒", cl: "スカウト", AW: "覚醒後", skill: "通常"
+        , stats: { hp: "+30%", atk: "×1.3" }
+        , target: { season: [ "ジューンブライド" ] }
+        , note: "分類未確認"
     }
     , {
         name: "カーナ", rarity: "白", cl: "スカウト", AW: "覚醒前", skill: "通常"

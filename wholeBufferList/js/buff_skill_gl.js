@@ -57,6 +57,10 @@ buff.skill_gl = [
         , stats: { atk: "×1.2", def: "×1.2" }
     }
     , {
+        name: "ケイティ/私服", rarity: "白", cl: "ソルジャー", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "50/秒", "?/?f" ] }
+    }
+    , {
         name: "ちび一般兵A", rarity: "ちび", cl: "ソルジャー", skill: "通常"
         , stats: { draw: "○" }
     }
@@ -328,7 +332,7 @@ buff.skill_gl = [
     }
     , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"
-        , stats: { rege: [ "100/秒", "?/?f" ] }
+        , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
         name: "リアナ", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
@@ -635,7 +639,7 @@ buff.skill_gl = [
     }
     , {
         name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒前", skill: "通常"
-        , stats: { rege: [ "100/秒", "?/?f" ] }
+        , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
         name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒後", skill: [ "通常", "覚醒" ]

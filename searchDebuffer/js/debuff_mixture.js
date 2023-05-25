@@ -606,7 +606,6 @@ debuff.mixture = [
         }
         , domain: "global"
         , target: { attr: [ "天使" ] }
-        , note: "分類未確認"
     }
     , {
         name: "空神", cl: "天狗", AW: "覚2a"
@@ -670,7 +669,6 @@ debuff.mixture = [
             , mr: { value: "-15%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後", skill: "通常"
@@ -679,7 +677,6 @@ debuff.mixture = [
             , mr: { value: "-15%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後", skill: "覚醒"
@@ -688,7 +685,6 @@ debuff.mixture = [
             , mr: { value: "-25%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後", skill: "覚醒"

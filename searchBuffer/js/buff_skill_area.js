@@ -28,6 +28,16 @@ buff.skill_area = [
         , note: "全体"
     }
     , {
+        name: "金糸雀姉妹/ジューンブライド", rarity: "白", cl: "かまいたち", AW: "覚醒前", skill: "通常"
+        , stats: { atkCd: "?f化" }
+        , target: { cl: [ "かまいたち" ] }
+    }
+    , {
+        name: "金糸雀姉妹/ジューンブライド", rarity: "白", cl: "かまいたち", AW: "覚醒後", skill: "通常"
+        , stats: { atkCd: "?f化" }
+        , target: { cl: [ "かまいたち" ] }
+    }
+    , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"
         , stats: { atkCd: "2f化" }
         , target: { cl: [ "アーチャー" ] }

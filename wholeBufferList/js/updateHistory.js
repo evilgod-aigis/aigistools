@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2023/05/25(木)"
+        , detail: [
+            "ケイティ/私服を追加"
+        ]
+    }
+    , {
         date: "2023/05/18(木)"
         , detail: [
             "調整を反映"

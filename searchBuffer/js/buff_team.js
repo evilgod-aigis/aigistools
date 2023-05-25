@@ -1218,12 +1218,6 @@ buff.team = [
         name: "普賢", rarity: "白", cl: "真人", AW: "覚醒後"
         , stats: { def: "+5%" }
         , target: { cl: [ "仙人", "仙猿", "真人" ] }
-        /*
-        [
-            { cl: [ "仙猿", "真人" ] }
-            , { race: [ "仙人" ] }
-        ]
-        */
     }
     , {
         name: "王妃人", rarity: "白", cl: "邪仙", AW: "覚醒後"
@@ -1966,6 +1960,19 @@ buff.team = [
         , target: {
             others: [ "竜族" ]
             , season: [ "エッグハント" ]
+        }
+    }
+    , {
+        name: "ロカ/ジューンブライド", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒前"
+        , stats: { cost: "-1" }
+        , target: { season: [ "ジューンブライド" ] }
+    }
+    , {
+        name: "ロカ/ジューンブライド", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
+        , stats: { cost: "-2" }
+        , target: {
+            cl: [ "王子" ]
+            , season: [ "ジューンブライド" ]
         }
     }
     , {

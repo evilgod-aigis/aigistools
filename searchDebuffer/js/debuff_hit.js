@@ -365,8 +365,8 @@ debuff.hit = [
     , {
         name: "アメノマヒトツノカミ", cl: "一目の竜", AW: "覚2a"
         , stats: { def: "-25%" }
-        , atkAttr: "物理", dur: "?f"
-        , note: [ "一目の竜系", "分類未確認" ]
+        , atkAttr: "物理", dur: "119f"
+        , note: "一目の竜系"
     }
     , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
@@ -953,6 +953,12 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "89f"
         , note: "ローズ"
+    }
+    , {
+        name: "誓いのチャペル", rarity: "トークン", AW: "覚醒後"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "レナータ/ジューンブライド"
     }
     , {
         name: "改良型セバスチャン", rarity: "トークン", AW: "覚醒後"

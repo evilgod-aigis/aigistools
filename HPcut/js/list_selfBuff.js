@@ -10,6 +10,7 @@ lists.selfBuff.rWT = [
     , { id: null, buffer: "ヴェンデッタ", value: 80 }
     , { id: null, buffer: "リヴェンジェンス", value: 80 }
     , { id: null, buffer: "戦術科教師ケイティ", value: 50 }
+    , { id: null, buffer: "休息の教官ケイティ", value: 80 }
     , { id: null, buffer: "聖夜の天才戦術家ヘレナ", value: 20 }
     , { id: null, buffer: "雷光の魔剣士タラニア", value: 50 }
     , { id: null, buffer: "主天使セフィーレ", value: 60 }

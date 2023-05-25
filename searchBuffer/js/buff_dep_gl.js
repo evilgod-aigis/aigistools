@@ -789,6 +789,19 @@ buff.dep_gl = [
         , target: { cl: [ "邪仙", "犬神", "陰陽師", "呪術使い" ] }
     }
     , {
+        name: "金糸雀姉妹/ジューンブライド", rarity: "白", cl: "かまいたち", AW: "覚醒後"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: [
+            { race: [ "妖怪" ] }
+            , { season: [ "ジューンブライド" ] }
+        ]
+    }
+    , {
+        name: "金糸雀姉妹/ジューンブライド", rarity: "白", cl: "かまいたち", AW: "覚醒後"
+        , stats: { rege: [ "20/秒", "?/?f" ] }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
         name: "トゥーリ", rarity: "黒", cl: "テンプルナイト", AW: "覚醒後"
         , stats: { cost: "-2" }
         , target: { cl: [ "テンプルナイト" ] }
