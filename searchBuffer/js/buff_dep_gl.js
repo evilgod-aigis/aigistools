@@ -798,7 +798,7 @@ buff.dep_gl = [
     }
     , {
         name: "金糸雀姉妹/ジューンブライド", rarity: "白", cl: "かまいたち", AW: "覚醒後"
-        , stats: { rege: [ "20/秒", "?/?f" ] }
+        , stats: { rege: [ "20/秒", "10/15f" ] }
         , target: { cl: [ "王子" ] }
     }
     , {

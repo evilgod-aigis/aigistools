@@ -957,7 +957,7 @@ debuff.hit = [
     , {
         name: "誓いのチャペル", rarity: "トークン", AW: "覚醒後"
         , stats: { stop: "○" }
-        , atkAttr: "魔法", dur: "?f"
+        , atkAttr: "魔法", dur: "9f"
         , note: "レナータ/ジューンブライド"
     }
     , {

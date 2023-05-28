@@ -58,7 +58,7 @@ buff.skill_gl = [
     }
     , {
         name: "ケイティ/私服", rarity: "白", cl: "ソルジャー", AW: "覚醒後", skill: "覚醒"
-        , stats: { rege: [ "50/秒", "?/?f" ] }
+        , stats: { rege: [ "50/秒", "25/15f" ] }
     }
     , {
         name: "ちび一般兵A", rarity: "ちび", cl: "ソルジャー", skill: "通常"

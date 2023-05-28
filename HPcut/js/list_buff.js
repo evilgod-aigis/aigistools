@@ -563,12 +563,11 @@ lists.buff.hasteFixed.list = [
             , WT: 20, CT: 40, dur: 25
         }
     }
-    /*
     , {
         id: null, buffer: "婚礼つむじ風金糸雀姉妹", awaken: "通常"
-        , value: null, disabled: null, req: "skill"
+        , value: 11, disabled: null, req: "skill"
         , target: [ { unitClass: [ "かまいたち系", "かまいたち", "疾風かまいたち", "風刃かまいたち", "夜風闇刃かまいたち" ] } ]
-        , tooltip: "[スキル・範囲] クラス：かまいたち系の攻撃硬直f化"
+        , tooltip: "[スキル・範囲] クラス：かまいたち系の攻撃硬直6f化"
         , unitInfo: {
             unitName: "婚礼つむじ風金糸雀姉妹", deployType: "近接型", rarity: "白"
             , unitClass: { selected: "かまいたち系" }
@@ -577,7 +576,6 @@ lists.buff.hasteFixed.list = [
             , WT: 20, CT: 40, dur: 25
         }
     }
-    */
     , {
         id: null, buffer: "弓兵の湯浴みソーマ", awaken: "覚醒"
         , value: 4, disabled: null, req: "skill"
