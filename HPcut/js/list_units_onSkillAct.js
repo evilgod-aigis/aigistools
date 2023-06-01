@@ -60,6 +60,29 @@ lists.units.onSkillAct.list = [
     , {
         id: null, hidden: false
         , unitInfo: {
+            unitName: "元始天尊", deployType: "近接型", rarity: "黒"
+            , unitClass: { selected: "天尊系" }
+            , attribution: [ "神" ]
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: [ "女性", "状態異常無効" ]
+        }
+        , skill: {
+            selected: "覚醒"
+            , detail: {
+                "覚醒": [
+                    {
+                        target: "全敵"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 50, dur: 3, HPred: 10 }
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
             unitName: "黒紫の巫女キキョウ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "シャーマン系" }
             , attribution: [ "人間", "東の国" ]

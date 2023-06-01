@@ -1027,9 +1027,10 @@ funcs.graph.Flow = (isThinned, index) => {
         return reqTypes;
     }, {});
     _.forEach(buffers.team, (buff, buffType) => {
-        _.forEach(_.filter(document.getElementById(buffType).getElementsByTagName("input"), elem => elem.checked), elem =>
-            buff.push(_.find(lists.buff[buffType].list, { id: Number(elem.value) }))
-        )
+        _.forEach(_.filter(document.getElementById(buffType).getElementsByTagName("input"), elem => elem.checked), elem => {
+            const bufferInfo = _.find(lists.buff[buffType].list, { id: Number(elem.value) });
+            if(bufferInfo.req === "team") buff.push(bufferInfo);
+        })
     });
     
     if(!Number.isFinite(index)) {

@@ -795,6 +795,18 @@ lists.buff.redMapEff.list = [
         , tooltip: "[配置] 全味方の深海の影響を50%軽減"
     }
     , {
+        id: null, buffer: "大海神の娘 乙姫", awaken: "通常"
+        , map: "深海", value: 100, disabled: null, req: "skill"
+        , tooltip: "[スキル・全体] 全味方の深海の影響を100%軽減"
+        , unitInfo: {
+            unitName: "大海神の娘 乙姫", deployType: "近接型", rarity: "黒"
+            , unitClass: { selected: "儀仗軍神系" }
+            , attribution: [ "神" ]
+            , note: [ "女性", "深海適応" ]
+            , WT: 1, CT: 60, dur: 60
+        }
+    }
+    , {
         id: null, buffer: "紫鱗の海巫女ハルフゥ", awaken: "覚醒"
         , map: "深海", value: 30, disabled: null, req: "team"
         , tooltip: "[編成] 全味方の深海の影響を30%軽減"
