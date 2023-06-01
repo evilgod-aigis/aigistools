@@ -931,6 +931,12 @@ debuff.hit = [
         , note: [ "スーシェン", "ちびスーシェン", "死亡時" ]
     }
     , {
+        name: "玉手箱", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "-15%", def: "-30%" }
+        , atkAttr: "物理", dur: "∞"
+        , note: [ "乙姫", "ボム", "分類未確認" ]
+    }
+    , {
         name: "最上級トラップ", rarity: "トークン", AW: "覚2b"
         , stats: { def: "-50%" }
         , atkAttr: "貫通", dur: "∞"

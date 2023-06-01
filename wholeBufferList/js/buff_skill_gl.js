@@ -331,6 +331,16 @@ buff.skill_gl = [
         , stats: { def: "×1.6" }
     }
     , {
+        name: "乙姫", rarity: "黒", cl: "儀仗軍神", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3", other: "" }
+        , note: [ "深海-100%", "分類未確認" ]
+    }
+    , {
+        name: "乙姫", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3", other: "" }
+        , note: [ "深海-100%", "分類未確認" ]
+    }
+    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
@@ -450,6 +460,10 @@ buff.skill_gl = [
         name: "ファルネ", rarity: "黒", cl: "サモナー", AW: "覚醒後", skill: [ "通常", "覚醒" ]
         , stats: { redep: "20秒" }
         , note: [ "発動時", "死亡最後1体" ]
+    }
+    , {
+        name: "ちびファルネ", rarity: "ちび", cl: "サモナー", skill: "通常"
+        , stats: { rege: [ "60/秒", "30/15f" ] }
     }
     , {
         name: "ピピン", rarity: "白", cl: "風水使い", AW: "覚醒後", skill: "覚醒"

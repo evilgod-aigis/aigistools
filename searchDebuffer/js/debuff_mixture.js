@@ -984,6 +984,14 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "アラン/闘兵", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "ちびアラン", rarity: "ちび", cl: "儀仗軍神", skill: "覚醒(1)"
         , stats: {
             mr: { value: "-50%", type: "area" }
@@ -1036,6 +1044,22 @@ debuff.mixture = [
             def: { value: "-30%", type: "area" }
         }
         , domain: "area"
+    }
+    , {
+        name: "元始天尊", rarity: "黒", cl: "天尊", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-60%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "元始天尊", rarity: "黒", cl: "天尊", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-60%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
     }
     , {
         name: "エステル", rarity: "黒", cl: "メイジ", AW: "覚醒前", skill: "通常"
