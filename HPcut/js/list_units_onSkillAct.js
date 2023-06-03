@@ -73,7 +73,7 @@ lists.units.onSkillAct.list = [
                     {
                         target: "全敵"
                         , corr: { WT: null, CT: null, dur: null, HPred: null }
-                        , uncorr: { CT: 50, dur: 3, HPred: 10 }
+                        , uncorr: { CT: 50, dur: 2, HPred: 10 }
                         , next: 0
                     }
                 ]

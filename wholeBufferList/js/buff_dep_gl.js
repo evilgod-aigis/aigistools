@@ -264,7 +264,7 @@ buff.dep_gl = [
     }
     , {
         name: "三清道祖", cl: "天尊", AW: "覚2a"
-        , stats: { atk: "+10%", rege: [ "60/秒", "?/?f" ] }
+        , stats: { atk: "+10%", rege: [ "60/秒", "30/15f" ] }
         , note: "天尊系"
     }
     , {
