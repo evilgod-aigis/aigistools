@@ -1440,7 +1440,7 @@ debuff.mixture = [
     , {
         name: "レーレン", rarity: "白", cl: "アルケミスト", AW: "覚醒前", skill: "通常"
         , stats: {
-            atk: { value: "-15%", type: "limAttr" }
+            atk: { value: "-20%", type: "limAttr" }
         }
         , domain: "global"
         , target: { atkAttr: [ "物理" ] }
@@ -1448,7 +1448,7 @@ debuff.mixture = [
     , {
         name: "レーレン", rarity: "白", cl: "アルケミスト", AW: "覚醒後", skill: "通常"
         , stats: {
-            atk: { value: "-15%", type: "limAttr" }
+            atk: { value: "-20%", type: "limAttr" }
         }
         , domain: "global"
         , target: { atkAttr: [ "物理" ] }
