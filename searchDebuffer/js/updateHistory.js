@@ -9,7 +9,7 @@ const updateHistory = [
     , 
     */
     {
-        date: "2023/06/08(木)"
+        date: "2023/06/15(木)"
         , detail: [
             "英傑の塔のトークンを追加"
         ]
