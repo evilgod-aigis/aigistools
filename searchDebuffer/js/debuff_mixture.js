@@ -2484,6 +2484,22 @@ debuff.mixture = [
         , domain: "area"
         , note: [ "リュティエ", "永続", "分類未確認" ]
     }
+    , {
+        name: "アルヴァ(幻影)", rarity: "トークン", AW: "覚醒前", skill: "覚醒"
+        , stats: {
+            stop: { value: "89f", type: "global" }
+        }
+        , domain: "global"
+        , note: [ "英傑の塔", "発動時" ]
+    }
+    , {
+        name: "アルヴァ(幻影)", rarity: "トークン", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            stop: { value: "89f", type: "global" }
+        }
+        , domain: "global"
+        , note: [ "英傑の塔", "発動時" ]
+    }
 ];
 
 /*

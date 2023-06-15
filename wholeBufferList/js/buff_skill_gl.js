@@ -686,6 +686,18 @@ buff.skill_gl = [
         , target: { not: [ "others" ], others: [ "GG持ち" ] }
     }
     , {
+        name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.5", range: "×1.2" }
+        , target: { not: [ "others" ], others: [ "英傑" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.5", range: "×1.2" }
+        , target: { not: [ "others" ], others: [ "英傑" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "劉備", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.15", def: "×1.15" }
     }
@@ -791,6 +803,16 @@ buff.skill_gl = [
         name: "アイリス", rarity: "白", cl: "鬼【ななリン】", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2", eva: "50%" }
         , note: "分類未確認"
+    }
+    , {
+        name: "アテエル", rarity: "黒", cl: "不死鳥娘【モンスター娘TD】", AW: "覚醒前", skill: "通常"
+        , stats: { redep: "10秒" }
+        , note: [ "発動時", "死亡・撤退最後1体" ]
+    }
+    , {
+        name: "アテエル", rarity: "黒", cl: "不死鳥娘【モンスター娘TD】", AW: "覚醒後", skill: "通常"
+        , stats: { redep: "10秒" }
+        , note: [ "発動時", "死亡・撤退最後1体" ]
     }
     , {
         name: "お神輿", rarity: "トークン", AW: "覚醒後", skill: "通常"

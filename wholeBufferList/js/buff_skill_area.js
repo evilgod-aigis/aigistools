@@ -734,6 +734,10 @@ buff.skill_area = [
         , stats: { def: "×1.5", mr: "×1.4" }
     }
     , {
+        name: "アテエル", rarity: "黒", cl: "不死鳥娘【モンスター娘TD】", AW: "覚醒後", skill: "覚醒"
+        , stats: { draw: "(○)", redep: "25秒" }
+    }
+    , {
         name: "守護の聖樹", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { def: "×2.0" }
         , note: [ "ベルニス/クリスマス", "永続(自壊)" ]

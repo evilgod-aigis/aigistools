@@ -1732,6 +1732,12 @@ buff.skill_cat = [
         , target: { others: [ "GG持ち" ] }
     }
     , {
+        name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: { others: [ "英傑" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.5", range: "×1.3" }
         , target: { depType: [ "遠距離" ] }
