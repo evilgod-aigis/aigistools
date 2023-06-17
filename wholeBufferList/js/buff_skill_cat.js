@@ -46,6 +46,16 @@ buff.skill_cat = [
         , stats: { atk: "×1.15" }
     }
     , {
+        name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.5", range: "×1.2" }
+        , target: { not: [ "others" ], others: [ "英傑" ] }
+    }
+    , {
+        name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.5", range: "×1.2" }
+        , target: { not: [ "others" ], others: [ "英傑" ] }
+    }
+    , {
         name: "ダルフィア", rarity: "白", cl: "騎士【封緘】", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.1" }
     }

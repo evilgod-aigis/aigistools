@@ -686,18 +686,6 @@ buff.skill_gl = [
         , target: { not: [ "others" ], others: [ "GG持ち" ] }
     }
     , {
-        name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒前", skill: "通常"
-        , stats: { atk: "×1.5", range: "×1.2" }
-        , target: { not: [ "others" ], others: [ "英傑" ] }
-        , note: "分類未確認"
-    }
-    , {
-        name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒後", skill: "通常"
-        , stats: { atk: "×1.5", range: "×1.2" }
-        , target: { not: [ "others" ], others: [ "英傑" ] }
-        , note: "分類未確認"
-    }
-    , {
         name: "劉備", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.15", def: "×1.15" }
     }
