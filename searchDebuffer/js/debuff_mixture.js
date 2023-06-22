@@ -2469,6 +2469,24 @@ debuff.mixture = [
         , note: [ "大迷宮の守護霊", "(迷宮の悪霊系)" ]
     }
     , {
+        name: "ファントム", rarity: "トークン", AW: "覚2a"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+            , def: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "巡り咲く迷宮守", "(迷宮の悪霊系)" ]
+    }
+    , {
+        name: "キューティレイス", rarity: "トークン", AW: "覚2b"
+        , stats: {
+            atk: { value: "-23%", type: "noAttr" }
+            , def: { value: "-23%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "人造守護神霊", "(迷宮の悪霊系)" ]
+    }
+    , {
         name: "スチームタンク", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: {
             def: { value: "-50%", type: "global" }

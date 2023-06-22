@@ -670,6 +670,11 @@ buff.skill_area = [
         , stats: { eva: "30%" }
     }
     , {
+        name: "戦場に集う聖霊たち", rarity: "黒", cl: "支援の聖霊", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3", rege: [ "100/秒", "?/?f" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "250/秒", "125/15f" ] }
         , note: "永続"
