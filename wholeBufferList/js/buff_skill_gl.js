@@ -89,6 +89,15 @@ buff.skill_gl = [
         , stats: { nul: "100%" }
     }
     , {
+        name: "ヴルム/水着", rarity: "黒", cl: "中級竜兵", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.2" }
+        , target: [
+            { not: [ "home" ], others: [ "白の帝国" ] }
+            , { not: [ "season" ], others: [ "サマー" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "イグニス", rarity: "白", cl: "中級竜兵", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2" }
     }
@@ -684,6 +693,18 @@ buff.skill_gl = [
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { not: [ "others" ], others: [ "GG持ち" ] }
+    }
+    , {
+        name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒前", skill: "通常"
+        , stats: { rege: [ "72/秒", "?/?f" ] }
+    }
+    , {
+        name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒後", skill: "通常"
+        , stats: { rege: [ "72/秒", "?/?f" ] }
+    }
+    , {
+        name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "72/秒", "?/?f" ] }
     }
     , {
         name: "劉備", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒前", skill: "通常"

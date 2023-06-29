@@ -41,6 +41,11 @@ buff.own = [
         , target: { depType: [ "遠距離" ] }
     }
     , {
+        name: "トラム/水着", rarity: "白", cl: "銀腕の神話", AW: "覚醒後"
+        , stats: { def: "+3%" }
+        , target: { season: [ "サマー" ] }
+    }
+    , {
         name: "アルヴァ", rarity: "黒", cl: "ウェポンマスター", AW: "覚醒後"
         , stats: { atk: "+4%" }
         , target: { cl: [ "ソルジャー", "ヘビーアーマー", "ワルキューレ", "バンデット", "アーチャー" ] }
@@ -155,6 +160,11 @@ buff.own = [
         name: "ホルテウス", rarity: "白", cl: "ファラオ", AW: "覚醒後"
         , stats: { atk: "+3%" }
         , target: { home: [ "砂漠の国" ] }
+    }
+    , {
+        name: "ホルテウス/水着", rarity: "白", cl: "ファラオ", AW: "覚醒後"
+        , stats: { atk: "+3%" }
+        , target: { season: [ "サマー" ] }
     }
     , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後"

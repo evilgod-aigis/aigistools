@@ -177,6 +177,11 @@ buff.team = [
         , target: { cl: [ "ワルキューレ", "ボウライダー" ] }
     }
     , {
+        name: "ピューロ/水着", rarity: "白", cl: "ワルキューレ", AW: "覚醒後"
+        , stats: { wt: "-30%" }
+        , target: { others: [ "騎兵" ] }
+    }
+    , {
         name: "オリヴィエ", rarity: "黒", cl: "プリンセス", AW: "覚醒前"
         , stats: { cost: "-1" }
         , target: { race: [ "エルフ系", "ドワーフ" ] }
@@ -1116,6 +1121,23 @@ buff.team = [
         ]
     }
     , {
+        name: "グラティア/水着", rarity: "白", cl: "鍛冶職人", AW: "覚醒前"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "サマー" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "グラティア/水着", rarity: "白", cl: "鍛冶職人", AW: "覚醒後"
+        , stats: { atk: "+10%", def: "+5%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+            , { season: [ "サマー" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
         name: "ゴルドー", rarity: "金", cl: "鍛冶職人", AW: "覚醒前"
         , stats: { atk: "+5%", def: "+5%" }
         , target: [
@@ -1357,6 +1379,16 @@ buff.team = [
         name: "女王子", rarity: "黒", cl: "女王子", AW: "覚醒後"
         , stats: { hp: "+5%", mr: "+5" }
         , target: { sex: [ "女性" ] }
+    }
+    , {
+        name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒前"
+        , stats: { atk: "+3%", def: "+3%" }
+        , target: { others: [ "魔界" ] }
+    }
+    , {
+        name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒後"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: { others: [ "魔界" ] }
     }
     , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒後"
@@ -1984,6 +2016,16 @@ buff.team = [
         name: "アスバール", rarity: "黒", cl: "魔界総帥", AW: "覚醒後"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { others: [ "魔界" ] }
+    }
+    , {
+        name: "リッチ", rarity: "黒", cl: "リッチ【闇の軍勢】", AW: "覚醒前"
+        , stats: { atkCd: "-?%" }
+        , target: { others: [ "アンデッド" ] }
+    }
+    , {
+        name: "リッチ", rarity: "黒", cl: "リッチ【闇の軍勢】", AW: "覚醒後"
+        , stats: { atkCd: "-?%" }
+        , target: { others: [ "アンデッド" ] }
     }
     , {
         name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒後"

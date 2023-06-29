@@ -111,6 +111,10 @@ buff.dep_gl = [
         , stats: { atk: "+10%", def: "+10%" }
     }
     , {
+        name: "トラム/水着", rarity: "白", cl: "銀腕の神話", AW: "覚醒後"
+        , stats: { rege: [ "30/秒", "15/15f" ] }
+    }
+    , {
         name: "ルキファ", rarity: "白", cl: "黎明の翼", AW: "覚醒後"
         , stats: { rege: [ "50/秒", "25/15f" ] }
     }
@@ -456,6 +460,14 @@ buff.dep_gl = [
     , {
         name: "ロカ", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
         , stats: { nul: "7%" }
+    }
+    , {
+        name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒前", skill: "非"
+        , stats: { rege: [ "24/秒", "?/?f" ] }
+    }
+    , {
+        name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒後", skill: "非"
+        , stats: { rege: [ "24/秒", "?/?f" ] }
     }
     , {
         name: "魔王の玉座", rarity: "金", cl: "魔王の玉座"

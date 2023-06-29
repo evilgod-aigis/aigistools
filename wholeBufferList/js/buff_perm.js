@@ -1,24 +1,34 @@
 // 永続
 buff.perm = [
     {
-        name: "ホルテウス", rarity: "黒", cl: "ファラオ", AW: "覚醒後", skill: "通常"
+        name: "ホルテウス", rarity: "黒", cl: "ファラオ", AW: "覚醒後", skill: "通常(1)"
         , stats: { hp: "×1.15", atk: "×1.15", def: "×1.15" }
-        , note: "初回発動時"
+        , note: "発動時"
     }
     , {
-        name: "ホルテウス", rarity: "黒", cl: "ファラオ", AW: "覚醒後", skill: "覚醒"
+        name: "ホルテウス", rarity: "黒", cl: "ファラオ", AW: "覚醒後", skill: "覚醒(1)"
         , stats: { hp: "×1.15", atk: "×1.15", def: "×1.15" }
-        , note: "初回発動時"
+        , note: "発動時"
     }
     , {
-        name: "ホルテウス", rarity: "白", cl: "ファラオ", AW: "覚醒後", skill: "通常"
+        name: "ホルテウス", rarity: "白", cl: "ファラオ", AW: "覚醒後", skill: "通常(1)"
         , stats: { hp: "×1.1", atk: "×1.1", def: "×1.1" }
-        , note: "初回発動時"
+        , note: "発動時"
     }
     , {
-        name: "ホルテウス", rarity: "白", cl: "ファラオ", AW: "覚醒後", skill: "覚醒"
+        name: "ホルテウス", rarity: "白", cl: "ファラオ", AW: "覚醒後", skill: "覚醒(1)"
         , stats: { hp: "×1.1", atk: "×1.1", def: "×1.1" }
-        , note: "初回発動時"
+        , note: "発動時"
+    }
+    , {
+        name: "ホルテウス/水着", rarity: "白", cl: "ファラオ", AW: "覚醒後", skill: "通常(1)"
+        , stats: { hp: "×1.15", atk: "×1.15" }
+        , note: [ "発動時", "分類未確認" ]
+    }
+    , {
+        name: "ホルテウス/水着", rarity: "白", cl: "ファラオ", AW: "覚醒後", skill: "覚醒(1)"
+        , stats: { hp: "×1.15", atk: "×1.15" }
+        , note: [ "発動時", "分類未確認" ]
     }
     , {
         name: "リアナ/浴衣", rarity: "黒", cl: "ヒーラー", AW: "覚醒前"

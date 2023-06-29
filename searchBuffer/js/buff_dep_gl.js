@@ -703,6 +703,23 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "グラティア/水着", rarity: "白", cl: "鍛冶職人", AW: "覚醒前"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "サマー" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "グラティア/水着", rarity: "白", cl: "鍛冶職人", AW: "覚醒後"
+        , stats: { atk: "+15%", def: "+15%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+            , { season: [ "サマー" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
         name: "ゴルドー", rarity: "金", cl: "鍛冶職人", AW: "覚醒前"
         , stats: { atk: "+10%", def: "+10%" }
         , target: [
@@ -847,6 +864,24 @@ buff.dep_gl = [
         , target: { sex: [ "男性" ] }
     }
     , {
+        name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒前"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: [
+            , { cl: [ "政務官【闇の軍勢】" ] }
+            , { race: [ "デーモン系", "ゴブリン", "オーク" ] }
+            , { others: [ "アンデッド" ] }
+        ]
+    }
+    , {
+        name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒後"
+        , stats: { atk: "+15%", def: "+15%" }
+        , target: [
+            , { cl: [ "政務官【闇の軍勢】" ] }
+            , { race: [ "デーモン系", "ゴブリン", "オーク" ] }
+            , { others: [ "アンデッド" ] }
+        ]
+    }
+    , {
         name: "帝国軍旗", rarity: "金", cl: "帝国軍旗"
         , stats: { atk: "+5%", def: "+5%" }
         , target: { home: [ "白の帝国" ] }
@@ -939,6 +974,16 @@ buff.dep_gl = [
         name: "リノ", rarity: "金", cl: "サモナー", AW: "覚醒後"
         , stats: { atk: "+10%" }
         , target: { cl: [ "サモナー" ] }
+    }
+    , {
+        name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒前"
+        , stats: { ct: "-30%" }
+        , target: { season: [ "サマー" ], depType: [ "遠距離" ] }
+    }
+    , {
+        name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒後"
+        , stats: { ct: "-50%" }
+        , target: { season: [ "サマー" ], depType: [ "遠距離" ] }
     }
     , {
         name: "マーニー", rarity: "白", cl: "ダンサー", AW: "覚醒後"

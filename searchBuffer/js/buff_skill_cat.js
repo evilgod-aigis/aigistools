@@ -152,6 +152,15 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "ヴルム/水着", rarity: "黒", cl: "中級竜兵", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.4" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "サマー" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "ロタン", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { others: [ "ドラゴン" ] }
@@ -506,6 +515,12 @@ buff.skill_cat = [
             "王子", "ワルキューレ", "ペガサスライダー"
             , "ドラゴンライダー", "魔竜騎士", "ロイヤルガード"
         ] }
+    }
+    , {
+        name: "ナタク/水着", rarity: "黒", cl: "仙人", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.5" }
+        , target: { season: [ "サマー" ] }
+        , note: "分類未確認"
     }
     , {
         name: "メフィスト/水着", rarity: "黒", cl: "魔神", AW: "覚醒前", skill: "通常"
@@ -898,6 +913,50 @@ buff.skill_cat = [
         ]
     }
     , {
+        name: "グラティア/水着", rarity: "白", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.1" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "サマー" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "グラティア/水着", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.1" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+            , { season: [ "サマー" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "グラティア/水着", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"
+        , stats: { atk: "×1.3", ct: "-50%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+            , { season: [ "サマー" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "グラティア/水着", rarity: "白", cl: "鍛冶職人", AW: "覚2a", skill: "通常"
+        , stats: { atk: "×1.4", def: "×1.1" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+            , { season: [ "サマー" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "グラティア/水着", rarity: "白", cl: "鍛冶職人", AW: "覚2a", skill: "覚醒"
+        , stats: { atk: "×1.4", ct: "-50%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+            , { season: [ "サマー" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
         name: "ゴルドー", rarity: "金", cl: "鍛冶職人", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: [
@@ -1148,6 +1207,26 @@ buff.skill_cat = [
         , target: { sex: [ "女性" ] }
     }
     , {
+        name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: [
+            , { cl: [ "政務官【闇の軍勢】" ] }
+            , { race: [ "デーモン系", "ゴブリン", "オーク" ] }
+            , { others: [ "アンデッド", "魔界" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
+        name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: [
+            , { cl: [ "政務官【闇の軍勢】" ] }
+            , { race: [ "デーモン系", "ゴブリン", "オーク" ] }
+            , { others: [ "アンデッド", "魔界" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: { home: [ "白の帝国" ] }
@@ -1186,6 +1265,30 @@ buff.skill_cat = [
             , { others: [ "魔術師" ] }
         ]
         , note: "永続"
+    }
+    , {
+        name: "テュト/水着", rarity: "黒", cl: "メイジ", AW: "覚醒後", skill: "覚醒(1)"
+        , stats: { range: "×1.1" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "魔術師" ] }
+        ]
+    }
+    , {
+        name: "テュト/水着", rarity: "黒", cl: "メイジ", AW: "覚醒後", skill: "覚醒(2)"
+        , stats: { range: "×1.2" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "魔術師" ] }
+        ]
+    }
+    , {
+        name: "テュト/水着", rarity: "黒", cl: "メイジ", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: { range: "×1.3" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "魔術師" ] }
+        ]
     }
     , {
         name: "メーリス/学園", rarity: "白", cl: "メイジ", AW: "覚醒前", skill: "通常"
@@ -1735,6 +1838,24 @@ buff.skill_cat = [
         name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { others: [ "英傑" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { others: [ "魔界" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { others: [ "魔界" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×2.0" }
+        , target: { cl: [ "ダーク王子" ] }
         , note: "分類未確認"
     }
     , {

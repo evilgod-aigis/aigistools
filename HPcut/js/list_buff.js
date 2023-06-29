@@ -71,6 +71,12 @@ lists.buff.rWT.list = [
         , tooltip: "[編成] レアリティ：白以下の初動-15%"
     }
     , {
+        id: null, buffer: "純真海日記ピューロ", awaken: "覚醒"
+        , value: 30, disabled: null, req: "team"
+        , target: [ { attribution: [ "騎兵" ] } ]
+        , tooltip: "[編成] 属性：騎兵の初動-30%"
+    }
+    , {
         id: null, buffer: "竜姫婚姻譚メリュジアナ", awaken: "未覚醒", showAwaken: true
         , value: 20, disabled: null, req: "team"
         , target: [
@@ -193,6 +199,22 @@ lists.buff.rCT.list = [
         , value: 30, disabled: null, req: "deploy"
         , target: [ { attribution: [ "魔術師" ] } ]
         , tooltip: "[配置] 属性：魔術師の再動-30%"
+    }
+    , {
+        id: null, buffer: "夏空の鍛冶師グラティア", awaken: "覚醒"
+        , value: 50, disabled: null, req: "skill"
+        , target: [
+            { unitClass: [ "王子" ] }
+            , { attribution: [ "白の帝国" ], deployType: [ "近接型" ] }
+            , { attribution: [ "サマー" ], deployType: [ "近接型" ] }
+        ]
+        , tooltip: "[スキル・全体] 王子、属性：帝国・サマーの近接ユニットの再動-30%"
+        , unitInfo: {
+            unitName: "夏空の鍛冶師グラティア", deployType: "近接型", rarity: "白"
+            , unitClass: { selected: "鍛冶職人系" }
+            , attribution: [ "人間", "白の帝国", "サマー" ], note: []
+            , WT: 20, CT: 40, dur: 30
+        }
     }
     , {
         id: null, buffer: "天穿の槍士フィロ", awaken: "覚醒"
@@ -424,6 +446,14 @@ lists.buff.haste.list = [
         , target: [ { attribution: [ "獣人" ] } ]
         , tooltip: "[編成] 属性：獣人の攻撃硬直-35%"
     }
+    /*
+    , {
+        id: null, buffer: "金獣の領主リンクス", awaken: "-"
+        , value: null, disabled: null, req: "team"
+        , target: [ { attribution: [ "アンデッド" ] } ]
+        , tooltip: "[編成] 属性：アンデッドの攻撃硬直-%"
+    }
+    */
     , {
         id: null, buffer: "雷光の魔剣士タラニア", awaken: "覚醒"
         , value: 20, disabled: null, req: "team"

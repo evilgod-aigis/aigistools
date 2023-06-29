@@ -180,6 +180,29 @@ lists.units.onSkillAct.list = [
     , {
         id: null, hidden: false
         , unitInfo: {
+            unitName: "闇の墓守リッチ", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "リッチ【闇の軍勢】系" }
+            , attribution: [ "アンデッド", "魔術師" ]
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: [ "女性", "状態異常無効", "HP回復不可" ]
+        }
+        , skill: {
+            selected: "通常"
+            , detail: {
+                "通常": [
+                    {
+                        target: "全員"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 45, dur: 40, HPred: 10 }
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
             unitName: "清心の花嫁スイレン", deployType: "近接型", rarity: "白"
             , unitClass: { selected: "ドラゴンライダー系" }
             , attribution: [ "人間", "騎兵", "ジューンブライド" ]

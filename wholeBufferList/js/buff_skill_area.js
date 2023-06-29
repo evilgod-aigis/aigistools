@@ -352,6 +352,20 @@ buff.skill_area = [
         , stats: { eva: "100%" }
     }
     , {
+        name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", eva: "50%" }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2", eva: "50%" }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒後", skill: "覚醒(2～)"
+        , stats: { eva: "30%" }
+    }
+    , {
         name: "ちびリンネ", rarity: "ちび", cl: "風水使い", skill: "通常"
         , stats: { eva: "50%" }
     }

@@ -146,6 +146,10 @@ buff.team = [
         , stats: { poison: "-30%", abn: "-30%" }
     }
     , {
+        name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒後"
+        , stats: { hp: "+7%" }
+    }
+    , {
         name: "ミヤビ", rarity: "黒", cl: "ダンサー", AW: "覚醒後"
         , stats: { mr: "+5" }
     }

@@ -794,6 +794,11 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
+        name: "リッチ", rarity: "黒", cl: "リッチ【闇の軍勢】", AW: "覚醒後", skill: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
         name: "オヴェリー", rarity: "白", cl: "ロケットトルーパー", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "-50%" }
         , atkAttr: "物理", dur: "299f"

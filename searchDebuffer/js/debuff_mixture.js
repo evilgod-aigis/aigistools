@@ -80,6 +80,14 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "トラム/水着", rarity: "白", cl: "銀腕の神話", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: {
+            mr: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "アルヴァ", rarity: "黒", cl: "ウェポンマスター", AW: "覚醒後", skill: "覚醒"
         , stats: {
             stop: { value: "89f", type: "global" }
@@ -100,6 +108,14 @@ debuff.mixture = [
             def: { value: "-20%", type: "area" }
         }
         , domain: "area"
+    }
+    , {
+        name: "ホルテウス/水着", rarity: "白", cl: "ファラオ", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            mr: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "モルフェサ", rarity: "黒", cl: "カースウィスパラ", AW: "覚醒後", skill: "覚醒"
@@ -1057,6 +1073,33 @@ debuff.mixture = [
         name: "元始天尊", rarity: "黒", cl: "天尊", AW: "覚醒後", skill: "通常"
         , stats: {
             def: { value: "-60%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒前", skill: "通常"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+            , def: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒後", skill: "通常"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+            , def: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            atk: { value: "-40%", type: "noAttr" }
+            , def: { value: "-40%", type: "global" }
         }
         , domain: "global"
         , note: "分類未確認"
