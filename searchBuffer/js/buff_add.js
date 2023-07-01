@@ -167,6 +167,11 @@ buff.add = [
         , note: [ "範囲", "政務官【闇の軍勢】系" ]
     }
     , {
+        name: "海の家", rarity: "金", cl: "海の家"
+        , stats: { atk: "max300" }
+        , target: { season: [ "サマー" ] }
+    }
+    , {
         name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒前"
         , stats: { hp: "max2250", atk: "max1050", def: "max1050" }
         , target: { home: [ "恋姫" ] }

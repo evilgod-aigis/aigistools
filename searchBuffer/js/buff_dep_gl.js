@@ -1105,6 +1105,12 @@ buff.dep_gl = [
         , note: "無差別バフと合わせて+15%"
     }
     , {
+        name: "海の家", rarity: "金", cl: "海の家"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: { season: [ "サマー" ] }
+        , note: "無差別バフと合わせて+15%"
+    }
+    , {
         name: "パリオス", rarity: "黒", cl: "スカイウォリアー", AW: "覚醒後"
         , stats: { atk: "+10%", def: "+10%", mr: "+5" }
         , target: { race: [ "鳥人" ] }

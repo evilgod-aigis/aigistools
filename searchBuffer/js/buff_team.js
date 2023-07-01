@@ -2019,12 +2019,12 @@ buff.team = [
     }
     , {
         name: "リッチ", rarity: "黒", cl: "リッチ【闇の軍勢】", AW: "覚醒前"
-        , stats: { atkCd: "-?%" }
+        , stats: { atkCd: "-15%" }
         , target: { others: [ "アンデッド" ] }
     }
     , {
         name: "リッチ", rarity: "黒", cl: "リッチ【闇の軍勢】", AW: "覚醒後"
-        , stats: { atkCd: "-?%" }
+        , stats: { atkCd: "-15%" }
         , target: { others: [ "アンデッド" ] }
     }
     , {

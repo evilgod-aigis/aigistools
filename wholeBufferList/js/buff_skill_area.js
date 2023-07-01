@@ -362,7 +362,7 @@ buff.skill_area = [
         , note: [ "永続", "分類未確認" ]
     }
     , {
-        name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒後", skill: "覚醒(2～)"
+        name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒後", skill: "覚醒(4～)"
         , stats: { eva: "30%" }
     }
     , {
@@ -685,8 +685,7 @@ buff.skill_area = [
     }
     , {
         name: "戦場に集う聖霊たち", rarity: "黒", cl: "支援の聖霊", skill: "通常"
-        , stats: { atk: "×1.3", def: "×1.3", rege: [ "100/秒", "?/?f" ] }
-        , note: "分類未確認"
+        , stats: { atk: "×1.3", def: "×1.3", rege: [ "100/秒", "50/15f" ] }
     }
     , {
         name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒後", skill: "覚醒"

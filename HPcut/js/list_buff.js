@@ -446,14 +446,12 @@ lists.buff.haste.list = [
         , target: [ { attribution: [ "獣人" ] } ]
         , tooltip: "[編成] 属性：獣人の攻撃硬直-35%"
     }
-    /*
     , {
-        id: null, buffer: "金獣の領主リンクス", awaken: "-"
-        , value: null, disabled: null, req: "team"
+        id: null, buffer: "闇の墓守リッチ", awaken: "-"
+        , value: 15, disabled: null, req: "team"
         , target: [ { attribution: [ "アンデッド" ] } ]
-        , tooltip: "[編成] 属性：アンデッドの攻撃硬直-%"
+        , tooltip: "[編成] 属性：アンデッドの攻撃硬直-15%"
     }
-    */
     , {
         id: null, buffer: "雷光の魔剣士タラニア", awaken: "覚醒"
         , value: 20, disabled: null, req: "team"

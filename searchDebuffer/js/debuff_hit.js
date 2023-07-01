@@ -287,6 +287,12 @@ debuff.hit = [
         , atkAttr: "物理", dur: "7f"
     }
     , {
+        name: "ちびハリナ", rarity: "ちび", cl: "エンプレス", skill: "非"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "7f"
+        , note: "非ブロック時"
+    }
+    , {
         name: "スカー", rarity: "黒", cl: "シャークウォリアー"
         , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "59f"
@@ -796,7 +802,7 @@ debuff.hit = [
     , {
         name: "リッチ", rarity: "黒", cl: "リッチ【闇の軍勢】", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
-        , atkAttr: "魔法", dur: "?f"
+        , atkAttr: "魔法", dur: "49f"
     }
     , {
         name: "オヴェリー", rarity: "白", cl: "ロケットトルーパー", AW: "覚醒後", skill: "覚醒"

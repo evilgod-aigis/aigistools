@@ -463,16 +463,20 @@ buff.dep_gl = [
     }
     , {
         name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒前", skill: "非"
-        , stats: { rege: [ "24/秒", "?/?f" ] }
+        , stats: { rege: [ "24/秒", "12/15f" ] }
     }
     , {
         name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒後", skill: "非"
-        , stats: { rege: [ "24/秒", "?/?f" ] }
+        , stats: { rege: [ "24/秒", "12/15f" ] }
     }
     , {
         name: "魔王の玉座", rarity: "金", cl: "魔王の玉座"
         , stats: { atk: "+5%", def: "+5%", other: "" }
         , note: "魔界-50%"
+    }
+    , {
+        name: "海の家", rarity: "金", cl: "海の家"
+        , stats: { atk: "+5%", def: "+5%" }
     }
     , {
         name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒前"

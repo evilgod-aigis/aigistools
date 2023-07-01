@@ -85,7 +85,6 @@ debuff.mixture = [
             mr: { value: "-25%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "アルヴァ", rarity: "黒", cl: "ウェポンマスター", AW: "覚醒後", skill: "覚醒"
@@ -892,6 +891,16 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "ちびハリナ", rarity: "ちび", cl: "エンプレス", skill: "通常"
+        , stats: {
+            atk: { value: "-40%", type: "noAttr" }
+            , def: { value: "-40%", type: "area" }
+            , mr: { value: "-40%", type: "area" }
+        }
+        , domain: "area"
+        , target: { attr: [ "デーモン", "魔神" ] }
+    }
+    , {
         name: "ヴィアベル", rarity: "黒", cl: "アクアナイト", AW: "覚醒前", skill: "通常"
         , stats: {
             atk: { value: "-40%", type: "noAttr" }
@@ -1093,7 +1102,6 @@ debuff.mixture = [
             , def: { value: "-20%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒後", skill: "覚醒"
@@ -1102,7 +1110,6 @@ debuff.mixture = [
             , def: { value: "-40%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "エステル", rarity: "黒", cl: "メイジ", AW: "覚醒前", skill: "通常"

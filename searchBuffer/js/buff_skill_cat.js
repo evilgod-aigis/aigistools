@@ -158,7 +158,6 @@ buff.skill_cat = [
             { home: [ "白の帝国" ] }
             , { season: [ "サマー" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "ロタン", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
@@ -1214,7 +1213,6 @@ buff.skill_cat = [
             , { race: [ "デーモン系", "ゴブリン", "オーク" ] }
             , { others: [ "アンデッド", "魔界" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒後", skill: "通常"
@@ -1224,7 +1222,6 @@ buff.skill_cat = [
             , { race: [ "デーモン系", "ゴブリン", "オーク" ] }
             , { others: [ "アンデッド", "魔界" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒前", skill: "通常"
@@ -1844,19 +1841,16 @@ buff.skill_cat = [
         name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3" }
         , target: { others: [ "魔界" ] }
-        , note: "分類未確認"
     }
     , {
         name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.3" }
         , target: { others: [ "魔界" ] }
-        , note: "分類未確認"
     }
     , {
         name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×2.0" }
         , target: { cl: [ "ダーク王子" ] }
-        , note: "分類未確認"
     }
     , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"
