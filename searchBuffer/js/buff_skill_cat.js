@@ -519,7 +519,11 @@ buff.skill_cat = [
         name: "ナタク/水着", rarity: "黒", cl: "仙人", AW: "覚醒前", skill: "通常"
         , stats: { def: "×1.5" }
         , target: { season: [ "サマー" ] }
-        , note: "分類未確認"
+    }
+    , {
+        name: "ナタク/水着", rarity: "黒", cl: "仙人", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.5" }
+        , target: { season: [ "サマー" ] }
     }
     , {
         name: "メフィスト/水着", rarity: "黒", cl: "魔神", AW: "覚醒前", skill: "通常"
