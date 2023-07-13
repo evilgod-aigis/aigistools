@@ -1077,7 +1077,6 @@ buff.skill_cat = [
         name: "パヤモ", rarity: "黒", cl: "デーモンロード", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+20%", def: "×1.2" }
         , target: { others: [ "魔界" ] }
-        , note: "分類未確認"
     }
     , {
         name: "イルムガルト", rarity: "白", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
