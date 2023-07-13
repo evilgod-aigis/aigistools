@@ -142,6 +142,11 @@ buff.own = [
         , target: { others: [ "弓兵" ] }
     }
     , {
+        name: "サナラ/水着", rarity: "白", cl: "ジオマンサー", AW: "覚醒後"
+        , stats: { hp: "+3%" }
+        , target: { season: [ "サマー" ] }
+    }
+    , {
         name: "アンブローズ", rarity: "黒", cl: "転生魔導士", AW: "覚醒後"
         , stats: { mr: "+4" }
         , target: { depType: [ "近接" ] }

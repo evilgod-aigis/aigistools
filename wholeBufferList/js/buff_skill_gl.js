@@ -307,6 +307,16 @@ buff.skill_gl = [
         , note: "デーモンロード系"
     }
     , {
+        name: "パヤモ", rarity: "黒", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "パヤモ", rarity: "黒", cl: "デーモンロード", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
         name: "アブグルント", rarity: "白", cl: "デーモンロード", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.15" }
     }

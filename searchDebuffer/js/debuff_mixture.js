@@ -80,6 +80,15 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "王子【麒麟】", cl: "王子", skill: "通常"
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+            , def: { value: "-30%", type: "global" }
+            , mr: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+    }
+    , {
         name: "トラム/水着", rarity: "白", cl: "銀腕の神話", AW: "覚醒後", skill: [ "通常", "覚醒" ]
         , stats: {
             mr: { value: "-25%", type: "area" }
@@ -107,6 +116,22 @@ debuff.mixture = [
             def: { value: "-20%", type: "area" }
         }
         , domain: "area"
+    }
+    , {
+        name: "サナラ/水着", rarity: "白", cl: "ジオマンサー", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-40%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "サナラ/水着", rarity: "白", cl: "ジオマンサー", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            def: { value: "-15%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "ホルテウス/水着", rarity: "白", cl: "ファラオ", AW: "覚醒後", skill: "覚醒"
@@ -2456,7 +2481,7 @@ debuff.mixture = [
             def: { value: "-40%", type: "death" }
         }
         , domain: "global"
-        , note: [ "リヴン(黒)", "継続:20秒", "暫定的な分類" ]
+        , note: [ "リヴン[黒]", "継続:20秒", "暫定的な分類" ]
     }
     , {
         name: "変わり身の幻", rarity: "トークン", AW: "覚醒後"
@@ -2464,7 +2489,7 @@ debuff.mixture = [
             def: { value: "-20%", type: "death" }
         }
         , domain: "global"
-        , note: [ "リヴン(白)", "継続:20秒", "暫定的な分類" ]
+        , note: [ "リヴン[白]", "継続:20秒", "暫定的な分類" ]
     }
     , {
         name: "イビルアイ", rarity: "トークン", AW: "覚醒前", skill: "通常"

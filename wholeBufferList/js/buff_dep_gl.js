@@ -103,6 +103,10 @@ buff.dep_gl = [
         , stats: { atk: "+15%", def: "+15%" }
     }
     , {
+        name: "王子【麒麟】", cl: "王子"
+        , stats: { atk: "+20%", def: "+20%" }
+    }
+    , {
         name: "王子【幼少】", cl: "王子"
         , stats: { atk: "+10%", def: "+10%" }
     }
@@ -135,6 +139,11 @@ buff.dep_gl = [
         name: "サナラ", rarity: "白", cl: "ジオマンサー", AW: "覚醒後"
         , stats: { other: "" }
         , note: [ "地形-60%", "悪天候-50%" ]
+    }
+    , {
+        name: "サナラ/水着", rarity: "白", cl: "ジオマンサー", AW: "覚醒後"
+        , stats: { other: "" }
+        , note: [ "地形-50%", "悪天候-50%" ]
     }
     , {
         name: "コマンダー", cl: "ソルジャー", AW: "覚2a"

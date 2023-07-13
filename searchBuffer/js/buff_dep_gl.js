@@ -788,6 +788,11 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "パヤモ", rarity: "黒", cl: "デーモンロード", AW: "覚醒後"
+        , stats: { def: "+15%" }
+        , target: { others: [ "魔界" ] }
+    }
+    , {
         name: "ヤハール", rarity: "白", cl: "デーモンロード", AW: "覚醒後"
         , stats: { atk: "+7%", def: "+7%" }
         , target: [
