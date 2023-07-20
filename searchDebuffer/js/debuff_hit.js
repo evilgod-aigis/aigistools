@@ -375,6 +375,18 @@ debuff.hit = [
         , note: "一目の竜系"
     }
     , {
+        name: "サティン", rarity: "白", cl: "処刑人", AW: "覚醒前"
+        , stats: { def: "-15%" }
+        , atkAttr: "物理", dur: "∞"
+        , note: "分類未確認"
+    }
+    , {
+        name: "サティン", rarity: "白", cl: "処刑人", AW: "覚醒後"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "∞"
+        , note: "分類未確認"
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "14f"
@@ -459,6 +471,12 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "149f"
         , note: "ボム"
+    }
+    , {
+        name: "エイプリル", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "-?%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "ハイデマリー", rarity: "白", cl: "砲術士", AW: "覚醒前", skill: "通常"

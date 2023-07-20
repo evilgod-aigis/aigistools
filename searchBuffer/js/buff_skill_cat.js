@@ -1425,13 +1425,13 @@ buff.skill_cat = [
     , {
         name: "エイプリル", rarity: "白", cl: "砲術士", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3", range: "×1.2" }
-        , target: { cl: [ "重装砲兵", "砲術士" ] }
+        , target: { cl: [ "重装砲兵", "砲術士", "モンスタースレイヤー" ] }
         , note: "範囲"
     }
     , {
         name: "エイプリル", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.3", range: "×1.2" }
-        , target: { cl: [ "重装砲兵", "砲術士" ] }
+        , target: { cl: [ "重装砲兵", "砲術士", "モンスタースレイヤー" ] }
         , note: "範囲"
     }
     , {
@@ -2025,6 +2025,18 @@ buff.skill_cat = [
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { cl: [ "狛犬" ] }
         , note: "コマ"
+    }
+    , {
+        name: "夜行わらし【戦支度】", rarity: "トークン", AW: "覚2b", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: { cl: [ "夜行さん" ] }
+        , note: [ "絢爛千妖夜行", "(夜行さん系)", "永続", "分類未確認" ]
+    }
+    , {
+        name: "夜行わらし【馬廻】", rarity: "トークン", AW: "覚2b", skill: "通常"
+        , stats: { range: "×1.4", atkCd: "?f化" }
+        , target: { cl: [ "夜行さん" ] }
+        , note: [ "絢爛千妖夜行", "(夜行さん系)", "永続", "分類未確認" ]
     }
 ];
 

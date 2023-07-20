@@ -123,15 +123,14 @@ debuff.mixture = [
             def: { value: "-40%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
-        name: "サナラ/水着", rarity: "白", cl: "ジオマンサー", AW: "覚醒後", skill: "覚醒"
+        name: "サナラ/水着", rarity: "白", cl: "ジオマンサー", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: {
             def: { value: "-15%", type: "area" }
         }
         , domain: "area"
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "ホルテウス/水着", rarity: "白", cl: "ファラオ", AW: "覚醒後", skill: "覚醒"

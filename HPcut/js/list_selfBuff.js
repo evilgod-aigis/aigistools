@@ -44,6 +44,7 @@ lists.selfBuff.rCT = [
     , { id: null, buffer: "悟得陰陽頭", value: 45 }
     , { id: null, buffer: "クロノマスター", value: 45 }
     , { id: null, buffer: "ヘビートリガー", value: 45 }
+    , { id: null, buffer: "月下夜行", value: 25 }
     , { id: null, buffer: "マヨヒガわらし", value: 45 }
     , { id: null, buffer: "聖女イリス", value: 40 }
 ];
@@ -64,6 +65,8 @@ lists.selfBuff.skillExtend = [
     , { id: null, buffer: "ソーサレス", value: 30 }
     , { id: null, buffer: "ロードオブヘルメス", value: 30 }
     , { id: null, buffer: "ヘビートリガー", value: 30 }
+    , { id: null, buffer: "月下夜行", value: 30 }
+    , { id: null, buffer: "誓いの妖精姫オリヴィエ", value: 30 }
     , { id: null, buffer: "魔導鎧娘アルマ", value: 20 }
     , { id: null, buffer: "伏龍の軍師アイシャ", value: 20 }
     , { id: null, buffer: "水霊使いセノーテ", value: 15 }

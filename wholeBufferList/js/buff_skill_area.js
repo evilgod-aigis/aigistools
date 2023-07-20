@@ -516,6 +516,14 @@ buff.skill_area = [
         , note: "永続"
     }
     , {
+        name: "スピリア", rarity: "黒", cl: "ライフリンカー", AW: "覚醒前", skill: "通常"
+        , stats: { hp: "+20%" }
+    }
+    , {
+        name: "スピリア", rarity: "黒", cl: "ライフリンカー", AW: "覚醒後", skill: "通常"
+        , stats: { hp: "+20%" }
+    }
+    , {
         name: "シンフー", rarity: "黒", cl: "幻獣使い", AW: "覚醒前", skill: "通常"
         , stats: { draw: "(○)", redep: "60秒" }
     }

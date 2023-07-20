@@ -1082,6 +1082,18 @@ buff.dep_gl = [
         , note: "夜行さん系"
     }
     , {
+        name: "月下夜行", cl: "夜行さん", AW: "覚2a"
+        , stats: { cost: "-5" }
+        , target: { race: [ "妖怪" ] }
+        , note: "夜行さん系"
+    }
+    , {
+        name: "絢爛千妖夜行", cl: "夜行さん", AW: "覚2b"
+        , stats: { cost: "-3" }
+        , target: { race: [ "妖怪" ] }
+        , note: "夜行さん系"
+    }
+    , {
         name: "デリア", rarity: "白", cl: "ドラグーン", AW: "覚醒後"
         , stats: { mr: "+10" }
         , target: { depType: [ "遠距離" ] }

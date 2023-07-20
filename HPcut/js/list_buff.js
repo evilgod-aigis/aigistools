@@ -260,6 +260,18 @@ lists.buff.skillExtend = {};
 lists.buff.skillExtend.jap = "スキル時間延長";
 lists.buff.skillExtend.list = [
     {
+        id: null, buffer: "誓いの妖精姫オリヴィエ", awaken: "未覚醒", showAwaken: true
+        , value: 20, disabled: null, req: "team"
+        , target: [ { unitClass: [ "王子" ] } ]
+        , tooltip: "[編成] 王子のスキル時間+20%"
+    }
+    , {
+        id: null, buffer: "誓いの妖精姫オリヴィエ", awaken: "覚醒", showAwaken: true
+        , value: 30, disabled: null, req: "team"
+        , target: [ { unitClass: [ "王子" ] } ]
+        , tooltip: "[編成] 王子のスキル時間+30%"
+    }
+    , {
         id: null, buffer: "天馬騎士団長エスタ", awaken: "未覚醒", showAwaken: true
         , value: 20, disabled: null, req: "team"
         , target: [
