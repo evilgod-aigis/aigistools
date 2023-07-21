@@ -62,7 +62,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "元始天尊", deployType: "近接型", rarity: "黒"
             , unitClass: { selected: "天尊系" }
-            , attribution: [ "神" ]
+            , attribution: [ "神", "飛行" ]
             , affection: { percentage: null, bonus: "その他", changeRate: null }
             , note: [ "女性", "状態異常無効" ]
         }
