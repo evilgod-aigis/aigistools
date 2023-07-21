@@ -496,6 +496,23 @@ lists.buff.haste.list = [
         , compound: { rWT: [ { buffer: "風雲児【恋姫】" } ] }
         , tooltip: "[編成] 全味方の攻撃硬直-20%"
     }
+    , {
+        // 区分が好感度と同じらしいので、対象が出てきたら要プログラム見直し
+        id: null, buffer: "夜行わらし【馬廻】", awaken: "-"
+        , value: 50, disabled: null, req: "skill"
+        , target: [
+            { unitClass: [
+                "夜行さん系", "ちび夜行さん", "ちび百妖夜行", "夜行さん", "百妖夜行", "月下夜行", "絢爛千妖夜行"
+            ] }
+        ]
+        , tooltip: "[スキル・全体] クラス：夜行さん系の攻撃硬直-50%"
+        , unitInfo: {
+            unitName: "夜行わらし【馬廻】", deployType: "遠距離型", rarity: "-"
+            , unitClass: { selected: "-" }
+            , attribution: [], note: []
+            , WT: 1, CT: 60, dur: Infinity
+        }
+    }
 ];
 
 // 硬直短縮(固定値化)リスト
