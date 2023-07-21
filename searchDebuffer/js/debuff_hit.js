@@ -474,7 +474,7 @@ debuff.hit = [
     }
     , {
         name: "エイプリル", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "覚醒"
-        , stats: { def: "-?%" }
+        , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "?f"
         , note: "分類未確認"
     }
