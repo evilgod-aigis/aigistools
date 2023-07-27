@@ -309,7 +309,6 @@ buff.skill_gl = [
     , {
         name: "パヤモ", rarity: "黒", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
-        , note: "分類未確認"
     }
     , {
         name: "パヤモ", rarity: "黒", cl: "デーモンロード", AW: "覚醒後", skill: "通常"
@@ -330,6 +329,21 @@ buff.skill_gl = [
     , {
         name: "オーガスタ", rarity: "黒", cl: "料理人", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.3" }
+    }
+    , {
+        name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", range: "×1.2", rege: [ "80/秒", "?/?f" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2", range: "×1.2", rege: [ "80/秒", "?/?f" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚醒後", skill: "覚醒"
+        , stats: { range: "×1.1" }
+        , note: "永続"
     }
     , {
         name: "ちびオーガスタ", rarity: "ちび", cl: "料理人", skill: "覚醒"

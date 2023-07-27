@@ -34,6 +34,22 @@ buff.add = [
         , target: { sex: [ "女性" ] }
     }
     , {
+        name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚醒前"
+        , stats: { hp: "max2250", atk: "max1050", def: "max1050" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { depType: [ "遠距離" ] }
+        ]
+    }
+    , {
+        name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚醒後"
+        , stats: { hp: "max3000", atk: "max1500", def: "max1500" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { depType: [ "遠距離" ] }
+        ]
+    }
+    , {
         name: "タオパオ", rarity: "白", cl: "料理人", AW: "覚醒前"
         , stats: { hp: "max1800", atk: "max900", def: "max900" }
         , target: { others: [ "魔術師" ] }
