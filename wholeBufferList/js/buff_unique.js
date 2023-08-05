@@ -394,6 +394,12 @@ buff.unique = [
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "魔法-40%(範囲)" ]
     }
+    , {
+        name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "覚醒"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "属性不問-15%(範囲)" ]
+    }
     /*
     , {
         name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "覚醒"

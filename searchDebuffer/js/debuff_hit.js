@@ -948,6 +948,76 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
+        name: "井河アサギ", rarity: "黒", cl: "対魔忍 超人【対魔忍】", AW: "覚醒後", skill: "覚醒"
+        , stats: { atkCd: "+30f" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: "秋山凜子", rarity: "黒", cl: "対魔忍 超人【対魔忍】", AW: "覚醒後", skill: "覚醒(2～)"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "30f"
+        , note: "ボム"
+    }
+    , {
+        name: "心願寺紅", rarity: "白", cl: "対魔忍 魔性【対魔忍】", AW: "覚醒前", skill: "通常"
+        , stats: { def: "-60%" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
+        name: "心願寺紅", rarity: "白", cl: "対魔忍 魔性【対魔忍】", AW: "覚醒後", skill: "通常"
+        , stats: { def: "-60%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "フェリシア", rarity: "白", cl: "対魔忍 魔性【対魔忍】", AW: "覚醒後", skill: "覚醒(～2)"
+        , stats: { atk: "-40%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "フェリシア", rarity: "白", cl: "対魔忍 魔性【対魔忍】", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: { atk: "-40%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "対魔忍 精神【対魔忍】", cl: "対魔忍 精神【対魔忍】", AW: "覚醒前"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "対魔忍 精神 覚醒【対魔忍】", cl: "対魔忍 精神【対魔忍】", AW: "覚1"
+        , stats: { def: "-25%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "対魔忍 精神【対魔忍】系", "分類未確認" ]
+    }
+    , {
+        name: "甲河アスカ", rarity: "白", cl: "対魔忍 科学【対魔忍】", AW: "覚醒前", skill: "通常"
+        , stats: { def: "-80%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "甲河アスカ", rarity: "白", cl: "対魔忍 科学【対魔忍】", AW: "覚醒後", skill: "通常"
+        , stats: { def: "-80%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "水城ゆきかぜ", rarity: "黒", cl: "対魔忍 自然【対魔忍】", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "-20%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "水城ゆきかぜ", rarity: "黒", cl: "対魔忍 自然【対魔忍】", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "-20%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "ブルームペタル", rarity: "トークン", AW: "覚1"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "149f"

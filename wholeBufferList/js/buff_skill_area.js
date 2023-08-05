@@ -370,6 +370,10 @@ buff.skill_area = [
         , stats: { eva: "50%" }
     }
     , {
+        name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "覚醒"
+        , stats: { hp: "+20%" }
+    }
+    , {
         name: "アーリー", rarity: "白", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"
         , stats: { other: "" }
         , note: [ "発動時オート", "ボム" ]

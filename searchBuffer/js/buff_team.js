@@ -2162,6 +2162,11 @@ buff.team = [
         , stats: { hp: "+10%", atk: "+10%", def: "+10%" }
         , target: { cl: [ "鬼【ななリン】" ] }
     }
+    , {
+        name: "井河アサギ", rarity: "黒", cl: "対魔忍 超人【対魔忍】", AW: "覚醒後"
+        , stats: { wt: "-40%" }
+        , target: { depType: [ "近接" ] }
+    }
 ];
 
 /*

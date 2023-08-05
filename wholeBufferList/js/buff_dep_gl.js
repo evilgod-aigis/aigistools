@@ -561,6 +561,18 @@ buff.dep_gl = [
         , stats: { nul: "7%" }
     }
     , {
+        name: "ふうま時子", rarity: "白", cl: "対魔忍 精神【対魔忍】", AW: "覚醒前"
+        , stats: { rege: [ "30/秒", "?/?f" ] }
+    }
+    , {
+        name: "ふうま時子", rarity: "白", cl: "対魔忍 精神【対魔忍】", AW: "覚醒後"
+        , stats: { rege: [ "50/秒", "?/?f" ] }
+    }
+    , {
+        name: "甲河アスカ", rarity: "白", cl: "対魔忍 科学【対魔忍】", AW: "覚醒後"
+        , stats: { ct: "-35%" }
+    }
+    , {
         name: "世界樹の苗", rarity: "トークン", AW: "覚醒後"
         , stats: { rege: [ "20/秒", "10/15f" ] }
         , note: "ラタトスク"

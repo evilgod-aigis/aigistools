@@ -1420,6 +1420,20 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
         name: "ブレリア", rarity: "金", cl: "ダンサー", AW: "覚醒後", skill: "覚醒"
         , stats: {
             def: { value: "-15%", type: "global" }

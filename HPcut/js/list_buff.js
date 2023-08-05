@@ -65,6 +65,12 @@ lists.buff.rWT.list = [
         , tooltip: "[編成] 全味方の初動-20%"
     }
     , {
+        id: null, buffer: "井河アサギ", awaken: "覚醒"
+        , value: 40, disabled: null, req: "team"
+        , target: [ { deployType: [ "近接型" ] } ]
+        , tooltip: "[編成] 近接ユニットの初動-40%"
+    }
+    , {
         id: null, buffer: "白浴衣の弓乙女ナナリー", awaken: "覚醒"
         , value: 15, disabled: null, req: "team"
         , target: [ { rarity: [ "白", "青", "金", "銀", "銅" ] } ]

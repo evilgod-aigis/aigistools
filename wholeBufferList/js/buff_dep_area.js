@@ -16,6 +16,14 @@ buff.dep_area = [
         , note: "ヒーラー系"
     }
     , {
+        name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒前"
+        , stats: { atk: "×1.1" }
+    }
+    , {
+        name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒後"
+        , stats: { atk: "×1.15" }
+    }
+    , {
         name: "ソシエ/ハロウィン", rarity: "黒", cl: "モンスタースレイヤー", AW: "覚醒後"
         , stats: { atk: "×1.1" }
         , note: "分類未確認"
