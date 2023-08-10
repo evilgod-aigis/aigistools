@@ -823,6 +823,18 @@ debuff.hit = [
         , atkAttr: "魔法", dur: "49f"
     }
     , {
+        name: "ゴブリン博士", cl: "ゴブリン博士"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ちびゴブリン博士", rarity: "ちび", cl: "ゴブリン博士", skill: "通常"
+        , stats: { def: "-60%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "オヴェリー", rarity: "白", cl: "ロケットトルーパー", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "-50%" }
         , atkAttr: "物理", dur: "299f"

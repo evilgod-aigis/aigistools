@@ -1862,6 +1862,15 @@ buff.skill_cat = [
         , target: { cl: [ "ダーク王子" ] }
     }
     , {
+        name: "ちびゴブリン博士", rarity: "ちび", cl: "ゴブリン博士", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: [
+            { race: [ "ゴブリン" ] }
+            , { others: [ "機械" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.5", range: "×1.3" }
         , target: { depType: [ "遠距離" ] }

@@ -1116,6 +1116,14 @@ buff.dep_gl = [
         , target: { others: [ "魔界" ] }
     }
     , {
+        name: "ゴブリン博士", cl: "ゴブリン博士"
+        , stats: { hp: "+10%", atk: "+10%" }
+        , target: [
+            { race: [ "ゴブリン" ] }
+            , { others: [ "機械" ] }
+        ]
+    }
+    , {
         name: "魔王の玉座", rarity: "金", cl: "魔王の玉座"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { others: [ "魔界" ] }
