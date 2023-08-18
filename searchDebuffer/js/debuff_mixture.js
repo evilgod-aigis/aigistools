@@ -1375,6 +1375,22 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "レオナ/私服", rarity: "白", cl: "後衛戦術家", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "レオナ/私服", rarity: "白", cl: "後衛戦術家", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "ミコト/水着", rarity: "黒", cl: "陰陽師", AW: "覚醒前", skill: "通常"
         , stats: {
             mr: { value: "-30%", type: "area" }

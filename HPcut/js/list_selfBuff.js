@@ -39,6 +39,8 @@ lists.selfBuff.rCT = [
     , { id: null, buffer: "デッドリーエッジ", value: 40 }
     , { id: null, buffer: "剣神", value: 50 }
     , { id: null, buffer: "天魔天狗", value: 45 }
+    , { id: null, buffer: "オランピア", value: 45 }
+    , { id: null, buffer: "アーセナルドール", value: 45 }
     , { id: null, buffer: "ラピッドシューター", value: 45 }
     , { id: null, buffer: "ネプチューン", value: 45 }
     , { id: null, buffer: "悟得陰陽頭", value: 45 }

@@ -387,6 +387,12 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
+        name: "トネール", rarity: "白", cl: "処刑人", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "-30%" }
+        , atkAttr: "物理", dur: "300f"
+        , note: [ "ボム", "分類未確認" ]
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "14f"
@@ -969,6 +975,11 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "30f"
         , note: "ボム"
+    }
+    , {
+        name: "鬼崎きらら", rarity: "黒", cl: "対魔忍 超人【対魔忍】", AW: "覚醒後", skill: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
     }
     , {
         name: "心願寺紅", rarity: "白", cl: "対魔忍 魔性【対魔忍】", AW: "覚醒前", skill: "通常"
