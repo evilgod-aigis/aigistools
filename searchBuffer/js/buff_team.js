@@ -523,6 +523,18 @@ buff.team = [
         , target: { season: [ "サマー" ] }
     }
     , {
+        name: "ミルノ/浴衣", rarity: "白", cl: "エンジェル", AW: "覚醒前"
+        , stats: { other: "" }
+        , target: { season: [ "サマー" ] }
+        , note: "天界-20%"
+    }
+    , {
+        name: "ミルノ/浴衣", rarity: "白", cl: "エンジェル", AW: "覚醒後"
+        , stats: { other: "" }
+        , target: { season: [ "サマー" ] }
+        , note: "天界-30%"
+    }
+    , {
         name: "セフィーレ/ハロウィン", rarity: "白", cl: "エンジェル", AW: "覚醒後"
         , stats: { hp: "+5%", mr: "+5" }
         , target: { season: [ "ハロウィン" ] }
@@ -1687,6 +1699,16 @@ buff.team = [
         name: "カノン/温泉", rarity: "白", cl: "砲術士", AW: "覚醒後"
         , stats: { cost: "-3" }
         , target: { cl: [ "重装砲兵", "砲術士" ] }
+    }
+    , {
+        name: "メル/浴衣", rarity: "白", cl: "砲術士", AW: "覚醒前"
+        , stats: { wt: "-10%" }
+        , target: { season: [ "サマー" ] }
+    }
+    , {
+        name: "メル/浴衣", rarity: "白", cl: "砲術士", AW: "覚醒後"
+        , stats: { wt: "-15%" }
+        , target: { season: [ "サマー" ] }
     }
     , {
         name: "ナターリエ/水着", rarity: "白", cl: "ダンサー", AW: "覚醒後"

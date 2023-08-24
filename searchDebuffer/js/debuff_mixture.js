@@ -1264,6 +1264,22 @@ debuff.mixture = [
         , note: "発動時"
     }
     , {
+        name: "デューオ/浴衣", rarity: "黒", cl: "パイレーツ", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-70%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "デューオ/浴衣", rarity: "黒", cl: "パイレーツ", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-70%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "ジョヴァンニ/学園", rarity: "金", cl: "パイレーツ", AW: "覚醒前", skill: "通常"
         , stats: {
             stop: { value: "119f", type: "area" }
@@ -1380,7 +1396,6 @@ debuff.mixture = [
             def: { value: "-30%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "レオナ/私服", rarity: "白", cl: "後衛戦術家", AW: "覚醒後", skill: "通常"
@@ -1388,7 +1403,6 @@ debuff.mixture = [
             def: { value: "-30%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "ミコト/水着", rarity: "黒", cl: "陰陽師", AW: "覚醒前", skill: "通常"

@@ -278,6 +278,12 @@ buff.skill_cat = [
         , target: { cl: [ "王子" ] }
     }
     , {
+        name: "ミルノ/浴衣", rarity: "白", cl: "エンジェル", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , target: { season: [ "サマー" ] }
+        , note: "範囲"
+    }
+    , {
         name: "イブキ", rarity: "黒", cl: "セーラー", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3", other: "" }
         , target: { depType: [ "遠距離" ] }

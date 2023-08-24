@@ -503,6 +503,11 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
+        name: "メル/浴衣", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
         name: "トワ/学園", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "19f"
@@ -979,7 +984,7 @@ debuff.hit = [
     , {
         name: "鬼崎きらら", rarity: "黒", cl: "対魔忍 超人【対魔忍】", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
-        , atkAttr: "魔法", dur: "?f"
+        , atkAttr: "魔法", dur: "9f"
     }
     , {
         name: "心願寺紅", rarity: "白", cl: "対魔忍 魔性【対魔忍】", AW: "覚醒前", skill: "通常"

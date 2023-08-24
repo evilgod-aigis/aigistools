@@ -145,6 +145,18 @@ lists.buff.rWT.list = [
         , tooltip: "[編成] レアリティ：白の初動-25%"
     }
     , {
+        id: null, buffer: "夏の花火師メル", awaken: "未覚醒", showAwaken: true
+        , value: 10, disabled: null, req: "team"
+        , target: [ { attribution: [ "サマー" ] } ]
+        , tooltip: "[編成] 属性：サマーの初動-10%"
+    }
+    , {
+        id: null, buffer: "夏の花火師メル", awaken: "覚醒", showAwaken: true
+        , value: 15, disabled: null, req: "team"
+        , target: [ { attribution: [ "サマー" ] } ]
+        , tooltip: "[編成] 属性：サマーの初動-15%"
+    }
+    , {
         id: null, buffer: "ロゼット", awaken: "未覚醒"
         , value: 30, disabled: null, req: "team"
         , target: [ { rarity: [ "銀" ] } ]
