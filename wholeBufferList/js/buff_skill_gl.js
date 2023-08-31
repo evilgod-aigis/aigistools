@@ -40,6 +40,10 @@ buff.skill_gl = [
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
+        name: "ヴィディア", rarity: "黒", cl: "王国軍初代副司令", AW: "覚醒後", skill: "覚醒(2)"
+        , stats: { atk: "×1.3", def: "×1.3" }
+    }
+    , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "通常"
         , stats: { rege: [ "1000/秒", "2000/60f" ] }
     }

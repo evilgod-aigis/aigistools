@@ -2,7 +2,7 @@ const table = {};
 
 table.word = {
     team: "編成", own: "所持", perm: "永続", dep_gl: "全体配置", dep_area: "範囲配置"
-    , skill_area: "範囲スキル", skill_gl: "全体スキル", skill_cat: "属性スキル"
+    , skill_area: "範囲スキル", skill_gl: "全体スキル", skill_cat: "属性スキル", cons_cost: "コスト消費"
     , add: "加算", unique: "その他"
     
     , id: "id", name: "ユニット", rarity: "レア", cl: "クラス", AW: "覚醒等", skill: "スキル"
@@ -26,7 +26,7 @@ table.rarity = [ "黒", "白", "青", "金", "ちび", "銀", "銅", "鉄", "ト
 table.AW = [ "CC前", "CC後", "CC55", "覚醒前", "覚醒後", "覚1", "覚2a", "覚2b" ];
 table.buffType = [
     "team", "own", "perm", "dep_gl", "dep_area"
-    , "skill_area", "skill_gl", "skill_cat", "add", "unique"
+    , "skill_area", "skill_gl", "skill_cat", "cons_cost", "add", "unique"
 ];
 table.stats = [
     "hp", "atk", "def", "mr", "range", "cost", "wt", "ct", "dur", "atkCd"

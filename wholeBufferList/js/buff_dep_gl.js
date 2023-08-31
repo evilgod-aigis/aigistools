@@ -131,6 +131,10 @@ buff.dep_gl = [
         , stats: { nul: "15%" }
     }
     , {
+        name: "ヴィディア", rarity: "黒", cl: "王国軍初代副司令", AW: "覚醒後"
+        , stats: { cost: "-20%" }
+    }
+    , {
         name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒後"
         , stats: { atk: "+7%", def: "+7%" }
     }

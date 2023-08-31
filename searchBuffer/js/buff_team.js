@@ -77,6 +77,12 @@ buff.team = [
         , target: { others: [ "竜族" ] }
     }
     , {
+        name: "王子【焔竜】", cl: "王子"
+        , stats: { hp: "+10%", atk: "+20%" }
+        , target: { others: [ "竜族" ] }
+        , note: "Lv3以上"
+    }
+    , {
         name: "王子【水着】", cl: "王子"
         , stats: { atk: "+10%" }
         , target: { season: [ "サマー" ] }
@@ -85,6 +91,12 @@ buff.team = [
         name: "王子【天羽々斬】", cl: "王子"
         , stats: { hp: "+15%", atk: "+7%" }
         , target: { home: [ "東の国" ] }
+    }
+    , {
+        name: "王子【天羽々斬】", cl: "王子"
+        , stats: { hp: "+20%", atk: "+10%" }
+        , target: { home: [ "東の国" ] }
+        , note: "Lv3以上"
     }
     , {
         name: "王子【正月】", cl: "王子"

@@ -802,15 +802,15 @@ lists.buff.takenDmg.jap = "被ダメ増加";
 lists.buff.takenDmg.list = [
     {
         id: null, buffer: "カースウィスパラー", isClass: true, awaken: "覚醒"
-        , value: 10, disabled: null, req: "deploy"
+        , value: 15, disabled: null, req: "deploy"
         , compound: { takenDmg: [ { buffer: "災禍を律す者モルフェサ" } ] }
-        , tooltip: "[射程内] 被ダメージが10%上昇"
+        , tooltip: "[射程内] 被ダメージが15%上昇"
     }
     , {
         id: null, buffer: "災禍を律す者モルフェサ", rarity: "黒", awaken: "通常", showAwaken: true
-        , value: 15, disabled: null, req: "skill"
+        , value: 22.5, disabled: null, req: "skill"
         , compound: { takenDmg: [ { buffer: "カースウィスパラー" } ] }
-        , tooltip: "[スキル・射程内] 被ダメージが15%上昇"
+        , tooltip: "[スキル・射程内] 被ダメージが22.5%上昇"
         , unitInfo: {
             unitName: "災禍を律す者モルフェサ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "カースウィスパラー" }
@@ -821,9 +821,9 @@ lists.buff.takenDmg.list = [
     }
     , {
         id: null, buffer: "災禍を律す者モルフェサ", rarity: "黒", awaken: "覚醒", showAwaken: true
-        , value: 30, disabled: null, req: "skill"
+        , value: 45, disabled: null, req: "skill"
         , compound: { takenDmg: [ { buffer: "カースウィスパラー" } ] }
-        , tooltip: "[スキル・射程内] 被ダメージが30%上昇"
+        , tooltip: "[スキル・射程内] 被ダメージが45%上昇"
         , unitInfo: {
             unitName: "災禍を律す者モルフェサ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "カースウィスパラー" }
@@ -834,9 +834,9 @@ lists.buff.takenDmg.list = [
     }
     , {
         id: null, buffer: "災禍を律す者モルフェサ", rarity: "白", awaken: "通常", showAwaken: true
-        , value: 15, disabled: null, req: "skill"
+        , value: 22.5, disabled: null, req: "skill"
         , compound: { takenDmg: [ { buffer: "カースウィスパラー" } ] }
-        , tooltip: "[スキル・射程内] 被ダメージが15%上昇"
+        , tooltip: "[スキル・射程内] 被ダメージが22.5%上昇"
         , unitInfo: {
             unitName: "災禍を律す者モルフェサ", deployType: "遠距離型", rarity: "白"
             , unitClass: { selected: "カースウィスパラー" }
@@ -855,7 +855,7 @@ lists.buff.takenDmg.list = [
             , unitClass: { selected: "カースウィスパラー" }
             , attribution: [ "人間", "魔術師", "英傑" ]
             , note: [ "女性" ]
-            , WT: 27.5, CT: 55, dur: 20
+            , WT: 27.5, CT: 44, dur: 20
         }
     }
 ];

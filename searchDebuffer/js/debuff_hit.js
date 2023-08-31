@@ -1,6 +1,17 @@
 // 命中
 debuff.hit = [
     {
+        name: "トラム", rarity: "黒", cl: "銀腕の神話", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { def: "-40%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "山ン本五郎左衛門", rarity: "白", cl: "アヤカシの王", AW: "覚醒後"
+        , stats: { def: "-35%" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
         name: "山ン本五郎左衛門", rarity: "白", cl: "アヤカシの王", AW: "覚醒後"
         , stats: { def: "-35%" }
         , atkAttr: "物理", dur: "?f"
@@ -505,7 +516,7 @@ debuff.hit = [
     , {
         name: "メル/浴衣", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "覚醒"
         , stats: { stop: "○" }
-        , atkAttr: "物理", dur: "?f"
+        , atkAttr: "物理", dur: "10f"
     }
     , {
         name: "トワ/学園", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"
