@@ -543,7 +543,7 @@ lists.buff.hasteFixed.list = [
         , target: [ { attribution: [ "魔術師" ] } ]
         , tooltip: "[スキル・全体] 属性：魔術師の攻撃硬直11f化"
         , unitInfo: {
-            unitName: "叡智の杖", deployType: "近接型", rarity: "黒"
+            unitName: "叡智の杖", deployType: "近接型", rarity: "-"
             , unitClass: { selected: "叡智の杖" }
             , attribution: [], note: []
             , WT: 1, CT: 0, dur: Infinity
@@ -555,8 +555,32 @@ lists.buff.hasteFixed.list = [
         , target: [ { attribution: [ "魔界" ] } ]
         , tooltip: "[スキル・全体] 属性：魔界の攻撃硬直6f化"
         , unitInfo: {
-            unitName: "狂暴の翼", deployType: "近接型", rarity: "黒"
+            unitName: "狂暴の翼", deployType: "近接型", rarity: "-"
             , unitClass: { selected: "狂暴の翼" }
+            , attribution: [], note: []
+            , WT: 1, CT: 0, dur: Infinity
+        }
+    }
+    , {
+        id: null, buffer: "速射の長銃", awaken: "-"
+        , value: 31, disabled: null, req: "skill"
+        , target: [ { attribution: [ "銃士" ] } ]
+        , tooltip: "[スキル・全体] 属性：銃士の攻撃硬直16f化"
+        , unitInfo: {
+            unitName: "速射の長銃", deployType: "近接型", rarity: "-"
+            , unitClass: { selected: "速射の長銃" }
+            , attribution: [], note: []
+            , WT: 1, CT: 0, dur: Infinity
+        }
+    }
+    , {
+        id: null, buffer: "猛撃の砲弾", awaken: "-"
+        , value: 31, disabled: null, req: "skill"
+        , target: [ { attribution: [ "砲兵" ] } ]
+        , tooltip: "[スキル・全体] 属性：砲兵の攻撃硬直16f化"
+        , unitInfo: {
+            unitName: "猛撃の砲弾", deployType: "近接型", rarity: "-"
+            , unitClass: { selected: "猛撃の砲弾" }
             , attribution: [], note: []
             , WT: 1, CT: 0, dur: Infinity
         }
@@ -865,6 +889,23 @@ lists.buff.redMapEff = {};
 lists.buff.redMapEff.jap = "鈍化(マップ)軽減";
 lists.buff.redMapEff.list = [
     {
+        id: null, buffer: "制海の銃", awaken: "-"
+        , map: "深海", value: 100, disabled: null, req: "skill"
+        , target: [
+            { unitClass: [
+                "セーラー系", "ちびセーラー", "ちびセーラーエリート", "セーラー", "セーラーチーフ", "セーラーエリート", "アドミラル", "ドレッドノート"
+                , "パイレーツ系", "ちびパイレーツ", "ちびキングオブパイレーツ", "下級パイレーツ", "パイレーツ", "キャプテン", "キングオブパイレーツ", "ネプチューン", "エル・ドラゴ"
+            ] }
+        ]
+        , tooltip: "[スキル・全体] クラス：セーラー系・パイレーツ系の深海の影響を100%軽減"
+        , unitInfo: {
+            unitName: "制海の銃", deployType: "近接型", rarity: "-"
+            , unitClass: { selected: "制海の銃" }
+            , attribution: [], note: []
+            , WT: 1, CT: 0, dur: Infinity
+        }
+    }
+    , {
         id: null, buffer: "王子【海鎮】", awaken: null
         , map: "深海", value: 50, disabled: null, req: "deploy"
         , tooltip: "[配置] 全味方の深海の影響を50%軽減"

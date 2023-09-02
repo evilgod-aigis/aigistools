@@ -383,7 +383,6 @@ funcs.unitsData.CorrectSkill = (unit, withBuff = true) => {
             if(IsBomb(obj)) obj.corr.dur = obj.uncorr.dur;
             else obj.corr.dur = obj.uncorr.dur * rateByAff.dur * buffValue.dur + buffValue.dur_fixed;
         });
-        console.log(unit, buffValue)
     } else {
         _.forEach(skill, obj => {
             if("WT" in obj.uncorr) obj.corr.WT = obj.uncorr.WT;
