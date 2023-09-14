@@ -392,7 +392,15 @@ buff.skill_gl = [
         , stats: { rege: [ "60/秒", "30/15f" ] }
     }
     , {
-        name: "イーリス", rarity: "金", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
+        name: "イーリス/私服", rarity: "白", cl: "ヒーラー", AW: "覚醒前", skill: "通常"
+        , stats: { rege: [ "40/秒", "?/?f" ] }
+    }
+    , {
+        name: "イーリス/私服", rarity: "白", cl: "ヒーラー", AW: "覚醒後", skill: "通常"
+        , stats: { rege: [ "40/秒", "?/?f" ] }
+    }
+    , {
+        name: "イーリス/お正月", rarity: "金", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+10%" }
     }
     , {

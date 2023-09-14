@@ -1855,6 +1855,14 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "ノストラ", rarity: "白", cl: "マーチャント", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "ツァーユ", rarity: "黒", cl: "フェンリルシャーマン", AW: "覚醒前", skill: "通常"
         , stats: {
             atk: { value: "-10%", type: "noAttr" }
@@ -2329,6 +2337,14 @@ debuff.mixture = [
             atk: { value: "-15%", type: "noAttr" }
         }
         , domain: "area"
+    }
+    , {
+        name: "桃源郷", rarity: "金", cl: "桃源郷"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "ねんどろいどシビラ", rarity: "青", cl: "ねんどろいどプリンセス", skill: "通常"

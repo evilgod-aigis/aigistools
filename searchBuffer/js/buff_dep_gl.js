@@ -926,6 +926,14 @@ buff.dep_gl = [
         , note: "メイジ系"
     }
     , {
+        name: "バスティス", rarity: "黒", cl: "メイジ", AW: "覚醒後"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: [
+            { home: [ "砂漠の国" ] }
+            , { race: [ "獣人" ] }
+        ]
+    }
+    , {
         name: "イーリス/正月", rarity: "金", cl: "ヒーラー", AW: "覚醒後"
         , stats: { mr: "+5" }
         , target: { cl: [ "ヒーラー" ] }

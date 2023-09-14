@@ -50,6 +50,26 @@ buff.unique = [
     
     // 被ダメージ軽減
     , {
+        name: "遠見の眷属猫", rarity: "トークン", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , target: [
+            { home: [ "砂漠の国" ] }
+            , { race: [ "獣人" ] }
+        ]
+        , type: "dmg-red"
+        , note: [ "バスティス", "区分：被ダメージ軽減(属性不問)", "-15%(範囲)" ]
+    }
+    , {
+        name: "遠見の眷属猫・改", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , target: [
+            { home: [ "砂漠の国" ] }
+            , { race: [ "獣人" ] }
+        ]
+        , type: "dmg-red"
+        , note: [ "バスティス", "区分：被ダメージ軽減(属性不問)", "-25%(範囲)" ]
+    }
+    , {
         name: "世界樹のカカオ苗", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { other: "" }
         , target: [
