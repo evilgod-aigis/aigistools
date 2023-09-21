@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2023/09/21(木)"
+        , detail: [
+            "調整を反映"
+        ]
+    }
+    , {
         date: "2023/09/14(木)"
         , detail: [
             "ノストラを追加"

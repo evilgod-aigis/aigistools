@@ -943,7 +943,7 @@ debuff.mixture = [
     , {
         name: "ヴィアベル", rarity: "黒", cl: "アクアナイト", AW: "覚醒後", skill: "覚醒"
         , stats: {
-            atk: { value: "-20%", type: "noAttr" }
+            atk: { value: "-25%", type: "noAttr" }
         }
         , domain: "global"
         , target: { attr: [ "魚人", "水棲" ] }
@@ -1860,7 +1860,6 @@ debuff.mixture = [
             atk: { value: "-20%", type: "noAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "ツァーユ", rarity: "黒", cl: "フェンリルシャーマン", AW: "覚醒前", skill: "通常"

@@ -380,7 +380,7 @@ buff.unique = [
         name: "タツミ", rarity: "黒", cl: "戦巫女", AW: "覚醒後", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
-        , note: [ "区分：被ダメージ軽減", "属性不問-30%" ]
+        , note: [ "区分：被ダメージ軽減", "属性不問-35%" ]
     }
     , {
         name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒前", skill: "通常"

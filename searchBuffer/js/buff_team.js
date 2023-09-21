@@ -1856,7 +1856,7 @@ buff.team = [
     }
     , {
         name: "邪狼の使徒", cl: "フェンリルシャーマン", AW: "覚2b"
-        , stats: { atk: "+7%", def: "+7%" }
+        , stats: { atk: "+10%", def: "+10%" }
         , target: { race: [ "獣人" ] }
         , note: "フェンリルシャーマン系"
     }

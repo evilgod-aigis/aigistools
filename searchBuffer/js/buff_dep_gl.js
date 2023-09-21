@@ -1149,6 +1149,16 @@ buff.dep_gl = [
         , target: { race: [ "鳥人" ] }
     }
     , {
+        name: "ジタリス", rarity: "白", cl: "スカイヒーラー", AW: "覚醒前"
+        , stats: { atk: "+7%" }
+        , target: { race: [ "天使", "鳥人", "天界人" ] }
+    }
+    , {
+        name: "ジタリス", rarity: "白", cl: "スカイヒーラー", AW: "覚醒後"
+        , stats: { atk: "+10%" }
+        , target: { race: [ "天使", "鳥人", "天界人" ] }
+    }
+    , {
         name: [ "ねんどろいど", "プリンセス" ], cl: "ねんどろいどプリンセス"
         , stats: { atk: "+10%" }
         , target: { cl: [ "王子" ] }
