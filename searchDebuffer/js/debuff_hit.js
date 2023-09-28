@@ -362,6 +362,22 @@ debuff.hit = [
         , note: [ "隧道掘削兵系", "分類未確認" ]
     }
     , {
+        name: "ドリルマスター", cl: "隧道掘削兵", AW: "覚2b"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "隧道掘削兵系", "分類未確認" ]
+    }
+    , {
+        name: "ミュレ", rarity: "黒", cl: "隧道掘削兵", AW: "覚醒前", skill: "通常"
+        , stats: { def: "*1.5" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
+        name: "ミュレ", rarity: "黒", cl: "隧道掘削兵", AW: "覚醒後", skill: "通常"
+        , stats: { def: "*1.5" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
         name: "ヘーレ", rarity: "白", cl: "隧道掘削兵", AW: "覚醒前", skill: "通常"
         , stats: { atk: "-30%" }
         , atkAttr: "物理", dur: "?f"

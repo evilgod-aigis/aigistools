@@ -711,6 +711,16 @@ buff.skill_gl = [
         , stats: { nul: "30%" }
     }
     , {
+        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.2" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.2" }
+        , note: "分類未確認"
+    }
+    , {
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+30%" }
     }

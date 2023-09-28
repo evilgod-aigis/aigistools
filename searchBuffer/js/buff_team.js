@@ -2078,6 +2078,16 @@ buff.team = [
         , target: { others: [ "アンデッド" ] }
     }
     , {
+        name: "パラベル", rarity: "白", cl: "ガンスリンガー", AW: "覚醒前"
+        , stats: { atk: "+5%" }
+        , target: { others: [ "銃士" ] }
+    }
+    , {
+        name: "パラベル", rarity: "白", cl: "ガンスリンガー", AW: "覚醒後"
+        , stats: { atk: "+7%" }
+        , target: { others: [ "銃士" ] }
+    }
+    , {
         name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒後"
         , stats: { cost: "-1" }
         , target: { sex: [ "男性" ] }

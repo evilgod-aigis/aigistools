@@ -26,6 +26,7 @@ lists.selfBuff.rWT = [
     , { id: null, buffer: "恋の応援団シャルキー", value: 70 }
     , { id: null, buffer: "お祭り夕涼みココロ", value: 50 }
     , { id: null, buffer: "氷霊応援団ユキヒメ", value: 60 }
+    , { id: null, buffer: "帝国銃撃士パラベル", value: 70 }
     , { id: null, buffer: "妖狸スズネ", value: 20 }
     , { id: null, buffer: "筆頭飛行士オヴェリー", value: 40 }
 ];
