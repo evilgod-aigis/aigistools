@@ -861,6 +861,12 @@ debuff.hit = [
         , atkAttr: "魔法", dur: "49f"
     }
     , {
+        name: "バレット・ノワール", cl: "ガンスリンガー", AW: "覚2b", skill: [ "通常", "覚醒" ]
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "9f"
+        , note: "ガンスリンガー系"
+    }
+    , {
         name: "ゴブリン博士", cl: "ゴブリン博士"
         , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "?f"
