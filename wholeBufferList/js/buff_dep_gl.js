@@ -299,6 +299,11 @@ buff.dep_gl = [
         , note: [ "魔界-100%", "皇帝系" ]
     }
     , {
+        name: "村人", rarity: "銅", cl: "村人"
+        , stats: { hp: "+5%", atk: "+5%", def: "+5%" }
+        , note: "分類未確認"
+    }
+    , {
         name: "ヴェロッテ/ハロウィン", rarity: "金", cl: "パイレーツ", AW: "覚醒後"
         , stats: { def: "+5%", mr: "+5", cost: "+1" }
     }
@@ -579,6 +584,21 @@ buff.dep_gl = [
     , {
         name: "甲河アスカ", rarity: "白", cl: "対魔忍 科学【対魔忍】", AW: "覚醒後"
         , stats: { ct: "-35%" }
+    }
+    , {
+        name: "村人(農夫)", rarity: "トークン"
+        , stats: { atk: "+2%", def: "+2%" }
+        , note: [ "村人", "分類未確認" ]
+    }
+    , {
+        name: "村人(老人)", rarity: "トークン"
+        , stats: { atk: "+2%", def: "+2%" }
+        , note: [ "村人", "分類未確認" ]
+    }
+    , {
+        name: "村人(少年)", rarity: "トークン"
+        , stats: { atk: "+2%", def: "+2%" }
+        , note: [ "村人", "分類未確認" ]
     }
     , {
         name: "世界樹の苗", rarity: "トークン", AW: "覚醒後"

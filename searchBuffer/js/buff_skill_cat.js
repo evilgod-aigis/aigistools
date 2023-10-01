@@ -1801,13 +1801,11 @@ buff.skill_cat = [
         name: "ヘリューズ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.5" }
         , target: { others: [ "アンデッド" ] }
-        , note: "分類未確認"
     }
     , {
         name: "ヘリューズ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.5" }
         , target: { others: [ "アンデッド" ] }
-        , note: "分類未確認"
     }
     , {
         name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒後", skill: "覚醒"
@@ -1833,7 +1831,7 @@ buff.skill_cat = [
         name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+15%" }
         , target: { home: [ "白の帝国" ] }
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "ヨユキ", rarity: "黒", cl: "夜行さん", AW: "覚醒前", skill: "通常"

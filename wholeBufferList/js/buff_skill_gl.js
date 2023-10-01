@@ -376,6 +376,10 @@ buff.skill_gl = [
         , note: [ "深海-100%", "分類未確認" ]
     }
     , {
+        name: "村人", rarity: "銅", cl: "村人", skill: "通常"
+        , stats: { rege: [ "10/秒", "?/?f" ] }
+    }
+    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
@@ -881,6 +885,21 @@ buff.skill_gl = [
         name: "お神輿", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.1" }
         , note: [ "レミィ/浴衣", "永続", "分類未確認" ]
+    }
+    , {
+        name: "村人(農夫)", rarity: "トークン", skill: "通常"
+        , stats: { rege: [ "10/秒", "?/?f" ] }
+        , note: "村人"
+    }
+    , {
+        name: "村人(老人)", rarity: "トークン", skill: "通常"
+        , stats: { rege: [ "10/秒", "?/?f" ] }
+        , note: "村人"
+    }
+    , {
+        name: "村人(少年)", rarity: "トークン", skill: "通常"
+        , stats: { rege: [ "10/秒", "?/?f" ] }
+        , note: "村人"
     }
     , {
         name: "かぼちゃ馬車", rarity: "トークン", AW: "覚醒後", skill: "通常"

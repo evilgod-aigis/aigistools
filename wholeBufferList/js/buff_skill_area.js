@@ -118,6 +118,11 @@ buff.skill_area = [
         , note: "隠密付与"
     }
     , {
+        name: "ちびクラマ", rarity: "ちび", cl: "天狗", skill: "通常"
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
         name: "レミィ", rarity: "黒", cl: "雷公", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.3" }
         , note: "永続"
