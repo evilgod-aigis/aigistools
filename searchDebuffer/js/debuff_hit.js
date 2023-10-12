@@ -51,6 +51,18 @@ debuff.hit = [
         , note: "死亡時"
     }
     , {
+        name: "ウィリアス/ハロウィン", rarity: "白", cl: "中級竜兵", AW: "覚醒前", skill: "通常"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ウィリアス/ハロウィン", rarity: "白", cl: "中級竜兵", AW: "覚醒後", skill: "通常"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "チヨメ", rarity: "黒", cl: "忍者", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "9f"

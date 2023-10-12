@@ -147,6 +147,11 @@ buff.skill_area = [
         , note: "永続"
     }
     , {
+        name: "クーコ/ハロウィン", rarity: "黒", cl: "風伯", AW: "覚醒後", skill: "覚醒"
+        , stats: { mr: "×1.4" }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+30%" }
         , note: "永続"

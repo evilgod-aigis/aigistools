@@ -173,12 +173,12 @@ buff.skill_cat = [
     }
     , {
         name: "ロタン", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
-        , stats: { atk: "×1.2", def: "×1.2" }
+        , stats: { atk: "×1.3", def: "×1.3" }
         , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "ロタン", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "通常"
-        , stats: { atk: "×1.2", def: "×1.2" }
+        , stats: { atk: "×1.3", def: "×1.3" }
         , target: { others: [ "ドラゴン" ] }
     }
     , {
@@ -1154,7 +1154,7 @@ buff.skill_cat = [
     }
     , {
         name: "アシュリン", rarity: "白", cl: "料理人", AW: "覚醒後", skill: "覚醒"
-        , stats: { atk: "×1.1", def: "×1.1" }
+        , stats: { atk: "×1.2", def: "×1.2" }
         , target: { others: [ "アンデッド" ] }
         , note: "永続"
     }
@@ -1832,6 +1832,11 @@ buff.skill_cat = [
         , stats: { hp: "+15%" }
         , target: { home: [ "白の帝国" ] }
         , note: "永続"
+    }
+    , {
+        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , target: { depType: [ "遠距離" ] }
     }
     , {
         name: "ヨユキ", rarity: "黒", cl: "夜行さん", AW: "覚醒前", skill: "通常"

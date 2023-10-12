@@ -66,6 +66,31 @@ buff.add = [
         , note: [ "範囲", "永続" ]
     }
     , {
+        name: "レミィ/ハロウィン", rarity: "黒", cl: "雷公", AW: "覚醒前"
+        , stats: { atk: "5%" }
+        , note: "範囲"
+    }
+    , {
+        name: "レミィ/ハロウィン", rarity: "黒", cl: "雷公", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "*5" }
+        , note: "範囲"
+    }
+    , {
+        name: "レミィ/ハロウィン", rarity: "黒", cl: "雷公", AW: "覚醒後"
+        , stats: { atk: "10%" }
+        , note: "範囲"
+    }
+    , {
+        name: "レミィ/ハロウィン", rarity: "黒", cl: "雷公", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "*5" }
+        , note: "範囲"
+    }
+    , {
+        name: "レミィ/ハロウィン", rarity: "黒", cl: "雷公", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "*2" }
+        , note: [ "範囲", "永続" ]
+    }
+    , {
         name: "アスラハ", rarity: "黒", cl: "グランドナイト", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "15%" }
         , note: [ "範囲", "永続" ]

@@ -141,6 +141,11 @@ buff.dep_gl = [
         , target: { others: [ "竜族" ] }
     }
     , {
+        name: "ウィリアス/ハロウィン", rarity: "白", cl: "中級竜兵", AW: "覚醒後"
+        , stats: { def: "+5%" }
+        , target: { season: [ "ハロウィン" ] }
+    }
+    , {
         name: "エルドラ", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒前"
         , stats: { draw: "○" }
         , target: { others: [ "竜族" ] }
@@ -830,12 +835,12 @@ buff.dep_gl = [
     }
     , {
         name: "デシレア", rarity: "白", cl: "テンプルナイト", AW: "覚醒前"
-        , stats: { def: "+5%" }
+        , stats: { def: "+10%" }
         , target: { cl: [ "テンプルナイト" ] }
     }
     , {
         name: "デシレア", rarity: "白", cl: "テンプルナイト", AW: "覚醒後"
-        , stats: { def: "+5%" }
+        , stats: { def: "+10%" }
         , target: { cl: [ "テンプルナイト" ] }
     }
     , {

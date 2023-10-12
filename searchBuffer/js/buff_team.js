@@ -1222,6 +1222,14 @@ buff.team = [
         , target: { cl: [ "雷公", "風伯" ] }
     }
     , {
+        name: "レミィ/ハロウィン", rarity: "黒", cl: "雷公", AW: "覚醒後"
+        , stats: { atk: "+10%" }
+        , target: [
+            { season: [ "ハロウィン" ] }
+            , { others: [ "飛行" ] }
+        ]
+    }
+    , {
         name: "ちびレミィ", rarity: "ちび", cl: "雷公"
         , stats: { atk: "+10%" }
         , target: { cl: [ "雷公", "風伯" ] }

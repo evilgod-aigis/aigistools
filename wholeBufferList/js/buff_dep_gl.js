@@ -163,6 +163,14 @@ buff.dep_gl = [
         , stats: { cost: "-1" }
     }
     , {
+        name: "ウィリアス/ハロウィン", rarity: "白", cl: "中級竜兵", AW: "覚醒前"
+        , stats: { hp: "+5%" }
+    }
+    , {
+        name: "ウィリアス/ハロウィン", rarity: "白", cl: "中級竜兵", AW: "覚醒後"
+        , stats: { hp: "+5%" }
+    }
+    , {
         name: "前衛戦術家", cl: "前衛戦術家", AW: "CC前"
         , stats: { cost: "-1" }
     }

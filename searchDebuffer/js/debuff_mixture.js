@@ -2138,7 +2138,7 @@ debuff.mixture = [
         , note: [ "ボム", "発動時"]
     }
     , {
-        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: [ "通常", "覚醒" ]
+        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
         , stats: {
             stop: { value: "?f", type: "global" }
         }
@@ -2154,6 +2154,42 @@ debuff.mixture = [
         , domain: "global"
         , target: { attr: [ "天使", "天界人", "神" ] }
         , note: "発動時"
+    }
+    , {
+        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
+        , stats: {
+            stop: { value: "?f", type: "global" }
+        }
+        , domain: "global"
+        , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
+        , note: "発動時"
+    }
+    , {
+        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "global"
+        , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: {
+            stop: { value: "?f", type: "global" }
+        }
+        , domain: "global"
+        , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
+        , note: "発動時"
+    }
+    , {
+        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "global"
+        , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
+        , note: "分類未確認"
     }
     , {
         name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒前"
