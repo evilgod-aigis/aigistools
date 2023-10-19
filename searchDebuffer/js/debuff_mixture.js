@@ -1100,7 +1100,6 @@ debuff.mixture = [
             def: { value: "-60%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "元始天尊", rarity: "黒", cl: "天尊", AW: "覚醒後", skill: "通常"
@@ -1108,7 +1107,6 @@ debuff.mixture = [
             def: { value: "-60%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒前", skill: "通常"
@@ -2140,7 +2138,7 @@ debuff.mixture = [
     , {
         name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
         , stats: {
-            stop: { value: "?f", type: "global" }
+            stop: { value: "149f", type: "global" }
         }
         , domain: "global"
         , target: { attr: [ "天使", "天界人", "神" ] }
@@ -2149,7 +2147,7 @@ debuff.mixture = [
     , {
         name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: [ "通常", "覚醒" ]
         , stats: {
-            stop: { value: "?f", type: "global" }
+            stop: { value: "149f", type: "global" }
         }
         , domain: "global"
         , target: { attr: [ "天使", "天界人", "神" ] }
@@ -2158,7 +2156,7 @@ debuff.mixture = [
     , {
         name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
         , stats: {
-            stop: { value: "?f", type: "global" }
+            stop: { value: "149f", type: "global" }
         }
         , domain: "global"
         , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
@@ -2171,12 +2169,11 @@ debuff.mixture = [
         }
         , domain: "global"
         , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
-        , note: "分類未確認"
     }
     , {
         name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: [ "通常", "覚醒" ]
         , stats: {
-            stop: { value: "?f", type: "global" }
+            stop: { value: "149f", type: "global" }
         }
         , domain: "global"
         , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
@@ -2189,7 +2186,6 @@ debuff.mixture = [
         }
         , domain: "global"
         , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
-        , note: "分類未確認"
     }
     , {
         name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒前"
@@ -2439,6 +2435,22 @@ debuff.mixture = [
         name: "孫権 仲謀", rarity: "白", cl: "君主【恋姫】", AW: "覚醒後", skill: "通常"
         , stats: {
             def: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "呂布 奉先", rarity: "白", cl: "勇士【恋姫】", AW: "覚醒前"
+        , stats: {
+            atk: { value: "-5%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "呂布 奉先", rarity: "白", cl: "勇士【恋姫】", AW: "覚醒後"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
         }
         , domain: "area"
         , note: "分類未確認"

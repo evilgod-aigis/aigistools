@@ -38,7 +38,7 @@ lists.units.onHit.list = [
         , unitInfo: {
             unitName: "犬神シロ", deployType: "近接型", rarity: "黒"
             , unitClass: { selected: "お犬さま" , options: [ "犬神系", "お犬さま" ] }
-            , attribution: [ "妖怪", "東の国" ]
+            , attribution: [ "東の国", "妖怪" ]
             , affection: { percentage: null, bonus: "その他", changeRate: null }
             , note: [ "女性" ]
             , atkInterval: {
@@ -81,7 +81,7 @@ lists.units.onHit.list = [
         , unitInfo: {
             unitName: "犬神ツムジ", deployType: "近接型", rarity: "白"
             , unitClass: { selected: "お犬さま" , options: [ "犬神系", "お犬さま" ] }
-            , attribution: [ "妖怪", "東の国" ]
+            , attribution: [ "東の国", "妖怪" ]
             , affection: { percentage: 150, bonus: "攻撃硬直", changeRate: null }
             , note: [ "女性" ]
             , atkInterval: {
@@ -124,7 +124,7 @@ lists.units.onHit.list = [
         , unitInfo: {
             unitName: "迎春の呪姫オロチヒメ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "呪術使い系" }
-            , attribution: [ "人間", "魔術師", "東の国", "お正月" ]
+            , attribution: [ "東の国", "人間", "魔術師", "お正月" ]
             , affection: { percentage: 150, bonus: "再動短縮", changeRate: null }
             , note: [ "女性", "状態異常無効" ]
             , atkInterval: {

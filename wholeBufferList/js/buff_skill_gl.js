@@ -336,12 +336,12 @@ buff.skill_gl = [
     }
     , {
         name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚醒前", skill: "通常"
-        , stats: { atk: "×1.2", range: "×1.2", rege: [ "80/秒", "?/?f" ] }
+        , stats: { atk: "×1.2", range: "×1.2", rege: [ "80/秒", "40/15f" ] }
         , note: "分類未確認"
     }
     , {
         name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚醒後", skill: "通常"
-        , stats: { atk: "×1.2", range: "×1.2", rege: [ "80/秒", "?/?f" ] }
+        , stats: { atk: "×1.2", range: "×1.2", rege: [ "80/秒", "40/15f" ] }
         , note: "分類未確認"
     }
     , {
@@ -397,11 +397,11 @@ buff.skill_gl = [
     }
     , {
         name: "イーリス/私服", rarity: "白", cl: "ヒーラー", AW: "覚醒前", skill: "通常"
-        , stats: { rege: [ "40/秒", "?/?f" ] }
+        , stats: { rege: [ "40/秒", "20/15f" ] }
     }
     , {
         name: "イーリス/私服", rarity: "白", cl: "ヒーラー", AW: "覚醒後", skill: "通常"
-        , stats: { rege: [ "40/秒", "?/?f" ] }
+        , stats: { rege: [ "40/秒", "20/15f" ] }
     }
     , {
         name: "イーリス/お正月", rarity: "金", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
@@ -811,20 +811,20 @@ buff.skill_gl = [
     }
     , {
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(1)"
-        , stats: { atk: "×1.2", draw: "(○)", redep: "?秒" }
+        , stats: { atk: "×1.2", draw: "(○)", redep: "40秒" }
     }
     , {
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常(2～)"
-        , stats: { atk: "×1.2", draw: "(○)", redep: "?秒" }
+        , stats: { atk: "×1.2", draw: "(○)", redep: "40秒" }
         , note: "永続"
     }
     , {
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常(1)"
-        , stats: { atk: "×1.2", draw: "(○)", redep: "?秒" }
+        , stats: { atk: "×1.2", draw: "(○)", redep: "40秒" }
     }
     , {
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常(2～)"
-        , stats: { atk: "×1.2", draw: "(○)", redep: "?秒" }
+        , stats: { atk: "×1.2", draw: "(○)", redep: "40秒" }
         , note: "永続"
     }
     , {
@@ -835,6 +835,18 @@ buff.skill_gl = [
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(2～)"
         , stats: { atk: "×1.15", range: "×1.1" }
         , note: "永続"
+    }
+    , {
+        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常"
+        , stats: { hp: "+30%" }
+    }
+    , {
+        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常"
+        , stats: { hp: "+30%" }
+    }
+    , {
+        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒後", skill: "覚醒(1)"
+        , stats: { ct: "-60%" }
     }
     , {
         name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒後", skill: "覚醒"
@@ -921,7 +933,7 @@ buff.skill_gl = [
     }
     , {
         name: "世界樹のカカオ苗", rarity: "トークン", AW: "覚醒後", skill: "通常"
-        , stats: { redep: "?秒" }
+        , stats: { redep: "30秒" }
         , note: [ "ラタトスク/バレンタイン", "発動時", "死亡・撤退最後1体" ]
     }
 ];

@@ -34,7 +34,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "九尾狐カヨウ", deployType: "近接型", rarity: "黒"
             , unitClass: { selected: "妖狐絢爛", options: [ "妖狐系", "妖狐絢爛" ] }
-            , attribution: [ "妖怪", "東の国" ]
+            , attribution: [ "東の国", "妖怪" ]
             , affection: { percentage: 150, bonus: "再動短縮", changeRate: null }
             , note: [ "女性" ]
         }
@@ -85,7 +85,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "黒紫の巫女キキョウ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "シャーマン系" }
-            , attribution: [ "人間", "東の国" ]
+            , attribution: [ "東の国", "人間" ]
             , affection: { percentage: null, bonus: "その他", changeRate: null }
             , note: [ "女性" ]
         }
@@ -113,7 +113,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "迎春の呪姫オロチヒメ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "呪術使い系" }
-            , attribution: [ "人間", "魔術師", "東の国", "お正月" ]
+            , attribution: [ "東の国", "人間", "魔術師", "お正月" ]
             , affection: { percentage: 150, bonus: "再動短縮", changeRate: null }
             , note: [ "女性", "状態異常無効" ]
         }
@@ -159,7 +159,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "猫又コハル", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "猫又系" }
-            , attribution: [ "妖怪", "東の国" ]
+            , attribution: [ "東の国", "妖怪" ]
             , affection: { percentage: 100, bonus: "時間延長", changeRate: null }
             , note: [ "女性" ]
         }
@@ -205,7 +205,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "清心の花嫁スイレン", deployType: "近接型", rarity: "白"
             , unitClass: { selected: "ドラゴンライダー系" }
-            , attribution: [ "人間", "騎兵", "ジューンブライド" ]
+            , attribution: [ "華の国", "人間", "騎兵", "ドラゴン", "高貴", "ジューンブライド" ]
             , affection: { percentage: null, bonus: "その他", changeRate: null }
             , note: [ "女性", "ドラゴンライダー系" ]
         }
@@ -319,7 +319,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "ちびコハル", deployType: "遠距離型", rarity: "金"
             , unitClass: { selected: "猫又系" }
-            , attribution: [ "妖怪", "東の国", "ちび" ]
+            , attribution: [ "東の国", "妖怪", "ちび" ]
             , affection: { percentage: 100, bonus: "時間延長", changeRate: null }
             , note: [ "女性" ]
         }
@@ -342,7 +342,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "孫権 仲謀", deployType: "近接型", rarity: "白"
             , unitClass: { selected: "君主【恋姫】系" }
-            , attribution: [ "人間", "恋姫" ]
+            , attribution: [ "恋姫", "人間" ]
             , affection: { percentage: null, bonus: "その他", changeRate: null }
             , note: [ "女性" ]
         }
@@ -365,7 +365,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "祝祭の南瓜姫ミサ", deployType: "近接型", rarity: "黒"
             , unitClass: { selected: "イビルクイーン", options: [ "イビルクイーン", "イビルシーカー", "デスブリンガー" ] }
-            , attribution: [ "魔界", "ハロウィン" ]
+            , attribution: [ "魔界", "高貴", "ハロウィン" ]
             , affection: { percentage: null, bonus: "その他", changeRate: null }
             , note: [ "女性", "HP回復不可", "魔界適応" ]
         }
@@ -398,7 +398,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "海魔の麗姫スキュレ", deployType: "近接型", rarity: "白"
             , unitClass: { selected: "デスブリンガー", options: [ "イビルクイーン", "デスブリンガー" ] }
-            , attribution: [ "魔界", "深海" ]
+            , attribution: [ "魔界", "高貴", "深海" ]
             , affection: { percentage: 100, bonus: "時間延長", changeRate: null }
             , note: [ "女性", "HP回復不可", "魔界適応", "深海適応" ]
         }
@@ -431,7 +431,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "狼剣の魔姫ピリカ", deployType: "近接型", rarity: "白"
             , unitClass: { selected: "デスブリンガー", options: [ "イビルクイーン", "デスブリンガー" ] }
-            , attribution: [ "魔界" ]
+            , attribution: [ "魔界", "高貴" ]
             , affection: { percentage: null, bonus: "その他", changeRate: null }
             , note: [ "女性", "HP回復不可", "魔界適応" ]
         }
@@ -524,7 +524,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "ちびミサ", deployType: "近接型", rarity: "金"
             , unitClass: { selected: "ちびイビルプリンセス" }
-            , attribution: [ "ちび", "魔界", "ハロウィン" ]
+            , attribution: [ "魔界", "高貴", "ハロウィン", "ちび" ]
             , affection: { percentage: null, bonus: "その他", changeRate: null }
             , note: [ "女性", "HP回復不可", "魔界適応" ]
         }
@@ -548,7 +548,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "ちびスキュレ", deployType: "近接型", rarity: "金"
             , unitClass: { selected: "ちびイビルプリンセス" }
-            , attribution: [ "魔界", "ちび" ]
+            , attribution: [ "魔界", "高貴", "深海", "ちび" ]
             , affection: { percentage: 100, bonus: "時間延長", changeRate: null }
             , note: [ "女性", "HP回復不可", "魔界適応", "深海適応" ]
         }

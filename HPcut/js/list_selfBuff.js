@@ -52,6 +52,7 @@ lists.selfBuff.rCT = [
     , { id: null, buffer: "対魔忍 魔性【対魔忍】", value: 20 }
     , { id: null, buffer: "対魔忍 魔性 覚醒【対魔忍】", value: 40 }
     , { id: null, buffer: "聖女イリス", value: 40 }
+    , { id: null, buffer: "呂布 奉先", value: 45 }
 ];
 
 // スキル時間延長リスト

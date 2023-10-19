@@ -2178,6 +2178,16 @@ buff.team = [
         , target: { home: [ "恋姫" ] }
     }
     , {
+        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒前"
+        , stats: { mr: "+5" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
+        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒後"
+        , stats: { mr: "+10" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
         name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒前"
         , stats: { hp: "+7%" }
         , target: { home: [ "恋姫" ] }
