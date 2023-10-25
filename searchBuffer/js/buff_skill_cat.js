@@ -144,7 +144,7 @@ buff.skill_cat = [
         name: "ロゼット/正月", rarity: "金", cl: "プリンセス", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { rarity: [ "金", "銀", "銅", "鉄" ] }
-        , note: "終了時HP-70%"
+        , note: "終了時、対象のHP-70%"
     }
     , {
         name: "ちびヨシノ", rarity: "ちび", cl: "プリンセス", skill: "通常"
@@ -1236,7 +1236,7 @@ buff.skill_cat = [
         name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: [
-            , { cl: [ "政務官【闇の軍勢】" ] }
+            { cl: [ "政務官【闇の軍勢】" ] }
             , { race: [ "デーモン系", "ゴブリン", "オーク" ] }
             , { others: [ "アンデッド", "魔界" ] }
         ]
@@ -1245,7 +1245,7 @@ buff.skill_cat = [
         name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: [
-            , { cl: [ "政務官【闇の軍勢】" ] }
+            { cl: [ "政務官【闇の軍勢】" ] }
             , { race: [ "デーモン系", "ゴブリン", "オーク" ] }
             , { others: [ "アンデッド", "魔界" ] }
         ]
@@ -1260,12 +1260,6 @@ buff.skill_cat = [
         , stats: { atk: "×1.35", def: "×1.35" }
         , target: { home: [ "白の帝国" ] }
         , note: "分類未確認"
-    }
-    , {
-        name: "帝国軍旗", rarity: "金", cl: "帝国軍旗", skill: "通常"
-        , stats: { atk: "×1.2" }
-        , target: { home: [ "白の帝国" ] }
-        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "キャロップ", rarity: "白", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"
@@ -1991,6 +1985,12 @@ buff.skill_cat = [
         , stats: { range: "×1.2" }
         , target: { depType: [ "遠距離" ] }
         , note: "分類未確認"
+    }
+    , {
+        name: "帝国軍旗", rarity: "金", cl: "帝国軍旗", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { home: [ "白の帝国" ] }
+        , note: [ "永続", "終了時、対象のHP-90%", "分類未確認" ]
     }
     , {
         name: "アルスラーン", rarity: "白", cl: "王太子", AW: "覚醒前", skill: "通常"

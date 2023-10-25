@@ -536,7 +536,7 @@ debuff.mixture = [
         }
         , domain: "global"
         , target: { attr: [ "人間" ] }
-        , note: [ "発動時", "男性HP-50%" ]
+        , note: [ "発動時", "発動時、男性のHP-50%" ]
     }
     , {
         name: "シルセス", rarity: "黒", cl: "メイジアーマー", AW: "覚醒前", skill: "通常"

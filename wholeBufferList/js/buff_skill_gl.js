@@ -591,17 +591,17 @@ buff.skill_gl = [
     , {
         name: "リェプル", rarity: "白", cl: "道化師", AW: "覚醒前", skill: "通常"
         , stats: { ct: "-50%" }
-        , note: "終了時HP-50%"
+        , note: "終了時、全味方のHP-50%"
     }
     , {
         name: "リェプル", rarity: "白", cl: "道化師", AW: "覚醒後", skill: "通常"
         , stats: { ct: "-50%" }
-        , note: "終了時HP-50%"
+        , note: "終了時、全味方のHP-50%"
     }
     , {
         name: "リェプル", rarity: "白", cl: "道化師", AW: "覚醒後", skill: "覚醒"
         , stats: { ct: "-50%" }
-        , note: [ "発動時HP-50%", "永続" ]
+        , note: [ "発動時、全味方のHP-50%", "永続" ]
     }
     , {
         name: "ルメディア", rarity: "白", cl: "ライフリンカー", AW: "覚醒前", skill: "通常"

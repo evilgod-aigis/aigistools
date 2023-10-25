@@ -6,14 +6,14 @@ buff.unique = [
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { rarity: [ "銀" ] }
         , type: "damocles"
-        , note: [ "区分：ダモクレスの剣", "終了時HP-50%" ]
+        , note: [ "区分：ダモクレスの剣", "終了時、対象のHP-50%" ]
     }
     , {
         name: "ロゼット", rarity: "銀", cl: "プリンセス", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { rarity: [ "銀" ] }
         , type: "damocles"
-       , note: [ "区分：ダモクレスの剣", "終了時HP-50%" ]
+       , note: [ "区分：ダモクレスの剣", "終了時、対象のHP-50%" ]
     }
     
     // 死亡時
