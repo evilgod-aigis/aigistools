@@ -949,6 +949,22 @@ buff.dep_gl = [
         , target: { sex: [ "男性" ] }
     }
     , {
+        name: "ヒミコ", rarity: "黒", cl: "シャーマン", AW: "覚醒前"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: { 
+            home: [ "東の国" ]
+            , race: [ "天界人" ]
+        }
+    }
+    , {
+        name: "ヒミコ", rarity: "黒", cl: "シャーマン", AW: "覚醒後"
+        , stats: { atk: "+15%", def: "+15%" }
+        , target: { 
+            home: [ "東の国" ]
+            , race: [ "天界人" ]
+        }
+    }
+    , {
         name: "セレイナ", rarity: "白", cl: "ビショップ", AW: "覚醒後"
         , stats: { draw: "○" }
         , target: { cl: [ "エンジェル" ] }

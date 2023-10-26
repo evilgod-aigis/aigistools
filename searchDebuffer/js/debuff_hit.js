@@ -472,6 +472,22 @@ debuff.hit = [
         , target: { attr: [ "アンデッド" ] }
     }
     , {
+        name: "ヒミコ", rarity: "黒", cl: "シャーマン", AW: "覚醒前"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: "ヒミコ", rarity: "黒", cl: "シャーマン", AW: "覚醒後"
+        , stats: { atkCd: "+30f" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: "ヒミコ", rarity: "黒", cl: "シャーマン", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: { def: "-40%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "ミコト", rarity: "黒", cl: "陰陽師", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "149f"

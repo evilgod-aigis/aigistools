@@ -1351,6 +1351,22 @@ debuff.mixture = [
         , note: "発動時"
     }
     , {
+        name: "ヒミコ", rarity: "黒", cl: "シャーマン", AW: "覚醒前", skill: "通常"
+        , stats: {
+            mr: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ヒミコ", rarity: "黒", cl: "シャーマン", AW: "覚醒後", skill: "通常"
+        , stats: {
+            mr: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "レーヴ", rarity: "白", cl: "ビショップ", AW: "覚醒前", skill: "通常"
         , stats: {
             atk: { value: "-15%", type: "limAttr" }
