@@ -381,6 +381,22 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "ファニュア", rarity: "黒", cl: "メイド", AW: "覚醒前"
+        , stats: { draw: "○" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { others: [ "アンデッド" ] }
+        ]
+    }
+    , {
+        name: "ファニュア", rarity: "黒", cl: "メイド", AW: "覚醒後"
+        , stats: { draw: "○" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { others: [ "アンデッド" ] }
+        ]
+    }
+    , {
         name: "セーラ/水着", rarity: "黒", cl: "メイド", AW: "覚醒後"
         , stats: { draw: "○" }
         , target: [
@@ -1178,6 +1194,11 @@ buff.dep_gl = [
         name: "帝国軍旗", rarity: "金", cl: "帝国軍旗"
         , stats: { atk: "+5%", def: "+5%" }
         , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "王国軍旗", rarity: "金", cl: "王国軍旗"
+        , stats: { atk: "+8%", def: "+8%", rege: [ "50/秒", "?/?f" ] }
+        , target: { home: [ "王国" ] }
     }
     , {
         name: [ "ねんどろいど", "プリンセス" ], cl: "ねんどろいどプリンセス"

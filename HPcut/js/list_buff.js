@@ -186,6 +186,18 @@ lists.buff.rCT.list = [
         }
     }
     , {
+        id: null, buffer: "迅速の王冠", awaken: "-"
+        , value: 30, disabled: null, req: "skill"
+        , target: [ { attribution: [ "高貴" ] } ]
+        , tooltip: "[スキル・全体] 属性：高貴の再動-30%"
+        , unitInfo: {
+            unitName: "迅速の王冠", deployType: "近接型", rarity: "黒"
+            , unitClass: { selected: "迅速の王冠" }
+            , attribution: [], note: []
+            , WT: 1, CT: 0, dur: Infinity
+        }
+    }
+    , {
         id: null, buffer: "妖狐絢爛", isClass: true, awaken: "覚2a"
         , value: 50, disabled: null, req: "deploy"
         , target: [ { attribution: [ "妖怪" ] } ]
@@ -909,6 +921,18 @@ lists.buff.redMapEff.list = [
         id: null, buffer: "王子【海鎮】", awaken: null
         , map: "深海", value: 50, disabled: null, req: "deploy"
         , tooltip: "[配置] 全味方の深海の影響を50%軽減"
+    }
+    , {
+        id: null, buffer: "大海を征く者イヴリール", rarity: "黒", awaken: "通常"
+        , map: "深海", value: 70, disabled: null, req: "skill"
+        , tooltip: "[スキル・全体] 全味方の深海の影響を70%軽減"
+        , unitInfo: {
+            unitName: "大海を征く者イヴリール", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "未踏海域の覇者系" }
+            , attribution: [ "人間", "深海", "英傑" ]
+            , note: [ "女性", "深海適応" ]
+            , WT: 1, CT: 80, dur: Infinity
+        }
     }
     , {
         id: null, buffer: "大海神の娘 乙姫", awaken: "通常"

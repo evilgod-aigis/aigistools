@@ -462,7 +462,7 @@ lists.units.onSkillAct.list = [
         , unitInfo: {
             unitName: "夏祭りの金魚姫スキュレ", deployType: "近接型", rarity: "白"
             , unitClass: { selected: "イビルシーカー", options: [ "イビルクイーン", "イビルシーカー" ] }
-            , attribution: [ "魔界", "深海", "サマー" ]
+            , attribution: [ "魔界", "高貴", "深海", "サマー" ]
             , affection: { percentage: null, bonus: "その他", changeRate: null }
             , note: [ "女性", "HP回復不可", "魔界適応", "深海適応" ]
         }

@@ -17,6 +17,10 @@ debuff.team = [
         , stats: { mr: "-20" }
     }
     , {
+        name: "イヴリール", rarity: "白", cl: "未踏海域の覇者", AW: "覚醒後"
+        , stats: { def: "-7%" }
+    }
+    , {
         name: "ヒバリ/バレンタイン", rarity: "黒", cl: "サムライ", AW: "覚醒前"
         , stats: { def: "-10%", mr: "-10" }
         , target: { attr: [ "妖怪" ] }
@@ -167,6 +171,15 @@ debuff.team = [
     , {
         name: "ちびテンマ", rarity: "ちび", cl: "モンスターブレイカー"
         , stats: { mr: "-15" }
+    }
+    , {
+        name: "ちびランヒルド", rarity: "ちび", cl: "モンスターブレイカー"
+        , stats: { atk: "-15%", mr: "-15" }
+        , target: { attr: [ "デーモン" ] }
+    }
+    , {
+        name: "ちびランヒルド", rarity: "ちび", cl: "モンスターブレイカー"
+        , stats: { def: "-10%" }
     }
     , {
         name: "シロ", rarity: "黒", cl: "犬神", AW: "覚醒前"

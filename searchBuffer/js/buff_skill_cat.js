@@ -473,6 +473,31 @@ buff.skill_cat = [
         , note: [ "永続", "分類未確認" ]
     }
     , {
+        name: "ファニュア", rarity: "黒", cl: "メイド", AW: "覚醒前", skill: "通常"
+        , stats: { abn: "-100%" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { others: [ "アンデッド" ] }
+        ]
+    }
+    , {
+        name: "ファニュア", rarity: "黒", cl: "メイド", AW: "覚醒後", skill: "通常"
+        , stats: { abn: "-100%" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { others: [ "アンデッド" ] }
+        ]
+    }
+    , {
+        name: "ファニュア", rarity: "黒", cl: "メイド", AW: "覚醒後", skill: "覚醒"
+        , stats: { hp: "+30%", atk: "×1.3" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { others: [ "アンデッド" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "リーナ", rarity: "白", cl: "メイド", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { race: [ "獣人", "エルフ系", "ドワーフ", "オーク", "ゴブリン" ] }
@@ -1990,7 +2015,13 @@ buff.skill_cat = [
         name: "帝国軍旗", rarity: "金", cl: "帝国軍旗", skill: "通常"
         , stats: { atk: "×1.2" }
         , target: { home: [ "白の帝国" ] }
-        , note: [ "永続", "終了時、対象のHP-90%", "分類未確認" ]
+        , note: [ "範囲", "永続", "終了時、対象のHP-90%", "分類未確認" ]
+    }
+    , {
+        name: "王国軍旗", rarity: "金", cl: "王国軍旗", skill: "通常"
+        , stats: { atk: "×1.1", def: "×1.1" }
+        , target: { home: [ "王国" ] }
+        , note: [ "範囲", "永続", "終了時、対象のHP-90%", "分類未確認" ]
     }
     , {
         name: "アルスラーン", rarity: "白", cl: "王太子", AW: "覚醒前", skill: "通常"

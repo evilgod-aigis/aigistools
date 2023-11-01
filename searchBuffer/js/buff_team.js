@@ -722,6 +722,22 @@ buff.team = [
         ]
     }
     , {
+        name: "ファニュア", rarity: "黒", cl: "メイド", AW: "覚醒前"
+        , stats: { def: "+5%" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { others: [ "アンデッド" ] }
+        ]
+    }
+    , {
+        name: "ファニュア", rarity: "黒", cl: "メイド", AW: "覚醒後"
+        , stats: { atk: "+8%", def: "+8%" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { others: [ "アンデッド" ] }
+        ]
+    }
+    , {
         name: "シャーリー", rarity: "白", cl: "メイド", AW: "覚醒前"
         , stats: { dur: "+20%" }
         , target: { cl: [ "メイジ" ] }

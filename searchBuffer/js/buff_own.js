@@ -142,6 +142,16 @@ buff.own = [
         , target: { home: [ "華の国" ] }
     }
     , {
+        name: "ランシェ", rarity: "黒", cl: "マギステルミリトゥム", AW: "覚醒後"
+        , stats: { hp: "+5%", def: "+5%" }
+        , target: { others: [ "重装" ] }
+    }
+    , {
+        name: "ランシェ", rarity: "白", cl: "マギステルミリトゥム", AW: "覚醒後"
+        , stats: { mr: "+3" }
+        , target: { others: [ "重装" ] }
+    }
+    , {
         name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒後"
         , stats: { atk: "+5%", range: "+10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }
@@ -222,6 +232,16 @@ buff.own = [
                 , "ドラゴンシャーマン", "シャーマン", "呪術使い", "フェンリルシャーマン", "デモンシャーマン"
             ]
         }
+    }
+    , {
+        name: "イヴリール", rarity: "黒", cl: "未踏海域の覇者", AW: "覚醒後"
+        , stats: { atk: "+5%" }
+        , target: { others: [ "深海" ] }
+    }
+    , {
+        name: "イヴリール", rarity: "白", cl: "未踏海域の覇者", AW: "覚醒後"
+        , stats: { def: "+5%" }
+        , target: { others: [ "深海" ] }
     }
     , {
         name: "エフトラ", rarity: "黒", cl: "異世界戦士", AW: "覚醒後"

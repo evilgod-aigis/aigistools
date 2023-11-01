@@ -12,9 +12,22 @@ debuff.hit = [
         , atkAttr: "物理", dur: "?f"
     }
     , {
-        name: "山ン本五郎左衛門", rarity: "白", cl: "アヤカシの王", AW: "覚醒後"
-        , stats: { def: "-35%" }
+        name: "ランシェ", rarity: "黒", cl: "マギステルミリトゥム", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "-20%" }
+        , atkAttr: "貫通", dur: "?f"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "ランシェ", rarity: "黒", cl: "マギステルミリトゥム", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "-20%", def: "-20%" }
         , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ランシェ", rarity: "白", cl: "マギステルミリトゥム", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "ユージェン", rarity: "黒", cl: "チェイスハンター", AW: "覚醒後", skill: "通常"

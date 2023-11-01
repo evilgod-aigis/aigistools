@@ -23,7 +23,7 @@ buff.skill_gl = [
         , stats: { rege: [ "200/秒", "100/15f" ] }
     }
     , {
-        name: "アヤカシの王", cl: "アヤカシの王", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        name: "アヤカシの王", cl: "アヤカシの王", AW: "覚1", skill: [ "通常", "覚醒" ]
         , stats: { atk: "×1.15" }
     }
     , {
@@ -44,6 +44,15 @@ buff.skill_gl = [
         , stats: { atk: "×1.3", def: "×1.3" }
     }
     , {
+        name: "マギステルミリトゥム", cl: "マギステルミリトゥム", AW: "覚1", skill: [ "通常", "覚醒" ]
+        , stats: { hp: "+30%" }
+    }
+    , {
+        name: "ランシェ", rarity: "黒", cl: "マギステルミリトゥム", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×2.0" }
+        , note: "分類未確認"
+    }
+    , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "通常"
         , stats: { rege: [ "1000/秒", "2000/60f" ] }
     }
@@ -51,6 +60,11 @@ buff.skill_gl = [
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "300/秒", "1500/150f" ] }
         , note: "永続"
+    }
+    , {
+        name: "イヴリール", rarity: "黒", cl: "未踏海域の覇者", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , note: [ "深海-70%", "永続" ]
     }
     , {
         name: "ケイティ/学園", rarity: "白", cl: "ソルジャー", AW: "覚醒前", skill: "通常"
