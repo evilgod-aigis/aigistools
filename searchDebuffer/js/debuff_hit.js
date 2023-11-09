@@ -473,6 +473,12 @@ debuff.hit = [
         , atkAttr: "魔法", dur: "19f"
     }
     , {
+        name: "クロリス/私服", rarity: "白", cl: "ウィッチ", AW: "覚醒後", skill: "覚醒(1)"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "ボム"
+    }
+    , {
         name: "クルス", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚醒前", skill: "通常"
         , stats: { atk: "-30%" }
         , atkAttr: "貫通", dur: "?f"

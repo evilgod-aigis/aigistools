@@ -10,6 +10,11 @@ buff.skill_gl = [
         , stats: { hp: "+20%", atk: "×1.2", def: "×1.2", mr: "×1.2" }
     }
     , {
+        name: "王子【正装】", cl: "王子", skill: "通常"
+        , stats: { atk: [ "×1.12", "～1.2" ], def: [ "×1.12", "～1.2" ] }
+        , note: "倍率+0.02/配置数"
+    }
+    , {
         name: "王子【幼少】", cl: "王子", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
     }
@@ -46,11 +51,6 @@ buff.skill_gl = [
     , {
         name: "マギステルミリトゥム", cl: "マギステルミリトゥム", AW: "覚1", skill: [ "通常", "覚醒" ]
         , stats: { hp: "+30%" }
-    }
-    , {
-        name: "ランシェ", rarity: "黒", cl: "マギステルミリトゥム", AW: "覚醒後", skill: "覚醒"
-        , stats: { def: "×2.0" }
-        , note: "分類未確認"
     }
     , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "通常"
@@ -929,6 +929,11 @@ buff.skill_gl = [
         name: "かぼちゃ馬車", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { rege: [ "60/秒", "30/15f" ] }
         , note: [ "デスピア/ハロウィン", "永続" ]
+    }
+    , {
+        name: "神獣玉兎", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , note: [ "イヨ", "分類未確認" ]
     }
     , {
         name: "スチームタンク", rarity: "トークン", AW: "覚醒後", skill: "通常"

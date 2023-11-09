@@ -432,7 +432,13 @@ debuff.mixture = [
             , def: { value: "-30%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
+    }
+    , {
+        name: "ちび暗黒騎士", rarity: "ちび", cl: "ダークファイター", skill: "通常"
+        , stats: {
+            atk: { value: "-50%", type: "noAttr" }
+        }
+        , domain: "global"
     }
     , {
         name: "ルヴェア", rarity: "白", cl: "前衛戦術家", AW: "覚醒前", skill: "通常"

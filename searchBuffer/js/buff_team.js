@@ -434,6 +434,11 @@ buff.team = [
         , target: { cl: [ "ダークファイター" ] }
     }
     , {
+        name: "ちび暗黒騎士", rarity: "ちび", cl: "ダークファイター"
+        , stats: { cost: "-2" }
+        , target: { cl: [ "ダークファイター" ] }
+    }
+    , {
         name: "ナキア", rarity: "白", cl: "アベンジャー", AW: "覚醒後"
         , stats: { atk: "+5%", def: "+5%" }
         , target: { race: [ "デーモン系" ] }
@@ -1644,6 +1649,16 @@ buff.team = [
         name: "ルマリア", rarity: "白", cl: "ヴァンパイアハンター", AW: "覚醒後"
         , stats: { atk: "+7%" }
         , target: { cl: [ "ヴァンパイアハンター" ] }
+    }
+    , {
+        name: "イヨ", rarity: "黒", cl: "シャーマン", AW: "覚醒前"
+        , stats: { hp: "+5%" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
+        name: "イヨ", rarity: "黒", cl: "シャーマン", AW: "覚醒後"
+        , stats: { hp: "+10%" }
+        , target: { depType: [ "遠距離" ] }
     }
     , {
         name: "カグラ", rarity: "白", cl: "シャーマン", AW: "覚醒後"

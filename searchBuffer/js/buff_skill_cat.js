@@ -1366,6 +1366,24 @@ buff.skill_cat = [
         , target: { season: [ "ハロウィン" ] }
     }
     , {
+        name: "クロリス/私服", rarity: "白", cl: "ウィッチ", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: { cl: [ "王子" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "クロリス/私服", rarity: "白", cl: "ウィッチ", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: { cl: [ "王子" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "クロリス/私服", rarity: "白", cl: "ウィッチ", AW: "覚醒後", skill: "覚醒(1)"
+        , stats: { ct: "-100%" }
+        , target: { cl: [ "王子" ] }
+        , note: "ボム"
+    }
+    , {
         name: "デューオ/クリスマス", rarity: "黒", cl: "パイレーツ", AW: "覚醒前", skill: "通常"
         , stats: { atkCd: "8f化", cost: "-30%" }
         , target: { season: [ "クリスマス" ] }

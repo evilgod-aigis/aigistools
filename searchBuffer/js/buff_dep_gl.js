@@ -955,6 +955,11 @@ buff.dep_gl = [
         , target: { cl: [ "ヒーラー" ] }
     }
     , {
+        name: "クロリス/私服", rarity: "白", cl: "ウィッチ", AW: "覚醒後"
+        , stats: { cost: "-4" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
         name: "サブリナ", rarity: "白", cl: "パイレーツ", AW: "覚醒後"
         , stats: { cost: "-3" }
         , target: { cl: [ "セーラー", "パイレーツ" ] }

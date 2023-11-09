@@ -15,6 +15,11 @@ buff.skill_area = [
         , note: "隠密付与"
     }
     , {
+        name: "ランシェ", rarity: "黒", cl: "マギステルミリトゥム", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×2.0" }
+        , note: "全体"
+    }
+    , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後", skill: "通常"
         , stats: { def: "×2.5", mr: "×2.5" }
     }
