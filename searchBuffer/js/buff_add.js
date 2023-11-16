@@ -125,6 +125,18 @@ buff.add = [
         , target: { rarity: [ "銅", "鉄" ] }
     }
     , {
+        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒前", skill: "通常"
+        , stats: { def: "20%" }
+        , target: { home: [ "白の帝国" ] }
+        , note: [ "範囲", "永続" ]
+    }
+    , {
+        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒後", skill: "通常"
+        , stats: { def: "20%" }
+        , target: { home: [ "白の帝国" ] }
+        , note: [ "範囲", "永続" ]
+    }
+    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒前"
         , stats: { hp: "max300", atk: "max150", def: "max150" }
         , target: { cl: [ "王子" ] }

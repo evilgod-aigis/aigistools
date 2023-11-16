@@ -301,6 +301,14 @@ buff.dep_gl = [
         , note: "天尊系"
     }
     , {
+        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒前"
+        , stats: { rege: [ "60/秒", "?/?f" ] }
+    }
+    , {
+        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒後"
+        , stats: { rege: [ "80/秒", "?/?f" ] }
+    }
+    , {
         name: "皇帝", cl: "皇帝", AW: "覚醒前"
         , stats: { other: "" }
         , note: "魔界-100%"

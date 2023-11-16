@@ -445,6 +445,18 @@ debuff.hit = [
         , note: [ "ボム", "分類未確認" ]
     }
     , {
+        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒前", skill: "通常"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒後", skill: "通常"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "14f"
