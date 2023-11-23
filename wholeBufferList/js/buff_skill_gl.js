@@ -535,8 +535,18 @@ buff.skill_gl = [
         , stats: { rege: [ "40/秒", "20/15f" ] }
     }
     , {
-        name: "アンナ/アイドル", rarity: "黒", cl: "政務官", skill: "通常"
+        name: "アンナ/アイドル", rarity: "黒", cl: "政務官", AW: "覚醒前", skill: "通常"
         , stats: { rege: [ "20/秒", "10/15f" ] }
+        , note: "永続"
+    }
+    , {
+        name: "アンナ/アイドル", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "通常"
+        , stats: { rege: [ "20/秒", "10/15f" ] }
+        , note: "永続"
+    }
+    , {
+        name: "アンナ/アイドル", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "30/秒", "?/?f" ] }
         , note: "永続"
     }
     , {
@@ -765,6 +775,14 @@ buff.skill_gl = [
     , {
         name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "72/秒", "36/15f" ] }
+    }
+    , {
+        name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒前", skill: "通常"
+        , stats: { eva: "50%" }
+    }
+    , {
+        name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒後", skill: "通常"
+        , stats: { eva: "50%" }
     }
     , {
         name: "劉備", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒前", skill: "通常"

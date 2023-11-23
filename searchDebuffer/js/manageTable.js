@@ -2,8 +2,8 @@ const table = {};
 
 table.word = {
     team: "編成", area: "範囲", global: "全体", noAttr: "属性不問", limAttr: "属性指定"
-    , death: "死亡時", clAttr: "クラス特性", fixed: "固定値", hit: "攻撃命中", scalar: "スカラー"
-    , takenDmg: "被ダメージ"
+    , death: "死亡時", clAttr: "クラス特性", fixed: "固定値", hit: "攻撃命中", counter: "反撃"
+    , scalar: "スカラー", takenDmg: "被ダメージ"
     
     , id: "id", name: "ユニット", rarity: "レア", cl: "クラス", AW: "覚醒等", skill: "スキル"
     
@@ -27,7 +27,7 @@ table.rarity = [ "黒", "白", "青", "金", "ちび", "銀", "銅", "鉄", "ト
 table.AW = [ "CC前", "CC後", "CC55", "覚醒前", "覚醒後", "覚1", "覚2a", "覚2b" ];
 table.atkAttr = [ "物理", "魔法", "貫通" ];
 table.debuffType = {};
-table.debuffType.common = [ "team", "hit", "scalar", "takenDmg" ];
+table.debuffType.common = [ "team", "hit", "counter", "scalar", "takenDmg" ];
 table.debuffType.domain = [ "area", "global" ];
 table.debuffType.type = {
     hp: {

@@ -219,6 +219,18 @@ lists.buff.rCT.list = [
         , tooltip: "[配置] 属性：魔術師の再動-50%"
     }
     , {
+        id: null, buffer: "戦場の政務官アンナ", awaken: "覚醒"
+        , value: 50, disabled: null, req: "skill"
+        , target: [ { unitClass: [ "王子" ] } ]
+        , tooltip: "[スキル・全体] 王子の再動-50%"
+        , unitInfo: {
+            unitName: "戦場の政務官アンナ", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "政務官系" }
+            , attribution: [ "王国", "人間" ], note: []
+            , WT: 5, CT: 50, dur: 30
+        }
+    }
+    , {
         id: null, buffer: "約束の花嫁ディエーラ", awaken: "覚醒"
         , value: 45, disabled: null, req: "deploy"
         , target: [ { attribution: [ "ジューンブライド" ] } ]
@@ -238,11 +250,11 @@ lists.buff.rCT.list = [
             , { attribution: [ "白の帝国" ], deployType: [ "近接型" ] }
             , { attribution: [ "サマー" ], deployType: [ "近接型" ] }
         ]
-        , tooltip: "[スキル・全体] 王子、属性：帝国・サマーの近接ユニットの再動-30%"
+        , tooltip: "[スキル・全体] 王子、属性：帝国・サマーの近接ユニットの再動-50%"
         , unitInfo: {
             unitName: "夏空の鍛冶師グラティア", deployType: "近接型", rarity: "白"
             , unitClass: { selected: "鍛冶職人系" }
-            , attribution: [ "人間", "白の帝国", "サマー" ], note: []
+            , attribution: [ "白の帝国", "人間", "サマー" ], note: []
             , WT: 20, CT: 40, dur: 30
         }
     }
@@ -892,6 +904,30 @@ lists.buff.takenDmg.list = [
             , attribution: [ "人間", "魔術師", "英傑" ]
             , note: [ "女性" ]
             , WT: 27.5, CT: 44, dur: 20
+        }
+    }
+    , {
+        id: null, buffer: "魔神の残滓ウェパル", awaken: "未覚醒", showAwaken: true
+        , value: 7, disabled: null, req: "deploy"
+        , tooltip: "[全体] 被ダメージが7%上昇"
+    }
+    , {
+        id: null, buffer: "魔神の残滓ウェパル", awaken: "覚醒", showAwaken: true
+        , value: 10, disabled: null, req: "deploy"
+        , compound: { takenDmg: [ { buffer: "魔神の残滓ウェパル", req: "skill" } ] }
+        , tooltip: "[全体] 被ダメージが10%上昇"
+    }
+    , {
+        id: null, buffer: "魔神の残滓ウェパル", awaken: "覚醒"
+        , value: 30, disabled: null, req: "skill"
+        , compound: { takenDmg: [ { buffer: "魔神の残滓ウェパル", awaken: "覚醒", req: "deploy" } ] }
+        , tooltip: "[スキル・全体] 被ダメージが30%上昇"
+        , unitInfo: {
+            unitName: "魔神の残滓ウェパル", deployType: "近接型", rarity: "黒"
+            , unitClass: { selected: "デモンリドゥ" }
+            , attribution: [ "デーモン", "魔界", "深海" ]
+            , note: [ "女性", "状態異常無効", "魔界適応", "深海適応" ]
+            , WT: 5, CT: 60, dur: 15
         }
     }
 ];

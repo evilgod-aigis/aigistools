@@ -1276,6 +1276,11 @@ buff.skill_cat = [
         ]
     }
     , {
+        name: "アキレア", rarity: "黒", cl: "神話の継承者", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: { race: [ "人間", "神", "半神" ] }
+    }
+    , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: { home: [ "白の帝国" ] }
@@ -1580,6 +1585,22 @@ buff.skill_cat = [
         name: "シャルキー/バレンタイン", rarity: "金", cl: "ダンサー", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: { atk: "×1.1" }
         , target: { sex: [ "男性" ] }
+    }
+    , {
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.5", def: "×1.5", cost: "-30%" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "アンナ/メイド", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "覚醒"
+        , stats: { hp: "+50%", atk: "×1.5", def: "×1.5" }
+        , target: { cl: [ "王子" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "アンナ/軍服", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "覚醒"
+        , stats: { ct: "-50%" }
+        , target: { cl: [ "王子" ] }
     }
     , {
         name: "メルアビス", rarity: "黒", cl: "ネクロマンサー", AW: "覚醒後", skill: "覚醒"
@@ -1936,6 +1957,11 @@ buff.skill_cat = [
         name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×2.0" }
         , target: { cl: [ "ダーク王子" ] }
+    }
+    , {
+        name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.5", range: "×1.4" }
+        , target: { depType: [ "遠距離" ] }
     }
     , {
         name: "ちびゴブリン博士", rarity: "ちび", cl: "ゴブリン博士", skill: "通常"

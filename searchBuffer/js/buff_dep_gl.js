@@ -908,6 +908,12 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "紡がれる物語", cl: "神話の継承者", AW: "覚2a"
+        , stats: { atk: "+8%" }
+        , target: { depType: [ "近接" ] }
+        , note: "神話の継承者系"
+    }
+    , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒後"
         , stats: { def: "+10%" }
         , target: { season: [ "温泉" ] }
@@ -1044,6 +1050,17 @@ buff.dep_gl = [
         name: "マーニー/バレンタイン", rarity: "白", cl: "ダンサー", AW: "覚醒後"
         , stats: { def: "+10%" }
         , target: { season: [ "バレンタイン" ] }
+    }
+    , {
+        name: "王国政務官", cl: "政務官", AW: "覚醒後"
+        , stats: { draw: "○" }
+        , target: { cl: [ "王子" ] }
+        , note: "政務官系"
+    }
+    , {
+        name: "アンナ/メイド", rarity: "黒", cl: "政務官", AW: "覚醒後"
+        , stats: { atk: "+15%", def: "+15%" }
+        , target: { cl: [ "王子" ] }
     }
     , {
         name: "メトゥス", rarity: "黒", cl: "ネクロマンサー", AW: "覚醒後"

@@ -11,11 +11,6 @@ buff.dep_area = [
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "マレブランケ", rarity: "黒", cl: "ダークプリースト", AW: "覚醒後"
-        , stats: { mr: "+20" }
-        , target: { home: [ "白の帝国" ] }
-    }
-    , {
         name: "竜砲騎士隊長", cl: "ドラグーン", AW: "覚2a"
         , stats: { atk: "×1.1", def: "×1.1" }
         , target: { others: [ "竜族" ] }

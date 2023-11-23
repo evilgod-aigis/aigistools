@@ -80,7 +80,7 @@ funcs.createHTML.ChangeCompound = (thisElem, buffType) => {
 // オプション(再動短縮(配置型別))生成
 funcs.createHTML.Opt_rCTdepType = () => {
     let txt = "";
-    const values = [ 0, 25, 30, 35, 40, 45, 50, 60 ];
+    const values = [ 0, 20, 25, 30, 35, 40, 45, 50, 60 ];
     _.forEach(lists.buff.rCTdepType.list, (value, depType) => {
         const txt_saveInfo = saveData.db ? `funcs.saveData.UpdateData('rCTdepType', '${depType}', this.value); ` : "";
         txt += `

@@ -3,6 +3,7 @@
         "debuff_team"
         , "debuff_mixture"
         , "debuff_hit"
+        , "debuff_counter"
         , "debuff_scalar"
         , "debuff_takenDmg"
         , "updateHistory"

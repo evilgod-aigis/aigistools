@@ -147,40 +147,106 @@ buff.add = [
         , target: { cl: [ "王子" ] }
     }
     , {
-        name: "政務官", cl: "政務官"
+        name: "政務官", cl: "政務官", AW: "覚醒前"
         , stats: { atk: "10%", def: "10%" }
         , target: { cl: [ "王子" ] }
         , note: "範囲"
     }
     , {
-        name: "アンナ", rarity: "黒", cl: "政務官", skill: "通常"
+        name: "王国政務官", cl: "政務官", AW: "覚醒後"
+        , stats: { atk: "15%", def: "15%" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "範囲", "政務官系" ]
+    }
+    , {
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒前", skill: "通常"
         , stats: { atk: "*10", def: "*10" }
         , target: { cl: [ "王子" ] }
         , note: "範囲"
     }
     , {
-        name: "アンナ/メイド", rarity: "黒", cl: "政務官", skill: "通常"
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "通常"
         , stats: { atk: "*10", def: "*10" }
         , target: { cl: [ "王子" ] }
         , note: "範囲"
     }
     , {
-        name: "アンナ/水着", rarity: "黒", cl: "政務官", skill: "通常(2〜)"
+        name: "アンナ/メイド", rarity: "黒", cl: "政務官", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "アンナ/メイド", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "アンナ/水着", rarity: "黒", cl: "政務官", AW: "覚醒前", skill: "通常(2〜)"
         , stats: { atk: "*12", def: "*12" }
         , target: { cl: [ "王子" ] }
         , note: [ "範囲", "永続" ]
     }
     , {
-        name: "アンナ/戦場", rarity: "黒", cl: "政務官", skill: "通常"
+        name: "アンナ/水着", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "通常(2〜)"
+        , stats: { atk: "*12", def: "*12" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "範囲", "永続" ]
+    }
+    , {
+        name: "アンナ/水着", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "覚醒(奇)"
+        , stats: { def: "*15" }
+        , target: { cl: [ "王子" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "アンナ/水着", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "覚醒(偶)"
+        , stats: { atk: "*15" }
+        , target: { cl: [ "王子" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "アンナ/軍服", rarity: "黒", cl: "政務官", AW: "覚醒前", skill: "通常"
         , stats: { atk: "*10", def: "*10" }
         , target: { cl: [ "王子" ] }
         , note: "範囲"
     }
     , {
-        name: "アンナ/アイドル", rarity: "黒", cl: "政務官", skill: "通常"
+        name: "アンナ/軍服", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "アンナ/軍服", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "アンナ/アイドル", rarity: "黒", cl: "政務官", AW: "覚醒前", skill: "通常"
         , stats: { atk: "*10", def: "*10" }
         , target: { cl: [ "王子" ] }
         , note: [ "範囲", "永続" ]
+    }
+    , {
+        name: "アンナ/アイドル", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "範囲", "永続" ]
+    }
+    , {
+        name: "アンナ/アイドル", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "*13", def: "*13" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "範囲", "永続" ]
+    }
+    , {
+        name: "マレブランケ", rarity: "黒", cl: "ダークプリースト", AW: "覚醒後"
+        , stats: { mr: "+20" }
+        , target: { home: [ "白の帝国" ] }
+        , note: "範囲"
     }
     , {
         name: "政務官【闇の軍勢】", cl: "政務官【闇の軍勢】"

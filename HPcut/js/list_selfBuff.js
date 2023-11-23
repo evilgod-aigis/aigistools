@@ -49,6 +49,7 @@ lists.selfBuff.rCT = [
     , { id: null, buffer: "ヘビートリガー", value: 45 }
     , { id: null, buffer: "月下夜行", value: 25 }
     , { id: null, buffer: "マヨヒガわらし", value: 45 }
+    , { id: null, buffer: "アルターデビル", value: 40 }
     , { id: null, buffer: "対魔忍 魔性【対魔忍】", value: 20 }
     , { id: null, buffer: "対魔忍 魔性 覚醒【対魔忍】", value: 40 }
     , { id: null, buffer: "聖女イリス", value: 40 }

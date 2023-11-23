@@ -446,13 +446,13 @@ debuff.hit = [
     }
     , {
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒前", skill: "通常"
-        , stats: { atkCd: "+?f" }
+        , stats: { atkCd: "+30f" }
         , atkAttr: "物理", dur: "?f"
         , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒後", skill: "通常"
-        , stats: { atkCd: "+?f" }
+        , stats: { atkCd: "+30f" }
         , atkAttr: "物理", dur: "?f"
         , note: [ "永続", "分類未確認" ]
     }
@@ -924,6 +924,12 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "9f"
         , note: "ガンスリンガー系"
+    }
+    , {
+        name: "ラピドゥスアイオーン", cl: "時の俯瞰者", AW: "覚2b"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "9f"
+        , note: "時の俯瞰者系"
     }
     , {
         name: "ゴブリン博士", cl: "ゴブリン博士"

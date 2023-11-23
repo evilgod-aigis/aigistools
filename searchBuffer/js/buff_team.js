@@ -1782,32 +1782,62 @@ buff.team = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
-        name: "アンナ", rarity: "黒", cl: "政務官"
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒前"
         , stats: { rege: [ "30/秒", "15/15f" ] }
         , target: { cl: [ "王子" ] }
         , note: "HPアップ系称号"
     }
     , {
-        name: "アンナ", rarity: "黒", cl: "政務官"
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒前"
         , stats: { other: "" }
         , target: { cl: [ "王子" ] }
         , note: [ "攻撃アップ系称号", "魔法化" ]
     }
     , {
-        name: "アンナ", rarity: "黒", cl: "政務官"
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒前"
         , stats: { other: "" }
         , target: { cl: [ "王子" ] }
         , note: [ "防御アップ系称号", "ブロック数+1" ]
     }
     , {
-        name: "アンナ", rarity: "黒", cl: "政務官"
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒前"
         , stats: { mr: "+10" }
         , target: { cl: [ "王子" ] }
         , note: "スキル強化系称号"
     }
     , {
-        name: "アンナ", rarity: "黒", cl: "政務官"
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒前"
         , stats: { cost: "-3" }
+        , target: { cl: [ "王子" ] }
+        , note: "特殊称号"
+    }
+    , {
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒後"
+        , stats: { rege: [ "60/秒", "30/15f" ] }
+        , target: { cl: [ "王子" ] }
+        , note: "HPアップ系称号"
+    }
+    , {
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒後"
+        , stats: { atk: "+7%", other: "" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "攻撃アップ系称号", "魔法化" ]
+    }
+    , {
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒後"
+        , stats: { def: "+7%", other: "" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "防御アップ系称号", "ブロック数+1" ]
+    }
+    , {
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒後"
+        , stats: { mr: "+20" }
+        , target: { cl: [ "王子" ] }
+        , note: "スキル強化系称号"
+    }
+    , {
+        name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒後"
+        , stats: { cost: "-5" }
         , target: { cl: [ "王子" ] }
         , note: "特殊称号"
     }

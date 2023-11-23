@@ -24,14 +24,14 @@ funcs.AddCompoundInfo = () => {
             if(!("compound" in bufferInfo)) return;
             
             const priority_buffer = priority[bufferInfo.req];
-            const isChange_buffer = "isClass" in bufferInfo;
+            const isClass_buffer = "isClass" in bufferInfo;
             _.forEach(bufferInfo.compound, (compObj, compType) => {
                 if(compType === "rCTdepType") return;
                 _.forEach(compObj, comp => {
                     const target = _.reduce(_.filter(lists.buff[compType].list, comp), (arr, compBufferInfo) => {
                         // 0: 同時, 1: trueになるとき, -1: falseになるとき
                         let when = Math.sign(priority_buffer - priority[compBufferInfo.req]);
-                        const diff_isClass = ("isClass" in compBufferInfo) - isChange_buffer;
+                        const diff_isClass = ("isClass" in compBufferInfo) - isClass_buffer;
                         if(when * diff_isClass < 0) return arr;
                         if(!when) when = diff_isClass;  // バフタイプが一致
                         arr.push({ bufferInfo: compBufferInfo, when: when });

@@ -3,27 +3,39 @@ debuff.takenDmg = [
     {
         name: "カースウィスパラー", cl: "カースウィスパラ", AW: "覚1"
         , stats: { value: "+15%" }
-        , note: [ "範囲", "分類未確認" ]
+        , note: "範囲"
     }
     , {
         name: "モルフェサ", rarity: "黒", cl: "カースウィスパラ", AW: "覚醒後", skill: "通常"
         , stats: { value: "*1.5" }
-        , note: [ "範囲", "永続", "分類未確認" ]
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "モルフェサ", rarity: "黒", cl: "カースウィスパラ", AW: "覚醒後", skill: "覚醒"
         , stats: { value: "*3.0" }
-        , note: [ "範囲", "分類未確認" ]
+        , note: "範囲"
     }
     , {
         name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒後", skill: "通常"
         , stats: { value: "*1.5" }
-        , note: [ "範囲", "永続", "分類未確認" ]
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒後", skill: "覚醒"
         , stats: { value: "*2.0" }
-        , note: [ "範囲", "分類未確認" ]
+        , note: "範囲"
+    }
+    , {
+        name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "覚醒前"
+        , stats: { value: "+7%" }
+    }
+    , {
+        name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "覚醒後"
+        , stats: { value: "+10%" }
+    }
+    , {
+        name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "覚醒後", skill: "覚醒"
+        , stats: { value: "*3.0" }
     }
 ];
 

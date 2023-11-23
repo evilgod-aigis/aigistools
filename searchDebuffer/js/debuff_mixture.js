@@ -1132,6 +1132,31 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            def: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+    }
+    , {
+        name: "イコル", rarity: "黒", cl: "カオスルーラー", AW: "覚醒前"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+            , def: { value: "-10%", type: "area" }
+            , mr: { value: "-10%", type: "clAttr" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "イコル", rarity: "黒", cl: "カオスルーラー", AW: "覚醒後"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+            , def: { value: "-20%", type: "area" }
+            , mr: { value: "-20%", type: "clAttr" }
+        }
+        , domain: "area"
+    }
+    , {
         name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒後", skill: "覚醒"
         , stats: {
             atk: { value: "-40%", type: "noAttr" }
@@ -2267,6 +2292,14 @@ debuff.mixture = [
             atk: { value: "*1.5", type: "noAttr" }
         }
         , domain: "area"
+    }
+    , {
+        name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            stop: { value: "179f", type: "global" }
+        }
+        , domain: "global"
+        , note: "発動時"
     }
     , {
         name: "ヤシマ", rarity: "黒", cl: "妖狸", AW: "覚醒前", skill: "通常"
