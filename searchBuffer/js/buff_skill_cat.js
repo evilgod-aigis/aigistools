@@ -94,13 +94,13 @@ buff.skill_cat = [
     , {
         name: "フリア", rarity: "黒", cl: "ワルキューレ", AW: "覚醒前", skill: "通常"
         , stats: { draw: "(○)", redep: "40秒" }
-        , target: { race: [ "人間", "天使", "鳥人" ] }
+        , target: { race: [ "人間", "天使", "鳥人"/*, "半神"*/ ] }
         , note: "永続"
     }
     , {
         name: "フリア", rarity: "黒", cl: "ワルキューレ", AW: "覚醒後", skill: "通常"
         , stats: { draw: "(○)", redep: "40秒" }
-        , target: { race: [ "人間", "天使", "鳥人" ] }
+        , target: { race: [ "人間", "天使", "鳥人"/*, "半神"*/ ] }
         , note: "永続"
     }
     , {
@@ -1277,6 +1277,11 @@ buff.skill_cat = [
     }
     , {
         name: "アキレア", rarity: "黒", cl: "神話の継承者", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: { race: [ "人間", "神", "半神" ] }
+    }
+    , {
+        name: "アキレア", rarity: "黒", cl: "神話の継承者", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { race: [ "人間", "神", "半神" ] }
     }
