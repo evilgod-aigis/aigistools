@@ -457,6 +457,30 @@ debuff.hit = [
         , note: [ "永続", "分類未確認" ]
     }
     , {
+        name: "神話の継承者", cl: "神話の継承者", AW: "覚醒前"
+        , stats: { atk: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "神話の子", cl: "神話の継承者", AW: "覚1"
+        , stats: { atk: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "分類未確認", "神話の継承者系" ]
+    }
+    , {
+        name: "紡がれる物語", cl: "神話の継承者", AW: "覚2a"
+        , stats: { atk: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "分類未確認", "神話の継承者系" ]
+    }
+    , {
+        name: "目覚める荒神", cl: "神話の継承者", AW: "覚2b"
+        , stats: { atk: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "分類未確認", "神話の継承者系" ]
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "14f"

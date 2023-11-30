@@ -914,6 +914,11 @@ buff.dep_gl = [
         , note: "神話の継承者系"
     }
     , {
+        name: "アイギス像", rarity: "金", cl: "アイギス像"
+        , stats: { hp: "+3%", atk: "+3%" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒後"
         , stats: { def: "+10%" }
         , target: { season: [ "温泉" ] }
