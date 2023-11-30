@@ -27,6 +27,10 @@ buff.team = [
         , stats: { hp: "+15%" }
     }
     , {
+        name: "王子【宣誓】", cl: "王子"
+        , stats: { hp: "+20%" }
+    }
+    , {
         name: "アリア", rarity: "金", cl: "ソルジャー", AW: "覚醒後"
         , stats: { atk: "+2%" }
     }

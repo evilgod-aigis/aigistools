@@ -371,6 +371,12 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減", "属性不問-25%(範囲)" ]
     }
     , {
+        name: "王子【宣誓】", cl: "王子", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "属性不問-30%(範囲)" ]
+    }
+    , {
         name: "ベルニス/花嫁", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"

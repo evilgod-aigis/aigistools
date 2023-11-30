@@ -259,6 +259,11 @@ buff.own = [
         , target: { season: [ "お正月" ] }
     }
     , {
+        name: "エフトラ/最終決戦仕様", rarity: "白", cl: "異世界戦士", AW: "覚醒後"
+        , stats: { hp: "+3%" }
+        , target: { others: [ "銃士" ] }
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後"
         , stats: { atk: "+1%" }
         , target: { depType: [ "近接" ] }

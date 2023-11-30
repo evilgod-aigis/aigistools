@@ -10,6 +10,10 @@ buff.skill_area = [
         , stats: { atk: "×1.25", def: "×1.25" }
     }
     , {
+        name: "王子【宣誓】", cl: "王子", skill: "通常"
+        , stats: { atk: "×1.2" }
+    }
+    , {
         name: "山ン本五郎左衛門", rarity: "白", cl: "アヤカシの王", AW: "覚醒後", skill: "覚醒"
         , stats: { other: "" }
         , note: "隠密付与"
