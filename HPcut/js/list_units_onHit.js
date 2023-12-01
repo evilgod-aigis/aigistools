@@ -122,6 +122,41 @@ lists.units.onHit.list = [
     , {
         id: null, hidden: false
         , unitInfo: {
+            unitName: "ちびツムジ", deployType: "近接型", rarity: "金"
+            , unitClass: { selected: "犬神系" }
+            , attribution: [ "東の国", "妖怪", "ちび" ]
+            , affection: { percentage: null, bonus: null, changeRate: null }//{ percentage: 150, bonus: "攻撃硬直", changeRate: null }
+            , note: [ "女性" ]
+            , atkInterval: {
+                corr: {
+                    notSkill: { startup: null, remain: null, cooldown: null }
+                    , "通常": { startup: null, remain: null, cooldown: null }
+                    , "覚醒": { startup: null, remain: null, cooldown: null }
+                }
+                , uncorr: {
+                    notSkill: { startup: null, remain: null, cooldown: null }
+                    , "通常": { startup: 21, remain: 18, cooldown: 56 }
+                    , "覚醒": { startup: null, remain: null, cooldown: null }
+                }
+            }
+        }
+        , skill: {
+            selected: "通常"
+            , detail: {
+                "通常": [
+                    {
+                        target: "3体", simult: 3
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 40, dur: 40, HPred: 1 }
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
             unitName: "迎春の呪姫オロチヒメ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "呪術使い系" }
             , attribution: [ "東の国", "人間", "魔術師", "お正月" ]

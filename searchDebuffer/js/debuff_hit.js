@@ -283,6 +283,11 @@ debuff.hit = [
         , atkAttr: "貫通", dur: "44f"
     }
     , {
+        name: "ちびツムジ", rarity: "ちび", cl: "犬神", skill: "通常"
+        , stats: { atk: "-10%" }
+        , atkAttr: "貫通", dur: "44f"
+    }
+    , {
         name: "エフネ", rarity: "白", cl: "デモンルーン", AW: "覚醒後"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "149f"
