@@ -538,6 +538,7 @@ table.ApplyFilter = () => {
             _.forEach(table.debuffType.type[type].list, (statType, i) => {
                 const name = `${type}-${statType}`;
                 tableAreaSubs[i].classList.remove("is-unshown");
+                table.Sort(name, "id", false);
                 shownRowIndexes.splice(0);
                 shownRowIndexes.push(...HideRows(tableAreaSubs[i], name));
                 if(shownRowIndexes.length === 0) {
@@ -549,14 +550,13 @@ table.ApplyFilter = () => {
                 const debuffTable = tableAreaSubs[i].getElementsByTagName("table")[0];
                 const ths = debuffTable.querySelectorAll(`th:nth-child(${colIndex})`);
                 const tds = debuffTable.querySelectorAll(`td:nth-child(${colIndex})`);
-                if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === "")) {
-                    _.forEach(ths, th => th.classList.add("is-unshown"));
-                    _.forEach(tds, td => td.classList.add("is-unshown"));
-                } else {
+                if(_.some(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML !== "")) {
                     _.forEach(ths, th => th.classList.remove("is-unshown"));
                     _.forEach(tds, td => td.classList.remove("is-unshown"));
+                } else {
+                    _.forEach(ths, th => th.classList.add("is-unshown"));
+                    _.forEach(tds, td => td.classList.add("is-unshown"));
                 }
-                table.Sort(name, "id", false);
             });
             const tableStat = tableArea.getElementsByClassName("table-stat")[0];
             if(allNone) {
@@ -566,22 +566,23 @@ table.ApplyFilter = () => {
                 tableStat.classList.remove("table-empty");
             return;
         } else {
+            table.Sort(type, "id", false);
             shownRowIndexes.push(...HideRows(tableArea, type));
             if(shownRowIndexes.length === 0) return;
         }
         
         // 列の処理
         const debuffTable = tableArea.getElementsByTagName("table")[0];
-        const empty = [];
         let colIndex = table.before.indexOf("AW") + 1;
         let ths, tds;
         _.forEach([ "AW", "skill" ], colName => {
             ths = debuffTable.querySelectorAll(`th:nth-child(${colIndex})`);
             tds = debuffTable.querySelectorAll(`td:nth-child(${colIndex})`);
             if(!ths || !tds) return;
-            if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === ""))
-                empty.push(colName);
-            
+            if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === "")) {
+                _.forEach(ths, th => th.classList.add("is-unshown"));
+                _.forEach(tds, td => td.classList.add("is-unshown"));
+            }
             ++colIndex;
         });
         colIndex = table.before.length + 1;
@@ -594,12 +595,13 @@ table.ApplyFilter = () => {
             if(table.filter.stats.forceMode && !isShown) {
                 _.forEach(ths, th => th.classList.add("is-unshown"));
                 _.forEach(tds, td => td.classList.add("is-unshown"));
-                empty.push(stat);
             } else {
                 _.forEach(ths, th => th.classList.remove("is-unshown"));
                 _.forEach(tds, td => td.classList.remove("is-unshown"));
-                if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === ""))
-                    empty.push(stat);
+                if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === "")) {
+                    _.forEach(ths, th => th.classList.add("is-unshown"));
+                    _.forEach(tds, td => td.classList.add("is-unshown"));
+                }
             }
             ++colIndex;
         });
@@ -609,22 +611,12 @@ table.ApplyFilter = () => {
             ths = debuffTable.querySelectorAll(`th:nth-child(${colIndex})`);
             tds = debuffTable.querySelectorAll(`td:nth-child(${colIndex})`);
             if(!ths || !tds) return;
-            if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === ""))
-                empty.push(term);
+            if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === "")) {
+                _.forEach(ths, th => th.classList.add("is-unshown"));
+                _.forEach(tds, td => td.classList.add("is-unshown"));
+            }
             ++colIndex;
         });
-        
-        // 空の列を非表示
-        _.forEach(empty, colName => {
-            colIndex = table.column.indexOf(colName) + 1;
-            ths = debuffTable.querySelectorAll(`th:nth-child(${colIndex})`);
-            tds = debuffTable.querySelectorAll(`td:nth-child(${colIndex})`);
-            if(!ths || !tds) return;
-            _.forEach(ths, th => th.classList.add("is-unshown"));
-            _.forEach(tds, td => td.classList.add("is-unshown"));
-        });
-        
-        table.Sort(type, "id", false);
     });
 }
 

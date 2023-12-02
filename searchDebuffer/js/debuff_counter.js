@@ -1,5 +1,5 @@
 // 命中
-debuff.hit = [
+debuff.counter = [
     {
         name: "カオスルーラー", cl: "カオスルーラー", AW: "覚醒前"
         , stats: { atk: "-10%", def: "-10%", mr: "-10%" }

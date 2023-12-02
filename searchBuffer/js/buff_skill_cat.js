@@ -1600,7 +1600,6 @@ buff.skill_cat = [
         name: "アンナ/メイド", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+50%", atk: "×1.5", def: "×1.5" }
         , target: { cl: [ "王子" ] }
-        , note: "分類未確認"
     }
     , {
         name: "アンナ/軍服", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "覚醒"

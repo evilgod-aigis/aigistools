@@ -364,6 +364,7 @@ table.CreateTable = () => {
 }
 
 // フィルタ適用
+/*
 table.ApplyFilter = () => {
     _.forEach(table.buffType, type => {
         const tableArea = document.getElementById(`table-area_${type}`);
@@ -373,6 +374,8 @@ table.ApplyFilter = () => {
         }
         tableArea.classList.remove("is-unshown");
         const buffTable = document.getElementById(`table_${type}`);
+        
+        table.Sort(type, "id", false);
         
         // 行の処理
         const trs = buffTable.querySelectorAll("tbody tr");
@@ -448,8 +451,89 @@ table.ApplyFilter = () => {
             _.forEach(ths, th => th.classList.add("is-unshown"));
             _.forEach(tds, td => td.classList.add("is-unshown"));
         });
+    });
+}
+*/
+table.ApplyFilter = () => {
+    _.forEach(table.buffType, type => {
+        const tableArea = document.getElementById(`table-area_${type}`);
+        if(!table.filter.buffType[type]) {
+            tableArea.classList.add("is-unshown");
+            return;
+        }
+        tableArea.classList.remove("is-unshown");
+        const buffTable = document.getElementById(`table_${type}`);
         
         table.Sort(type, "id", false);
+        
+        // 行の処理
+        const trs = buffTable.querySelectorAll("tbody tr");
+        const isEmpty = { row: true, col: {} };
+        _.forEach([ "AW", "skill", ...table.stats, "target" ], colName => isEmpty.col[colName] = true);
+        _.forEach(table.list[type].picked, (buffer, i) => {
+            if(
+                ((!("rarity" in buffer) && table.filter.rarity["空欄"]) || table.filter.rarity[buffer.rarity])
+                && (!("AW" in buffer) || table.filter.AW[table.AW_rep[buffer.AW]])
+                && _.some(buffer.stats, (_, stat) => { isEmpty.col[stat] = false; return table.filter.stats[stat]; })
+            ) {
+                trs[i].classList.remove("is-unshown");
+                _.forEach([ "AW", "skill", "target" ], colName => {
+                    if(colName in buffer) isEmpty.col[colName] = false;
+                });
+                isEmpty.row = false;
+            } else
+                trs[i].classList.add("is-unshown");
+        });
+        const tableName = tableArea.getElementsByClassName("table-name")[0];
+        if(isEmpty.row) {
+            buffTable.parentElement.classList.add("is-unshown");
+            tableName.classList.add("table-empty");
+            return;
+        }
+        buffTable.parentElement.classList.remove("is-unshown");
+        tableName.classList.remove("table-empty");
+        
+        // 列の処理
+        let colIndex = table.before.indexOf("AW") + 1;
+        let ths, tds;
+        _.forEach([ "AW", "skill" ], colName => {
+            ths = buffTable.querySelectorAll(`th:nth-child(${colIndex})`);
+            tds = buffTable.querySelectorAll(`td:nth-child(${colIndex})`);
+            if(!ths || !tds) return;
+            if(isEmpty.col[colName]) {
+                _.forEach(ths, th => th.classList.add("is-unshown"));
+                _.forEach(tds, td => td.classList.add("is-unshown"));
+            } else {
+                _.forEach(ths, th => th.classList.remove("is-unshown"));
+                _.forEach(tds, td => td.classList.remove("is-unshown"));
+            }
+            ++colIndex;
+        });
+        colIndex = table.before.length + 1;
+        _.forEach(table.filter.stats, (isShown, stat) => {
+            if(stat === "forceMode" || stat === "other") return;
+            
+            ths = buffTable.querySelectorAll(`th:nth-child(${colIndex})`);
+            tds = buffTable.querySelectorAll(`td:nth-child(${colIndex})`);
+            if(!ths || !tds) return;
+            if(isEmpty.col[stat] || table.filter.stats.forceMode && !isShown) {
+                _.forEach(ths, th => th.classList.add("is-unshown"));
+                _.forEach(tds, td => td.classList.add("is-unshown"));
+            } else {
+                _.forEach(ths, th => th.classList.remove("is-unshown"));
+                _.forEach(tds, td => td.classList.remove("is-unshown"));
+            }
+            ++colIndex;
+        });
+        ths = buffTable.querySelectorAll(`th:nth-child(${colIndex})`);
+        tds = buffTable.querySelectorAll(`td:nth-child(${colIndex})`);
+        if(isEmpty.col.target) {
+            _.forEach(ths, th => th.classList.add("is-unshown"));
+            _.forEach(tds, td => td.classList.add("is-unshown"));
+        } else {
+            _.forEach(ths, th => th.classList.remove("is-unshown"));
+            _.forEach(tds, td => td.classList.remove("is-unshown"));
+        }
     });
 }
 

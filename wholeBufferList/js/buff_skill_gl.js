@@ -531,7 +531,7 @@ buff.skill_gl = [
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
-        name: "ハナ", rarity: "白", cl: "ダンサー", skill: "覚醒"
+        name: "ハナ", rarity: "白", cl: "ダンサー", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "40/秒", "20/15f" ] }
     }
     , {
@@ -546,7 +546,7 @@ buff.skill_gl = [
     }
     , {
         name: "アンナ/アイドル", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "覚醒"
-        , stats: { rege: [ "30/秒", "?/?f" ] }
+        , stats: { rege: [ "30/秒", "15/15f" ] }
         , note: "永続"
     }
     , {
