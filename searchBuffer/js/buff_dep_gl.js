@@ -1183,6 +1183,11 @@ buff.dep_gl = [
         , target: { others: [ "魔界" ] }
     }
     , {
+        name: "ちびアスバール", rarity: "ちび", cl: "魔界総帥"
+        , stats: { atk: "+10%", def: "+10%", draw: "○" }
+        , target: { others: [ "魔界" ] }
+    }
+    , {
         name: "ゴブリン博士", cl: "ゴブリン博士"
         , stats: { hp: "+10%", atk: "+10%" }
         , target: [

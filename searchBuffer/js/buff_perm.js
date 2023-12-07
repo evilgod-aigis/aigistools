@@ -19,6 +19,18 @@ buff.perm = [
         , note: [ "発動時", "ボム" ]
     }
     , {
+        name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒後", skill: "覚醒(1)"
+        , stats: { hp: "×1.06", atk: "×1.06", def: "×1.06" }
+        , target: { others: [ "機械" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒後", skill: "覚醒(2)"
+        , stats: { hp: "×1.12", atk: "×1.12", def: "×1.12" }
+        , target: { others: [ "機械" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "斎主の獅子", rarity: "トークン", AW: "覚醒前", skill: "通常"
         , stats: { hp: "×1.5" }
         , target: { cl: [ "狛犬" ] }

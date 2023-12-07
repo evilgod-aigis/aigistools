@@ -125,6 +125,16 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "シビラ/聖剣", rarity: "黒", cl: "プリンセス", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×2.0" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "シビラ/聖剣", rarity: "黒", cl: "プリンセス", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×2.0" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
         name: "ロゼット/正月", rarity: "金", cl: "プリンセス", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: [
@@ -2058,6 +2068,18 @@ buff.skill_cat = [
         , stats: { range: "×1.2" }
         , target: { depType: [ "遠距離" ] }
         , note: "分類未確認"
+    }
+    , {
+        name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒前", skill: "通常"
+        , stats: { hp: "+20%", def: "×1.2" }
+        , target: { others: [ "機械" ] }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒後", skill: "通常"
+        , stats: { hp: "+20%", def: "×1.2" }
+        , target: { others: [ "機械" ] }
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "帝国軍旗", rarity: "金", cl: "帝国軍旗", skill: "通常"

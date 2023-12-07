@@ -125,7 +125,7 @@ lists.units.onHit.list = [
             unitName: "ちびツムジ", deployType: "近接型", rarity: "金"
             , unitClass: { selected: "犬神系" }
             , attribution: [ "東の国", "妖怪", "ちび" ]
-            , affection: { percentage: null, bonus: null, changeRate: null }//{ percentage: 150, bonus: "攻撃硬直", changeRate: null }
+            , affection: { percentage: 150, bonus: "攻撃硬直", changeRate: null }
             , note: [ "女性" ]
             , atkInterval: {
                 corr: {

@@ -45,6 +45,16 @@ buff.skill_area = [
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
+        name: "シビラ/聖剣", rarity: "黒", cl: "プリンセス", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { not: [ "cl" ], cl: [ "王子" ] }
+    }
+    , {
+        name: "シビラ/聖剣", rarity: "黒", cl: "プリンセス", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { not: [ "cl" ], cl: [ "王子" ] }
+    }
+    , {
         name: "ヘイオス/クリスマス", rarity: "黒", cl: "ダークファイター", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "×1.5" }
     }
@@ -383,6 +393,14 @@ buff.skill_area = [
     , {
         name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒後", skill: "覚醒(4～)"
         , stats: { eva: "30%" }
+    }
+    , {
+        name: "クーシン", rarity: "白", cl: "風水使い", AW: "覚醒前", skill: "通常"
+        , stats: { rege: [ "150/秒", "?/?f" ] }
+    }
+    , {
+        name: "クーシン", rarity: "白", cl: "風水使い", AW: "覚醒後", skill: "通常"
+        , stats: { rege: [ "150/秒", "?/?f" ] }
     }
     , {
         name: "ちびリンネ", rarity: "ちび", cl: "風水使い", skill: "通常"

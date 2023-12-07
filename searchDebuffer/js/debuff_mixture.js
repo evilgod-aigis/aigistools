@@ -2425,6 +2425,14 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "スカイバトルシップ", cl: "エアセイラー", AW: "覚2b"
+        , stats: {
+            def: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "エアセイラー系", "分類未確認" ]
+    }
+    , {
         name: "桃源郷", rarity: "金", cl: "桃源郷"
         , stats: {
             atk: { value: "-10%", type: "noAttr" }

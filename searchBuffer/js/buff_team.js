@@ -1732,6 +1732,11 @@ buff.team = [
         , target: { cl: [ "風水使い" ] }
     }
     , {
+        name: "クーシン", rarity: "白", cl: "風水使い", AW: "覚醒後"
+        , stats: { hp: "+5%", def: "+5%" }
+        , target: { cl: [ "モンク", "風水使い" ] }
+    }
+    , {
         name: "エイプリル", rarity: "白", cl: "砲術士", AW: "覚醒後"
         , stats: { atkCd: "-30%" }
         , target: { cl: [ "重装砲兵", "砲術士", "モンスタースレイヤー" ] }
@@ -2137,6 +2142,11 @@ buff.team = [
         , target: { others: [ "魔界" ] }
     }
     , {
+        name: "ちびアスバール", rarity: "ちび", cl: "魔界総帥"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: { others: [ "魔界" ] }
+    }
+    , {
         name: "リッチ", rarity: "黒", cl: "リッチ【闇の軍勢】", AW: "覚醒前"
         , stats: { atkCd: "-15%" }
         , target: { others: [ "アンデッド" ] }
@@ -2197,6 +2207,11 @@ buff.team = [
         name: "ミリアム/バレンタイン", rarity: "白", cl: "スカウト", AW: "覚醒後"
         , stats: { hp: "+5%", atk: "+5%" }
         , target: { season: [ "バレンタイン" ] }
+    }
+    , {
+        name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒後"
+        , stats: { hp: "+10%", def: "+5%" }
+        , target: { others: [ "機械" ] }
     }
     , {
         name: "アルスラーン", rarity: "白", cl: "王太子", AW: "覚醒前"
