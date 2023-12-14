@@ -330,6 +330,19 @@ buff.skill_area = [
         , stats: { abn: "-100%" }
     }
     , {
+        name: "クルス/クリスマス", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚醒前", skill: "通常"
+        , stats: { hp: "+50%", atk: "×1.5" }
+    }
+    , {
+        name: "クルス/クリスマス", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚醒後", skill: "通常"
+        , stats: { hp: "+50%", atk: "×1.5" }
+    }
+    , {
+        name: "クルス/クリスマス", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , note: "永続"
+    }
+    , {
         name: "ピックル", rarity: "金", cl: "ヴァンパイアハンター", AW: "覚醒後", skill: "覚醒"
         , stats: { other: "" }
         , note: [ "オート", "永続" ]
@@ -396,11 +409,11 @@ buff.skill_area = [
     }
     , {
         name: "クーシン", rarity: "白", cl: "風水使い", AW: "覚醒前", skill: "通常"
-        , stats: { rege: [ "150/秒", "?/?f" ] }
+        , stats: { rege: [ "150/秒", "75/15f" ] }
     }
     , {
         name: "クーシン", rarity: "白", cl: "風水使い", AW: "覚醒後", skill: "通常"
-        , stats: { rege: [ "150/秒", "?/?f" ] }
+        , stats: { rege: [ "150/秒", "75/15f" ] }
     }
     , {
         name: "ちびリンネ", rarity: "ちび", cl: "風水使い", skill: "通常"
@@ -737,6 +750,14 @@ buff.skill_area = [
         , stats: { atk: "×1.3", def: "×1.3", rege: [ "100/秒", "50/15f" ] }
     }
     , {
+        name: "アエロ/クリスマス", rarity: "金", cl: "スカイシューター", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.07" }
+    }
+    , {
+        name: "アエロ/クリスマス", rarity: "金", cl: "スカイシューター", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { atk: "×1.12" }
+    }
+    , {
         name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "250/秒", "125/15f" ] }
         , note: "永続"
@@ -744,7 +765,6 @@ buff.skill_area = [
     , {
         name: "イエラ", rarity: "白", cl: "スカイヒーラー", AW: "覚醒前", skill: "通常"
         , stats: { def: "×1.3" }
-        , note: "分類未確認"
     }
     , {
         name: "イエラ", rarity: "白", cl: "スカイヒーラー", AW: "覚醒後", skill: "通常"

@@ -1646,6 +1646,11 @@ buff.team = [
         , target: { cl: [ "アーチャー", "ヴァンパイアハンター", "レンジャー" ] }
     }
     , {
+        name: "クルス/クリスマス", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚醒後"
+        , stats: { atkCd: "-20%" }
+        , target: { season: [ "クリスマス" ] }
+    }
+    , {
         name: "ルマリア", rarity: "白", cl: "ヴァンパイアハンター", AW: "覚醒後"
         , stats: { atk: "+7%" }
         , target: { cl: [ "ヴァンパイアハンター" ] }
@@ -2197,6 +2202,11 @@ buff.team = [
         , stats: { other: "" }
         , target: { others: [ "弓兵" ] }
         , note: "天界-100%"
+    }
+    , {
+        name: "アエロ/クリスマス", rarity: "金", cl: "スカイシューター", AW: "覚醒後"
+        , stats: { hp: "+5%" }
+        , target: { season: [ "クリスマス" ] }
     }
     , {
         name: "ミリアム/バレンタイン", rarity: "白", cl: "スカウト", AW: "覚醒前"

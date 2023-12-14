@@ -1304,7 +1304,11 @@ buff.skill_cat = [
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒後", skill: [ "通常", "覚醒" ]
         , stats: { atk: "×1.35", def: "×1.35" }
         , target: { home: [ "白の帝国" ] }
-        , note: "分類未確認"
+    }
+    , {
+        name: "ちび白の皇帝", rarity: "ちび", cl: "皇帝", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: { home: [ "白の帝国" ] }
     }
     , {
         name: "キャロップ", rarity: "白", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"
@@ -2073,13 +2077,13 @@ buff.skill_cat = [
         name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+20%", def: "×1.2" }
         , target: { others: [ "機械" ] }
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒後", skill: "通常"
         , stats: { hp: "+20%", def: "×1.2" }
         , target: { others: [ "機械" ] }
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "帝国軍旗", rarity: "金", cl: "帝国軍旗", skill: "通常"

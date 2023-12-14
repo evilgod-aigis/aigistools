@@ -471,6 +471,12 @@ lists.buff.haste.list = [
         , tooltip: "[編成] 属性：アンデッド・温泉の攻撃硬直-20%"
     }
     , {
+        id: null, buffer: "聖夜の訪問者クルス", awaken: "-"
+        , value: 20, disabled: null, req: "team"
+        , target: [ { attribution: [ "クリスマス" ] } ]
+        , tooltip: "[編成] 属性：クリスマスの攻撃硬直-20%"
+    }
+    , {
         id: null, buffer: "時の調停者トワ", awaken: "-"
         , value: 20, disabled: null, req: "team"
         , compound: { hasteFixed: [ { buffer: "時の調停者トワ" } ] }
