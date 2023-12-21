@@ -74,12 +74,12 @@ buff.team = [
     , {
         name: "王子【焔竜】", cl: "王子"
         , stats: { hp: "+7%", atk: "+15%" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "王子【焔竜】", cl: "王子"
         , stats: { hp: "+10%", atk: "+20%" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
         , note: "Lv3以上"
     }
     , {
@@ -314,7 +314,7 @@ buff.team = [
         , stats: { hp: "+5%" }
         , target: [
             { season: [ "サマー" ] }
-            , { others: [ "深海適応" ] }
+            , { others: [ "深海" ] }
         ]
     }
     , {
@@ -350,24 +350,24 @@ buff.team = [
     , {
         name: "アーニャ", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒後"
         , stats: { hp: "+10%" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "メリュジアナ", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後"
         , stats: { mr: "+10", cost: "-3" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "クラシル", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後"
         , stats: { atk: "+5%", cost: "-2" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "メリュジアナ", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒前"
         , stats: { wt: "-20%" }
         , target: [
             { season: [ "ジューンブライド" ] }
-            , { others: [ "竜族" ] }
+            , { others: [ "ドラゴン" ] }
         ]
     }
     , {
@@ -375,7 +375,7 @@ buff.team = [
         , stats: { wt: "-25%" }
         , target: [
             { season: [ "ジューンブライド" ] }
-            , { others: [ "竜族" ] }
+            , { others: [ "ドラゴン" ] }
         ]
     }
     , {
@@ -1357,17 +1357,17 @@ buff.team = [
     , {
         name: "ヴィアベル", rarity: "黒", cl: "アクアナイト", AW: "覚醒前"
         , stats: { def: "+5%", cost: "-1" }
-        , target: { others: [ "深海適応" ] }
+        , target: { others: [ "深海" ] }
     }
     , {
         name: "ヴィアベル", rarity: "黒", cl: "アクアナイト", AW: "覚醒後"
         , stats: { def: "+10%", cost: "-2" }
-        , target: { others: [ "深海適応" ] }
+        , target: { others: [ "深海" ] }
     }
     , {
         name: "ちびヴィアベル", rarity: "ちび", cl: "アクアナイト"
         , stats: { def: "+5%", cost: "-1" }
-        , target: { others: [ "深海適応" ] }
+        , target: { others: [ "深海" ] }
     }
     , {
         name: "アレクシア", rarity: "白", cl: "テンプルナイト", AW: "覚醒後"
@@ -1627,18 +1627,18 @@ buff.team = [
     , {
         name: [ "エルダードラゴン", "シャーマン" ], cl: "ドラゴンシャーマン", AW: "覚2a"
         , stats: { mr: "+10" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
         , note: "ドラゴンシャーマン系"
     }
     , {
         name: "エキドナ", rarity: "白", cl: "ドラゴンシャーマン", AW: "覚醒後"
         , stats: { hp: "+5%", def: "+5%" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "ルビナス", rarity: "白", cl: "ドラゴンシャーマン", AW: "覚醒後"
         , stats: { atk: "+7%" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "スー", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚醒後"
@@ -2068,12 +2068,12 @@ buff.team = [
     , {
         name: "イヲナミ", rarity: "白", cl: "シービショップ", AW: "覚醒前"
         , stats: { hp: "+5%" }
-        , target: { others: [ "深海適応" ] }
+        , target: { others: [ "深海" ] }
     }
     , {
         name: "イヲナミ", rarity: "白", cl: "シービショップ", AW: "覚醒後"
         , stats: { hp: "+10%" }
-        , target: { others: [ "深海適応" ] }
+        , target: { others: [ "深海" ] }
     }
     , {
         name: "シュカ", rarity: "白", cl: "霊宝つくもがみ", AW: "覚醒前"
@@ -2090,7 +2090,7 @@ buff.team = [
     , {
         name: "ジゼル", rarity: "黒", cl: "ドラグーン", AW: "覚醒後"
         , stats: { cost: "-3" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒前"
@@ -2105,13 +2105,13 @@ buff.team = [
     , {
         name: "ロカ", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
         , stats: { def: "+7%" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "カラザ/バニー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
         , stats: { hp: "+5%" }
         , target: {
-            others: [ "竜族" ]
+            others: [ "ドラゴン" ]
             , season: [ "エッグハント" ]
         }
     }
@@ -2119,7 +2119,7 @@ buff.team = [
         name: "カラザ/バニー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
         , stats: { hp: "+7%" }
         , target: {
-            others: [ "竜族" ]
+            others: [ "ドラゴン" ]
             , season: [ "エッグハント" ]
         }
     }
@@ -2386,7 +2386,7 @@ buff.team = [
     
     others 英傑 ちび 弓兵 魔術師 アンデッド 機械 騎兵 重装 聖職者 魔界 ドラゴン ＜七つの大罪＞
     
-    竜族 全プリンセス系 GG持ち HP回復不可 魔界適応 深海適応 天界適応
+    全プリンセス系 GG持ち HP回復不可 魔界適応 深海適応 天界適応
     
     year 年
     

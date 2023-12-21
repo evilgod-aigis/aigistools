@@ -43,7 +43,7 @@ buff.unique = [
     , {
         name: "カラザ", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
         , stats: { atk: "×1.1", other: "" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
         , type: "special"
         , note: [ "区分：特効", "編成", "地上" ]
     }
@@ -131,7 +131,7 @@ buff.unique = [
     
     others 英傑 ちび 弓兵 魔術師 アンデッド 機械 騎兵 重装 聖職者 魔界 ドラゴン ＜七つの大罪＞
     
-    竜族 全プリンセス系 GG持ち HP回復不可 魔界適応 深海適応 天界適応
+    全プリンセス系 GG持ち HP回復不可 魔界適応 深海適応 天界適応
     
     year 年
     

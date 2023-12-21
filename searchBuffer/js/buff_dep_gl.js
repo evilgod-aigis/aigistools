@@ -138,7 +138,7 @@ buff.dep_gl = [
     , {
         name: "イグニス", rarity: "白", cl: "中級竜兵", AW: "覚醒後"
         , stats: { atk: "+10%" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "ウィリアス/ハロウィン", rarity: "白", cl: "中級竜兵", AW: "覚醒後"
@@ -148,17 +148,17 @@ buff.dep_gl = [
     , {
         name: "エルドラ", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒前"
         , stats: { draw: "○" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "エルドラ", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒後"
         , stats: { atk: "+20%", draw: "○" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "ちびエルドラ", rarity: "ちび", cl: "ドラゴンプリンセス"
         , stats: { draw: "○" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "ヒバリ", rarity: "黒", cl: "サムライ", AW: "覚醒後"
@@ -1168,13 +1168,13 @@ buff.dep_gl = [
     , {
         name: [ "エルダードラゴン", "メイガス" ], cl: "ドラゴンメイジ", AW: "覚2a"
         , stats: { atk: "+20%", atkCd: "-20%" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
         , note: "ドラゴンメイジ系"
     }
     , {
         name: "ドラゴンデストラクト", cl: "ドラゴンメイジ", AW: "覚2b"
         , stats: { atk: "+15%" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
         , note: "ドラゴンメイジ系"
     }
     , {
@@ -1381,7 +1381,7 @@ buff.dep_gl = [
     
     others 英傑 ちび 弓兵 魔術師 アンデッド 機械 騎兵 重装 聖職者 魔界 ドラゴン ＜七つの大罪＞
     
-    竜族 全プリンセス系 GG持ち HP回復不可 魔界適応 深海適応 天界適応
+    全プリンセス系 GG持ち HP回復不可 魔界適応 深海適応 天界適応
     
     year 年
     

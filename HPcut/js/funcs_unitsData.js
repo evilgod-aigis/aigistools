@@ -246,6 +246,7 @@ funcs.unitsData.GetBuffValue = (unit, buffType, isRate = true, withSelfBuff = tr
     }
     let buffValue = 0;
     let buffValue_self = 0;
+    let unforced = false;
     let bufferInfo;
     const list = lists.buff[buffType].list;
     if(buffType === "rCT") {
@@ -280,13 +281,19 @@ funcs.unitsData.GetBuffValue = (unit, buffType, isRate = true, withSelfBuff = tr
     // 選択したオプションによる効果
     _.forEach(_.filter(document.getElementById(buffType).getElementsByTagName("input"), elem => elem.checked), elem => {
         bufferInfo = _.find(list, { id: Number(elem.value) });
-        buffValue = Math.max(buffValue, bufferInfo.value * funcs.unitsData.IsTarget(unit, bufferInfo));
+        const tmp = bufferInfo.value * funcs.unitsData.IsTarget(unit, bufferInfo);
+        if(tmp > buffValue) {
+            buffValue = tmp;
+            unforced = "unforced" in bufferInfo;
+        } else if(tmp === buffValue)
+            unforced &= "unforced" in bufferInfo;
+        //buffValue = Math.max(buffValue, bufferInfo.value * funcs.unitsData.IsTarget(unit, bufferInfo));
     });
     
     if(buffType === "skillExtend") return (100 + buffValue) * (100 + buffValue_self) / 10000.0 - 1.0;
     if(buffType === "haste") return [ buffValue / 100.0, buffValue_self / 100.0 ];
     if(isRate) return Math.max(buffValue, buffValue_self) / 100.0;
-    return Math.max(buffValue, buffValue_self);
+    return [ Math.max(buffValue, buffValue_self), unforced ];
 }
 
 // ユニットがバフ等の対象か判定
@@ -371,7 +378,7 @@ funcs.unitsData.CorrectSkill = (unit, withBuff = true) => {
             WT: 1.0 - funcs.unitsData.GetBuffValue(unit, "rWT")
             , CT: 1.0 - funcs.unitsData.GetBuffValue(unit, "rCT", true, false)
             , dur: 1.0 + funcs.unitsData.GetBuffValue(unit, "skillExtend")
-            , dur_fixed: funcs.unitsData.GetBuffValue(unit, "skillExtendFixed", false)
+            , dur_fixed: funcs.unitsData.GetBuffValue(unit, "skillExtendFixed", false)[0]
         };
         _.forEach(skill, obj => {
             if("WT" in obj.uncorr) obj.corr.WT = obj.uncorr.WT * buffValue.WT;
@@ -484,7 +491,7 @@ funcs.unitsData.CorrectAtkInterval = (unit, withBuff = true) => {
     if(withBuff) {
         const buffValue = {
             haste: _.map(funcs.unitsData.GetBuffValue(unit, "haste"), rate => 1.0 - rate)
-            , atkCD_fixed: funcs.unitsData.GetBuffValue(unit, "hasteFixed", false, false)
+            , atkCD_fixed: funcs.unitsData.GetBuffValue(unit, "hasteFixed", false, false)   // 0: value, 1: unforced
             , redMapEff: 1.0 - funcs.unitsData.GetBuffValue(unit, "redMapEff")
         }
         _.forEach(keys, key => {
@@ -496,10 +503,17 @@ funcs.unitsData.CorrectAtkInterval = (unit, withBuff = true) => {
             let atkCooldown = Number.isFinite(changed.cooldown) && isNotFixed ? changed.cooldown : unit.unitInfo.atkInterval.uncorr[key].cooldown;
             
             if(aff.bonus === "攻撃硬直") atkCooldown = Math.ceil((atkCooldown - 1) * rate + 1);
+            atkCooldown = Math.floor((atkCooldown - 1) * _.min(buffValue.haste) + 1);
+            if(buffValue.atkCD_fixed[0]) {
+                const atkCD_fixed = Math.floor((buffValue.atkCD_fixed[0] - 1) * buffValue.haste[0] + 1);
+                atkCooldown = buffValue.atkCD_fixed[1] ? Math.min(atkCooldown, atkCD_fixed) : atkCD_fixed;
+            }
+            /*
             atkCooldown = buffValue.atkCD_fixed
                 ? Math.floor((buffValue.atkCD_fixed - 1) * buffValue.haste[0] + 1)
                 : Math.floor((atkCooldown - 1) * _.min(buffValue.haste) + 1);
             //         ↑ceil?
+            */
             if(!_.includes(unit.unitInfo.note, "状態異常無効"))
                 atkCooldown += num.incAtkCooldown_enemy.value * 2;
             if(!_.includes(unit.unitInfo.note, "深海適応"))

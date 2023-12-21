@@ -85,25 +85,18 @@ lists.buff.rWT.list = [
     , {
         id: null, buffer: "竜姫婚姻譚メリュジアナ", awaken: "未覚醒", showAwaken: true
         , value: 20, disabled: null, req: "team"
-        , target: [
-            { attribution: [ "ジューンブライド", "竜族" ] }
-            , { note: [ "ドラゴンライダー系", "ドラグーン系" ] }
-        ]
+        , target: [ { attribution: [ "ジューンブライド", "ドラゴン" ] } ]
         , tooltip: "\
-            [編成] 属性：ジューンブライド・<br>\
-            　　　　　　 竜族(ドラゴンライダー・ドラグーン系含)の初動-20%\
+            [編成] 属性：ジューンブライド・ドラゴンの初動-20%\
         "
     }
     , {
         id: null, buffer: "竜姫婚姻譚メリュジアナ", awaken: "覚醒", showAwaken: true
         , value: 25, disabled: null, req: "team"
         , target: [
-            { attribution: [ "ジューンブライド", "竜族" ] }
-            , { note: [ "ドラゴンライダー系", "ドラグーン系" ] }
-        ]
+            { attribution: [ "ジューンブライド", "ドラゴン" ] } ]
         , tooltip: "\
-            [編成] 属性：ジューンブライド・<br>\
-            　　　　　　 竜族(ドラゴンライダー・ドラグーン系含)の初動-25%\
+            [編成] 属性：ジューンブライド・ドラゴンの初動-25%\
         "
     }
     , {
@@ -450,12 +443,9 @@ lists.buff.haste.list = [
     , {
         id: null, buffer: "エルダードラゴンメイガス", isClass: true, awaken: "覚2a?"
         , value: 20, disabled: null, req: "deploy"
-        , target: [
-            { attribution: [ "竜族" ] }
-            , { note: [ "ドラゴンライダー系", "ドラグーン系" ] }
-        ]
+        , target: [ { attribution: [ "ドラゴン" ] } ]
         , compound: { giveDmgMul: [ { buffer: "氷竜魔術士カラザ" } ] }
-        , tooltip: "[配置] 属性：竜族(ドラゴンライダー・ドラグーン系含)の攻撃硬直-20%"
+        , tooltip: "[配置] 属性：ドラゴンの攻撃硬直-20%"
     }
     , {
         id: null, buffer: "恋慕の堕天使ソフィー", awaken: "覚醒"
@@ -593,9 +583,9 @@ lists.buff.hasteFixed.list = [
     }
     , {
         id: null, buffer: "速射の長銃", awaken: "-"
-        , value: 31, disabled: null, req: "skill"
+        , value: 21, disabled: null, req: "skill", unforced: true
         , target: [ { attribution: [ "銃士" ] } ]
-        , tooltip: "[スキル・全体] 属性：銃士の攻撃硬直16f化"
+        , tooltip: "[スキル・全体] 属性：銃士の攻撃硬直11f化"
         , unitInfo: {
             unitName: "速射の長銃", deployType: "近接型", rarity: "-"
             , unitClass: { selected: "速射の長銃" }
@@ -605,9 +595,9 @@ lists.buff.hasteFixed.list = [
     }
     , {
         id: null, buffer: "猛撃の砲弾", awaken: "-"
-        , value: 31, disabled: null, req: "skill"
+        , value: 21, disabled: null, req: "skill", unforced: true
         , target: [ { attribution: [ "砲兵" ] } ]
-        , tooltip: "[スキル・全体] 属性：砲兵の攻撃硬直16f化"
+        , tooltip: "[スキル・全体] 属性：砲兵の攻撃硬直11f化"
         , unitInfo: {
             unitName: "猛撃の砲弾", deployType: "近接型", rarity: "-"
             , unitClass: { selected: "猛撃の砲弾" }
@@ -838,14 +828,11 @@ lists.buff.giveDmgMul.list = [
     , {
         id: null, buffer: "氷竜魔術士カラザ", awaken: "覚醒", showAwaken: false
         , value: 15, disabled: null, req: "team"
-        , target: [
-            { attribution: [ "竜族" ] }
-            , { note: [ "ドラゴンライダー系", "ドラグーン系" ] }
-        ]
+        , target: [ { attribution: [ "ドラゴン" ] } ]
         , compound: { haste: [ { buffer: "エルダードラゴンメイガス" } ] }
         , tooltip: "\
             [編成] 地上敵に対して<br>\
-            　　　 属性：竜族(ドラゴンライダー・ドラグーン系含)の攻撃力が15%上昇\
+            　　　 属性：ドラゴンの攻撃力が15%上昇\
         "
     }
 ];

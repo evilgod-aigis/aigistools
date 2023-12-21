@@ -207,7 +207,7 @@ lists.units.onSkillAct.list = [
             , unitClass: { selected: "ドラゴンライダー系" }
             , attribution: [ "華の国", "人間", "騎兵", "ドラゴン", "高貴", "ジューンブライド" ]
             , affection: { percentage: null, bonus: "その他", changeRate: null }
-            , note: [ "女性", "ドラゴンライダー系" ]
+            , note: [ "女性" ]
         }
         , skill: {
             selected: "通常"

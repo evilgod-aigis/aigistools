@@ -1234,7 +1234,7 @@ buff.skill_cat = [
     , {
         name: "フィーヌ/温泉", rarity: "白", cl: "シーソルジャー", AW: "覚醒後", skill: "覚醒"
         , stats: { cost: "-30%" }
-        , target: { others: [ "深海適応" ] }
+        , target: { others: [ "深海" ] }
     }
     , {
         name: "カザキリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚醒後", skill: "覚醒"
@@ -1421,17 +1421,17 @@ buff.skill_cat = [
     , {
         name: "エキドナ", rarity: "白", cl: "ドラゴンシャーマン", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "×1.4" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "ルビナス", rarity: "白", cl: "ドラゴンシャーマン", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.4" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
     }
     , {
         name: "ペドラ", rarity: "白", cl: "ドラゴンシャーマン", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2", def: "×1.2" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
         , note: "永続"
     }
     , {
@@ -1852,13 +1852,13 @@ buff.skill_cat = [
     , {
         name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
-        , target: { others: [ "深海適応" ] }
+        , target: { others: [ "深海" ] }
         , note: "永続"
     }
     , {
         name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
-        , target: { others: [ "深海適応" ] }
+        , target: { others: [ "深海" ] }
         , note: "永続"
     }
     , {
@@ -1932,7 +1932,7 @@ buff.skill_cat = [
     , {
         name: "コラリー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.3" }
-        , target: { others: [ "竜族" ] }
+        , target: { others: [ "ドラゴン" ] }
         , note: "分類未確認"
     }
     , {
@@ -2243,7 +2243,7 @@ buff.skill_cat = [
     
     others 英傑 ちび 弓兵 魔術師 アンデッド 機械 騎兵 重装 聖職者 魔界 ドラゴン ＜七つの大罪＞
     
-    竜族 全プリンセス系 GG持ち HP回復不可 魔界適応 深海適応 天界適応
+    全プリンセス系 GG持ち HP回復不可 魔界適応 深海適応 天界適応
     
     year 年
     
