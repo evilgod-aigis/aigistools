@@ -1258,6 +1258,18 @@ buff.skill_cat = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "誅子", rarity: "黒", cl: "武侠", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: { home: [ "華の国" ] }
+        , note: "永続"
+    }
+    , {
+        name: "誅子", rarity: "黒", cl: "武侠", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: { home: [ "華の国" ] }
+        , note: "永続"
+    }
+    , {
         name: "女王子", rarity: "黒", cl: "女王子", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+50%", atk: "×1.2", def: "×1.2" }
         , target: { sex: [ "女性" ] }
@@ -1882,6 +1894,18 @@ buff.skill_cat = [
         name: "ヘリューズ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.5" }
         , target: { others: [ "アンデッド" ] }
+    }
+    , {
+        name: "マルティナ/クリスマス", rarity: "白", cl: "幻術士", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { season: [ "クリスマス" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "マルティナ/クリスマス", rarity: "白", cl: "幻術士", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { season: [ "クリスマス" ] }
+        , note: "分類未確認"
     }
     , {
         name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒後", skill: "覚醒"

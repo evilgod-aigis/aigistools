@@ -96,6 +96,11 @@ buff.add = [
         , note: [ "範囲", "永続" ]
     }
     , {
+        name: "聞忠", rarity: "黒", cl: "邪仙", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "10%", def: "30%" }
+        , note: "範囲"
+    }
+    , {
         name: "シャディア/正月", rarity: "黒", cl: "魔王親衛隊", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "30%" }
         , note: "範囲"

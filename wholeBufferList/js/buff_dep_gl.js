@@ -301,6 +301,10 @@ buff.dep_gl = [
         , stats: { def: "+15%" }
     }
     , {
+        name: "誅子", rarity: "黒", cl: "武侠", AW: "覚醒後"
+        , stats: { atk: "+10%", def: "+10%" }
+    }
+    , {
         name: "三清道祖", cl: "天尊", AW: "覚2a"
         , stats: { atk: "+10%", rege: [ "60/秒", "30/15f" ] }
         , note: "天尊系"

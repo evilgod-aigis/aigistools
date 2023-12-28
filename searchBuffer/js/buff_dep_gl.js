@@ -796,6 +796,11 @@ buff.dep_gl = [
         , target: { season: [ "お正月" ], depType: [ "近接" ] }
     }
     , {
+        name: "聞忠", rarity: "黒", cl: "邪仙", AW: "覚醒後"
+        , stats: { atk: "+7%" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
         name: "フィロ", rarity: "白", cl: "ランスマスター", AW: "覚醒後"
         , stats: { ct: "-50%" }
         , target: { cl: [ "ワルキューレ", "ロイヤルガード", "ランスマスター" ] }

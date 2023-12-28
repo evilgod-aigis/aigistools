@@ -211,6 +211,24 @@ debuff.hit = [
         , note: "永続"
     }
     , {
+        name: "邪鬼仙", cl: "邪仙", AW: "覚2b"
+        , stats: { atk: "-20%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: [ "邪仙系", "分類未確認" ]
+    }
+    , {
+        name: "聞忠", rarity: "黒", cl: "邪仙", AW: "覚醒前", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "確率40%で貫通"
+    }
+    , {
+        name: "聞忠", rarity: "黒", cl: "邪仙", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "14f"
+        , note: "通常スキルは確率40%で貫通"
+    }
+    , {
         name: "胡喜美", rarity: "白", cl: "邪仙", AW: "覚醒後", skill: "覚醒(奇)"
         , stats: { atk: "-20%" }
         , atkAttr: "魔法", dur: "29f"

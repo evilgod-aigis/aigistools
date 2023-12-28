@@ -794,6 +794,14 @@ debuff.mixture = [
         , target: { attr: [ "デーモン", "アンデッド" ] }
     }
     , {
+        name: "邪鬼仙", cl: "邪仙", AW: "覚2b"
+        , stats: {
+            mr: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "邪仙系", "分類未確認" ]
+    }
+    , {
         name: "王妃人", rarity: "白", cl: "邪仙", AW: "覚醒前", skill: "通常"
         , stats: {
             mr: { value: "-10", type: "fixed" }
@@ -2430,7 +2438,7 @@ debuff.mixture = [
             def: { value: "-20%", type: "area" }
         }
         , domain: "area"
-        , note: [ "エアセイラー系", "分類未確認" ]
+        , note: "エアセイラー系"
     }
     , {
         name: "桃源郷", rarity: "金", cl: "桃源郷"
