@@ -41,6 +41,11 @@ buff.skill_area = [
         , stats: { def: "×1.5", mr: "×2.8" }
     }
     , {
+        name: "イムラウ/お正月", rarity: "白", cl: "ピューティアー", AW: "覚醒後", skill: "覚醒"
+        , stats: { hp: "+20%", def: "×1.3" }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "ベルニス/花嫁", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
@@ -236,6 +241,11 @@ buff.skill_area = [
         name: "コウメ", rarity: "白", cl: "戦巫女", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.5" }
         , note: "分類未確認"
+    }
+    , {
+        name: "ちびタツミ", rarity: "ちび", cl: "戦巫女", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.4", eva: "30%" }
+        , note: "永続"
     }
     , {
         name: "誅子", rarity: "黒", cl: "武侠", AW: "覚醒後", skill: "覚醒(4n)"
@@ -852,6 +862,11 @@ buff.skill_area = [
         name: "疾風かまいたちユキ", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { def: "×1.6", mr: "×1.6" }
         , note: "群青姉妹"
+    }
+    , {
+        name: "門松トークン", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        , stats: { rege: [ "20/秒", "?/?f" ] }
+        , note: "アラン/お正月"
     }
     , {
         name: "シャドー", rarity: "トークン", AW: "覚醒後", skill: "通常"

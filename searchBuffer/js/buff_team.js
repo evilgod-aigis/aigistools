@@ -125,6 +125,11 @@ buff.team = [
         }
     }
     , {
+        name: "王子【竜王】", cl: "王子"
+        , stats: { atk: "+7%", def: "+7%" }
+        , target: { year: [ "2024年" ] }
+    }
+    , {
         name: "ちび王子", cl: "王子"
         , stats: { atk: "+15%" }
         , target: { others: [ "ちび" ] }

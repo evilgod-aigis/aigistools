@@ -62,6 +62,16 @@ buff.skill_gl = [
         , note: "永続"
     }
     , {
+        name: "イムラウ/お正月", rarity: "白", cl: "ピューティアー", AW: "覚醒後", skill: "通常"
+        , stats: { nul: "40%" }
+        , note: "永続"
+    }
+    , {
+        name: "イムラウ/お正月", rarity: "白", cl: "ピューティアー", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "150/秒", "?/?f" ] }
+        , note: "永続"
+    }
+    , {
         name: "イヴリール", rarity: "黒", cl: "未踏海域の覇者", AW: "覚醒後", skill: "通常"
         , stats: { other: "" }
         , note: [ "深海-70%", "永続" ]

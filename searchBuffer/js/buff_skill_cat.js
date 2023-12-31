@@ -1194,6 +1194,35 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "アヅミ/お正月", rarity: "白", cl: "料理人", AW: "覚醒前", skill: "通常"
+        , stats: { hp: "+40%" }
+        , target: [
+            { race: [ "妖怪" ] }
+            , { season: [ "お正月" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
+        name: "アヅミ/お正月", rarity: "白", cl: "料理人", AW: "覚醒後", skill: "通常"
+        , stats: { hp: "+40%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { race: [ "妖怪" ] }
+            , { season: [ "お正月" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
+        name: "アヅミ/お正月", rarity: "白", cl: "料理人", AW: "覚醒後", skill: "覚醒"
+        , stats: { hp: "+20%", atk: "×1.1", def: "×1.1" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { race: [ "妖怪" ] }
+            , { season: [ "お正月" ] }
+        ]
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "ヤマブキ", rarity: "金", cl: "料理人", AW: "覚醒前", skill: "通常"
         , stats: { range: "×1.2" }
         , target: { others: [ "弓兵" ] }
@@ -1256,6 +1285,42 @@ buff.skill_cat = [
         name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "通常"
         , stats: { def: "×1.8" }
         , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.5" }
+        , target: [
+            { race: [ "神", "半神" ] }
+            , { season: [ "お正月" ] }
+        ]
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
+        name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.5" }
+        , target: [
+            { race: [ "神", "半神" ] }
+            , { season: [ "お正月" ] }
+        ]
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
+        name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "覚醒(1)"
+        , stats: { atk: "×1.2" }
+        , target: [
+            { race: [ "神", "半神" ] }
+            , { season: [ "お正月" ] }
+        ]
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
+        name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "覚醒(2～)"
+        , stats: { atk: "×1.3" }
+        , target: [
+            { race: [ "神", "半神" ] }
+            , { season: [ "お正月" ] }
+        ]
+        , note: [ "範囲", "分類未確認" ]
     }
     , {
         name: "誅子", rarity: "黒", cl: "武侠", AW: "覚醒前", skill: "通常"

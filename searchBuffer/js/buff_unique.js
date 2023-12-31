@@ -50,6 +50,24 @@ buff.unique = [
     
     // 被ダメージ軽減
     , {
+        name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , target: [
+            { race: [ "神", "半神" ] }
+            , { season: [ "お正月" ] }
+        ]
+        , note: [ "区分：被ダメージ軽減(属性不問?)", "-40%(範囲)", "分類未確認" ]
+    }
+    , {
+        name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , target: [
+            { race: [ "神", "半神" ] }
+            , { season: [ "お正月" ] }
+        ]
+        , note: [ "区分：被ダメージ軽減(属性不問?)", "-40%(範囲)", "分類未確認" ]
+    }
+    , {
         name: "遠見の眷属猫", rarity: "トークン", AW: "覚醒前", skill: "通常"
         , stats: { other: "" }
         , target: [

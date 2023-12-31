@@ -282,6 +282,14 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "シルヴィア/お正月", rarity: "黒", cl: "ヴァンパイアプリンセス", AW: "覚醒後", skill: "覚醒(5～)"
+        , stats: {
+            mr: { value: "-15", type: "fixed" }
+        }
+        , domain: "global"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "エストリエ", rarity: "白", cl: "ヴァンパイアプリンセス", AW: "覚醒後", skill: [ "通常", "覚醒" ]
         , stats: {
             stop: { value: "119f", type: "global" }

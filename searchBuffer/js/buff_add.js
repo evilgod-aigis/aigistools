@@ -100,6 +100,23 @@ buff.add = [
         , target: { others: [ "アンデッド" ] }
     }
     , {
+        name: "アヅミ/お正月", rarity: "白", cl: "料理人", AW: "覚醒前"
+        , stats: { hp: "max1800", atk: "max900", def: "max900" }
+        , target: [
+            { race: [ "妖怪" ] }
+            , { season: [ "お正月" ] }
+        ]
+    }
+    , {
+        name: "アヅミ/お正月", rarity: "白", cl: "料理人", AW: "覚醒後"
+        , stats: { hp: "max2400", atk: "max1200", def: "max1200" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { race: [ "妖怪" ] }
+            , { season: [ "お正月" ] }
+        ]
+    }
+    , {
         name: "ヤマブキ", rarity: "金", cl: "料理人", AW: "覚醒前"
         , stats: { hp: "max1800", atk: "max900", def: "max900" }
         , target: { others: [ "弓兵" ] }

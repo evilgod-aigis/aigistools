@@ -31,6 +31,11 @@ buff.dep_gl = [
         , target: { year: [ "2023年" ] }
     }
     , {
+        name: "王子【竜王】", cl: "王子"
+        , stats: { draw: "○" }
+        , target: { year: [ "2024年" ] }
+    }
+    , {
         name: "ソラス", rarity: "白", cl: "占星術師", AW: "覚醒後"
         , stats: { cost: "-10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }
