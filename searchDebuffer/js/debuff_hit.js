@@ -357,6 +357,11 @@ debuff.hit = [
         , atkAttr: "物理", dur: "59f"
     }
     , {
+        name: "ちびスカー", rarity: "ちび", cl: "シャークウォリアー"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "59f"
+    }
+    , {
         name: "フーイェン", rarity: "白", cl: "武侠", AW: "覚醒前", skill: "通常"
         , stats: { def: "-40%" }
         , atkAttr: "物理", dur: "?f"
