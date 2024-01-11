@@ -169,6 +169,18 @@ debuff.hit = [
         , note: "死亡時"
     }
     , {
+        name: "アナトリア/温泉", rarity: "黒", cl: "グラディエーター", AW: "覚醒前", skill: "通常"
+        , stats: { def: "-70%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "アナトリア/温泉", rarity: "黒", cl: "グラディエーター", AW: "覚醒後", skill: "通常"
+        , stats: { def: "-70%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "スーシェン", rarity: "黒", cl: "キョンシー", AW: "覚醒前"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "359f"

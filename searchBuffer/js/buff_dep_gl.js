@@ -776,6 +776,15 @@ buff.dep_gl = [
         , note: "グラディエーター系"
     }
     , {
+        name: "アナトリア/温泉", rarity: "黒", cl: "グラディエーター", AW: "覚醒後"
+        , stats: { ct: "-35%" }
+        , target: [
+            { season: [ "温泉" ] }
+            , { others: [ "魔界" ] }
+        ]
+        , note: "グラディエーター系"
+    }
+    , {
         name: "サリス", rarity: "白", cl: "グランドナイト", AW: "覚醒後"
         , stats: { def: "+7%" }
         , target: { cl: [ "グランドナイト" ] }
@@ -1171,11 +1180,6 @@ buff.dep_gl = [
         , note: "夜行さん系"
     }
     , {
-        name: "デリア", rarity: "白", cl: "ドラグーン", AW: "覚醒後"
-        , stats: { mr: "+10" }
-        , target: { depType: [ "遠距離" ] }
-    }
-    , {
         name: [ "エルダードラゴン", "メイガス" ], cl: "ドラゴンメイジ", AW: "覚2a"
         , stats: { atk: "+20%", atkCd: "-20%" }
         , target: { others: [ "ドラゴン" ] }
@@ -1186,6 +1190,21 @@ buff.dep_gl = [
         , stats: { atk: "+15%" }
         , target: { others: [ "ドラゴン" ] }
         , note: "ドラゴンメイジ系"
+    }
+    , {
+        name: "デリア", rarity: "白", cl: "ドラグーン", AW: "覚醒後"
+        , stats: { mr: "+10" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
+        name: "ミカ/温泉", rarity: "白", cl: "ドラグーン", AW: "覚醒前"
+        , stats: { atk: "+5%" }
+        , target: { season: [ "温泉" ] }
+    }
+    , {
+        name: "ミカ/温泉", rarity: "白", cl: "ドラグーン", AW: "覚醒後"
+        , stats: { atk: "+10%" }
+        , target: { season: [ "温泉" ] }
     }
     , {
         name: "アスバール", rarity: "黒", cl: "魔界総帥", AW: "覚醒後"

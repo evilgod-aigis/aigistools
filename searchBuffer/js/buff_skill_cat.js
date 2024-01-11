@@ -1293,7 +1293,7 @@ buff.skill_cat = [
             { race: [ "神", "半神" ] }
             , { season: [ "お正月" ] }
         ]
-        , note: [ "範囲", "分類未確認" ]
+        , note: "範囲"
     }
     , {
         name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "通常"
@@ -1302,7 +1302,7 @@ buff.skill_cat = [
             { race: [ "神", "半神" ] }
             , { season: [ "お正月" ] }
         ]
-        , note: [ "範囲", "分類未確認" ]
+        , note: "範囲"
     }
     , {
         name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "覚醒(1)"
@@ -1311,7 +1311,7 @@ buff.skill_cat = [
             { race: [ "神", "半神" ] }
             , { season: [ "お正月" ] }
         ]
-        , note: [ "範囲", "分類未確認" ]
+        , note: "範囲"
     }
     , {
         name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "覚醒(2～)"
@@ -1320,7 +1320,7 @@ buff.skill_cat = [
             { race: [ "神", "半神" ] }
             , { season: [ "お正月" ] }
         ]
-        , note: [ "範囲", "分類未確認" ]
+        , note: "範囲"
     }
     , {
         name: "誅子", rarity: "黒", cl: "武侠", AW: "覚醒前", skill: "通常"
@@ -2033,6 +2033,15 @@ buff.skill_cat = [
         name: "ロカ/ジューンブライド", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後", skill: "通常"
         , stats: { def: "×1.2" }
         , target: { sex: [ "女性" ] }
+    }
+    , {
+        name: "ミカ/温泉", rarity: "白", cl: "ドラグーン", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "30/秒", "?/?f" ] }
+        , target: [
+            { season: [ "温泉" ] }
+            , { others: [ "騎兵" ] }
+        ]
+        , note: "永続"
     }
     , {
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"

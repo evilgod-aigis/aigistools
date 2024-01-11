@@ -212,6 +212,12 @@ lists.buff.rCT.list = [
         , tooltip: "[配置] 属性：魔術師の再動-50%"
     }
     , {
+        id: null, buffer: "闘志の癒し湯アナトリア", awaken: "覚醒"
+        , value: 35, disabled: null, req: "deploy"
+        , target: [ { attribution: [ "温泉", "魔界" ] } ]
+        , tooltip: "[配置] 属性：温泉・魔界の再動-35%"
+    }
+    , {
         id: null, buffer: "戦場の政務官アンナ", awaken: "覚醒"
         , value: 50, disabled: null, req: "skill"
         , target: [ { unitClass: [ "王子" ] } ]
