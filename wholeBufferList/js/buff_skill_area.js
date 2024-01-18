@@ -691,7 +691,7 @@ buff.skill_area = [
     , {
         name: "大魔導神", cl: "儀式魔術師", AW: "覚2b", skill: [ "通常", "覚醒" ]
         , stats: { atk: "×1.12" }
-        , note: [ "儀式魔術師系", "分類未確認" ]
+        , note: "儀式魔術師系"
     }
     , {
         name: "マルティナ", rarity: "白", cl: "幻術士", AW: "覚醒前", skill: "通常"
