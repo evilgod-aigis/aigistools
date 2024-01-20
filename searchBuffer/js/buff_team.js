@@ -2129,12 +2129,12 @@ buff.team = [
         }
     }
     , {
-        name: "ロカ/ジューンブライド", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒前"
+        name: "ロカ/花嫁", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒前"
         , stats: { cost: "-1" }
         , target: { season: [ "ジューンブライド" ] }
     }
     , {
-        name: "ロカ/ジューンブライド", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
+        name: "ロカ/花嫁", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
         , stats: { cost: "-2" }
         , target: {
             cl: [ "王子" ]

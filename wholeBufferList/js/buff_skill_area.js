@@ -909,12 +909,12 @@ buff.skill_area = [
         , note: "マルティナ"
     }
     , {
-        name: "ツキコ"(幻影), rarity: "トークン", AW: "覚醒前", skill: "通常"
+        name: "ツキコ(幻影)", rarity: "トークン", AW: "覚醒前", skill: "通常"
         , stats: { abn: "-100%" }
         , note: "マルティナ/クリスマス"
     }
     , {
-        name: "ツキコ"(幻影), rarity: "トークン", AW: "覚醒後", skill: "通常"
+        name: "ツキコ(幻影)", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { abn: "-100%" }
         , note: "マルティナ/クリスマス"
     }

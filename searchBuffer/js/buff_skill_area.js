@@ -28,12 +28,12 @@ buff.skill_area = [
         , note: "全体"
     }
     , {
-        name: "金糸雀姉妹/ジューンブライド", rarity: "白", cl: "かまいたち", AW: "覚醒前", skill: "通常"
+        name: "金糸雀姉妹/花嫁", rarity: "白", cl: "かまいたち", AW: "覚醒前", skill: "通常"
         , stats: { atkCd: "6f化" }
         , target: { cl: [ "かまいたち" ] }
     }
     , {
-        name: "金糸雀姉妹/ジューンブライド", rarity: "白", cl: "かまいたち", AW: "覚醒後", skill: "通常"
+        name: "金糸雀姉妹/花嫁", rarity: "白", cl: "かまいたち", AW: "覚醒後", skill: "通常"
         , stats: { atkCd: "6f化" }
         , target: { cl: [ "かまいたち" ] }
     }

@@ -2025,12 +2025,12 @@ buff.skill_cat = [
         , note: "分類未確認"
     }
     , {
-        name: "ロカ/ジューンブライド", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒前", skill: "通常"
+        name: "ロカ/花嫁", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒前", skill: "通常"
         , stats: { def: "×1.2" }
         , target: { sex: [ "女性" ] }
     }
     , {
-        name: "ロカ/ジューンブライド", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後", skill: "通常"
+        name: "ロカ/花嫁", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後", skill: "通常"
         , stats: { def: "×1.2" }
         , target: { sex: [ "女性" ] }
     }
@@ -2105,12 +2105,12 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
-        name: "レナータ/ジューンブライド", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"
+        name: "レナータ/花嫁", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+30%", atk: "×1.3" }
         , target: { season: [ "ジューンブライド" ] }
     }
     , {
-        name: "レナータ/ジューンブライド", rarity: "黒", cl: "スカウト", AW: "覚醒後", skill: "通常"
+        name: "レナータ/花嫁", rarity: "黒", cl: "スカウト", AW: "覚醒後", skill: "通常"
         , stats: { hp: "+30%", atk: "×1.3" }
         , target: { season: [ "ジューンブライド" ] }
     }

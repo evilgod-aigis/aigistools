@@ -1253,7 +1253,7 @@ debuff.hit = [
         name: "誓いのチャペル", rarity: "トークン", AW: "覚醒後"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "9f"
-        , note: "レナータ/ジューンブライド"
+        , note: "レナータ/花嫁"
     }
     , {
         name: "改良型セバスチャン", rarity: "トークン", AW: "覚醒後"
