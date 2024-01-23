@@ -21,6 +21,7 @@
                         , { eng: "wholeBufferList", jap: "バフ(無差別)一覧" }
                         , { eng: "searchDebuffer", jap: "デバフ検索" }
                         , { eng: "HPcut", jap: "割合ダメージグラフ" }
+                        , { eng: "bondingQuestChecker", jap: "交流クエストチェッカー" }
                     ];
                     const now = new Date();
                     sites.forEach(site => {
@@ -28,15 +29,20 @@
                         xhr.open("GET", `https://evilgod-aigis.github.io/aigistools/${site.eng}/js/updateHistory.js`, false);
                         xhr.send();
                         Function(xhr.responseText.replace("const ", ""))();
-                        const dateArray = updateHistory[0].date.split("/").map(elem => parseInt(elem));
-                        const date = new Date(dateArray[0], dateArray[1] - 1, dateArray[2]);
-                        const diff = (now - date) / 1000 / 60 / 60/ 24;
-                        document.write(`
+                        let text = `
                             <p>
-                                <a href="https://evilgod-aigis.github.io/aigistools/${site.eng}.html">${site.jap}</a>
-                                <span class="last-update">(更新：<span class="${diff < 3 ? "text-red" : ""}">${updateHistory[0].date}</span>)</span>
+                                <a href="https://evilgod-aigis.github.io/aigistools/${site.eng}.html">${site.jap}</a>`;
+                        if(updateHistory.length) {
+                            const dateArray = updateHistory[0].date.split("/").map(elem => parseInt(elem));
+                            const date = new Date(dateArray[0], dateArray[1] - 1, dateArray[2]);
+                            const diff = (now - date) / 1000 / 60 / 60 / 24;
+                            text += `
+                                    <span class="last-update">(更新：<span class="${diff < 3 ? "text-red" : ""}">${updateHistory[0].date}</span>)</span>`;
+                        }
+                        text += `
                             </p>
-                        `);
+                        `;
+                        document.write(text);
                     });
                 })();
             </script>
