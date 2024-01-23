@@ -1,0 +1,349 @@
+body {
+    padding: 0;
+    margin: 10px;
+    font-size: 14px;
+}
+p {
+    margin: 0;
+}
+summary {
+    cursor: pointer;
+}
+.inactive {
+    position: relative;
+}
+.inactive::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 5;
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.is-shown {
+    display: block !important;
+}
+.is-unshown {
+    display: none !important;
+}
+.revision {
+    text-decoration: line-through;
+}
+
+#header {
+    padding: 0;
+    margin: 10px 0 30px;
+    font-size: 24px;
+    min-height: max-content;
+}
+#alert {
+    display: inline-block;
+    /* margin-left: 3em; */
+    /* float: right; */
+    margin: 0 0 0 auto;
+    color: red;
+    font-size: 20px;
+}
+
+/* 設定 */
+#settings {
+    position: sticky;
+    position: -webkit-sticky;   /* Safari */
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+}
+#toggler-setting {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    border: 2px solid orange;
+    border-radius: 4px;
+    width: 5.5em;
+    height: 25px;
+    display: block;
+    cursor: pointer;
+    z-index: 100;
+}
+#setting-window {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    /* margin-bottom: 30px; */
+    /* margin-left: 30px; */
+    border: 2px solid orange;
+    border-radius: 4px;
+    background: white;
+    max-width: min(450px, 94vw);
+    max-height: 94vh;
+}
+#setting-content {
+    overflow: auto;
+    max-height: calc(94vh - 32px);
+}
+#filter-content p {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+#filter-content p::before
+, #filter-content p::after {
+    content: "";
+    height: 1px;
+    background-color: black;
+}
+#filter-content p::before {
+    flex-grow: 0.03;
+    margin-right: 0.5em;
+}
+#filter-content p::after {
+    flex-grow: 0.9;
+    margin-left: 0.5em;
+}
+#setting-content button {
+    margin-right: 5px;
+}
+.setting-area {
+    margin-top: 10px;
+}
+.setting-title-area {
+    width: 6em;
+    display: inline-block;
+    vertical-align: top;
+}
+.setting-title::after {
+    content: "：";
+    width: 1em;
+    display: block;
+    float: right;
+}
+.setting-checkbox-area
+, .setting-radio-area
+, .setting-color-area
+, .setting-button-area {
+    width: calc(100% - 6em);
+    display: inline-block;
+    vertical-align: top;
+}
+#settings label {
+    margin-right: 1em;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+#settings input[type="checkbox"] {
+    margin-right: 3px;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+}
+#settings input[type="color"] {
+    margin-right: 3px;
+    width: 3em;
+    height: 1.8em;
+}
+/* フィルタ ここまで */
+
+/* テーブル */
+#tables {
+    padding-top: 10px;
+}
+.table-area {
+    margin-top: 40px;
+    width: max-content;
+}
+.table-name {
+    font-size: 18px;
+}
+.table-empty::after {
+    content: "：該当なし";
+}
+.table-button-area {
+    float: right;
+}
+.table-button-area button {
+    margin-right: 5px;
+}
+.table-scroll {
+    overflow: auto;
+    border: 1px solid black;
+    /* max-width: max-content; */
+    max-width: 95vw;
+    max-height: max(500px, 40vh);
+}
+#tables table {
+    color: black;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: max-content;
+    font-size: 14px;
+    white-space: nowrap;
+}
+#tables table th {
+    position: sticky !important;
+    position: -webkit-sticky !important;   /* Safari */
+    top: 0;
+    background-color: rgb(200, 200, 200);
+    border: 1px solid black;
+    z-index: 9;
+}
+#tables table th.column-unitName {
+    left: 0;
+    z-index: 10;
+}
+#tables table .sortable {
+    color: rgb(0, 0, 180);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#tables table .sortable:hover {
+    color: rgb(50, 50, 220);
+    background-color: rgb(220, 220, 220);
+}
+#tables table td {
+    background-color: white;
+    border: 1px solid black;
+}
+#tables table .column-id {
+    min-width: 2em;
+    max-width: 2em;
+    display: none !important;
+}
+#tables table td.column-unitName {
+    position: sticky;
+    position: -webkit-sticky;   /* Safari */
+    left: 0;
+    min-width: 12em;
+    max-width: max-content;
+    z-index: 1;
+}
+#tables table .column-class {
+    min-width: 12em;
+    max-width: max-content;
+    /* text-align: center; */
+    white-space: normal;
+}
+#tables table .column-implDate
+, #tables table .column-implDate_bq {
+    min-width: 7em;
+    max-width: max-content;
+    text-align: center;
+}
+#tables table .column-own
+, #tables table .column-clear {
+    position: relative;
+    min-width: 3.5em;
+    max-width: max-content;
+    text-align: center;
+}
+#tables table label {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#tables table label:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(235, 235, 235, 0.5);
+    z-index: 1;
+}
+#tables table input[type="checkbox"] {
+    position: relative;
+    z-index: 2;
+}
+#tables .cell-filled {
+    background-color: rgb(255, 200, 100);
+}
+#tables .dbl-line {
+    border-top-width: 4px;
+}
+/* テーブル ここまで */
+
+/* フッタ */
+#footer {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 12px;
+    width: 100%;
+}
+#check-state-area {
+    max-width: max-content;
+    /* min-height: 7em; */
+    padding: 6px;
+    border: 2px solid lightblue;
+    margin: 30px 0;
+}
+#check-state-area span {
+    font-size: 16px;
+}
+#check-state-area button {
+    float: right;
+    margin: 3px;
+}
+#check-state-area input {
+    width: 700px;
+    max-width: 90vw;
+}
+#report {
+    position: relative;
+    font-size: 14px !important;
+    width: calc(100% - 11em);
+    height: 2em;
+}
+#report span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 1);
+}
+#outline p::before {
+    content: "・";
+}
+#updated {
+    margin: 10px 0;
+}
+#update-content {
+    margin-left: 3.5em;
+    margin-right: 1em;
+    padding: 5px;
+    height: 100px;
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+.update-elem {
+    margin-bottom: 1em;
+    width: 100%;
+    overflow: hidden;
+}
+.update-date {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+}
+.update-detail {
+    margin-left: 1em;
+    width: calc(100% - 1em);
+    overflow: hidden;
+}
+#link-area {
+    margin: 10px 0;
+    overflow: hidden;
+}
+/*フッタ　ここまで*/

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>アイギス 交流クエストチェッカー</title>
+        <link type="text/css" rel="stylesheet" href="./bondingQuestChecker/css/main.css">
+    </head>
+    
+    <body>
+        <div id="header">
+            <span class="inline-block"> 交流クエストチェッカー</span>
+            <span id="alert"></span>
+        </div>
+        
+        <div id="contents">
+            <div id="settings"></div>
+            <div id="tables"></div>
+        </div>
+        
+        <div id="footer">
+            <div id="check-state-area">
+                <div>
+                    <span
+                        class="tooltip-ts"
+                        data-tippy-content="フィルタなどの設定は含んでない"
+                        style="font-size: 20px;"
+                    >データ入出力</span>
+                    <button type="button">コピー</button>
+                    <button type="button">出力</button>
+                </div>
+                <input type="text" />
+                <div>
+                    <span id="report" class="inline-block"></span>
+                    <button
+                        type="button"
+                        class="tooltip-ts"
+                        data-tippy-content="想定外のものが読み込まれたとき用(読み込まれた後1回のみ有効)"
+                        disabled
+                    >元に戻す</button>
+                    <button type="button">読み込む</button>
+                </div>
+            </div>
+            <div class="inline-block">
+                概要：
+            </div>
+            <div id="outline" class="inline-block" style="width: calc(100% - 3.5em);">
+                <p>交流クエスト<span class="revision"> に特化しすぎな </span>チェッカー</p>
+                <p>「未所持 かつ クリア済み」にできないのは仕様。</p>
+                <p>表の見出しをクリックするとソートできる(一部無効)。</p>
+                <p>ページ右上のボタンからフィルタなどの設定ができる。</p>
+                <p>設定の「行の色」について、所持済みでも交流クエスト未実装だとチェッカー的にあまり意味がないのでそちらを優先している。</p>
+                <p>各表の右上のボタン(全部ON/OFF)は表示されていない行には効かないので、最初はフィルタを活用しながらチェックをするとよいかと。</p>
+                <p>チェックし終わった後は、フィルタ設定を「実装年：未実装OFF、所持：所持済、クリア：未クリア」とすると幸せになれるかもしれない。</p>
+                <p>
+                    不具合報告や意見・要望がある方は<a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSemyP4z1Vrn7-6-Iqv2QfsWHYXQ6lWj_fqQ_CChEKr6sI6OaQ/viewform"
+                        target="_blank"
+                    >こちらから</a>
+                </p>
+            </div>
+            <div id="updated">
+                公開日：2024/01/23(火)
+                <details id="update-history"></details>
+            </div>
+            <div id="link-area">
+                <div>
+                    <div class="inline-block">
+                        本家：
+                    </div>
+                    <div class="inline-block">
+                        <p><a href="http://pc-play.games.dmm.co.jp/play/aigis/" target="_blank">千年戦争アイギスR</a></p>
+                        <p><a href="http://pc-play.games.dmm.com/play/aigisc/" target="_blank">千年戦争アイギス</a></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="inline-block">
+                        参考：
+                    </div>
+                    <div class="inline-block">
+                        <p><a href="https://wikiwiki.jp/aigiszuki/" target="_blank" rel="noopener noreferrer">千年戦争アイギス攻略 Wiki*</a></p>
+                        <p><a href="https://seesaawiki.jp/aigis/" target="_blank" rel="noopener noreferrer">千年戦争アイギスSeeSaaWiki</a></p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 2em;">ツール集へ<a href="https://evilgod-aigis.github.io/aigistools/">戻る</a></p>
+            </div>
+        </div>
+        
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+        <script src="./bondingQuestChecker/js/import.js"></script>
+    </body>
+</html>
