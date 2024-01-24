@@ -77,11 +77,11 @@ table.class = {
     ]
 };
 // 実装年
-const THE_YEAR_THE_FIRST_BQ_IMPLEMENTED = 2016;
+const YEAR_THE_FIRST_BQ_IMPLEMENTED = 2016;
 table.year = _.map(
-    [...new Array((new Date()).getFullYear() - THE_YEAR_THE_FIRST_BQ_IMPLEMENTED + 1)]
+    [...new Array((new Date()).getFullYear() - YEAR_THE_FIRST_BQ_IMPLEMENTED + 1)]
     , (_, i) => {
-        const year = THE_YEAR_THE_FIRST_BQ_IMPLEMENTED + i;
+        const year = YEAR_THE_FIRST_BQ_IMPLEMENTED + i;
         table.word[year] = `${year}年`;
         return year;
     }
@@ -442,6 +442,7 @@ table.CreateTable = () => {
                             const newCheckbox = document.createElement("input");
                             newCheckbox.type = "checkbox";
                             if(!unit.implDate_bq && elem === "clear") {
+                                // 交流クエスト未実装
                                 newCheckbox.disabled = true;
                                 newTd.classList.add("inactive");
                             } else if(unit[elem].check) {
@@ -471,24 +472,26 @@ table.CreateTable = () => {
     });
     
     // 設定用にスタイル生成
-    newStyle = document.createElement("style");
-    newStyle.id = "created-style";
-    document.getElementsByTagName('head')[0].appendChild(newStyle);
-    const sheet = newStyle.sheet;
-    _.forEach(table.unitName, key => {
-        const display = table.setting.unitName !== key ? " display: none !important; " : "";
-        sheet.insertRule(`#tables .display-${key} {${display}}`, sheet.cssRules.length);
-    });
-    _.forEach(table.setting.backgroundColor, (color, className) =>
-        sheet.insertRule(`#tables .${className} td { background-color: ${color}; }`, sheet.cssRules.length)
-    );
-    _.forEach(table.filter, (obj, filterType) => {
-        if(typeof obj !== "object") {
-            sheet.insertRule(`#tables .${filterType} {}`, sheet.cssRules.length);
-            sheet.insertRule(`#tables tbody tr:not(.${filterType}) {}`, sheet.cssRules.length);
-        } else if(filterType !== "rarity")
-            _.forEach(obj, (bool, key) => sheet.insertRule(`#tables .${filterType}-${key} {}`, sheet.cssRules.length));
-    });
+    if(!document.getElementById("created-style")) {
+        newStyle = document.createElement("style");
+        newStyle.id = "created-style";
+        document.getElementsByTagName('head')[0].appendChild(newStyle);
+        const sheet = newStyle.sheet;
+        _.forEach(table.unitName, key => {
+            const display = table.setting.unitName !== key ? " display: none !important; " : "";
+            sheet.insertRule(`#tables .display-${key} {${display}}`, sheet.cssRules.length);
+        });
+        _.forEach(table.setting.backgroundColor, (color, className) =>
+            sheet.insertRule(`#tables .${className} td { background-color: ${color}; }`, sheet.cssRules.length)
+        );
+        _.forEach(table.filter, (obj, filterType) => {
+            if(typeof obj !== "object") {
+                sheet.insertRule(`#tables .${filterType} {}`, sheet.cssRules.length);
+                sheet.insertRule(`#tables tbody tr:not(.${filterType}) {}`, sheet.cssRules.length);
+            } else if(filterType !== "rarity")
+                _.forEach(obj, (bool, key) => sheet.insertRule(`#tables .${filterType}-${key} {}`, sheet.cssRules.length));
+        });
+    }
     
     table.ApplyFilter();
 }
@@ -496,6 +499,7 @@ table.CreateTable = () => {
 // 所持/クリア check/lock
 table.ToggleCheckbox = {
     own: (_own, _id) => {
+        // 所持OFF→クリア強制OFF
         const tr = _own.closest("tr");
         const clear = tr.getElementsByTagName("input")[1];
         if(!_own.checked) {
@@ -508,6 +512,7 @@ table.ToggleCheckbox = {
         saveData.checkbox.Save(_id, _own, clear);
     }
     , clear: (_clear, _id) => {
+        // クリアON→所持強制ON
         const tr = _clear.closest("tr");
         const own = tr.getElementsByTagName("input")[0];
         if(_clear.checked) {
@@ -614,7 +619,6 @@ table.ToggleCheckbox = {
         });
     }
 }
-
 
 // ユニット名切り替え
 table.ToggleNameDisplay = () => {
@@ -740,11 +744,10 @@ table.Sort = (_rarity, _colName, _allowReverse = true) => {
                     trs.sort((a, b) => {
                         const tds_a = a.children;
                         const tds_b = b.children;
-                        const id_a = Number(tds_a[colIndex_id].innerText);
-                        const id_b = Number(tds_b[colIndex_id].innerText);
                         const class_a = tds_a[colIndex].innerText;
                         const class_b = tds_b[colIndex].innerText;
-                        if(class_a === class_b) return id_a - id_b;
+                        if(class_a === class_b)
+                            return Number(tds_a[colIndex_id].innerText) - Number(tds_b[colIndex_id].innerText);
                         return table.class[depType].indexOf(class_a) - table.class[depType].indexOf(class_b);
                     });
                     trs_array.push(...trs);
@@ -754,30 +757,24 @@ table.Sort = (_rarity, _colName, _allowReverse = true) => {
                 trs_array.sort((a, b) => {
                     const tds_a = a.children;
                     const tds_b = b.children;
-                    const id_a = Number(tds_a[colIndex_id].innerText);
-                    const id_b = Number(tds_b[colIndex_id].innerText);
-                    const date_text_a = tds_a[colIndex].innerText;
-                    const date_text_b = tds_b[colIndex].innerText;
-                    if(date_text_a === date_text_b) return id_a - id_b;
-                    const date_a = Number(_.replace(date_text_a, /[/]/g, ""));
-                    const date_b = Number(_.replace(date_text_b, /[/]/g, ""));
-                    return -(date_a - date_b);
+                    const date_a = new Date(tds_a[colIndex].innerText);
+                    const date_b = new Date(tds_b[colIndex].innerText);
+                    const diff = -(date_a - date_b);
+                    if(!diff) return Number(tds_a[colIndex_id].innerText) - Number(tds_b[colIndex_id].innerText);
+                    return diff;
                 });
                 break;
             case "implDate_bq":
                 trs_array.sort((a, b) => {
                     const tds_a = a.children;
                     const tds_b = b.children;
-                    const id_a = Number(tds_a[colIndex_id].innerText);
-                    const id_b = Number(tds_b[colIndex_id].innerText);
                     const date_text_a = tds_a[colIndex].innerText;
                     const date_text_b = tds_b[colIndex].innerText;
-                    if(date_text_a === date_text_b) return id_a - id_b;
+                    if(date_text_a === date_text_b)
+                        return Number(tds_a[colIndex_id].innerText) - Number(tds_b[colIndex_id].innerText);
                     if(date_text_a === "未実装") return 1;
                     if(date_text_b === "未実装") return -1;
-                    const date_a = Number(_.replace(date_text_a, /[/]/g, ""));
-                    const date_b = Number(_.replace(date_text_b, /[/]/g, ""));
-                    return -(date_a - date_b);
+                    return -(new Date(date_text_a) - new Date(date_text_b));
                 });
                 break;
             case "own":

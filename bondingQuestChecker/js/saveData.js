@@ -1,6 +1,8 @@
 const saveData = {};
+saveData.version = 1;
 saveData.CHAR = "0123456789abcdefghtjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$=";
 saveData.compressChars = Object.freeze({ "0": "~_", "7": "-^", "U": "&#", "=": "!?" });
+saveData.divider = "|";
 
 // 3bit×2を64進数に変換
 saveData.To64base = (_num = [ 0b000, 0b000 ]) => saveData.CHAR[(_num[0] << 3) | _num[1]];
@@ -47,7 +49,6 @@ saveData.To3bits = _char => {
 **/
 
 saveData.checkbox = {};
-saveData.checkbox.data = "";
 // 所持・クリアのチェック・ロック状況を保存
 saveData.checkbox.Save = (_id, _own, _clear) => {
     const index = Math.floor(_id / 2);
@@ -66,14 +67,19 @@ saveData.checkbox.Save = (_id, _own, _clear) => {
     saveData.Save("checkbox", saveData.checkbox.data_short);
 }
 // 所持・クリアのチェック・ロック状況を読み込み
-saveData.checkbox.Load = () => {
-    let id = 0
-    let isExisted = true;
-    saveData.checkbox.Decompress();
+saveData.checkbox.Load = (_data = "", _adapt = false, _version = saveData.version) => {
+    /* データ形態が変わったらバージョンチェンジかなぁ
+    switch(_version) {
+        case 1:
+            break;
+    }
+    */
+    let id = 0;
+    let exist = true;
+    saveData.checkbox.Decompress(_data);
     _.forEach(saveData.checkbox.data, char => {
         _.forEach(saveData.To3bits(char), bitData => {
-            if(!unitList[id]) return isExisted = false;
-            unitList[id].id = id;
+            if(!unitList[id]) return exist = false;
             bit = [ bitData & 0b001, (bitData >> 1) & 0b001, (bitData >> 2) & 0b001 ];
             unitList[id].own = {
                 check: bit[0] || bit[1]
@@ -85,11 +91,11 @@ saveData.checkbox.Load = () => {
             };
             ++id;
         });
-        return isExisted;
+        return exist;
     });
-    if(isExisted) {
+    if(exist) {
+        // 保存データ < ユニット数
         while(unitList[id]) {
-            unitList[id].id = id;
             unitList[id].own = { check: false, lock: false };
             unitList[id].clear = { check: false, lock: false };
             ++id;
@@ -104,16 +110,21 @@ saveData.checkbox.Load = () => {
         }
         saveData.checkbox.Compress();
     }
+    if(_adapt) {
+        saveData.Save("checkbox", saveData.checkbox.data_short);
+        table.ToggleCheckbox.load();
+    }
 }
 // データ圧縮
 saveData.checkbox.Compress = () => {
     saveData.checkbox.data_short = saveData.checkbox.data;
     if(_.last(saveData.checkbox.data) === "0")
-        _.forEachRight(saveData.checkbox.data, char => {
+        _.forEachRight(saveData.checkbox.data, char => {    // 末尾の0を省略
             if(char === "0") saveData.checkbox.data_short = saveData.checkbox.data_short.slice(0, -1);
             else return false;
         });
     _.forEach(saveData.compressChars, (marker, compressChar) => {
+        // 比較的多そうな07U=を圧縮
         let length = saveData.checkbox.data_short.length;
         saveData.checkbox.data_short = _.reduce(saveData.checkbox.data_short, (result, char) => {
             --length;
@@ -135,8 +146,8 @@ saveData.checkbox.Compress = () => {
     });
 }
 // データ解凍
-saveData.checkbox.Decompress = () => {
-    saveData.checkbox.data_short = saveData.checkbox.data;
+saveData.checkbox.Decompress = (_data) => {
+    saveData.checkbox.data_short = saveData.checkbox.data = _data;
     _.forEach(saveData.compressChars, (marker, compressChar) => {
         if(saveData.checkbox.data.indexOf(marker[0]) === -1) return;
         saveData.checkbox.data = _.reduce(saveData.checkbox.data.split(marker[0]), (data, text, i) => {
@@ -190,7 +201,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
     
     if(_canUseIndexedDB && window.indexedDB) {
         // indexedDB利用可能
-        const request = indexedDB.open("aigis_bondingQuestChecker", 1);
+        const request = indexedDB.open("aigis_bondingQuestChecker", saveData.version);
         saveData.objStoreName = "data";
         request.onupgradeneeded = e1 => {
             saveData.db = e1.target.result;
@@ -232,10 +243,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             const objStore = transaction.objectStore(saveData.objStoreName);
             _.forEach(saveItem_ver1.saveData, dataName => {
                 const request = objStore.get(dataName);
-                request.onsuccess = e2 => {
-                    saveData[dataName].data = e2.target.result.data;
-                    saveData[dataName].Load();
-                }
+                request.onsuccess = e2 => saveData[dataName].Load(e2.target.result.data);
             });
             table.SetObjects();
             _.forEach(saveItem_ver1.setting, dataName => {
@@ -346,49 +354,61 @@ saveData.Construct = (_canUseIndexedDB = true) => {
         
         // 保存用関数定義
         saveData.Save = (_dataName, _data) => localStorage.setItem(_dataName, _data);
+        // バージョン確認
+        switch(Number(localStorage.getItem("version"))) {
+            case 0:
+                _.forEach(saveItem_ver1, arr =>
+                    _.forEach(arr, dataName => {
+                        switch(dataName) {
+                            case "unitName":
+                                localStorage.setItem(dataName, "name" );
+                                break;
+                            case "own":
+                            case "clear":
+                                localStorage.setItem(dataName, 3);
+                                break;
+                            default:
+                                localStorage.setItem(dataName, "");
+                        }
+                    })
+                );
+                localStorage.setItem("version", saveData.version);
+                break;
+        }
         // データ取得
         _.forEach(saveItem_ver1.saveData, dataName => {
             const data = localStorage.getItem(dataName);
-            if(data) saveData[dataName].data = data;
-            else {
-                localStorage.setItem(dataName, "");
-                saveData[dataName].data = "";
-            }
-            saveData[dataName].Load();
+            saveData[dataName].Load(data);
         });
         table.SetObjects();
         _.forEach(saveItem_ver1.setting, dataName => {
             const data = localStorage.getItem(dataName);
-            if(data) {
-                switch(dataName) {
-                    case "unitName":
-                        table.setting[dataName] = data;
-                        break;
-                    default:
-                        _.forEach(data.split(" "), text => {
-                            const [ key, value ] = text.split(":");
-                            if(key in table.setting[dataName])
-                                table.setting[dataName][key] = value;
-                        });
-                }
-            } else localStorage.setItem(dataName, "");
+            switch(dataName) {
+                case "unitName":
+                    table.setting[dataName] = data;
+                    break;
+                default:
+                    _.forEach(data.split(" "), text => {
+                        const [ key, value ] = text.split(":");
+                        if(key in table.setting[dataName])
+                            table.setting[dataName][key] = value;
+                    });
+            }
         });
         _.forEach(saveItem_ver1.filter, dataName => {
             const data = localStorage.getItem(dataName);
-            if(data) {
-                switch(dataName) {
-                    case "own":
-                    case "clear":
-                        table.filter[dataName] = Number(data);
-                        break;
-                    default:
-                        _.forEach(data.split(" "), text => {
-                            const [ key, value ] = text.split(":");
-                            if(key in table.filter[dataName])
-                                table.filter[dataName][key] = value === "1";
-                        });
-                }
-            } else localStorage.setItem(dataName, "");
+            switch(dataName) {
+                case "own":
+                case "clear":
+                    table.filter[dataName] = Number(data);
+                    break;
+                default:
+                    _.forEach(data.split(" "), text => {
+                        const [ key, value ] = text.split(":");
+                        if(key in table.filter[dataName])
+                            table.filter[dataName][key] = value === "1";
+                    });
+            }
         });
         createHTML.All();
         

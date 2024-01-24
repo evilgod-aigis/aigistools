@@ -35,19 +35,21 @@ window.addEventListener("DOMContentLoaded", () => {
     });
     // 出力
     buttons[1].addEventListener("click", () => {
-        const text = input.value = saveData.checkbox.data_short;
         const newSpan = document.createElement("span");
-        newSpan.innerHTML = text === "" ? "(必要ありますか…？)": `出力！(${text.length}文字)`;
+        if(saveData.checkbox.data_short === "") {
+            input.value = "";
+            newSpan.innerHTML = "(必要ありますか…？)";
+        } else {
+            const text = input.value = saveData.version + saveData.divider + saveData.checkbox.data_short;
+            newSpan.innerHTML = `出力！(${text.length}文字)`;
+        }
         report.appendChild(newSpan);
         setTimeout(() => report.removeChild(newSpan), displayTime);
     });
     // 元に戻す
     buttons[2].addEventListener("click", () => {
         if(!("data_tmp" in saveData.checkbox)) return;
-        saveData.checkbox.data = saveData.checkbox.data_tmp;
-        saveData.Save("checkbox", saveData.checkbox.data);
-        saveData.checkbox.Load();
-        table.ToggleCheckbox.load();
+        saveData.checkbox.Load(saveData.checkbox.data_tmp, true);
         buttons[2].disabled = true;
         delete saveData.checkbox.data_tmp;
         const newSpan = document.createElement("span");
@@ -57,35 +59,38 @@ window.addEventListener("DOMContentLoaded", () => {
     });
     // 読み込む
     buttons[3].addEventListener("click", () => {
-        const text = input.value;
+        let text = input.value;
         const newSpan = document.createElement("span");
         if(text === "") newSpan.innerHTML = "";
-        else if(text === saveData.checkbox.data_short)
+        else if(text === saveData.version + saveData.divider + saveData.checkbox.data_short)
             newSpan.innerHTML = "変化なし";
         else {
-            let canLoad = true;
-            let state = -1;
-            let conti = "";
-            _.forEach(text, char => {
-                if(state === -1 && _.includes(usedCHAR, char)) return;
-                const index = usedMarker.indexOf(char);
-                const isNum = /[\d]/.test(char);
-                if(index === -1 && !isNum) return canLoad = false;
-                if(state === -1) {
-                    if(index % 2) return canLoad = false;
-                    state = index;
-                    return;
-                }
-                if(isNum) conti += char;
-                else if(index === state + 1 && /^[1-9]\d*/.test(conti)) state = -1;
-                else return canLoad = false;
-            });
+            text = text.split(saveData.divider);
+            let canLoad =
+                text.length === 2
+                && /^[1-9]\d*$/.test(text[0])
+                && Number(text[0]) <= saveData.version;
+            if(canLoad) {
+                let state = -1;
+                let conti = "";
+                _.forEach(text[1], char => {
+                    if(state === -1 && _.includes(usedCHAR, char)) return;
+                    const index = usedMarker.indexOf(char);
+                    const isNum = /[\d]/.test(char);
+                    if(index === -1 && !isNum) return canLoad = false;
+                    if(state === -1) {
+                        if(index % 2) return canLoad = false;
+                        state = index;
+                        return;
+                    }
+                    if(isNum) conti += char;
+                    else if(index === state + 1 && /^[1-9]\d*/.test(conti)) state = -1;
+                    else return canLoad = false;
+                });
+            }
             if(canLoad) {
                 saveData.checkbox.data_tmp = saveData.checkbox.data_short;
-                saveData.checkbox.data = text;
-                saveData.checkbox.Load();
-                saveData.Save("checkbox", saveData.checkbox.data_short);
-                table.ToggleCheckbox.load();
+                saveData.checkbox.Load(text[1], true, Number(text[0]));
                 buttons[2].disabled = false;
                 input.value = "";
                 newSpan.innerHTML = "読み込み完了";
