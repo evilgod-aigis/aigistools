@@ -211,6 +211,11 @@ buff.dep_gl = [
         , target: { cl: [ "モンク" ] }
     }
     , {
+        name: "モモ/温泉", rarity: "白", cl: "モンク", AW: "覚醒後"
+        , stats: { draw: "○" }
+        , target: { season: [ "温泉" ] }
+    }
+    , {
         name: "マツリ", rarity: "黒", cl: "前衛戦術家", AW: "覚醒前"
         , stats: { atk: "+5%", def: "+5%" }
         , target: { depType: [ "近接" ] }

@@ -344,6 +344,11 @@ buff.skill_area = [
         , stats: { abn: "-100%" }
     }
     , {
+        name: "アンジェラ", rarity: "黒", cl: "ウィッチ", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
         name: "クルス/クリスマス", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+50%", atk: "×1.5" }
     }

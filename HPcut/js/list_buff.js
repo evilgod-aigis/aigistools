@@ -832,6 +832,24 @@ lists.buff.giveDmgMul.list = [
         "
     }
     , {
+        id: null, buffer: "魔電流の発明家レクテ", awaken: "未覚醒", showAwaken: true
+        , value: 10, disabled: null, req: "team"
+        , compound: { rWT: [ { buffer: "発明家" } ] }
+        , tooltip: "\
+            [編成] デーモンに対して<br>\
+            　　　 全味方の攻撃力が10%上昇\
+        "
+    }
+    , {
+        id: null, buffer: "魔電流の発明家レクテ", awaken: "覚醒", showAwaken: true
+        , value: 15, disabled: null, req: "team"
+        , compound: { rWT: [ { buffer: "発明家" } ] }
+        , tooltip: "\
+            [編成] デーモンに対して<br>\
+            　　　 全味方の攻撃力が15%上昇\
+        "
+    }
+    , {
         id: null, buffer: "氷竜魔術士カラザ", awaken: "覚醒", showAwaken: false
         , value: 15, disabled: null, req: "team"
         , target: [ { attribution: [ "ドラゴン" ] } ]

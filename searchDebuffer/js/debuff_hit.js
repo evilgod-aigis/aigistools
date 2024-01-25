@@ -958,14 +958,18 @@ debuff.hit = [
         , atkAttr: "物理", dur: "?f"
         , note: [ "雪娘系", "分類未確認" ]
     }
-    /*
     , {
-        name: "雪祇の娘", cl: "雪娘", AW: "覚2b"
-        , stats: { def: "-%" }
-        , atkAttr: "物理", dur: "?f"
-        , note: [ "雪娘系", "分類未確認" ]
+        name: "しづり", rarity: "黒", cl: "雪娘", AW: "覚醒前", skill: "通常"
+        , stats: { atkCd: "+30f", stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
     }
-    */
+    , {
+        name: "しづり", rarity: "黒", cl: "雪娘", AW: "覚醒後", skill: "通常"
+        , stats: { atkCd: "+30f", stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
+    }
     , {
         name: "ふゆの", rarity: "白", cl: "雪娘", AW: "覚醒前", skill: "通常"
         , stats: { atkCd: "+30f" }

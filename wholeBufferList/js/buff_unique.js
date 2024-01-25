@@ -233,6 +233,18 @@ buff.unique = [
         , type: "special"
         , note: [ "区分：特効", "編成", "アーマー・ゴーレム" ]
     }
+    , {
+        name: "レクテ", rarity: "白", cl: "発明家", AW: "覚醒前"
+        , stats: { atk: "×1.1", other: "" }
+        , type: "special"
+        , note: [ "区分：特効", "編成", "デーモン" ]
+    }
+    , {
+        name: "レクテ", rarity: "白", cl: "発明家", AW: "覚醒後"
+        , stats: { atk: "×1.15", other: "" }
+        , type: "special"
+        , note: [ "区分：特効", "編成", "デーモン" ]
+    }
     
     // ダメージ上昇
     , {

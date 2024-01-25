@@ -2175,6 +2175,31 @@ debuff.mixture = [
         , note: [ "発動時", "ボム" ]
     }
     , {
+        name: "レクテ", rarity: "白", cl: "発明家", AW: "覚醒前", skill: "通常"
+        , stats: {
+            mr: { value: "-15", type: "fixed" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "レクテ", rarity: "白", cl: "発明家", AW: "覚醒後", skill: "通常"
+        , stats: {
+            mr: { value: "-15", type: "fixed" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "レクテ", rarity: "白", cl: "発明家", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            mr: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
+        , target: { attr: [ "デーモン" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "ヘカティエ/水着", rarity: "白", cl: "儀式魔術師", AW: "覚醒前", skill: "通常"
         , stats: {
             mr: { value: "-90%", type: "area" }
@@ -2308,6 +2333,14 @@ debuff.mixture = [
             atk: { value: "*1.5", type: "noAttr" }
         }
         , domain: "area"
+    }
+    , {
+        name: "雪祇の娘", cl: "雪娘", AW: "覚2b"
+        , stats: {
+            def: { value: "-40%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "雪娘系", "分類未確認" ]
     }
     , {
         name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒後", skill: "覚醒"
@@ -2761,6 +2794,22 @@ debuff.mixture = [
         }
         , domain: "area"
         , note: [ "リュティエ", "永続", "分類未確認" ]
+    }
+    , {
+        name: "雪の精霊", rarity: "トークン", AW: "覚醒前", skill: "通常"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: [ "しづり", "永続", "分類未確認" ]
+    }
+    , {
+        name: "冬の精霊", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: [ "しづり", "永続", "分類未確認" ]
     }
     , {
         name: "アルヴァ(幻影)", rarity: "トークン", AW: "覚醒前", skill: "覚醒"

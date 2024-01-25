@@ -1200,7 +1200,6 @@ buff.skill_cat = [
             { race: [ "妖怪" ] }
             , { season: [ "お正月" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "アヅミ/お正月", rarity: "白", cl: "料理人", AW: "覚醒後", skill: "通常"
@@ -1210,7 +1209,6 @@ buff.skill_cat = [
             , { race: [ "妖怪" ] }
             , { season: [ "お正月" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "アヅミ/お正月", rarity: "白", cl: "料理人", AW: "覚醒後", skill: "覚醒"
@@ -1220,7 +1218,7 @@ buff.skill_cat = [
             , { race: [ "妖怪" ] }
             , { season: [ "お正月" ] }
         ]
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "ヤマブキ", rarity: "金", cl: "料理人", AW: "覚醒前", skill: "通常"
@@ -1964,13 +1962,11 @@ buff.skill_cat = [
         name: "マルティナ/クリスマス", rarity: "白", cl: "幻術士", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2" }
         , target: { season: [ "クリスマス" ] }
-        , note: "分類未確認"
     }
     , {
         name: "マルティナ/クリスマス", rarity: "白", cl: "幻術士", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2" }
         , target: { season: [ "クリスマス" ] }
-        , note: "分類未確認"
     }
     , {
         name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒後", skill: "覚醒"
@@ -2264,6 +2260,18 @@ buff.skill_cat = [
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { home: [ "恋姫" ] }
         , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "雪の精霊", rarity: "トークン", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", range: "×1.3" }
+        , target: { cl: [ "雪娘" ] }
+        , note: [ "しづり", "範囲", "永続", "分類未確認" ]
+    }
+    , {
+        name: "冬の精霊", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.4", range: "×1.5" }
+        , target: { cl: [ "雪娘" ] }
+        , note: [ "しづり", "範囲", "永続", "分類未確認" ]
     }
     , {
         name: "阿形の獅子", rarity: "トークン", AW: "覚醒前", skill: "通常"
