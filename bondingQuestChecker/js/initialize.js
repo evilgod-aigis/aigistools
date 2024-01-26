@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const checkStateArea = document.getElementById("check-state-area");
     const buttons = checkStateArea.getElementsByTagName("button");
     const input = checkStateArea.getElementsByTagName("input")[0];
+    input.value = "";
     const report = document.getElementById("report");
     const displayTime = 2000;
     /*
