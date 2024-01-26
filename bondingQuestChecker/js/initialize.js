@@ -18,8 +18,8 @@ window.addEventListener("DOMContentLoaded", () => {
         usedCHAR = Array.from(usedCHAR).sort((a, b) => saveData.CHAR.indexOf(a) - saveData.CHAR.indexOf(b)).join("");
         const usedMarker = _.reduce(saveData.compressChars, (text, marker) => text += marker, "");
     */
-    const usedCHAR = "01256789adefghtlmnEFGJKLMNORSTUVWZ$=";
-    const usedMarker = "~_-^&#!?";
+    const usedCHAR = "01256789adefghilmnEFGJKLMNORSTUVWZ$=";
+    const usedMarker = "bcjkopsuxy";
     // コピー
     buttons[0].addEventListener("click", () => {
         const newSpan = document.createElement("span");

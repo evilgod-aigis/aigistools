@@ -3,7 +3,7 @@ const table = {};
 table.word = {
     id: "id", unitName: "ユニット", class: "クラス", implDate: "ユニット<br />実装日", implDate_bq: "クエスト<br />実装日"
     , own: "所持<br />", clear: "クリア<br />"
-    , name: "簡易", fullName: "ゲーム準拠" 
+    , name: "簡易", fullName: "ゲーム準拠", icon: "アイコン"
     , bh: "ブラック[英傑]", b: "ブラック", ph: "プラチナ[英傑]", p: "プラチナ", g: "ゴールド", s: "サファイア", sl: "シルバー"
     , gc: "ちび(ゴールド)"
     , sh: "召喚", ev: "イベント", tr: "交換", sp: "その他"
@@ -11,7 +11,7 @@ table.word = {
     , none: "未実装", "year-none": "未実装"
 };
 
-table.unitName = [ "name", "fullName" ];
+table.unitName = [ "name", "fullName", "icon" ];
 table.rarity = [ "bh", "b", "ph", "p", "g", "s" ];
 table.obtain = [ "sh", "ev", "tr", "sp" ];
 table.depType = [ "van", "rear", "both" ];
@@ -427,10 +427,20 @@ table.CreateTable = () => {
                 switch(elem) {
                     case "unitName":
                         _.forEach(table.unitName, key => {
-                            const newSpan = document.createElement("span");
-                            newSpan.className = `display-${key}`;
-                            newSpan.innerText = unit[key];
-                            newTd.appendChild(newSpan);
+                            if(key === "icon") {
+                                const newImg = document.createElement("img");
+                                newImg.className = `display-${key}`;
+                                newImg.setAttribute("title", unit.fullName);
+                                newImg.setAttribute("alt", unit.fullName);
+                                newImg.setAttribute("druggable", false);
+                                newImg.setAttribute("src", `./icon/${unit.id.toString().padStart(5, "0")}.png`);
+                                newTd.appendChild(newImg);
+                            } else {
+                                const newSpan = document.createElement("span");
+                                newSpan.className = `display-${key}`;
+                                newSpan.innerText = unit[key];
+                                newTd.appendChild(newSpan);
+                            }
                         });
                         break;
                     case "implDate_bq":
@@ -477,10 +487,8 @@ table.CreateTable = () => {
         newStyle.id = "created-style";
         document.getElementsByTagName('head')[0].appendChild(newStyle);
         const sheet = newStyle.sheet;
-        _.forEach(table.unitName, key => {
-            const display = table.setting.unitName !== key ? " display: none !important; " : "";
-            sheet.insertRule(`#tables .display-${key} {${display}}`, sheet.cssRules.length);
-        });
+        sheet.insertRule("#tables table td.column-unitName {}", sheet.cssRules.length);
+        _.forEach(table.unitName, key => sheet.insertRule(`#tables .display-${key} {}`, sheet.cssRules.length));
         _.forEach(table.setting.backgroundColor, (color, className) =>
             sheet.insertRule(`#tables .${className} td { background-color: ${color}; }`, sheet.cssRules.length)
         );
@@ -493,6 +501,7 @@ table.CreateTable = () => {
         });
     }
     
+    table.ToggleNameDisplay();
     table.ApplyFilter();
 }
 
@@ -628,6 +637,10 @@ table.ToggleNameDisplay = () => {
         if(table.setting.unitName === key) rule.style.removeProperty("display");
         else rule.style.setProperty("display", "none", "important");
     });
+    const rule = _.find(style.sheet.cssRules, rule => rule.selectorText === "#tables table td.column-unitName");
+    if(table.setting.unitName === "icon")
+        rule.style.setProperty("min-width", "5em");
+    else rule.style.setProperty("min-width", "12em");
     saveData.setting.Save("unitName");
 }
 
@@ -640,17 +653,23 @@ table.ChangeBackColor = _className => {
 }
 
 // フィルタ適用
-table.ApplyFilter = (_filterType = null) => {
+table.ApplyFilter = (_filterType = null, _judgeDisplay = true) => {
     const style = document.getElementById("created-style");
-    if(_filterType) {
-        if(_filterType === "rarity") {
+    let rule;
+    switch(_filterType) {
+        case null:
+            _.forEach(table.filter, (obj, filterType) => table.ApplyFilter(filterType, false));
+            break;
+        case "rarity":
             _.forEach(table.filter.rarity, (bool, rarity) => {
                 const tableArea = document.getElementById(`table-area_${rarity}`);
                 if(bool) tableArea.classList.remove("is-unshown");
                 else tableArea.classList.add("is-unshown");
             });
-        } else if(_filterType === "own" || _filterType === "clear") {
-            let rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables .${_filterType}`);
+            break;
+        case "own":
+        case "clear":
+            rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables .${_filterType}`);
             if(table.filter[_filterType] & 0b10)
                 rule.style.removeProperty("display");
             else rule.style.setProperty("display", "none", "important");
@@ -658,40 +677,17 @@ table.ApplyFilter = (_filterType = null) => {
             if(table.filter[_filterType] & 0b01)
                 rule.style.removeProperty("display");
             else rule.style.setProperty("display", "none", "important");
-        } else {
+            break;
+        default:
             _.forEach(table.filter[_filterType], (bool, key) => {
                 const rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables .${_filterType}-${key}`);
                 if(bool) rule.style.removeProperty("display");
                 else rule.style.setProperty("display", "none", "important");
             });
-        }
-        saveData.setting.Save(_filterType);
-    } else {
-        _.forEach(table.filter, (obj, filterType) => {
-            if(filterType === "rarity") {
-                _.forEach(obj, (bool, rarity) => {
-                    const tableArea = document.getElementById(`table-area_${rarity}`);
-                    if(bool) tableArea.classList.remove("is-unshown");
-                    else tableArea.classList.add("is-unshown");
-                });
-            } else if(typeof obj !== "object") {
-                // filterType === "own" || filterType === "clear"
-                let rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables .${filterType}`);
-                if(obj & 0b10) rule.style.removeProperty("display");
-                else rule.style.setProperty("display", "none", "important");
-                rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables tbody tr:not(.${filterType})`);
-                if(obj & 0b01) rule.style.removeProperty("display");
-                else rule.style.setProperty("display", "none", "important");
-            } else {
-                _.forEach(obj, (bool, key) => {
-                    const rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables .${filterType}-${key}`);
-                    if(bool) rule.style.removeProperty("display");
-                    else rule.style.setProperty("display", "none", "important");
-                });
-            }
-        });
     }
-    _.forEach(table.rarity, rarity => table.Display(rarity));
+    
+    if(_filterType) saveData.setting.Save(_filterType);
+    if(_judgeDisplay) _.forEach(table.rarity, rarity => table.Display(rarity));
 }
 
 // 表の表示/非表示
@@ -728,6 +724,7 @@ table.Sort = (_rarity, _colName, _allowReverse = true) => {
         const length = trs_array.length;
         switch(_colName) {
             case "id":
+            case "implDate":
                 // キャラ実装順と同義
                 trs_array.sort((a, b) => 
                     Number(a.children[colIndex_id].innerText) - Number(b.children[colIndex_id].innerText)
@@ -753,6 +750,7 @@ table.Sort = (_rarity, _colName, _allowReverse = true) => {
                     trs_array.push(...trs);
                 });
                 break;
+            /*
             case "implDate":
                 trs_array.sort((a, b) => {
                     const tds_a = a.children;
@@ -764,6 +762,7 @@ table.Sort = (_rarity, _colName, _allowReverse = true) => {
                     return diff;
                 });
                 break;
+            */
             case "implDate_bq":
                 trs_array.sort((a, b) => {
                     const tds_a = a.children;

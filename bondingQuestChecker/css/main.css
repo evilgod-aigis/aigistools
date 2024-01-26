@@ -187,6 +187,7 @@ summary {
     width: max-content;
     font-size: 14px;
     white-space: nowrap;
+    height: 100%;
 }
 #tables table th {
     position: sticky !important;
@@ -222,9 +223,14 @@ summary {
     position: sticky;
     position: -webkit-sticky;   /* Safari */
     left: 0;
-    min-width: 12em;
+    /* min-width: 12em; */
     max-width: max-content;
     z-index: 1;
+}
+#tables table .display-icon {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
 }
 #tables table .column-class {
     min-width: 12em;
@@ -244,6 +250,7 @@ summary {
     min-width: 3.5em;
     max-width: max-content;
     text-align: center;
+    height: 100%;
 }
 #tables table label {
     display: block;
@@ -261,7 +268,11 @@ summary {
     z-index: 1;
 }
 #tables table input[type="checkbox"] {
-    position: relative;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 13px;
+    height: 13px;
     z-index: 2;
 }
 #tables .cell-filled {

@@ -472,8 +472,8 @@ const unitList = [
     , { id: 0x01cb, implDate: "2018/03/29", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "グランドナイト", name: "サリス", fullName: "亡国の守護騎士サリス" }
     , { id: 0x01cc, implDate: "2018/03/30", implDate_bq: null        , obtain: "sp", rarity: "s" , depType: "rear", class: "ライフリンカー", name: "サルース", fullName: "神鎖の救命師サルース" }
     , { id: 0x01cd, implDate: "2018/04/05", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "メイジ", name: "メーリス/学園", fullName: "魔学の研修生メーリス" }
-    , { id: 0x01ce, implDate: "2018/04/05", implDate_bq: null        , obtain: "sh", rarity: "g" , depType: "rear", class: "ウィッチ", name: "ネーニャ", fullName: "勤勉猫魔女ネーニャ" }
-    , { id: 0x01cf, implDate: "2018/04/05", implDate_bq: null        , obtain: "tr", rarity: "g" , depType: "rear", class: "パイレーツ", name: "ジョヴァンニ", fullName: "海賊番長ジョヴァンニ", male: 1 }
+    , { id: 0x01ce, implDate: "2018/04/05", implDate_bq: null        , obtain: "sh", rarity: "g" , depType: "rear", class: "ウィッチ", name: "ネーニャ/学園", fullName: "勤勉猫魔女ネーニャ" }
+    , { id: 0x01cf, implDate: "2018/04/05", implDate_bq: null        , obtain: "tr", rarity: "g" , depType: "rear", class: "パイレーツ", name: "ジョヴァンニ/学園", fullName: "海賊番長ジョヴァンニ", male: 1 }
     , { id: 0x01d0, implDate: "2018/04/05", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ヘビーアーマー", name: "ちびベルニス", fullName: "ちびベルニス" }
     , { id: 0x01d1, implDate: "2018/04/05", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ダークファイター", name: "ちびコーネリア", fullName: "ちびコーネリア" }
     , { id: 0x01d2, implDate: "2018/04/19", implDate_bq: "2019/04/18", obtain: "ev", rarity: "p" , depType: "rear", class: "アルケミスト", name: "レーレン", fullName: "錬金講師レーレン" }
@@ -506,7 +506,7 @@ const unitList = [
     , { id: 0x01ed, implDate: "2018/07/12", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "rear", class: "サモナー", name: "ファルネ/花嫁", fullName: "花嫁姿の召喚士ファルネ" }
     , { id: 0x01ee, implDate: "2018/07/12", implDate_bq: "2021/01/14", obtain: "sh", rarity: "p" , depType: "van" , class: "魔神", name: "ベルーフェ", fullName: "怠惰の魔神ベルーフェ" }
     , { id: 0x01ef, implDate: "2018/07/19", implDate_bq: "2020/02/13", obtain: "sh", rarity: "p" , depType: "rear", class: "幻獣使い", name: "ホリー", fullName: "幻獣使いホリー" }
-    , { id: 0x01f0, implDate: "2018/07/19", implDate_bq: "2019/06/20", obtain: "ev", rarity: "p" , depType: "van" , class: "ワルキューレ", name: "キャリー", fullName: "渚の槍騎兵キャリー" }
+    , { id: 0x01f0, implDate: "2018/07/19", implDate_bq: "2019/06/20", obtain: "ev", rarity: "p" , depType: "van" , class: "ワルキューレ", name: "キャリー/水着", fullName: "渚の槍騎兵キャリー" }
     , { id: 0x01f1, implDate: "2018/07/26", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "武将【恋姫】", name: "関羽", fullName: "関羽", collabo: 1 }
     , { id: 0x01f2, implDate: "2018/07/26", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "軍師【恋姫】", name: "諸葛亮", fullName: "諸葛亮", collabo: 1 }
     , { id: 0x01f3, implDate: "2018/07/26", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "武将【恋姫】", name: "趙雲", fullName: "趙雲", collabo: 1 }
@@ -563,8 +563,8 @@ const unitList = [
     , { id: 0x0226, implDate: "2018/12/13", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "陰陽師", name: "タマミ", fullName: "陰陽師タマミ" }
     , { id: 0x0227, implDate: "2018/12/30", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "騎士【封緘】", name: "ダルフィア", fullName: "ダルフィア", collabo: 1 }
     , { id: 0x0228, implDate: "2018/12/30", implDate_bq: "2020/12/17", obtain: "sh", rarity: "b" , depType: "van" , class: "ダークファイター", name: "コーネリア/クリスマス", fullName: "暗黒聖夜騎士コーネリア" }
-    , { id: 0x0229, implDate: "2018/12/30", implDate_bq: "2019/12/19", obtain: "sh", rarity: "p" , depType: "rear", class: "砲術士", name: "カノン", fullName: "聖夜の祝星砲カノン" }
-    , { id: 0x022a, implDate: "2018/12/30", implDate_bq: "2019/11/14", obtain: "ev", rarity: "p" , depType: "rear", class: "ヒーラー", name: "カミラ", fullName: "聖祭の癒し手カミラ" }
+    , { id: 0x0229, implDate: "2018/12/30", implDate_bq: "2019/12/19", obtain: "sh", rarity: "p" , depType: "rear", class: "砲術士", name: "カノン/クリスマス", fullName: "聖夜の祝星砲カノン" }
+    , { id: 0x022a, implDate: "2018/12/30", implDate_bq: "2019/11/14", obtain: "ev", rarity: "p" , depType: "rear", class: "ヒーラー", name: "カミラ/クリスマス", fullName: "聖祭の癒し手カミラ" }
     
     // 2019
     , { id: 0x022b, implDate: "2019/01/01", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "鬼", name: "鬼刃姫/お正月", fullName: "年賀の着衣始 鬼刃姫" }
@@ -1097,8 +1097,8 @@ const unitList = [
     , { id: 0x0434, implDate: "2022/11/10", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "both", class: "スカイヒーラー", name: "イエラ", fullName: "蓑鳩翼の癒し手イエラ" }
     , { id: 0x0435, implDate: "2022/11/10", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ソルジャー", name: "ちびジェローム", fullName: "ちびジェローム", male: 1 }
     , { id: 0x0436, implDate: "2022/11/17", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "デーモンロード", name: "ヤハール", fullName: "炎天の魔将ヤハール" }
-    , { id: 0x0437, implDate: "2022/11/17", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ドラゴンプリンセス", name: "ロタン", fullName: "原初の竜姫ロタン" }
-    , { id: 0x0438, implDate: "2022/11/17", implDate_bq: "2023/05/11", obtain: "sh", rarity: "p" , depType: "rear", class: "スカラー", name: "コレット", fullName: "神話学士コレット" }
+    , { id: 0x0437, implDate: "2022/11/17", implDate_bq: "2023/05/11", obtain: "sh", rarity: "p" , depType: "rear", class: "スカラー", name: "コレット", fullName: "神話学士コレット" }
+    , { id: 0x0438, implDate: "2022/11/17", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "ドラゴンプリンセス", name: "ロタン", fullName: "原初の竜姫ロタン" }
     , { id: 0x0439, implDate: "2022/11/24", implDate_bq: null        , obtain: "sh", rarity: "bh", depType: "van" , class: "トゥルーブラッド", name: "リヴン", fullName: "永夜の始祖たる者リヴン" }
     , { id: 0x043a, implDate: "2022/11/24", implDate_bq: null        , obtain: "sh", rarity: "bh", depType: "van" , class: "黎明の翼", name: "ルキファ", fullName: "黎明を齎す者ルキファ" }
     , { id: 0x043b, implDate: "2022/11/24", implDate_bq: null        , obtain: "tr", rarity: "ph", depType: "van" , class: "黎明の翼", name: "ルキファ", fullName: "黎明を齎す者ルキファ" }
@@ -1306,10 +1306,10 @@ const unitList = [
     , { id: 0x0501, implDate: "2024/01/11", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "グラディエーター", name: "アナトリア/温泉", fullName: "闘志の癒し湯アナトリア" }
     , { id: 0x0502, implDate: "2024/01/11", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "ドラグーン", name: "ミカ/温泉", fullName: "温泉放浪騎ミカ" }
     , { id: 0x0503, implDate: "2024/01/11", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ビショップ", name: "ちびマリウス", fullName: "ちびマリウス", male: 1 }
-    // , { id: 0x0504, implDate: "2024/01/25", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "モンク", name: "モモ/温泉", fullName: "温泉鉄甲モモ" }
-    // , { id: 0x0505, implDate: "2024/01/25", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "雪娘", name: "しづり", fullName: "冬姫しづり" }
-    // , { id: 0x0506, implDate: "2024/01/25", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "rear", class: "発明家", name: "レクテ", fullName: "魔電流の発明家レクテ" }
-    // , { id: 0x0507, implDate: "2024/01/25", implDate_bq: null        , obtain: "sp", rarity: "b" , depType: "rear", class: "ウィッチ", name: "アンジェラ", fullName: "王国の魔女アンジェラ" }
+    , { id: 0x0504, implDate: "2024/01/25", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "モンク", name: "モモ/温泉", fullName: "温泉鉄甲モモ" }
+    , { id: 0x0505, implDate: "2024/01/25", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "雪娘", name: "しづり", fullName: "冬姫しづり" }
+    , { id: 0x0506, implDate: "2024/01/25", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "rear", class: "発明家", name: "レクテ", fullName: "魔電流の発明家レクテ" }
+    , { id: 0x0507, implDate: "2024/01/25", implDate_bq: null        , obtain: "sp", rarity: "b" , depType: "rear", class: "ウィッチ", name: "アンジェラ", fullName: "王国の魔女アンジェラ" }
     // , { id: 0x0508, implDate: "2024/02/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "デモンルーン", name: "ちびエスネア", fullName: "ちびエスネア" }
     // , { id: 0x0509, implDate: "2024/02/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "デモンルーン", name: "ちびエフネ", fullName: "ちびエフネ" }
     

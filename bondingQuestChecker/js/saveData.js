@@ -1,7 +1,7 @@
 const saveData = {};
 saveData.version = 1;
-saveData.CHAR = "0123456789abcdefghtjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$=";
-saveData.compressChars = Object.freeze({ "0": "~_", "7": "-^", "U": "&#", "=": "!?" });
+saveData.CHAR = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$=";
+saveData.compressChars = Object.freeze({ "0": "bc", "7": "jk", "i": "op", "U": "st", "=": "xy" });
 saveData.divider = "|";
 
 // 3bit×2を64進数に変換
@@ -284,18 +284,14 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             saveData.DELETE = (_alert = true) => {
                 if(
                     _alert
-                    && confirm("本ページで保存されたデータをすべて削除します。実行しますか？")
+                    && confirm("本ページで保存されたデータをすべて削除します。\n再読み込みするまでデータの保存は機能しません。\n実行しますか？")
                     && confirm("本当に削除しますか？")
                 ) {
-                    const transaction = saveData.db.transaction(saveData.objStoreName, "readwrite");
-                    const objStore = transaction.objectStore(saveData.objStoreName);
-                    const request = objStore.clear();
+                    const request = indexedDB.deleteDatabase(saveData.db.name);
                     request.onsuccess = e => window.alert("削除しました");
                     request.onerror = e => window.alert("削除に失敗しました");
                 } else if(!_alert) {
-                    const transaction = saveData.db.transaction(saveData.objStoreName, "readwrite");
-                    const objStore = transaction.objectStore(saveData.objStoreName);
-                    const request = objStore.clear();
+                    const request = indexedDB.deleteDatabase(saveData.db.name);
                     //request.onsuccess = e => {}
                     //request.onerror = e => {}
                 }
@@ -307,7 +303,6 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             }
         }
         request.onerror = e1 => saveData.Construct(false);
-        
     } else {
         // indexedDB利用不可 -> localStorage
         delete saveData.db;
@@ -410,7 +405,6 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                     });
             }
         });
-        createHTML.All();
         
         // 全データ削除
         saveData.DELETE = (_alert = true) => {
@@ -420,10 +414,12 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                 && confirm("本当に削除しますか？")
             ) {
                 localStorage.clear();
-                window.alert("削除に失敗しました");
+                window.alert("削除しました");
             } else if(!_alert)
                 localStorage.clear();
         }
+        
         Object.freeze(saveData);
+        createHTML.All();
     }
 }
