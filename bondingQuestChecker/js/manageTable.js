@@ -432,7 +432,7 @@ table.CreateTable = () => {
                                 newImg.className = `display-${key}`;
                                 newImg.setAttribute("title", unit.fullName);
                                 newImg.setAttribute("alt", unit.fullName);
-                                newImg.setAttribute("druggable", false);
+                                newImg.setAttribute("draggable", false);
                                 newImg.setAttribute("src", `./icon/${unit.id.toString().padStart(5, "0")}.png`);
                                 newTd.appendChild(newImg);
                             } else {
