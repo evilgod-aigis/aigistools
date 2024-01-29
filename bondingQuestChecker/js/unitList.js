@@ -77,8 +77,8 @@ const unitList = [
     , { id: 0x0048, implDate: "2014/02/18", implDate_bq: "2016/11/02", obtain: "ev", rarity: "p" , depType: "rear", class: "メイジ", name: "オデット", fullName: "秘法の伝承者オデット" }
     , { id: 0x0049, implDate: "2014/02/25", implDate_bq: "2016/11/02", obtain: "sh", rarity: "p" , depType: "rear", class: "ヴァンパイアハンター", name: "エリザベート", fullName: "賞金稼ぎエリザベート" }
     , { id: 0x004a, implDate: "2014/02/25", implDate_bq: null        , obtain: "sh", rarity: "g" , depType: "rear", class: "ヴァンパイアハンター", name: "ヴィンセント", fullName: "復讐者ヴィンセント", male: 1 }
-    , { id: 0x004b, implDate: "2014/03/11", implDate_bq: "2019/10/24", obtain: "ev", rarity: "b" , depType: "van" , class: "イモータルプリンセス", name: "カルマ", fullName: "黒衣の花嫁カルマ" }
-    , { id: 0x004c, implDate: "2014/03/11", implDate_bq: "2017/10/26", obtain: "ev", rarity: "p" , depType: "van" , class: "ヴァンパイアプリンセス", name: "カルマ", fullName: "純白の花嫁カルマ" }
+    , { id: 0x004b, implDate: "2014/03/11", implDate_bq: "2019/10/24", obtain: "ev", rarity: "b" , depType: "van" , class: "イモータルプリンセス", name: "カルマ", fullName: "純白の花嫁カルマ" }
+    , { id: 0x004c, implDate: "2014/03/11", implDate_bq: "2017/10/26", obtain: "ev", rarity: "p" , depType: "van" , class: "ヴァンパイアプリンセス", name: "カルマ", fullName: "黒衣の花嫁カルマ" }
     , { id: 0x004d, implDate: "2014/03/11", implDate_bq: "2017/05/25", obtain: "sh", rarity: "p" , depType: "van" , class: "ペガサスライダー", name: "リディ", fullName: "天駆ける騎士リディ" }
     , { id: 0x004e, implDate: "2014/03/11", implDate_bq: null        , obtain: "sh", rarity: "g" , depType: "rear", class: "ヒーラー", name: "ロベルト", fullName: "癒しの獅子ロベルト", male: 1 }
     , { id: 0x004f, implDate: "2014/03/11", implDate_bq: "2019/10/24", obtain: "ev", rarity: "p" , depType: "rear", class: "シャーマン", name: "シホ", fullName: "巫女シホ" }
