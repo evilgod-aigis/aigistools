@@ -1,5 +1,5 @@
 const saveData = {};
-saveData.version = 1;
+saveData.version = 2;
 saveData.CHAR = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$=";
 saveData.compressChars = Object.freeze({ "0": "bc", "7": "jk", "i": "op", "U": "st", "=": "xy" });
 saveData.divider = "|";
@@ -71,6 +71,7 @@ saveData.checkbox.Load = (_data = "", _adapt = false, _version = saveData.versio
     /* データ形態が変わったらバージョンチェンジかなぁ
     switch(_version) {
         case 1:
+        case 2:
             break;
     }
     */
@@ -124,7 +125,7 @@ saveData.checkbox.Compress = () => {
             else return false;
         });
     _.forEach(saveData.compressChars, (marker, compressChar) => {
-        // 比較的多そうな07U=を圧縮
+        // 比較的多そうな07iU=を圧縮
         let length = saveData.checkbox.data_short.length;
         saveData.checkbox.data_short = _.reduce(saveData.checkbox.data_short, (result, char) => {
             --length;
@@ -176,6 +177,7 @@ saveData.setting.Save = _settingName => {
         case "obtain":
         case "depType":
         case "year":
+        case "year_bq":
             data = _.reduce(table.filter[_settingName], (txt, bool, key) => txt += `${key}:${bool ? 1 : 0} `, "").trimEnd();
             break;
         case "own":
@@ -193,10 +195,17 @@ saveData.Construct = (_canUseIndexedDB = true) => {
     window.IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction || {READ_WRITE: "readwrite"};
     window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange;
     
-    const saveItem_ver1 = {
-        saveData: [ "checkbox" ]
-        , setting: [ "unitName", "backgroundColor" ]
-        , filter: [ "column", "rarity", "obtain", "depType", "year", "own", "clear" ]
+    const saveItem = {
+        1: {
+            saveData: [ "checkbox" ]
+            , setting: [ "unitName", "backgroundColor" ]
+            , filter: [ "column", "rarity", "obtain", "depType", "year", "own", "clear" ]
+        }
+        , 2: {
+            saveData: [ "checkbox" ]
+            , setting: [ "unitName", "backgroundColor" ]
+            , filter: [ "column", "rarity", "obtain", "depType", "year", "year_bq", "own", "clear" ]
+        }
     };
     
     if(_canUseIndexedDB && window.indexedDB) {
@@ -209,7 +218,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             switch(e1.oldVersion) {
                 case 0: {
                         const objStore = saveData.db.createObjectStore(saveData.objStoreName, { keyPath: "dataName" });
-                        _.forEach(saveItem_ver1, arr =>
+                        _.forEach(saveItem[saveData.version], arr =>
                             _.forEach(arr, dataName => {
                                 switch(dataName) {
                                     case "unitName":
@@ -224,6 +233,15 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                                 }
                             })
                         );
+                    }
+                    break;
+                case 1: {
+                        const objStore = e1.target.transaction.objectStore(saveData.objStoreName);
+                        objStore.get("year").onsuccess = e2 => {
+                            objStore.put({ dataName: "year_bq", data: e2.target.result.data }).onsuccess = e3 => {
+                                objStore.put({ dataName: "year", data: "" });
+                            }
+                        }
                     }
                     break;
             }
@@ -241,12 +259,12 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             // データ取得
             const transaction = saveData.db.transaction(saveData.objStoreName, "readonly");
             const objStore = transaction.objectStore(saveData.objStoreName);
-            _.forEach(saveItem_ver1.saveData, dataName => {
+            _.forEach(saveItem[saveData.version].saveData, dataName => {
                 const request = objStore.get(dataName);
                 request.onsuccess = e2 => saveData[dataName].Load(e2.target.result.data);
             });
             table.SetObjects();
-            _.forEach(saveItem_ver1.setting, dataName => {
+            _.forEach(saveItem[saveData.version].setting, dataName => {
                 const request = objStore.get(dataName);
                 switch(dataName) {
                     case "unitName":
@@ -262,7 +280,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                         }
                 }
             });
-            _.forEach(saveItem_ver1.filter, dataName => {
+            _.forEach(saveItem[saveData.version].filter, dataName => {
                 const request = objStore.get(dataName);
                 switch(dataName) {
                     case "own":
@@ -324,7 +342,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                 <p>ページ下部のデータ入出力を利用してください。</p>";
             
             saveData.Save = () => {};
-            _.forEach(saveItem_ver1.saveData, dataName => saveData[dataName].Load());
+            _.forEach(saveItem[saveData.version].saveData, dataName => saveData[dataName].Load());
             table.SetObjects();
             createHTML.All();
             return;
@@ -341,7 +359,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                 <p>本ページをこまめに利用するか、ページ下部のデータ入出力を利用してください。</p>";
             
             saveData.Save = () => {};
-            _.forEach(saveItem_ver1.saveData, dataName => saveData[dataName].Load());
+            _.forEach(saveItem[saveData.version].saveData, dataName => saveData[dataName].Load());
             table.SetObjects();
             createHTML.All();
             return;
@@ -352,7 +370,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
         // バージョン確認
         switch(Number(localStorage.getItem("version"))) {
             case 0:
-                _.forEach(saveItem_ver1, arr =>
+                _.forEach(saveItem[saveData.version], arr =>
                     _.forEach(arr, dataName => {
                         switch(dataName) {
                             case "unitName":
@@ -369,14 +387,19 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                 );
                 localStorage.setItem("version", saveData.version);
                 break;
+            case 1:
+                localStorage.setItem("year_bq", localStorage.getItem("year"));
+                localStorage.setItem("year", "");
+                localStorage.setItem("version", saveData.version);
+                break;
         }
         // データ取得
-        _.forEach(saveItem_ver1.saveData, dataName => {
+        _.forEach(saveItem[saveData.version].saveData, dataName => {
             const data = localStorage.getItem(dataName);
             saveData[dataName].Load(data);
         });
         table.SetObjects();
-        _.forEach(saveItem_ver1.setting, dataName => {
+        _.forEach(saveItem[saveData.version].setting, dataName => {
             const data = localStorage.getItem(dataName);
             switch(dataName) {
                 case "unitName":
@@ -390,7 +413,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                     });
             }
         });
-        _.forEach(saveItem_ver1.filter, dataName => {
+        _.forEach(saveItem[saveData.version].filter, dataName => {
             const data = localStorage.getItem(dataName);
             switch(dataName) {
                 case "own":

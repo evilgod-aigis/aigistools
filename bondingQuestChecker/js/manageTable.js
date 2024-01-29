@@ -8,7 +8,7 @@ table.word = {
     , gc: "ちび(ゴールド)"
     , sh: "召喚", ev: "イベント", tr: "交換", sp: "その他"
     , van: "近接", rear: "遠距離", both: "遠近距離"
-    , none: "未実装", "year-none": "未実装"
+    , none: "未実装", "year_bq-none": "クエ未実装"
 };
 
 table.unitName = [ "name", "fullName", "icon" ];
@@ -76,12 +76,14 @@ table.class = {
         , "対魔忍 自然【対魔忍】"
     ]
 };
-// 実装年
+// アイギスリリース年
+const YEAR_RELEASE = 2013;
+// 交流クエスト実装年
 const YEAR_THE_FIRST_BQ_IMPLEMENTED = 2016;
 table.year = _.map(
-    [...new Array((new Date()).getFullYear() - YEAR_THE_FIRST_BQ_IMPLEMENTED + 1)]
+    [...new Array((new Date()).getFullYear() - YEAR_RELEASE + 1)]
     , (_, i) => {
-        const year = YEAR_THE_FIRST_BQ_IMPLEMENTED + i;
+        const year = YEAR_RELEASE + i;
         table.word[year] = `${year}年`;
         return year;
     }
@@ -114,7 +116,7 @@ table.SetObjects = () => {
     // 背景色
     table.setting.backgroundColor = {
         "own": "#ffcc00"
-        , "year-none": "#e0e0e0"
+        , "year_bq-none": "#e0e0e0"
         , "clear": "#aaccff"
     };
     
@@ -136,10 +138,15 @@ table.SetObjects = () => {
     // 配置型
     table.filter.depType = {};
     _.forEach(table.depType, depType => table.filter.depType[depType] = true);
-    // 実装年
+    // ユニット実装年
     table.filter.year = {};
     _.forEach(table.year, year => table.filter.year[year] = true);
-    table.filter.year.none = true;
+    // 交流クエスト実装年
+    table.filter.year_bq = {};
+    _.forEach(table.year, year => {
+        if(year >= YEAR_THE_FIRST_BQ_IMPLEMENTED) table.filter.year_bq[year] = true;
+    });
+    table.filter.year_bq.none = true;
     // 所持
     table.filter.own = 3;
     // クリア
@@ -242,7 +249,7 @@ table.CreateSetting = () => {
         newColor.setAttribute("value", color);
         newColor.setAttribute("onchange", `table.setting.backgroundColor["${className}"]=value; table.ChangeBackColor("${className}")`);
         newLabel.appendChild(newColor);
-        newLabel.innerHTML += `${table.word[className].replace(/<br \/>/g, "")}${className === "year-none" ? "": "済"}`;
+        newLabel.innerHTML += `${table.word[className].replace(/<br \/>/g, "")}${className === "year_bq-none" ? "": "済"}`;
         newColorArea.appendChild(newLabel);
     });
     newSettingArea.appendChild(newColorArea);
@@ -331,7 +338,8 @@ table.CreateSetting = () => {
     CreateFilterArea("レアリティ", "rarity", "checkbox");
     CreateFilterArea("入手", "obtain", "checkbox");
     CreateFilterArea("配置型", "depType", "checkbox");
-    CreateFilterArea("実装年", "year", "checkbox");
+    CreateFilterArea("ユニ実装年", "year", "checkbox");
+    CreateFilterArea("クエ実装年", "year_bq", "checkbox");
     CreateFilterArea("所持", "own", "radio");
     CreateFilterArea("クリア", "clear", "radio");
     
@@ -419,8 +427,9 @@ table.CreateTable = () => {
             newTr = document.createElement("tr");
             newTr.classList.add(`obtain-${unit.obtain}`);
             newTr.classList.add(`depType-${unit.depType}`);
-            if(unit.implDate_bq) newTr.classList.add(`year-${unit.implDate_bq.slice(0, 4)}`);
-            else newTr.classList.add("year-none");
+            newTr.classList.add(`year-${unit.implDate.slice(0, 4)}`);
+            if(unit.implDate_bq) newTr.classList.add(`year_bq-${unit.implDate_bq.slice(0, 4)}`);
+            else newTr.classList.add("year_bq-none");
             _.forEach(table.column, elem => {
                 const newTd = document.createElement("td");
                 newTd.className = `column-${elem}`;
@@ -713,7 +722,7 @@ table.Sort = (_rarity, _colName, _allowReverse = true) => {
     const trs_array = Array.from(trs);
     if(_allowReverse && _colName === table.tables[_rarity].sortedBy) {
         if(_colName === "implDate_bq") {
-            const trs_implemented = _.takeWhile(trs_array, tr => !tr.classList.contains("year-none"));
+            const trs_implemented = _.takeWhile(trs_array, tr => !tr.classList.contains("year_bq-none"));
             trs_implemented.reverse();
             _.forEach(trs_implemented, (tr, i) => trs_array[i] = tr);
         } else
