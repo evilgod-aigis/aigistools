@@ -984,7 +984,7 @@ const unitList = [
     , { id: 0x03c3, implDate: "2022/01/06", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "マーチャント", name: "ちびトトノ", fullName: "ちびトトノ" }
     , { id: 0x03c4, implDate: "2022/01/13", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "忍者", name: "チヨメ/温泉", fullName: "湯けむりくノ一チヨメ" }
     , { id: 0x03c5, implDate: "2022/01/13", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "砲術士", name: "カノン/温泉", fullName: "砲術娘の温泉旅行カノン" }
-    , { id: 0x03c6, implDate: "2022/01/27", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "シーソルジャー", name: "フィーヌ/温泉", fullName: "翠玉の温泉兵フィーヌ" }
+    , { id: 0x03c6, implDate: "2022/01/27", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "シーソルジャー", name: "フィーヌ/温泉", fullName: "翠玉の温泉兵フィーヌ" }
     , { id: 0x03c7, implDate: "2022/01/27", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ワルキューレ", name: "フリア", fullName: "放浪の聖騎兵フリア" }
     , { id: 0x03c8, implDate: "2022/01/27", implDate_bq: null        , obtain: "sh", rarity: "g" , depType: "rear", class: "シービショップ", name: "ムイル", fullName: "深慮の海巫女ムイル" }
     , { id: 0x03c9, implDate: "2022/02/03", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "サムライ", name: "ヒバリ/バレンタイン", fullName: "思慕の剣豪ヒバリ" }
