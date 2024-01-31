@@ -799,6 +799,11 @@ buff.skill_area = [
         , stats: { atk: "×1.2", def: "×1.2" }
     }
     , {
+        name: "迷い家", rarity: "金", cl: "迷い家", skill: "通常"
+        , stats: { atk: "×0.0", other: "" }
+        , note: "隠密付与"
+    }
+    , {
         name: "シーラ・ヘルマン", rarity: "黒", cl: "初代大統領【ランス】", AW: "覚醒前", skill: "通常"
         , stats: { abn: "-100%" }
     }

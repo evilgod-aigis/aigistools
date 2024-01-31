@@ -563,6 +563,11 @@ buff.dep_gl = [
         , note: "天界-30%"
     }
     , {
+        name: "迷い家", cl: "迷い家"
+        , stats: { cost: "-3" }
+        , target: { not: [ "others" ], others: [ "高貴" ] }
+    }
+    , {
         name: "シィル", rarity: "白", cl: "アコライト", AW: "覚醒前"
         , stats: { nul: "5%" }
     }

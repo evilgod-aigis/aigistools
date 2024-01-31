@@ -1267,6 +1267,11 @@ buff.dep_gl = [
         , target: { home: [ "王国" ] }
     }
     , {
+        name: "迷い家", cl: "迷い家"
+        , stats: { cost: "+3" }
+        , target: { others: [ "高貴" ] }
+    }
+    , {
         name: [ "ねんどろいど", "プリンセス" ], cl: "ねんどろいどプリンセス"
         , stats: { atk: "+10%" }
         , target: { cl: [ "王子" ] }
