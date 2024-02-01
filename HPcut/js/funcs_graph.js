@@ -221,6 +221,7 @@ funcs.graph.ClacHPchange.onSkillAct = (isThinned, list) => {
             , HPchanges: [ { time: 0, HP: 100 } ]  // 0f目
         };
         _.forEach(unit.skill.detail[AW], (obj, index) => {
+            /*
             data[unitName].skill_arr.push({
                 WT: Math.floor(obj.corr.WT * graph.fps)
                 , CT: Math.floor(obj.corr.CT * graph.fps)
@@ -228,6 +229,13 @@ funcs.graph.ClacHPchange.onSkillAct = (isThinned, list) => {
                 , next: obj.next
             });
             const skill = data[unitName].skill_arr[index];
+            */
+            const skill = {
+                WT: Math.floor(obj.corr.WT * graph.fps)
+                , CT: Math.floor(obj.corr.CT * graph.fps)
+                , dur: Math.floor(obj.corr.dur * graph.fps)
+                , next: obj.next
+            };
             if("target" in obj) {
                 skill.HPred = obj.corr.HPred / 100.0;
                 if("simult" in obj) {
@@ -239,6 +247,8 @@ funcs.graph.ClacHPchange.onSkillAct = (isThinned, list) => {
                     skill.isLinked = num.linkedHP.use;
                 }
             }
+            if("HPremMul" in obj) skill.HPremMul = obj.HPremMul;
+            data[unitName].skill_arr.push(skill);
             if(index === 0) {
                 data[unitName].skill = skill;
                 data[unitName].left = skill.WT;
@@ -294,7 +304,7 @@ funcs.graph.ClacHPchange.onSkillAct = (isThinned, list) => {
                     case "WT":
                     case "CT":
                         if("HPred" in obj.skill) {
-                            let mul = funcs.graph.EvilPrincessMulti(obj.unitClass, obj.HP / num.maxHP.value);
+                            let mul = funcs.graph.HPremainMulti(obj.unitClass, obj.skill, obj.HP / num.maxHP.value);
                             if(obj.skill.isAttracted) {     // 引き付け(敵)
                                 _.forEach(Array(obj.skill.simult), () =>
                                     obj.HP -= Math.max(1, Math.floor(obj.HP * obj.skill.HPred * mul))
@@ -302,7 +312,7 @@ funcs.graph.ClacHPchange.onSkillAct = (isThinned, list) => {
                             } else {                        // 他
                                 obj.HP -= Math.max(1, Math.floor(obj.HP * obj.skill.HPred * mul));
                                 if(obj.skill.isLinked && obj.linkedHP > 0) {    // HPリンクあり
-                                    mul = funcs.graph.EvilPrincessMulti(obj.unitClass, obj.linkedHP / num.linkedHP.value);
+                                    mul = funcs.graph.HPremainMulti(obj.unitClass, obj.skill, obj.linkedHP / num.linkedHP.value);
                                     const damage = Math.max(1, Math.floor(obj.linkedHP * obj.skill.HPred * mul));
                                     if("simult" in obj.skill) obj.HP -= damage * Math.min(num.linkedHP.value2, obj.skill.simult);
                                     else obj.HP -= damage * num.linkedHP.value2;
@@ -383,6 +393,7 @@ funcs.graph.ClacHPchange.onHit = (isThinned, list) => {
             , HPchanges: [ { time: 0, HP: 100 } ]  // 0f目
         };
         _.forEach(unit.skill.detail[AW], (obj, index) => {
+            /*
             data[unitName].skill_arr.push({
                 WT: Math.floor(obj.corr.WT * graph.fps)
                 , CT: Math.floor(obj.corr.CT * graph.fps)
@@ -390,6 +401,13 @@ funcs.graph.ClacHPchange.onHit = (isThinned, list) => {
                 , next: obj.next
             });
             const skill = data[unitName].skill_arr[index];
+            */
+            const skill = {
+                WT: Math.floor(obj.corr.WT * graph.fps)
+                , CT: Math.floor(obj.corr.CT * graph.fps)
+                , dur: Math.floor(obj.corr.dur * graph.fps)
+                , next: obj.next
+            };
             if("target" in obj) {
                 skill.HPred = obj.corr.HPred / 100.0;
                 if("simult" in obj) {
@@ -401,6 +419,8 @@ funcs.graph.ClacHPchange.onHit = (isThinned, list) => {
                     skill.isLinked = num.linkedHP.use;
                 }
             }
+            if("HPremMul" in obj) skill.HPremMul = obj.HPremMul;
+            data[unitName].skill_arr.push(skill);
             if(index === 0) {
                 data[unitName].skill = skill;
                 data[unitName].left = skill.WT;
@@ -437,19 +457,19 @@ funcs.graph.ClacHPchange.onHit = (isThinned, list) => {
         let mul = 1.0;
         if(obj.skill.isAttracted) {     // 引き付け(敵)
             _.forEach(Array(hit), () => {
-                //mul = funcs.graph.EvilPrincessMulti(obj.unitClass, obj.HP / num.maxHP.value);
+                //mul = funcs.graph.HPremainMulti(obj.unitClass, obj.skill, obj.HP / num.maxHP.value);
                 _.forEach(Array(obj.skill.simult), () => 
                     obj.HP -= Math.max(1, Math.floor(obj.HP * obj.skill.HPred * mul))
                 );
             });
         } else {                        // 他
             _.forEach(Array(hit), () => {
-                //mul = funcs.graph.EvilPrincessMulti(obj.unitClass, obj.HP / num.maxHP.value);
+                //mul = funcs.graph.HPremainMulti(obj.unitClass, obj.skill, obj.HP / num.maxHP.value);
                 obj.HP -= Math.max(1, Math.floor(obj.HP * obj.skill.HPred * mul));
             });
             if(obj.skill.isLinked && obj.linkedHP > 0) {   // HPリンクあり
                 _.forEach(Array(hit), () => {
-                    //mul = funcs.graph.EvilPrincessMulti(obj.unitClass, obj.linkedHP / num.linkedHP.value);
+                    //mul = funcs.graph.HPremainMulti(obj.unitClass, obj.skill, obj.linkedHP / num.linkedHP.value);
                     const damage = Math.max(1, Math.floor(obj.linkedHP * obj.skill.HPred * mul));
                     if("simult" in obj.skill) obj.HP -= damage * Math.min(num.linkedHP.value2, obj.skill.simult);
                     else obj.HP -= damage * num.linkedHP.value2;
@@ -558,8 +578,8 @@ funcs.graph.ClacHPchange.onHit = (isThinned, list) => {
     }, {});
 }
 
-// イビルプリンセス系クラスの倍率
-funcs.graph.EvilPrincessMulti = (unitClass, HPrate) => {
+// 敵HP残量の倍率
+funcs.graph.HPremainMulti = (unitClass, skill, HPrate) => {
     if(_.includes(lists.evilPrincess, unitClass)) {
         if(unitClass === "デスブリンガー") {
             if(HPrate < 0.31) return 2.3;
@@ -571,6 +591,11 @@ funcs.graph.EvilPrincessMulti = (unitClass, HPrate) => {
             if(HPrate < 0.51) return 1.7;
             if(HPrate < 0.71) return 1.4;
             if(HPrate < 0.91) return 1.2;
+        }
+    }
+    if("HPremMul" in skill) {
+        for(const [ border, mul ] of skill.HPremMul) {
+            if(HPrate < border) return mul;
         }
     }
     return 1.0;
@@ -706,11 +731,14 @@ funcs.graph.SetChart = () => {
     */
     
     graph.legend = graph.chart.children.push(am5.Legend.new(graph.root, {
-        width: 270
+        width: 280
+        , height: am5.p100
         , paddingTop: 30
         , paddingLeft: 15
         , verticalScrollbar: am5.Scrollbar.new(graph.root, {
             orientation: "vertical"
+            , scale: 0.95
+            , dx: 30
         })
     }));
     graph.legend.itemContainers.template.events.on("click", e => {
@@ -757,6 +785,7 @@ funcs.graph.SetChart = () => {
     graph.legend.valueLabels.template.setAll({
         width: am5.p100
         , textAlign: "right"
+        , marginRight: 10
     });
     
     // レスポンシブ設定
@@ -766,7 +795,8 @@ funcs.graph.SetChart = () => {
         , applying: () => {
             graph.chart.set("layout", graph.root.verticalLayout);
             graph.legend.setAll({
-                width: null
+                width: am5.p100
+                , height: null
                 , paddingTop: 0
                 , paddingLeft: 0
                 , verticalScrollbar: null
@@ -778,11 +808,14 @@ funcs.graph.SetChart = () => {
         , removing: () => {
             graph.chart.set("layout", graph.root.horizontalLayout);
             graph.legend.setAll({
-                width: 270
+                width: 280
+                , height: am5.p100
                 , paddingTop: 30
                 , paddingLeft: 15
                 , verticalScrollbar: am5.Scrollbar.new(graph.root, {
                     orientation: "vertical"
+                    , scale: 0.95
+                    , dx: 30
                 })
             });
             const height = Math.min(window.screen.height, window.innerHeight);

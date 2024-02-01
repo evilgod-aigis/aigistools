@@ -285,7 +285,7 @@ funcs.createHTML.modal.AddSkill = (type, index) => {
                 onchange="funcs.createHTML.modal.ToggleActive(this)"
             >
             <span class="inactive">
-                <label style="margin-left: 10px;" class="tooltip-ts" data-tippy-content="0以上">
+                <label class="tooltip-ts" data-tippy-content="0以上">
                     <span class="reqTerm">
                         倍率
                     </span>
@@ -299,6 +299,56 @@ funcs.createHTML.modal.AddSkill = (type, index) => {
                 </label>
             </span>
         </div>
+        <!--敵HP-->
+        <div class="box">
+            <span
+                class="tooltip-ts"
+                data-tippy-content="\
+                    敵の残りHPで攻撃に倍率が乗るもの<br>\
+                    イビルプリンセス系は自動的に反映されるので入力不要<br>\
+                    「HP[%]以下」で同じものがあれば「倍率」の高いほうを採用"
+            >
+                <label for="check_modalHPremMul-${index}-${nSet}">
+                    敵HP
+                </label>
+                <input
+                    type="checkbox"
+                    id="check_modalHPremMul-${index}-${nSet}"
+                    class="check_modalHPremMul"
+                    onchange="funcs.createHTML.modal.ToggleActive(this, 1)"
+                >
+            </span>
+            <table class="inactive" style="display:inline-table; text-align: center;">
+                <tbody>
+                    <tr><td>HP[%]以下</td><td>倍率</td><td></td></tr>
+                    <tr>
+                        <td>
+                            <label class="tooltip-ts" data-tippy-content="0～100%">
+                                <span class="reqTerm"></span>
+                                <input
+                                    type="number"
+                                    class="modalHPremMul-border reqInput"
+                                    onchange="funcs.LimitNum_int(this, 0, 100)"
+                                    disabled
+                                >
+                            </label>
+                        </td>
+                        <td>
+                            <label style="margin-left: 10px;" class="tooltip-ts" data-tippy-content="0以上">
+                                <span class="reqTerm"></span>
+                                <input
+                                    type="number"
+                                    class="modalHPremMul-mul reqInput"
+                                    onchange="funcs.LimitNum_float(this, 0)"
+                                    disabled
+                                >
+                            </label>
+                        </td>
+                        <td><button type="button" style="margin-left: 5px;" onclick="funcs.createHTML.modal.AddHPremMul(this)">追加</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     `;
     
@@ -310,6 +360,35 @@ funcs.createHTML.modal.AddSkill = (type, index) => {
         , allowHTML: true
         , maxWidth: "1000px"
     });
+}
+// 入力エリア追加(敵HP残量)
+funcs.createHTML.modal.AddHPremMul = thisElem => {
+    const HPremMulTbody = thisElem.closest("tbody");
+    const newTr = document.createElement("tr");
+    newTr.innerHTML = `
+        <td>
+            <label class="tooltip-ts" data-tippy-content="0～100%">
+                <span class="reqTerm reqMark"></span>
+                <input
+                    type="number"
+                    class="modalHPremMul-border reqInput"
+                    onchange="funcs.LimitNum_int(this, 0, 100)"
+                >
+            </label>
+        </td>
+        <td>
+            <label style="margin-left: 10px;" class="tooltip-ts" data-tippy-content="0以上">
+                <span class="reqTerm reqMark"></span>
+                <input
+                    type="number"
+                    class="modalHPremMul-mul reqInput"
+                    onchange="funcs.LimitNum_float(this, 0)"
+                >
+            </label>
+        </td>`;
+    newTr.appendChild(thisElem);
+    HPremMulTbody.appendChild(newTr);
+    funcs.createHTML.modal.AddEvent_deactivate(newTr);
 }
 
 // スキルについて、他方を強制的にアクティブにする

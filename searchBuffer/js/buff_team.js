@@ -1515,6 +1515,16 @@ buff.team = [
         , target: { season: [ "学園" ] }
     }
     , {
+        name: "キャロット/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒前"
+        , stats: { hp: "+7%" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
+        name: "キャロット/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒後"
+        , stats: { hp: "+10%" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
         name: "シャオ", rarity: "金", cl: "アーチャー", AW: "覚醒後"
         , stats: { hp: "+15%" }
         , target: { cl: [ "前衛戦術家" ] }

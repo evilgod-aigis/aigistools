@@ -1340,7 +1340,6 @@ funcs.graph.FlowSub = (isThinned, flow, index, buffTypes, buffers) => {
                             }
                             , next: obj.next
                         };
-                        data[id].skill_arr.push(skill);
                         if("target" in obj) {
                             skill.uncorr.HPred = obj.uncorr.HPred / 100.0;
                             skill.corr.HPred = obj.uncorr.HPred / 100.0;
@@ -1354,6 +1353,8 @@ funcs.graph.FlowSub = (isThinned, flow, index, buffTypes, buffers) => {
                                 skill.isLinked = num.linkedHP.use;
                             }
                         }
+                        if("HPremMul" in obj) skill.HPremMul = obj.HPremMul;
+                        data[id].skill_arr.push(skill);
                         if(index === 0) {
                             data[id].skill = skill;
                             data[id].left.skill = Infinity;
@@ -1677,15 +1678,15 @@ funcs.graph.FlowSub = (isThinned, flow, index, buffTypes, buffers) => {
         const prevHP = HP.main.now;
         let mul = 1.0;
         if(unit.skill.isAttracted) {    // 引き付け(敵)
-            mul = funcs.graph.EvilPrincessMulti(unit.unitClass, HP.main.ratio("now"));
+            mul = funcs.graph.HPremainMulti(unit.unitClass, unit.skill, HP.main.ratio("now"));
             _.forEach(Array(unit.skill.simult), () => 
                 HP.main.now -= Math.max(1, Math.floor(HP.main.now * unit.skill.corr.HPred * mul))
             );
         } else {                        // 他
-            mul = funcs.graph.EvilPrincessMulti(unit.unitClass, HP.main.ratio("now"));
+            mul = funcs.graph.HPremainMulti(unit.unitClass, unit.skill, HP.main.ratio("now"));
             HP.main.now -= Math.max(1, Math.floor(HP.main.now * unit.skill.corr.HPred * mul));
             if(unit.skill.isLinked && HP.linked.now > 0) {  // HPリンクあり
-                mul = funcs.graph.EvilPrincessMulti(unit.unitClass, HP.linked.ratio());
+                mul = funcs.graph.HPremainMulti(unit.unitClass, unit.skill, HP.linked.ratio());
                 const damage = Math.max(1, Math.floor(HP.linked.now * unit.skill.corr.HPred * mul));
                 if("simult" in unit.skill) HP.main.now -= damage * Math.min(num.linkedHP.value2, unit.skill.simult);
                 else HP.main.now -= damage * num.linkedHP.value2;

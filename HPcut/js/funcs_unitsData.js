@@ -91,6 +91,12 @@ funcs.unitsData.AddUnit = type => {
                 obj.dmgMul.mul = Number(elem.getElementsByClassName("modalDmgMul")[0].value);
                 obj.dmgMul.target = elem.getElementsByClassName("modalDmgMulTarget")[0].value;
             }
+            if(elem.getElementsByClassName("check_modalHPremMul")[0].checked) {
+                const borders = elem.getElementsByClassName("modalHPremMul-border");
+                const muls = elem.getElementsByClassName("modalHPremMul-mul");
+                const arr = _.map(borders, (border, i) => [ Number(border.value) / 100.0, Number(muls[i].value) ]);
+                obj.HPremMul = _.uniqBy(_.orderBy(arr, [0, 1], ["asc", "desc"]), 0);
+            }
             if(obj.next < 0) {
                 obj.next = i + 1;
                 inputs.skillInfo[state].push({CT: Infinity, dur: Infinity, next: i + 1});
@@ -156,6 +162,7 @@ funcs.unitsData.AddUnit = type => {
                 obj.dmgMul.mul = skillInfo.dmgMul.mul;
                 obj.dmgMul.target = skillInfo.dmgMul.target;
             }
+            if("HPremMul" in skillInfo) obj.HPremMul = skillInfo.HPremMul;
         });
     });
     funcs.unitsData.SetBufferInfo(newUnitData);    

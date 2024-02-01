@@ -60,6 +60,30 @@ lists.units.onSkillAct.list = [
     , {
         id: null, hidden: false
         , unitInfo: {
+            unitName: "恋の親衛隊シャディア", deployType: "近接型", rarity: "黒"
+            , unitClass: { selected: "魔王親衛隊系", options: [ "魔王親衛隊系", "アビスレイダー" ] }
+            , attribution: [ "人間", "魔界", "バレンタイン" ]
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: [ "女性", "魔界適応" ]
+        }
+        , skill: {
+            selected: "覚醒"
+            , detail: {
+                "覚醒": [
+                    {
+                        target: "全敵"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 50, dur: 40, HPred: 15 }
+                        , HPremMul: [ [ 0.31, 1.5 ], [ 0.51, 1.35 ], [ 0.71, 1.2 ], [ 0.91, 1.05 ] ]
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
             unitName: "元始天尊", deployType: "近接型", rarity: "黒"
             , unitClass: { selected: "天尊系" }
             , attribution: [ "神", "飛行" ]

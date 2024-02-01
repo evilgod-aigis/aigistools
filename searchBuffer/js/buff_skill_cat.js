@@ -1111,6 +1111,18 @@ buff.skill_cat = [
         , target: { others: [ "GG持ち" ] }
     }
     , {
+        name: "シャディア/バレンタイン", rarity: "黒", cl: "魔王親衛隊", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.8" }
+        , target: { cl: [ "王子" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "シャディア/バレンタイン", rarity: "黒", cl: "魔王親衛隊", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.8" }
+        , target: { cl: [ "王子" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "ツグミ", rarity: "黒", cl: "ぬえ", AW: "覚醒前", skill: "通常"
         , stats: { draw: "(○)", redep: "30秒" }
         , target: { race: [ "妖怪" ] }
@@ -1389,6 +1401,16 @@ buff.skill_cat = [
         name: "キャロップ", rarity: "白", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.4" }
         , target: { cl: [ "ボウライダー", "アーチャー" ] }
+    }
+    , {
+        name: "キャロット/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒前", skill: "通常"
+        , stats: { range: "×1.2" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
+        name: "キャロット/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒後", skill: "通常"
+        , stats: { range: "×1.2" }
+        , target: { season: [ "バレンタイン" ] }
     }
     , {
         name: "テュト/クリスマス", rarity: "黒", cl: "メイジ", AW: "覚醒前", skill: "通常"

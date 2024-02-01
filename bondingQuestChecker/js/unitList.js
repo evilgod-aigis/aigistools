@@ -1310,8 +1310,11 @@ const unitList = [
     , { id: 0x0505, implDate: "2024/01/25", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "雪娘", name: "しづり", fullName: "冬姫しづり" }
     , { id: 0x0506, implDate: "2024/01/25", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "rear", class: "発明家", name: "レクテ", fullName: "魔電流の発明家レクテ" }
     , { id: 0x0507, implDate: "2024/01/25", implDate_bq: null        , obtain: "sp", rarity: "b" , depType: "rear", class: "ウィッチ", name: "アンジェラ", fullName: "王国の魔女アンジェラ" }
-    // , { id: 0x0508, implDate: "2024/02/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "デモンルーン", name: "ちびエスネア", fullName: "ちびエスネア" }
-    // , { id: 0x0509, implDate: "2024/02/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "デモンルーン", name: "ちびエフネ", fullName: "ちびエフネ" }
+    , { id: 0x0508, implDate: "2024/02/01", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "魔王親衛隊", name: "シャディア/バレンタイン", fullName: "恋の親衛隊シャディア" }
+    , { id: 0x0509, implDate: "2024/02/01", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "アーチャー", name: "キャロット/バレンタイン", fullName: "ハートの射手キャロップ" }
+    , { id: 0x050a, implDate: "2024/02/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "デモンルーン", name: "ちびエスネア", fullName: "ちびエスネア" }
+    , { id: 0x050b, implDate: "2024/02/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "デモンルーン", name: "ちびエフネ", fullName: "ちびエフネ" }
+    // , { id: 0x050, implDate: "2024/02/15", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "rear", class: "ダンサー", name: "ワルツ/バレンタイン", fullName: "恋情の踊り子ワルツ" }
     
     
     /*

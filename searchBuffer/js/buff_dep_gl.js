@@ -948,6 +948,16 @@ buff.dep_gl = [
         , target: { season: [ "温泉" ] }
     }
     , {
+        name: "キャロット/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒前"
+        , stats: { atk: "+3%", def: "+3%" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "キャロット/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒後"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
         name: "(下級)メイジ", cl: "メイジ", AW: "CC前"
         , stats: { atk: "+10%" }
         , target: { others: [ "魔術師" ] }
@@ -1367,6 +1377,12 @@ buff.dep_gl = [
                 , "対魔忍 自然【対魔忍】"
             ]
         }
+    }
+    , {
+        name: "恋の応援団（霊）", rarity: "トークン", AW: "覚醒後"
+        , stats: { atk: "+30%", def: "+30%" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "シャディア/バレンタイン", "分類未確認" ]
     }
 ];
 
