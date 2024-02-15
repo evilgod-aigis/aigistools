@@ -1315,7 +1315,13 @@ const unitList = [
     , { id: 0x050a, implDate: "2024/02/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "デモンルーン", name: "ちびエスネア", fullName: "ちびエスネア" }
     , { id: 0x050b, implDate: "2024/02/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "デモンルーン", name: "ちびエフネ", fullName: "ちびエフネ" }
     , { id: 0x050c, implDate: "2024/02/08", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "天狗", name: "ちびグレン", fullName: "ちびグレン", male: 1 }
-    // , { id: 0x050, implDate: "2024/02/15", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "rear", class: "ダンサー", name: "ワルツ/バレンタイン", fullName: "恋情の踊り子ワルツ" }
+    , { id: 0x050d, implDate: "2024/02/15", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "rear", class: "ダンサー", name: "ワルツ/バレンタイン", fullName: "恋情の踊り子ワルツ" }
+    , { id: 0x050e, implDate: "2024/02/15", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ぬりかべ", name: "カゴメ", fullName: "ぬりかべカゴメ" }
+    , { id: 0x050f, implDate: "2024/02/15", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "処刑人", name: "ルイゼット", fullName: "緋憶の断罪者ルイゼット" }
+    , { id: 0x0510, implDate: "2024/02/15", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "衛士", name: "ダルティエ", fullName: "萌芽の衛者ダルティエ" }
+    , { id: 0x0511, implDate: "2024/02/15", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "ガンスリンガー", name: "シルヴィーナ", fullName: "麗しき銀銃シルヴィーナ" }
+    , { id: 0x0512, implDate: "2024/02/15", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "武侠", name: "ジンレイ", fullName: "暗天孤星ジンレイ" }
+    
     
     
     /*

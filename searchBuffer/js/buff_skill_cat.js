@@ -1276,6 +1276,18 @@ buff.skill_cat = [
         , target: { others: [ "深海" ] }
     }
     , {
+        name: "カゴメ", rarity: "黒", cl: "ぬりかべ", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.5" }
+        , target: { race: [ "妖怪" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "カゴメ", rarity: "黒", cl: "ぬりかべ", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.5" }
+        , target: { race: [ "妖怪" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "カザキリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.1" }
         , target: { depType: [ "近接" ] }
@@ -1659,6 +1671,24 @@ buff.skill_cat = [
         , stats: { atk: "×1.1", def: "×1.1" }
         , target: { season: [ "クリスマス" ] }
         , note: "永続"
+    }
+    , {
+        name: "ワルツ/バレンタイン", rarity: "白", cl: "ダンサー", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "バレンタイン" ] }
+        ]
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
+        name: "ワルツ/バレンタイン", rarity: "白", cl: "ダンサー", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "バレンタイン" ] }
+        ]
+        , note: [ "範囲", "分類未確認" ]
     }
     , {
         name: "ナターリエ", rarity: "金", cl: "ダンサー", AW: "覚醒前", skill: "通常"
@@ -2091,6 +2121,12 @@ buff.skill_cat = [
         name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×2.0" }
         , target: { cl: [ "ダーク王子" ] }
+    }
+    , {
+        name: "シルヴィーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , target: { others: [ "銃士" ] }
+        , note: "分類未確認"
     }
     , {
         name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒後", skill: "覚醒"

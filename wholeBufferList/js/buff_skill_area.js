@@ -252,6 +252,11 @@ buff.skill_area = [
         , stats: { atk: "×1.15" }
     }
     , {
+        name: "ダルティエ", rarity: "白", cl: "衛士", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.4" }
+        , note: "分類未確認"
+    }
+    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2" }
         , note: "分類未確認"
@@ -441,6 +446,10 @@ buff.skill_area = [
     , {
         name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+20%" }
+    }
+    , {
+        name: "ワルツ/バレンタイン", rarity: "白", cl: "ダンサー", AW: "覚醒後", skill: "覚醒"
+        , stats: { eva: "50%" }
     }
     , {
         name: "アーリー", rarity: "白", cl: "クロノウィッチ", AW: "覚醒前", skill: "通常"

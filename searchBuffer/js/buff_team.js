@@ -1405,6 +1405,16 @@ buff.team = [
         , target: { cl: [ "戦巫女", "シャーマン", "陰陽師", "符術士" ] }
     }
     , {
+        name: "ジンレイ", rarity: "黒", cl: "武侠", AW: "覚醒前"
+        , stats: { atk: "+5%" }
+        , target: { home: [ "華の国" ] }
+    }
+    , {
+        name: "ジンレイ", rarity: "黒", cl: "武侠", AW: "覚醒後"
+        , stats: { atk: "+10%" }
+        , target: { home: [ "華の国" ] }
+    }
+    , {
         name: "フェイロン", rarity: "白", cl: "武侠", AW: "覚醒後"
         , stats: { hp: "+5%" }
         , target: { home: [ "華の国" ] }
@@ -1802,6 +1812,11 @@ buff.team = [
         , target: { season: [ "クリスマス" ] }
     }
     , {
+        name: "ワルツ/バレンタイン", rarity: "白", cl: "ダンサー", AW: "覚醒後"
+        , stats: { atk: "+7%", cost: "-1" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
         name: "ナターリエ", rarity: "金", cl: "ダンサー", AW: "覚醒後"
         , stats: { cost: "-1" }
         , target: { home: [ "白の帝国" ] }
@@ -2185,6 +2200,14 @@ buff.team = [
         name: "パラベル", rarity: "白", cl: "ガンスリンガー", AW: "覚醒後"
         , stats: { atk: "+7%" }
         , target: { others: [ "銃士" ] }
+    }
+    , {
+        name: "シルヴィーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒後"
+        , stats: { hp: "+5%" }
+        , target: [
+            { sex: [ "男性" ] }
+            , { others: [ "銃士" ] }
+        ]
     }
     , {
         name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒後"

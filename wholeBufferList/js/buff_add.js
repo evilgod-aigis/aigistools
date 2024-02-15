@@ -281,6 +281,21 @@ buff.add = [
         , note: [ "範囲", "永続" ]
     }
     , {
+        name: "ワルツ/バレンタイン", rarity: "白", cl: "ダンサー", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "*7", def: "*7" }
+        , note: "範囲"
+    }
+    , {
+        name: "ワルツ/バレンタイン", rarity: "白", cl: "ダンサー", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "*7", def: "*7" }
+        , note: "範囲"
+    }
+    , {
+        name: "ワルツ/バレンタイン", rarity: "白", cl: "ダンサー", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "*10", def: "*10" }
+        , note: "範囲"
+    }
+    , {
         name: "ナターリエ", rarity: "金", cl: "ダンサー", AW: "覚醒前", skill: "通常"
         , stats: { atk: "*10", def: "*10" }
         , note: "範囲"

@@ -23,6 +23,7 @@ lists.selfBuff.rWT = [
     , { id: null, buffer: "帝国魔術師イルマ", value: 50 }
     , { id: null, buffer: "炎のサンタ召喚士ソラノ", value: 40 }
     , { id: null, buffer: "甘美な踊り子マーニー", value: 60 }
+    , { id: null, buffer: "恋情の踊り子ワルツ", value: 30 }
     , { id: null, buffer: "恋の応援団シャルキー", value: 70 }
     , { id: null, buffer: "お祭り夕涼みココロ", value: 50 }
     , { id: null, buffer: "氷霊応援団ユキヒメ", value: 60 }
@@ -42,6 +43,7 @@ lists.selfBuff.rCT = [
     , { id: null, buffer: "天魔天狗", value: 45 }
     , { id: null, buffer: "オランピア", value: 45 }
     , { id: null, buffer: "アーセナルドール", value: 45 }
+    , { id: null, buffer: "チーフコンスタブル", value: 40 }
     , { id: null, buffer: "ラピッドシューター", value: 45 }
     , { id: null, buffer: "ネプチューン", value: 45 }
     , { id: null, buffer: "悟得陰陽頭", value: 45 }

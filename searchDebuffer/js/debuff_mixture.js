@@ -1015,6 +1015,14 @@ debuff.mixture = [
         , note: "永続"
     }
     , {
+        name: "カゴメ", rarity: "黒", cl: "ぬりかべ", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            mr: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "シラヌイ/浴衣", rarity: "白", cl: "ぬりかべ", AW: "覚醒前", skill: "通常"
         , stats: {
             def: { value: "-30%", type: "global" }
@@ -1179,6 +1187,14 @@ debuff.mixture = [
             , def: { value: "-40%", type: "global" }
         }
         , domain: "global"
+    }
+    , {
+        name: "ルイゼット", rarity: "黒", cl: "処刑人", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            mr: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "エステル", rarity: "黒", cl: "メイジ", AW: "覚醒前", skill: "通常"
@@ -2341,6 +2357,22 @@ debuff.mixture = [
         }
         , domain: "area"
         , note: [ "雪娘系", "分類未確認" ]
+    }
+    , {
+        name: "シルヴィーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "シルヴィーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒後", skill: "覚醒"
