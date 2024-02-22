@@ -1321,6 +1321,7 @@ const unitList = [
     , { id: 0x0510, implDate: "2024/02/15", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "衛士", name: "ダルティエ", fullName: "萌芽の衛者ダルティエ" }
     , { id: 0x0511, implDate: "2024/02/15", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "ガンスリンガー", name: "シルヴィーナ", fullName: "麗しき銀銃シルヴィーナ" }
     , { id: 0x0512, implDate: "2024/02/15", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "武侠", name: "ジンレイ", fullName: "暗天孤星ジンレイ" }
+    , { id: 0x0513, implDate: "2024/02/22", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "サベージファイター", name: "シェラハウト", fullName: "砂漠の双刃シェラハウト" }
     
     
     

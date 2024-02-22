@@ -1435,6 +1435,16 @@ buff.team = [
         , target: { home: [ "砂漠の国" ] }
     }
     , {
+        name: "シェラハウト", rarity: "白", cl: "サベージファイター", AW: "覚醒前"
+        , stats: { hp: "+3%", def: "+3%" }
+        , target: { home: [ "砂漠の国" ] }
+    }
+    , {
+        name: "シェラハウト", rarity: "白", cl: "サベージファイター", AW: "覚醒後"
+        , stats: { hp: "+5%", def: "+5%" }
+        , target: { home: [ "砂漠の国" ] }
+    }
+    , {
         name: "ティルト", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒後"
         , stats: { hp: "+15%" }
         , target: { home: [ "白の帝国" ] }

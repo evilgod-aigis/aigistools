@@ -1279,13 +1279,11 @@ buff.skill_cat = [
         name: "カゴメ", rarity: "黒", cl: "ぬりかべ", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.5" }
         , target: { race: [ "妖怪" ] }
-        , note: "分類未確認"
     }
     , {
         name: "カゴメ", rarity: "黒", cl: "ぬりかべ", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.5" }
         , target: { race: [ "妖怪" ] }
-        , note: "分類未確認"
     }
     , {
         name: "カザキリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚醒後", skill: "覚醒"
