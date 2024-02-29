@@ -32,6 +32,29 @@ lists.units.onSkillAct.list = [
     {
         id: null, hidden: false
         , unitInfo: {
+            unitName: "ソハヤノツルギ", deployType: "近接型", rarity: "-"
+            , unitClass: { selected: "" }
+            , attribution: []
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: []
+        }
+        , skill: {
+            selected: "通常"
+            , detail: {
+                "通常": [
+                    {
+                        target: "全敵"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { WT: 1, CT: 60, dur: 5, HPred: 8 }
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
             unitName: "九尾狐カヨウ", deployType: "近接型", rarity: "黒"
             , unitClass: { selected: "妖狐絢爛", options: [ "妖狐系", "妖狐絢爛" ] }
             , attribution: [ "東の国", "妖怪" ]

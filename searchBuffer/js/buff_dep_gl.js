@@ -976,7 +976,7 @@ buff.dep_gl = [
     }
     , {
         name: "メイガスアデプト", cl: "メイジ", AW: "覚2a"
-        , stats: { atk: "+20%" }
+        , stats: { atk: "+20%", ct: "-50%" }
         , target: { others: [ "魔術師" ] }
         , note: "メイジ系"
     }
