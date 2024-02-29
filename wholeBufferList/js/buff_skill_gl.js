@@ -795,6 +795,21 @@ buff.skill_gl = [
         , stats: { eva: "50%" }
     }
     , {
+        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒後", skill: "覚醒"
+        , stats: { nul: "10%" }
+        , note: "永続"
+    }
+    , {
         name: "劉備", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.15", def: "×1.15" }
     }

@@ -277,7 +277,7 @@ debuff.mixture = [
     , {
         name: "ちびシビラ", rarity: "ちび", cl: "プリンセス", skill: "覚醒"
         , stats: {
-            atk: { value: "-20%", type: "noAttr" }
+            atk: { value: "-15%", type: "noAttr" }
         }
         , domain: "global"
     }
@@ -1020,7 +1020,7 @@ debuff.mixture = [
             mr: { value: "-30%", type: "global" }
         }
         , domain: "global"
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "シラヌイ/浴衣", rarity: "白", cl: "ぬりかべ", AW: "覚醒前", skill: "通常"
@@ -1073,24 +1073,24 @@ debuff.mixture = [
     , {
         name: "ちびアラン", rarity: "ちび", cl: "儀仗軍神", skill: "覚醒(1)"
         , stats: {
-            mr: { value: "-50%", type: "area" }
+            mr: { value: "-30%", type: "area" }
         }
         , domain: "area"
     }
     , {
         name: "ちびアラン", rarity: "ちび", cl: "儀仗軍神", skill: "覚醒(2)"
         , stats: {
-            atk: { value: "-20%", type: "noAttr" }
-            , mr: { value: "-50%", type: "area" }
+            atk: { value: "-10%", type: "noAttr" }
+            , mr: { value: "-30%", type: "area" }
         }
         , domain: "area"
     }
     , {
         name: "ちびアラン", rarity: "ちび", cl: "儀仗軍神", skill: "覚醒(3～)"
         , stats: {
-            atk: { value: "-20%", type: "noAttr" }
-            , def: { value: "-50%", type: "area" }
-            , mr: { value: "-50%", type: "area" }
+            atk: { value: "-10%", type: "noAttr" }
+            , def: { value: "-30%", type: "area" }
+            , mr: { value: "-30%", type: "area" }
         }
         , domain: "area"
     }

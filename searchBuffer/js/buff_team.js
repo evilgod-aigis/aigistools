@@ -1360,6 +1360,11 @@ buff.team = [
         ]
     }
     , {
+        name: "ロゼリン", rarity: "黒", cl: "デモンルーン", AW: "覚醒後"
+        , stats: { mr: "+5" }
+        , target: { others: [ "魔界" ] }
+    }
+    , {
         name: "ヴィアベル", rarity: "黒", cl: "アクアナイト", AW: "覚醒前"
         , stats: { def: "+5%", cost: "-1" }
         , target: { others: [ "深海" ] }
@@ -2218,6 +2223,16 @@ buff.team = [
             { sex: [ "男性" ] }
             , { others: [ "銃士" ] }
         ]
+    }
+    , {
+        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒前"
+        , stats: { atk: "+7%", cost: "-3" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒後"
+        , stats: { atk: "+10%", cost: "-5" }
+        , target: { cl: [ "王子" ] }
     }
     , {
         name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒後"

@@ -1677,7 +1677,7 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { season: [ "バレンタイン" ] }
         ]
-        , note: [ "範囲", "分類未確認" ]
+        , note: "範囲"
     }
     , {
         name: "ワルツ/バレンタイン", rarity: "白", cl: "ダンサー", AW: "覚醒後", skill: "通常"
@@ -1686,7 +1686,7 @@ buff.skill_cat = [
             { cl: [ "王子" ] }
             , { season: [ "バレンタイン" ] }
         ]
-        , note: [ "範囲", "分類未確認" ]
+        , note: "範囲"
     }
     , {
         name: "ナターリエ", rarity: "金", cl: "ダンサー", AW: "覚醒前", skill: "通常"
@@ -2234,6 +2234,12 @@ buff.skill_cat = [
         , stats: { hp: "+20%", def: "×1.2" }
         , target: { others: [ "機械" ] }
         , note: "永続"
+    }
+    , {
+        name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.8" }
+        , target: { depType: [ "近接" ] }
+        , note: "分類未確認"
     }
     , {
         name: "帝国軍旗", rarity: "金", cl: "帝国軍旗", skill: "通常"

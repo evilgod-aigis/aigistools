@@ -779,6 +779,10 @@ buff.skill_area = [
         , stats: { eva: "30%" }
     }
     , {
+        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒後", skill: "覚醒"
+        , stats: { range: "×1.2" }
+    }
+    , {
         name: "戦場に集う聖霊たち", rarity: "黒", cl: "支援の聖霊", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3", rege: [ "100/秒", "50/15f" ] }
     }
@@ -806,6 +810,15 @@ buff.skill_area = [
     , {
         name: "イエラ", rarity: "白", cl: "スカイヒーラー", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: { atk: "×1.2", def: "×1.2" }
+    }
+    , {
+        name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒後", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
+        name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒後", skill: "覚醒"
+        , stats: { abn: "-100%" }
+        , note: "永続"
     }
     , {
         name: "迷い家", rarity: "金", cl: "迷い家", skill: "通常"

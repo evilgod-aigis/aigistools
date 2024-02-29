@@ -498,6 +498,12 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減", "魔法-50%(範囲)" ]
     }
     , {
+        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "属性不問?-30%", "分類未確認" ]
+    }
+    , {
         name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒前", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"

@@ -281,6 +281,11 @@ buff.own = [
         , stats: { hp: "+1%" }
         , target: { depType: [ "遠距離" ] }
     }
+    , {
+        name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒後"
+        , stats: { atk: "+1%", def: "+1%" }
+        , target: { home: [ "白の帝国" ] }
+    }
 ];
 
 /*
