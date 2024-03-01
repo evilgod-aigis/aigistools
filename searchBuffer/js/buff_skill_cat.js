@@ -1562,6 +1562,11 @@ buff.skill_cat = [
         , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
     }
     , {
+        name: "ちびイリオス", rarity: "ちび", cl: "後衛戦術家", skill: "通常"
+        , stats: { atk: "×1.4", def: "×1.4" }
+        , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
+    }
+    , {
         name: "ミコト/水着", rarity: "黒", cl: "陰陽師", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.4" }
         , target: { season: [ "サマー" ] }
@@ -2121,7 +2126,7 @@ buff.skill_cat = [
         , target: { cl: [ "ダーク王子" ] }
     }
     , {
-        name: "シルヴィーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒後", skill: "覚醒"
+        name: "シルヴァーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.3" }
         , target: { others: [ "銃士" ] }
         , note: "分類未確認"

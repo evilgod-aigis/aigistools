@@ -1319,13 +1319,15 @@ const unitList = [
     , { id: 0x050e, implDate: "2024/02/15", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ぬりかべ", name: "カゴメ", fullName: "ぬりかべカゴメ" }
     , { id: 0x050f, implDate: "2024/02/15", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "処刑人", name: "ルイゼット", fullName: "緋憶の断罪者ルイゼット" }
     , { id: 0x0510, implDate: "2024/02/15", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "衛士", name: "ダルティエ", fullName: "萌芽の衛者ダルティエ" }
-    , { id: 0x0511, implDate: "2024/02/15", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "ガンスリンガー", name: "シルヴィーナ", fullName: "麗しき銀銃シルヴィーナ" }
+    , { id: 0x0511, implDate: "2024/02/15", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "ガンスリンガー", name: "シルヴァーナ", fullName: "麗しき銀銃シルヴァーナ" }
     , { id: 0x0512, implDate: "2024/02/15", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "武侠", name: "ジンレイ", fullName: "暗天孤星ジンレイ" }
     , { id: 0x0513, implDate: "2024/02/22", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "サベージファイター", name: "シェラハウト", fullName: "砂漠の双刃シェラハウト" }
     , { id: 0x0514, implDate: "2024/02/29", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "アイギス神殿", name: "アイギス神殿", fullName: "アイギス神殿", collabo: 1 }
     , { id: 0x0515, implDate: "2024/02/29", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "百腕娘【モンスター娘TD】", name: "ラキオン", fullName: "ヘカトンケイル娘ラキオン", collabo: 1 }
     , { id: 0x0516, implDate: "2024/02/29", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "デモンルーン", name: "ロゼリン", fullName: "深紅の廻魔ロゼリン" }
     , { id: 0x0517, implDate: "2024/02/29", implDate_bq: null        , obtain: "sp", rarity: "b" , depType: "both", class: "帝国アイドル", name: "ツキコ★トゥーダ", fullName: "帝国歌姫ツキコ★トゥーダ" }
+    , { id: 0x0518, implDate: "2024/03/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "後衛戦術家", name: "ちびイリオス", fullName: "ちびイリオス" }
+    , { id: 0x0519, implDate: "2024/03/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ロード", name: "ちびメアリ", fullName: "ちびメアリ" }
     
     
     

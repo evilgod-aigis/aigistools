@@ -2359,7 +2359,7 @@ debuff.mixture = [
         , note: [ "雪娘系", "分類未確認" ]
     }
     , {
-        name: "シルヴィーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒前", skill: "通常"
+        name: "シルヴァーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒前", skill: "通常"
         , stats: {
             def: { value: "-20%", type: "area" }
         }
@@ -2367,7 +2367,7 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
-        name: "シルヴィーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒後", skill: "通常"
+        name: "シルヴァーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒後", skill: "通常"
         , stats: {
             def: { value: "-20%", type: "area" }
         }

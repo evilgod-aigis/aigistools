@@ -1066,6 +1066,11 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "ちびイリオス", rarity: "ちび", cl: "後衛戦術家"
+        , stats: { atk: "+10%" }
+        , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
+    }
+    , {
         name: "リノ", rarity: "金", cl: "サモナー", AW: "覚醒後"
         , stats: { atk: "+10%" }
         , target: { cl: [ "サモナー" ] }
