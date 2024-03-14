@@ -122,6 +122,16 @@ buff.team = [
         , note: "貫通攻撃(16%)付与"
     }
     , {
+        name: "シラハユリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚醒前"
+        , stats: { other: "" }
+        , note: "癒しの奇跡(300)付与"
+    }
+    , {
+        name: "シラハユリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚醒後"
+        , stats: { other: "" }
+        , note: "癒しの奇跡(600)付与"
+    }
+    , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後"
         , stats: { def: "+7%" }
     }

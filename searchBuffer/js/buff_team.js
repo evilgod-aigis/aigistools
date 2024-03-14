@@ -1405,6 +1405,11 @@ buff.team = [
         , note: "追撃(24%)付与"
     }
     , {
+        name: "シラハユリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚醒後"
+        , stats: { atk: "+10%", def: "-10%" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
         name: "コウメ", rarity: "白", cl: "戦巫女", AW: "覚醒後"
         , stats: { atk: "+7%" }
         , target: { cl: [ "戦巫女", "シャーマン", "陰陽師", "符術士" ] }

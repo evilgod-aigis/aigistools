@@ -868,7 +868,7 @@ const unitList = [
     , { id: 0x0351, implDate: "2021/03/04", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ダンサー", name: "ちびミヤビ", fullName: "ちびミヤビ" }
     , { id: 0x0352, implDate: "2021/03/18", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "メイド", name: "サクラ", fullName: "東国武装女中サクラ" }
     , { id: 0x0353, implDate: "2021/03/25", implDate_bq: "2022/01/13", obtain: "sh", rarity: "b" , depType: "rear", class: "エレメンタラー", name: "ニーヴ", fullName: "混沌霊使いニーヴ" }
-    , { id: 0x0354, implDate: "2021/04/01", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "テンプルナイト", name: "アレクシア", fullName: "背教の騎士アレクシア" }
+    , { id: 0x0354, implDate: "2021/04/01", implDate_bq: "2024/03/14", obtain: "ev", rarity: "p" , depType: "van" , class: "テンプルナイト", name: "アレクシア", fullName: "背教の騎士アレクシア" }
     , { id: 0x0355, implDate: "2021/04/01", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "ウィッチ", name: "リエーフ", fullName: "百獣の魔術師リエーフ" }
     , { id: 0x0356, implDate: "2021/04/01", implDate_bq: null        , obtain: "sh", rarity: "g" , depType: "van" , class: "ソルジャー", name: "アビー", fullName: "新米兵士アビー" }
     , { id: 0x0357, implDate: "2021/04/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ドラゴンプリンセス", name: "ちびエルドラ", fullName: "ちびエルドラ" }
@@ -1062,7 +1062,7 @@ const unitList = [
     , { id: 0x0411, implDate: "2022/08/18", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "忍者", name: "ウルスラ", fullName: "帝国忍者ウルスラ" }
     , { id: 0x0412, implDate: "2022/08/18", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "デーモンロード", name: "アブグルント", fullName: "深潭の魔将アブグルント" }
     , { id: 0x0413, implDate: "2022/08/18", implDate_bq: null        , obtain: "tr", rarity: "p" , depType: "van" , class: "鍛冶職人", name: "グラティア", fullName: "帝国鍛冶師グラティア" }
-    , { id: 0x0414, implDate: "2022/09/01", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "ロード", name: "リンクス", fullName: "金獣の領主リンクス" }
+    , { id: 0x0414, implDate: "2022/09/01", implDate_bq: "2024/03/14", obtain: "sh", rarity: "b" , depType: "rear", class: "ロード", name: "リンクス", fullName: "金獣の領主リンクス" }
     , { id: 0x0415, implDate: "2022/09/01", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "both", class: "スカイシューター", name: "ラシティ", fullName: "黒翼の精鋭射手ラシティ" }
     , { id: 0x0416, implDate: "2022/09/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "前衛戦術家", name: "ちびルヴェア", fullName: "ちびルヴェア" }
     , { id: 0x0417, implDate: "2022/09/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "スチームナイト", name: "ちびイザムバード", fullName: "ちびイザムバード" }
@@ -1328,6 +1328,10 @@ const unitList = [
     , { id: 0x0517, implDate: "2024/02/29", implDate_bq: null        , obtain: "sp", rarity: "b" , depType: "both", class: "帝国アイドル", name: "ツキコ★トゥーダ", fullName: "帝国歌姫ツキコ★トゥーダ" }
     , { id: 0x0518, implDate: "2024/03/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "後衛戦術家", name: "ちびイリオス", fullName: "ちびイリオス" }
     , { id: 0x0519, implDate: "2024/03/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ロード", name: "ちびメアリ", fullName: "ちびメアリ" }
+    , { id: 0x051a, implDate: "2024/03/14", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "" , class: "王国民的アイドル", name: "女王子/アイドル", fullName: "王国民的アイドル女王子" }
+    , { id: 0x051b, implDate: "2024/03/14", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "霊刀つくもがみ", name: "シラハユリ", fullName: "鉄刀付喪神シラハユリ" }
+    , { id: 0x051c, implDate: "2024/03/14", implDate_bq: null        , obtain: "tr", rarity: "p" , depType: "van" , class: "シーソルジャー", name: "カウリオ", fullName: "逆戟の勇士カウリオ" }
+    , { id: 0x051d, implDate: "2024/03/14", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ローグ", name: "ちびヴィクター", fullName: "ちびヴィクター", male: 1 }
     
     
     

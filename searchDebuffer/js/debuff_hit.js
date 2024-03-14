@@ -364,6 +364,18 @@ debuff.hit = [
         , note: "非ブロック時"
     }
     , {
+        name: "カウリオ", rarity: "白", cl: "シーソルジャー", AW: "覚醒前", skill: "通常"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "カウリオ", rarity: "白", cl: "シーソルジャー", AW: "覚醒後", skill: "通常"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "スカー", rarity: "黒", cl: "シャークウォリアー"
         , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "59f"

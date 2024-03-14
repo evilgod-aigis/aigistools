@@ -154,6 +154,30 @@ buff.add = [
         , note: [ "範囲", "永続" ]
     }
     , {
+        name: "王国民的アイドル", cl: "王国民的アイドル", AW: "覚1"
+        , stats: { atk: "4%", def: "4%" }
+        , target: { sex: [ "女性" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "*7", def: "*7" }
+        , target: { sex: [ "女性" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "*7", def: "*7" }
+        , target: { sex: [ "女性" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "*2", def: "*2" }
+        , target: { sex: [ "女性" ] }
+        , note: "範囲"
+    }
+    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒前"
         , stats: { hp: "max300", atk: "max150", def: "max150" }
         , target: { cl: [ "王子" ] }

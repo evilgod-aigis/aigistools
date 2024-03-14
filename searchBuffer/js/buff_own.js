@@ -277,6 +277,11 @@ buff.own = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒後"
+        , stats: { hp: "+1%" }
+        , target: { sex: [ "女性" ] }
+    }
+    , {
         name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒後"
         , stats: { hp: "+1%" }
         , target: { depType: [ "遠距離" ] }

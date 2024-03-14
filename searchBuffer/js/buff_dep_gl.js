@@ -938,6 +938,21 @@ buff.dep_gl = [
         , note: "神話の継承者系"
     }
     , {
+        name: "王国民的アイドル", cl: "王国民的アイドル", AW: "覚1"
+        , stats: { cost: "+3" }
+        , target: { sex: [ "男性" ] }
+    }
+    , {
+        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒後"
+        , stats: { atk: "+5%" }
+        , target: { sex: [ "女性" ] }
+    }
+    , {
+        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒後"
+        , stats: { def: "+10%" }
+        , target: { sex: [ "男性" ] }
+    }
+    , {
         name: "アイギス像", rarity: "金", cl: "アイギス像"
         , stats: { hp: "+3%", atk: "+3%" }
         , target: { cl: [ "王子" ] }
