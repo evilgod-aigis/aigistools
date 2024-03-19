@@ -1328,7 +1328,7 @@ const unitList = [
     , { id: 0x0517, implDate: "2024/02/29", implDate_bq: null        , obtain: "sp", rarity: "b" , depType: "both", class: "帝国アイドル", name: "ツキコ★トゥーダ", fullName: "帝国歌姫ツキコ★トゥーダ" }
     , { id: 0x0518, implDate: "2024/03/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "後衛戦術家", name: "ちびイリオス", fullName: "ちびイリオス" }
     , { id: 0x0519, implDate: "2024/03/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ロード", name: "ちびメアリ", fullName: "ちびメアリ" }
-    , { id: 0x051a, implDate: "2024/03/14", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "" , class: "王国民的アイドル", name: "女王子/アイドル", fullName: "王国民的アイドル女王子" }
+    , { id: 0x051a, implDate: "2024/03/14", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "王国民的アイドル", name: "女王子/アイドル", fullName: "王国民的アイドル女王子" }
     , { id: 0x051b, implDate: "2024/03/14", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "霊刀つくもがみ", name: "シラハユリ", fullName: "鉄刀付喪神シラハユリ" }
     , { id: 0x051c, implDate: "2024/03/14", implDate_bq: null        , obtain: "tr", rarity: "p" , depType: "van" , class: "シーソルジャー", name: "カウリオ", fullName: "逆戟の勇士カウリオ" }
     , { id: 0x051d, implDate: "2024/03/14", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ローグ", name: "ちびヴィクター", fullName: "ちびヴィクター", male: 1 }
