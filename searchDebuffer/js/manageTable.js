@@ -27,7 +27,7 @@ table.rarity = [ "黒", "白", "青", "金", "ちび", "銀", "銅", "鉄", "ト
 table.AW = [ "CC前", "CC後", "CC55", "覚醒前", "覚醒後", "覚1", "覚2a", "覚2b" ];
 table.atkAttr = [ "物理", "魔法", "貫通" ];
 table.debuffType = {};
-table.debuffType.common = [ "team", "hit", "counter", "scalar", "takenDmg" ];
+table.debuffType.common = [ "team", "hit", "counter", "scalar"/*, "death"*/, "takenDmg" ];
 table.debuffType.domain = [ "area", "global" ];
 table.debuffType.type = {
     hp: {

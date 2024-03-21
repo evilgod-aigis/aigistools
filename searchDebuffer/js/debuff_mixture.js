@@ -449,6 +449,31 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "キンドライヒ", rarity: "白", cl: "モンク", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-15%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "キンドライヒ", rarity: "白", cl: "モンク", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-15%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "キンドライヒ", rarity: "白", cl: "モンク", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            stop: { value: "?f", type: "global" }
+        }
+        , domain: "global"
+        , target: { attr: [ "神獣", "魔獣", "妖獣", "獣", "獣人" ] }
+        , note: "発動時"
+    }
+    , {
         name: "ルヴェア", rarity: "白", cl: "前衛戦術家", AW: "覚醒前", skill: "通常"
         , stats: {
             def: { value: "-15%", type: "global" }
@@ -2858,6 +2883,70 @@ debuff.mixture = [
         }
         , domain: "global"
         , note: [ "英傑の塔", "発動時" ]
+    }
+    , {
+        name: "赤魂", rarity: "トークン", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "オルフィー", "永続", "分類未確認" ]
+    }
+    , {
+        name: "緑魂", rarity: "トークン", AW: "覚醒前", skill: "通常"
+        , stats: {
+            mr: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "オルフィー", "永続", "分類未確認" ]
+    }
+    , {
+        name: "大赤魂", rarity: "トークン", AW: "覚1", skill: "通常"
+        , stats: {
+            def: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "オルフィー", "永続", "分類未確認" ]
+    }
+    , {
+        name: "大緑魂", rarity: "トークン", AW: "覚1", skill: "通常"
+        , stats: {
+            mr: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "オルフィー", "永続", "分類未確認" ]
+    }
+    , {
+        name: "大赤魂", rarity: "トークン", AW: "覚2a", skill: "通常"
+        , stats: {
+            def: { value: "-45%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "オルフィー", "永続", "分類未確認" ]
+    }
+    , {
+        name: "大緑魂", rarity: "トークン", AW: "覚2a", skill: "通常"
+        , stats: {
+            mr: { value: "-45%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "オルフィー", "永続", "分類未確認" ]
+    }
+    , {
+        name: "大赤魂", rarity: "トークン", AW: "覚2b", skill: "通常"
+        , stats: {
+            def: { value: "-35%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "オルフィー", "永続", "分類未確認" ]
+    }
+    , {
+        name: "大緑魂", rarity: "トークン", AW: "覚2b", skill: "通常"
+        , stats: {
+            mr: { value: "-35%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "オルフィー", "永続", "分類未確認" ]
     }
 ];
 

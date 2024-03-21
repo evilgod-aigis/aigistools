@@ -1332,6 +1332,13 @@ const unitList = [
     , { id: 0x051b, implDate: "2024/03/14", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "霊刀つくもがみ", name: "シラハユリ", fullName: "鉄刀付喪神シラハユリ" }
     , { id: 0x051c, implDate: "2024/03/14", implDate_bq: null        , obtain: "tr", rarity: "p" , depType: "van" , class: "シーソルジャー", name: "カウリオ", fullName: "逆戟の勇士カウリオ" }
     , { id: 0x051d, implDate: "2024/03/14", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ローグ", name: "ちびヴィクター", fullName: "ちびヴィクター", male: 1 }
+    , { id: 0x051e, implDate: "2024/03/21", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "シールダー", name: "クリッペ", fullName: "帝国聖盾騎士クリッペ" }
+    , { id: 0x051f, implDate: "2024/03/21", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "ハデスシャーマン", name: "オルフィー", fullName: "冥府の巫女オルフィー" }
+    , { id: 0x0520, implDate: "2024/03/21", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "モンク", name: "キンドライヒ", fullName: "帝国猟犬キンドライヒ" }
+    , { id: 0x0521, implDate: "2024/03/21", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "ハデスソルジャー", name: "リチュエ", fullName: "冥界巡衛騎士リチュエ" }
+    , { id: 0x0522, implDate: "2024/03/21", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "メディック", name: "ジュディス", fullName: "帝国医官ジュディス" }
+    , { id: 0x0523, implDate: "2024/03/21", implDate_bq: null        , obtain: "tr", rarity: "b" , depType: "van" , class: "ヘビーアーマー", name: "ラビリス", fullName: "秩序の亜神ラビリス" }
+    
     
     
     

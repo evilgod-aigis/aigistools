@@ -1294,7 +1294,6 @@ buff.skill_cat = [
         name: "シラハユリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , target: { depType: [ "近接" ] }
-        , note: "分類未確認"
     }
     , {
         name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒後", skill: "覚醒"
@@ -1402,7 +1401,7 @@ buff.skill_cat = [
         name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.15", def: "×1.15", other: "" }
         , target: { sex: [ "女性" ] }
-        , note: [ "オート", "分類未確認" ]
+        , note: "オート"
     }
     , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒前", skill: "通常"
@@ -2256,7 +2255,6 @@ buff.skill_cat = [
         name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒後", skill: "通常"
         , stats: { def: "×1.8" }
         , target: { depType: [ "近接" ] }
-        , note: "分類未確認"
     }
     , {
         name: "帝国軍旗", rarity: "金", cl: "帝国軍旗", skill: "通常"

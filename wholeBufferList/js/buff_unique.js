@@ -454,6 +454,12 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減", "魔法-40%(範囲)" ]
     }
     , {
+        name: "クリッペ", rarity: "黒", cl: "シールダー", AW: "覚醒後", skill: "覚醒"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "属性不問-50%" ]
+    }
+    , {
         name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
@@ -501,7 +507,13 @@ buff.unique = [
         name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒前", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
-        , note: [ "区分：被ダメージ軽減", "属性不問?-30%", "分類未確認" ]
+        , note: [ "区分：被ダメージ軽減", "属性不問-30%" ]
+    }
+    , {
+        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "属性不問-30%" ]
     }
     , {
         name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒前", skill: "通常"

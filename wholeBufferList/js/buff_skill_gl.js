@@ -797,12 +797,20 @@ buff.skill_gl = [
     , {
         name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3" }
-        , note: "分類未確認"
     }
     , {
         name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.3" }
-        , note: "分類未確認"
+    }
+    , {
+        name: "ジュディス", rarity: "白", cl: "メディック", AW: "覚醒前", skill: "通常(1)"
+        , stats: { redep: "20秒" }
+        , note: [ "発動時", "死亡最後1体" ]
+    }
+    , {
+        name: "ジュディス", rarity: "白", cl: "メディック", AW: "覚醒後", skill: [ "通常(～3)", "覚醒(～3)" ]
+        , stats: { redep: "?秒" }
+        , note: [ "発動時", "死亡最後1体" ]
     }
     , {
         name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒後", skill: "覚醒"

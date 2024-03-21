@@ -257,16 +257,6 @@ buff.skill_area = [
         , note: "分類未確認"
     }
     , {
-        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒前", skill: "通常"
-        , stats: { hp: "+30%", def: "×1.3" }
-        , note: "分類未確認"
-    }
-    , {
-        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒後", skill: "通常"
-        , stats: { hp: "+30%", def: "×1.3" }
-        , note: "分類未確認"
-    }
-    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2" }
         , note: "分類未確認"
@@ -791,6 +781,11 @@ buff.skill_area = [
     , {
         name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒後", skill: "覚醒"
         , stats: { range: "×1.2" }
+    }
+    , {
+        name: "ジュディス", rarity: "白", cl: "メディック", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.4" }
+        , note: "分類未確認"
     }
     , {
         name: "戦場に集う聖霊たち", rarity: "黒", cl: "支援の聖霊", skill: "通常"
