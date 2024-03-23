@@ -5,7 +5,7 @@
         , "debuff_hit"
         , "debuff_counter"
         , "debuff_scalar"
-        //, "debuff_death"
+        , "debuff_death"
         , "debuff_takenDmg"
         , "updateHistory"
         , "createHTML"

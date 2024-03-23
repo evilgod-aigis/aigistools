@@ -1276,54 +1276,6 @@ debuff.hit = [
         , note: "ローズ"
     }
     , {
-        name: "赤魂", rarity: "トークン", AW: "覚醒前", skill: "通常"
-        , stats: { def: "-20%" }
-        , atkAttr: "貫通", dur: "299f"
-        , note: [ "オルフィー", "死亡時", "分類未確認" ]
-    }
-    , {
-        name: "緑魂", rarity: "トークン", AW: "覚醒前", skill: "通常"
-        , stats: { mr: "-20%" }
-        , atkAttr: "貫通", dur: "299f"
-        , note: [ "オルフィー", "死亡時", "分類未確認" ]
-    }
-    , {
-        name: "大赤魂", rarity: "トークン", AW: "覚1", skill: "通常"
-        , stats: { def: "-25%" }
-        , atkAttr: "貫通", dur: "599f"
-        , note: [ "オルフィー", "死亡時", "分類未確認" ]
-    }
-    , {
-        name: "大緑魂", rarity: "トークン", AW: "覚1", skill: "通常"
-        , stats: { mr: "-25%" }
-        , atkAttr: "貫通", dur: "599f"
-        , note: [ "オルフィー", "死亡時", "分類未確認" ]
-    }
-    , {
-        name: "大赤魂", rarity: "トークン", AW: "覚2a", skill: "通常"
-        , stats: { def: "-45%" }
-        , atkAttr: "貫通", dur: "599f"
-        , note: [ "オルフィー", "死亡時", "分類未確認" ]
-    }
-    , {
-        name: "大緑魂", rarity: "トークン", AW: "覚2a", skill: "通常"
-        , stats: { mr: "-45%" }
-        , atkAttr: "貫通", dur: "599f"
-        , note: [ "オルフィー", "死亡時", "分類未確認" ]
-    }
-    , {
-        name: "大赤魂", rarity: "トークン", AW: "覚2b", skill: "通常"
-        , stats: { def: "-35%" }
-        , atkAttr: "貫通", dur: "899f"
-        , note: [ "オルフィー", "死亡時", "分類未確認" ]
-    }
-    , {
-        name: "大緑魂", rarity: "トークン", AW: "覚2b", skill: "通常"
-        , stats: { mr: "-35%" }
-        , atkAttr: "貫通", dur: "899f"
-        , note: [ "オルフィー", "死亡時", "分類未確認" ]
-    }
-    , {
         name: "誓いのチャペル", rarity: "トークン", AW: "覚醒後"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "9f"

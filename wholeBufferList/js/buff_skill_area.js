@@ -785,7 +785,6 @@ buff.skill_area = [
     , {
         name: "ジュディス", rarity: "白", cl: "メディック", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "×1.4" }
-        , note: "分類未確認"
     }
     , {
         name: "戦場に集う聖霊たち", rarity: "黒", cl: "支援の聖霊", skill: "通常"

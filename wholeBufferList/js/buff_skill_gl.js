@@ -809,7 +809,7 @@ buff.skill_gl = [
     }
     , {
         name: "ジュディス", rarity: "白", cl: "メディック", AW: "覚醒後", skill: [ "通常(～3)", "覚醒(～3)" ]
-        , stats: { redep: "?秒" }
+        , stats: { redep: "20秒" }
         , note: [ "発動時", "死亡最後1体" ]
     }
     , {
