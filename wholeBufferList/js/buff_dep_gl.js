@@ -293,6 +293,11 @@ buff.dep_gl = [
         , note: "深海-25%"
     }
     , {
+        name: "大祓の巫女", cl: "戦巫女", AW: "覚2a"
+        , stats: { rege: [ "60/秒", "?/?f" ] }
+        , note: "戦巫女系"
+    }
+    , {
         name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒後"
         , stats: { mr: "+5" }
     }
