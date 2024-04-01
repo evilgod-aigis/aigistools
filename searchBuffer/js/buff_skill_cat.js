@@ -1170,6 +1170,14 @@ buff.skill_cat = [
         ]
     }
     , {
+        name: "ちびアブグルント", rarity: "ちび", cl: "デーモンロード", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.4" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { race: [ "デーモン系" ] }
+        ]
+    }
+    , {
         name: "オーガスタ/バレンタイン", rarity: "黒", cl: "料理人", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: { sex: [ "女性" ] }

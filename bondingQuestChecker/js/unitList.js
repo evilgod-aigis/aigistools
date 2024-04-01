@@ -1338,6 +1338,8 @@ const unitList = [
     , { id: 0x0521, implDate: "2024/03/21", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "ハデスソルジャー", name: "リチュエ", fullName: "冥界巡衛騎士リチュエ" }
     , { id: 0x0522, implDate: "2024/03/21", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "メディック", name: "ジュディス", fullName: "帝国医官ジュディス" }
     , { id: 0x0523, implDate: "2024/03/21", implDate_bq: null        , obtain: "tr", rarity: "b" , depType: "van" , class: "ヘビーアーマー", name: "ラビリス", fullName: "秩序の亜神ラビリス" }
+    , { id: 0x0524, implDate: "2024/04/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "デーモンロード", name: "ちびアブグルント", fullName: "ちびアブグルント" }
+    , { id: 0x0525, implDate: "2024/04/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ヒーラー", name: "ちびアウローラ", fullName: "ちびアウローラ" }
     
     
     

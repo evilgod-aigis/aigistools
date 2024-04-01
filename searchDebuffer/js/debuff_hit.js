@@ -549,6 +549,12 @@ debuff.hit = [
         , note: "永続"
     }
     , {
+        name: "ディアボロス", rarity: "金", cl: "ディアボロス"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "119f"
+        , note: "死亡時"
+    }
+    , {
         name: "ポミエ/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "59f"

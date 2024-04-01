@@ -349,6 +349,10 @@ buff.skill_area = [
         , stats: { abn: "-100%" }
     }
     , {
+        name: "ちびアウローラ", rarity: "ちび", cl: "ヒーラー", skill: "通常"
+        , stats: { mr: "×2.0" }
+    }
+    , {
         name: "アンジェラ", rarity: "黒", cl: "ウィッチ", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.3" }
         , note: "分類未確認"
