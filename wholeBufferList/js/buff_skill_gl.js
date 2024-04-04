@@ -404,6 +404,10 @@ buff.skill_gl = [
         , stats: { rege: [ "10/秒", "?/?f" ] }
     }
     , {
+        name: "ダイオージ", rarity: "金", cl: "試験型英雄騎", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+    }
+    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
@@ -687,6 +691,10 @@ buff.skill_gl = [
         name: "エレオノーラ", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒後", skill: "覚醒"
         , stats: { range: "×1.1" }
         , note: "永続"
+    }
+    , {
+        name: "エレオノーラ/バニー", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒後", skill: "覚醒"
+        , stats: { hp: "+30%", range: "×1.3" }
     }
     , {
         name: "ソニア", rarity: "白", cl: "ルーンアコライト", AW: "覚醒前", skill: "通常"

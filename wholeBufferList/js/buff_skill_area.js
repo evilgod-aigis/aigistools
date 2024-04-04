@@ -498,6 +498,91 @@ buff.skill_area = [
         , stats: { def: "×1.7" }
     }
     , {
+        name: "アンリ", rarity: "黒", cl: "エンチャンター", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , note: [ "魔法化", "永続" ]
+    }
+    , {
+        name: "アンリ", rarity: "黒", cl: "エンチャンター", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , note: [ "魔法化", "永続" ]
+    }
+    , {
+        name: "アンリ", rarity: "黒", cl: "エンチャンター", AW: "覚醒後", skill: "覚醒"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "アンリ/学園", rarity: "黒", cl: "エンチャンター", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "アンリ/学園", rarity: "黒", cl: "エンチャンター", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "エルシャ", rarity: "白", cl: "エンチャンター", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "エルシャ", rarity: "白", cl: "エンチャンター", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "エルシャ", rarity: "白", cl: "エンチャンター", AW: "覚醒後", skill: "覚醒"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "メレディス", rarity: "白", cl: "エンチャンター", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "メレディス", rarity: "白", cl: "エンチャンター", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "メレディス", rarity: "白", cl: "エンチャンター", AW: "覚醒後", skill: "覚醒"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "ハーニィ", rarity: "白", cl: "エンチャンター", AW: "覚醒後", skill: "覚醒"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "リルケ", rarity: "金", cl: "エンチャンター", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "リルケ", rarity: "金", cl: "エンチャンター", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "リルケ", rarity: "金", cl: "エンチャンター", AW: "覚醒後", skill: "覚醒"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "ちびアンリ", rarity: "ちび", cl: "エンチャンター", skill: "通常"
+        , stats: { other: "" }
+        , note: [ "魔法化", "永続" ]
+    }
+    , {
+        name: "ヒース", rarity: "銀", cl: "エンチャンター", AW: "覚醒前", skill: "通常"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
         name: "ディエーラ", rarity: "黒", cl: "マーチャント", AW: "覚醒前", skill: "通常"
         , stats: { def: "×1.2" }
     }
@@ -892,6 +977,11 @@ buff.skill_area = [
         name: "お守りエッグ", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
         , note: [ "リーフ/バニー", "タラニア/バニー", "ニーヴ/バニー", "永続" ]
+    }
+    , {
+        name: "マジックエッグ", rarity: "トークン", AW: "覚醒後"
+        , stats: { other: "" }
+        , note: [ "リーザ/バニー", "イルマ/バニー", "エレオノーラ/バニー", "魔法化" ]
     }
     , {
         name: "破魔の聖樹", rarity: "トークン", AW: "覚醒後", skill: "通常"

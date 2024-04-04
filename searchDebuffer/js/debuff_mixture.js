@@ -1265,6 +1265,30 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "イルマ/バニー", rarity: "白", cl: "メイジ", AW: "覚醒前", skill: "通常"
+        , stats: {
+            mr: { value: "-40%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "イルマ/バニー", rarity: "白", cl: "メイジ", AW: "覚醒後", skill: "通常"
+        , stats: {
+            mr: { value: "-40%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "イルマ/バニー", rarity: "白", cl: "メイジ", AW: "覚醒後", skill: "覚醒"
+        , stats: {
+            mr: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "ミェール", rarity: "金", cl: "メイジ", AW: "覚醒前", skill: "通常"
         , stats: {
             atk: { value: "-15%", type: "limAttr" }

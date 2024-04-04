@@ -464,6 +464,14 @@ buff.team = [
         , target: { cl: [ "モンク", "グラディエーター" ] }
     }
     , {
+        name: "リーザ/バニー", rarity: "白", cl: "モンク", AW: "覚醒後"
+        , stats: { cost: "-1" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "エッグハント" ] }
+        ]
+    }
+    , {
         name: "マオ/浴衣", rarity: "金", cl: "モンク", AW: "覚醒後"
         , stats: { hp: "+15%" }
         , target: { season: [ "サマー" ] }
@@ -1500,6 +1508,11 @@ buff.team = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
+        name: "ダイオージ", rarity: "金", cl: "試験型英雄騎"
+        , stats: { hp: "+5%" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
         name: "アーシェラ", rarity: "黒", cl: "アーチャー", AW: "覚醒後"
         , stats: { atk: "+10%" }
         , target: { others: [ "弓兵" ] }
@@ -1598,6 +1611,16 @@ buff.team = [
         name: "イルマ", rarity: "白", cl: "メイジ", AW: "覚醒後"
         , stats: { cost: "-2" }
         , target: { home: [ "白の帝国" ], depType: [ "遠距離" ] }
+    }
+    , {
+        name: "イルマ/バニー", rarity: "白", cl: "メイジ", AW: "覚醒前"
+        , stats: { cost: "-1" }
+        , target: { others: [ "魔術師" ], depType: [ "遠距離" ] }
+    }
+    , {
+        name: "イルマ/バニー", rarity: "白", cl: "メイジ", AW: "覚醒後"
+        , stats: { cost: "-2" }
+        , target: { others: [ "魔術師" ], depType: [ "遠距離" ] }
     }
     , {
         name: "マーヤ/水着", rarity: "金", cl: "メイジ", AW: "覚醒後"
@@ -1743,18 +1766,18 @@ buff.team = [
     , {
         name: "シナト/バニー", rarity: "白", cl: "後衛戦術家", AW: "覚醒前"
         , stats: { atk: "+5%" }
-        , target: {
-            cl: [ "前衛戦術家", "後衛戦術家" ]
-            , season: [ "エッグハント" ]
-        }
+        , target: [
+            { cl: [ "前衛戦術家", "後衛戦術家" ] }
+            , { season: [ "エッグハント" ] }
+        ]
     }
     , {
         name: "シナト/バニー", rarity: "白", cl: "後衛戦術家", AW: "覚醒後"
         , stats: { atk: "+7%" }
-        , target: {
-            cl: [ "前衛戦術家", "後衛戦術家" ]
-            , season: [ "エッグハント" ]
-        }
+        , target: [
+            { cl: [ "前衛戦術家", "後衛戦術家" ] }
+            , { season: [ "エッグハント" ] }
+        ]
     }
     , {
         name: "タマミ", rarity: "白", cl: "陰陽師", AW: "覚醒後"
@@ -1941,12 +1964,12 @@ buff.team = [
     }
     , {
         name: "ロヴィニア/学園", rarity: "黒", cl: "レンジャー", AW: "覚醒前"
-        , stats: { abn: "-80%" }
+        , stats: { poison: "-80%", abn: "-80%" }
         , target: { season: [ "学園" ] }
     }
     , {
         name: "ロヴィニア/学園", rarity: "黒", cl: "レンジャー", AW: "覚醒後"
-        , stats: { abn: "-100%" }
+        , stats: { poison: "-100%", abn: "-100%" }
         , target: { season: [ "学園" ] }
     }
     , {
@@ -2070,6 +2093,16 @@ buff.team = [
         , target: { home: [ "白の帝国" ], depType: [ "近接" ] }
     }
     , {
+        name: "エレオノーラ/バニー", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒前"
+        , stats: { poison: "-50%", abn: "-50%" }
+        , target: { others: [ "聖職者" ] }
+    }
+    , {
+        name: "エレオノーラ/バニー", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒後"
+        , stats: { poison: "-100%", abn: "-100%" }
+        , target: { others: [ "聖職者" ] }
+    }
+    , {
         name: "シャイーナ", rarity: "白", cl: "ルーンアコライト", AW: "覚醒後"
         , stats: { hp: "+7%", mr: "+5" }
         , target: { depType: [ "遠距離" ] }
@@ -2158,20 +2191,20 @@ buff.team = [
         , target: { others: [ "ドラゴン" ] }
     }
     , {
-        name: "カラザ/バニー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
+        name: "カラザ/バニー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒前"
         , stats: { hp: "+5%" }
-        , target: {
-            others: [ "ドラゴン" ]
-            , season: [ "エッグハント" ]
-        }
+        , target: [
+            { others: [ "ドラゴン" ] }
+            , { season: [ "エッグハント" ] }
+        ]
     }
     , {
         name: "カラザ/バニー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
         , stats: { hp: "+7%" }
-        , target: {
-            others: [ "ドラゴン" ]
-            , season: [ "エッグハント" ]
-        }
+        , target: [
+            { others: [ "ドラゴン" ] }
+            , { season: [ "エッグハント" ] }
+        ]
     }
     , {
         name: "ロカ/花嫁", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒前"
@@ -2181,10 +2214,10 @@ buff.team = [
     , {
         name: "ロカ/花嫁", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
         , stats: { cost: "-2" }
-        , target: {
-            cl: [ "王子" ]
-            , season: [ "ジューンブライド" ]
-        }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "ジューンブライド" ] }
+        ]
     }
     , {
         name: "アスバール", rarity: "黒", cl: "魔界総帥", AW: "覚醒前"
@@ -2251,6 +2284,11 @@ buff.team = [
             { race: [ "ゴブリン" ] }
             , { others: [ "機械" ] }
         ]
+    }
+    , {
+        name: "アンナホープネス", rarity: "金", cl: "試験型支援騎"
+        , stats: { atk: "+10%" }
+        , target: { cl: [ "試験型英雄騎" ] }
     }
     , {
         name: "ヤシマ", rarity: "黒", cl: "妖狸", AW: "覚醒後"

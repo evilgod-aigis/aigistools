@@ -1933,6 +1933,18 @@ buff.skill_cat = [
         ]
     }
     , {
+        name: "エレオノーラ/バニー", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒前", skill: "通常"
+        , stats: { range: "×1.2" }
+        , target: { depType: [ "遠距離" ] }
+        , note: "永続"
+    }
+    , {
+        name: "エレオノーラ/バニー", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒後", skill: "通常"
+        , stats: { range: "×1.2" }
+        , target: { depType: [ "遠距離" ] }
+        , note: "永続"
+    }
+    , {
         name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { race: [ "獣人" ] }
@@ -2163,6 +2175,12 @@ buff.skill_cat = [
             , { others: [ "機械" ] }
         ]
         , note: "分類未確認"
+    }
+    , {
+        name: "アンナホープネス", rarity: "金", cl: "試験型支援騎", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: { others: [ "機械" ] }
+        , note: "範囲"
     }
     , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"
