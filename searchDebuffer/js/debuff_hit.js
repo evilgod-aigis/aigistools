@@ -611,6 +611,11 @@ debuff.hit = [
         , note: [ "永続", "分類未確認" ]
     }
     , {
+        name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒後"
+        , stats: { def: "-40%" }
+        , atkAttr: "物理", dur: "59f"
+    }
+    , {
         name: "ミコト", rarity: "黒", cl: "陰陽師", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "149f"

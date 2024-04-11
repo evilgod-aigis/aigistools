@@ -2365,16 +2365,16 @@ buff.skill_cat = [
         , note: [ "永続", "分類未確認" ]
     }
     , {
-        name: "雪の精霊", rarity: "トークン", AW: "覚醒前", skill: "通常"
-        , stats: { atk: "×1.2", range: "×1.3" }
-        , target: { cl: [ "雪娘" ] }
-        , note: [ "しづり", "範囲", "永続", "分類未確認" ]
+        name: [ "暗黒学ラン騎士", "【並行世界】" ], rarity: "トークン", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { season: [ "学園" ] }
+        , note: [ "グリム/学園", "分類未確認" ]
     }
     , {
-        name: "冬の精霊", rarity: "トークン", AW: "覚醒後", skill: "通常"
-        , stats: { atk: "×1.4", range: "×1.5" }
-        , target: { cl: [ "雪娘" ] }
-        , note: [ "しづり", "範囲", "永続", "分類未確認" ]
+        name: [ "暗黒裏番長デシウス", "【並行世界】" ], rarity: "トークン", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { season: [ "学園" ] }
+        , note: [ "グリム/学園", "分類未確認" ]
     }
     , {
         name: "阿形の獅子", rarity: "トークン", AW: "覚醒前", skill: "通常"
@@ -2399,6 +2399,18 @@ buff.skill_cat = [
         , stats: { range: "×1.4", atkCd: "-50%" }
         , target: { cl: [ "夜行さん" ] }
         , note: [ "絢爛千妖夜行", "(夜行さん系)", "永続" ]
+    }
+    , {
+        name: "雪の精霊", rarity: "トークン", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", range: "×1.3" }
+        , target: { cl: [ "雪娘" ] }
+        , note: [ "しづり", "範囲", "永続", "分類未確認" ]
+    }
+    , {
+        name: "冬の精霊", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.4", range: "×1.5" }
+        , target: { cl: [ "雪娘" ] }
+        , note: [ "しづり", "範囲", "永続", "分類未確認" ]
     }
 ];
 

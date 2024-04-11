@@ -148,6 +148,10 @@ buff.team = [
         , stats: { hp: "+20%" }
     }
     , {
+        name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒後"
+        , stats: { def: "+15%" }
+    }
+    , {
         name: "レン", rarity: "白", cl: "後衛戦術家", AW: "覚醒後"
         , stats: { def: "+5%" }
     }

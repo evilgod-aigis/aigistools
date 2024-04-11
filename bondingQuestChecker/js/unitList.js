@@ -900,7 +900,7 @@ const unitList = [
     , { id: 0x0371, implDate: "2021/06/10", implDate_bq: "2023/02/09", obtain: "sh", rarity: "p" , depType: "van" , class: "料理人", name: "ユッタ", fullName: "帝国料理人ユッタ" }
     , { id: 0x0372, implDate: "2021/06/10", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "幻術士", name: "マルティナ", fullName: "帝国幻術士マルティナ" }
     , { id: 0x0373, implDate: "2021/06/10", implDate_bq: null        , obtain: "sh", rarity: "g" , depType: "van" , class: "重装砲兵", name: "シュペット", fullName: "帝国重装砲兵シュペット" }
-    , { id: 0x0374, implDate: "2021/06/10", implDate_bq: null        , obtain: "tr", rarity: "b" , depType: "rear", class: "ダークプリースト", name: "マレブランケ", fullName: "魔神副団長マレブランケ" }
+    , { id: 0x0374, implDate: "2021/06/10", implDate_bq: "2024/04/11", obtain: "tr", rarity: "b" , depType: "rear", class: "ダークプリースト", name: "マレブランケ", fullName: "魔神副団長マレブランケ" }
     , { id: 0x0375, implDate: "2021/06/24", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "アクアナイト", name: "ヴィアベル", fullName: "潜航騎士ヴィアベル" }
     , { id: 0x0376, implDate: "2021/06/24", implDate_bq: null        , obtain: "sh", rarity: "sl", depType: "van" , class: "アクアナイト", name: "キュステ", fullName: "新人潜水騎士キュステ" }
     , { id: 0x0377, implDate: "2021/07/01", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "メイド", name: "セーラ/水着", fullName: "水着の筆頭侍女セーラ" }
@@ -1000,7 +1000,7 @@ const unitList = [
     , { id: 0x03d3, implDate: "2022/02/24", implDate_bq: "2022/11/10", obtain: "sh", rarity: "b" , depType: "both", class: "スカウト", name: "レナータ", fullName: "天眼の偵察者レナータ" }
     , { id: 0x03d4, implDate: "2022/03/03", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "ドラゴンシャーマン", name: "ラウラ", fullName: "白の竜巫女ラウラ" }
     , { id: 0x03d5, implDate: "2022/03/03", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "支援工兵", name: "マルレーン", fullName: "帝国建機工兵マルレーン" }
-    , { id: 0x03d6, implDate: "2022/03/03", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "デーモンロード", name: "イルムガルト", fullName: "闇炎の魔将イルムガルト" }
+    , { id: 0x03d6, implDate: "2022/03/03", implDate_bq: "2024/04/11", obtain: "sh", rarity: "p" , depType: "van" , class: "デーモンロード", name: "イルムガルト", fullName: "闇炎の魔将イルムガルト" }
     , { id: 0x03d7, implDate: "2022/03/03", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "戦巫女", name: "カオル", fullName: "帝国戦巫女カオル" }
     , { id: 0x03d8, implDate: "2022/03/03", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "中級竜兵", name: "ちびリキュノス", fullName: "ちびリキュノス" }
     , { id: 0x03d9, implDate: "2022/03/03", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ボウライダー", name: "ちびリオン", fullName: "ちびリオン" }
@@ -1343,6 +1343,10 @@ const unitList = [
     , { id: 0x0526, implDate: "2024/04/04", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "ルーンアコライト", name: "エレオノーラ/バニー", fullName: "兎祭司教エレオノーラ" }
     , { id: 0x0527, implDate: "2024/04/04", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "メイジ", name: "イルマ/バニー", fullName: "帝兎の魔術師イルマ" }
     , { id: 0x0528, implDate: "2024/04/04", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "モンク", name: "リーザ/バニー", fullName: "祝兎の拳リーザ" }
+    , { id: 0x0529, implDate: "2024/04/11", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "後衛戦術家", name: "アイシャ/学園", fullName: "伏龍の特待生アイシャ" }
+    , { id: 0x052a, implDate: "2024/04/11", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "異界召喚士", name: "グリム/学園", fullName: "図書室の常連グリム" }
+    , { id: 0x052b, implDate: "2024/04/11", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "鬼刃忍", name: "シロガネ/学園", fullName: "学園裏遊戯シロガネ" }
+    , { id: 0x052c, implDate: "2024/04/11", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "重装砲兵", name: "ちびゲオルグ", fullName: "ちびゲオルグ", male: 1 }
     
     
     

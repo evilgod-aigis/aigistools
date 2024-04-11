@@ -2869,6 +2869,22 @@ debuff.mixture = [
         , note: [ "マキナ", "永続" ]
     }
     , {
+        name: [ "暗黒学ラン騎士", "【並行世界】" ], rarity: "トークン", AW: "覚醒前", skill: "通常"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "global"
+        , note: [ "グリム/学園", "分類未確認" ]
+    }
+    , {
+        name: [ "暗黒裏番長デシウス", "【並行世界】" ], rarity: "トークン", AW: "覚醒後", skill: "通常"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "global"
+        , note: [ "グリム/学園", "分類未確認" ]
+    }
+    , {
         name: "ツァーユ(幻影)", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: {
             atk: { value: "-10%", type: "noAttr" }

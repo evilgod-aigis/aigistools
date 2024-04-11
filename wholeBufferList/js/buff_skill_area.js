@@ -384,6 +384,27 @@ buff.skill_area = [
         , stats: { atk: "×1.1" }
     }
     , {
+        name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+    }
+    , {
+        name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+    }
+    , {
+        name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒後", skill: "覚醒(1)"
+        , stats: { atk: "×1.1", def: "×1.1", ct: "-50%" }
+    }
+    , {
+        name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒後", skill: "覚醒(2)"
+        , stats: { atk: "×1.2", def: "×1.2", ct: "-55%" }
+    }
+    , {
+        name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: { atk: "×1.3", def: "×1.3", ct: "-60%" }
+        , note: "永続"
+    }
+    , {
         name: "シナト", rarity: "白", cl: "後衛戦術家", AW: "覚醒後", skill: "覚醒"
         , stats: { ct: "-100%" }
         , note: "ボム"

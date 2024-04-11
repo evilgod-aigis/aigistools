@@ -1355,6 +1355,14 @@ buff.team = [
         , note: "ぬえ系"
     }
     , {
+        name: "シロガネ/学園", rarity: "白", cl: "鬼刃忍", AW: "覚醒後"
+        , stats: { atk: "+7%" }
+        , target: [
+            { home: [ "東の国" ] }
+            , { season: [ "学園" ] }
+        ]
+    }
+    , {
         name: "イルムガルト", rarity: "白", cl: "デーモンロード", AW: "覚醒後"
         , stats: { cost: "-1", wt: "-30%" }
         , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
@@ -1754,6 +1762,11 @@ buff.team = [
         , target: { cl: [ "メイジ", "ビショップ" ] }
     }
     , {
+        name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒後"
+        , stats: { def: "+10%" }
+        , target: { home: [ "華の国" ] }
+    }
+    , {
         name: "レオナ", rarity: "白", cl: "後衛戦術家", AW: "覚醒後"
         , stats: { def: "+7%" }
         , target: { home: [ "白の帝国" ] }
@@ -2131,6 +2144,16 @@ buff.team = [
         name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒後"
         , stats: { atkCd: "-35%" }
         , target: { race: [ "獣人" ] }
+    }
+    , {
+        name: "グリム/学園", rarity: "黒", cl: "異界召喚士", AW: "覚醒前"
+        , stats: { mr: "+7" }
+        , target: { season: [ "学園" ] }
+    }
+    , {
+        name: "グリム/学園", rarity: "黒", cl: "異界召喚士", AW: "覚醒後"
+        , stats: { mr: "+10" }
+        , target: { season: [ "学園" ] }
     }
     , {
         name: "発明家", cl: "発明家", AW: "覚醒前"
