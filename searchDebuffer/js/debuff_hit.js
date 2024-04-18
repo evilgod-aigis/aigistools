@@ -921,6 +921,12 @@ debuff.hit = [
         , atkAttr: "物理", dur: "14f"
     }
     , {
+        name: "大機関博士", cl: "発明家", AW: "覚2b"
+        , stats: { atk: "-20%" }
+        , atkAttr: "貫通", dur: "59f"
+        , note: "発明家系"
+    }
+    , {
         name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒前", skill: "通常"
         , stats: { def: "-30%" }
         , atkAttr: "貫通", dur: "?f"

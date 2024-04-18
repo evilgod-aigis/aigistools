@@ -51,7 +51,7 @@ funcs.createHTML.ChangeCompound = (thisElem, buffType) => {
     if(!("compound" in bufferInfo)) return;
     
     const checked = thisElem.checked;
-    const checkedToSign = checked - 0.5;
+    const checkedToSign = checked * 2 - 1;
     _.forEach(bufferInfo.compound, (compObj, compType) => {
         if(compType === "rCTdepType") {
             _.forEach(compObj, (value, deployType) => {

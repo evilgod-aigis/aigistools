@@ -2167,6 +2167,18 @@ buff.team = [
         , note: "発明家系"
     }
     , {
+        name: "超発明王", cl: "発明家", AW: "覚2a"
+        , stats: { atk: "+10%", wt: "-45%" }
+        , target: { others: [ "機械" ] }
+        , note: "発明家系"
+    }
+    , {
+        name: "大機関博士", cl: "発明家", AW: "覚2b"
+        , stats: { atk: "+10%", wt: "-30%" }
+        , target: { others: [ "機械" ] }
+        , note: "発明家系"
+    }
+    , {
         name: "アルレット", rarity: "黒", cl: "発明家", AW: "覚醒後"
         , stats: { cost: "-2" }
         , target: { others: [ "機械" ] }

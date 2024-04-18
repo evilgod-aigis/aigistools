@@ -38,6 +38,7 @@ lists.buff.rWT.list = [
             , { buffer: "奇想の発明家タバサ", awaken: "未覚醒" }
             , { buffer: "帝国発明家ヘンドリカ", awaken: "未覚醒" }
             , { buffer: "天性の発明家マギー", awaken: "未覚醒" }
+            , { buffer: "魔電流の発明家レクテ", awaken: "未覚醒" }
         ] }
         , tooltip: "[編成] 属性：機械の初動-20%"
     }
@@ -50,6 +51,27 @@ lists.buff.rWT.list = [
             , { buffer: "奇想の発明家タバサ", awaken: "覚醒" }
             , { buffer: "帝国発明家ヘンドリカ", awaken: "覚醒" }
             , { buffer: "天性の発明家マギー", awaken: "覚醒" }
+            , { buffer: "魔電流の発明家レクテ", awaken: "覚醒" }
+        ] }
+        , tooltip: "[編成] 属性：機械の初動-30%"
+    }
+    , {
+        id: null, buffer: "超発明王", isClass: true, awaken: "覚2a"
+        , value: 45, disabled: null, req: "team"
+        , target: [ { attribution: [ "機械" ] } ]
+        , compound: { rWT: [
+            { buffer: "奇想の発明家タバサ", awaken: "覚醒" }
+            , { buffer: "帝国発明家ヘンドリカ", awaken: "覚醒" }
+        ] }
+        , tooltip: "[編成] 属性：機械の初動-45%"
+    }
+    , {
+        id: null, buffer: "大機関博士", isClass: true, awaken: "覚2b"
+        , value: 30, disabled: null, req: "team"
+        , target: [ { attribution: [ "機械" ] } ]
+        , compound: { rWT: [
+            { buffer: "天性の発明家マギー", awaken: "覚醒" }
+            , { buffer: "魔電流の発明家レクテ", awaken: "覚醒" }
         ] }
         , tooltip: "[編成] 属性：機械の初動-30%"
     }
@@ -791,7 +813,7 @@ lists.buff.giveDmgMul.list = [
     , {
         id: null, buffer: "奇想の発明家タバサ", awaken: "覚醒", showAwaken: true
         , value: 15, disabled: null, req: "team"
-        , compound: { rWT: [ { buffer: "大発明家" } ] }
+        , compound: { rWT: [ { buffer: "超発明王" } ] }
         , tooltip: "\
             [編成] 神獣・魔獣・妖獣・獣・獣人・水棲に対して<br>\
             　　　 全味方の攻撃力が15%上昇\
@@ -806,7 +828,7 @@ lists.buff.giveDmgMul.list = [
     , {
         id: null, buffer: "帝国発明家ヘンドリカ", awaken: "覚醒", showAwaken: true
         , value: 15, disabled: null, req: "team"
-        , compound: { rWT: [ { buffer: "大発明家" } ] }
+        , compound: { rWT: [ { buffer: "超発明王" } ] }
         , tooltip: "\
             [編成] 天使に対して全味方の攻撃力が15%上昇<br>\
             　　　 竜族に対して属性：帝国の攻撃力が15%上昇<br>\
@@ -825,7 +847,7 @@ lists.buff.giveDmgMul.list = [
     , {
         id: null, buffer: "天性の発明家マギー", awaken: "覚醒", showAwaken: true
         , value: 15, disabled: null, req: "team"
-        , compound: { rWT: [ { buffer: "大発明家" } ] }
+        , compound: { rWT: [ { buffer: "大機関博士" } ] }
         , tooltip: "\
             [編成] アーマー・ゴーレムに対して<br>\
             　　　 全味方の攻撃力が15%上昇\
@@ -843,7 +865,7 @@ lists.buff.giveDmgMul.list = [
     , {
         id: null, buffer: "魔電流の発明家レクテ", awaken: "覚醒", showAwaken: true
         , value: 15, disabled: null, req: "team"
-        , compound: { rWT: [ { buffer: "発明家" } ] }
+        , compound: { rWT: [ { buffer: "大機関博士" } ] }
         , tooltip: "\
             [編成] デーモンに対して<br>\
             　　　 全味方の攻撃力が15%上昇\

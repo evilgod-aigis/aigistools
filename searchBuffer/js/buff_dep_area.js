@@ -11,6 +11,12 @@ buff.dep_area = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "超発明王", cl: "発明家", AW: "覚2a"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: { depType: [ "近接" ] }
+        , note: "発明家系"
+    }
+    , {
         name: "竜砲騎士隊長", cl: "ドラグーン", AW: "覚2a"
         , stats: { atk: "×1.1", def: "×1.1" }
         , target: { others: [ "ドラゴン" ] }
