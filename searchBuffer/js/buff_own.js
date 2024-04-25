@@ -152,6 +152,26 @@ buff.own = [
         , target: { others: [ "重装" ] }
     }
     , {
+        name: "オーシェン", rarity: "黒", cl: "光槍ビルガの継承者", AW: "覚醒後"
+        , stats: { hp: "+5%", atk: "+5%", def: "+5%" }
+        , target: { cl: [ "光槍ビルガの継承者", "メイド", "ロイヤルガード" ] }
+    }
+    , {
+        name: "オーシェン", rarity: "白", cl: "光槍ビルガの継承者", AW: "覚醒後"
+        , stats: { mr: "+3" }
+        , target: { cl: [ "光槍ビルガの継承者", "メイド", "ロイヤルガード" ] }
+    }
+    , {
+        name: "アルコゥ", rarity: "黒", cl: "祖竜", AW: "覚醒後"
+        , stats: { atk: "+3%" }
+        , target: { others: [ "ドラゴン" ] }
+    }
+    , {
+        name: "アルコゥ", rarity: "白", cl: "祖竜", AW: "覚醒後"
+        , stats: { def: "+3%" }
+        , target: { others: [ "ドラゴン" ] }
+    }
+    , {
         name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒後"
         , stats: { atk: "+5%", range: "+10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }

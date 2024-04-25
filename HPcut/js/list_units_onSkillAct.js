@@ -55,6 +55,37 @@ lists.units.onSkillAct.list = [
     , {
         id: null, hidden: false
         , unitInfo: {
+            unitName: "頂に座す者アルコゥ", deployType: "近接型", rarity: "黒"
+            , unitClass: { selected: "祖竜" }
+            , attribution: [ "竜人", "魔界", "ドラゴン", "英傑" ]
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: [ "女性", "魔界適応" ]
+        }
+        , skill: {
+            selected: "覚醒"
+            , detail: {
+                "通常": [
+                    {
+                        target: "全員"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 40, dur: 30, HPred: 10 }
+                        , next: 0
+                    }
+                ]
+                , "覚醒": [
+                    {
+                        target: "全員"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 100, dur: 40, HPred: 20 }
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
             unitName: "九尾狐カヨウ", deployType: "近接型", rarity: "黒"
             , unitClass: { selected: "妖狐絢爛", options: [ "妖狐系", "妖狐絢爛" ] }
             , attribution: [ "東の国", "妖怪" ]

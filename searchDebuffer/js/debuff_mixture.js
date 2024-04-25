@@ -111,6 +111,14 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "アルコゥ", rarity: "黒", cl: "祖竜", AW: "覚醒後"
+        , stats: {
+            mr: { value: "-30%", type: "clAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "サナラ", rarity: "黒", cl: "ジオマンサー", AW: "覚醒後"
         , stats: {
             def: { value: "-20%", type: "area" }

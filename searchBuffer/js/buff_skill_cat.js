@@ -54,6 +54,11 @@ buff.skill_cat = [
         , target: { cl: [ "魔導生命体" ] }
     }
     , {
+        name: "アルコゥ", rarity: "白", cl: "祖竜", AW: "覚醒後", skill: "通常"
+        , stats: { hp: "+50%" }
+        , target: { others: [ "ドラゴン" ] }
+    }
+    , {
         name: "マルゴット", rarity: "黒", cl: "ソルジャー", AW: "覚醒前", skill: "通常"
         , stats: { def: "×1.2" }
         , target: { depType: [ "近接" ] }

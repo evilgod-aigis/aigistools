@@ -130,6 +130,12 @@ buff.team = [
         , target: { year: [ "2024年" ] }
     }
     , {
+        name: "王子【竜王】", cl: "王子"
+        , stats: { hp: "+10%", atk: "+10%", def: "+10%" }
+        , target: { year: [ "2024年" ] }
+        , note: "Lv3以上"
+    }
+    , {
         name: "ちび王子", cl: "王子"
         , stats: { atk: "+15%" }
         , target: { others: [ "ちび" ] }
@@ -1002,6 +1008,14 @@ buff.team = [
         name: "サオシュ/温泉", rarity: "白", cl: "魔神", AW: "覚醒後"
         , stats: { poison: "-100%", abn: "-100%" }
         , target: { race: [ "デーモン系" ] }
+    }
+    , {
+        name: "ベルーフェ/学園", rarity: "白", cl: "魔神", AW: "覚醒後"
+        , stats: { atk: "+7%" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { season: [ "学園" ] }
+        ]
     }
     , {
         name: "グレーテル/クリスマス", rarity: "白", cl: "ダークストーカー", AW: "覚醒後"

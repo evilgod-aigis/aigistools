@@ -13,6 +13,10 @@ debuff.team = [
         , target: { attr: [ "英傑" ] }
     }
     , {
+        name: "アルコゥ", rarity: "黒", cl: "祖竜", AW: "覚醒後"
+        , stats: { hp: "-10%", atk: "-10%" }
+    }
+    , {
         name: "アンブローズ", rarity: "黒", cl: "転生魔導士", AW: "覚醒後"
         , stats: { mr: "-20" }
     }

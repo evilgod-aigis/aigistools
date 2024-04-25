@@ -1347,6 +1347,11 @@ const unitList = [
     , { id: 0x052a, implDate: "2024/04/11", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "異界召喚士", name: "グリム/学園", fullName: "図書室の常連グリム" }
     , { id: 0x052b, implDate: "2024/04/11", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "鬼刃忍", name: "シロガネ/学園", fullName: "学園裏遊戯シロガネ" }
     , { id: 0x052c, implDate: "2024/04/11", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "重装砲兵", name: "ちびゲオルグ", fullName: "ちびゲオルグ", male: 1 }
+    , { id: 0x052d, implDate: "2024/04/25", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "魔人", name: "ベルーフェ/学園", fullName: "居眠り魔神ベルーフェ" }
+    , { id: 0x052e, implDate: "2024/04/25", implDate_bq: null        , obtain: "sh", rarity: "bh", depType: "van" , class: "光槍ビルガの継承者", name: "オーシェン", fullName: "光を継ぐ者オーシェン" }
+    , { id: 0x052f, implDate: "2024/04/25", implDate_bq: null        , obtain: "sh", rarity: "bh", depType: "van" , class: "祖竜", name: "アルコゥ", fullName: "頂に座す者アルコゥ" }
+    , { id: 0x0530, implDate: "2024/04/25", implDate_bq: null        , obtain: "tr", rarity: "ph", depType: "van" , class: "光槍ビルガの継承者", name: "オーシェン", fullName: "光を継ぐ者オーシェン" }
+    , { id: 0x0531, implDate: "2024/04/25", implDate_bq: null        , obtain: "tr", rarity: "ph", depType: "van" , class: "祖竜", name: "アルコゥ", fullName: "頂に座す者アルコゥ" }
     
     
     
