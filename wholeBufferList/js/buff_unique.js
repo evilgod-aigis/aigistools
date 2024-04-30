@@ -560,6 +560,12 @@ buff.unique = [
         , note: [ "区分：マス上書き", "隠密無効", "近→遠", "分類未確認" ]
     }
     , {
+        name: "王国の学び舎", rarity: "金", cl: "王国の学び舎"
+        , stats: { hp: "×1.3", atk: "×1.3", other: "" }
+        , type: "spot_over"
+        , note: [ "区分：マス上書き", "近→近", "分類未確認" ]
+    }
+    , {
         name: "魔王の玉座", rarity: "金", cl: "魔王の玉座"
         , stats: { hp: "×1.3", atk: "×1.3", other: "" }
         , type: "spot_over"

@@ -1352,6 +1352,8 @@ const unitList = [
     , { id: 0x052f, implDate: "2024/04/25", implDate_bq: null        , obtain: "sh", rarity: "bh", depType: "van" , class: "祖竜", name: "アルコゥ", fullName: "頂に座す者アルコゥ" }
     , { id: 0x0530, implDate: "2024/04/25", implDate_bq: null        , obtain: "tr", rarity: "ph", depType: "van" , class: "光槍ビルガの継承者", name: "オーシェン", fullName: "光を継ぐ者オーシェン" }
     , { id: 0x0531, implDate: "2024/04/25", implDate_bq: null        , obtain: "tr", rarity: "ph", depType: "van" , class: "祖竜", name: "アルコゥ", fullName: "頂に座す者アルコゥ" }
+    , { id: 0x0532, implDate: "2024/05/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "オートマタ", name: "ちびルイン", fullName: "ちびルイン" }
+    , { id: 0x0533, implDate: "2024/05/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "幻獣使い", name: "ちびシンフー", fullName: "ちびシンフー" }
     
     
     

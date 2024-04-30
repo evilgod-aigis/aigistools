@@ -178,6 +178,11 @@ buff.add = [
         , note: "範囲"
     }
     , {
+        name: "王国学園", rarity: "金", cl: "王国の学び舎"
+        , stats: { hp: "max600" }
+        , target: { season: [ "学園" ] }
+    }
+    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒前"
         , stats: { hp: "max300", atk: "max150", def: "max150" }
         , target: { cl: [ "王子" ] }

@@ -755,6 +755,10 @@ buff.skill_area = [
         , stats: { draw: "○" }
     }
     , {
+        name: "ちびシンフー", rarity: "ちび", cl: "幻獣使い", skill: "通常"
+        , stats: { draw: "(○)", redep: "60秒" }
+    }
+    , {
         name: "エレオノーラ", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒前", skill: "通常"
         , stats: { range: "×1.2" }
     }

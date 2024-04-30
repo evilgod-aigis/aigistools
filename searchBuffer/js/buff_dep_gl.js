@@ -958,6 +958,12 @@ buff.dep_gl = [
         , target: { cl: [ "王子" ] }
     }
     , {
+        name: "王国学園", rarity: "金", cl: "王国の学び舎"
+        , stats: { atk: "+15%", def: "+15%" }
+        , target: { season: [ "学園" ] }
+        , note: "無差別バフと合わせて+20%"
+    }
+    , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒後"
         , stats: { def: "+10%" }
         , target: { season: [ "温泉" ] }

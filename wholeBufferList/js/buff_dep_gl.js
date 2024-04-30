@@ -342,6 +342,10 @@ buff.dep_gl = [
         , note: "分類未確認"
     }
     , {
+        name: "王国学園", rarity: "金", cl: "王国の学び舎"
+        , stats: { atk: "+5%", def: "+5%", rege: [ "40/秒", "?/?f" ] }
+    }
+    , {
         name: "ヴェロッテ/ハロウィン", rarity: "金", cl: "パイレーツ", AW: "覚醒後"
         , stats: { def: "+5%", mr: "+5", cost: "+1" }
     }
