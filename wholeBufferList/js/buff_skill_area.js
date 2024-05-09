@@ -508,11 +508,11 @@ buff.skill_area = [
     }
     , {
         name: "セリド", rarity: "白", cl: "アルケミスト", AW: "覚醒前", skill: "通常"
-        , stats: { atk: "×1.2", def: "×1.2" }
+        , stats: { atk: "×1.2", def: "×1.2", rege: [ "60/秒", "30/15f" ] }
     }
     , {
         name: "セリド", rarity: "白", cl: "アルケミスト", AW: "覚醒後", skill: "通常"
-        , stats: { atk: "×1.2", def: "×1.2" }
+        , stats: { atk: "×1.2", def: "×1.2", rege: [ "60/秒", "30/15f" ] }
     }
     , {
         name: "ブランシュ", rarity: "白", cl: "魔物使い", AW: "覚醒前", skill: "通常"
