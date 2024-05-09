@@ -953,6 +953,11 @@ buff.dep_gl = [
         , target: { sex: [ "男性" ] }
     }
     , {
+        name: "ちびガオレオン", rarity: "ちび", cl: "ガオレオン"
+        , stats: { hp: "+5%", def: "+5%" }
+        , target: { race: [ "獣人" ] }
+    }
+    , {
         name: "アイギス像", rarity: "金", cl: "アイギス像"
         , stats: { hp: "+3%", atk: "+3%" }
         , target: { cl: [ "王子" ] }

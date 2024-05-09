@@ -1024,7 +1024,7 @@ const unitList = [
     , { id: 0x03eb, implDate: "2022/05/05", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ルーンアコライト", name: "ちびエレオノーラ", fullName: "ちびエレオノーラ" }
     , { id: 0x03ec, implDate: "2022/05/12", implDate_bq: null        , obtain: "ev", rarity: "ph", depType: "both", class: "異世界戦士", name: "エフトラ", fullName: "世界を超える者エフトラ" }
     , { id: 0x03ed, implDate: "2022/05/12", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "ドラゴンメイジ", name: "ロカ", fullName: "土竜魔術士ロカ" }
-    , { id: 0x03ee, implDate: "2022/05/19", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "ドラグーン", name: "ミカ", fullName: "流浪の竜砲騎兵ミカ" }
+    , { id: 0x03ee, implDate: "2022/05/19", implDate_bq: "2024/05/09", obtain: "sh", rarity: "p" , depType: "rear", class: "ドラグーン", name: "ミカ", fullName: "流浪の竜砲騎兵ミカ" }
     , { id: 0x03ef, implDate: "2022/05/26", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "儀式魔術師", name: "メシナ", fullName: "渦潮の亜神メシナ" }
     , { id: 0x03f0, implDate: "2022/06/02", implDate_bq: "2023/01/12", obtain: "sh", rarity: "b" , depType: "van" , class: "儀仗軍神", name: "アラン", fullName: "銀月の亜神アラン" }
     , { id: 0x03f1, implDate: "2022/06/02", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "サムライ", name: "ちびジュウベエ", fullName: "ちびジュウベエ" }
@@ -1170,7 +1170,7 @@ const unitList = [
     , { id: 0x047b, implDate: "2023/04/13", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "魔法使い【ランス】", name: "魔想志津香", fullName: "魔想志津香", collabo: 1 }
     , { id: 0x047c, implDate: "2023/04/13", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ヒーラー", name: "ちびドゥマルデ", fullName: "ちびドゥマルデ", male: 1 }
     , { id: 0x047d, implDate: "2023/04/27", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "rear", class: "初代大統領【ランス】", name: "シーラ・ヘルマン", fullName: "シーラ・ヘルマン", collabo: 1 }
-    , { id: 0x047e, implDate: "2023/04/27", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "サベージファイター", name: "シャジャル", fullName: "砂漠の勇者シャジャル" }
+    , { id: 0x047e, implDate: "2023/04/27", implDate_bq: "2024/05/09", obtain: "sh", rarity: "b" , depType: "van" , class: "サベージファイター", name: "シャジャル", fullName: "砂漠の勇者シャジャル" }
     , { id: 0x047f, implDate: "2023/04/27", implDate_bq: null        , obtain: "tr", rarity: "b" , depType: "van" , class: "戦の聖霊", name: "プロエ", fullName: "戦の聖霊プロエ" }
     , { id: 0x0480, implDate: "2023/04/27", implDate_bq: null        , obtain: "tr", rarity: "b" , depType: "rear", class: "アーチャー", name: "ナナリー/私服", fullName: "白羽の休日ナナリー" }
     , { id: 0x0481, implDate: "2023/05/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "真人", name: "ちび織姫", fullName: "ちび織姫" }
@@ -1354,6 +1354,9 @@ const unitList = [
     , { id: 0x0531, implDate: "2024/04/25", implDate_bq: null        , obtain: "tr", rarity: "ph", depType: "van" , class: "祖竜", name: "アルコゥ", fullName: "頂に座す者アルコゥ" }
     , { id: 0x0532, implDate: "2024/05/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "オートマタ", name: "ちびルイン", fullName: "ちびルイン" }
     , { id: 0x0533, implDate: "2024/05/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "幻獣使い", name: "ちびシンフー", fullName: "ちびシンフー" }
+    , { id: 0x0534, implDate: "2024/05/09", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "rear", class: "アルケミスト", name: "セリド", fullName: "詩歌と叡智の亜神セリド" }
+    , { id: 0x0535, implDate: "2024/05/09", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "ワルキューレ", name: "チャムチャム", fullName: "魔猪騎兵チャムチャム" }
+    , { id: 0x0536, implDate: "2024/05/09", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ガオレオン", name: "ちびガオレオン", fullName: "ちびガオレオン", male: 1 }
     
     
     

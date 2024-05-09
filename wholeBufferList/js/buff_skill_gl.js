@@ -572,6 +572,14 @@ buff.skill_gl = [
         , stats: { rege: [ "240/秒", "120/15f" ] }
     }
     , {
+        name: "セリド", rarity: "白", cl: "アルケミスト", AW: "覚醒前", skill: "通常"
+        , stats: { rege: [ "60/秒", "?/?f" ] }
+    }
+    , {
+        name: "セリド", rarity: "白", cl: "アルケミスト", AW: "覚醒後", skill: "通常"
+        , stats: { rege: [ "60/秒", "?/?f" ] }
+    }
+    , {
         name: "アンリ/学園", rarity: "黒", cl: "エンチャンター", AW: "覚醒前", skill: "通常"
         , stats: { rege: [ "80/秒", "40/15f" ] }
     }
