@@ -254,13 +254,13 @@ buff.unique = [
     // ダメージ上昇
     , {
         name: "メリュジアナ", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
-        , stats: { atk: "×1.3" }
+        , stats: { atk: "×1.35" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
     }
     , {
         name: "メリュジアナ", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "通常"
-        , stats: { atk: "×1.3" }
+        , stats: { atk: "×1.35" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
     }
@@ -293,6 +293,12 @@ buff.unique = [
         , stats: { atk: "×1.3" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
+    }
+    , {
+        name: "エーリカ", rarity: "白", cl: "メイジアーマー", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.2" }
+        , type: "atk-up_mag"
+        , note: [ "区分：ダメージ上昇(魔法)", "分類未確認" ]
     }
     , {
         name: "ミスリア", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"

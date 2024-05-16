@@ -186,7 +186,7 @@ buff.skill_area = [
         , note: "永続"
     }
     , {
-        name: "太公望/正月", rarity: "白", cl: "真人", AW: "覚醒後", skill: "覚醒"
+        name: "太公望/お正月", rarity: "白", cl: "真人", AW: "覚醒後", skill: "覚醒"
         , stats: { abn: "-100%" }
     }
     , {
@@ -649,17 +649,17 @@ buff.skill_area = [
         , note: "永続"
     }
     , {
-        name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒前", skill: "通常"
+        name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.4", mr: "×1.4" }
         , note: "分類未確認"
     }
     , {
-        name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "通常"
+        name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.4", mr: "×1.4" }
         , note: "分類未確認"
     }
     , {
-        name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "覚醒"
+        name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , note: "永続"
     }

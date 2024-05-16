@@ -86,7 +86,7 @@ buff.skill_cat = [
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "ケイティ/正月", rarity: "白", cl: "ソルジャー", AW: "覚醒後", skill: "覚醒"
+        name: "ケイティ/お正月", rarity: "白", cl: "ソルジャー", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+50%", atk: "×1.5", def: "×1.5" }
         , target: { cl: [ "ソルジャー" ] }
         , note: "永続"
@@ -140,7 +140,7 @@ buff.skill_cat = [
         , target: { cl: [ "王子" ] }
     }
     , {
-        name: "ロゼット/正月", rarity: "金", cl: "プリンセス", AW: "覚醒前", skill: "通常"
+        name: "ロゼット/お正月", rarity: "金", cl: "プリンセス", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: [
             { rarity: [ "金", "銀", "銅", "鉄" ] }
@@ -148,7 +148,7 @@ buff.skill_cat = [
         ]
     }
     , {
-        name: "ロゼット/正月", rarity: "金", cl: "プリンセス", AW: "覚醒後", skill: "通常"
+        name: "ロゼット/お正月", rarity: "金", cl: "プリンセス", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: [
             { rarity: [ "金", "銀", "銅", "鉄" ] }
@@ -156,7 +156,7 @@ buff.skill_cat = [
         ]
     }
     , {
-        name: "ロゼット/正月", rarity: "金", cl: "プリンセス", AW: "覚醒後", skill: "覚醒"
+        name: "ロゼット/お正月", rarity: "金", cl: "プリンセス", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { rarity: [ "金", "銀", "銅", "鉄" ] }
         , note: "終了時、対象のHP-70%"
@@ -1267,7 +1267,7 @@ buff.skill_cat = [
         , target: { rarity: [ "銀" ] }
     }
     , {
-        name: "エフネ/正月", rarity: "白", cl: "デモンルーン", AW: "覚醒後", skill: "覚醒"
+        name: "エフネ/お正月", rarity: "白", cl: "デモンルーン", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.6" }
         , target: [
             { race: [ "デーモン系" ] }
@@ -1873,7 +1873,7 @@ buff.skill_cat = [
         , target: { cl: [ "王子" ] }
     }
     , {
-        name: "トトノ/正月", rarity: "白", cl: "マーチャント", AW: "覚醒後", skill: "覚醒"
+        name: "トトノ/お正月", rarity: "白", cl: "マーチャント", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { others: [ "GG持ち" ] }
         , note: "永続"

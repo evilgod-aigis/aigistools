@@ -171,7 +171,7 @@ buff.team = [
         , target: { sex: [ "男性" ] }
     }
     , {
-        name: "ケイティ/正月", rarity: "白", cl: "ソルジャー", AW: "覚醒後"
+        name: "ケイティ/お正月", rarity: "白", cl: "ソルジャー", AW: "覚醒後"
         , stats: { mr: "+10" }
         , target: { cl: [ "ソルジャー" ] }
     }
@@ -276,12 +276,12 @@ buff.team = [
         , target: { season: [ "ハロウィン" ] }
     }
     , {
-        name: "ロゼット/正月", rarity: "金", cl: "プリンセス", AW: "覚醒前"
+        name: "ロゼット/お正月", rarity: "金", cl: "プリンセス", AW: "覚醒前"
         , stats: { atk: "+5%" }
         , target: { rarity: [ "金" ] }
     }
     , {
-        name: "ロゼット/正月", rarity: "金", cl: "プリンセス", AW: "覚醒後"
+        name: "ロゼット/お正月", rarity: "金", cl: "プリンセス", AW: "覚醒後"
         , stats: { atk: "+15%", def: "-10%" }
         , target: { rarity: [ "金" ] }
     }
@@ -488,7 +488,7 @@ buff.team = [
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "マツリ/正月", rarity: "黒", cl: "前衛戦術家", AW: "覚醒後"
+        name: "マツリ/お正月", rarity: "黒", cl: "前衛戦術家", AW: "覚醒後"
         , stats: { hp: "+15%" }
         , target: { season: [ "お正月" ] }
     }
@@ -529,12 +529,12 @@ buff.team = [
         , target: { cl: [ "魔法剣士", "メイジ" ] }
     }
     , {
-        name: "ソフィー/正月", rarity: "黒", cl: "エンジェル", AW: "覚醒前"
+        name: "ソフィー/お正月", rarity: "黒", cl: "エンジェル", AW: "覚醒前"
         , stats: { poison: "-100%", abn: "-100%" }
         , target: { cl: [ "王子" ] }
     }
     , {
-        name: "ソフィー/正月", rarity: "黒", cl: "エンジェル", AW: "覚醒後"
+        name: "ソフィー/お正月", rarity: "黒", cl: "エンジェル", AW: "覚醒後"
         , stats: { hp: "+20%", atkCd: "-40%", poison: "-100%", abn: "-100%" }
         , target: { cl: [ "王子" ] }
     }
@@ -1323,12 +1323,12 @@ buff.team = [
         , target: { cl: [ "仙人", "仙猿", "真人" ] }
     }
     , {
-        name: "太公望/正月", rarity: "白", cl: "真人", AW: "覚醒前"
+        name: "太公望/お正月", rarity: "白", cl: "真人", AW: "覚醒前"
         , stats: { def: "+5%" }
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "太公望/正月", rarity: "白", cl: "真人", AW: "覚醒後"
+        name: "太公望/お正月", rarity: "白", cl: "真人", AW: "覚醒後"
         , stats: { def: "+7%" }
         , target: { depType: [ "近接" ] }
     }
@@ -1358,7 +1358,7 @@ buff.team = [
         , target: { others: [ "魔界" ] }
     }
     , {
-        name: "シャディア/正月", rarity: "黒", cl: "魔王親衛隊", AW: "覚醒後"
+        name: "シャディア/お正月", rarity: "黒", cl: "魔王親衛隊", AW: "覚醒後"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { season: [ "お正月" ] }
     }
@@ -1660,6 +1660,11 @@ buff.team = [
         , target: { cl: [ "魔法剣士", "メイジアーマー", "メイジ", "ビショップ" ] }
     }
     , {
+        name: "イリス/お正月", rarity: "黒", cl: "ヒーラー", AW: "覚醒後"
+        , stats: { hp: "+10%" }
+        , target: { season: [ "お正月" ] }
+    }
+    , {
         name: "ドゥマルデ", rarity: "黒", cl: "ヒーラー", AW: "覚醒後"
         , stats: { def: "+7%" }
         , target: { sex: [ "男性" ] }
@@ -1764,6 +1769,11 @@ buff.team = [
         name: "エターナー", rarity: "黒", cl: "ビショップ", AW: "覚醒後"
         , stats: { range: "+10" }
         , target: { cl: [ "ビショップ" ] }
+    }
+    , {
+        name: "エターナー/花嫁", rarity: "黒", cl: "ビショップ", AW: "覚醒後"
+        , stats: { hp: "+10%" }
+        , target: { sex: [ "女性" ] }
     }
     , {
         name: "セレイナ", rarity: "白", cl: "ビショップ", AW: "覚醒後"
@@ -2000,17 +2010,17 @@ buff.team = [
         , target: { season: [ "学園" ] }
     }
     , {
-        name: "フウカ/正月", rarity: "金", cl: "レンジャー", AW: "覚醒後"
+        name: "フウカ/お正月", rarity: "金", cl: "レンジャー", AW: "覚醒後"
         , stats: { cost: "-1" }
         , target: { season: [ "お正月" ] }
     }
     , {
-        name: "オロチヒメ/正月", rarity: "黒", cl: "呪術使い", AW: "覚醒前"
+        name: "オロチヒメ/お正月", rarity: "黒", cl: "呪術使い", AW: "覚醒前"
         , stats: { poison: "-100%", abn: "-100%" }
         , target: { season: [ "お正月" ] }
     }
     , {
-        name: "オロチヒメ/正月", rarity: "黒", cl: "呪術使い", AW: "覚醒後"
+        name: "オロチヒメ/お正月", rarity: "黒", cl: "呪術使い", AW: "覚醒後"
         , stats: { poison: "-100%", abn: "-100%" }
         , target: { season: [ "お正月" ] }
     }
@@ -2065,22 +2075,22 @@ buff.team = [
         , target: { sex: [ "女性" ] }
     }
     , {
-        name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒前"
+        name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒前"
         , stats: { mr: "+5" }
         , target: { sex: [ "女性" ] }
     }
     , {
-        name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒前"
+        name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒前"
         , stats: { range: "+5" }
         , target: { season: [ "お正月" ] }
     }
     , {
-        name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後"
+        name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後"
         , stats: { mr: "+10" }
         , target: { sex: [ "女性" ] }
     }
     , {
-        name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後"
+        name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後"
         , stats: { range: "+10" }
         , target: { season: [ "お正月" ] }
     }

@@ -161,6 +161,11 @@ buff.dep_gl = [
         , target: { others: [ "ドラゴン" ] }
     }
     , {
+        name: "ロタン", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒後"
+        , stats: { mr: "+5" }
+        , target: { others: [ "ドラゴン" ] }
+    }
+    , {
         name: "ちびエルドラ", rarity: "ちび", cl: "ドラゴンプリンセス"
         , stats: { draw: "○" }
         , target: { others: [ "ドラゴン" ] }
@@ -586,7 +591,7 @@ buff.dep_gl = [
         , target: { season: [ "サマー" ] }
     }
     , {
-        name: "鬼刃姫/正月", rarity: "黒", cl: "鬼", AW: "覚醒後"
+        name: "鬼刃姫/お正月", rarity: "黒", cl: "鬼", AW: "覚醒後"
         , stats: { atk: "+20%" }
         , target: { season: [ "お正月" ] }
     }
@@ -810,7 +815,7 @@ buff.dep_gl = [
         , target: { race: [ "仙人" ] }
     }
     , {
-        name: "太公望/正月", rarity: "白", cl: "真人", AW: "覚醒後"
+        name: "太公望/お正月", rarity: "白", cl: "真人", AW: "覚醒後"
         , stats: { def: "+15%", draw: "○" }
         , target: { season: [ "お正月" ], depType: [ "近接" ] }
     }
@@ -1021,7 +1026,7 @@ buff.dep_gl = [
         ]
     }
     , {
-        name: "イーリス/正月", rarity: "金", cl: "ヒーラー", AW: "覚醒後"
+        name: "イーリス/お正月", rarity: "金", cl: "ヒーラー", AW: "覚醒後"
         , stats: { mr: "+5" }
         , target: { cl: [ "ヒーラー" ] }
     }

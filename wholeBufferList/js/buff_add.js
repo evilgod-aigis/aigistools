@@ -101,7 +101,7 @@ buff.add = [
         , note: "範囲"
     }
     , {
-        name: "シャディア/正月", rarity: "黒", cl: "魔王親衛隊", AW: "覚醒後", skill: "覚醒"
+        name: "シャディア/お正月", rarity: "黒", cl: "魔王親衛隊", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "30%" }
         , note: "範囲"
     }
@@ -391,6 +391,14 @@ buff.add = [
         , note: [ "ヒール対象", "継続：12.5秒" ]
     }
     , {
+        name: "オラティル", rarity: "黒", cl: "豊穣神", AW: "覚醒前"
+        , stats: { hp: "max1000" }
+    }
+    , {
+        name: "オラティル", rarity: "黒", cl: "豊穣神", AW: "覚醒後"
+        , stats: { hp: "max1500" }
+    }
+    , {
         name: "アイドル召喚士", cl: "アイドル召喚士", AW: "覚1"
         , stats: { atk: "5%" }
         , note: "範囲"
@@ -478,6 +486,16 @@ buff.add = [
         name: "刀剣霊符", rarity: "トークン", AW: "覚醒後"
         , stats: { atk: "+200", def: "+200" }
         , note: [ "リャオレン", "範囲", "分類未確認" ]
+    }
+    , {
+        name: "オラティルの大釜", rarity: "トークン", AW: "覚醒前"
+        , stats: { atk: "100%", def: "100%" }
+        , note: [ "オラティル", "範囲" ]
+    }
+    , {
+        name: "オラティルの聖大釜", rarity: "トークン", AW: "覚醒後"
+        , stats: { atk: "100%", def: "100%" }
+        , note: [ "オラティル", "範囲" ]
     }
 ];
 

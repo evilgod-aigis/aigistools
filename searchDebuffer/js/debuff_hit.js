@@ -119,14 +119,20 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
-        name: "マツリ/正月", rarity: "黒", cl: "前衛戦術家", AW: "覚醒前"
+        name: "マツリ/お正月", rarity: "黒", cl: "前衛戦術家", AW: "覚醒前"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "7f"
     }
     , {
-        name: "マツリ/正月", rarity: "黒", cl: "前衛戦術家", AW: "覚醒後"
+        name: "マツリ/お正月", rarity: "黒", cl: "前衛戦術家", AW: "覚醒後"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "7f"
+    }
+    , {
+        name: "シャルロット", rarity: "白", cl: "魔法剣士", AW: "覚醒後", skill: "覚醒"
+        , stats: { mr: "-20%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "エメルダ/バレンタイン", rarity: "黒", cl: "ボウライダー", AW: "覚醒前", skill: "通常"
@@ -779,30 +785,30 @@ debuff.hit = [
     }
     , {
         name: "アルケミスト", cl: "アルケミスト", AW: "CC前"
-        , stats: { def: "-50%" }
+        , stats: { def: "-50%", mr: "-50%" }
         , atkAttr: "物理", dur: "119f"
     }
     , {
         name: "ハイアルケミスト", cl: "アルケミスト", AW: "CC後"
-        , stats: { def: "-50%" }
+        , stats: { def: "-50%", mr: "-50%" }
         , atkAttr: "物理", dur: "119f"
         , note: "アルケミスト系"
     }
     , {
         name: "マスターアルケミスト", cl: "アルケミスト", AW: "覚1"
-        , stats: { def: "-60%" }
+        , stats: { def: "-60%", mr: "-60%" }
         , atkAttr: "物理", dur: "139f"
         , note: "アルケミスト系"
     }
     , {
         name: "ロードオブヘルメス", cl: "アルケミスト", AW: "覚2a"
-        , stats: { def: "-60%" }
+        , stats: { def: "-60%", mr: "-60%" }
         , atkAttr: "物理", dur: "139f"
         , note: "アルケミスト系"
     }
     , {
         name: "マグヌムオプス", cl: "アルケミスト", AW: "覚2b"
-        , stats: { def: "-70%" }
+        , stats: { def: "-70%", mr: "-70%" }
         , atkAttr: "物理", dur: "139f"
         , note: "アルケミスト系"
     }
@@ -835,12 +841,12 @@ debuff.hit = [
         , note: "ボム"
     }
     , {
-        name: "オロチヒメ/正月", rarity: "黒", cl: "呪術使い", AW: "覚醒後", skill: "非"
+        name: "オロチヒメ/お正月", rarity: "黒", cl: "呪術使い", AW: "覚醒後", skill: "非"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "9f"
     }
     , {
-        name: "オロチヒメ/正月", rarity: "黒", cl: "呪術使い", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        name: "オロチヒメ/お正月", rarity: "黒", cl: "呪術使い", AW: "覚醒後", skill: [ "通常", "覚醒" ]
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "14f"
     }
@@ -1074,7 +1080,7 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
-        name: "魔人【ランス】", cl: "ホーネット派魔人【ランス】", AW: "覚醒前"
+        name: "魔人【ランス】", cl: "ホーネット派魔人【ランス】", AW: "覚1"
         , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "?f"
         , note: [ "ホーネット派魔人【ランス】系", "分類未確認" ]

@@ -141,12 +141,12 @@ buff.skill_gl = [
         , stats: { nul: "100%" }
     }
     , {
-        name: "エルドラ/正月", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
+        name: "エルドラ/お正月", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
         , stats: { nul: "25%" }
         , note: "永続"
     }
     , {
-        name: "エルドラ/正月", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "通常"
+        name: "エルドラ/お正月", rarity: "黒", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "通常"
         , stats: { nul: "25%" }
         , note: "永続"
     }
@@ -173,7 +173,7 @@ buff.skill_gl = [
         , note: "永続"
     }
     , {
-        name: "マツリ/正月", rarity: "黒", cl: "前衛戦術家", AW: "覚醒後", skill: "覚醒"
+        name: "マツリ/お正月", rarity: "黒", cl: "前衛戦術家", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+10%", atk: "×1.1", def: "×1.1", other: "" }
         , note: [ "オート", "永続" ]
     }
@@ -290,17 +290,17 @@ buff.skill_gl = [
         , note: "隠密付与"
     }
     , {
-        name: "鬼刃姫/正月", rarity: "黒", cl: "鬼", AW: "覚醒前", skill: "通常"
+        name: "鬼刃姫/お正月", rarity: "黒", cl: "鬼", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+20%" }
         , note: "永続"
     }
     , {
-        name: "鬼刃姫/正月", rarity: "黒", cl: "鬼", AW: "覚醒後", skill: "通常"
+        name: "鬼刃姫/お正月", rarity: "黒", cl: "鬼", AW: "覚醒後", skill: "通常"
         , stats: { hp: "+20%" }
         , note: "永続"
     }
     , {
-        name: "鬼刃姫/正月", rarity: "黒", cl: "鬼", AW: "覚醒後", skill: "覚醒"
+        name: "鬼刃姫/お正月", rarity: "黒", cl: "鬼", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+50%" }
     }
     , {
@@ -433,7 +433,7 @@ buff.skill_gl = [
     }
     , {
         name: "イーリス/お正月", rarity: "金", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
-        , stats: { hp: "+10%" }
+        , stats: { hp: "+20%" }
     }
     , {
         name: "シンディ", rarity: "金", cl: "ヒーラー", AW: "覚醒前", skill: "通常"

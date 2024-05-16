@@ -39,7 +39,7 @@ table.debuffType.type = {
         , color: "rgba(255, 0, 0, 0.3)"
     }
     , def: {
-        list: [ "area", "global", "death" ]
+        list: [ "area", "global" ]
         , color: "rgba(0, 0, 255, 0.3)"
     }
     , mr: {

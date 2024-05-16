@@ -187,7 +187,7 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
-        name: "ジュノン/正月", rarity: "白", cl: "ローグ", AW: "覚醒前", skill: "通常"
+        name: "ジュノン/お正月", rarity: "白", cl: "ローグ", AW: "覚醒前", skill: "通常"
         , stats: {
             stop: { value: "89f", type: "global" }
         }
@@ -195,7 +195,7 @@ debuff.mixture = [
         , note: "発動時"
     }
     , {
-        name: "ジュノン/正月", rarity: "白", cl: "ローグ", AW: "覚醒後", skill: "通常"
+        name: "ジュノン/お正月", rarity: "白", cl: "ローグ", AW: "覚醒後", skill: "通常"
         , stats: {
             stop: { value: "89f", type: "global" }
         }
@@ -345,6 +345,14 @@ debuff.mixture = [
         }
         , domain: "area"
         , target: { atkAttr: [ "魔法" ] }
+    }
+    , {
+        name: "ジュウベエ", rarity: "黒", cl: "サムライ", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: {
+            stop: { value: "?f", type: "global" }
+        }
+        , domain: "global"
+        , note: "発動時"
     }
     , {
         name: "チヨメ", rarity: "黒", cl: "忍者", AW: "覚醒後"
@@ -817,7 +825,7 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
-        name: "太公望/正月", rarity: "白", cl: "真人", AW: "覚醒前", skill: "通常"
+        name: "太公望/お正月", rarity: "白", cl: "真人", AW: "覚醒前", skill: "通常"
         , stats: {
             atk: { value: "-20%", type: "noAttr" }
         }
@@ -825,7 +833,7 @@ debuff.mixture = [
         , target: { attr: [ "デーモン", "アンデッド" ] }
     }
     , {
-        name: "太公望/正月", rarity: "白", cl: "真人", AW: "覚醒後", skill: "通常"
+        name: "太公望/お正月", rarity: "白", cl: "真人", AW: "覚醒後", skill: "通常"
         , stats: {
             atk: { value: "-20%", type: "noAttr" }
         }
@@ -835,7 +843,7 @@ debuff.mixture = [
     , {
         name: "邪鬼仙", cl: "邪仙", AW: "覚2b"
         , stats: {
-            mr: { value: "-20%", type: "area" }
+            mr: { value: "-20%", type: "clAttr" }
         }
         , domain: "area"
         , note: [ "邪仙系", "分類未確認" ]
@@ -1343,6 +1351,46 @@ debuff.mixture = [
         , note: [ "発動時", "ボム" ]
     }
     , {
+        name: "ウィッチ", cl: "ウィッチ", AW: "CC前"
+        , stats: {
+            mr: { value: "-10%", type: "clAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ロードウィッチ", cl: "ウィッチ", AW: "CC後"
+        , stats: {
+            mr: { value: "-10%", type: "clAttr" }
+        }
+        , domain: "area"
+        , note: [ "ウィッチ系", "分類未確認" ]
+    }
+    , {
+        name: "アークウィッチ", cl: "ウィッチ", AW: "覚1"
+        , stats: {
+            mr: { value: "-15%", type: "clAttr" }
+        }
+        , domain: "area"
+        , note: [ "ウィッチ系", "分類未確認" ]
+    }
+    , {
+        name: "ホーリーウィッチ", cl: "ウィッチ", AW: "覚2a"
+        , stats: {
+            mr: { value: "-20%", type: "clAttr" }
+        }
+        , domain: "area"
+        , note: [ "ウィッチ系", "分類未確認" ]
+    }
+    , {
+        name: "ソーサレス", cl: "ウィッチ", AW: "覚2b"
+        , stats: {
+            mr: { value: "-25%", type: "clAttr" }
+        }
+        , domain: "area"
+        , note: [ "ウィッチ系", "分類未確認" ]
+    }
+    , {
         name: "デスピア/ハロウィン", rarity: "黒", cl: "ウィッチ", AW: "覚醒後", skill: "覚醒"
         , stats: {
             mr: { value: "-30", type: "fixed" }
@@ -1727,14 +1775,14 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
-        name: "フウカ/正月", rarity: "金", cl: "レンジャー", AW: "覚醒前", skill: "通常"
+        name: "フウカ/お正月", rarity: "金", cl: "レンジャー", AW: "覚醒前", skill: "通常"
         , stats: {
             mr: { value: "-10", type: "fixed" }
         }
         , domain: "global"
     }
     , {
-        name: "フウカ/正月", rarity: "金", cl: "レンジャー", AW: "覚醒後", skill: "通常"
+        name: "フウカ/お正月", rarity: "金", cl: "レンジャー", AW: "覚醒後", skill: "通常"
         , stats: {
             mr: { value: "-10", type: "fixed" }
         }
@@ -1803,21 +1851,21 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
-        name: "オロチヒメ/正月", rarity: "黒", cl: "呪術使い", AW: "覚醒前", skill: "通常"
+        name: "オロチヒメ/お正月", rarity: "黒", cl: "呪術使い", AW: "覚醒前", skill: "通常"
         , stats: {
             atk: { value: "*2.0", type: "noAttr" }
         }
         , domain: "area"
     }
     , {
-        name: "オロチヒメ/正月", rarity: "黒", cl: "呪術使い", AW: "覚醒後", skill: "通常"
+        name: "オロチヒメ/お正月", rarity: "黒", cl: "呪術使い", AW: "覚醒後", skill: "通常"
         , stats: {
             atk: { value: "*2.0", type: "noAttr" }
         }
         , domain: "area"
     }
     , {
-        name: "オロチヒメ/正月", rarity: "黒", cl: "呪術使い", AW: "覚醒後", skill: "覚醒"
+        name: "オロチヒメ/お正月", rarity: "黒", cl: "呪術使い", AW: "覚醒後", skill: "覚醒"
         , stats: {
             atk: { value: "*2.0", type: "noAttr" }
         }
@@ -2091,7 +2139,7 @@ debuff.mixture = [
         , note: [ "発動時", "ボム" ]
     }
     , {
-        name: "ラピス/正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "覚醒"
+        name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒後", skill: "覚醒"
         , stats: {
             def: { value: "-10%", type: "area" }
             , mr: { value: "-10%", type: "area" }
@@ -2780,24 +2828,6 @@ debuff.mixture = [
         }
         , domain: "area"
     }
-    /*
-    , {
-        name: "変わり身の幻", rarity: "トークン", AW: "覚醒後"
-        , stats: {
-            def: { value: "-40%", type: "death" }
-        }
-        , domain: "global"
-        , note: [ "リヴン[黒]", "継続:20秒", "暫定的な分類" ]
-    }
-    , {
-        name: "変わり身の幻", rarity: "トークン", AW: "覚醒後"
-        , stats: {
-            def: { value: "-20%", type: "death" }
-        }
-        , domain: "global"
-        , note: [ "リヴン[白]", "継続:20秒", "暫定的な分類" ]
-    }
-    */
     , {
         name: "イビルアイ", rarity: "トークン", AW: "覚醒前", skill: "通常"
         , stats: {

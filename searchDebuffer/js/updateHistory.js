@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2024/05/16(木)"
+        , detail: [
+            "調整を反映"
+        ]
+    }
+    , {
         date: "2024/04/25(木)"
         , detail: [
             "アルコゥ[黒]を追加"

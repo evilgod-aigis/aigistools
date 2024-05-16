@@ -251,6 +251,7 @@ buff.dep_gl = [
     , {
         name: "エーリカ", rarity: "白", cl: "メイジアーマー", AW: "覚醒後"
         , stats: { cost: "+1" }
+        , target: { not: [ "season" ], season: [ "ハロウィン" ] }
     }
     , {
         name: "ティファ", rarity: "黒", cl: "ドラゴンライダー", AW: "覚醒後"
@@ -673,7 +674,7 @@ buff.dep_gl = [
     }
     , {
         name: "世界樹の苗", rarity: "トークン", AW: "覚醒後"
-        , stats: { rege: [ "20/秒", "10/15f" ] }
+        , stats: { rege: [ "30/秒", "15/15f" ] }
         , note: "ラタトスク"
     }
 ];
