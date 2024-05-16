@@ -16,6 +16,7 @@ lists.selfBuff.rWT = [
     , { id: null, buffer: "主天使セフィーレ", value: 60 }
     , { id: null, buffer: "堕天系お掃除当番クロエ", value: 50 }
     , { id: null, buffer: "帝国機甲士クリスタ", value: 30 }
+    , { id: null, buffer: "聖槍の守護者ネフティ", value: 50 }
     , { id: null, buffer: "聖闇の送り主グレーテル", value: 25 }
     , { id: null, buffer: "封機の剣士エレカ", value: 60 }
     , { id: null, buffer: "普賢", value: 40 }
@@ -26,6 +27,7 @@ lists.selfBuff.rWT = [
     , { id: null, buffer: "恋情の踊り子ワルツ", value: 30 }
     , { id: null, buffer: "恋の応援団シャルキー", value: 70 }
     , { id: null, buffer: "お祭り夕涼みココロ", value: 50 }
+    , { id: null, buffer: "詩歌と叡智の亜神セリド", value: 50 }
     , { id: null, buffer: "氷霊応援団ユキヒメ", value: 60 }
     , { id: null, buffer: "帝国銃撃士パラベル", value: 70 }
     , { id: null, buffer: "妖狸スズネ", value: 20 }

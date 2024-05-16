@@ -1357,6 +1357,7 @@ const unitList = [
     , { id: 0x0534, implDate: "2024/05/09", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "rear", class: "アルケミスト", name: "セリド", fullName: "詩歌と叡智の亜神セリド" }
     , { id: 0x0535, implDate: "2024/05/09", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "ワルキューレ", name: "チャムチャム", fullName: "魔猪騎兵チャムチャム" }
     , { id: 0x0536, implDate: "2024/05/09", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ガオレオン", name: "ちびガオレオン", fullName: "ちびガオレオン", male: 1 }
+    , { id: 0x0537, implDate: "2024/05/16", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "豊穣神", name: "オラティル", fullName: "文明の亜神オラティル" }
     
     
     

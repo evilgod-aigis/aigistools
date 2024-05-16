@@ -213,6 +213,18 @@ lists.buff.rCT.list = [
         }
     }
     , {
+        id: null, buffer: "狂竜の牙", awaken: "-"
+        , value: 30, disabled: null, req: "skill"
+        , target: [ { attribution: [ "ドラゴン" ] } ]
+        , tooltip: "[スキル・全体] 属性：ドラゴンの再動-30%"
+        , unitInfo: {
+            unitName: "狂竜の牙", deployType: "近接型", rarity: "黒"
+            , unitClass: { selected: "狂竜の牙" }
+            , attribution: [], note: []
+            , WT: 1, CT: 0, dur: Infinity
+        }
+    }
+    , {
         id: null, buffer: "妖狐絢爛", isClass: true, awaken: "覚2a"
         , value: 50, disabled: null, req: "deploy"
         , target: [ { attribution: [ "妖怪" ] } ]
