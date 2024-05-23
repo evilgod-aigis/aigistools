@@ -577,7 +577,6 @@ target.AutoCheck = (_category, _selected) => {
             if(_.includes(target.count.others[opt.value], _selected)) opt.checked = true;
         });
     } else {
-    console.log(target.link[_category][_selected])
         const othersForm = document.getElementById("target-info_others");
         _.forEach(othersForm.options, opt => {
             if(_.includes(target.link[_category][_selected], opt.value)) opt.checked = true;
