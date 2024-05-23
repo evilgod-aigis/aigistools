@@ -290,7 +290,7 @@ buff.unique = [
     }
     , {
         name: "ちびメリュジアナ", rarity: "ちび", cl: "ドラゴンプリンセス", skill: "通常"
-        , stats: { atk: "×1.3" }
+        , stats: { atk: "×1.35" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
     }
@@ -298,7 +298,7 @@ buff.unique = [
         name: "エーリカ", rarity: "白", cl: "メイジアーマー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
-        , note: [ "区分：ダメージ上昇(魔法)", "分類未確認" ]
+        , note: "区分：ダメージ上昇(魔法)"
     }
     , {
         name: "ミスリア", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"
@@ -403,13 +403,13 @@ buff.unique = [
         name: "オーシェン", rarity: "黒", cl: "光槍ビルガの継承者", AW: "覚醒後", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
-        , note: [ "区分：被ダメージ軽減", "属性不問?-40%(範囲)", "分類未確認" ]
+        , note: [ "区分：被ダメージ軽減", "属性不問?-40%(範囲)" ]
     }
     , {
         name: "オーシェン", rarity: "白", cl: "光槍ビルガの継承者", AW: "覚醒後", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
-        , note: [ "区分：被ダメージ軽減", "属性不問?-10%(範囲)", "分類未確認" ]
+        , note: [ "区分：被ダメージ軽減", "属性不問?-10%(範囲)" ]
     }
     , {
         name: "ベルニス/花嫁", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"

@@ -68,7 +68,7 @@ buff.skill_gl = [
     }
     , {
         name: "イムラウ/お正月", rarity: "白", cl: "ピューティアー", AW: "覚醒後", skill: "覚醒"
-        , stats: { rege: [ "150/秒", "?/?f" ] }
+        , stats: { rege: [ "150/秒", "75/15f" ] }
         , note: "永続"
     }
     , {
@@ -361,12 +361,10 @@ buff.skill_gl = [
     , {
         name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", range: "×1.2", rege: [ "80/秒", "40/15f" ] }
-        , note: "分類未確認"
     }
     , {
         name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", range: "×1.2", rege: [ "80/秒", "40/15f" ] }
-        , note: "分類未確認"
     }
     , {
         name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚醒後", skill: "覚醒"
@@ -392,12 +390,12 @@ buff.skill_gl = [
     , {
         name: "乙姫", rarity: "黒", cl: "儀仗軍神", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3", other: "" }
-        , note: [ "深海-100%", "分類未確認" ]
+        , note: "深海-100%"
     }
     , {
         name: "乙姫", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3", other: "" }
-        , note: [ "深海-100%", "分類未確認" ]
+        , note: "深海-100%"
     }
     , {
         name: "村人", rarity: "銅", cl: "村人", skill: "通常"
@@ -412,8 +410,20 @@ buff.skill_gl = [
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
+        name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { hp: "+30%" }
+    }
+    , {
         name: "リアナ", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
         , stats: { rege: [ "110/秒", "55/15f" ] }
+    }
+    , {
+        name: "アウローラ", rarity: "黒", cl: "ヒーラー", AW: "覚醒前", skill: "通常"
+        , stats: { rege: [ "100/秒", "50/15f" ] }
+    }
+    , {
+        name: "アウローラ", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "通常"
+        , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
         name: "ドゥマルデ", rarity: "黒", cl: "ヒーラー", AW: "覚醒前", skill: "通常"
@@ -669,7 +679,7 @@ buff.skill_gl = [
     }
     , {
         name: "シンフー", rarity: "黒", cl: "幻獣使い", AW: "覚醒後", skill: "覚醒"
-        , stats: { rege: [ "40/秒", "20/15f" ] }
+        , stats: { rege: [ "80/秒", "40/15f" ] }
         , note: "永続"
     }
     , {
@@ -992,7 +1002,7 @@ buff.skill_gl = [
     , {
         name: "神獣玉兎", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
-        , note: [ "イヨ", "分類未確認" ]
+        , note: "イヨ"
     }
     , {
         name: "スチームタンク", rarity: "トークン", AW: "覚醒後", skill: "通常"

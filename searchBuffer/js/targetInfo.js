@@ -98,13 +98,14 @@ target.others = [
     , "＜七つの大罪＞"
     /*, "竜族"*/, "全プリンセス系", "GG持ち", "HP回復不可", "魔界適応", "深海適応", "天界適応"
 ];
-const theYearAigisReleased = 2014;
+const YEAR_RELEASE = 2013;
 target.year = _.map(
-    [...new Array((new Date()).getFullYear() - theYearAigisReleased + 1)]
-    , (_, i) => `${theYearAigisReleased + i}年`
+    [...new Array((new Date()).getFullYear() - YEAR_RELEASE + 1)]
+    , (_, i) => `${YEAR_RELEASE + i}年`
 );
 target.selected = {};
 
+// element(クラス) ⇒ key(属性等)
 target.count = {};
 target.count.depType = {
     "近接": {
@@ -124,8 +125,43 @@ target.count.depType = {
     }
 };
 target.count.sex = {
-    "男性": [ "王子", "シャークウォリアー", "皇帝" ]
-    , "女性": [ "女王子" ]
+    "男性": [
+        "王子"
+        , "魔竜騎士", "暁光の神話", "シャークウォリアー", "一目の竜", "ダーク王子", "グレーターデーモン", "ガオレオン", "皇帝"
+        , "王太子", "騎士【七つの大罪】", "盗賊【七つの大罪】", "妖精【七つの大罪】"
+        , "ゴブリン博士"
+    ]
+    , "女性": [
+        "バーバリアンクイーン", "古代魔導機兵", "銀腕の神話", "ウェポンマスター", "魔導生命体", "アヤカシの王", "黎明の翼", "トゥルーブラッド", "神獣騎士"
+        , "王国軍初代副司令", "大華の神話", "マギステルミリトゥム", "光槍ビルガの継承者", "祖竜"
+        , "ワルキューレ", "プリンセス", "ヴァンパイアプリンセス", "イモータルプリンセス", "イビルプリンセス", "ドラゴンプリンセス", "メイド", "エンプレス"
+        , "戦巫女", "女王子", "白の帝国城"
+        , "小悪魔アイドル", "王国民的アイドル"
+        , "ねんどろいどプリンセス"
+        , "ホーネット派魔人【ランス】", "忍者【ランス】"
+        , "武将【恋姫】", "君主【恋姫】", "奸雄【恋姫】", "勇士【恋姫】", "小覇王【恋姫】", "王女【恋姫】"
+        , "巨人【七つの大罪】"
+        , "騎士【封緘】"
+        , "怪盗【GBM】", "戯曲作家【GBM】", "物語を渡る者【GBM】", "心ある虫【GBM】", "刑事【GBM】"
+        , "鬼【ななリン】"
+        , "黒竜娘【モンスター娘TD】"
+        , "対魔忍 超人【対魔忍】", "対魔忍 魔性【対魔忍】", "対魔忍 精神【対魔忍】", "対魔忍 科学【対魔忍】"
+        , "占星術師", "チェイスハンター", "ジオマンサー", "転生魔導士", "ファラオ", "ピューティアー", "カースウィスパラー", "未踏海域の覇者"
+        , "ウィッチ", "ドラゴンシャーマン", "シャーマン", "政務官", "ドルイド", "フェンリルシャーマン", "デモンシャーマン", "座敷わらし", "魔界総帥", "雪娘"
+        , "英傑の塔", "リッチ【闇の軍勢】", "政務官【闇の軍勢】", "時の俯瞰者", "アイギス神殿", "ハデスシャーマン"
+        , "アイドル召喚士"
+        , "アコライト", "魔法使い【ランス】", "初代大統領【ランス】"
+        , "軍師【恋姫】", "暴君【恋姫】", "弓将【恋姫】"
+        , "王女【七つの大罪】"
+        , "傀儡人形【封緘】"
+        , "水底の支配者【GBM】", "錬金術師【GBM】"
+        , "新米刑事【流星WA】", "交通課職員【流星WA】"
+        , "百腕娘【モンスター娘TD】"
+        , "異世界戦士"
+        , "帝国アイドル"
+        , "不死鳥娘【モンスター娘TD】"
+        , "対魔忍 自然【対魔忍】"
+    ]
 };
 target.count.home = {
     "王国": [
@@ -264,6 +300,24 @@ target.count.others = {
     , "深海適応": [ "未踏海域の覇者", "シーソルジャー", "アクアナイト", "シャークウォリアー", "シービショップ" ]
     , "天界適応": [ "銀腕の神話", "ウェポンマスター", "黎明の翼", "暁光の神話", "神獣騎士", "エンジェル", "スカイウォリアー", "スカイシューター", "スカイヒーラー" ]
 };
+// key(属性等) ⇒ element(others)
+target.link = {
+    race: {
+        "竜人": [ "魔界", "ドラゴン", "魔界適応" ]
+        , "ヴァンパイア": [ "アンデッド" ]
+        , "デーモン系": [ "魔界", "魔界適応" ]
+        , "天使": [ "天界適応" ]
+        , "仙人": [ "飛行" ]
+        , "オーク": [ "魔界", "魔界適応" ]
+        , "鳥人": [ "飛行", "天界適応" ]
+        , "魚人": [ "深海", "深海適応" ]
+    }
+    , others: {
+        "魔界": [ "魔界適応" ]
+        , "深海": [ "深海適応" ]
+        , "深海適応": [ "深海" ]
+    }
+};
 
 target.CreateForm = () => {
     const targetInfo = document.getElementById("target-info");
@@ -271,7 +325,7 @@ target.CreateForm = () => {
     const newTable = document.createElement("table");
     newTable.setAttribute("border", "1");
     
-    let newTr, newTh, newTd, newForm, newLabel, newRadio, newCheckbox, newBr;
+    let newTr, newTh, newTd, newForm, newLabel, newRadio, newCheckbox;
     
     const CreateRadioForm = (category, tr, colspan) => {
         newTh = document.createElement("th");
@@ -284,15 +338,14 @@ target.CreateForm = () => {
         
         CreateRadio(newForm, "すべて含める");
         CreateRadio(newForm, "すべて含めない");
-        newBr = document.createElement("br");
-        newForm.appendChild(newBr);
-        _.forEach(target[category], value => CreateRadio(newForm, value));
+        newForm.appendChild(document.createElement("br"));
+        _.forEach(target[category], value => CreateRadio(newForm, value, category));
         newForm.options[1].checked = true;
         newTd.appendChild(newForm);
         tr.appendChild(newTd);
         newTable.appendChild(tr);
     }
-    const CreateRadio = (form, value) => {
+    const CreateRadio = (form, value, category) => {
         newLabel = document.createElement("label");
         newRadio = document.createElement("input");
         newRadio.type = "radio";
@@ -317,6 +370,23 @@ target.CreateForm = () => {
         newButton.innerHTML = text;
         newTd.appendChild(newButton);
     });
+    
+    newLabel = document.createElement("label");
+    newLabel.className = "tooltip-b";
+    newLabel.setAttribute(
+        "data-tippy-content"
+        , "ONにすると、対応しているものを自動的にチェックする<br>\
+        ONにしたままの方が検索漏れが減る(と思う)<br>\
+        &nbsp;&nbsp;対象：クラス、一部属性"
+    );
+    newCheckbox = document.createElement("input");
+    newCheckbox.type = "checkbox";
+    newCheckbox.id = "auto-check";
+    newCheckbox.setAttribute("checked", "true");
+    newLabel.appendChild(newCheckbox);
+    newLabel.innerHTML += "オートチェックを有効化";
+    newTd.appendChild(newLabel);
+    
     newTr.appendChild(newTd);
     newTable.appendChild(newTr);
     
@@ -337,26 +407,8 @@ target.CreateForm = () => {
     newTd = document.createElement("td");
     const newSelect = document.createElement("select");
     newSelect.id = "target-info_cl";
-    newSelect.setAttribute("onchange", "target.AutoCheck(this.value)");
+    newSelect.setAttribute("onchange", "target.AutoCheck('cl', this.value)");
     newTd.appendChild(newSelect);
-    newBr = document.createElement("br");
-    newTd.appendChild(newBr);
-    newLabel = document.createElement("label");
-    newLabel.className = "tooltip-b";
-    newLabel.setAttribute(
-        "data-tippy-content"
-        , "ONにすると、クラス選択時に<br>\
-        そのクラス固有っぽいものを<br>\
-        自動的にチェックする<br>\
-        ONにしたままの方が検索漏れが減る(と思う)"
-    );
-    newCheckbox = document.createElement("input");
-    newCheckbox.type = "checkbox";
-    newCheckbox.id = "auto-check";
-    newCheckbox.setAttribute("checked", "true");
-    newLabel.appendChild(newCheckbox);
-    newLabel.innerHTML += "オートチェックを有効化";
-    newTd.appendChild(newLabel);
     newTr.appendChild(newTd);
     newTable.appendChild(newTr);
     
@@ -423,9 +475,14 @@ target.CreateForm = () => {
     _.forEach(depTypeForm.options, option =>
         option.addEventListener("change", target.CreateClassOptions)
     );
-    const raceForm = document.getElementById("target-info_race");
-    _.forEach(raceForm.options, option => {
-        if(option.value === "竜人") option.addEventListener("change", target.CheckDragon);
+    _.forEach(target.link, (obj, cat) => {
+        const form = document.getElementById(`target-info_${cat}`);
+        _.forEach(form.options, opt => {
+            if(opt.value in obj)
+                opt.addEventListener("change", () => {
+                    if(opt.checked) target.AutoCheck(cat, opt.value);
+                });
+        });
     });
     
     target.CreateClassOptions();
@@ -493,48 +550,45 @@ target.CreateClassOptions = () => {
 }
 
 // クラス選択時、他のオプションを自動的にON
-target.AutoCheck = _cl => {
+target.AutoCheck = (_category, _selected) => {
     const valid = document.getElementById("auto-check");
     if(!valid.checked) return;
     
-    // depType
-    const depType = _.findKey(target.cl, depType =>
-        _.includes(_.flatten(_.toArray(depType)), _cl)
-    );
-    if(depType === undefined) return;
-    const depTypeForm = document.getElementById("target-info_depType");
-    _.forEach(depTypeForm.options, elem => { elem.checked = elem.value === depType; });
-    
-    // home, race
-    _.forEach([ "home", "race" ], category => {
-        const key = _.findKey(target.count[category], arr => _.includes(arr, _cl));
-        if(key === undefined) return;
-        const form = document.getElementById(`target-info_${category}`);
-        _.forEach(form.options, elem => { elem.checked = elem.value === key; });
-    });
-    
-    // others
-    const othersForm = document.getElementById("target-info_others");
-    _.forEach(othersForm.options, elem => {
-        if(_.includes(target.count.others[elem.value], _cl)) elem.checked = true;
-    });
+    if(_category === "cl") {
+        /*
+        // depType
+        const depType = _.findKey(target.cl, depType => _.includes(_.flatten(_.toArray(depType)), _selected));
+        if(depType === undefined) return;
+        const depTypeForm = document.getElementById("target-info_depType");
+        _.forEach(depTypeForm.options, opt => { opt.checked = opt.value === depType; });
+        */
+        
+        // sex, home, race
+        _.forEach([ "sex", "home", "race" ], category => {
+            const key = _.findKey(target.count[category], arr => _.includes(arr, _selected));
+            if(key === undefined) return;
+            const form = document.getElementById(`target-info_${category}`);
+            _.forEach(form.options, opt => { opt.checked = opt.value === key; });
+        });
+        
+        // others
+        const othersForm = document.getElementById("target-info_others");
+        _.forEach(othersForm.options, opt => {
+            if(_.includes(target.count.others[opt.value], _selected)) opt.checked = true;
+        });
+    } else {
+    console.log(target.link[_category][_selected])
+        const othersForm = document.getElementById("target-info_others");
+        _.forEach(othersForm.options, opt => {
+            if(_.includes(target.link[_category][_selected], opt.value)) opt.checked = true;
+        });
+    }
 }
 
 // 属性等その他一括ON/OFF
 target.ToggleAllOthers = _checked => {
     const othersForm = document.getElementById("target-info_others");
     _.forEach(othersForm.options, option => { option.checked = _checked; });
-}
-
-// 竜人→竜族チェック
-target.CheckDragon = () => {
-    const othersForm = document.getElementById("target-info_others");
-    _.forEach(othersForm.options, option => {
-        if(option.value === "ドラゴン" || option.value === "竜族") {
-            option.checked = true;
-            //return false;
-        }
-    });
 }
 
 // 検索実行

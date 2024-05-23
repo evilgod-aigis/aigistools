@@ -953,7 +953,7 @@ buff.skill_cat = [
         ]
     }
     , {
-        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚醒", skill: "覚醒"
+        name: "グラティア", rarity: "白", cl: "鍛冶職人", AW: "覚醒後", skill: "覚醒"
         , stats: { ct: "-60%" }
         , target: { cl: [ "皇帝" ] }
     }
@@ -1361,6 +1361,16 @@ buff.skill_cat = [
         , note: "範囲"
     }
     , {
+        name: "祓剣主神", rarity: "黒", cl: "儀仗軍神", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.4" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "祓剣主神", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.4" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
         name: "誅子", rarity: "黒", cl: "武侠", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: { home: [ "華の国" ] }
@@ -1524,13 +1534,11 @@ buff.skill_cat = [
         name: "クロリス/私服", rarity: "白", cl: "ウィッチ", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: { cl: [ "王子" ] }
-        , note: "分類未確認"
     }
     , {
         name: "クロリス/私服", rarity: "白", cl: "ウィッチ", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: { cl: [ "王子" ] }
-        , note: "分類未確認"
     }
     , {
         name: "クロリス/私服", rarity: "白", cl: "ウィッチ", AW: "覚醒後", skill: "覚醒(1)"
@@ -2123,7 +2131,7 @@ buff.skill_cat = [
     }
     , {
         name: "ミカ/温泉", rarity: "白", cl: "ドラグーン", AW: "覚醒後", skill: "覚醒"
-        , stats: { rege: [ "30/秒", "?/?f" ] }
+        , stats: { rege: [ "30/秒", "15/15f" ] }
         , target: [
             { season: [ "温泉" ] }
             , { others: [ "騎兵" ] }
@@ -2144,7 +2152,6 @@ buff.skill_cat = [
         name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { others: [ "英傑" ] }
-        , note: "分類未確認"
     }
     , {
         name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒前", skill: "通常"

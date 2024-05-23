@@ -592,7 +592,7 @@ buff.team = [
     }
     , {
         name: "カヨウ", rarity: "黒", cl: "妖狐", AW: "覚醒後"
-        , stats: { hp: "+12%", atk: "+12%", def: "+12%", mr: "+10", cost: "+1" }
+        , stats: { hp: "+15%", atk: "+15%", def: "+15%", mr: "+10", cost: "+1" }
         , target: { race: [ "妖怪" ] }
     }
     , {
@@ -1460,6 +1460,16 @@ buff.team = [
         , target: { home: [ "華の国" ] }
     }
     , {
+        name: "シャジャル", rarity: "黒", cl: "サベージファイター", AW: "覚醒前"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: { home: [ "砂漠の国" ] }
+    }
+    , {
+        name: "シャジャル", rarity: "黒", cl: "サベージファイター", AW: "覚醒後"
+        , stats: { hp: "+15%", atk: "+15%", def: "+15%" }
+        , target: { home: [ "砂漠の国" ] }
+    }
+    , {
         name: "ファルア", rarity: "白", cl: "サベージファイター", AW: "覚醒後"
         , stats: { atk: "+5%" }
         , target: { home: [ "砂漠の国" ] }
@@ -1546,7 +1556,7 @@ buff.team = [
     }
     , {
         name: "ナナリー/浴衣", rarity: "黒", cl: "アーチャー", AW: "覚醒後"
-        , stats: { cost: "-1", wt: "-15%" }
+        , stats: { cost: "-2", wt: "-25%" }
         , target: { rarity: [ "白", "青", "金", "銀", "銅", "鉄" ] }
     }
     , {
@@ -1663,6 +1673,11 @@ buff.team = [
         name: "イリス/お正月", rarity: "黒", cl: "ヒーラー", AW: "覚醒後"
         , stats: { hp: "+10%" }
         , target: { season: [ "お正月" ] }
+    }
+    , {
+        name: "アウローラ", rarity: "黒", cl: "ヒーラー", AW: "覚醒後"
+        , stats: { hp: "+10%", mr: "+10" }
+        , target: { home: [ "白の帝国" ] }
     }
     , {
         name: "ドゥマルデ", rarity: "黒", cl: "ヒーラー", AW: "覚醒後"

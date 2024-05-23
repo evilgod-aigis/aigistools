@@ -349,7 +349,7 @@ debuff.mixture = [
     , {
         name: "ジュウベエ", rarity: "黒", cl: "サムライ", AW: "覚醒後", skill: "覚醒(3～)"
         , stats: {
-            stop: { value: "?f", type: "global" }
+            stop: { value: "89f", type: "global" }
         }
         , domain: "global"
         , note: "発動時"
@@ -875,7 +875,6 @@ debuff.mixture = [
             def: { value: "-25%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "厄神霊犬", cl: "犬神", AW: "覚2b", skill: [ "通常", "覚醒" ]
@@ -1356,7 +1355,6 @@ debuff.mixture = [
             mr: { value: "-10%", type: "clAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "ロードウィッチ", cl: "ウィッチ", AW: "CC後"
@@ -1364,7 +1362,7 @@ debuff.mixture = [
             mr: { value: "-10%", type: "clAttr" }
         }
         , domain: "area"
-        , note: [ "ウィッチ系", "分類未確認" ]
+        , note: "ウィッチ系"
     }
     , {
         name: "アークウィッチ", cl: "ウィッチ", AW: "覚1"
@@ -1372,7 +1370,7 @@ debuff.mixture = [
             mr: { value: "-15%", type: "clAttr" }
         }
         , domain: "area"
-        , note: [ "ウィッチ系", "分類未確認" ]
+        , note: "ウィッチ系"
     }
     , {
         name: "ホーリーウィッチ", cl: "ウィッチ", AW: "覚2a"
@@ -1380,7 +1378,7 @@ debuff.mixture = [
             mr: { value: "-20%", type: "clAttr" }
         }
         , domain: "area"
-        , note: [ "ウィッチ系", "分類未確認" ]
+        , note: "ウィッチ系"
     }
     , {
         name: "ソーサレス", cl: "ウィッチ", AW: "覚2b"
@@ -1388,7 +1386,7 @@ debuff.mixture = [
             mr: { value: "-25%", type: "clAttr" }
         }
         , domain: "area"
-        , note: [ "ウィッチ系", "分類未確認" ]
+        , note: "ウィッチ系"
     }
     , {
         name: "デスピア/ハロウィン", rarity: "黒", cl: "ウィッチ", AW: "覚醒後", skill: "覚醒"
@@ -2319,7 +2317,7 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
-        name: "ヘカティエ/水着", rarity: "白", cl: "儀式魔術師", AW: "覚醒前", skill: "通常"
+        name: "ヘカティエ/水着", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前", skill: "通常"
         , stats: {
             mr: { value: "-90%", type: "area" }
         }
@@ -2327,7 +2325,7 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
-        name: "ヘカティエ/水着", rarity: "白", cl: "儀式魔術師", AW: "覚醒後", skill: "通常"
+        name: "ヘカティエ/水着", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後", skill: "通常"
         , stats: {
             mr: { value: "-90%", type: "area" }
         }
@@ -2575,7 +2573,6 @@ debuff.mixture = [
             def: { value: "-50%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒後", skill: "通常"
@@ -2583,7 +2580,6 @@ debuff.mixture = [
             def: { value: "-50%", type: "area" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒後", skill: "覚醒"
@@ -2592,7 +2588,7 @@ debuff.mixture = [
             , mr: { value: "-30%", type: "area" }
         }
         , domain: "area"
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "レフカ", rarity: "白", cl: "スカイヒーラー", AW: "覚醒前", skill: "通常"

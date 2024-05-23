@@ -153,7 +153,7 @@ target.CreateForm = () => {
     newTh.className = "tooltip-ts";
     newTh.setAttribute(
         "data-tippy-content"
-        , "編成/命中/スカラーはデバフ区分が共通だが<br>それ以外はバラバラなので…"
+        , "編成/命中/スカラー等はデバフ区分が共通だが<br>それ以外はバラバラなので…"
     );
     newTh.innerHTML = "表示方法";
     newTr.appendChild(newTh);

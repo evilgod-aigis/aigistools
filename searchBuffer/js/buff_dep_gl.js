@@ -89,7 +89,7 @@ buff.dep_gl = [
     }
     , {
         name: "ロイヤルハイネス", cl: "プリンセス", AW: "覚2a"
-        , stats: { atk: "+20%", def: "+20%" }
+        , stats: { atk: "+50%", def: "+50%" }
         , target: { cl: [ "王子" ] }
         , note: "プリンセス系"
     }
@@ -894,13 +894,18 @@ buff.dep_gl = [
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "シャジャル", rarity: "黒", cl: "サベージファイター", AW: "覚醒前"
-        , stats: { atk: "+10%", def: "+10%" }
-        , target: { home: [ "砂漠の国" ] }
+        name: "祓剣主神", rarity: "黒", cl: "儀仗軍神", AW: "覚醒前"
+        , stats: { atk: "+7%" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "祓剣主神", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後"
+        , stats: { atk: "+10%" }
+        , target: { depType: [ "近接" ] }
     }
     , {
         name: "シャジャル", rarity: "黒", cl: "サベージファイター", AW: "覚醒後"
-        , stats: { atk: "+15%", def: "+15%", draw: "○" }
+        , stats: { draw: "○" }
         , target: { home: [ "砂漠の国" ] }
     }
     , {

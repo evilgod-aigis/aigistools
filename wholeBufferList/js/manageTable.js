@@ -35,7 +35,6 @@ table.stats = [
 table.before = [ "id", "name", "rarity", "AW", "skill" ];
 table.after = [ "target", "note" ];
 
-
 // 特殊なオブジェクト生成
 table.SetObjects = () => {
     // 全タイプに亘って空なオプションを探し、消す
@@ -75,28 +74,31 @@ table.SetObjects = () => {
     table.column.push(...table.after);
     // 表のソート可能な列
     table.sortable = [ "id", "rarity", ...table.stats ];
+    // 非表示になる可能性のある列(except stats)
+    table.hidable = [ "rarity", "AW", "skill", "target" ];
     
     // picked: 検索条件に合うものを入れる
     // sortedBy: 今何でソートされているか
-    delete table.list;
     table.list = {};
     _.forEach(table.buffType, type => table.list[type] = { picked: [], sortedBy: "id" });
     
     // フィルタ設定保存用
-    delete table.filter;
     table.filter = {};
+    // レアリティ
     table.filter.rarity = {};
     _.forEach(table.rarity, rarity => table.filter.rarity[rarity] = true);
-    table.filter.AW = { "覚醒前": false, "覚醒後": true };
+    // 覚醒
+    table.filter.AW = { "覚醒前": false, "覚醒後": true, "空欄": true };
+    // バフ区分
     table.filter.buffType = {};
     _.forEach(table.buffType, type => table.filter.buffType[type] = true);
+    // バフ種類
     table.filter.stats = {};
     _.forEach(table.stats, stat => table.filter.stats[stat] = true);
     table.filter.stats.forceMode = false;
     table.filter.stats.other = true;
     
     // 覚醒前か後か(フィルタ用)
-    delete table.AW_rep;
     table.AW_rep = {};
     _.forEach(table.AW, (AW, i) => table.AW_rep[AW] = i <= table.AW.indexOf("覚醒前") ? "覚醒前" : "覚醒後");
 }
@@ -104,11 +106,11 @@ table.SetObjects = () => {
 // フィルタ設定生成
 table.CreateFilter = () => {
     // html
-    const CreateButtons = element => {
-        _.forEach({ "全部ON": true, "全部OFF": false }, (checked, text) => {
+    const CreateButtons = (element, filterType = null) => {
+        _.forEach({ "全部ON": true, "全部OFF": false }, (bool, text) => {
             const newButton = document.createElement("button");
             newButton.type = "button";
-            newButton.setAttribute("onclick", `table.ToggleAllFilter(this.parentElement, ${checked})`);
+            newButton.setAttribute("onclick", `table.ToggleAllFilter(this.parentElement, ${bool}, ${filterType ? `"${filterType}"` : ""})`);
             newButton.innerHTML = text;
             element.appendChild(newButton);
         });
@@ -130,7 +132,7 @@ table.CreateFilter = () => {
     `;
     CreateButtons(filterCont);
     
-    let newFliterArea, newTitleArea, newTitle, newCheckboxArea, newLabel, newCheckbox, newBr;
+    let newFliterArea, newTitleArea, newTitle, newCheckboxArea, newLabel, newCheckbox;
     const CreateFilterArea = (title, filterType) => {
         newFliterArea = document.createElement("div");
         newFliterArea.className = "filter-area";
@@ -144,37 +146,31 @@ table.CreateFilter = () => {
         newCheckboxArea = document.createElement("div");
         newCheckboxArea.id = `filter_${filterType}`;
         newCheckboxArea.className = "filter-checkbox-area";
-        CreateButtons(newCheckboxArea);
-        newBr = document.createElement("br");
-        newCheckboxArea.appendChild(newBr);
+        CreateButtons(newCheckboxArea, filterType);
+        newCheckboxArea.appendChild(document.createElement("br"));
         CreateCheckbox(newCheckboxArea, filterType);
         newFliterArea.appendChild(newCheckboxArea);
         filterCont.appendChild(newFliterArea);
     }
     const CreateCheckbox = (element, filterType, except = []) => {
-        _.forEach(table.filter[filterType], (checked, key) => {
+        _.forEach(table.filter[filterType], (bool, key) => {
             if(_.includes(except, key)) return;
             newLabel = document.createElement("label");
             newCheckbox = document.createElement("input");
             newCheckbox.type = "checkbox";
-            if(checked) newCheckbox.setAttribute("checked", "true");
-            newCheckbox.setAttribute("onchange", `table.filter.${filterType}.${key}=this.checked; table.ApplyFilter()`);
+            if(bool) newCheckbox.setAttribute("checked", "true");
+            newCheckbox.setAttribute("onchange", `table.filter.${filterType}.${key}=this.checked; table.ApplyFilter("${filterType}")`);
             newLabel.appendChild(newCheckbox);
             newLabel.innerHTML += key in table.word ? table.word[key].replace(/<br>/g, "") : key;
             element.appendChild(newLabel);
         });
     }
     
-    // rarity
     CreateFilterArea("レアリティ", "rarity");
-    
-    // AW
     CreateFilterArea("覚醒", "AW");
-    
-    // buffType
     CreateFilterArea("区分", "buffType");
     
-    // stats
+    // バフ種類
     newFliterArea = document.createElement("div");
     newFliterArea.className = "filter-area";
     newTitleArea = document.createElement("div");
@@ -197,15 +193,13 @@ table.CreateFilter = () => {
         チェックのない列を強制的に隠す
         <input
             type="checkbox"
-            onchange="table.filter.stats.forceMode=this.checked; table.ApplyFilter()"
+            onchange="table.filter.stats.forceMode=this.checked; table.ApplyFilter('stats')"
         >
     `;
     newCheckboxArea.appendChild(newLabel);
-    newBr = document.createElement("br");
-    newCheckboxArea.appendChild(newBr);
-    CreateButtons(newCheckboxArea);
-    newBr = document.createElement("br");
-    newCheckboxArea.appendChild(newBr);
+    newCheckboxArea.appendChild(document.createElement("br"));
+    CreateButtons(newCheckboxArea, "stats");
+    newCheckboxArea.appendChild(document.createElement("br"));
     CreateCheckbox(newCheckboxArea, "stats", [ "forceMode", "other" ]);
     newLabel = document.createElement("label");
     newLabel.className = "tooltip-b";
@@ -217,7 +211,7 @@ table.CreateFilter = () => {
         <input
             type="checkbox"
             checked
-            onchange="table.filter.stats.other=this.checked; table.ApplyFilter()"
+            onchange="table.filter.stats.other=this.checked; table.ApplyFilter('stats')"
         >
         その他
     `;
@@ -238,26 +232,25 @@ table.ToggleFilterShown = (_this) => {
     }
 }
 // フィルタ一括ON/OFF
-table.ToggleAllFilter = (_element, _checked) => {
+table.ToggleAllFilter = (_element, _bool, _filterType = null) => {
     const labels = _element.getElementsByTagName("label");
     _.forEach(labels, label => {
-        if(!label.classList.contains("except")) label.firstElementChild.checked = _checked;
+        if(!label.classList.contains("except")) label.firstElementChild.checked = _bool;
     });
     
-    const category = _element.id.substring(_element.id.indexOf("_") + 1);
-    if(category in table.filter) {
-        _.forEach(table.filter[category], (_, key) => {
-            if(key !== "forceMode") table.filter[category][key] = _checked;
+    if(_filterType) {
+        _.forEach(table.filter[_filterType], (_, key, obj) => {
+            if(key !== "forceMode") obj[key] = _bool;
         });
     } else {
-        _.forEach(table.filter, optObj =>
-            _.forEach(optObj, (_, key) => {
-                if(key !== "forceMode") optObj[key] = _checked;
+        _.forEach(table.filter, filterObj =>
+            _.forEach(filterObj, (_, key, obj) => {
+                if(key !== "forceMode") obj[key] = _bool;
             })
         );
     }
     
-    table.ApplyFilter();
+    table.ApplyFilter(_filterType);
 }
 
 // テーブル生成
@@ -284,11 +277,25 @@ table.CreateTable = () => {
         let newTr = document.createElement("tr");
         _.forEach(table.column, elem => {
             const newTh = document.createElement("th");
-            if(_.includes(table.sortable, elem)) {
-                newTh.className = "sortable";
+            newTh.classList.add(`column-${elem}`);
+            if(elem === "name") {
+                newTh.classList.add("sortable");
+                newTh.setAttribute("onclick", `table.Sort("${type}", "id", false)`);
+                newTh.innerHTML = table.word[elem];
+                newTh.appendChild(document.createElement("br"));
+                const newSpan = document.createElement("span");
+                newSpan.classList.add("sort-text");
+                newSpan.innerHTML = "ソートリセット";
+                newTh.appendChild(newSpan);
+            } else if(_.includes(table.sortable, elem)) {
+                newTh.classList.add("sortable");
                 newTh.setAttribute("onclick", `table.Sort("${type}", "${elem}")`);
-            }
-            newTh.innerHTML = table.word[elem];
+                const newSpan = document.createElement("span");
+                newSpan.classList.add("sort-text");
+                newSpan.innerHTML = table.word[elem];
+                newTh.appendChild(newSpan);
+            } else
+                newTh.innerHTML = table.word[elem];
             newTr.appendChild(newTh);
         });
         newThead.appendChild(newTr);
@@ -297,15 +304,24 @@ table.CreateTable = () => {
         const newTbody = document.createElement("tbody");
         _.forEach(table.list[type].picked, buffer => {
             newTr = document.createElement("tr");
+            _.forEach([ "rarity", "AW", "skill" ], colName => {
+                const className = `${colName}-${colName in buffer ? buffer[colName] : "空欄"}`;
+                newTr.classList.add(className);
+            });
+            if("AW" in buffer) newTr.classList.add(`AW-${table.AW_rep[buffer.AW]}`);
+            
             _.forEach(table.before, elem => {
                 const newTd = document.createElement("td");
+                newTd.classList.add(`column-${elem}`);
                 if(elem in buffer)
                     newTd.innerHTML = Array.isArray(buffer[elem]) ? buffer[elem].join("<br>") : buffer[elem];
                 newTr.appendChild(newTd);
             });
             _.forEach(table.stats, elem => {
                 const newTd = document.createElement("td");
+                newTd.classList.add(`column-${elem}`);
                 if(elem in buffer.stats) {
+                    newTr.classList.add(`stats-${elem}`);
                     newTd.className = "cell-filled";
                     if(Array.isArray(buffer.stats[elem]))
                         newTd.innerHTML = buffer.stats[elem].join("<br>");
@@ -316,17 +332,8 @@ table.CreateTable = () => {
                 }
                 newTr.appendChild(newTd);
             });
-            /*
-            _.forEach(table.after, elem => {
-                const newTd = document.createElement("td");
-                if(elem in buffer) {
-                    if(elem === "note" && "other" in buffer.stats) newTd.className = "cell-filled";
-                    newTd.innerHTML = Array.isArray(buffer[elem]) ? buffer[elem].join("<br>") : buffer[elem];
-                }
-                newTr.appendChild(newTd);
-            });
-            */
             let newTd = document.createElement("td");
+            newTd.classList.add("column-target");
             if("target" in buffer) {
                 let textArr = [];
                 if(Array.isArray(buffer.target)) {
@@ -358,199 +365,151 @@ table.CreateTable = () => {
                 newTd.innerHTML = `
                     <span class="inline-block">${textArr.join(`、</span><span class="inline-block">`)}</span>
                 `;
-            }
+            } else
+                newTr.classList.add("target-空欄");
             newTr.appendChild(newTd);
             
             newTd = document.createElement("td");
+            //newTd.classList.add("column-note");
             if("note" in buffer) {
-                if("other" in buffer.stats) newTd.className = "cell-filled";
+                if("other" in buffer.stats) {
+                    newTr.classList.add("stats-other");
+                    newTd.className = "cell-filled";
+                }
                 newTd.innerHTML = Array.isArray(buffer.note) ? buffer.note.join("<br>") : buffer.note;
             }
             newTr.appendChild(newTd);
             newTbody.appendChild(newTr);
         });
         newTable.appendChild(newTbody);
-        
         newScroller.appendChild(newTable);
         newTableArea.appendChild(newScroller);
         tables.appendChild(newTableArea);
     });
     
+    // 設定用にスタイル生成
+    if(!document.getElementById("created-style")) {
+        newStyle = document.createElement("style");
+        newStyle.id = "created-style";
+        document.getElementsByTagName('head')[0].appendChild(newStyle);
+        const sheet = newStyle.sheet;
+        // 行
+        _.forEach(table.filter, (obj, filterType) => {
+            if(filterType !== "buffType" || filterType !== "stats")
+                _.forEach(obj, (bool, key) => sheet.insertRule(`#tables .${filterType}-${key} {}`, sheet.cssRules.length));
+        });
+        // 列
+        _.forEach(table.buffType, type =>
+            _.forEach([ ...table.hidable, ...table.stats ], colName =>
+                sheet.insertRule(`#table_${type} .column-${colName} {}`, sheet.cssRules.length)
+            )
+        );
+    }
+    
     table.ApplyFilter();
 }
 
 // フィルタ適用
-/*
-table.ApplyFilter = () => {
-    _.forEach(table.buffType, type => {
-        const tableArea = document.getElementById(`table-area_${type}`);
-        if(!table.filter.buffType[type]) {
-            tableArea.classList.add("is-unshown");
-            return;
-        }
-        tableArea.classList.remove("is-unshown");
-        const buffTable = document.getElementById(`table_${type}`);
-        
-        table.Sort(type, "id", false);
-        
-        // 行の処理
-        const trs = buffTable.querySelectorAll("tbody tr");
-        const shownRowIndexes = [];
-        _.forEach(table.list[type].picked, (buffer, i) => {
-            if(
-                ((!("rarity" in buffer) && table.filter.rarity["空欄"]) || table.filter.rarity[buffer.rarity])
-                && (!("AW" in buffer) || table.filter.AW[table.AW_rep[buffer.AW]])
-                && _.some(buffer.stats, (_, stat) => table.filter.stats[stat])
-            ) {
-                trs[i].classList.remove("is-unshown");
-                shownRowIndexes.push(i);
-            } else
-                trs[i].classList.add("is-unshown");
-        });
-        const tableName = tableArea.getElementsByClassName("table-name")[0];
-        if(shownRowIndexes.length === 0) {
-            buffTable.parentElement.classList.add("is-unshown");
-            tableName.classList.add("table-empty");
-            return;
-        }
-        buffTable.parentElement.classList.remove("is-unshown");
-        tableName.classList.remove("table-empty");
-        
-        // 列の処理
-        const empty = [];
-        let colIndex = table.before.indexOf("AW") + 1;
-        let ths, tds;
-        _.forEach([ "AW", "skill" ], colName => {
-            ths = buffTable.querySelectorAll(`th:nth-child(${colIndex})`);
-            tds = buffTable.querySelectorAll(`td:nth-child(${colIndex})`);
-            if(!ths || !tds) return;
-            if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === ""))
-                empty.push(colName);
-            else {
-                _.forEach(ths, th => th.classList.remove("is-unshown"));
-                _.forEach(tds, td => td.classList.remove("is-unshown"));
-            }
-            ++colIndex;
-        });
-        colIndex = table.before.length + 1;
-        _.forEach(table.filter.stats, (isShown, stat) => {
-            if(stat === "forceMode" || stat === "other") return;
-            
-            ths = buffTable.querySelectorAll(`th:nth-child(${colIndex})`);
-            tds = buffTable.querySelectorAll(`td:nth-child(${colIndex})`);
-            if(!ths || !tds) return;
-            if(table.filter.stats.forceMode && !isShown) {
-                _.forEach(ths, th => th.classList.add("is-unshown"));
-                _.forEach(tds, td => td.classList.add("is-unshown"));
-                empty.push(stat);
-            } else {
-                _.forEach(ths, th => th.classList.remove("is-unshown"));
-                _.forEach(tds, td => td.classList.remove("is-unshown"));
-                if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === ""))
-                    empty.push(stat);
-            }
-            ++colIndex;
-        });
-        colIndex = table.before.length + table.stats.length + 1;
-        ths = buffTable.querySelectorAll(`th:nth-child(${colIndex})`);
-        tds = buffTable.querySelectorAll(`td:nth-child(${colIndex})`);
-        if(!ths || !tds) return;
-        if(_.every(shownRowIndexes, rowIndex => tds[rowIndex].innerHTML === ""))
-            empty.push("target");
-        
-        // 空の列を非表示
-        _.forEach(empty, colName => {
-            colIndex = table.column.indexOf(colName) + 1;
-            ths = buffTable.querySelectorAll(`th:nth-child(${colIndex})`);
-            tds = buffTable.querySelectorAll(`td:nth-child(${colIndex})`);
-            if(!ths || !tds) return;
-            _.forEach(ths, th => th.classList.add("is-unshown"));
-            _.forEach(tds, td => td.classList.add("is-unshown"));
-        });
-    });
+table.ApplyFilter = (_filterType = null, _judgeDisplay = true) => {
+    const style = document.getElementById("created-style");
+    switch(_filterType) {
+        case null:
+            _.forEach(table.filter, (obj, filterType) => table.ApplyFilter(filterType, false));
+            break;
+        case "buffType":
+            _.forEach(table.filter.buffType, (bool, type) => {
+                const tableArea = document.getElementById(`table-area_${type}`);
+                if(bool) tableArea.classList.remove("is-unshown");
+                else tableArea.classList.add("is-unshown");
+            });
+            break;
+        case "stats":
+            _.forEach(table.filter.stats, (bool, stat) => {
+                if(stat === "forceMode") return;
+                const rule1 = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables .stats-${stat}`);
+                if(stat === "other") {
+                    if(bool) rule1.style.removeProperty("display");
+                    return;
+                }
+                const rule2 = _.filter(style.sheet.cssRules, rule => _.includes(rule.selectorText, `.column-${stat}`));
+                if(bool) rule1.style.removeProperty("display");
+                else if(table.filter.stats.forceMode) {
+                    _.forEach(rule2, rule => rule.style.setProperty("display", "none", "important"));
+                    return;
+                }
+                _.forEach(rule2, rule => rule.style.removeProperty("display"));
+            });
+            break;
+        default:
+            _.forEach(table.filter[_filterType], (bool, key) => {
+                const rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables .${_filterType}-${key}`);
+                if(bool) rule.style.removeProperty("display");
+                else rule.style.setProperty("display", "none", "important");
+            });
+    }
+    
+    if(_judgeDisplay) _.forEach(table.buffType, type => table.Display(type));
 }
-*/
-table.ApplyFilter = () => {
-    _.forEach(table.buffType, type => {
-        const tableArea = document.getElementById(`table-area_${type}`);
-        if(!table.filter.buffType[type]) {
-            tableArea.classList.add("is-unshown");
-            return;
-        }
-        tableArea.classList.remove("is-unshown");
-        const buffTable = document.getElementById(`table_${type}`);
-        
-        table.Sort(type, "id", false);
-        
-        // 行の処理
-        const trs = buffTable.querySelectorAll("tbody tr");
-        const isEmpty = { row: true, col: {} };
-        _.forEach([ "AW", "skill", ...table.stats, "target" ], colName => isEmpty.col[colName] = true);
-        _.forEach(table.list[type].picked, (buffer, i) => {
-            if(
-                ((!("rarity" in buffer) && table.filter.rarity["空欄"]) || table.filter.rarity[buffer.rarity])
-                && (!("AW" in buffer) || table.filter.AW[table.AW_rep[buffer.AW]])
-                && _.some(buffer.stats, (_, stat) => { isEmpty.col[stat] = false; return table.filter.stats[stat]; })
-            ) {
-                trs[i].classList.remove("is-unshown");
-                _.forEach([ "AW", "skill", "target" ], colName => {
-                    if(colName in buffer) isEmpty.col[colName] = false;
-                });
-                isEmpty.row = false;
-            } else
-                trs[i].classList.add("is-unshown");
+
+// 表・行・列の表示/非表示
+table.Display = _buffType => {
+    if(!table.filter.buffType[_buffType]) return;
+    const tableArea = document.getElementById(`table-area_${_buffType}`);
+    const tableName = `table_${_buffType}`;
+    const buffTable = document.getElementById(tableName);
+    const trs = buffTable.querySelectorAll("tbody tr");
+    const isUnique = _buffType === "unique";
+    let preType = null;
+    const isNotForceMode = !table.filter.stats.forceMode;
+    const isEmpty = {};
+    _.forEach([ "table", ...table.hidable, ...table.stats ], elem => isEmpty[elem] = true);
+    _.forEach(trs, tr => {
+        tr.classList.remove("is-unshown");
+        if(document.defaultView.getComputedStyle(tr).display === "none") return;
+        _.forEach(table.hidable, colName => {
+            if(!tr.classList.contains(`${colName}-空欄`)) isEmpty[colName] = false;
         });
-        const tableName = tableArea.getElementsByClassName("table-name")[0];
-        if(isEmpty.row) {
-            buffTable.parentElement.classList.add("is-unshown");
-            tableName.classList.add("table-empty");
-            return;
-        }
-        buffTable.parentElement.classList.remove("is-unshown");
-        tableName.classList.remove("table-empty");
-        
-        // 列の処理
-        let colIndex = table.before.indexOf("AW") + 1;
-        let ths, tds;
-        _.forEach([ "AW", "skill" ], colName => {
-            ths = buffTable.querySelectorAll(`th:nth-child(${colIndex})`);
-            tds = buffTable.querySelectorAll(`td:nth-child(${colIndex})`);
-            if(!ths || !tds) return;
-            if(isEmpty.col[colName]) {
-                _.forEach(ths, th => th.classList.add("is-unshown"));
-                _.forEach(tds, td => td.classList.add("is-unshown"));
-            } else {
-                _.forEach(ths, th => th.classList.remove("is-unshown"));
-                _.forEach(tds, td => td.classList.remove("is-unshown"));
+        let isEmpty_tr = true;
+        const classList = _.filter(tr.classList, className => _.includes(className, "stats"));
+        const isEmpty_sub = _.reduce(_.map(classList, className => className.split("-")[1]), (result, stat) => {
+            const isNotOther = stat !== "other";
+            if(table.filter.stats[stat]) {
+                isEmpty_tr = false;
+                if(isNotOther) isEmpty[stat] = false;
+            } else if(isNotForceMode && isNotOther) result.push(stat);
+            return result;
+        }, []);
+        if(isEmpty_tr) tr.classList.add("is-unshown");
+        else {
+            tr.classList.remove("is-unshown");
+            isEmpty.table = false;
+            _.forEach(isEmpty_sub, stat => { isEmpty[stat] = false; });
+            if(isUnique) {
+                const td_id = tr.children[0]
+                const hasDblLine = td_id.classList.contains("dbl-line");
+                const type = buff.unique[td_id.innerText].type;
+                if(preType && type !== preType) {
+                    if(!hasDblLine) _.forEach(tr.children, td => td.classList.add("dbl-line"));
+                } else {
+                    if(hasDblLine) _.forEach(tr.children, td => td.classList.remove("dbl-line"));
+                }
+                preType = type;
             }
-            ++colIndex;
-        });
-        colIndex = table.before.length + 1;
-        _.forEach(table.filter.stats, (isShown, stat) => {
-            if(stat === "forceMode" || stat === "other") return;
-            
-            ths = buffTable.querySelectorAll(`th:nth-child(${colIndex})`);
-            tds = buffTable.querySelectorAll(`td:nth-child(${colIndex})`);
-            if(!ths || !tds) return;
-            if(isEmpty.col[stat] || table.filter.stats.forceMode && !isShown) {
-                _.forEach(ths, th => th.classList.add("is-unshown"));
-                _.forEach(tds, td => td.classList.add("is-unshown"));
-            } else {
-                _.forEach(ths, th => th.classList.remove("is-unshown"));
-                _.forEach(tds, td => td.classList.remove("is-unshown"));
-            }
-            ++colIndex;
-        });
-        ths = buffTable.querySelectorAll(`th:nth-child(${colIndex})`);
-        tds = buffTable.querySelectorAll(`td:nth-child(${colIndex})`);
-        if(isEmpty.col.target) {
-            _.forEach(ths, th => th.classList.add("is-unshown"));
-            _.forEach(tds, td => td.classList.add("is-unshown"));
-        } else {
-            _.forEach(ths, th => th.classList.remove("is-unshown"));
-            _.forEach(tds, td => td.classList.remove("is-unshown"));
         }
     });
+    if(isEmpty.table) {
+        tableArea.children[0].classList.add("table-empty");
+        tableArea.children[1].classList.add("is-unshown");
+    } else {
+        tableArea.children[0].classList.remove("table-empty");
+        tableArea.children[1].classList.remove("is-unshown");
+        const style = document.getElementById("created-style");
+        _.forEach([ ...table.hidable, ...table.stats ], colName => {
+            const rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#${tableName} .column-${colName}`);
+            if(isEmpty[colName]) rule.style.setProperty("display", "none", "important");
+            else rule.style.removeProperty("display");
+        });
+    }
 }
 
 // ソート
@@ -562,8 +521,7 @@ table.Sort = (_buffType, _colName, _allowReverse = true) => {
         if(_colName === "id" || _colName === "rarity")
             trs_array.reverse();
         else {
-            const colIndex = table.column.indexOf(_colName);
-            const trs_filled = _.takeWhile(trs_array, tr => tr.children[colIndex].innerHTML !== "");
+            const trs_filled = _.takeWhile(trs_array, tr => tr.classList.contains(`stats-${_colName}`));
             trs_filled.reverse();
             _.forEach(trs_filled, (tr, i) => trs_array[i] = tr);
         }
@@ -648,41 +606,22 @@ table.Sort = (_buffType, _colName, _allowReverse = true) => {
         table.list[_buffType].sortedBy = _colName;
     }
     
+    const tbody = buffTable.getElementsByTagName("tbody")[0];
     if(_buffType === "unique") {
-        let preType;
-        _.forEach(
-            _.map(trs_array, tr => ({
-                id: parseInt(tr.textContent)
-                , classList: [ ...tr.classList ]
-                , innerHTML: tr.innerHTML
-            }))
-            , (html, i) => {
-                trs[i].classList.remove(...trs[i].classList);
-                trs[i].classList.add(...html.classList);
-                trs[i].innerHTML = html.innerHTML;
-                
-                if(trs[i].children[0].classList.contains("dbl-line")) {
-                    _.forEach(trs[i].children, td => td.classList.remove("dbl-line"));
-                }
-                const type = buff.unique[html.id].type;
-                if(!trs[i].classList.contains("is-unshown")) {
-                    if(preType && type !== preType)
-                        _.forEach(trs[i].children, td => td.classList.add("dbl-line"));
-                    preType = type;
-                }
+        let preType = null;
+        _.forEach(trs_array, tr => {
+            tbody.appendChild(tr);
+            if(document.defaultView.getComputedStyle(tr).display === "none") return;
+            const td_id = tr.children[0]
+            const hasDblLine = td_id.classList.contains("dbl-line");
+            const type = buff.unique[td_id.innerText].type;
+            if(preType && type !== preType) {
+                if(!hasDblLine) _.forEach(tr.children, td => td.classList.add("dbl-line"));
+            } else {
+                if(hasDblLine) _.forEach(tr.children, td => td.classList.remove("dbl-line"));
             }
-        );
-    } else {
-        _.forEach(
-            _.map(trs_array, tr => ({
-                classList: [ ...tr.classList ]
-                , innerHTML: tr.innerHTML
-            }))
-            , (html, i) => {
-                trs[i].classList.remove(...trs[i].classList);
-                trs[i].classList.add(...html.classList);
-                trs[i].innerHTML = html.innerHTML;
-            }
-        );
-    }
+            preType = type;
+        });
+    } else
+        _.forEach(trs_array, tr => tbody.appendChild(tr));
 }

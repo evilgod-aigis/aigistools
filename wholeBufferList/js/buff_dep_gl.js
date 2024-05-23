@@ -295,7 +295,7 @@ buff.dep_gl = [
     }
     , {
         name: "大祓の巫女", cl: "戦巫女", AW: "覚2a"
-        , stats: { rege: [ "60/秒", "?/?f" ] }
+        , stats: { rege: [ "60/秒", "30/15f" ] }
         , note: "戦巫女系"
     }
     , {
@@ -321,11 +321,11 @@ buff.dep_gl = [
     }
     , {
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒前"
-        , stats: { rege: [ "60/秒", "?/?f" ] }
+        , stats: { rege: [ "60/秒", "30/15f" ] }
     }
     , {
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒後"
-        , stats: { rege: [ "80/秒", "?/?f" ] }
+        , stats: { rege: [ "80/秒", "30/15f" ] }
     }
     , {
         name: "皇帝", cl: "皇帝", AW: "覚醒前"

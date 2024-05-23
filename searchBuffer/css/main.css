@@ -198,13 +198,17 @@ summary {
     z-index: 2;
 }
 #tables table .sortable {
-    color: rgb(0, 0, 180);
-    text-decoration: underline;
     cursor: pointer;
 }
+#tables table .sortable .sort-text {
+    color: rgb(0, 0, 180);
+    text-decoration: underline;
+}
 #tables table .sortable:hover {
-    color: rgb(50, 50, 220);
     background-color: rgb(220, 220, 220);
+}
+#tables table .sortable:hover .sort-text {
+    color: rgb(50, 50, 220);
 }
 /*
 #tables table tbody {

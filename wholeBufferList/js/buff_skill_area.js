@@ -101,7 +101,7 @@ buff.skill_area = [
     }
     , {
         name: "エクス", rarity: "黒", cl: "神官戦士", AW: "覚醒後", skill: "覚醒"
-        , stats: { def: "×2.0" }
+        , stats: { def: "×2.5" }
     }
     , {
         name: "エクス/バレンタイン", rarity: "黒", cl: "神官戦士", AW: "覚醒後", skill: "覚醒"
@@ -191,7 +191,7 @@ buff.skill_area = [
     }
     , {
         name: "タチバナ", rarity: "黒", cl: "鬼刃忍", AW: "覚醒後", skill: "覚醒"
-        , stats: { def: "×1.6" }
+        , stats: { def: "×1.8" }
     }
     , {
         name: "ハルモニア/クリスマス", rarity: "黒", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
@@ -290,15 +290,15 @@ buff.skill_area = [
     }
     , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒前", skill: "通常"
-        , stats: { def: "×2.0", rege: [ "60/秒", "30/15f" ] }
+        , stats: { def: "×2.0" }
     }
     , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "通常"
-        , stats: { def: "×2.0", rege: [ "60/秒", "30/15f" ] }
+        , stats: { def: "×2.0" }
     }
     , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後", skill: "覚醒"
-        , stats: { def: "×2.5" }
+        , stats: { def: "×3.0" }
     }
     , {
         name: "リアナ", rarity: "黒", cl: "ヒーラー", AW: "覚醒前", skill: "通常"
@@ -342,7 +342,7 @@ buff.skill_area = [
     }
     , {
         name: "ちびイリス", rarity: "ちび", cl: "ヒーラー", skill: "通常"
-        , stats: { def: "×2.0", rege: [ "60/秒", "30/15f" ] }
+        , stats: { def: "×2.0" }
     }
     , {
         name: "ちびリアナ", rarity: "ちび", cl: "ヒーラー", skill: "通常"
@@ -1033,7 +1033,7 @@ buff.skill_area = [
     }
     , {
         name: "門松トークン", rarity: "トークン", AW: "覚醒後", skill: "通常"
-        , stats: { rege: [ "20/秒", "?/?f" ] }
+        , stats: { rege: [ "20/秒", "10/15f" ] }
         , note: "アラン/お正月"
     }
     , {

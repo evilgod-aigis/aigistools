@@ -35,6 +35,10 @@ debuff.team = [
         , target: { attr: [ "妖怪" ] }
     }
     , {
+        name: "カヨウ", rarity: "黒", cl: "妖狐", AW: "覚醒後"
+        , stats: { mr: "-10" }
+    }
+    , {
         name: "シルセス/花嫁", rarity: "黒", cl: "メイジアーマー", AW: "覚醒後"
         , stats: { atk: "-15%" }
         , target: { attr: [ "デーモン" ] }

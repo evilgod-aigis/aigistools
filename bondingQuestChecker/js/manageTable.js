@@ -297,21 +297,21 @@ table.CreateSetting = () => {
         newFilterCont.appendChild(newFliterArea);
     }
     const CreateButtons = (element, filterType) => {
-        _.forEach({ "全部ON": true, "全部OFF": false }, (checked, text) => {
+        _.forEach({ "全部ON": true, "全部OFF": false }, (bool, text) => {
             const newButton = document.createElement("button");
             newButton.type = "button";
-            newButton.setAttribute("onclick", `table.ToggleAllFilter(this.parentElement, ${checked}, "${filterType}")`);
+            newButton.setAttribute("onclick", `table.ToggleAllFilter(this.parentElement, ${bool}, "${filterType}")`);
             newButton.innerHTML = text;
             element.appendChild(newButton);
         });
     }
     const CreateCheckbox = (element, filterType, except = []) => {
-        _.forEach(table.filter[filterType], (checked, key) => {
+        _.forEach(table.filter[filterType], (bool, key) => {
             if(_.includes(except, key)) return;
             const newLabel = document.createElement("label");
             const newCheckbox = document.createElement("input");
             newCheckbox.type = "checkbox";
-            if(checked) newCheckbox.setAttribute("checked", "true");
+            if(bool) newCheckbox.setAttribute("checked", "true");
             newCheckbox.setAttribute("onchange", `table.filter.${filterType}["${key}"]=this.checked; table.ApplyFilter("${filterType}")`);
             newLabel.appendChild(newCheckbox);
             newLabel.innerHTML += key in table.word ? table.word[key].replace(/<br \/>/g, "") : key;
@@ -361,12 +361,12 @@ table.ToggleSettingShown = _this => {
     }
 }
 // フィルタ一括ON/OFF
-table.ToggleAllFilter = (_element, _checked, _filterType) => {
+table.ToggleAllFilter = (_element, _bool, _filterType) => {
     const labels = _element.getElementsByTagName("label");
     _.forEach(labels, label => {
-        if(!label.classList.contains("except")) label.firstElementChild.checked = _checked;
+        if(!label.classList.contains("except")) label.firstElementChild.checked = _bool;
     });
-    _.forEach(table.filter[_filterType], (_, key, obj) => { obj[key] = _checked; });
+    _.forEach(table.filter[_filterType], (_, key, obj) => { obj[key] = _bool; });
     
     table.ApplyFilter(_filterType);
 }
@@ -691,7 +691,7 @@ table.ApplyFilter = (_filterType = null, _judgeDisplay = true) => {
             break;
         default:
             _.forEach(table.filter[_filterType], (bool, key) => {
-                const rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables .${_filterType}-${key}`);
+                rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables .${_filterType}-${key}`);
                 if(bool) rule.style.removeProperty("display");
                 else rule.style.setProperty("display", "none", "important");
             });

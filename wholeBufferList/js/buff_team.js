@@ -133,7 +133,7 @@ buff.team = [
     }
     , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後"
-        , stats: { def: "+7%" }
+        , stats: { hp: "+10%", def: "+10%" }
     }
     , {
         name: "アデル", rarity: "白", cl: "ウィッチ", AW: "覚醒後"

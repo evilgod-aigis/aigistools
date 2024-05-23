@@ -131,8 +131,7 @@ debuff.hit = [
     , {
         name: "シャルロット", rarity: "白", cl: "魔法剣士", AW: "覚醒後", skill: "覚醒"
         , stats: { mr: "-20%" }
-        , atkAttr: "魔法", dur: "?f"
-        , note: "分類未確認"
+        , atkAttr: "魔法", dur: "59f"
     }
     , {
         name: "エメルダ/バレンタイン", rarity: "黒", cl: "ボウライダー", AW: "覚醒前", skill: "通常"
@@ -585,7 +584,7 @@ debuff.hit = [
     , {
         name: "クロリス/私服", rarity: "白", cl: "ウィッチ", AW: "覚醒後", skill: "覚醒(1)"
         , stats: { stop: "○" }
-        , atkAttr: "魔法", dur: "?f"
+        , atkAttr: "魔法", dur: "89f"
         , note: "ボム"
     }
     , {
@@ -1005,14 +1004,25 @@ debuff.hit = [
     }
     , {
         name: "しづり", rarity: "黒", cl: "雪娘", AW: "覚醒前", skill: "通常"
-        , stats: { atkCd: "+30f", stop: "○" }
+        , stats: { atkCd: "+23f" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "しづり", rarity: "黒", cl: "雪娘", AW: "覚醒前", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "29f"
+    }
+    , {
+        name: "しづり", rarity: "黒", cl: "雪娘", AW: "覚醒後", skill: "通常"
+        , stats: { atkCd: "+23f" }
         , atkAttr: "魔法", dur: "?f"
         , note: "分類未確認"
     }
     , {
         name: "しづり", rarity: "黒", cl: "雪娘", AW: "覚醒後", skill: "通常"
-        , stats: { atkCd: "+30f", stop: "○" }
-        , atkAttr: "魔法", dur: "?f"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "29f"
         , note: "分類未確認"
     }
     , {
@@ -1272,7 +1282,7 @@ debuff.hit = [
         name: "玉手箱", rarity: "トークン", AW: "覚醒後", skill: "通常"
         , stats: { atk: "-15%", def: "-30%" }
         , atkAttr: "物理", dur: "∞"
-        , note: [ "乙姫", "ボム", "分類未確認" ]
+        , note: [ "乙姫", "ボム" ]
     }
     , {
         name: "最上級トラップ", rarity: "トークン", AW: "覚2b"
