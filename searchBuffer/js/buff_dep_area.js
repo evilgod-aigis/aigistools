@@ -11,6 +11,16 @@ buff.dep_area = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "プロメ", rarity: "黒", cl: "コロッサス", AW: "覚醒前"
+        , stats: { rege: [ "50/秒", "25/15f" ] }
+        , target: { race: [ "人間" ] }
+    }
+    , {
+        name: "プロメ", rarity: "黒", cl: "コロッサス", AW: "覚醒後"
+        , stats: { rege: [ "70/秒", "35/15f" ] }
+        , target: { race: [ "人間" ] }
+    }
+    , {
         name: "超発明王", cl: "発明家", AW: "覚2a"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { depType: [ "近接" ] }

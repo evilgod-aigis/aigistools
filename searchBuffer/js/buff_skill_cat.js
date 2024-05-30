@@ -1421,6 +1421,21 @@ buff.skill_cat = [
         , target: { race: [ "人間", "神", "半神" ] }
     }
     , {
+        name: "プロメ", rarity: "黒", cl: "コロッサス", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { race: [ "人間" ] }
+    }
+    , {
+        name: "プロメ", rarity: "黒", cl: "コロッサス", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { race: [ "人間" ] }
+    }
+    , {
+        name: "プロメ", rarity: "黒", cl: "コロッサス", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "×1.5" }
+        , target: { race: [ "人間" ] }
+    }
+    , {
         name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.15", def: "×1.15", other: "" }
         , target: { sex: [ "女性" ] }

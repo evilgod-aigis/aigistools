@@ -506,7 +506,7 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
-        name: "トネール", rarity: "白", cl: "処刑人", AW: "覚醒後", skill: "覚醒"
+        name: "リムリィ", rarity: "白", cl: "処刑人", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "-30%" }
         , atkAttr: "物理", dur: "300f"
         , note: [ "ボム", "分類未確認" ]
@@ -533,19 +533,25 @@ debuff.hit = [
         name: "神話の子", cl: "神話の継承者", AW: "覚1"
         , stats: { atk: "-10%" }
         , atkAttr: "物理", dur: "?f"
-        , note: [ "分類未確認", "神話の継承者系" ]
+        , note: [ "神話の継承者系", "分類未確認" ]
     }
     , {
         name: "紡がれる物語", cl: "神話の継承者", AW: "覚2a"
         , stats: { atk: "-10%" }
         , atkAttr: "物理", dur: "?f"
-        , note: [ "分類未確認", "神話の継承者系" ]
+        , note: [ "神話の継承者系", "分類未確認" ]
     }
     , {
         name: "目覚める荒神", cl: "神話の継承者", AW: "覚2b"
         , stats: { atk: "-10%" }
         , atkAttr: "物理", dur: "?f"
-        , note: [ "分類未確認", "神話の継承者系" ]
+        , note: [ "神話の継承者系", "分類未確認" ]
+    }
+    , {
+        name: "ギガースフォート", cl: "コロッサス", AW: "覚2a"
+        , stats: { atk: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "コロッサス系", "分類未確認" ]
     }
     , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
@@ -1100,6 +1106,18 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "7f"
         , note: "永続"
+    }
+    , {
+        name: "フェリス", rarity: "黒", cl: "逃亡悪魔【ランス】", AW: "覚醒前"
+        , stats: { atk: "-10%", def: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "フェリス", rarity: "黒", cl: "逃亡悪魔【ランス】", AW: "覚醒後"
+        , stats: { atk: "-20%", def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "奸雄【恋姫】", cl: "奸雄【恋姫】", AW: "覚醒前"

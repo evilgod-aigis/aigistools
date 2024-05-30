@@ -1169,7 +1169,7 @@ const unitList = [
     , { id: 0x047a, implDate: "2023/04/13", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "忍者【ランス】", name: "見当かなみ", fullName: "見当かなみ", collabo: 1 }
     , { id: 0x047b, implDate: "2023/04/13", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "魔法使い【ランス】", name: "魔想志津香", fullName: "魔想志津香", collabo: 1 }
     , { id: 0x047c, implDate: "2023/04/13", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ヒーラー", name: "ちびドゥマルデ", fullName: "ちびドゥマルデ", male: 1 }
-    , { id: 0x047d, implDate: "2023/04/27", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "rear", class: "初代大統領【ランス】", name: "シーラ・ヘルマン", fullName: "シーラ・ヘルマン", collabo: 1 }
+    , { id: 0x047d, implDate: "2023/04/27", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "rear", class: "初代大統領【ランス】", name: "シーラ", fullName: "シーラ・ヘルマン", collabo: 1 }
     , { id: 0x047e, implDate: "2023/04/27", implDate_bq: "2024/05/09", obtain: "sh", rarity: "b" , depType: "van" , class: "サベージファイター", name: "シャジャル", fullName: "砂漠の勇者シャジャル" }
     , { id: 0x047f, implDate: "2023/04/27", implDate_bq: null        , obtain: "tr", rarity: "b" , depType: "van" , class: "戦の聖霊", name: "プロエ", fullName: "戦の聖霊プロエ" }
     , { id: 0x0480, implDate: "2023/04/27", implDate_bq: null        , obtain: "tr", rarity: "b" , depType: "rear", class: "アーチャー", name: "ナナリー/私服", fullName: "白羽の休日ナナリー" }
@@ -1359,6 +1359,11 @@ const unitList = [
     , { id: 0x0536, implDate: "2024/05/09", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ガオレオン", name: "ちびガオレオン", fullName: "ちびガオレオン", male: 1 }
     , { id: 0x0537, implDate: "2024/05/16", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "豊穣神", name: "オラティル", fullName: "文明の亜神オラティル" }
     , { id: 0x0538, implDate: "2024/05/23", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "儀仗軍神", name: "祓剣主神", fullName: "剣の亜神 祓剣主神" }
+    , { id: 0x0539, implDate: "2024/05/30", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "コロッサス", name: "プロメ", fullName: "慈悲と焔の亜神プロメ" }
+    , { id: 0x053a, implDate: "2024/05/30", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "上杉家当主【ランス】", name: "上杉謙信", fullName: "上杉謙信", collabo: 1 }
+    , { id: 0x053b, implDate: "2024/05/30", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ゼス警察長官【ランス】", name: "ウルザ", fullName: "ウルザ・プラナアイス", collabo: 1 }
+    , { id: 0x053c, implDate: "2024/05/30", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ホーネット派代表【ランス】", name: "ホーネット", fullName: "魔人ホーネット", collabo: 1 }
+    , { id: 0x053d, implDate: "2024/05/30", implDate_bq: null        , obtain: "sp", rarity: "p" , depType: "van" , class: "逃亡悪魔【ランス】", name: "フェリス", fullName: "フェリス", collabo: 1 }
     
     
     

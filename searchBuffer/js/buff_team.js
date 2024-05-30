@@ -109,6 +109,13 @@ buff.team = [
         , target: { year: [ "2023年" ] }
     }
     , {
+        name: "王子【玉兎】", cl: "王子"
+        , stats: { atk: "+7%", def: "+7%" }
+        , stats: { hp: "+10%", atk: "+10%", def: "+10%" }
+        , target: { year: [ "2023年" ] }
+        , note: "Lv3以上"
+    }
+    , {
         name: "王子【麒麟】", cl: "王子"
         , stats: { hp: "+10%", atk: "+10%" }
         , target: { home: [ "華の国" ] }
