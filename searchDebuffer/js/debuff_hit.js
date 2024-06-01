@@ -550,8 +550,8 @@ debuff.hit = [
     , {
         name: "ギガースフォート", cl: "コロッサス", AW: "覚2a"
         , stats: { atk: "-10%" }
-        , atkAttr: "物理", dur: "?f"
-        , note: [ "コロッサス系", "分類未確認" ]
+        , atkAttr: "物理", dur: "89f"
+        , note: "コロッサス系"
     }
     , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
@@ -1110,14 +1110,12 @@ debuff.hit = [
     , {
         name: "フェリス", rarity: "黒", cl: "逃亡悪魔【ランス】", AW: "覚醒前"
         , stats: { atk: "-10%", def: "-10%" }
-        , atkAttr: "物理", dur: "?f"
-        , note: "分類未確認"
+        , atkAttr: "物理", dur: "59f"
     }
     , {
         name: "フェリス", rarity: "黒", cl: "逃亡悪魔【ランス】", AW: "覚醒後"
         , stats: { atk: "-20%", def: "-20%" }
-        , atkAttr: "物理", dur: "?f"
-        , note: "分類未確認"
+        , atkAttr: "物理", dur: "59f"
     }
     , {
         name: "奸雄【恋姫】", cl: "奸雄【恋姫】", AW: "覚醒前"

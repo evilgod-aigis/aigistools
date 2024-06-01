@@ -1364,6 +1364,8 @@ const unitList = [
     , { id: 0x053b, implDate: "2024/05/30", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ゼス警察長官【ランス】", name: "ウルザ", fullName: "ウルザ・プラナアイス", collabo: 1 }
     , { id: 0x053c, implDate: "2024/05/30", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ホーネット派代表【ランス】", name: "ホーネット", fullName: "魔人ホーネット", collabo: 1 }
     , { id: 0x053d, implDate: "2024/05/30", implDate_bq: null        , obtain: "sp", rarity: "p" , depType: "van" , class: "逃亡悪魔【ランス】", name: "フェリス", fullName: "フェリス", collabo: 1 }
+    , { id: 0x053e, implDate: "2024/06/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ドラゴンプリンセス", name: "ちびロタン", fullName: "ちびロタン" }
+    , { id: 0x053f, implDate: "2024/06/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "スカラー", name: "ちびフェリシア", fullName: "ちびフェリシア" }
     
     
     

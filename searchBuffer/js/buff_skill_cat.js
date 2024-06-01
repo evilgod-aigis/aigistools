@@ -197,6 +197,11 @@ buff.skill_cat = [
         , target: { others: [ "ドラゴン" ] }
     }
     , {
+        name: "ちびロタン", rarity: "ちび", cl: "ドラゴンプリンセス", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: { others: [ "ドラゴン" ] }
+    }
+    , {
         name: "ヒバリ/バレンタイン", rarity: "黒", cl: "サムライ", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.1", def: "×1.1" }
         , target: { cl: [ "王子" ] }
