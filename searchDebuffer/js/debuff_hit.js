@@ -47,6 +47,11 @@ debuff.hit = [
         , note: "ボム"
     }
     , {
+        name: "アサル/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒後", skill: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "19f"
+    }
+    , {
         name: "ディーナ", rarity: "黒", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "59f"
@@ -1116,6 +1121,16 @@ debuff.hit = [
         name: "フェリス", rarity: "黒", cl: "逃亡悪魔【ランス】", AW: "覚醒後"
         , stats: { atk: "-20%", def: "-20%" }
         , atkAttr: "物理", dur: "59f"
+    }
+    , {
+        name: [ "リズナ・", "ランフビット" ], rarity: "黒", cl: "旅人【ランス】", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "-20%", def: "-20%" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: [ "リズナ・", "ランフビット" ], rarity: "黒", cl: "旅人【ランス】", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "-20%", def: "-20%" }
+        , atkAttr: "魔法", dur: "?f"
     }
     , {
         name: "奸雄【恋姫】", cl: "奸雄【恋姫】", AW: "覚醒前"

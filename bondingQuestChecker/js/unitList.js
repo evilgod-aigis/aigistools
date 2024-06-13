@@ -896,7 +896,7 @@ const unitList = [
     , { id: 0x036d, implDate: "2021/06/03", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "くぐつ使い", name: "ちびウェンディ", fullName: "ちびウェンディ" }
     , { id: 0x036e, implDate: "2021/06/03", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "重装砲兵", name: "ちびエルミラ", fullName: "ちびエルミラ" }
     , { id: 0x036f, implDate: "2021/06/10", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "メイジアーマー", name: "シルセス/花嫁", fullName: "星天の花嫁シルセス" }
-    , { id: 0x0370, implDate: "2021/06/10", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "儀式魔術師", name: "ヘカティエ", fullName: "冥界の魔術師ヘカティエ" }
+    , { id: 0x0370, implDate: "2021/06/10", implDate_bq: "2024/06/13", obtain: "sh", rarity: "b" , depType: "rear", class: "儀式魔術師", name: "ヘカティエ", fullName: "冥界の魔術師ヘカティエ" }
     , { id: 0x0371, implDate: "2021/06/10", implDate_bq: "2023/02/09", obtain: "sh", rarity: "p" , depType: "van" , class: "料理人", name: "ユッタ", fullName: "帝国料理人ユッタ" }
     , { id: 0x0372, implDate: "2021/06/10", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "幻術士", name: "マルティナ", fullName: "帝国幻術士マルティナ" }
     , { id: 0x0373, implDate: "2021/06/10", implDate_bq: null        , obtain: "sh", rarity: "g" , depType: "van" , class: "重装砲兵", name: "シュペット", fullName: "帝国重装砲兵シュペット" }
@@ -1153,7 +1153,7 @@ const unitList = [
     , { id: 0x046a, implDate: "2023/03/09", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "後衛戦術家", name: "シナト/バニー", fullName: "疾風軍師の祝福祭シナト" }
     , { id: 0x046b, implDate: "2023/03/09", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "rear", class: "ドラゴンメイジ", name: "カラザ/バニー", fullName: "竜兎の共宴カラザ" }
     , { id: 0x046c, implDate: "2023/03/09", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "メイジ", name: "ちびヴァレリー", fullName: "ちびヴァレリー", male: 1 }
-    , { id: 0x046d, implDate: "2023/03/16", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "シールダー", name: "レジナレア", fullName: "盾騎士レジナレア" }
+    , { id: 0x046d, implDate: "2023/03/16", implDate_bq: "2024/06/13", obtain: "sh", rarity: "p" , depType: "van" , class: "シールダー", name: "レジナレア", fullName: "盾騎士レジナレア" }
     , { id: 0x046e, implDate: "2023/03/16", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "武侠", name: "フェイロン", fullName: "武成豪侠フェイロン" }
     , { id: 0x046f, implDate: "2023/03/23", implDate_bq: "2023/10/12", obtain: "sh", rarity: "p" , depType: "rear", class: "シービショップ", name: "イヲナミ", fullName: "龍宮の海巫女イヲナミ" }
     , { id: 0x0470, implDate: "2023/03/23", implDate_bq: null        , obtain: "sh", rarity: "sl", depType: "van" , class: "料理人", name: "マグリカ", fullName: "下町料理人マグリカ" }
@@ -1366,6 +1366,11 @@ const unitList = [
     , { id: 0x053d, implDate: "2024/05/30", implDate_bq: null        , obtain: "sp", rarity: "p" , depType: "van" , class: "逃亡悪魔【ランス】", name: "フェリス", fullName: "フェリス", collabo: 1 }
     , { id: 0x053e, implDate: "2024/06/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ドラゴンプリンセス", name: "ちびロタン", fullName: "ちびロタン" }
     , { id: 0x053f, implDate: "2024/06/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "スカラー", name: "ちびフェリシア", fullName: "ちびフェリシア" }
+    , { id: 0x0540, implDate: "2024/06/13", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "旅人【ランス】", name: "リズナ", fullName: "リズナ・ランフビット", collabo: 1 }
+    , { id: 0x0541, implDate: "2024/06/13", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ソルジャー", name: "アサル/新装", fullName: "太陽の戦士アサル" }
+    , { id: 0x0542, implDate: "2024/06/13", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "メイジ", name: "メーリス/新装", fullName: "未来の大魔術師メーリス" }
+    , { id: 0x0543, implDate: "2024/06/13", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "エンジェル", name: "ニエル/新装", fullName: "払暁の堕天使ニエル" }
+    , { id: 0x0544, implDate: "2024/05/09", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "メイジ", name: "ちびバルバストラフ", fullName: "ちびバルバストラフ", male: 1 }
     
     
     

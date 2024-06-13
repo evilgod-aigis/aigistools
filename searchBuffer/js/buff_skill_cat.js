@@ -86,6 +86,23 @@ buff.skill_cat = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "アサル/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3", cost: "-50%" }
+        , target: { home: [ "砂漠の国" ] }
+        , note: "永続"
+    }
+    , {
+        name: "アサル/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3", cost: "-50%" }
+        , target: { home: [ "砂漠の国" ] }
+        , note: "永続"
+    }
+    , {
+        name: "アサル/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒後", skill: "覚醒"
+        , stats: { cost: "-50%" }
+        , target: { home: [ "砂漠の国" ] }
+    }
+    , {
         name: "ケイティ/お正月", rarity: "白", cl: "ソルジャー", AW: "覚醒後", skill: "覚醒"
         , stats: { hp: "+50%", atk: "×1.5", def: "×1.5" }
         , target: { cl: [ "ソルジャー" ] }
@@ -1517,6 +1534,16 @@ buff.skill_cat = [
             { season: [ "サマー" ] }
             , { others: [ "魔術師" ] }
         ]
+    }
+    , {
+        name: "メーリス/新装", rarity: "黒", cl: "メイジ", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.4" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
+        name: "メーリス/新装", rarity: "黒", cl: "メイジ", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.4" }
+        , target: { others: [ "魔術師" ] }
     }
     , {
         name: "メーリス/学園", rarity: "白", cl: "メイジ", AW: "覚醒前", skill: "通常"

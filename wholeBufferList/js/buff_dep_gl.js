@@ -224,6 +224,14 @@ buff.dep_gl = [
         , stats: { nul: "10%" }
     }
     , {
+        name: "ニエル/新装", rarity: "黒", cl: "エンジェル", AW: "覚醒前", skill: "非"
+        , stats: { rege: [ "30/秒", "15/15f" ] }
+    }
+    , {
+        name: "ニエル/新装", rarity: "黒", cl: "エンジェル", AW: "覚醒後", skill: "非"
+        , stats: { rege: [ "50/秒", "25/15f" ] }
+    }
+    , {
         name: "クロエ", rarity: "白", cl: "エンジェル", AW: "覚醒後", skill: "非"
         , stats: { nul: "7%" }
     }
