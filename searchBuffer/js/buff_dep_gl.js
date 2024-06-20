@@ -851,6 +851,16 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "ヤハール/花嫁", rarity: "白", cl: "デーモンロード", AW: "覚醒前"
+        , stats: { cost: "-2" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "ヤハール/花嫁", rarity: "白", cl: "デーモンロード", AW: "覚醒後"
+        , stats: { cost: "-3" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
         name: "シロ", rarity: "黒", cl: "犬神", AW: "覚醒後"
         , stats: { rege: [ "40/秒", "20/15f" ] }
         , target: { race: [ "妖怪" ] }
@@ -912,6 +922,14 @@ buff.dep_gl = [
         name: "レジナレア", rarity: "白", cl: "シールダー", AW: "覚醒後"
         , stats: { draw: "○" }
         , target: { cl: [ "ヘビーアーマー", "シールダー" ] }
+    }
+    , {
+        name: "レジナレア/花嫁", rarity: "白", cl: "シールダー", AW: "覚醒後"
+        , stats: { def: "+10%" }
+        , target: [
+            { season: [ "ジューンブライド" ] }
+            , { others: [ "重装" ] }
+        ]
     }
     , {
         name: "女王子", rarity: "黒", cl: "女王子", AW: "覚醒前"

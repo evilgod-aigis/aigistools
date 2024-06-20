@@ -1012,6 +1012,14 @@ buff.team = [
         , target: { cl: [ "ワルキューレ", "ペガサスライダー", "ドラゴンライダー", "魔竜騎士", "ロイヤルガード"] }
     }
     , {
+        name: "ゼパリエッテ", rarity: "黒", cl: "魔神", AW: "覚醒後"
+        , stats: { hp: "+7%", atk: "+7%", def: "+7%" }
+        , target: [
+            { sex: [ "男性" ] }
+            , { others: [ "魔界" ] }
+        ]
+    }
+    , {
         name: "サオシュ/温泉", rarity: "白", cl: "魔神", AW: "覚醒後"
         , stats: { poison: "-100%", abn: "-100%" }
         , target: { race: [ "デーモン系" ] }
@@ -2252,11 +2260,6 @@ buff.team = [
         , note: "GG付与"
     }
     , {
-        name: "ジゼル", rarity: "黒", cl: "ドラグーン", AW: "覚醒後"
-        , stats: { cost: "-3" }
-        , target: { others: [ "ドラゴン" ] }
-    }
-    , {
         name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒前"
         , stats: { atk: "+5%" }
         , target: { home: [ "白の帝国" ] }
@@ -2299,6 +2302,21 @@ buff.team = [
             { cl: [ "王子" ] }
             , { season: [ "ジューンブライド" ] }
         ]
+    }
+    , {
+        name: "ジゼル", rarity: "黒", cl: "ドラグーン", AW: "覚醒後"
+        , stats: { cost: "-3" }
+        , target: { others: [ "ドラゴン" ] }
+    }
+    , {
+        name: "エンジュ/花嫁", rarity: "黒", cl: "座敷わらし", AW: "覚醒前"
+        , stats: { def: "+5%", mr: "+3" }
+        , target: { season: [ "ジューンブライド" ] }
+    }
+    , {
+        name: "エンジュ/花嫁", rarity: "黒", cl: "座敷わらし", AW: "覚醒後"
+        , stats: { def: "+10%", mr: "+5" }
+        , target: { season: [ "ジューンブライド" ] }
     }
     , {
         name: "アスバール", rarity: "黒", cl: "魔界総帥", AW: "覚醒前"

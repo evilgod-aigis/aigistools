@@ -19,8 +19,18 @@ buff.add = [
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "オーガスタ", rarity: "黒", cl: "料理人", AW: "覚醒後"
+        name: "オーガスタ", rarity: "黒", cl: "料理人", AW: "覚1"
         , stats: { hp: "max3000", atk: "max1500", def: "max1500" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "オーガスタ", rarity: "黒", cl: "料理人", AW: "覚2a"
+        , stats: { hp: "max3400", atk: "max1650", def: "max1650" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "オーガスタ", rarity: "黒", cl: "料理人", AW: "覚2b"
+        , stats: { hp: "max3550", atk: "max1850", def: "max1850" }
         , target: { depType: [ "近接" ] }
     }
     , {
@@ -29,8 +39,18 @@ buff.add = [
         , target: { sex: [ "女性" ] }
     }
     , {
-        name: "オーガスタ/バレンタイン", rarity: "黒", cl: "料理人", AW: "覚醒後"
+        name: "オーガスタ/バレンタイン", rarity: "黒", cl: "料理人", AW: "覚1"
         , stats: { hp: "max1600", atk: "max800", def: "max800" }
+        , target: { sex: [ "女性" ] }
+    }
+    , {
+        name: "オーガスタ/バレンタイン", rarity: "黒", cl: "料理人", AW: "覚2a"
+        , stats: { hp: "max2000", atk: "max950", def: "max950" }
+        , target: { sex: [ "女性" ] }
+    }
+    , {
+        name: "オーガスタ/バレンタイン", rarity: "黒", cl: "料理人", AW: "覚2b"
+        , stats: { hp: "max2150", atk: "max1150", def: "max1150" }
         , target: { sex: [ "女性" ] }
     }
     , {
@@ -42,8 +62,24 @@ buff.add = [
         ]
     }
     , {
-        name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚醒後"
+        name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚1"
         , stats: { hp: "max3000", atk: "max1500", def: "max1500" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { depType: [ "遠距離" ] }
+        ]
+    }
+    , {
+        name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚2a"
+        , stats: { hp: "max3550", atk: "max1850", def: "max1850" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { depType: [ "遠距離" ] }
+        ]
+    }
+    , {
+        name: "デルフィーナ", rarity: "黒", cl: "料理人", AW: "覚2b"
+        , stats: { hp: "max3550", atk: "max1850", def: "max1850" }
         , target: [
             { cl: [ "王子" ] }
             , { depType: [ "遠距離" ] }
@@ -55,8 +91,13 @@ buff.add = [
         , target: { others: [ "魔術師" ] }
     }
     , {
-        name: "タオパオ", rarity: "白", cl: "料理人", AW: "覚醒後"
+        name: "タオパオ", rarity: "白", cl: "料理人", AW: "覚1"
         , stats: { hp: "max2400", atk: "max1200", def: "max1200" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
+        name: "タオパオ", rarity: "白", cl: "料理人", AW: "覚2b"
+        , stats: { hp: "max2950", atk: "max1550", def: "max1550" }
         , target: { others: [ "魔術師" ] }
     }
     , {
@@ -65,8 +106,13 @@ buff.add = [
         , target: { race: [ "デーモン系" ] }
     }
     , {
-        name: "キホル", rarity: "白", cl: "料理人", AW: "覚醒後"
+        name: "キホル", rarity: "白", cl: "料理人", AW: "覚1"
         , stats: { hp: "max2400", atk: "max1200", def: "max1200" }
+        , target: { race: [ "デーモン系" ] }
+    }
+    , {
+        name: "キホル", rarity: "白", cl: "料理人", AW: "覚2a"
+        , stats: { hp: "max2800", atk: "max1350", def: "max1350" }
         , target: { race: [ "デーモン系" ] }
     }
     , {
@@ -75,8 +121,13 @@ buff.add = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
-        name: "ユッタ", rarity: "白", cl: "料理人", AW: "覚醒後"
+        name: "ユッタ", rarity: "白", cl: "料理人", AW: "覚1"
         , stats: { hp: "max2400", atk: "max1200", def: "max1200" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "ユッタ", rarity: "白", cl: "料理人", AW: "覚2b"
+        , stats: { hp: "max2950", atk: "max1550", def: "max1550" }
         , target: { home: [ "白の帝国" ] }
     }
     , {
@@ -85,8 +136,13 @@ buff.add = [
         , target: { race: [ "妖怪" ] }
     }
     , {
-        name: "アヅミ", rarity: "白", cl: "料理人", AW: "覚醒後"
+        name: "アヅミ", rarity: "白", cl: "料理人", AW: "覚1"
         , stats: { hp: "max2400", atk: "max1200", def: "max1200" }
+        , target: { race: [ "妖怪" ] }
+    }
+    , {
+        name: "アヅミ", rarity: "白", cl: "料理人", AW: "覚2b"
+        , stats: { hp: "max2950", atk: "max1550", def: "max1550" }
         , target: { race: [ "妖怪" ] }
     }
     , {
@@ -95,8 +151,13 @@ buff.add = [
         , target: { others: [ "アンデッド" ] }
     }
     , {
-        name: "アシュリン", rarity: "白", cl: "料理人", AW: "覚醒後"
+        name: "アシュリン", rarity: "白", cl: "料理人", AW: "覚1"
         , stats: { hp: "max2400", atk: "max1200", def: "max1200" }
+        , target: { others: [ "アンデッド" ] }
+    }
+    , {
+        name: "アシュリン", rarity: "白", cl: "料理人", AW: "覚2b"
+        , stats: { hp: "max2950", atk: "max1550", def: "max1550" }
         , target: { others: [ "アンデッド" ] }
     }
     , {
@@ -108,8 +169,17 @@ buff.add = [
         ]
     }
     , {
-        name: "アヅミ/お正月", rarity: "白", cl: "料理人", AW: "覚醒後"
+        name: "アヅミ/お正月", rarity: "白", cl: "料理人", AW: "覚1"
         , stats: { hp: "max2400", atk: "max1200", def: "max1200" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { race: [ "妖怪" ] }
+            , { season: [ "お正月" ] }
+        ]
+    }
+    , {
+        name: "アヅミ/お正月", rarity: "白", cl: "料理人", AW: "覚2a"
+        , stats: { hp: "max2800", atk: "max1350", def: "max1350" }
         , target: [
             { cl: [ "王子" ] }
             , { race: [ "妖怪" ] }
@@ -122,8 +192,13 @@ buff.add = [
         , target: { others: [ "弓兵" ] }
     }
     , {
-        name: "ヤマブキ", rarity: "金", cl: "料理人", AW: "覚醒後"
+        name: "ヤマブキ", rarity: "金", cl: "料理人", AW: "覚1"
         , stats: { hp: "max2400", atk: "max1200", def: "max1200" }
+        , target: { others: [ "弓兵" ] }
+    }
+    , {
+        name: "ヤマブキ", rarity: "金", cl: "料理人", AW: "覚2a"
+        , stats: { hp: "max2800", atk: "max1350", def: "max1350" }
         , target: { others: [ "弓兵" ] }
     }
     , {

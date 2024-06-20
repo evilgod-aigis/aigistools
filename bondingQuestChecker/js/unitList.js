@@ -1370,7 +1370,12 @@ const unitList = [
     , { id: 0x0541, implDate: "2024/06/13", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ソルジャー", name: "アサル/新装", fullName: "太陽の戦士アサル" }
     , { id: 0x0542, implDate: "2024/06/13", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "メイジ", name: "メーリス/新装", fullName: "未来の大魔術師メーリス" }
     , { id: 0x0543, implDate: "2024/06/13", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "エンジェル", name: "ニエル/新装", fullName: "払暁の堕天使ニエル" }
-    , { id: 0x0544, implDate: "2024/05/09", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "メイジ", name: "ちびバルバストラフ", fullName: "ちびバルバストラフ", male: 1 }
+    , { id: 0x0544, implDate: "2024/06/13", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "メイジ", name: "ちびバルバストラフ", fullName: "ちびバルバストラフ", male: 1 }
+    , { id: 0x0545, implDate: "2024/06/20", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "座敷わらし", name: "エンジュ/花嫁", fullName: "婚礼座敷エンジュ" }
+    , { id: 0x0546, implDate: "2024/06/20", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "both", class: "スカイシューター", name: "ラシティ/花嫁", fullName: "純白の黒翼ラシティ" }
+    , { id: 0x0547, implDate: "2024/06/20", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "シールダー", name: "レジナレア/花嫁", fullName: "盾の花嫁レジナレア" }
+    , { id: 0x0548, implDate: "2024/06/20", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "魔神", name: "ゼパリエッテ", fullName: "愛欲の魔神ゼパリエッテ" }
+    , { id: 0x0549, implDate: "2024/06/20", implDate_bq: null        , obtain: "tr", rarity: "p" , depType: "van" , class: "デーモンロード", name: "ヤハール/花嫁", fullName: "炎天の花嫁ヤハール" }
     
     
     

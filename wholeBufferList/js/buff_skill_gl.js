@@ -347,6 +347,10 @@ buff.skill_gl = [
         , stats: { atk: "×1.15" }
     }
     , {
+        name: "ヤハール/花嫁", rarity: "白", cl: "デーモンロード", AW: "覚醒後", skill: "覚醒"
+        , stats: { nul: "20%" }
+    }
+    , {
         name: "オーガスタ", rarity: "黒", cl: "料理人", AW: "覚醒前", skill: "通常"
         , stats: { abn: "-100%" }
     }
@@ -791,6 +795,26 @@ buff.skill_gl = [
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { not: [ "others" ], others: [ "GG持ち" ] }
+    }
+    , {
+        name: "エンジュ/花嫁", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"
+        , stats: { hp: "+30%" }
+    }
+    , {
+        name: "エンジュ/花嫁", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: { not: [ "season" ], season: [ "ジューンブライド" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "エンジュ/花嫁", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "通常"
+        , stats: { hp: "+30%" }
+    }
+    , {
+        name: "エンジュ/花嫁", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: { not: [ "season" ], season: [ "ジューンブライド" ] }
+        , note: "分類未確認"
     }
     , {
         name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒前", skill: "通常"

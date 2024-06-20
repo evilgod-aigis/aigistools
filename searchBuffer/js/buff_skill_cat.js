@@ -1405,6 +1405,12 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "レジナレア/花嫁", rarity: "白", cl: "シールダー", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.3" }
+        , target: { season: [ "ジューンブライド" ] }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
         name: "女王子", rarity: "黒", cl: "女王子", AW: "覚醒前", skill: "通常"
         , stats: { hp: "+50%", atk: "×1.2", def: "×1.2" }
         , target: { sex: [ "女性" ] }
@@ -2196,6 +2202,21 @@ buff.skill_cat = [
         , target: { others: [ "GG持ち" ] }
     }
     , {
+        name: "エンジュ/花嫁", rarity: "黒", cl: "座敷わらし", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.4", def: "×1.4" }
+        , target: { season: [ "ジューンブライド" ] }
+    }
+    , {
+        name: "エンジュ/花嫁", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.4", def: "×1.4" }
+        , target: { season: [ "ジューンブライド" ] }
+    }
+    , {
+        name: "エンジュ/花嫁", rarity: "黒", cl: "座敷わらし", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , target: { season: [ "ジューンブライド" ] }
+    }
+    , {
         name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { others: [ "英傑" ] }
@@ -2240,6 +2261,18 @@ buff.skill_cat = [
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { others: [ "機械" ] }
         , note: "範囲"
+    }
+    , {
+        name: "ラシティ/花嫁", rarity: "黒", cl: "スカイシューター", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { sex: [ "女性" ] }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
+        name: "ラシティ/花嫁", rarity: "黒", cl: "スカイシューター", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { sex: [ "女性" ] }
+        , note: [ "範囲", "分類未確認" ]
     }
     , {
         name: "レナータ", rarity: "黒", cl: "スカウト", AW: "覚醒前", skill: "通常"

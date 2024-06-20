@@ -295,6 +295,18 @@ debuff.hit = [
         , atkAttr: "物理", dur: "29f"
     }
     , {
+        name: "ヤハール/花嫁", rarity: "白", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "-15%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ヤハール/花嫁", rarity: "白", cl: "デーモンロード", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "-15%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "犬神", cl: "犬神", AW: "覚醒前", skill: "通常"
         , stats: { atkCd: "+30f" }
         , atkAttr: "?", dur: "119f"
