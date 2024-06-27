@@ -981,6 +981,16 @@ lists.buff.takenDmg.list = [
             , WT: 5, CT: 60, dur: 15
         }
     }
+    , {
+        id: null, buffer: "叡智の管理者プリニース", awaken: "未覚醒", showAwaken: true
+        , value: 10, disabled: null, req: "deploy"
+        , tooltip: "[射程内] 被ダメージが10%上昇"
+    }
+    , {
+        id: null, buffer: "叡智の管理者プリニース", awaken: "覚醒", showAwaken: true
+        , value: 15, disabled: null, req: "deploy"
+        , tooltip: "[射程内] 被ダメージが15%上昇"
+    }
 ];
 
 // 鈍化(マップ)軽減リスト

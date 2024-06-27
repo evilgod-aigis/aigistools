@@ -583,6 +583,12 @@ debuff.hit = [
         , note: "死亡時"
     }
     , {
+        name: "ソーマ/新装", rarity: "黒", cl: "アーチャー", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "-50%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "ポミエ/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒前", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "59f"

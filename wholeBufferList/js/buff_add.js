@@ -126,6 +126,11 @@ buff.add = [
         , note: "範囲"
     }
     , {
+        name: "ソーマ/新装", rarity: "黒", cl: "アーチャー", AW: "覚醒後"
+        , stats: { atk: "+200" }
+        , note: "範囲"
+    }
+    , {
         name: "ダンサー", cl: "ダンサー", AW: "CC前"
         , stats: { atk: "10%", def: "10%" }
         , note: "範囲"

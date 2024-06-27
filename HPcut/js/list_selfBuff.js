@@ -87,7 +87,8 @@ lists.selfBuff.skillExtend = [
 
 // 硬直短縮リスト
 lists.selfBuff.haste = [
-    { id: null, buffer: "白羽の休日ナナリー", value: 25 }
+    { id: null, buffer: "放浪の聖騎兵フリア", value: 40 }
+    , { id: null, buffer: "白羽の休日ナナリー", value: 25 }
     , { id: null, buffer: "鉄泉の守護者レアン", value: 40 }
     , { id: null, buffer: "晴着の看板娘ジュノン", value: 40 }
     //, { id: null, buffer: "水龍騎士スイレン", value: 50 }

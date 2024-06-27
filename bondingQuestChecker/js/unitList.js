@@ -1376,6 +1376,9 @@ const unitList = [
     , { id: 0x0547, implDate: "2024/06/20", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "シールダー", name: "レジナレア/花嫁", fullName: "盾の花嫁レジナレア" }
     , { id: 0x0548, implDate: "2024/06/20", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "魔神", name: "ゼパリエッテ", fullName: "愛欲の魔神ゼパリエッテ" }
     , { id: 0x0549, implDate: "2024/06/20", implDate_bq: null        , obtain: "tr", rarity: "p" , depType: "van" , class: "デーモンロード", name: "ヤハール/花嫁", fullName: "炎天の花嫁ヤハール" }
+    , { id: 0x054a, implDate: "2024/06/27", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "スカラー", name: "プリニース", fullName: "叡智の管理者プリニース" }
+    , { id: 0x054b, implDate: "2024/06/27", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "アクアナイト", name: "ティマ", fullName: "海洋遺跡の民ティマ" }
+    , { id: 0x054c, implDate: "2024/06/27", implDate_bq: null        , obtain: "sp", rarity: "b" , depType: "rear", class: "アーチャー", name: "ソーマ/新装", fullName: "精鋭弓手ソーマ" }
     
     
     

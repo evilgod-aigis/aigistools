@@ -1580,6 +1580,16 @@ buff.team = [
         , target: { season: [ "ジューンブライド" ] }
     }
     , {
+        name: "ソーマ/新装", rarity: "黒", cl: "アーチャー", AW: "覚醒前"
+        , stats: { range: "+10" }
+        , target: { others: [ "弓兵" ], depType: [ "遠距離" ] }
+    }
+    , {
+        name: "ソーマ/新装", rarity: "黒", cl: "アーチャー", AW: "覚醒後"
+        , stats: { range: "+15" }
+        , target: { others: [ "弓兵" ], depType: [ "遠距離" ] }
+    }
+    , {
         name: "スピカ", rarity: "白", cl: "アーチャー", AW: "覚醒後"
         , stats: { atk: "+7%" }
         , target: { cl: [ "アーチャー", "レンジャー" ] }

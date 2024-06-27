@@ -884,6 +884,16 @@ buff.dep_gl = [
         , target: { cl: [ "王子" ] }
     }
     , {
+        name: "ティマ", rarity: "白", cl: "アクアナイト", AW: "覚醒前"
+        , stats: { rege: [ "50/秒", "?/?f" ] }
+        , target: { others: [ "深海" ] }
+    }
+    , {
+        name: "ティマ", rarity: "白", cl: "アクアナイト", AW: "覚醒後"
+        , stats: { rege: [ "80/秒", "?/?f" ] }
+        , target: { others: [ "深海" ] }
+    }
+    , {
         name: "トゥーリ", rarity: "黒", cl: "テンプルナイト", AW: "覚醒後"
         , stats: { cost: "-2" }
         , target: { cl: [ "テンプルナイト" ] }

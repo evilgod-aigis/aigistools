@@ -2130,6 +2130,12 @@ buff.skill_cat = [
         , note: [ "範囲", "分類未確認" ]
     }
     , {
+        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.5" }
+        , target: { race: [ "人間", "デーモン系", "神" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , target: { sex: [ "女性" ] }
