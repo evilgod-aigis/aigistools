@@ -1032,7 +1032,7 @@ const unitList = [
     , { id: 0x03f3, implDate: "2022/06/09", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "エンジェル", name: "シェミア", fullName: "堕天使シェミア" }
     , { id: 0x03f4, implDate: "2022/06/09", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "キョンシー", name: "フーロン/花嫁", fullName: "幽境新婦フーロン" }
     , { id: 0x03f5, implDate: "2022/06/09", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "ヘビーアーマー", name: "ベルニス/花嫁", fullName: "婚礼の大盾ベルニス" }
-    , { id: 0x03f6, implDate: "2022/06/09", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "魔法剣士", name: "ユーティ/花嫁", fullName: "ひだまりの花嫁ユーティ" }
+    , { id: 0x03f6, implDate: "2022/06/09", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "ウィッチ", name: "ユーティ/花嫁", fullName: "ひだまりの花嫁ユーティ" }
     , { id: 0x03f7, implDate: "2022/06/23", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "rear", class: "狛犬", name: "コマ/花嫁", fullName: "白無垢の狛犬コマ" }
     , { id: 0x03f8, implDate: "2022/06/23", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "料理人", name: "アシュリン", fullName: "常夜の料理人アシュリン" }
     , { id: 0x03f9, implDate: "2022/06/30", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "ドラグーン", name: "イーファ", fullName: "紫風の竜砲騎兵イーファ" }
@@ -1347,7 +1347,7 @@ const unitList = [
     , { id: 0x052a, implDate: "2024/04/11", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "異界召喚士", name: "グリム/学園", fullName: "図書室の常連グリム" }
     , { id: 0x052b, implDate: "2024/04/11", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "鬼刃忍", name: "シロガネ/学園", fullName: "学園裏遊戯シロガネ" }
     , { id: 0x052c, implDate: "2024/04/11", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "重装砲兵", name: "ちびゲオルグ", fullName: "ちびゲオルグ", male: 1 }
-    , { id: 0x052d, implDate: "2024/04/25", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "魔人", name: "ベルーフェ/学園", fullName: "居眠り魔神ベルーフェ" }
+    , { id: 0x052d, implDate: "2024/04/25", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "魔神", name: "ベルーフェ/学園", fullName: "居眠り魔神ベルーフェ" }
     , { id: 0x052e, implDate: "2024/04/25", implDate_bq: null        , obtain: "sh", rarity: "bh", depType: "van" , class: "光槍ビルガの継承者", name: "オーシェン", fullName: "光を継ぐ者オーシェン" }
     , { id: 0x052f, implDate: "2024/04/25", implDate_bq: null        , obtain: "sh", rarity: "bh", depType: "van" , class: "祖竜", name: "アルコゥ", fullName: "頂に座す者アルコゥ" }
     , { id: 0x0530, implDate: "2024/04/25", implDate_bq: null        , obtain: "tr", rarity: "ph", depType: "van" , class: "光槍ビルガの継承者", name: "オーシェン", fullName: "光を継ぐ者オーシェン" }
