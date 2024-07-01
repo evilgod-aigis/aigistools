@@ -1379,6 +1379,8 @@ const unitList = [
     , { id: 0x054a, implDate: "2024/06/27", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "スカラー", name: "プリニース", fullName: "叡智の管理者プリニース" }
     , { id: 0x054b, implDate: "2024/06/27", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "アクアナイト", name: "ティマ", fullName: "海洋遺跡の民ティマ" }
     , { id: 0x054c, implDate: "2024/06/27", implDate_bq: null        , obtain: "sp", rarity: "b" , depType: "rear", class: "アーチャー", name: "ソーマ/新装", fullName: "精鋭弓手ソーマ" }
+    , { id: 0x054d, implDate: "2024/07/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ヘビーアーマー", name: "ちびテレーゼ", fullName: "ちびテレーゼ" }
+    , { id: 0x054e, implDate: "2024/07/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "メイジ", name: "ちびテュト", fullName: "ちびテュト" }
     
     
     

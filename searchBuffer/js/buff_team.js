@@ -1695,6 +1695,11 @@ buff.team = [
         , target: { cl: [ "魔法剣士", "メイジアーマー", "メイジ", "ビショップ" ] }
     }
     , {
+        name: "ちびテュト", rarity: "ちび", cl: "メイジ"
+        , stats: { atk: "+5%" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
         name: "イリス/お正月", rarity: "黒", cl: "ヒーラー", AW: "覚醒後"
         , stats: { hp: "+10%" }
         , target: { season: [ "お正月" ] }
