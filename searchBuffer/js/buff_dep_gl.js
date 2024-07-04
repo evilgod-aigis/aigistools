@@ -522,13 +522,13 @@ buff.dep_gl = [
     , {
         name: "エマ/水着", rarity: "黒", cl: "ヴァンパイアロード", AW: "覚醒前"
         , stats: { other: "" }
-        , target: { others: [ "近接" ] }
+        , target: { depType: [ "近接" ] }
         , note: [ "配置時、最近2体", "HP3%ドレイン付与" ]
     }
     , {
         name: "エマ/水着", rarity: "黒", cl: "ヴァンパイアロード", AW: "覚醒後"
         , stats: { other: "" }
-        , target: { others: [ "近接" ] }
+        , target: { depType: [ "近接" ] }
         , note: [ "配置時、最近2体", "HP6%ドレイン付与" ]
     }
     , {
