@@ -520,6 +520,18 @@ buff.dep_gl = [
         , target: { others: [ "アンデッド" ] }
     }
     , {
+        name: "エマ/水着", rarity: "黒", cl: "ヴァンパイアロード", AW: "覚醒前"
+        , stats: { other: "" }
+        , target: { others: [ "近接" ] }
+        , note: [ "配置時、最近2体", "HP3%ドレイン付与" ]
+    }
+    , {
+        name: "エマ/水着", rarity: "黒", cl: "ヴァンパイアロード", AW: "覚醒後"
+        , stats: { other: "" }
+        , target: { others: [ "近接" ] }
+        , note: [ "配置時、最近2体", "HP6%ドレイン付与" ]
+    }
+    , {
         name: "エデン/ハロウィン", rarity: "白", cl: "ヴァンパイアロード", AW: "覚醒後"
         , stats: { atk: "+5%", def: "+5%", draw: "○" }
         , target: { season: [ "ハロウィン" ] }
@@ -869,6 +881,14 @@ buff.dep_gl = [
         name: "ツムジ", rarity: "白", cl: "犬神", AW: "覚醒後"
         , stats: { ct: "-50%" }
         , target: { cl: [ "邪仙", "犬神", "陰陽師", "呪術使い" ] }
+    }
+    , {
+        name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚醒後"
+        , stats: { rege: [ "50/秒", "?/?f" ] }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "サマー" ] }
+        ]
     }
     , {
         name: "金糸雀姉妹/花嫁", rarity: "白", cl: "かまいたち", AW: "覚醒後"

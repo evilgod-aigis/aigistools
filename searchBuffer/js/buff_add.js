@@ -187,6 +187,30 @@ buff.add = [
         ]
     }
     , {
+        name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚醒前"
+        , stats: { hp: "max1800", atk: "max900", def: "max900" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "サマー" ] }
+        ]
+    }
+    , {
+        name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚1"
+        , stats: { hp: "max2400", atk: "max1200", def: "max1200" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "サマー" ] }
+        ]
+    }
+    , {
+        name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚2a"
+        , stats: { hp: "max2800", atk: "max1350", def: "max1350" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "サマー" ] }
+        ]
+    }
+    , {
         name: "ヤマブキ", rarity: "金", cl: "料理人", AW: "覚醒前"
         , stats: { hp: "max1800", atk: "max900", def: "max900" }
         , target: { others: [ "弓兵" ] }

@@ -1381,6 +1381,14 @@ const unitList = [
     , { id: 0x054c, implDate: "2024/06/27", implDate_bq: null        , obtain: "sp", rarity: "b" , depType: "rear", class: "アーチャー", name: "ソーマ/新装", fullName: "精鋭弓手ソーマ" }
     , { id: 0x054d, implDate: "2024/07/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ヘビーアーマー", name: "ちびテレーゼ", fullName: "ちびテレーゼ" }
     , { id: 0x054e, implDate: "2024/07/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "メイジ", name: "ちびテュト", fullName: "ちびテュト" }
+    , { id: 0x054f, implDate: "2024/07/04", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ダークファイター", name: "コーネリア/水着", fullName: "烈夏の闇騎士コーネリア" }
+    , { id: 0x0550, implDate: "2024/07/04", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ヴァンパイアロード", name: "エマ/水着", fullName: "夏の支配者エマ" }
+    , { id: 0x0551, implDate: "2024/07/04", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ハデスソルジャー", name: "ティルト/水着", fullName: "ビーチの冥騎士ティルト" }
+    , { id: 0x0552, implDate: "2024/07/04", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "魔界総帥", name: "アスバール/水着", fullName: "総帥の夏休みアスバール" }
+    , { id: 0x0553, implDate: "2024/07/04", implDate_bq: null        , obtain: "sh", rarity: "ph", depType: "van" , class: "魔導生命体", name: "ラーワル/水着", fullName: "渚の魔導生命体ラーワル" }
+    , { id: 0x0554, implDate: "2024/07/04", implDate_bq: null        , obtain: "sh", rarity: "ph", depType: "rear", class: "占星術師", name: "ソラス/水着", fullName: "星を詠む浜辺ソラス" }
+    , { id: 0x0555, implDate: "2024/07/04", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "料理人", name: "ユッタ/水着", fullName: "暑い夏の料理人ユッタ" }
+    , { id: 0x0556, implDate: "2024/07/04", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "処刑人", name: "リムリィ/水着", fullName: "白浜の断罪者リムリィ" }
     
     
     

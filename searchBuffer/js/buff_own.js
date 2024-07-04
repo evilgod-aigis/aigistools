@@ -66,6 +66,11 @@ buff.own = [
         , target: { cl: [ "魔導生命体", "魔法剣士", "メイジアーマー", "アルケミスト", "エンチャンター" ] }
     }
     , {
+        name: "ラーワル/水着", rarity: "白", cl: "魔導生命体", AW: "覚醒後"
+        , stats: { atk: "+2%" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
         name: "山ン本五郎左衛門", rarity: "黒", cl: "アヤカシの王", AW: "覚醒後"
         , stats: { hp: "+5%", atk: "+5%" }
         , target: { home: [ "東の国" ] }
@@ -180,6 +185,11 @@ buff.own = [
         name: "ソラス", rarity: "白", cl: "占星術師", AW: "覚醒後"
         , stats: { atk: "+3%", range: "+10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }
+    }
+    , {
+        name: "ソラス/水着", rarity: "白", cl: "占星術師", AW: "覚醒後"
+        , stats: { range: "+5" }
+        , target: { season: [ "サマー" ], depType: [ "遠距離" ] }
     }
     , {
         name: "ユージェン", rarity: "黒", cl: "チェイスハンター", AW: "覚醒後"

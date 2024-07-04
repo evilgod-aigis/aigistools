@@ -28,6 +28,10 @@ buff.skill_gl = [
         , stats: { rege: [ "200/秒", "100/15f" ] }
     }
     , {
+        name: "ラーワル/水着", rarity: "白", cl: "魔導生命体", AW: "覚醒後", skill: "覚醒"
+        , stats: { rege: [ "200/秒", "?/?f" ] }
+    }
+    , {
         name: "アヤカシの王", cl: "アヤカシの王", AW: "覚1", skill: [ "通常", "覚醒" ]
         , stats: { atk: "×1.15" }
     }
@@ -317,21 +321,21 @@ buff.skill_gl = [
     }
     , {
         name: "デーモンロード", cl: "デーモンロード", AW: "覚醒前", skill: "通常"
-        , stats: { cost: "-15%" }
+        , stats: { cost: "×0.85" }
     }
     , {
         name: "デーモンハイロード", cl: "デーモンロード", AW: "覚1", skill: [ "通常", "覚醒" ]
-        , stats: { cost: "-20%" }
+        , stats: { cost: "×0.8" }
         , note: "デーモンロード系"
     }
     , {
         name: "デーモンエグザルテッド", cl: "デーモンロード", AW: "覚2a", skill: [ "通常", "覚醒" ]
-        , stats: { cost: "-25%" }
+        , stats: { cost: "×0.75" }
         , note: "デーモンロード系"
     }
     , {
         name: "デーモンキャステラン", cl: "デーモンロード", AW: "覚2b", skill: [ "通常", "覚醒" ]
-        , stats: { cost: "-20%" }
+        , stats: { cost: "×0.8" }
         , note: "デーモンロード系"
     }
     , {
@@ -595,7 +599,7 @@ buff.skill_gl = [
     }
     , {
         name: "ミネット", rarity: "白", cl: "マーチャント", AW: "覚醒後", skill: "覚醒"
-        , stats: { cost: "-30%" }
+        , stats: { cost: "×0.7" }
     }
     , {
         name: "ミネット/学園", rarity: "白", cl: "マーチャント", AW: "覚醒後", skill: "覚醒"

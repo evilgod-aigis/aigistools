@@ -453,6 +453,18 @@ debuff.hit = [
         , atkAttr: "物理", dur: "119f"
     }
     , {
+        name: "ティルト/水着", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒前"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "配置時"
+    }
+    , {
+        name: "ティルト/水着", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒後"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "配置時"
+    }
+    , {
         name: "隧道掘削兵", cl: "隧道掘削兵", AW: "覚醒前"
         , stats: { def: "-20%" }
         , atkAttr: "物理", dur: "?f"
@@ -527,6 +539,24 @@ debuff.hit = [
         , stats: { atk: "-30%" }
         , atkAttr: "物理", dur: "300f"
         , note: [ "ボム", "分類未確認" ]
+    }
+    , {
+        name: "リムリィ/水着", rarity: "白", cl: "処刑人", AW: "覚醒後", skill: "覚醒(1)"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "リムリィ/水着", rarity: "白", cl: "処刑人", AW: "覚醒後", skill: "覚醒(2)"
+        , stats: { def: "-50%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "リムリィ/水着", rarity: "白", cl: "処刑人", AW: "覚醒後", skill: "覚醒(3～)"
+        , stats: { def: "-70%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒前", skill: "通常"

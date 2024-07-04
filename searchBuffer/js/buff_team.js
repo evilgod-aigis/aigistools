@@ -1515,6 +1515,22 @@ buff.team = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
+        name: "ティルト/水着", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒前"
+        , stats: { atk: "+7%", mr: "+7" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "サマー" ] }
+        ]
+    }
+    , {
+        name: "ティルト/水着", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒後"
+        , stats: { atk: "+10%", mr: "+10" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "サマー" ] }
+        ]
+    }
+    , {
         name: "ヘーレ", rarity: "白", cl: "隧道掘削兵", AW: "覚醒前"
         , stats: { hp: "+5%", def: "+5%" }
         , target: { home: [ "白の帝国" ] }
@@ -1548,6 +1564,16 @@ buff.team = [
         name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒後"
         , stats: { atk: "+5%", def: "+5%" }
         , target: { others: [ "魔界" ] }
+    }
+    , {
+        name: "リムリィ/水着", rarity: "白", cl: "処刑人", AW: "覚醒前"
+        , stats: { atk: "+7%" }
+        , target: { season: [ "サマー" ] }
+    }
+    , {
+        name: "リムリィ/水着", rarity: "白", cl: "処刑人", AW: "覚醒後"
+        , stats: { atk: "+10%" }
+        , target: { season: [ "サマー" ] }
     }
     , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒後"
@@ -2342,6 +2368,14 @@ buff.team = [
         name: "アスバール", rarity: "黒", cl: "魔界総帥", AW: "覚醒後"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { others: [ "魔界" ] }
+    }
+    , {
+        name: "アスバール/水着", rarity: "黒", cl: "魔界総帥", AW: "覚醒後"
+        , stats: { hp: "+10%", atk: "+10%" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "魔界" ] }
+        ]
     }
     , {
         name: "ちびアスバール", rarity: "ちび", cl: "魔界総帥"

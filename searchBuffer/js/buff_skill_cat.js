@@ -54,6 +54,12 @@ buff.skill_cat = [
         , target: { cl: [ "魔導生命体" ] }
     }
     , {
+        name: "ラーワル/水着", rarity: "白", cl: "魔導生命体", AW: "覚醒後", skill: "通常"
+        , stats: { cost: "×0.7" }
+        , target: { cl: [ "魔導生命体" ] }
+        , note: "永続"
+    }
+    , {
         name: "アルコゥ", rarity: "白", cl: "祖竜", AW: "覚醒後", skill: "通常"
         , stats: { hp: "+50%" }
         , target: { others: [ "ドラゴン" ] }
@@ -72,34 +78,34 @@ buff.skill_cat = [
     }
     , {
         name: "アルティア/水着", rarity: "黒", cl: "ソルジャー", AW: "覚醒前", skill: "通常"
-        , stats: { cost: "-30%" }
+        , stats: { cost: "×0.7" }
         , target: { season: [ "サマー" ] }
     }
     , {
         name: "アルティア/水着", rarity: "黒", cl: "ソルジャー", AW: "覚醒後", skill: "通常"
-        , stats: { cost: "-30%" }
+        , stats: { cost: "×0.7" }
         , target: { season: [ "サマー" ] }
     }
     , {
         name: "アルティア/水着", rarity: "黒", cl: "ソルジャー", AW: "覚醒後", skill: "覚醒"
-        , stats: { cost: "-30%" }
+        , stats: { cost: "×0.7" }
         , target: { depType: [ "近接" ] }
     }
     , {
         name: "アサル/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒前", skill: "通常"
-        , stats: { atk: "×1.3", def: "×1.3", cost: "-50%" }
+        , stats: { atk: "×1.3", def: "×1.3", cost: "×0.5" }
         , target: { home: [ "砂漠の国" ] }
         , note: "永続"
     }
     , {
         name: "アサル/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒後", skill: "通常"
-        , stats: { atk: "×1.3", def: "×1.3", cost: "-50%" }
+        , stats: { atk: "×1.3", def: "×1.3", cost: "×0.5" }
         , target: { home: [ "砂漠の国" ] }
         , note: "永続"
     }
     , {
         name: "アサル/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒後", skill: "覚醒"
-        , stats: { cost: "-50%" }
+        , stats: { cost: "×0.5" }
         , target: { home: [ "砂漠の国" ] }
     }
     , {
@@ -137,12 +143,12 @@ buff.skill_cat = [
     }
     , {
         name: "ヨシノ", rarity: "黒", cl: "プリンセス", AW: "覚醒後", skill: "通常"
-        , stats: { cost: "-50%" }
+        , stats: { cost: "×0.5" }
         , target: { home: [ "東の国" ] }
     }
     , {
         name: "ヨシノ", rarity: "黒", cl: "プリンセス", AW: "覚醒後", skill: "覚醒"
-        , stats: { atk: "×1.3", cost: "-50%", redep: "40秒" }
+        , stats: { atk: "×1.3", cost: "×0.5", redep: "40秒" }
         , target: { home: [ "東の国" ] }
         , note: "永続"
     }
@@ -191,7 +197,7 @@ buff.skill_cat = [
     }
     , {
         name: "アマンダ", rarity: "黒", cl: "バンデット", AW: "覚醒後", skill: "覚醒"
-        , stats: { hp: "+70%", cost: "-30%" }
+        , stats: { hp: "+70%", cost: "×0.7" }
         , target: { cl: [ "バンデット" ] }
         , note: "永続"
     }
@@ -639,13 +645,13 @@ buff.skill_cat = [
     }
     , {
         name: "ディアナ", rarity: "黒", cl: "インペリアルナイト", AW: "覚醒前", skill: "通常"
-        , stats: { cost: "-30%" }
+        , stats: { cost: "×0.7" }
         , target: { home: [ "白の帝国" ] }
         , note: "永続"
     }
     , {
         name: "ディアナ", rarity: "黒", cl: "インペリアルナイト", AW: "覚醒後", skill: "通常"
-        , stats: { cost: "-30%" }
+        , stats: { cost: "×0.7" }
         , target: { home: [ "白の帝国" ] }
         , note: "永続"
     }
@@ -1268,6 +1274,24 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
+        name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.1", def: "×1.1" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "サマー" ] }
+        ]
+        , note: [ "永続", "属性未確認" ]
+    }
+    , {
+        name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.1", def: "×1.1" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "サマー" ] }
+        ]
+        , note: [ "永続", "属性未確認" ]
+    }
+    , {
         name: "ヤマブキ", rarity: "金", cl: "料理人", AW: "覚醒前", skill: "通常"
         , stats: { range: "×1.2" }
         , target: { others: [ "弓兵" ] }
@@ -1307,7 +1331,7 @@ buff.skill_cat = [
     }
     , {
         name: "フィーヌ/温泉", rarity: "白", cl: "シーソルジャー", AW: "覚醒後", skill: "覚醒"
-        , stats: { cost: "-30%" }
+        , stats: { cost: "×0.7" }
         , target: { others: [ "深海" ] }
     }
     , {
@@ -1601,12 +1625,12 @@ buff.skill_cat = [
     }
     , {
         name: "デューオ/クリスマス", rarity: "黒", cl: "パイレーツ", AW: "覚醒前", skill: "通常"
-        , stats: { atkCd: "8f化", cost: "-30%" }
+        , stats: { atkCd: "8f化", cost: "×0.7" }
         , target: { season: [ "クリスマス" ] }
     }
     , {
         name: "デューオ/クリスマス", rarity: "黒", cl: "パイレーツ", AW: "覚醒後", skill: "通常"
-        , stats: { atkCd: "8f化", cost: "-30%" }
+        , stats: { atkCd: "8f化", cost: "×0.7" }
         , target: { season: [ "クリスマス" ] }
         , note: "永続"
     }
@@ -1628,12 +1652,12 @@ buff.skill_cat = [
     }
     , {
         name: "シホ", rarity: "白", cl: "シャーマン", AW: "覚醒前", skill: "通常"
-        , stats: { cost: "-50%" }
+        , stats: { cost: "×0.5" }
         , target: { cl: [ "鬼" ] }
     }
     , {
         name: "シホ", rarity: "白", cl: "シャーマン", AW: "覚醒後", skill: "通常"
-        , stats: { cost: "-50%" }
+        , stats: { cost: "×0.5" }
         , target: { cl: [ "鬼" ] }
     }
     , {
@@ -1822,7 +1846,7 @@ buff.skill_cat = [
     }
     , {
         name: "アンナ", rarity: "黒", cl: "政務官", AW: "覚醒後", skill: "覚醒"
-        , stats: { atk: "×1.5", def: "×1.5", cost: "-30%" }
+        , stats: { atk: "×1.5", def: "×1.5", cost: "×0.7" }
         , target: { cl: [ "王子" ] }
     }
     , {
@@ -1941,22 +1965,22 @@ buff.skill_cat = [
     }
     , {
         name: "ミネット", rarity: "白", cl: "マーチャント", AW: "覚醒前", skill: "通常"
-        , stats: { cost: "-50%" }
+        , stats: { cost: "×0.5" }
         , target: { cl: [ "ソルジャー", "ワルキューレ", "ペガサスライダー", "マーチャント" ] }
     }
     , {
         name: "ミネット", rarity: "白", cl: "マーチャント", AW: "覚醒後", skill: "通常"
-        , stats: { cost: "-50%" }
+        , stats: { cost: "×0.5" }
         , target: { cl: [ "ソルジャー", "ワルキューレ", "ペガサスライダー", "マーチャント" ] }
     }
     , {
         name: "ミネット/学園", rarity: "白", cl: "マーチャント", AW: "覚醒前", skill: "通常"
-        , stats: { cost: "-50%" }
+        , stats: { cost: "×0.5" }
         , target: { season: [ "学園" ] }
     }
     , {
         name: "ミネット/学園", rarity: "白", cl: "マーチャント", AW: "覚醒後", skill: "通常"
-        , stats: { cost: "-50%" }
+        , stats: { cost: "×0.5" }
         , target: { season: [ "学園" ] }
     }
     , {
@@ -2159,17 +2183,17 @@ buff.skill_cat = [
     }
     , {
         name: "ヨユキ", rarity: "黒", cl: "夜行さん", AW: "覚醒前", skill: "通常"
-        , stats: { atk: "×1.5", def: "×1.5", cost: "-30%" }
+        , stats: { atk: "×1.5", def: "×1.5", cost: "×0.7" }
         , target: { race: [ "妖怪" ] }
     }
     , {
         name: "ヨユキ", rarity: "黒", cl: "夜行さん", AW: "覚醒後", skill: "通常"
-        , stats: { atk: "×1.5", def: "×1.5", cost: "-30%" }
+        , stats: { atk: "×1.5", def: "×1.5", cost: "×0.7" }
         , target: { race: [ "妖怪" ] }
     }
     , {
         name: "ヨユキ", rarity: "黒", cl: "夜行さん", AW: "覚醒後", skill: "覚醒"
-        , stats: { cost: "-30%" }
+        , stats: { cost: "×0.7" }
         , target: { race: [ "妖怪" ] }
     }
     , {

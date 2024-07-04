@@ -119,6 +119,14 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "ソラス/水着", rarity: "白", cl: "占星術師", AW: "覚醒後", skill: "覚醒(偶)"
+        , stats: {
+            def: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "サナラ", rarity: "黒", cl: "ジオマンサー", AW: "覚醒後"
         , stats: {
             def: { value: "-20%", type: "area" }
@@ -426,6 +434,22 @@ debuff.mixture = [
             atk: { value: "-15%", type: "noAttr" }
         }
         , domain: "global"
+    }
+    , {
+        name: "コーネリア/水着", rarity: "黒", cl: "ダークファイター", AW: "覚醒前", skill: "通常"
+        , stats: {
+            mr: { value: "-40%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "コーネリア/水着", rarity: "黒", cl: "ダークファイター", AW: "覚醒後", skill: "通常"
+        , stats: {
+            mr: { value: "-40%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
     }
     , {
         name: "ユリナ", rarity: "白", cl: "ダークファイター", AW: "覚醒前", skill: "通常"
@@ -891,6 +915,22 @@ debuff.mixture = [
         }
         , domain: "global"
         , target: { atkAttr: [ "物理" ] }
+    }
+    , {
+        name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "エスネア/学園", rarity: "黒", cl: "デモンルーン", AW: "覚醒前", skill: "通常"
@@ -2450,6 +2490,22 @@ debuff.mixture = [
             atk: { value: "*1.5", type: "noAttr" }
         }
         , domain: "area"
+    }
+    , {
+        name: "アスバール/水着", rarity: "黒", cl: "魔界総帥", AW: "覚醒前", skill: "通常"
+        , stats: {
+            mr: { value: "-40%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "アスバール/水着", rarity: "黒", cl: "魔界総帥", AW: "覚醒後", skill: "通常"
+        , stats: {
+            mr: { value: "-40%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "雪祇の娘", cl: "雪娘", AW: "覚2b"
