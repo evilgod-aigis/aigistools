@@ -1329,6 +1329,14 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "ちびメカゴブリンクイーン", rarity: "ちび", cl: "メカゴブリンクイーン"
+        , stats: { ct: "-30%" }
+        , target: [
+            { race: [ "ゴブリン" ] }
+            , { others: [ "機械" ] }
+        ]
+    }
+    , {
         name: "魔王の玉座", rarity: "金", cl: "魔王の玉座"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { others: [ "魔界" ] }

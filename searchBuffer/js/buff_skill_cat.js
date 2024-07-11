@@ -1280,7 +1280,7 @@ buff.skill_cat = [
             { home: [ "白の帝国" ] }
             , { season: [ "サマー" ] }
         ]
-        , note: [ "永続", "属性未確認" ]
+        , note: "永続"
     }
     , {
         name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚醒後", skill: "通常"
@@ -1289,7 +1289,7 @@ buff.skill_cat = [
             { home: [ "白の帝国" ] }
             , { season: [ "サマー" ] }
         ]
-        , note: [ "永続", "属性未確認" ]
+        , note: "永続"
     }
     , {
         name: "ヤマブキ", rarity: "金", cl: "料理人", AW: "覚醒前", skill: "通常"

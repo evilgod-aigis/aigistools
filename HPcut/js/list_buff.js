@@ -328,6 +328,12 @@ lists.buff.rCT.list = [
         , target: [ { attribution: [ "学園" ] } ]
         , tooltip: "[配置] 属性：学園の再動-40%"
     }
+    , {
+        id: null, buffer: "ちびメカゴブリンクイーン", awaken: "-"
+        , value: 30, disabled: null, req: "deploy"
+        , target: [ { attribution: [ "ゴブリン", "機械" ] } ]
+        , tooltip: "[配置] 属性：ゴブリン、機械の再動-40%"
+    }
 ];
 
 // スキル時間延長リスト
