@@ -1390,6 +1390,8 @@ const unitList = [
     , { id: 0x0555, implDate: "2024/07/04", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "料理人", name: "ユッタ/水着", fullName: "暑い夏の料理人ユッタ" }
     , { id: 0x0556, implDate: "2024/07/04", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "処刑人", name: "リムリィ/水着", fullName: "白浜の断罪者リムリィ" }
     , { id: 0x0557, implDate: "2024/07/11", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "メカゴブリンクイーン", name: "ちびメカゴブリンクイーン", fullName: "ちびメカゴブリンクイーン" }
+    , { id: 0x0558, implDate: "2024/07/18", implDate_bq: null        , obtain: "ev", rarity: "ph", depType: "van" , class: "バーバリアンクイーン", name: "トゥアン/水着", fullName: "南国女王トゥアン" }
+    , { id: 0x0559, implDate: "2024/07/18", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "オートマタ", name: "ルイン/水着", fullName: "夏を知った人形ルイン" }
     
     
     

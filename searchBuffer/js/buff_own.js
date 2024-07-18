@@ -21,6 +21,11 @@ buff.own = [
         , target: { sex: [ "女性" ], depType: [ "近接" ] }
     }
     , {
+        name: "トゥアン/水着", rarity: "白", cl: "バーバリアンクイーン", AW: "覚醒後"
+        , stats: { atk: "+2%", def: "+2%" }
+        , target: { season: [ "サマー" ] }
+    }
+    , {
         name: "アージェ", rarity: "黒", cl: "古代魔導機兵", AW: "覚醒後"
         , stats: { atk: "+5%" }
         , target: { others: [ "機械" ] }
