@@ -1234,6 +1234,14 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "覚醒後", skill: "覚醒"
         , stats: {
             def: { value: "-20%", type: "global" }

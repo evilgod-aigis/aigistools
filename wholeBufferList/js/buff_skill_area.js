@@ -252,6 +252,11 @@ buff.skill_area = [
         , stats: { atk: "×1.15" }
     }
     , {
+        name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "覚醒後", skill: "通常"
+        , stats: { eva: "50%" }
+        , note: "永続"
+    }
+    , {
         name: "ダルティエ", rarity: "白", cl: "衛士", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "×1.4" }
         , note: "分類未確認"

@@ -1581,6 +1581,11 @@ buff.team = [
         , target: { season: [ "サマー" ] }
     }
     , {
+        name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "覚醒後"
+        , stats: { hp: "+15%" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒後"
         , stats: { hp: "+10%" }
         , target: { home: [ "白の帝国" ] }

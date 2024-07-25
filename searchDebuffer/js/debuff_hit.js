@@ -595,6 +595,12 @@ debuff.hit = [
         , note: [ "神話の継承者系", "分類未確認" ]
     }
     , {
+        name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "-40%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "ギガースフォート", cl: "コロッサス", AW: "覚2a"
         , stats: { atk: "-10%" }
         , atkAttr: "物理", dur: "89f"
