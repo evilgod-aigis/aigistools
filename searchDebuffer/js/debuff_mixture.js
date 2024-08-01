@@ -441,7 +441,6 @@ debuff.mixture = [
             mr: { value: "-40%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "コーネリア/水着", rarity: "黒", cl: "ダークファイター", AW: "覚醒後", skill: "通常"
@@ -449,7 +448,6 @@ debuff.mixture = [
             mr: { value: "-40%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "ユリナ", rarity: "白", cl: "ダークファイター", AW: "覚醒前", skill: "通常"
@@ -1239,7 +1237,6 @@ debuff.mixture = [
             atk: { value: "-15%", type: "noAttr" }
         }
         , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "覚醒後", skill: "覚醒"
@@ -2680,6 +2677,15 @@ debuff.mixture = [
         name: "桃源郷", rarity: "金", cl: "桃源郷"
         , stats: {
             atk: { value: "-10%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ストレイソッド", rarity: "金", cl: "ストレイソッド"
+        , stats: {
+            def: { value: "-20%", type: "area" }
+            , mr: { value: "-10%", type: "clAttr" }
         }
         , domain: "area"
         , note: "分類未確認"

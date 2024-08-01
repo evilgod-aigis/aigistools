@@ -1393,6 +1393,8 @@ const unitList = [
     , { id: 0x0558, implDate: "2024/07/18", implDate_bq: null        , obtain: "ev", rarity: "ph", depType: "van" , class: "バーバリアンクイーン", name: "トゥアン/水着", fullName: "南国女王トゥアン" }
     , { id: 0x0559, implDate: "2024/07/18", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "オートマタ", name: "ルイン/水着", fullName: "夏を知った人形ルイン" }
     , { id: 0x055a, implDate: "2024/07/25", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "神話の継承者", name: "ユリクセス", fullName: "常勝の智将ユリクセス" }
+    , { id: 0x055b, implDate: "2024/08/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "重装砲兵", name: "ちびヴァネッサ", fullName: "ちびヴァネッサ" }
+    , { id: 0x055c, implDate: "2024/08/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ヒーラー", name: "ちびカミラ", fullName: "ちびカミラ" }
     
     
     

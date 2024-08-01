@@ -1068,6 +1068,11 @@ buff.team = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "ちびヴァネッサ", rarity: "ちび", cl: "重装砲兵"
+        , stats: { hp: "+7%" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
         name: "リンドウ", rarity: "白", cl: "鬼", AW: "覚醒後"
         , stats: { cost: "-5" }
         , target: { cl: [ "鬼", "雷公", "風伯" ] }

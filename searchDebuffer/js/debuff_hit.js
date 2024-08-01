@@ -597,8 +597,7 @@ debuff.hit = [
     , {
         name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "-40%" }
-        , atkAttr: "物理", dur: "?f"
-        , note: "分類未確認"
+        , atkAttr: "物理", dur: "59f"
     }
     , {
         name: "ギガースフォート", cl: "コロッサス", AW: "覚2a"
@@ -1398,6 +1397,12 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "9f"
         , note: "レナータ/花嫁"
+    }
+    , {
+        name: "ストレイソッドトークン", rarity: "トークン"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "ストレイソッド", "範囲指定", "分類未確認" ]
     }
     , {
         name: "改良型セバスチャン", rarity: "トークン", AW: "覚醒後"
