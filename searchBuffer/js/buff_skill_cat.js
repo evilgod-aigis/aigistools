@@ -272,6 +272,15 @@ buff.skill_cat = [
         , target: { cl: [ "王子" ] }
     }
     , {
+        name: "エピウス", rarity: "白", cl: "モンク", AW: "覚醒後", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , target: [
+            { cl: [ "モンク" ] }
+            , { others: [ "機械" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "ヘレナ", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "×1.25" }
         , target: { depType: [ "近接" ] }
@@ -1094,6 +1103,18 @@ buff.skill_cat = [
         ]
     }
     , {
+        name: "フーロン/浴衣", rarity: "黒", cl: "キョンシー", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { season: [ "サマー" ] }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "フーロン/浴衣", rarity: "黒", cl: "キョンシー", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { season: [ "サマー" ] }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "アスラハ", rarity: "黒", cl: "グランドナイト", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.4", range: "×1.3" }
         , target: { depType: [ "遠距離" ] }
@@ -1427,6 +1448,21 @@ buff.skill_cat = [
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: { home: [ "華の国" ] }
         , note: "永続"
+    }
+    , {
+        name: "フーイェン/浴衣", rarity: "白", cl: "武侠", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.15" }
+        , target: { season: [ "サマー" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "フーイェン/浴衣", rarity: "白", cl: "武侠", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.15" }
+        , target: [
+            { home: [ "華の国" ] }
+            , { season: [ "サマー" ] }
+        ]
+        , note: "分類未確認"
     }
     , {
         name: "レジナレア/花嫁", rarity: "白", cl: "シールダー", AW: "覚醒後", skill: "通常"

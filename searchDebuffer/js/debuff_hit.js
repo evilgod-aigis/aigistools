@@ -1131,6 +1131,12 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
+        name: "クレール/浴衣", rarity: "黒", cl: "ロケットトルーパー", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "-50%", mr: "-50%" }
+        , atkAttr: "物理", dur: "750f"
+        , note: "分類未確認"
+    }
+    , {
         name: "オヴェリー", rarity: "白", cl: "ロケットトルーパー", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "-50%" }
         , atkAttr: "物理", dur: "299f"

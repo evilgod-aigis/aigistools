@@ -221,6 +221,19 @@ buff.dep_gl = [
         , target: { season: [ "温泉" ] }
     }
     , {
+        name: "エピウス", rarity: "白", cl: "モンク", AW: "覚醒前"
+        , stats: { def: "5%" }
+        , target: { cl: [ "モンク" ] }
+    }
+    , {
+        name: "エピウス", rarity: "白", cl: "モンク", AW: "覚醒後"
+        , stats: { def: "10%" }
+        , target: [
+            { cl: [ "モンク" ] }
+            , { others: [ "機械" ] }
+        ]
+    }
+    , {
         name: "マツリ", rarity: "黒", cl: "前衛戦術家", AW: "覚醒前"
         , stats: { atk: "+5%", def: "+5%" }
         , target: { depType: [ "近接" ] }
@@ -942,6 +955,19 @@ buff.dep_gl = [
         name: "祓剣主神", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後"
         , stats: { atk: "+10%" }
         , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "フーイェン/浴衣", rarity: "白", cl: "武侠", AW: "覚醒前"
+        , stats: { atk: "+5%" }
+        , target: { season: [ "サマー" ] }
+    }
+    , {
+        name: "フーイェン/浴衣", rarity: "白", cl: "武侠", AW: "覚醒後"
+        , stats: { atk: "+7%" }
+        , target: [
+            { home: [ "華の国" ] }
+            , { season: [ "サマー" ] }
+        ]
     }
     , {
         name: "シャジャル", rarity: "黒", cl: "サベージファイター", AW: "覚醒後"

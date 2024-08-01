@@ -66,6 +66,21 @@ buff.add = [
         , note: [ "範囲", "永続" ]
     }
     , {
+        name: "フーロン/浴衣", rarity: "黒", cl: "キョンシー", AW: "覚醒前"
+        , stats: { atk: "3%" }
+        , note: "範囲"
+    }
+    , {
+        name: "フーロン/浴衣", rarity: "黒", cl: "キョンシー", AW: "覚醒後"
+        , stats: { atk: "5%" }
+        , note: "範囲"
+    }
+    , {
+        name: "フーロン/浴衣", rarity: "黒", cl: "キョンシー", AW: "覚醒後", skill: "覚醒(4～)"
+        , stats: { atk: "*2" }
+        , note: [ "範囲", "永続" ]
+    }
+    , {
         name: "レミィ/ハロウィン", rarity: "黒", cl: "雷公", AW: "覚醒前"
         , stats: { atk: "5%" }
         , note: "範囲"

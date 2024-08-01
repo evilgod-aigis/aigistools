@@ -1395,6 +1395,10 @@ const unitList = [
     , { id: 0x055a, implDate: "2024/07/25", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "神話の継承者", name: "ユリクセス", fullName: "常勝の智将ユリクセス" }
     , { id: 0x055b, implDate: "2024/08/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "重装砲兵", name: "ちびヴァネッサ", fullName: "ちびヴァネッサ" }
     , { id: 0x055c, implDate: "2024/08/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ヒーラー", name: "ちびカミラ", fullName: "ちびカミラ" }
+    , { id: 0x055d, implDate: "2024/08/01", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "モンク", name: "エピウス", fullName: "鉄拳工匠エピウス" }
+    , { id: 0x055e, implDate: "2024/08/01", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "キョンシー", name: "フーロン/浴衣", fullName: "幽明の浴衣フーロン" }
+    , { id: 0x055f, implDate: "2024/08/01", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "both", class: "ロケットトルーパー", name: "クレール/浴衣", fullName: "夏祭り警備隊クレール" }
+    , { id: 0x0560, implDate: "2024/08/01", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "武侠", name: "フーイェン/浴衣", fullName: "祭夜の遊侠フーイェン" }
     
     
     
