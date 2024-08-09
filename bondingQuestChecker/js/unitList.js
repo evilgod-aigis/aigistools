@@ -1399,6 +1399,7 @@ const unitList = [
     , { id: 0x055e, implDate: "2024/08/01", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "キョンシー", name: "フーロン/浴衣", fullName: "幽明の浴衣フーロン" }
     , { id: 0x055f, implDate: "2024/08/01", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "both", class: "ロケットトルーパー", name: "クレール/浴衣", fullName: "夏祭り警備隊クレール" }
     , { id: 0x0560, implDate: "2024/08/01", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "武侠", name: "フーイェン/浴衣", fullName: "祭夜の遊侠フーイェン" }
+    , { id: 0x0561, implDate: "2024/08/08", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "メイジ", name: "ちびサイラス", fullName: "ちびサイラス" }
     
     
     

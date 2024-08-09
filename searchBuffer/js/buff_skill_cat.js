@@ -278,7 +278,6 @@ buff.skill_cat = [
             { cl: [ "モンク" ] }
             , { others: [ "機械" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "ヘレナ", rarity: "白", cl: "前衛戦術家", AW: "覚醒後", skill: "覚醒"
