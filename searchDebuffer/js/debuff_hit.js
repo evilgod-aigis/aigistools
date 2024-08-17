@@ -600,6 +600,18 @@ debuff.hit = [
         , atkAttr: "物理", dur: "59f"
     }
     , {
+        name: "センカ", rarity: "白", cl: "衛士", AW: "覚醒前"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "センカ", rarity: "白", cl: "衛士", AW: "覚醒後"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "ギガースフォート", cl: "コロッサス", AW: "覚2a"
         , stats: { atk: "-10%" }
         , atkAttr: "物理", dur: "89f"

@@ -820,6 +820,14 @@ lists.buff.giveDmgMul.list = [
         "
     }
     , {
+        id: null, buffer: "狩人浴衣ヴィクトリア", awaken: "覚醒"
+        , value: 8, disabled: null, req: "team"
+        , tooltip: "\
+            [編成] アンデッド・魔法敵に対して<br>\
+            　　　 全味方の攻撃力が8%上昇\
+        "
+    }
+    , {
         id: null, buffer: "奇想の発明家タバサ", awaken: "未覚醒", showAwaken: true
         , value: 10, disabled: null, req: "team"
         , compound: { rWT: [ { buffer: "発明家" } ] }
@@ -890,7 +898,7 @@ lists.buff.giveDmgMul.list = [
         "
     }
     , {
-        id: null, buffer: "氷竜魔術士カラザ", awaken: "覚醒", showAwaken: false
+        id: null, buffer: "氷竜魔術士カラザ", awaken: "覚醒"
         , value: 15, disabled: null, req: "team"
         , target: [ { attribution: [ "ドラゴン" ] } ]
         , compound: { haste: [ { buffer: "エルダードラゴンメイガス" } ] }

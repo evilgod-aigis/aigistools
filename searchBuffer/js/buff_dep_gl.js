@@ -1022,6 +1022,16 @@ buff.dep_gl = [
         , note: "神話の継承者系"
     }
     , {
+        name: "センカ", rarity: "白", cl: "衛士", AW: "覚醒前"
+        , stats: { def: "+5%" }
+        , target: { home: [ "東の国" ] }
+    }
+    , {
+        name: "センカ", rarity: "白", cl: "衛士", AW: "覚醒後"
+        , stats: { def: "+7%" }
+        , target: { home: [ "東の国" ] }
+    }
+    , {
         name: "王国民的アイドル", cl: "王国民的アイドル", AW: "覚1"
         , stats: { cost: "+3" }
         , target: { sex: [ "男性" ] }

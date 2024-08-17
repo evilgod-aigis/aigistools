@@ -998,7 +998,7 @@ const unitList = [
     , { id: 0x03d1, implDate: "2022/02/17", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "rear", class: "ドラグーン", name: "ジゼル", fullName: "焔の竜砲騎兵ジゼル" }
     , { id: 0x03d2, implDate: "2022/02/17", implDate_bq: null        , obtain: "tr", rarity: "gc", depType: "rear", class: "儀式魔術師", name: "ちびヘカティエ", fullName: "ちびヘカティエ" }
     , { id: 0x03d3, implDate: "2022/02/24", implDate_bq: "2022/11/10", obtain: "sh", rarity: "b" , depType: "both", class: "スカウト", name: "レナータ", fullName: "天眼の偵察者レナータ" }
-    , { id: 0x03d4, implDate: "2022/03/03", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "ドラゴンシャーマン", name: "ラウラ", fullName: "白の竜巫女ラウラ" }
+    , { id: 0x03d4, implDate: "2022/03/03", implDate_bq: "2024/08/16", obtain: "sh", rarity: "b" , depType: "rear", class: "ドラゴンシャーマン", name: "ラウラ", fullName: "白の竜巫女ラウラ" }
     , { id: 0x03d5, implDate: "2022/03/03", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "支援工兵", name: "マルレーン", fullName: "帝国建機工兵マルレーン" }
     , { id: 0x03d6, implDate: "2022/03/03", implDate_bq: "2024/04/11", obtain: "sh", rarity: "p" , depType: "van" , class: "デーモンロード", name: "イルムガルト", fullName: "闇炎の魔将イルムガルト" }
     , { id: 0x03d7, implDate: "2022/03/03", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "戦巫女", name: "カオル", fullName: "帝国戦巫女カオル" }
@@ -1250,7 +1250,7 @@ const unitList = [
     , { id: 0x04cb, implDate: "2023/09/28", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "儀式魔術師", name: "ヘリューズ", fullName: "死氷の亜神ヘリューズ" }
     , { id: 0x04cc, implDate: "2023/09/28", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "スカラー", name: "ジェニー", fullName: "帝国人間学者ジェニー" }
     , { id: 0x04cd, implDate: "2023/09/28", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "ガンスリンガー", name: "パラベル", fullName: "帝国銃撃士パラベル" }
-    , { id: 0x04ce, implDate: "2023/09/28", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "both", class: "エアセイラー", name: "フォーラ", fullName: "帝国飛艦士フォーラ" }
+    , { id: 0x04ce, implDate: "2023/09/28", implDate_bq: "2024/08/16", obtain: "sh", rarity: "p" , depType: "both", class: "エアセイラー", name: "フォーラ", fullName: "帝国飛艦士フォーラ" }
     , { id: 0x04cf, implDate: "2023/09/28", implDate_bq: null        , obtain: "tr", rarity: "p" , depType: "van" , class: "ソードマスター", name: "イルヴィ", fullName: "創道の血統イルヴィ" }
     , { id: 0x04d0, implDate: "2023/10/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "重装砲兵", name: "ちびレギーナ", fullName: "ちびレギーナ" }
     , { id: 0x04d1, implDate: "2023/10/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "天狗", name: "ちびクラマ", fullName: "ちびクラマ" }
@@ -1400,6 +1400,8 @@ const unitList = [
     , { id: 0x055f, implDate: "2024/08/01", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "both", class: "ロケットトルーパー", name: "クレール/浴衣", fullName: "夏祭り警備隊クレール" }
     , { id: 0x0560, implDate: "2024/08/01", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "武侠", name: "フーイェン/浴衣", fullName: "祭夜の遊侠フーイェン" }
     , { id: 0x0561, implDate: "2024/08/08", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "メイジ", name: "ちびサイラス", fullName: "ちびサイラス" }
+    , { id: 0x0562, implDate: "2024/08/16", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "rear", class: "アーチャー", name: "ヴィクトリア/浴衣", fullName: "狩人浴衣ヴィクトリア" }
+    , { id: 0x0563, implDate: "2024/08/16", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "衛士", name: "センカ", fullName: "銭雷の衛者センカ" }
     
     
     

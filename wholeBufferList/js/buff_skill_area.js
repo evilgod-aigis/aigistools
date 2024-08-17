@@ -262,6 +262,14 @@ buff.skill_area = [
         , note: "分類未確認"
     }
     , {
+        name: "センカ", rarity: "白", cl: "衛士", AW: "覚醒前", skill: "通常"
+        , stats: { eva: "40%" }
+    }
+    , {
+        name: "センカ", rarity: "白", cl: "衛士", AW: "覚醒後", skill: "通常"
+        , stats: { eva: "40%" }
+    }
+    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2" }
         , note: "分類未確認"

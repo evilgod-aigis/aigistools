@@ -237,6 +237,12 @@ buff.unique = [
     
     // 特効
     , {
+        name: "ヴィクトリア/浴衣", rarity: "白", cl: "アーチャー", AW: "覚醒後"
+        , stats: { atk: "×1.08", other: "" }
+        , type: "special"
+        , note: [ "区分：特効", "編成", "魔法敵", "分類未確認" ]
+    }
+    , {
         name: "アルレット", rarity: "黒", cl: "発明家", AW: "覚醒前"
         , stats: { atk: "×1.15", other: "" }
         , type: "special"

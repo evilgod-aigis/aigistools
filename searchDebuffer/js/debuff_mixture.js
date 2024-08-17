@@ -1280,6 +1280,30 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "ヴィクトリア/浴衣", rarity: "白", cl: "アーチャー", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
+        , target: [
+            { attr: [ "アンデッド" ] }
+            , { atkAttr: [ "魔法" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
+        name: "ヴィクトリア/浴衣", rarity: "白", cl: "アーチャー", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
+        , target: [
+            { attr: [ "アンデッド" ] }
+            , { atkAttr: [ "魔法" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "エステル", rarity: "黒", cl: "メイジ", AW: "覚醒前", skill: "通常"
         , stats: {
             mr: { value: "-80%", type: "global" }
