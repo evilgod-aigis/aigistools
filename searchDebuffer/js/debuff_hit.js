@@ -618,6 +618,31 @@ debuff.hit = [
         , note: "コロッサス系"
     }
     , {
+        name: "ララネ", rarity: "黒", cl: "妖糸使い", AW: "覚醒前", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "29f"
+    }
+    , {
+        name: "ララネ", rarity: "黒", cl: "妖糸使い", AW: "覚醒後", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "29f"
+    }
+    , {
+        name: "クローシェ", rarity: "白", cl: "妖糸使い", AW: "覚醒前"
+        , stats: { def: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
+        name: "クローシェ", rarity: "白", cl: "妖糸使い", AW: "覚醒後"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
+        name: "クローシェ", rarity: "白", cl: "妖糸使い", AW: "覚醒後", skill: "覚醒"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "14f"
@@ -1123,6 +1148,12 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "9f"
         , note: "ガンスリンガー系"
+    }
+    , {
+        name: "デステリカ", rarity: "黒", cl: "ガンスリンガー", AW: "覚醒後", skill: "覚醒"
+        , stats: { def: "-80%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "ラピドゥスアイオーン", cl: "時の俯瞰者", AW: "覚2b"

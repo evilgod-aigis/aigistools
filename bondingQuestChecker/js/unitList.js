@@ -1402,6 +1402,12 @@ const unitList = [
     , { id: 0x0561, implDate: "2024/08/08", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "メイジ", name: "ちびサイラス", fullName: "ちびサイラス" }
     , { id: 0x0562, implDate: "2024/08/16", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "rear", class: "アーチャー", name: "ヴィクトリア/浴衣", fullName: "狩人浴衣ヴィクトリア" }
     , { id: 0x0563, implDate: "2024/08/16", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "衛士", name: "センカ", fullName: "銭雷の衛者センカ" }
+    , { id: 0x0564, implDate: "2024/08/22", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "シールダー", name: "サフィール", fullName: "戦華の盾騎士サフィール" }
+    , { id: 0x0565, implDate: "2024/08/22", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "妖糸使い", name: "ララネ", fullName: "死線の操者ララネ" }
+    , { id: 0x0566, implDate: "2024/08/22", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "ガンスリンガー", name: "デステリカ", fullName: "皆殺しの凶銃デステリカ" }
+    , { id: 0x0567, implDate: "2024/08/22", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "妖糸使い", name: "クローシェ", fullName: "紫編の妖糸クローシェ" }
+    , { id: 0x0568, implDate: "2024/08/22", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "raer", class: "魔界総帥", name: "アスバール/闘兵", fullName: "嵐雨神祭アスバール" }
+    , { id: 0x0569, implDate: "2024/08/22", implDate_bq: null        , obtain: "tr", rarity: "gc", depType: "raer", class: "時の俯瞰者", name: "ちびクロノシア", fullName: "ちびクロノシア" }
     
     
     

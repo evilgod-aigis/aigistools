@@ -975,6 +975,11 @@ buff.dep_gl = [
         , target: { home: [ "砂漠の国" ] }
     }
     , {
+        name: "サフィール", rarity: "黒", cl: "シールダー", AW: "覚醒後"
+        , stats: { def: "+10%" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
         name: "レジナレア", rarity: "白", cl: "シールダー", AW: "覚醒後"
         , stats: { draw: "○" }
         , target: { cl: [ "ヘビーアーマー", "シールダー" ] }

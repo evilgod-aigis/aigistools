@@ -102,6 +102,11 @@ buff.team = [
         , note: "呪殺(9%)付与"
     }
     , {
+        name: "ユキザクラ", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚2a"
+        , stats: { other: "" }
+        , note: [ "呪殺(11%)付与", "値は暫定" ]
+    }
+    , {
         name: "フジムラサキ", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚醒前"
         , stats: { other: "" }
         , note: "奇跡の盾(16%)付与"
@@ -110,6 +115,11 @@ buff.team = [
         name: "フジムラサキ", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚醒後"
         , stats: { other: "" }
         , note: "奇跡の盾(16%)付与"
+    }
+    , {
+        name: "フジムラサキ", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚2a"
+        , stats: { other: "" }
+        , note: [ "奇跡の盾(20%)付与", "値は暫定" ]
     }
     , {
         name: "魔王城", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚醒前"
@@ -122,6 +132,11 @@ buff.team = [
         , note: "貫通攻撃(16%)付与"
     }
     , {
+        name: "魔王城", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚2a"
+        , stats: { other: "" }
+        , note: [ "貫通攻撃(20%)付与", "値は暫定" ]
+    }
+    , {
         name: "シラハユリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚醒前"
         , stats: { other: "" }
         , note: "癒しの奇跡(300)付与"
@@ -130,6 +145,11 @@ buff.team = [
         name: "シラハユリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚醒後"
         , stats: { other: "" }
         , note: "癒しの奇跡(600)付与"
+    }
+    , {
+        name: "シラハユリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚2a"
+        , stats: { other: "" }
+        , note: "癒しの奇跡(700)付与"
     }
     , {
         name: "イリス", rarity: "黒", cl: "ヒーラー", AW: "覚醒後"

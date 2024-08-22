@@ -252,6 +252,19 @@ buff.skill_area = [
         , stats: { atk: "×1.15" }
     }
     , {
+        name: "サフィール", rarity: "黒", cl: "シールダー", AW: "覚醒前", skill: "通常"
+        , stats: { rege: [ "400/秒", "200/15f" ] }
+    }
+    , {
+        name: "サフィール", rarity: "黒", cl: "シールダー", AW: "覚醒後", skill: "通常"
+        , stats: { rege: [ "400/秒", "200/15f" ] }
+    }
+    , {
+        name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "覚醒前", skill: "通常"
+        , stats: { eva: "50%" }
+        , note: "永続"
+    }
+    , {
         name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "覚醒後", skill: "通常"
         , stats: { eva: "50%" }
         , note: "永続"
@@ -268,6 +281,16 @@ buff.skill_area = [
     , {
         name: "センカ", rarity: "白", cl: "衛士", AW: "覚醒後", skill: "通常"
         , stats: { eva: "40%" }
+    }
+    , {
+        name: "クローシェ", rarity: "白", cl: "妖糸使い", AW: "覚醒前", skill: "通常"
+        , stats: { def: "×1.4" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "クローシェ", rarity: "白", cl: "妖糸使い", AW: "覚醒後", skill: "通常"
+        , stats: { def: "×1.4" }
+        , note: "分類未確認"
     }
     , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒前", skill: "通常"

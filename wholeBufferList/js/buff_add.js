@@ -126,6 +126,16 @@ buff.add = [
         , note: [ "範囲", "戦巫女系" ]
     }
     , {
+        name: "クローシェ", rarity: "白", cl: "妖糸使い", AW: "覚醒前", skill: "通常"
+        , stats: { mr: "+10" }
+        , note: "範囲"
+    }
+    , {
+        name: "クローシェ", rarity: "白", cl: "妖糸使い", AW: "覚醒後", skill: "通常"
+        , stats: { mr: "+10" }
+        , note: "範囲"
+    }
+    , {
         name: "小悪魔アイドル", cl: "小悪魔アイドル", AW: "覚1"
         , stats: { atk: "5%", def: "5%" }
         , note: "範囲"
@@ -384,6 +394,11 @@ buff.add = [
         name: "聖獣使い", cl: "幻獣使い", AW: "覚2a"
         , stats: { mr: "+15" }
         , note: [ "範囲", "幻獣使い系" ]
+    }
+    , {
+        name: "アスバール/闘兵", rarity: "黒", cl: "魔界総帥", AW: "覚醒後"
+        , stats: { mr: "+7" }
+        , note: "範囲"
     }
     , {
         name: "ジュディス", rarity: "白", cl: "メディック", AW: "覚醒前"

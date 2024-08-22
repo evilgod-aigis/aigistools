@@ -1280,6 +1280,15 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "ウィドウマイカー", cl: "妖糸使い", AW: "覚2b"
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+            , def: { value: "-15%", type: "area" }
+        }
+        , domain: "area"
+        , note: "妖糸使い系"
+    }
+    , {
         name: "ヴィクトリア/浴衣", rarity: "白", cl: "アーチャー", AW: "覚醒前", skill: "通常"
         , stats: {
             def: { value: "-25%", type: "area" }
@@ -2545,6 +2554,22 @@ debuff.mixture = [
         , note: [ "雪娘系", "分類未確認" ]
     }
     , {
+        name: "デステリカ", rarity: "黒", cl: "ガンスリンガー", AW: "覚醒前", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
+        name: "デステリカ", rarity: "黒", cl: "ガンスリンガー", AW: "覚醒後", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "シルヴァーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒前", skill: "通常"
         , stats: {
             def: { value: "-20%", type: "area" }
@@ -2564,6 +2589,14 @@ debuff.mixture = [
         name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒後", skill: "覚醒"
         , stats: {
             stop: { value: "179f", type: "global" }
+        }
+        , domain: "global"
+        , note: "発動時"
+    }
+    , {
+        name: "ちびクロノシア", rarity: "ちび", cl: "時の俯瞰者", skill: "覚醒"
+        , stats: {
+            stop: { value: "119f", type: "global" }
         }
         , domain: "global"
         , note: "発動時"

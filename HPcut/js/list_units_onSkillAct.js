@@ -55,6 +55,29 @@ lists.units.onSkillAct.list = [
     , {
         id: null, hidden: false
         , unitInfo: {
+            unitName: "マリオネットII", deployType: "近接型", rarity: "-"
+            , unitClass: { selected: "" }
+            , attribution: []
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: [ "トークン(ララネ)" ]
+        }
+        , skill: {
+            selected: "通常"
+            , detail: {
+                "通常": [
+                    {
+                        target: "射程内", simult: Infinity
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { WT: 1, CT: Infinity, dur: 2, HPred: 10 }
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
             unitName: "頂に座す者アルコゥ", deployType: "近接型", rarity: "黒"
             , unitClass: { selected: "祖竜" }
             , attribution: [ "竜人", "魔界", "ドラゴン", "英傑" ]

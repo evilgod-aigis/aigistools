@@ -168,6 +168,7 @@ buff.unique = [
     , {
         name: "迷い家", rarity: "金", cl: "迷い家"
         , stats: { atk: "+20%" }
+        , type: "death"
         , note: [ "区分：死亡時", "死亡時", "継続：63秒", "分類未確認" ]
     }
     
@@ -455,19 +456,19 @@ buff.unique = [
         name: "オーシェン", rarity: "黒", cl: "光槍ビルガの継承者", AW: "覚醒後", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
-        , note: [ "区分：被ダメージ軽減", "属性不問?-40%(範囲)" ]
+        , note: [ "区分：被ダメージ軽減", "属性不問-40%(範囲)" ]
     }
     , {
         name: "オーシェン", rarity: "白", cl: "光槍ビルガの継承者", AW: "覚醒後", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
-        , note: [ "区分：被ダメージ軽減", "属性不問?-10%(範囲)" ]
+        , note: [ "区分：被ダメージ軽減", "属性不問-10%(範囲)" ]
     }
     , {
         name: "ベルニス/花嫁", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
-        , note: [ "区分：被ダメージ軽減", "属性不問?-30%(範囲)", "分類未確認" ]
+        , note: [ "区分：被ダメージ軽減", "属性不問-30%(範囲)" ]
     }
     , {
         name: "エクス/バレンタイン", rarity: "黒", cl: "神官戦士", AW: "覚醒前", skill: "通常"
@@ -528,6 +529,12 @@ buff.unique = [
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-50%" ]
+    }
+    , {
+        name: "サフィール", rarity: "黒", cl: "シールダー", AW: "覚醒後", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "物理魔法-40%(範囲)", "分類未確認" ]
     }
     , {
         name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "覚醒"

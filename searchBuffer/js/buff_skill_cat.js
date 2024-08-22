@@ -2282,6 +2282,18 @@ buff.skill_cat = [
         , target: { season: [ "ジューンブライド" ] }
     }
     , {
+        name: "アスバール/闘兵", rarity: "黒", cl: "魔界総帥", AW: "覚醒前", skill: "通常"
+        , stats: { atk: "×1.2", mr: "×1.4" }
+        , target: { race: [ "神", "半神" ] }
+        , note: "永続"
+    }
+    , {
+        name: "アスバール/闘兵", rarity: "黒", cl: "魔界総帥", AW: "覚醒後", skill: "通常"
+        , stats: { atk: "×1.2", mr: "×1.4" }
+        , target: { race: [ "神", "半神" ] }
+        , note: "永続"
+    }
+    , {
         name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { others: [ "英傑" ] }
@@ -2310,6 +2322,11 @@ buff.skill_cat = [
     , {
         name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒後", skill: "覚醒"
         , stats: { atk: "×1.5", range: "×1.4" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
+        name: "ちびクロノシア", rarity: "ちび", cl: "時の俯瞰者", skill: "覚醒"
+        , stats: { atk: "×1.4", range: "×1.2" }
         , target: { depType: [ "遠距離" ] }
     }
     , {
