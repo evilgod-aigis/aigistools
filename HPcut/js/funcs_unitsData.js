@@ -434,7 +434,7 @@ funcs.unitsData.GetTimingOrAtkInt = (type, unit) => {
                 timing[times] += delta;
                 now = next;
             }
-            return _.map(timing, t => `${t.toFixed(2)}秒`);
+            return _.map(timing, t => t === Infinity ? "∞秒" : `${t.toFixed(2)}秒`);
         case "onHit":
             const atkIntervalInfo = unit.unitInfo.atkInterval.corr;
             const atkInterval = [ null, null ];
