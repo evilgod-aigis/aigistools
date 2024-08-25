@@ -2559,7 +2559,7 @@ debuff.mixture = [
             def: { value: "-30%", type: "area" }
         }
         , domain: "area"
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "デステリカ", rarity: "黒", cl: "ガンスリンガー", AW: "覚醒後", skill: "通常"
@@ -2567,7 +2567,7 @@ debuff.mixture = [
             def: { value: "-30%", type: "area" }
         }
         , domain: "area"
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "シルヴァーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒前", skill: "通常"

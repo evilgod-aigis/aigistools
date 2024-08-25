@@ -1152,8 +1152,7 @@ debuff.hit = [
     , {
         name: "デステリカ", rarity: "黒", cl: "ガンスリンガー", AW: "覚醒後", skill: "覚醒"
         , stats: { def: "-80%" }
-        , atkAttr: "物理", dur: "?f"
-        , note: "分類未確認"
+        , atkAttr: "物理", dur: "14f"
     }
     , {
         name: "ラピドゥスアイオーン", cl: "時の俯瞰者", AW: "覚2b"

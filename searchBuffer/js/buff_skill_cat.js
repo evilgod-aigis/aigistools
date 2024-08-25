@@ -2284,13 +2284,19 @@ buff.skill_cat = [
     , {
         name: "アスバール/闘兵", rarity: "黒", cl: "魔界総帥", AW: "覚醒前", skill: "通常"
         , stats: { atk: "×1.2", mr: "×1.4" }
-        , target: { race: [ "神", "半神" ] }
+        , target: [
+            { race: [ "神", "半神" ] }
+            , { others: [ "魔界" ] }
+        ]
         , note: "永続"
     }
     , {
         name: "アスバール/闘兵", rarity: "黒", cl: "魔界総帥", AW: "覚醒後", skill: "通常"
         , stats: { atk: "×1.2", mr: "×1.4" }
-        , target: { race: [ "神", "半神" ] }
+        , target: [
+            { race: [ "神", "半神" ] }
+            , { others: [ "魔界" ] }
+        ]
         , note: "永続"
     }
     , {
