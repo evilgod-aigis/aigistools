@@ -1408,6 +1408,7 @@ const unitList = [
     , { id: 0x0567, implDate: "2024/08/22", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "妖糸使い", name: "クローシェ", fullName: "紫編の妖糸クローシェ" }
     , { id: 0x0568, implDate: "2024/08/22", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "rear", class: "魔界総帥", name: "アスバール/闘兵", fullName: "嵐雨神祭アスバール" }
     , { id: 0x0569, implDate: "2024/08/22", implDate_bq: null        , obtain: "tr", rarity: "gc", depType: "rear", class: "時の俯瞰者", name: "ちびクロノシア", fullName: "ちびクロノシア" }
+    , { id: 0x056a, implDate: "2024/08/29", implDate_bq: null        , obtain: "sp", rarity: "bh", depType: "van" , class: "開天の神話", name: "伏綺", fullName: "大華の礎たる者 伏綺" }
     
     
     

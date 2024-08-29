@@ -1,92 +1,92 @@
 // 所持
 buff.own = [
     {
-        name: "アトナテス", rarity: "黒", cl: "魔竜騎士", AW: "覚醒後"
+        name: "アトナテス", rarity: "黒", cl: "魔竜騎士", AW: "覚醒"
         , stats: { atk: "+5%" }
         , target: { sex: [ "男性" ] }
     }
     , {
-        name: "アトナテス", rarity: "白", cl: "魔竜騎士", AW: "覚醒後"
+        name: "アトナテス", rarity: "白", cl: "魔竜騎士", AW: "覚醒"
         , stats: { atk: "+3%" }
         , target: { sex: [ "男性" ] }
     }
     , {
-        name: "トゥアン", rarity: "黒", cl: "バーバリアンクイーン", AW: "覚醒後"
+        name: "トゥアン", rarity: "黒", cl: "バーバリアンクイーン", AW: "覚醒"
         , stats: { atk: "+3%" }
         , target: { sex: [ "女性" ], depType: [ "近接" ] }
     }
     , {
-        name: "トゥアン", rarity: "白", cl: "バーバリアンクイーン", AW: "覚醒後"
+        name: "トゥアン", rarity: "白", cl: "バーバリアンクイーン", AW: "覚醒"
         , stats: { atk: "+2%" }
         , target: { sex: [ "女性" ], depType: [ "近接" ] }
     }
     , {
-        name: "トゥアン/水着", rarity: "白", cl: "バーバリアンクイーン", AW: "覚醒後"
+        name: "トゥアン/水着", rarity: "白", cl: "バーバリアンクイーン", AW: "覚醒"
         , stats: { atk: "+2%", def: "+2%" }
         , target: { season: [ "サマー" ] }
     }
     , {
-        name: "アージェ", rarity: "黒", cl: "古代魔導機兵", AW: "覚醒後"
+        name: "アージェ", rarity: "黒", cl: "古代魔導機兵", AW: "覚醒"
         , stats: { atk: "+5%" }
         , target: { others: [ "機械" ] }
     }
     , {
-        name: "アージェ", rarity: "白", cl: "古代魔導機兵", AW: "覚醒後"
+        name: "アージェ", rarity: "白", cl: "古代魔導機兵", AW: "覚醒"
         , stats: { atk: "+3%" }
         , target: { others: [ "機械" ] }
     }
     , {
-        name: "トラム", rarity: "黒", cl: "銀腕の神話", AW: "覚醒後"
+        name: "トラム", rarity: "黒", cl: "銀腕の神話", AW: "覚醒"
         , stats: { def: "+5%" }
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "トラム", rarity: "白", cl: "銀腕の神話", AW: "覚醒後"
+        name: "トラム", rarity: "白", cl: "銀腕の神話", AW: "覚醒"
         , stats: { def: "+4%" }
         , target: { depType: [ "遠距離" ] }
     }
     , {
-        name: "トラム/水着", rarity: "白", cl: "銀腕の神話", AW: "覚醒後"
+        name: "トラム/水着", rarity: "白", cl: "銀腕の神話", AW: "覚醒"
         , stats: { def: "+3%" }
         , target: { season: [ "サマー" ] }
     }
     , {
-        name: "アルヴァ", rarity: "黒", cl: "ウェポンマスター", AW: "覚醒後"
+        name: "アルヴァ", rarity: "黒", cl: "ウェポンマスター", AW: "覚醒"
         , stats: { atk: "+4%" }
         , target: { cl: [ "ソルジャー", "ヘビーアーマー", "ワルキューレ", "バンデット", "アーチャー" ] }
     }
     , {
-        name: "アルヴァ", rarity: "白", cl: "ウェポンマスター", AW: "覚醒後"
+        name: "アルヴァ", rarity: "白", cl: "ウェポンマスター", AW: "覚醒"
         , stats: { atk: "+4%" }
         , target: { cl: [ "ダークファイター", "アベンジャー", "ボウライダー", "ロイヤルガード" ] }
     }
     , {
-        name: "ラーワル", rarity: "黒", cl: "魔導生命体", AW: "覚醒後"
+        name: "ラーワル", rarity: "黒", cl: "魔導生命体", AW: "覚醒"
         , stats: { atk: "+5%" }
         , target: { cl: [ "魔導生命体", "魔法剣士", "メイジアーマー", "アルケミスト", "エンチャンター" ] }
     }
     , {
-        name: "ラーワル", rarity: "白", cl: "魔導生命体", AW: "覚醒後"
+        name: "ラーワル", rarity: "白", cl: "魔導生命体", AW: "覚醒"
         , stats: { atk: "+3%" }
         , target: { cl: [ "魔導生命体", "魔法剣士", "メイジアーマー", "アルケミスト", "エンチャンター" ] }
     }
     , {
-        name: "ラーワル/水着", rarity: "白", cl: "魔導生命体", AW: "覚醒後"
+        name: "ラーワル/水着", rarity: "白", cl: "魔導生命体", AW: "覚醒"
         , stats: { atk: "+2%" }
         , target: { others: [ "魔術師" ] }
     }
     , {
-        name: "山ン本五郎左衛門", rarity: "黒", cl: "アヤカシの王", AW: "覚醒後"
+        name: "山ン本五郎左衛門", rarity: "黒", cl: "アヤカシの王", AW: "覚醒"
         , stats: { hp: "+5%", atk: "+5%" }
         , target: { home: [ "東の国" ] }
     }
     , {
-        name: "山ン本五郎左衛門", rarity: "白", cl: "アヤカシの王", AW: "覚醒後"
+        name: "山ン本五郎左衛門", rarity: "白", cl: "アヤカシの王", AW: "覚醒"
         , stats: { def: "+3%" }
         , target: { home: [ "東の国" ] }
     }
     , {
-        name: "ルキファ", rarity: "黒", cl: "黎明の翼", AW: "覚醒後"
+        name: "ルキファ", rarity: "黒", cl: "黎明の翼", AW: "覚醒"
         , stats: { atk: "+5%", def: "+5%" }
         , target: [
             { race: [ "天使", "天界人" ] }
@@ -94,7 +94,7 @@ buff.own = [
         ]
     }
     , {
-        name: "ルキファ", rarity: "白", cl: "黎明の翼", AW: "覚醒後"
+        name: "ルキファ", rarity: "白", cl: "黎明の翼", AW: "覚醒"
         , stats: { atk: "+3%" }
         , target: [
             { race: [ "天使", "天界人" ] }
@@ -102,152 +102,157 @@ buff.own = [
         ]
     }
     , {
-        name: "リヴン", rarity: "黒", cl: "トゥルーブラッド", AW: "覚醒後"
+        name: "リヴン", rarity: "黒", cl: "トゥルーブラッド", AW: "覚醒"
         , stats: { atk: "+5%" }
         , target: { others: [ "アンデッド" ] }
     }
     , {
-        name: "リヴン", rarity: "白", cl: "トゥルーブラッド", AW: "覚醒後"
+        name: "リヴン", rarity: "白", cl: "トゥルーブラッド", AW: "覚醒"
         , stats: { def: "+3%" }
         , target: { others: [ "アンデッド" ] }
     }
     , {
-        name: "イルドナ", rarity: "黒", cl: "暁光の神話", AW: "覚醒後"
+        name: "イルドナ", rarity: "黒", cl: "暁光の神話", AW: "覚醒"
         , stats: { def: "+5%" }
         , target: { sex: [ "男性" ] }
     }
     , {
-        name: "イルドナ", rarity: "白", cl: "暁光の神話", AW: "覚醒後"
+        name: "イルドナ", rarity: "白", cl: "暁光の神話", AW: "覚醒"
         , stats: { def: "+3%" }
         , target: { sex: [ "男性" ] }
     }
     , {
-        name: "ミルドリス", rarity: "黒", cl: "神獣騎士", AW: "覚醒後"
+        name: "ミルドリス", rarity: "黒", cl: "神獣騎士", AW: "覚醒"
         , stats: { hp: "+5%", atk: "+5%" }
         , target: { others: [ "騎兵" ] }
     }
     , {
-        name: "ミルドリス", rarity: "白", cl: "神獣騎士", AW: "覚醒後"
+        name: "ミルドリス", rarity: "白", cl: "神獣騎士", AW: "覚醒"
         , stats: { def: "+3%" }
         , target: { others: [ "騎兵" ] }
     }
     , {
-        name: "ヴィディア", rarity: "黒", cl: "王国軍初代副司令", AW: "覚醒後"
+        name: "ヴィディア", rarity: "黒", cl: "王国軍初代副司令", AW: "覚醒"
         , stats: { atk: "+5%" }
         , target: { cl: [ "王国軍初代副司令", "グランドナイト", "インペリアルナイト", "テンプルナイト" ] }
     }
     , {
-        name: "ヴィディア", rarity: "白", cl: "王国軍初代副司令", AW: "覚醒後"
+        name: "ヴィディア", rarity: "白", cl: "王国軍初代副司令", AW: "覚醒"
         , stats: { def: "+3%" }
         , target: { cl: [ "王国軍初代副司令", "グランドナイト", "インペリアルナイト", "テンプルナイト" ] }
     }
     , {
-        name: "徐華", rarity: "黒", cl: "大華の神話", AW: "覚醒後"
+        name: "徐華", rarity: "黒", cl: "大華の神話", AW: "覚醒"
         , stats: { hp: "+5%", atk: "+5%" }
         , target: { home: [ "華の国" ] }
     }
     , {
-        name: "徐華", rarity: "白", cl: "大華の神話", AW: "覚醒後"
+        name: "徐華", rarity: "白", cl: "大華の神話", AW: "覚醒"
         , stats: { def: "+3%" }
         , target: { home: [ "華の国" ] }
     }
     , {
-        name: "ランシェ", rarity: "黒", cl: "マギステルミリトゥム", AW: "覚醒後"
+        name: "ランシェ", rarity: "黒", cl: "マギステルミリトゥム", AW: "覚醒"
         , stats: { hp: "+5%", def: "+5%" }
         , target: { others: [ "重装" ] }
     }
     , {
-        name: "ランシェ", rarity: "白", cl: "マギステルミリトゥム", AW: "覚醒後"
+        name: "ランシェ", rarity: "白", cl: "マギステルミリトゥム", AW: "覚醒"
         , stats: { mr: "+3" }
         , target: { others: [ "重装" ] }
     }
     , {
-        name: "オーシェン", rarity: "黒", cl: "光槍ビルガの継承者", AW: "覚醒後"
+        name: "オーシェン", rarity: "黒", cl: "光槍ビルガの継承者", AW: "覚醒"
         , stats: { hp: "+5%", atk: "+5%", def: "+5%" }
         , target: { cl: [ "光槍ビルガの継承者", "メイド", "ロイヤルガード" ] }
     }
     , {
-        name: "オーシェン", rarity: "白", cl: "光槍ビルガの継承者", AW: "覚醒後"
+        name: "オーシェン", rarity: "白", cl: "光槍ビルガの継承者", AW: "覚醒"
         , stats: { mr: "+3" }
         , target: { cl: [ "光槍ビルガの継承者", "メイド", "ロイヤルガード" ] }
     }
     , {
-        name: "アルコゥ", rarity: "黒", cl: "祖竜", AW: "覚醒後"
+        name: "アルコゥ", rarity: "黒", cl: "祖竜", AW: "覚醒"
         , stats: { atk: "+3%" }
         , target: { others: [ "ドラゴン" ] }
     }
     , {
-        name: "アルコゥ", rarity: "白", cl: "祖竜", AW: "覚醒後"
+        name: "アルコゥ", rarity: "白", cl: "祖竜", AW: "覚醒"
         , stats: { def: "+3%" }
         , target: { others: [ "ドラゴン" ] }
     }
     , {
-        name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒後"
+        name: "伏綺", rarity: "黒", cl: "開天の神話", AW: "覚醒"
+        , stats: { mr: "+4" }
+        , target: { home: [ "華の国" ] }
+    }
+    , {
+        name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒"
         , stats: { atk: "+5%", range: "+10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }
     }
     , {
-        name: "ソラス", rarity: "白", cl: "占星術師", AW: "覚醒後"
+        name: "ソラス", rarity: "白", cl: "占星術師", AW: "覚醒"
         , stats: { atk: "+3%", range: "+10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }
     }
     , {
-        name: "ソラス/水着", rarity: "白", cl: "占星術師", AW: "覚醒後"
+        name: "ソラス/水着", rarity: "白", cl: "占星術師", AW: "覚醒"
         , stats: { range: "+5" }
         , target: { season: [ "サマー" ], depType: [ "遠距離" ] }
     }
     , {
-        name: "ユージェン", rarity: "黒", cl: "チェイスハンター", AW: "覚醒後"
+        name: "ユージェン", rarity: "黒", cl: "チェイスハンター", AW: "覚醒"
         , stats: { atk: "+5%" }
         , target: { others: [ "弓兵" ] }
     }
     , {
-        name: "ユージェン", rarity: "白", cl: "チェイスハンター", AW: "覚醒後"
+        name: "ユージェン", rarity: "白", cl: "チェイスハンター", AW: "覚醒"
         , stats: { atk: "+3%" }
         , target: { others: [ "弓兵" ] }
     }
     , {
-        name: "サナラ/水着", rarity: "白", cl: "ジオマンサー", AW: "覚醒後"
+        name: "サナラ/水着", rarity: "白", cl: "ジオマンサー", AW: "覚醒"
         , stats: { hp: "+3%" }
         , target: { season: [ "サマー" ] }
     }
     , {
-        name: "アンブローズ", rarity: "黒", cl: "転生魔導士", AW: "覚醒後"
+        name: "アンブローズ", rarity: "黒", cl: "転生魔導士", AW: "覚醒"
         , stats: { mr: "+4" }
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "アンブローズ", rarity: "白", cl: "転生魔導士", AW: "覚醒後"
+        name: "アンブローズ", rarity: "白", cl: "転生魔導士", AW: "覚醒"
         , stats: { mr: "+3" }
         , target: { depType: [ "遠距離" ] }
     }
     , {
-        name: "ホルテウス", rarity: "黒", cl: "ファラオ", AW: "覚醒後"
+        name: "ホルテウス", rarity: "黒", cl: "ファラオ", AW: "覚醒"
         , stats: { hp: "+5%", atk: "+5%", def: "+5%" }
         , target: { home: [ "砂漠の国" ] }
     }
     , {
-        name: "ホルテウス", rarity: "白", cl: "ファラオ", AW: "覚醒後"
+        name: "ホルテウス", rarity: "白", cl: "ファラオ", AW: "覚醒"
         , stats: { atk: "+3%" }
         , target: { home: [ "砂漠の国" ] }
     }
     , {
-        name: "ホルテウス/水着", rarity: "白", cl: "ファラオ", AW: "覚醒後"
+        name: "ホルテウス/水着", rarity: "白", cl: "ファラオ", AW: "覚醒"
         , stats: { atk: "+3%" }
         , target: { season: [ "サマー" ] }
     }
     , {
-        name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒後"
+        name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒"
         , stats: { atk: "+5%", range: "+10" }
         , target: { cl: [ "ピューティアー", "神官戦士", "ヒーラー", "風水使い" ] }
     }
     , {
-        name: "イムラウ", rarity: "白", cl: "ピューティアー", AW: "覚醒後"
+        name: "イムラウ", rarity: "白", cl: "ピューティアー", AW: "覚醒"
         , stats: { atk: "+3%", range: "+10" }
         , target: { cl: [ "ピューティアー", "神官戦士", "ヒーラー", "風水使い" ] }
     }
     , {
-        name: "イムラウ/お正月", rarity: "白", cl: "ピューティアー", AW: "覚醒後"
+        name: "イムラウ/お正月", rarity: "白", cl: "ピューティアー", AW: "覚醒"
         , stats: { def: "+3%" }
         , target: [
             { cl: [ "ピューティアー", "神官戦士", "ヒーラー", "風水使い" ] }
@@ -255,7 +260,7 @@ buff.own = [
         ]
     }
     , {
-        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラー", AW: "覚醒後"
+        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラー", AW: "覚醒"
         , stats: { atk: "+5%" }
         , target: {
             cl: [
@@ -266,7 +271,7 @@ buff.own = [
         }
     }
     , {
-        name: "モルフェサ", rarity: "白", cl: "カースウィスパラー", AW: "覚醒後"
+        name: "モルフェサ", rarity: "白", cl: "カースウィスパラー", AW: "覚醒"
         , stats: { atk: "+3%" }
         , target: {
             cl: [
@@ -277,52 +282,52 @@ buff.own = [
         }
     }
     , {
-        name: "イヴリール", rarity: "黒", cl: "未踏海域の覇者", AW: "覚醒後"
+        name: "イヴリール", rarity: "黒", cl: "未踏海域の覇者", AW: "覚醒"
         , stats: { atk: "+5%" }
         , target: { others: [ "深海" ] }
     }
     , {
-        name: "イヴリール", rarity: "白", cl: "未踏海域の覇者", AW: "覚醒後"
+        name: "イヴリール", rarity: "白", cl: "未踏海域の覇者", AW: "覚醒"
         , stats: { def: "+5%" }
         , target: { others: [ "深海" ] }
     }
     , {
-        name: "エフトラ", rarity: "黒", cl: "異世界戦士", AW: "覚醒後"
+        name: "エフトラ", rarity: "黒", cl: "異世界戦士", AW: "覚醒"
         , stats: { atk: "+5%", range: "+10" }
         , target: { cl: [ "異世界戦士", "パイレーツ", "マーチャント", "モンスタースレイヤー" ] }
     }
     , {
-        name: "エフトラ", rarity: "白", cl: "異世界戦士", AW: "覚醒後"
+        name: "エフトラ", rarity: "白", cl: "異世界戦士", AW: "覚醒"
         , stats: { atk: "+3%", range: "+10" }
         , target: { cl: [ "異世界戦士", "パイレーツ", "マーチャント", "モンスタースレイヤー" ] }
     }
     , {
-        name: "エフトラ/お正月", rarity: "白", cl: "異世界戦士", AW: "覚醒後"
+        name: "エフトラ/お正月", rarity: "白", cl: "異世界戦士", AW: "覚醒"
         , stats: { hp: "+5%" }
         , target: { season: [ "お正月" ] }
     }
     , {
-        name: "エフトラ/最終決戦仕様", rarity: "白", cl: "異世界戦士", AW: "覚醒後"
+        name: "エフトラ/最終決戦仕様", rarity: "白", cl: "異世界戦士", AW: "覚醒"
         , stats: { hp: "+3%" }
         , target: { others: [ "銃士" ] }
     }
     , {
-        name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後"
+        name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒"
         , stats: { atk: "+1%" }
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒後"
+        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒"
         , stats: { hp: "+1%" }
         , target: { sex: [ "女性" ] }
     }
     , {
-        name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒後"
+        name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒"
         , stats: { hp: "+1%" }
         , target: { depType: [ "遠距離" ] }
     }
     , {
-        name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒後"
+        name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒"
         , stats: { atk: "+1%", def: "+1%" }
         , target: { home: [ "白の帝国" ] }
     }
@@ -331,7 +336,7 @@ buff.own = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
         , target: { : [ "" ] }
         , target: [
@@ -342,7 +347,7 @@ buff.own = [
     
     黒 白 青 金 ちび 銀 銅 鉄 トークン
     
-    覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒
     

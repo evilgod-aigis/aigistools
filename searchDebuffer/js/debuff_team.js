@@ -13,33 +13,33 @@ debuff.team = [
         , target: { attr: [ "英傑" ] }
     }
     , {
-        name: "アルコゥ", rarity: "黒", cl: "祖竜", AW: "覚醒後"
+        name: "アルコゥ", rarity: "黒", cl: "祖竜", AW: "覚醒"
         , stats: { hp: "-10%", atk: "-10%" }
     }
     , {
-        name: "アンブローズ", rarity: "黒", cl: "転生魔導士", AW: "覚醒後"
+        name: "アンブローズ", rarity: "黒", cl: "転生魔導士", AW: "覚醒"
         , stats: { mr: "-20" }
     }
     , {
-        name: "イヴリール", rarity: "白", cl: "未踏海域の覇者", AW: "覚醒後"
+        name: "イヴリール", rarity: "白", cl: "未踏海域の覇者", AW: "覚醒"
         , stats: { def: "-7%" }
     }
     , {
-        name: "ヒバリ/バレンタイン", rarity: "黒", cl: "サムライ", AW: "覚醒前"
+        name: "ヒバリ/バレンタイン", rarity: "黒", cl: "サムライ", AW: "未"
         , stats: { def: "-10%", mr: "-10" }
         , target: { attr: [ "妖怪" ] }
     }
     , {
-        name: "ヒバリ/バレンタイン", rarity: "黒", cl: "サムライ", AW: "覚醒後"
+        name: "ヒバリ/バレンタイン", rarity: "黒", cl: "サムライ", AW: "覚醒"
         , stats: { def: "-20%", mr: "-20" }
         , target: { attr: [ "妖怪" ] }
     }
     , {
-        name: "カヨウ", rarity: "黒", cl: "妖狐", AW: "覚醒後"
+        name: "カヨウ", rarity: "黒", cl: "妖狐", AW: "覚醒"
         , stats: { mr: "-10" }
     }
     , {
-        name: "シルセス/花嫁", rarity: "黒", cl: "メイジアーマー", AW: "覚醒後"
+        name: "シルセス/花嫁", rarity: "黒", cl: "メイジアーマー", AW: "覚醒"
         , stats: { atk: "-15%" }
         , target: { attr: [ "デーモン" ] }
     }
@@ -50,124 +50,124 @@ debuff.team = [
         , note: "ダークストーカー系"
     }
     , {
-        name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "未"
         , stats: { atk: "-15%", def: "-25%" }
         , target: { attr: [ "アーマー" ] }
     }
     , {
-        name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "未"
         , stats: { mr: "-15" }
     }
     , {
-        name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後"
+        name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒"
         , stats: { atk: "-20%", def: "-30%" }
         , target: { attr: [ "アーマー" ] }
     }
     , {
-        name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後"
+        name: "テンマ", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒"
         , stats: { mr: "-20" }
     }
     , {
-        name: "ランヒルド", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "ランヒルド", rarity: "黒", cl: "モンスターブレイカー", AW: "未"
         , stats: { atk: "-15%", mr: "-15" }
         , target: { attr: [ "デーモン" ] }
     }
     , {
-        name: "ランヒルド", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "ランヒルド", rarity: "黒", cl: "モンスターブレイカー", AW: "未"
         , stats: { def: "-10%" }
     }
     , {
-        name: "ランヒルド", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後"
+        name: "ランヒルド", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒"
         , stats: { atk: "-20%", mr: "-20" }
         , target: { attr: [ "デーモン" ] }
     }
     , {
-        name: "ランヒルド", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒後"
+        name: "ランヒルド", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒"
         , stats: { def: "-15%" }
     }
     , {
-        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "未"
         , stats: { hp: "-10%", def: "-20%" }
         , target: { attr: [ "デーモン" ] }
     }
     , {
-        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "未"
         , stats: { atk: "-5%" }
     }
     , {
-        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "未"
         , stats: { hp: "-15%", def: "-25%" }
         , target: { attr: [ "デーモン" ] }
     }
     , {
-        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "ランヒルド/バニー", rarity: "黒", cl: "モンスターブレイカー", AW: "未"
         , stats: { atk: "-7%" }
     }
     , {
-        name: "エレーヌ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "エレーヌ", rarity: "白", cl: "モンスターブレイカー", AW: "未"
         , stats: { hp: "-10%", atk: "-20%" }
         , target: { attr: [ "巨人" ] }
     }
     , {
-        name: "エレーヌ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒後"
+        name: "エレーヌ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒"
         , stats: { hp: "-15%", atk: "-25%" }
         , target: { attr: [ "巨人" ] }
     }
     , {
-        name: "ラテリア", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "ラテリア", rarity: "白", cl: "モンスターブレイカー", AW: "未"
         , stats: { hp: "-10%", atk: "-10%" }
         , target: { attr: [ "神獣", "魔獣", "妖獣", "獣", "獣人" ] }
     }
     , {
-        name: "ラテリア", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒後"
+        name: "ラテリア", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒"
         , stats: { hp: "-15%", atk: "-15%" }
         , target: { attr: [ "神獣", "魔獣", "妖獣", "獣", "獣人" ] }
     }
     , {
-        name: "ティール", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "ティール", rarity: "白", cl: "モンスターブレイカー", AW: "未"
         , stats: { atk: "-10%", def: "-10%" }
         , target: { attr: [ "ゴーレム" ] }
     }
     , {
-        name: "ティール", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒後"
+        name: "ティール", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒"
         , stats: { atk: "-15%", def: "-15%" }
         , target: { attr: [ "ゴーレム" ] }
     }
     , {
-        name: "エレカ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "エレカ", rarity: "白", cl: "モンスターブレイカー", AW: "未"
         , stats: { atk: "-20%" }
         , target: { attr: [ "機械" ] }
     }
     , {
-        name: "エレカ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒後"
+        name: "エレカ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒"
         , stats: { atk: "-25%" }
         , target: { attr: [ "機械" ] }
     }
     , {
-        name: "レンゲ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "レンゲ", rarity: "白", cl: "モンスターブレイカー", AW: "未"
         , stats: { atk: "-15%" }
         , target: { attr: [ "妖怪" ] }
     }
     , {
-        name: "レンゲ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "レンゲ", rarity: "白", cl: "モンスターブレイカー", AW: "未"
         , stats: { def: "-5%" }
     }
     , {
-        name: "レンゲ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒後"
+        name: "レンゲ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒"
         , stats: { atk: "-20%" }
         , target: { attr: [ "妖怪" ] }
     }
     , {
-        name: "レンゲ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒後"
+        name: "レンゲ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒"
         , stats: { def: "-10%" }
     }
     , {
-        name: "フォルテ", rarity: "青", cl: "モンスターブレイカー", AW: "覚醒前"
+        name: "フォルテ", rarity: "青", cl: "モンスターブレイカー", AW: "未"
         , stats: { hp: "-5%", def: "-10%" }
         , target: { attr: [ "妖怪", "デーモン" ] }
     }
     , {
-        name: "フォルテ", rarity: "青", cl: "モンスターブレイカー", AW: "覚醒後"
+        name: "フォルテ", rarity: "青", cl: "モンスターブレイカー", AW: "覚醒"
         , stats: { hp: "-10%", def: "-15%" }
         , target: { attr: [ "妖怪", "デーモン" ] }
     }
@@ -190,15 +190,15 @@ debuff.team = [
         , stats: { def: "-10%" }
     }
     , {
-        name: "シロ", rarity: "黒", cl: "犬神", AW: "覚醒前"
+        name: "シロ", rarity: "黒", cl: "犬神", AW: "未"
         , stats: { atk: "-5%", def: "-5%" }
     }
     , {
-        name: "シロ", rarity: "黒", cl: "犬神", AW: "覚醒後"
+        name: "シロ", rarity: "黒", cl: "犬神", AW: "覚醒"
         , stats: { atk: "-7%", def: "-7%" }
     }
     , {
-        name: "アルタ", rarity: "黒", cl: "オートマタ", AW: "覚醒後"
+        name: "アルタ", rarity: "黒", cl: "オートマタ", AW: "覚醒"
         , stats: { atk: "-25%", def: "-25%" }
         , target: { attr: [ "人間", "天界人" ] }
     }
@@ -215,7 +215,7 @@ debuff.team = [
         , note: "ヴァンパイアハンター系"
     }
     , {
-        name: "ドルイド", cl: "ドルイド", AW: "覚醒前"
+        name: "ドルイド", cl: "ドルイド", AW: "未"
         , stats: { atk: "-20%" }
         , target: { attr: [ "植物" ] }
     }
@@ -238,51 +238,51 @@ debuff.team = [
         , note: "ドルイド系"
     }
     , {
-        name: "ヘルミーネ", rarity: "白", cl: "アルケミスト", AW: "覚醒後"
+        name: "ヘルミーネ", rarity: "白", cl: "アルケミスト", AW: "覚醒"
         , stats: { def: "-15%" }
     }
     , {
-        name: "ローザ/水着", rarity: "白", cl: "レンジャー", AW: "覚醒後"
+        name: "ローザ/水着", rarity: "白", cl: "レンジャー", AW: "覚醒"
         , stats: { atk: "-10%", def: "-10%" }
         , target: { attr: [ "魚人", "水棲" ] }
     }
     , {
-        name: "オロチヒメ", rarity: "黒", cl: "呪術使い", AW: "覚醒前"
+        name: "オロチヒメ", rarity: "黒", cl: "呪術使い", AW: "未"
         , stats: { atk: "-7%" }
     }
     , {
-        name: "オロチヒメ", rarity: "黒", cl: "呪術使い", AW: "覚醒後"
+        name: "オロチヒメ", rarity: "黒", cl: "呪術使い", AW: "覚醒"
         , stats: { atk: "-10%" }
     }
     , {
-        name: "ちびオロチヒメ", rarity: "ちび", cl: "呪術使い", AW: "覚醒前"
+        name: "ちびオロチヒメ", rarity: "ちび", cl: "呪術使い", AW: "未"
         , stats: { atk: "-7%" }
     }
     , {
-        name: "ハーニィ", rarity: "白", cl: "エンチャンター", AW: "覚醒後"
+        name: "ハーニィ", rarity: "白", cl: "エンチャンター", AW: "覚醒"
         , stats: { mr: "-30" }
         , target: { attr: [ "ゴーレム" ] }
     }
     , {
-        name: "ツァーユ", rarity: "黒", cl: "フェンリルシャーマン", AW: "覚醒後"
+        name: "ツァーユ", rarity: "黒", cl: "フェンリルシャーマン", AW: "覚醒"
         , stats: { atk: "-20%", def: "-20%" }
         , target: { attr: [ "天使", "神", "神獣" ] }
     }
     , {
-        name: "エレオノーラ/水着", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒前"
+        name: "エレオノーラ/水着", rarity: "黒", cl: "ルーンアコライト", AW: "未"
         , stats: { mr: "-15" }
     }
     , {
-        name: "エレオノーラ/水着", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒後"
+        name: "エレオノーラ/水着", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒"
         , stats: { mr: "-20" }
     }
     , {
-        name: "エリザベス", rarity: "黒", cl: "王女【七つの大罪】", AW: "覚醒後"
+        name: "エリザベス", rarity: "黒", cl: "王女【七つの大罪】", AW: "覚醒"
         , stats: { atk: "-10%" }
         , target: { attr: [ "デーモン" ] }
     }
     , {
-        name: "刑事【GBM】", cl: "刑事【GBM】", AW: "覚醒前"
+        name: "刑事【GBM】", cl: "刑事【GBM】", AW: "未"
         , stats: { atk: "-5%" }
     }
     , {
@@ -291,7 +291,7 @@ debuff.team = [
         , note: "刑事【GBM】系"
     }
     , {
-        name: "ラヴクラフト", rarity: "白", cl: "水底の支配者【GBM】", AW: "覚醒後"
+        name: "ラヴクラフト", rarity: "白", cl: "水底の支配者【GBM】", AW: "覚醒"
         , stats: { atk: "-15%" }
         , target: { attr: [ "魚人", "水棲" ] }
     }
@@ -300,7 +300,7 @@ debuff.team = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
         , target: { : [ "" ] }
         , target: [
@@ -311,7 +311,7 @@ debuff.team = [
     
     黒 白 青 金 ちび 銀 銅 鉄 トークン
     
-    覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒
     

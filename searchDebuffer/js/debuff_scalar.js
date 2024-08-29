@@ -1,7 +1,7 @@
 // スカラー
 debuff.scalar = [
     {
-        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒前"
+        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "未"
         , stats: {
             atk: [ "-10%", "→-25%" ]
             , def: [ "-10%", "→-25%" ]
@@ -9,7 +9,7 @@ debuff.scalar = [
         }
     }
     , {
-        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒前"
+        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "未"
         , stats: {
             atk: [ "-15%", "→-30%" ]
             , def: [ "-15%", "→-30%" ]
@@ -17,24 +17,24 @@ debuff.scalar = [
         }
     }
     , {
-        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒前", skill: "通常"
+        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "未", skill: "通常"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
         , target: { race: [ "人間", "デーモン", "神" ] }
         , note: "永続"
     }
     , {
-        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒後", skill: "通常"
+        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒", skill: "通常"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
         , target: { race: [ "人間", "デーモン", "神" ] }
         , note: "永続"
     }
     , {
-        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
+        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
         , target: { race: [ "人間", "デーモン", "神" ] }
     }
     , {
-        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒前"
+        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "未"
         , stats: {
             atk: [ "-10%", "→-20%" ]
             , def: [ "-10%", "→-20%" ]
@@ -42,7 +42,7 @@ debuff.scalar = [
         }
     }
     , {
-        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒後"
+        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒"
         , stats: {
             atk: [ "-10%", "→-25%" ]
             , def: [ "-10%", "→-25%" ]
@@ -50,22 +50,22 @@ debuff.scalar = [
         }
     }
     , {
-        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
+        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
         , stats: { atk: "*1.2", def: "*1.2", mr: "*1.2" }
         , target: { attr: [ "ゴーレム" ] }
     }
     , {
-        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
+        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "通常"
         , stats: { atk: "*1.2", def: "*1.2", mr: "*1.2" }
         , target: { attr: [ "ゴーレム" ] }
     }
     , {
-        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
+        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*1.2", def: "*1.2", mr: "*1.2" }
         , target: { attr: [ "ゴーレム" ] }
     }
     , {
-        name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒前"
+        name: "フェリシア", rarity: "白", cl: "スカラー", AW: "未"
         , stats: {
             atk: [ "-10%", "→-20%" ]
             , def: [ "-10%", "→-20%" ]
@@ -73,7 +73,7 @@ debuff.scalar = [
         }
     }
     , {
-        name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒後"
+        name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒"
         , stats: {
             atk: [ "-10%", "→-25%" ]
             , def: [ "-10%", "→-25%" ]
@@ -81,22 +81,22 @@ debuff.scalar = [
         }
     }
     , {
-        name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
+        name: "フェリシア", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
         , target: { attr: [ "神獣", "魔獣", "妖獣", "獣", "獣人" ] }
     }
     , {
-        name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
+        name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "通常"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
         , target: { attr: [ "神獣", "魔獣", "妖獣", "獣", "獣人" ] }
     }
     , {
-        name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
+        name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*1.2", def: "*1.2", mr: "*1.2" }
         , target: { attr: [ "神獣", "魔獣", "妖獣", "獣", "獣人" ] }
     }
     , {
-        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒前"
+        name: "コレット", rarity: "白", cl: "スカラー", AW: "未"
         , stats: {
             atk: [ "-10%", "→-20%" ]
             , def: [ "-10%", "→-20%" ]
@@ -104,7 +104,7 @@ debuff.scalar = [
         }
     }
     , {
-        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒後"
+        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒"
         , stats: {
             atk: [ "-10%", "→-25%" ]
             , def: [ "-10%", "→-25%" ]
@@ -112,22 +112,22 @@ debuff.scalar = [
         }
     }
     , {
-        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
+        name: "コレット", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
         , stats: { atk: "*1.4", def: "*1.4", mr: "*1.4" }
         , target: { attr: [ "天使", "天界人", "神" ] }
     }
     , {
-        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
+        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "通常"
         , stats: { atk: "*1.4", def: "*1.4", mr: "*1.4" }
         , target: { attr: [ "天使", "天界人", "神" ] }
     }
     , {
-        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
+        name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*1.2", def: "*1.2", mr: "*1.2" }
         , target: { attr: [ "天使", "天界人", "神" ] }
     }
     , {
-        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒前"
+        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "未"
         , stats: {
             atk: [ "-10%", "→-20%" ]
             , def: [ "-10%", "→-20%" ]
@@ -135,7 +135,7 @@ debuff.scalar = [
         }
     }
     , {
-        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒後"
+        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒"
         , stats: {
             atk: [ "-10%", "→-25%" ]
             , def: [ "-10%", "→-25%" ]
@@ -143,23 +143,23 @@ debuff.scalar = [
         }
     }
     , {
-        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
+        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
         , target: { attr: [ "人間", "冥界人", "アンデッド" ] }
     }
     , {
-        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
+        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "通常"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
         , target: { attr: [ "人間", "冥界人", "アンデッド" ] }
     }
     , {
-        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
+        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*1.2", def: "*1.2", mr: "*1.2" }
         , target: { attr: [ "人間", "冥界人", "アンデッド" ] }
         , note: "永続"
     }
     , {
-        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒前"
+        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "未"
         , stats: {
             atk: [ "-10%", "→-20%" ]
             , def: [ "-10%", "→-20%" ]
@@ -167,7 +167,7 @@ debuff.scalar = [
         }
     }
     , {
-        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒前"
+        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "未"
         , stats: {
             atk: [ "-10%", "→-25%" ]
             , def: [ "-10%", "→-25%" ]
@@ -175,17 +175,17 @@ debuff.scalar = [
         }
     }
     , {
-        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒前", skill: "通常"
+        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
         , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
     }
     , {
-        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "通常"
+        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "通常"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
         , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
     }
     , {
-        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒後", skill: "覚醒"
+        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*1.2", def: "*1.2", mr: "*1.2" }
         , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
     }
@@ -207,7 +207,7 @@ debuff.scalar = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
         , target: { attr: [ "" ] }
         , target: [
@@ -218,7 +218,7 @@ debuff.scalar = [
     
     黒 白 青 金 ちび 銀 銅 鉄 トークン
     
-    覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒
     

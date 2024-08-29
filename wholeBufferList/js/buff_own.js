@@ -1,15 +1,15 @@
 // 所持
 buff.own = [
     {
-        name: "アージェ", rarity: "黒", cl: "古代魔導機兵", AW: "覚醒後"
+        name: "アージェ", rarity: "黒", cl: "古代魔導機兵", AW: "覚醒"
         , stats: { def: "+2%" }
     }
     , {
-        name: "サナラ", rarity: "黒", cl: "ジオマンサー", AW: "覚醒後"
+        name: "サナラ", rarity: "黒", cl: "ジオマンサー", AW: "覚醒"
         , stats: { hp: "+7%" }
     }
     , {
-        name: "サナラ", rarity: "白", cl: "ジオマンサー", AW: "覚醒後"
+        name: "サナラ", rarity: "白", cl: "ジオマンサー", AW: "覚醒"
         , stats: { hp: "+5%" }
     }
 ];
@@ -17,13 +17,13 @@ buff.own = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
     }
     
     黒 白 青 金 ちび
     
-    覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒
     

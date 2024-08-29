@@ -136,11 +136,11 @@ buff.dep_gl = [
         , stats: { atk: "+10%", def: "+10%" }
     }
     , {
-        name: "トラム/水着", rarity: "白", cl: "銀腕の神話", AW: "覚醒後"
+        name: "トラム/水着", rarity: "白", cl: "銀腕の神話", AW: "覚醒"
         , stats: { rege: [ "30/秒", "15/15f" ] }
     }
     , {
-        name: "ルキファ", rarity: "白", cl: "黎明の翼", AW: "覚醒後"
+        name: "ルキファ", rarity: "白", cl: "黎明の翼", AW: "覚醒"
         , stats: { rege: [ "50/秒", "25/15f" ] }
     }
     , {
@@ -148,25 +148,25 @@ buff.dep_gl = [
         , stats: { nul: "15%" }
     }
     , {
-        name: "ヴィディア", rarity: "黒", cl: "王国軍初代副司令", AW: "覚醒後"
+        name: "ヴィディア", rarity: "黒", cl: "王国軍初代副司令", AW: "覚醒"
         , stats: { cost: "×0.8" }
     }
     , {
-        name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒後"
+        name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒"
         , stats: { atk: "+7%", def: "+7%" }
     }
     , {
-        name: "サナラ", rarity: "黒", cl: "ジオマンサー", AW: "覚醒後"
+        name: "サナラ", rarity: "黒", cl: "ジオマンサー", AW: "覚醒"
         , stats: { other: "" }
         , note: [ "地形-60%", "悪天候-50%" ]
     }
     , {
-        name: "サナラ", rarity: "白", cl: "ジオマンサー", AW: "覚醒後"
+        name: "サナラ", rarity: "白", cl: "ジオマンサー", AW: "覚醒"
         , stats: { other: "" }
         , note: [ "地形-60%", "悪天候-50%" ]
     }
     , {
-        name: "サナラ/水着", rarity: "白", cl: "ジオマンサー", AW: "覚醒後"
+        name: "サナラ/水着", rarity: "白", cl: "ジオマンサー", AW: "覚醒"
         , stats: { other: "" }
         , note: [ "地形-50%", "悪天候-50%" ]
     }
@@ -176,25 +176,20 @@ buff.dep_gl = [
         , note: "ソルジャー系"
     }
     , {
-        name: "フリア", rarity: "黒", cl: "ワルキューレ", AW: "覚醒後"
+        name: "フリア", rarity: "黒", cl: "ワルキューレ", AW: "覚醒"
         , stats: { cost: "-1" }
     }
     , {
-        name: "ウィリアス/ハロウィン", rarity: "白", cl: "中級竜兵", AW: "覚醒前"
+        name: "ウィリアス/ハロウィン", rarity: "白", cl: "中級竜兵", AW: "未"
         , stats: { hp: "+5%" }
     }
     , {
-        name: "ウィリアス/ハロウィン", rarity: "白", cl: "中級竜兵", AW: "覚醒後"
+        name: "ウィリアス/ハロウィン", rarity: "白", cl: "中級竜兵", AW: "覚醒"
         , stats: { hp: "+5%" }
     }
     , {
-        name: "前衛戦術家", cl: "前衛戦術家", AW: "CC前"
-        , stats: { cost: "-1" }
-    }
-    , {
-        name: "前衛軍師", cl: "前衛戦術家", AW: "CC後"
+        name: "前衛戦術家", cl: "前衛戦術家", AW: "未"
         , stats: { cost: "-2" }
-        , note: "前衛戦術家系"
     }
     , {
         name: "武人軍師", cl: "前衛戦術家", AW: "覚1"
@@ -212,35 +207,35 @@ buff.dep_gl = [
         , note: "前衛戦術家系"
     }
     , {
-        name: "ソフィー", rarity: "黒", cl: "エンジェル", AW: "覚醒前", skill: "非"
+        name: "ソフィー", rarity: "黒", cl: "エンジェル", AW: "未", skill: "非"
         , stats: { rege: [ "20/秒", "10/15f" ] }
     }
     , {
-        name: "ソフィー", rarity: "黒", cl: "エンジェル", AW: "覚醒後", skill: "非"
+        name: "ソフィー", rarity: "黒", cl: "エンジェル", AW: "覚醒", skill: "非"
         , stats: { rege: [ "44/秒", "22/15f" ] }
     }
     , {
-        name: "ソフィー", rarity: "黒", cl: "エンジェル", AW: "覚醒後"
+        name: "ソフィー", rarity: "黒", cl: "エンジェル", AW: "覚醒"
         , stats: { def: "+15%" }
     }
     , {
-        name: "シェミア", rarity: "黒", cl: "エンジェル", AW: "覚醒後"
+        name: "シェミア", rarity: "黒", cl: "エンジェル", AW: "覚醒"
         , stats: { nul: "10%" }
     }
     , {
-        name: "ニエル/新装", rarity: "黒", cl: "エンジェル", AW: "覚醒前", skill: "非"
+        name: "ニエル/新装", rarity: "黒", cl: "エンジェル", AW: "未", skill: "非"
         , stats: { rege: [ "30/秒", "15/15f" ] }
     }
     , {
-        name: "ニエル/新装", rarity: "黒", cl: "エンジェル", AW: "覚醒後", skill: "非"
+        name: "ニエル/新装", rarity: "黒", cl: "エンジェル", AW: "覚醒", skill: "非"
         , stats: { rege: [ "50/秒", "25/15f" ] }
     }
     , {
-        name: "クロエ", rarity: "白", cl: "エンジェル", AW: "覚醒後", skill: "非"
+        name: "クロエ", rarity: "白", cl: "エンジェル", AW: "覚醒", skill: "非"
         , stats: { nul: "7%" }
     }
     , {
-        name: "エルン", rarity: "金", cl: "エンジェル", AW: "覚醒後", skill: "非"
+        name: "エルン", rarity: "金", cl: "エンジェル", AW: "覚醒", skill: "非"
         , stats: { rege: [ "20/秒", "10/15f" ] }
     }
     , {
@@ -248,11 +243,11 @@ buff.dep_gl = [
         , stats: { rege: [ "20/秒", "10/15f" ] }
     }
     , {
-        name: "ニエル", rarity: "銀", cl: "エンジェル", AW: "CC55", skill: "非"
+        name: "ニエル", rarity: "銀", cl: "エンジェル", AW: "未55", skill: "非"
         , stats: { rege: [ "20/秒", "10/15f" ] }
     }
     , {
-        name: "堕姫", rarity: "白", cl: "妖狐", AW: "覚醒後"
+        name: "堕姫", rarity: "白", cl: "妖狐", AW: "覚醒"
         , stats: { cost: "+2" }
     }
     , {
@@ -261,28 +256,28 @@ buff.dep_gl = [
         , note: "神官戦士系"
     }
     , {
-        name: "エーリカ", rarity: "白", cl: "メイジアーマー", AW: "覚醒後"
+        name: "エーリカ", rarity: "白", cl: "メイジアーマー", AW: "覚醒"
         , stats: { cost: "+1" }
         , target: { not: [ "season" ], season: [ "ハロウィン" ] }
     }
     , {
-        name: "ティファ", rarity: "黒", cl: "ドラゴンライダー", AW: "覚醒後"
+        name: "ティファ", rarity: "黒", cl: "ドラゴンライダー", AW: "覚醒"
         , stats: { def: "+5%", mr: "+5" }
     }
     , {
-        name: "ソーマ/メイド", rarity: "白", cl: "メイド", AW: "覚醒後"
+        name: "ソーマ/メイド", rarity: "白", cl: "メイド", AW: "覚醒"
         , stats: { rege: [ "20/秒", "10/15f" ] }
     }
     , {
-        name: "バロウス", rarity: "白", cl: "魔神", AW: "覚醒後"
+        name: "バロウス", rarity: "白", cl: "魔神", AW: "覚醒"
         , stats: { def: "+5%", mr: "+5" }
     }
     , {
-        name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "覚醒前"
+        name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "未"
         , stats: { rege: [ "30/秒", "15/15f" ] }
     }
     , {
-        name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "覚醒後"
+        name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "覚醒"
         , stats: { rege: [ "50/秒", "25/15f" ] }
     }
     , {
@@ -296,12 +291,12 @@ buff.dep_gl = [
         , note: "エンプレス系"
     }
     , {
-        name: "ムルーア", rarity: "黒", cl: "シーソルジャー", AW: "覚醒前"
+        name: "ムルーア", rarity: "黒", cl: "シーソルジャー", AW: "未"
         , stats: { other: "" }
         , note: "深海-20%"
     }
     , {
-        name: "ムルーア", rarity: "黒", cl: "シーソルジャー", AW: "覚醒後"
+        name: "ムルーア", rarity: "黒", cl: "シーソルジャー", AW: "覚醒"
         , stats: { other: "" }
         , note: "深海-25%"
     }
@@ -311,11 +306,11 @@ buff.dep_gl = [
         , note: "戦巫女系"
     }
     , {
-        name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒後"
+        name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒"
         , stats: { mr: "+5" }
     }
     , {
-        name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後"
+        name: "アラン", rarity: "黒", cl: "儀仗軍神", AW: "覚醒"
         , stats: { def: "+15%" }
     }
     , {
@@ -323,7 +318,7 @@ buff.dep_gl = [
         , stats: { def: "+15%" }
     }
     , {
-        name: "誅子", rarity: "黒", cl: "武侠", AW: "覚醒後"
+        name: "誅子", rarity: "黒", cl: "武侠", AW: "覚醒"
         , stats: { atk: "+10%", def: "+10%" }
     }
     , {
@@ -332,20 +327,20 @@ buff.dep_gl = [
         , note: "天尊系"
     }
     , {
-        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒前"
+        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "未"
         , stats: { rege: [ "60/秒", "30/15f" ] }
     }
     , {
-        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒後"
+        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒"
         , stats: { rege: [ "80/秒", "30/15f" ] }
     }
     , {
-        name: "皇帝", cl: "皇帝", AW: "覚醒前"
+        name: "皇帝", cl: "皇帝", AW: "未"
         , stats: { other: "" }
         , note: "魔界-100%"
     }
     , {
-        name: "皇帝【覚醒】", cl: "皇帝", AW: "覚醒後"
+        name: "皇帝【覚醒】", cl: "皇帝", AW: "覚醒"
         , stats: { other: "" }
         , note: [ "魔界-100%", "皇帝系" ]
     }
@@ -359,11 +354,11 @@ buff.dep_gl = [
         , stats: { atk: "+5%", def: "+5%", rege: [ "40/秒", "?/?f" ] }
     }
     , {
-        name: "ヴェロッテ/ハロウィン", rarity: "金", cl: "パイレーツ", AW: "覚醒後"
+        name: "ヴェロッテ/ハロウィン", rarity: "金", cl: "パイレーツ", AW: "覚醒"
         , stats: { def: "+5%", mr: "+5", cost: "+1" }
     }
     , {
-        name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒後"
+        name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒"
         , stats: { rege: [ "200/秒", "1000/150f" ] }
     }
     , {
@@ -377,13 +372,8 @@ buff.dep_gl = [
         , note: "シャーマン系"
     }
     , {
-        name: "ビショップ", cl: "ビショップ", AW: "CC前"
+        name: "ビショップ", cl: "ビショップ", AW: "未"
         , stats: { rege: [ "20/秒", "20/30f" ] }
-    }
-    , {
-        name: "ハイビショップ", cl: "ビショップ", AW: "CC後"
-        , stats: { rege: [ "20/秒", "20/30f" ] }
-        , note: "ビショップ系"
     }
     , {
         name: "エルダービショップ", cl: "ビショップ", AW: "覚1"
@@ -401,17 +391,12 @@ buff.dep_gl = [
         , note: "ビショップ系"
     }
     , {
-        name: "レーヴ", rarity: "白", cl: "ビショップ", AW: "覚醒後"
+        name: "レーヴ", rarity: "白", cl: "ビショップ", AW: "覚醒"
         , stats: { atk: "+5%", def: "+5%" }
     }
     , {
-        name: "後衛戦術家", cl: "後衛戦術家", AW: "CC前"
-        , stats: { ct: "-25%" }
-    }
-    , {
-        name: "後衛軍師", cl: "後衛戦術家", AW: "CC後"
+        name: "後衛戦術家", cl: "後衛戦術家", AW: "未"
         , stats: { ct: "-30%" }
-        , note: "後衛戦術家系"
     }
     , {
         name: "参謀軍師", cl: "後衛戦術家", AW: "覚1"
@@ -431,22 +416,17 @@ buff.dep_gl = [
         , note: "後衛戦術家系"
     }
     , {
-        name: "レオナ", rarity: "白", cl: "後衛戦術家", AW: "覚醒後"
+        name: "レオナ", rarity: "白", cl: "後衛戦術家", AW: "覚醒"
         , stats: { nul: "5%" }
     }
     , {
-        name: "ファルネ", rarity: "黒", cl: "サモナー", AW: "覚醒後", skill: "非"
+        name: "ファルネ", rarity: "黒", cl: "サモナー", AW: "覚醒", skill: "非"
         , stats: { rege: [ "24/秒", "12/15f" ] }
     }
     , {
-        name: "風水使い", cl: "風水使い", AW: "CC前"
+        name: "風水使い", cl: "風水使い", AW: "未"
         , stats: { other: "" }
-        , note: [ "地形-30%", "悪天候-50%" ]
-    }
-    , {
-        name: "風水士", cl: "風水使い", AW: "CC後"
-        , stats: { other: "" }
-        , note: [ "地形-50%", "悪天候-50%", "風水使い系" ]
+        , note: [ "地形-50%", "悪天候-50%" ]
     }
     , {
         name: "風水導士", cl: "風水使い", AW: "覚1"
@@ -464,11 +444,11 @@ buff.dep_gl = [
         , note: [ "地形-70%", "悪天候-50%", "風水使い系" ]
     }
     , {
-        name: "ミステル", rarity: "金", cl: "ドルイド", AW: "覚醒後"
+        name: "ミステル", rarity: "金", cl: "ドルイド", AW: "覚醒"
         , stats: { rege: [ "20/秒", "10/15f" ] }
     }
     , {
-        name: "ローザ", rarity: "白", cl: "レンジャー", AW: "覚醒後"
+        name: "ローザ", rarity: "白", cl: "レンジャー", AW: "覚醒"
         , stats: { rege: [ "20/秒", "10/15f" ] }
     }
     , {
@@ -477,7 +457,7 @@ buff.dep_gl = [
         , note: "ライフリンカー系"
     }
     , {
-        name: "幻獣使い", cl: "幻獣使い", AW: "覚醒前"
+        name: "幻獣使い", cl: "幻獣使い", AW: "未"
         , stats: { nul: "5%" }
     }
     , {
@@ -496,7 +476,7 @@ buff.dep_gl = [
         , note: "幻獣使い系"
     }
     , {
-        name: "カリン", rarity: "白", cl: "幻獣使い", AW: "覚醒後"
+        name: "カリン", rarity: "白", cl: "幻獣使い", AW: "覚醒"
         , stats: { mr: "+5" }
     }
     , {
@@ -515,7 +495,7 @@ buff.dep_gl = [
         , note: "支援工兵系"
     }
     , {
-        name: "パトリシア/水着", rarity: "白", cl: "支援工兵", AW: "覚醒後"
+        name: "パトリシア/水着", rarity: "白", cl: "支援工兵", AW: "覚醒"
         , stats: { other: "" }
         , note: "地形-30%"
     }
@@ -525,29 +505,29 @@ buff.dep_gl = [
         , note: "シービショップ系"
     }
     , {
-        name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒前"
+        name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "未"
         , stats: { other: "" }
         , note: "深海-30%"
     }
     , {
-        name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後"
+        name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒"
         , stats: { other: "" }
         , note: "深海-50%"
     }
     , {
-        name: "ロカ", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
+        name: "ロカ", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒"
         , stats: { nul: "7%" }
     }
     , {
-        name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒前", skill: "非"
+        name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "未", skill: "非"
         , stats: { rege: [ "24/秒", "12/15f" ] }
     }
     , {
-        name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒後", skill: "非"
+        name: "ダークアンナ", rarity: "黒", cl: "政務官【闇の軍勢】", AW: "覚醒", skill: "非"
         , stats: { rege: [ "24/秒", "12/15f" ] }
     }
     , {
-        name: "時の俯瞰者", cl: "時の俯瞰者", AW: "覚醒前"
+        name: "時の俯瞰者", cl: "時の俯瞰者", AW: "未"
         , stats: { ct: "-20%" }
     }
     , {
@@ -575,12 +555,12 @@ buff.dep_gl = [
         , stats: { atk: "+5%", def: "+5%" }
     }
     , {
-        name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒前"
+        name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "未"
         , stats: { other: "" }
         , note: "天界-20%"
     }
     , {
-        name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒後"
+        name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒"
         , stats: { other: "" }
         , note: "天界-30%"
     }
@@ -590,19 +570,19 @@ buff.dep_gl = [
         , target: { not: [ "others" ], others: [ "高貴" ] }
     }
     , {
-        name: "シィル", rarity: "白", cl: "アコライト", AW: "覚醒前"
+        name: "シィル", rarity: "白", cl: "アコライト", AW: "未"
         , stats: { nul: "5%" }
     }
     , {
-        name: "シィル", rarity: "白", cl: "アコライト", AW: "覚醒後"
+        name: "シィル", rarity: "白", cl: "アコライト", AW: "覚醒"
         , stats: { nul: "10%" }
     }
     , {
-        name: "シーラ・ヘルマン", rarity: "黒", cl: "初代大統領【ランス】", AW: "覚醒後"
+        name: "シーラ・ヘルマン", rarity: "黒", cl: "初代大統領【ランス】", AW: "覚醒"
         , stats: { def: "+10%" }
     }
     , {
-        name: "ゼス警察長官【ランス】", cl: "ゼス警察長官【ランス】", AW: "覚醒前"
+        name: "ゼス警察長官【ランス】", cl: "ゼス警察長官【ランス】", AW: "未"
         , stats: { cost: "-2" }
     }
     , {
@@ -611,39 +591,39 @@ buff.dep_gl = [
         , note: "ゼス警察長官【ランス】系"
     }
     , {
-        name: [ "ウルザ・", "プラナアイス" ], rarity: "黒", cl: "ゼス警察長官【ランス】", AW: "覚醒前"
+        name: [ "ウルザ・", "プラナアイス" ], rarity: "黒", cl: "ゼス警察長官【ランス】", AW: "未"
         , stats: { ct: "-25%" }
     }
     , {
-        name: [ "ウルザ・", "プラナアイス" ], rarity: "黒", cl: "ゼス警察長官【ランス】", AW: "覚醒後"
+        name: [ "ウルザ・", "プラナアイス" ], rarity: "黒", cl: "ゼス警察長官【ランス】", AW: "覚醒"
         , stats: { ct: "-35%" }
     }
     , {
-        name: "孫堅", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒後"
+        name: "孫堅", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒"
         , stats: { atk: "+10%" }
     }
     , {
-        name: "劉備", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒前"
+        name: "劉備", rarity: "黒", cl: "君主【恋姫】", AW: "未"
         , stats: { rege: [ "30/秒", "15/15f" ] }
     }
     , {
-        name: "劉備", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒後"
+        name: "劉備", rarity: "黒", cl: "君主【恋姫】", AW: "覚醒"
         , stats: { rege: [ "30/秒", "15/15f" ] }
     }
     , {
-        name: "孫権", rarity: "白", cl: "君主【恋姫】", AW: "覚醒後"
+        name: "孫権", rarity: "白", cl: "君主【恋姫】", AW: "覚醒"
         , stats: { def: "+10%" }
     }
     , {
-        name: "孫策 伯符", rarity: "黒", cl: "小覇王【恋姫】", AW: "覚醒後"
+        name: "孫策 伯符", rarity: "黒", cl: "小覇王【恋姫】", AW: "覚醒"
         , stats: { atk: "+7%" }
     }
     , {
-        name: "孫尚香", rarity: "白", cl: "王女【恋姫】", AW: "覚醒後"
+        name: "孫尚香", rarity: "白", cl: "王女【恋姫】", AW: "覚醒"
         , stats: { atk: "+5%", def: "+5%" }
     }
     , {
-        name: "軍師【恋姫】", cl: "軍師【恋姫】", AW: "覚醒前"
+        name: "軍師【恋姫】", cl: "軍師【恋姫】", AW: "未"
         , stats: { ct: "-30%" }
     }
     , {
@@ -652,37 +632,37 @@ buff.dep_gl = [
         , note: "軍師【恋姫】系"
     }
     , {
-        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒前"
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "未"
         , stats: { other: "" }
         , note: "地形-30%"
     }
     , {
-        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒後"
+        name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒"
         , stats: { other: "" }
         , note: "地形-50%"
     }
     , {
-        name: "キング", rarity: "黒", cl: "妖精【七つの大罪】", AW: "覚醒後", skill: "非"
+        name: "キング", rarity: "黒", cl: "妖精【七つの大罪】", AW: "覚醒", skill: "非"
         , stats: { nul: "7%" }
     }
     , {
-        name: "ファウスト", rarity: "黒", cl: "錬金術師【GBM】", AW: "覚醒後"
+        name: "ファウスト", rarity: "黒", cl: "錬金術師【GBM】", AW: "覚醒"
         , stats: { nul: "7%" }
     }
     , {
-        name: "ふうま時子", rarity: "白", cl: "対魔忍 精神【対魔忍】", AW: "覚醒前"
+        name: "ふうま時子", rarity: "白", cl: "対魔忍 精神【対魔忍】", AW: "未"
         , stats: { rege: [ "30/秒", "15/15f" ] }
     }
     , {
-        name: "ふうま時子", rarity: "白", cl: "対魔忍 精神【対魔忍】", AW: "覚醒後"
+        name: "ふうま時子", rarity: "白", cl: "対魔忍 精神【対魔忍】", AW: "覚醒"
         , stats: { rege: [ "50/秒", "25/15f" ] }
     }
     , {
-        name: "甲河アスカ", rarity: "白", cl: "対魔忍 科学【対魔忍】", AW: "覚醒後"
+        name: "甲河アスカ", rarity: "白", cl: "対魔忍 科学【対魔忍】", AW: "覚醒"
         , stats: { ct: "-35%" }
     }
     , {
-        name: "マジックエッグ", rarity: "トークン", AW: "覚醒後"
+        name: "マジックエッグ", rarity: "トークン", AW: "覚醒"
         , stats: { mr: "+5" }
         , note: [ "リーザ/バニー", "イルマ/バニー", "エレオノーラ/バニー" ]
     }
@@ -702,7 +682,7 @@ buff.dep_gl = [
         , note: [ "村人", "分類未確認" ]
     }
     , {
-        name: "世界樹の苗", rarity: "トークン", AW: "覚醒後"
+        name: "世界樹の苗", rarity: "トークン", AW: "覚醒"
         , stats: { rege: [ "30/秒", "15/15f" ] }
         , note: "ラタトスク"
     }
@@ -711,13 +691,13 @@ buff.dep_gl = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
     }
     
     黒 白 青 金 ちび 銀 トークン
     
-    CC前 CC後 CC55 覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒
     

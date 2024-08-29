@@ -187,9 +187,9 @@ summary {
     text-align: center;
     white-space: normal;
 }
-/* 覚醒等 */
+/* 覚醒 */
 #tables table td:nth-of-type(4) {
-    min-width: 3.5em;
+    min-width: 3em;
     max-width: max-content;
     text-align: center;
 }

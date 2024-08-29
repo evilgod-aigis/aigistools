@@ -2,25 +2,25 @@
 buff.unique = [
     // 乗算マス
     {
-        name: "ジオマンサートークン", rarity: "トークン", AW: "覚醒後"
+        name: "ジオマンサートークン", rarity: "トークン", AW: "覚醒"
         , stats: { hp: "×1.35", atk: "×1.35" }
         , type: "spot_mul"
         , note: [ "サナラ[黒]", "区分：乗算マス", "継続：600秒" ]
     }
     , {
-        name: "ジオマンサートークン", rarity: "トークン", AW: "覚醒後"
+        name: "ジオマンサートークン", rarity: "トークン", AW: "覚醒"
         , stats: { hp: "×1.3", atk: "×1.3" }
         , type: "spot_mul"
         , note: [ "サナラ[白]", "区分：乗算マス", "継続：600秒" ]
     }
     , {
-        name: "ジオマンサートークン", rarity: "トークン", AW: "覚醒後"
+        name: "ジオマンサートークン", rarity: "トークン", AW: "覚醒"
         , stats: { atk: "×1.3" }
         , type: "spot_mul"
         , note: [ "サナラ/水着[白]", "区分：乗算マス", "継続：600秒" ]
     }
     , {
-        name: "座敷わらしトークン", rarity: "トークン", AW: "覚醒前"
+        name: "座敷わらしトークン", rarity: "トークン", AW: "未"
         , stats: { def: "×1.2", mr: "×1.2" }
         , type: "spot_mul"
         , note: [ "座敷わらし", "区分：乗算マス", "継続：40秒" ]
@@ -46,7 +46,7 @@ buff.unique = [
     
     // 加算マス
     , {
-        name: "ジオマンサートークン", rarity: "トークン", AW: "覚醒後"
+        name: "ジオマンサートークン", rarity: "トークン", AW: "覚醒"
         , stats: { mr: "+15" }
         , type: "spot_mul"
         , note: [ "サナラ/水着[白]", "区分：加算マス", "継続：600秒" ]
@@ -92,7 +92,7 @@ buff.unique = [
     
     // 被ダメージ
     , {
-        name: "コーネリア/水着", rarity: "黒", cl: "ダークファイター", AW: "覚醒後", skill: "覚醒"
+        name: "コーネリア/水着", rarity: "黒", cl: "ダークファイター", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.4" }
         , type: "dmged"
         , note: [ "区分：被ダメージ", "範囲", "倍率+0.04/被ダメ400", "分類未確認" ]
@@ -100,7 +100,7 @@ buff.unique = [
     
     // 死亡時
     , {
-        name: "デモンルーン", cl: "デモンルーン", AW: "覚醒前"
+        name: "デモンルーン", cl: "デモンルーン", AW: "未"
         , stats: { atk: "+10%" }
         , type: "death"
         , note: [ "区分：死亡時", "死亡時", "継続：10秒" ]
@@ -124,7 +124,7 @@ buff.unique = [
         , note: [ "区分：死亡時", "死亡時", "継続：10秒", "デモンルーン系" ]
     }
     , {
-        name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒後"
+        name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒"
         , stats: { atk: "+10%", def: "+10%" }
         , type: "death"
         , note: [ "区分：死亡時", "死亡時", "継続：30秒" ]
@@ -136,13 +136,13 @@ buff.unique = [
         , note: [ "区分：死亡時", "死亡時", "継続：永続", "分類未確認" ]
     }
     , {
-        name: "レライエ", rarity: "白", cl: "デモンシャーマン", AW: "覚醒後"
+        name: "レライエ", rarity: "白", cl: "デモンシャーマン", AW: "覚醒"
         , stats: { atk: "+20%" }
         , type: "death"
         , note: [ "区分：死亡時", "死亡時", "継続：20秒" ]
     }
     , {
-        name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒後"
+        name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒"
         , stats: { atk: "+15%", def: "+15%" }
         , type: "death"
         , note: [ "区分：死亡時", "死亡時", "継続：30秒" ]
@@ -174,13 +174,13 @@ buff.unique = [
     
     // ルキファ死亡時
     , {
-        name: "ルキファ", rarity: "黒", cl: "黎明の翼", AW: "覚醒後"
+        name: "ルキファ", rarity: "黒", cl: "黎明の翼", AW: "覚醒"
         , stats: { atk: "+10%", def: "+10%" }
         , type: "Lukifer"
         , note: [ "区分：ルキファ死亡時", "死亡時範囲", "継続：永続", "3回まで累加" ]
     }
     , {
-        name: "ルキファ", rarity: "白", cl: "黎明の翼", AW: "覚醒後"
+        name: "ルキファ", rarity: "白", cl: "黎明の翼", AW: "覚醒"
         , stats: { def: "+10%", mr: "+10%" }
         , type: "Lukifer"
         , note: [ "区分：ルキファ死亡時", "死亡時範囲", "継続：永続", "3回まで累加" ]
@@ -188,7 +188,7 @@ buff.unique = [
     
     // 猫又
     , {
-        name: "猫又", cl: "猫又", AW: "覚醒前"
+        name: "猫又", cl: "猫又", AW: "未"
         , stats: { atk: "-10%", def: "-10%" }
         , type: "nekomata"
         , note: [ "区分：猫又", "範囲" ]
@@ -212,19 +212,19 @@ buff.unique = [
         , note: [ "区分：猫又", "範囲", "猫又系" ]
     }
     , {
-        name: "コハル", rarity: "黒", cl: "猫又", AW: "覚醒前", skill: "通常"
+        name: "コハル", rarity: "黒", cl: "猫又", AW: "未", skill: "通常"
         , stats: { atk: "*2.0", def: "*2.0" }
         , type: "nekomata"
         , note: [ "区分：猫又", "範囲" ]
     }
     , {
-        name: "コハル", rarity: "黒", cl: "猫又", AW: "覚醒後", skill: "通常"
+        name: "コハル", rarity: "黒", cl: "猫又", AW: "覚醒", skill: "通常"
         , stats: { atk: "*2.0", def: "*2.0" }
         , type: "nekomata"
         , note: [ "区分：猫又", "範囲" ]
     }
     , {
-        name: "コハル", rarity: "黒", cl: "猫又", AW: "覚醒後", skill: "覚醒"
+        name: "コハル", rarity: "黒", cl: "猫又", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*2.0", def: "*2.0" }
         , type: "nekomata"
         , note: [ "区分：猫又", "範囲" ]
@@ -238,67 +238,67 @@ buff.unique = [
     
     // 特効
     , {
-        name: "ヴィクトリア/浴衣", rarity: "白", cl: "アーチャー", AW: "覚醒後"
+        name: "ヴィクトリア/浴衣", rarity: "白", cl: "アーチャー", AW: "覚醒"
         , stats: { atk: "×1.08", other: "" }
         , type: "special"
         , note: [ "区分：特効", "編成", "魔法敵", "分類未確認" ]
     }
     , {
-        name: "アルレット", rarity: "黒", cl: "発明家", AW: "覚醒前"
+        name: "アルレット", rarity: "黒", cl: "発明家", AW: "未"
         , stats: { atk: "×1.15", other: "" }
         , type: "special"
         , note: [ "区分：特効", "編成", "飛行" ]
     }
     , {
-        name: "アルレット", rarity: "黒", cl: "発明家", AW: "覚醒後"
+        name: "アルレット", rarity: "黒", cl: "発明家", AW: "覚醒"
         , stats: { atk: "×1.2", other: "" }
         , type: "special"
         , note: [ "区分：特効", "編成", "飛行" ]
     }
     , {
-        name: "タバサ", rarity: "白", cl: "発明家", AW: "覚醒前"
+        name: "タバサ", rarity: "白", cl: "発明家", AW: "未"
         , stats: { atk: "×1.1", other: "" }
         , type: "special"
         , note: [ "区分：特効", "編成", "神獣・魔獣・妖獣・獣・", "獣人・魚人・水棲" ]
     }
     , {
-        name: "タバサ", rarity: "白", cl: "発明家", AW: "覚醒後"
+        name: "タバサ", rarity: "白", cl: "発明家", AW: "覚醒"
         , stats: { atk: "×1.15", other: "" }
         , type: "special"
         , note: [ "区分：特効", "編成", "神獣・魔獣・妖獣・獣・", "獣人・魚人・水棲" ]
     }
     , {
-        name: "ヘンドリカ", rarity: "白", cl: "発明家", AW: "覚醒前"
+        name: "ヘンドリカ", rarity: "白", cl: "発明家", AW: "未"
         , stats: { atk: "×1.1", other: "" }
         , type: "special"
         , note: [ "区分：特効", "編成", "天使" ]
     }
     , {
-        name: "ヘンドリカ", rarity: "白", cl: "発明家", AW: "覚醒後"
+        name: "ヘンドリカ", rarity: "白", cl: "発明家", AW: "覚醒"
         , stats: { atk: "×1.15", other: "" }
         , type: "special"
         , note: [ "区分：特効", "編成", "天使" ]
     }
     , {
-        name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒前"
+        name: "マギー", rarity: "白", cl: "発明家", AW: "未"
         , stats: { atk: "×1.1", other: "" }
         , type: "special"
         , note: [ "区分：特効", "編成", "アーマー・ゴーレム" ]
     }
     , {
-        name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒後"
+        name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒"
         , stats: { atk: "×1.15", other: "" }
         , type: "special"
         , note: [ "区分：特効", "編成", "アーマー・ゴーレム" ]
     }
     , {
-        name: "レクテ", rarity: "白", cl: "発明家", AW: "覚醒前"
+        name: "レクテ", rarity: "白", cl: "発明家", AW: "未"
         , stats: { atk: "×1.1", other: "" }
         , type: "special"
         , note: [ "区分：特効", "編成", "デーモン" ]
     }
     , {
-        name: "レクテ", rarity: "白", cl: "発明家", AW: "覚醒後"
+        name: "レクテ", rarity: "白", cl: "発明家", AW: "覚醒"
         , stats: { atk: "×1.15", other: "" }
         , type: "special"
         , note: [ "区分：特効", "編成", "デーモン" ]
@@ -306,37 +306,37 @@ buff.unique = [
     
     // ダメージ上昇
     , {
-        name: "メリュジアナ", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
+        name: "メリュジアナ", rarity: "白", cl: "ドラゴンプリンセス", AW: "未", skill: "通常"
         , stats: { atk: "×1.35" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
     }
     , {
-        name: "メリュジアナ", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "通常"
+        name: "メリュジアナ", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.35" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
     }
     , {
-        name: "メリュジアナ", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "覚醒"
+        name: "メリュジアナ", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
         , note: [ "区分：ダメージ上昇(魔法)", "永続" ]
     }
     , {
-        name: "メリュジアナ/花嫁", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒前", skill: "通常"
+        name: "メリュジアナ/花嫁", rarity: "白", cl: "ドラゴンプリンセス", AW: "未", skill: "通常"
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
         , note: [ "区分：ダメージ上昇(魔法)", "永続" ]
     }
     , {
-        name: "メリュジアナ/花嫁", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "通常"
+        name: "メリュジアナ/花嫁", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
         , note: [ "区分：ダメージ上昇(魔法)", "永続" ]
     }
     , {
-        name: "メリュジアナ/花嫁", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒後", skill: "覚醒"
+        name: "メリュジアナ/花嫁", rarity: "白", cl: "ドラゴンプリンセス", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.3" }
         , type: "atk-up_mag"
         , note: [ "区分：ダメージ上昇(魔法)", "永続" ]
@@ -348,7 +348,7 @@ buff.unique = [
         , note: "区分：ダメージ上昇(魔法)"
     }
     , {
-        name: "エーリカ", rarity: "白", cl: "メイジアーマー", AW: "覚醒後", skill: "覚醒"
+        name: "エーリカ", rarity: "白", cl: "メイジアーマー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
@@ -366,13 +366,13 @@ buff.unique = [
         , note: "区分：ダメージ上昇(魔法)"
     }
     , {
-        name: "テュト", rarity: "黒", cl: "メイジ", AW: "覚醒後", skill: "覚醒"
+        name: "テュト", rarity: "黒", cl: "メイジ", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.5" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
     }
     , {
-        name: "エンチャンター", cl: "エンチャンター", AW: "覚醒前", skill: "通常"
+        name: "エンチャンター", cl: "エンチャンター", AW: "未", skill: "通常"
         , stats: { atk: "×1.1" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
@@ -414,19 +414,19 @@ buff.unique = [
         , note: "区分：ダメージ上昇(魔法)"
     }
     , {
-        name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒後", skill: "覚醒"
+        name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.2" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
     }
     , {
-        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒前", skill: "通常"
+        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "未", skill: "通常"
         , stats: { atk: "×1.3" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
     }
     , {
-        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒後", skill: "通常"
+        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.3" }
         , type: "atk-up_mag"
         , note: "区分：ダメージ上昇(魔法)"
@@ -434,7 +434,7 @@ buff.unique = [
     
     // 被ダメージ軽減
     , {
-        name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "覚醒"
+        name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red_selfSkill"
         , note: [ "区分：被ダメージ軽減(自己/スキル)", "物理-20%(範囲)" ]
@@ -453,98 +453,98 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減", "属性不問-30%(範囲)" ]
     }
     , {
-        name: "オーシェン", rarity: "黒", cl: "光槍ビルガの継承者", AW: "覚醒後", skill: "覚醒"
+        name: "オーシェン", rarity: "黒", cl: "光槍ビルガの継承者", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-40%(範囲)" ]
     }
     , {
-        name: "オーシェン", rarity: "白", cl: "光槍ビルガの継承者", AW: "覚醒後", skill: "通常"
+        name: "オーシェン", rarity: "白", cl: "光槍ビルガの継承者", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-10%(範囲)" ]
     }
     , {
-        name: "ベルニス/花嫁", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒後", skill: "覚醒"
+        name: "ベルニス/花嫁", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-30%(範囲)" ]
     }
     , {
-        name: "エクス/バレンタイン", rarity: "黒", cl: "神官戦士", AW: "覚醒前", skill: "通常"
+        name: "エクス/バレンタイン", rarity: "黒", cl: "神官戦士", AW: "未", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-25%" ]
     }
     , {
-        name: "エクス/バレンタイン", rarity: "黒", cl: "神官戦士", AW: "覚醒後", skill: "通常"
+        name: "エクス/バレンタイン", rarity: "黒", cl: "神官戦士", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-25%" ]
     }
     , {
-        name: "トゥーダ", rarity: "黒", cl: "神官戦士", AW: "覚醒後", skill: "覚醒"
+        name: "トゥーダ", rarity: "黒", cl: "神官戦士", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-15%(範囲)", "永続" ]
     }
     , {
-        name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "覚醒前", skill: "通常"
+        name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "未", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-15%(範囲)", "永続" ]
     }
     , {
-        name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "覚醒後", skill: "通常"
+        name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-15%(範囲)", "永続" ]
     }
     , {
-        name: "フジムラサキ", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚醒後", skill: "覚醒"
+        name: "フジムラサキ", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-30%" ]
     }
     , {
-        name: "タツミ", rarity: "黒", cl: "戦巫女", AW: "覚醒後", skill: "覚醒"
+        name: "タツミ", rarity: "黒", cl: "戦巫女", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-35%" ]
     }
     , {
-        name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒前", skill: "通常"
+        name: "カオル", rarity: "白", cl: "戦巫女", AW: "未", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "魔法-40%(範囲)" ]
     }
     , {
-        name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒後", skill: "通常"
+        name: "カオル", rarity: "白", cl: "戦巫女", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "魔法-40%(範囲)" ]
     }
     , {
-        name: "クリッペ", rarity: "黒", cl: "シールダー", AW: "覚醒後", skill: "覚醒"
+        name: "クリッペ", rarity: "黒", cl: "シールダー", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-50%" ]
     }
     , {
-        name: "サフィール", rarity: "黒", cl: "シールダー", AW: "覚醒後", skill: "通常"
+        name: "サフィール", rarity: "黒", cl: "シールダー", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "物理魔法-40%(範囲)" ]
     }
     , {
-        name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒後", skill: "覚醒"
+        name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-15%(範囲)" ]
     }
     /*
     , {
-        name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒後", skill: "覚醒"
+        name: "ローリエ/バレンタイン", rarity: "白", cl: "ドルイド", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "物理-20%(範囲)", "分類未確認" ]
@@ -563,55 +563,55 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減", "物理-20%(範囲)", "ルーンアコライト系" ]
     }
     , {
-        name: "イヲナミ", rarity: "白", cl: "シービショップ", AW: "覚醒後", skill: "覚醒"
+        name: "イヲナミ", rarity: "白", cl: "シービショップ", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "魔法-15%(範囲)", "永続", "分類未確認" ]
     }
     , {
-        name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒前", skill: "通常"
+        name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "未", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "魔法-50%(範囲)" ]
     }
     , {
-        name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒後", skill: "通常"
+        name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "魔法-50%(範囲)" ]
     }
     , {
-        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒前", skill: "通常"
+        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "未", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-30%" ]
     }
     , {
-        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒後", skill: "通常"
+        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-30%" ]
     }
     , {
-        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒前", skill: "通常"
+        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "未", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "魔法-30%(範囲)" ]
     }
     , {
-        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒後", skill: [ "通常", "覚醒" ]
+        name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "覚醒", skill: [ "通常", "覚醒" ]
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "魔法-40%(範囲)" ]
     }
     , {
-        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒前", skill: "通常"
+        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "未", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-10%" ]
     }
     , {
-        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒後", skill: "通常"
+        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-10%" ]
@@ -621,13 +621,13 @@ buff.unique = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
     }
     
     黒 白 青 金 ちび 銀 トークン
     
-    CC前 CC後 CC55 覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒
     

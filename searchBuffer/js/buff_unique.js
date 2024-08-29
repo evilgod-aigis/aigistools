@@ -9,7 +9,7 @@ buff.unique = [
         , note: [ "区分：ダモクレスの剣", "終了時、対象のHP-50%" ]
     }
     , {
-        name: "ロゼット", rarity: "銀", cl: "プリンセス", AW: "覚醒前", skill: "通常"
+        name: "ロゼット", rarity: "銀", cl: "プリンセス", AW: "未", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { rarity: [ "銀" ] }
         , type: "damocles"
@@ -18,14 +18,14 @@ buff.unique = [
     
     // 死亡時
     , {
-        name: "レライエ", rarity: "白", cl: "デモンシャーマン", AW: "覚醒後"
+        name: "レライエ", rarity: "白", cl: "デモンシャーマン", AW: "覚醒"
         , stats: { atk: "+30%" }
         , target: { race: [ "デーモン系" ] }
         , type: "death"
         , note: [ "区分：死亡時", "死亡時", "継続:20秒" ]
     }
     , {
-        name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒後"
+        name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒"
         , stats: { atk: "+25%", def: "+25%" }
         , target: { season: [ "ハロウィン" ] }
         , type: "death"
@@ -34,14 +34,14 @@ buff.unique = [
     
     // 特効
     , {
-        name: "ヘンドリカ", rarity: "白", cl: "発明家", AW: "覚醒後"
+        name: "ヘンドリカ", rarity: "白", cl: "発明家", AW: "覚醒"
         , stats: { atk: "×1.15", other: "" }
         , target: { home: [ "白の帝国" ] }
         , type: "special"
         , note: [ "区分：特効", "編成", "竜族" ]
     }
     , {
-        name: "カラザ", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒後"
+        name: "カラザ", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒"
         , stats: { atk: "×1.1", other: "" }
         , target: { others: [ "ドラゴン" ] }
         , type: "special"
@@ -50,7 +50,7 @@ buff.unique = [
     
     // 被ダメージ軽減
     , {
-        name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "覚醒前", skill: "通常"
+        name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "未", skill: "通常"
         , stats: { other: "" }
         , target: [
             { race: [ "神", "半神" ] }
@@ -59,7 +59,7 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減(属性不問)", "-40%(範囲)" ]
     }
     , {
-        name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "覚醒後", skill: "通常"
+        name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , target: [
             { race: [ "神", "半神" ] }
@@ -68,7 +68,7 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減(属性不問)", "-40%(範囲)" ]
     }
     , {
-        name: "遠見の眷属猫", rarity: "トークン", AW: "覚醒前", skill: "通常"
+        name: "遠見の眷属猫", rarity: "トークン", AW: "未", skill: "通常"
         , stats: { other: "" }
         , target: [
             { home: [ "砂漠の国" ] }
@@ -78,7 +78,7 @@ buff.unique = [
         , note: [ "バスティス", "区分：被ダメージ軽減(属性不問)", "-15%(範囲)" ]
     }
     , {
-        name: "遠見の眷属猫・改", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        name: "遠見の眷属猫・改", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , target: [
             { home: [ "砂漠の国" ] }
@@ -88,7 +88,7 @@ buff.unique = [
         , note: [ "バスティス", "区分：被ダメージ軽減(属性不問)", "-25%(範囲)" ]
     }
     , {
-        name: "世界樹のカカオ苗", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        name: "世界樹のカカオ苗", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , target: [
             { cl: [ "王子" ] }
@@ -102,7 +102,7 @@ buff.unique = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
         , target: { : [ "" ] }
         , target: [
@@ -113,7 +113,7 @@ buff.unique = [
     
     黒 白 青 金 ちび 銀 銅 鉄 トークン
     
-    CC前 CC後 覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒
     

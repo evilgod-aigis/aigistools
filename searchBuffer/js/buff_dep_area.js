@@ -1,24 +1,24 @@
 // 範囲配置
 buff.dep_area = [
     {
-        name: "トゥーダ", rarity: "黒", cl: "神官戦士", AW: "覚醒前"
+        name: "トゥーダ", rarity: "黒", cl: "神官戦士", AW: "未"
         , stats: { def: "×1.1" }
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "トゥーダ", rarity: "黒", cl: "神官戦士", AW: "覚醒後"
+        name: "トゥーダ", rarity: "黒", cl: "神官戦士", AW: "覚醒"
         , stats: { def: "×1.15" }
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "プロメ", rarity: "黒", cl: "コロッサス", AW: "覚醒前"
+        name: "プロメ", rarity: "黒", cl: "コロッサス", AW: "未"
         , stats: { rege: [ "50/秒", "25/15f" ] }
-        , target: { race: [ "人間" ] }
+        , target: { race: [ "人間", "半神" ] }
     }
     , {
-        name: "プロメ", rarity: "黒", cl: "コロッサス", AW: "覚醒後"
+        name: "プロメ", rarity: "黒", cl: "コロッサス", AW: "覚醒"
         , stats: { rege: [ "70/秒", "35/15f" ] }
-        , target: { race: [ "人間" ] }
+        , target: { race: [ "人間", "半神" ] }
     }
     , {
         name: "超発明王", cl: "発明家", AW: "覚2a"
@@ -37,7 +37,7 @@ buff.dep_area = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
         , target: { : [ "" ] }
         , target: [
@@ -48,7 +48,7 @@ buff.dep_area = [
     
     黒 白 青 金 ちび 銀 銅 鉄 トークン
     
-    CC前 CC後 覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒
     

@@ -5,7 +5,7 @@ buff.cons_cost = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
         , target: { : [ "" ] }
         , target: [
@@ -16,7 +16,7 @@ buff.cons_cost = [
     
     黒 白 青 金 ちび 銀 銅 鉄 トークン
     
-    CC前 CC後 覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒
     

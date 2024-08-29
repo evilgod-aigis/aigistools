@@ -5,7 +5,7 @@ table.word = {
     , clAttr: "クラス特性", fixed: "固定値", hit: "攻撃命中", counter: "反撃"
     , scalar: "スカラー", death: "死亡時", takenDmg: "被ダメージ"
     
-    , id: "id", name: "ユニット", rarity: "レア", cl: "クラス", AW: "覚醒等", skill: "スキル"
+    , id: "id", name: "ユニット", rarity: "レア", cl: "クラス", AW: "覚醒", skill: "スキル"
     
     , hp: "HP", atk: "攻撃力", def: "防御力", mr: "魔法<br>耐性", atkCd: "攻撃<br>硬直", stop: "停止"
     , atkAttr: "攻撃<br>属性", dur: "継続"
@@ -24,7 +24,7 @@ table.sortDir = {
 }
 
 table.rarity = [ "黒", "白", "青", "金", "ちび", "銀", "銅", "鉄", "トークン", "空欄" ];
-table.AW = [ "CC前", "CC後", "CC55", "覚醒前", "覚醒後", "覚1", "覚2a", "覚2b" ];
+table.AW = [ "未55", "未", "覚醒", "覚1", "覚2a", "覚2b" ];
 table.atkAttr = [ "物理", "魔法", "貫通" ];
 table.debuffType = {};
 table.debuffType.common = [ "team", "hit", "counter", "scalar", "death", "takenDmg" ];
@@ -122,7 +122,7 @@ table.SetObjects = () => {
     table.filter.rarity = {};
     _.forEach(table.rarity, rarity => table.filter.rarity[rarity] = true);
     // 覚醒
-    table.filter.AW = { "覚醒前": false, "覚醒後": true, "空欄": true };
+    table.filter.AW = { "未": false, "覚醒": true, "空欄": true };
     // デバフ区分
     table.filter.debuffType = {};
     _.forEach(table.debuffType.common, type => table.filter.debuffType[type] = true);
@@ -134,7 +134,7 @@ table.SetObjects = () => {
     
     // 覚醒前か後か(フィルタ用)
     table.AW_rep = {};
-    _.forEach(table.AW, (AW, i) => table.AW_rep[AW] = i <= table.AW.indexOf("覚醒前") ? "覚醒前" : "覚醒後");
+    _.forEach(table.AW, (AW, i) => table.AW_rep[AW] = i <= table.AW.indexOf("未") ? "未" : "覚醒");
 }
 
 // フィルタ設定生成
@@ -180,7 +180,7 @@ table.CreateFilter = () => {
         newCheckboxArea = document.createElement("div");
         newCheckboxArea.id = `filter_${filterType}`;
         newCheckboxArea.className = "filter-checkbox-area";
-        CreateButtons(newCheckboxArea);
+        CreateButtons(newCheckboxArea, filterType);
         newCheckboxArea.appendChild(document.createElement("br"));
         CreateCheckbox(newCheckboxArea, filterType);
         newFliterArea.appendChild(newCheckboxArea);
@@ -232,7 +232,7 @@ table.CreateFilter = () => {
     `;
     newCheckboxArea.appendChild(newLabel);
     newCheckboxArea.appendChild(document.createElement("br"));
-    CreateButtons(newCheckboxArea);
+    CreateButtons(newCheckboxArea, "stats");
     newCheckboxArea.appendChild(document.createElement("br"));
     CreateCheckbox(newCheckboxArea, "stats", [ "value", "forceMode", "other" ]);
     /*
@@ -286,7 +286,7 @@ table.ToggleAllFilter = (_element, _bool, _filterType = null) => {
         );
     }
     
-    table.ApplyFilter();
+    table.ApplyFilter(_filterType);
 }
 
 // テーブル生成

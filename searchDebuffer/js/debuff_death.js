@@ -1,22 +1,22 @@
 // 死亡時
 debuff.death = [
     {
-        name: "変わり身の幻", rarity: "トークン", AW: "覚醒後"
+        name: "変わり身の幻", rarity: "トークン", AW: "覚醒"
         , stats: { def: "-40%" }
         , note: [ "リヴン[黒]", "継続：20秒" ]
     }
     , {
-        name: "変わり身の幻", rarity: "トークン", AW: "覚醒後"
+        name: "変わり身の幻", rarity: "トークン", AW: "覚醒"
         , stats: { def: "-20%" }
         , note: [ "リヴン[白]", "継続：20秒" ]
     }
     , {
-        name: "赤魂", rarity: "トークン", AW: "覚醒前"
+        name: "赤魂", rarity: "トークン", AW: "未"
         , stats: { def: "-20%" }
         , note: [ "オルフィー", "継続：10秒" ]
     }
     , {
-        name: "緑魂", rarity: "トークン", AW: "覚醒前"
+        name: "緑魂", rarity: "トークン", AW: "未"
         , stats: { mr: "-20%" }
         , note: [ "オルフィー", "継続：10秒" ]
     }
@@ -55,7 +55,7 @@ debuff.death = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
         , target: { attr: [ "" ] }
         , target: [
@@ -66,7 +66,7 @@ debuff.death = [
     
     黒 白 青 金 ちび 銀 銅 鉄 トークン
     
-    覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒
     

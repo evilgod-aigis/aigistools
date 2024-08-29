@@ -1,7 +1,7 @@
 // 永続
 buff.perm = [
     {
-        name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚醒後", skill: "覚醒"
+        name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚醒", skill: "覚醒"
         , stats: { hp: "×1.2" }
         , target: [
             { home: [ "白の帝国" ] }
@@ -10,43 +10,43 @@ buff.perm = [
         , note: "発動時"
     }
     , {
-        name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒後", skill: "覚醒(1)"
+        name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒", skill: "覚醒(1)"
         , stats: { hp: "×1.2" }
         , target: { others: [ "ドラゴン" ] }
         , note: [ "発動時", "ボム" ]
     }
     , {
-        name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒後", skill: "覚醒(2)"
+        name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒", skill: "覚醒(2)"
         , stats: { atk: "×1.2" }
         , target: { others: [ "ドラゴン" ] }
         , note: [ "発動時", "ボム" ]
     }
     , {
-        name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒後", skill: "覚醒(3)"
+        name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒", skill: "覚醒(3)"
         , stats: { def: "×1.2" }
         , target: { others: [ "ドラゴン" ] }
         , note: [ "発動時", "ボム" ]
     }
     , {
-        name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒後", skill: "覚醒(1)"
+        name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒", skill: "覚醒(1)"
         , stats: { hp: "×1.06", atk: "×1.06", def: "×1.06" }
         , target: { others: [ "機械" ] }
         , note: "発動時"
     }
     , {
-        name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒後", skill: "覚醒(2)"
+        name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒", skill: "覚醒(2)"
         , stats: { hp: "×1.12", atk: "×1.12", def: "×1.12" }
         , target: { others: [ "機械" ] }
         , note: "発動時"
     }
     , {
-        name: "斎主の獅子", rarity: "トークン", AW: "覚醒前", skill: "通常"
+        name: "斎主の獅子", rarity: "トークン", AW: "未", skill: "通常"
         , stats: { hp: "×1.5" }
         , target: { cl: [ "狛犬" ] }
         , note: [ "コマ/花嫁", "発動時", "ボム" ]
     }
     , {
-        name: "斎主の大獅子", rarity: "トークン", AW: "覚醒後", skill: "通常"
+        name: "斎主の大獅子", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { hp: "×1.5" }
         , target: { cl: [ "狛犬" ] }
         , note: [ "コマ/花嫁", "発動時", "ボム" ]
@@ -56,7 +56,7 @@ buff.perm = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
         , target: { : [ "" ] }
         , target: [
@@ -67,7 +67,7 @@ buff.perm = [
     
     黒 白 青 金 ちび 銀 銅 鉄 トークン
     
-    覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒
     

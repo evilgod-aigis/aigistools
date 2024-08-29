@@ -5,7 +5,7 @@ table.word = {
     , skill_area: "範囲スキル", skill_gl: "全体スキル", skill_cat: "属性スキル", cons_cost: "コスト消費"
     , add: "加算", unique: "その他"
     
-    , id: "id", name: "ユニット", rarity: "レア", cl: "クラス", AW: "覚醒等", skill: "スキル"
+    , id: "id", name: "ユニット", rarity: "レア", cl: "クラス", AW: "覚醒", skill: "スキル"
     
     , hp: "HP", atk: "攻撃力", def: "防御力", mr: "魔法<br>耐性", range: "射程", cost: "コスト"
     , wt: "スキル<br>初動", ct: "スキル<br>再動", dur: "スキル<br>時間", atkCd: "攻撃<br>硬直"
@@ -23,7 +23,7 @@ table.sortDir = {
 }
 
 table.rarity = [ "黒", "白", "青", "金", "ちび", "銀", "銅", "鉄", "トークン", "空欄" ];
-table.AW = [ "CC前", "CC後", "CC55", "覚醒前", "覚醒後", "覚1", "覚2a", "覚2b" ];
+table.AW = [ "未55", "未", "覚醒", "覚1", "覚2a", "覚2b" ];
 table.buffType = [
     "team", "own", "perm", "dep_gl", "dep_area"
     , "skill_area", "skill_gl", "skill_cat", "cons_cost", "add", "unique"
@@ -88,7 +88,7 @@ table.SetObjects = () => {
     table.filter.rarity = {};
     _.forEach(table.rarity, rarity => table.filter.rarity[rarity] = true);
     // 覚醒
-    table.filter.AW = { "覚醒前": false, "覚醒後": true, "空欄": true };
+    table.filter.AW = { "未": false, "覚醒": true, "空欄": true };
     // バフ区分
     table.filter.buffType = {};
     _.forEach(table.buffType, type => table.filter.buffType[type] = true);
@@ -100,7 +100,7 @@ table.SetObjects = () => {
     
     // 覚醒前か後か(フィルタ用)
     table.AW_rep = {};
-    _.forEach(table.AW, (AW, i) => table.AW_rep[AW] = i <= table.AW.indexOf("覚醒前") ? "覚醒前" : "覚醒後");
+    _.forEach(table.AW, (AW, i) => table.AW_rep[AW] = i <= table.AW.indexOf("未") ? "未" : "覚醒");
 }
 
 // フィルタ設定生成

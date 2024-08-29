@@ -128,7 +128,6 @@ lists.selfBuff.redMapEff = [
     , { id: null, buffer: "ちびセーラー", map: "深海", value: 50 }
     , { id: null, buffer: "ちびセーラーエリート", map: "深海", value: 50 }
     , { id: null, buffer: "セーラー", map: "深海", value: 50 }
-    , { id: null, buffer: "セーラーチーフ", map: "深海", value: 50 }
     , { id: null, buffer: "セーラーエリート", map: "深海", value: 50 }
     , { id: null, buffer: "アドミラル", map: "深海", value: 50 }
     , { id: null, buffer: "ドレッドノート", map: "深海", value: 50 }
@@ -137,7 +136,6 @@ lists.selfBuff.redMapEff = [
     , { id: null, buffer: "ちびパイレーツ", map: "深海", value: 50 }
     , { id: null, buffer: "ちびキングオブパイレーツ", map: "深海", value: 50 }
     , { id: null, buffer: "パイレーツ", map: "深海", value: 50 }
-    , { id: null, buffer: "キャプテン", map: "深海", value: 50 }
     , { id: null, buffer: "キングオブパイレーツ", map: "深海", value: 50 }
     , { id: null, buffer: "ネプチューン", map: "深海", value: 50 }
     , { id: null, buffer: "エル・ドラゴ", map: "深海", value: 50 }

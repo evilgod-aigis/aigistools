@@ -1,7 +1,7 @@
 // 命中
 debuff.counter = [
     {
-        name: "カオスルーラー", cl: "カオスルーラー", AW: "覚醒前"
+        name: "カオスルーラー", cl: "カオスルーラー", AW: "未"
         , stats: { atk: "-10%", def: "-10%", mr: "-10%" }
         , atkAttr: "貫通", dur: "150f"
     }
@@ -24,7 +24,7 @@ debuff.counter = [
         , note: "カオスルーラー系"
     }
     , {
-        name: "イコル", rarity: "黒", cl: "カオスルーラー", AW: "覚醒後", skill: "覚醒"
+        name: "イコル", rarity: "黒", cl: "カオスルーラー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*1.4", def: "*1.4", mr: "*1.4" }
         , atkAttr: "貫通", dur: "150f"
     }
@@ -33,7 +33,7 @@ debuff.counter = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
         , atkAttr: "", dur: ""
         , target: { : [ "" ] }
@@ -45,7 +45,7 @@ debuff.counter = [
     
     黒 白 青 金 ちび 銀 銅 鉄 トークン
     
-    CC前 CC後 覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒 奇 偶
     

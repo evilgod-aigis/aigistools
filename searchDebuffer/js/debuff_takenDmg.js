@@ -6,44 +6,44 @@ debuff.takenDmg = [
         , note: "範囲"
     }
     , {
-        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラ", AW: "覚醒後", skill: "通常"
+        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラ", AW: "覚醒", skill: "通常"
         , stats: { value: "*1.5" }
         , note: [ "範囲", "永続" ]
     }
     , {
-        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラ", AW: "覚醒後", skill: "覚醒"
+        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラ", AW: "覚醒", skill: "覚醒"
         , stats: { value: "*3.0" }
         , note: "範囲"
     }
     , {
-        name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒後", skill: "通常"
+        name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒", skill: "通常"
         , stats: { value: "*1.5" }
         , note: [ "範囲", "永続" ]
     }
     , {
-        name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒後", skill: "覚醒"
+        name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒", skill: "覚醒"
         , stats: { value: "*2.0" }
         , note: "範囲"
     }
     , {
-        name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "覚醒前"
+        name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "未"
         , stats: { value: "+7%" }
     }
     , {
-        name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "覚醒後"
+        name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "覚醒"
         , stats: { value: "+10%" }
     }
     , {
-        name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "覚醒後", skill: "覚醒"
+        name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "覚醒", skill: "覚醒"
         , stats: { value: "*3.0" }
     }
     , {
-        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒前"
+        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "未"
         , stats: { value: "+10%" }
         , note: [ "範囲", "分類未確認" ]
     }
     , {
-        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒後"
+        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒"
         , stats: { value: "+15%" }
         , note: [ "範囲", "分類未確認" ]
     }
@@ -52,7 +52,7 @@ debuff.takenDmg = [
 /*
 
     , {
-        name: "", rarity: "", cl: "", AW: "覚醒後", skill: ""
+        name: "", rarity: "", cl: "", AW: "覚醒", skill: ""
         , stats: { : "" }
         , target: { attr: [ "" ] }
         , target: [
@@ -63,7 +63,7 @@ debuff.takenDmg = [
     
     黒 白 青 金 ちび 銀 銅 鉄 トークン
     
-    覚醒前 覚醒後 覚1 覚2a 覚2b
+    未 覚醒 覚1 覚2a 覚2b
     
     常時 非 通常 覚醒
     
