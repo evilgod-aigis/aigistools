@@ -974,6 +974,10 @@ buff.skill_area = [
         , stats: { atk: "×1.2", def: "×1.2" }
     }
     , {
+        name: "ちびイエラ", rarity: "ちび", cl: "スカイヒーラー", skill: "通常"
+        , stats: { def: "×1.3" }
+    }
+    , {
         name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒", skill: "通常"
         , stats: { abn: "-100%" }
     }

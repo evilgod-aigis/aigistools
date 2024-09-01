@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2024/09/01(日)"
+        , detail: [
+            "妖精の丘を追加"
+        ]
+    }
+    , {
         date: "2024/08/29(木)"
         , detail: [
             "伏綺[黒]を追加"

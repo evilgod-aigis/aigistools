@@ -1190,6 +1190,12 @@ debuff.hit = [
         , note: "ボム"
     }
     , {
+        name: "妖精の丘", rarity: "金", cl: "妖精の丘"
+        , stats: { def: "-15%", mr: "-15%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: [ "ユニットに重ねて配置", "分類未確認" ]
+    }
+    , {
         name: "ホーネット派魔人【ランス】", cl: "ホーネット派魔人【ランス】", AW: "未"
         , stats: { def: "-15%" }
         , atkAttr: "物理", dur: "?f"
