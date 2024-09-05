@@ -1411,6 +1411,8 @@ const unitList = [
     , { id: 0x056a, implDate: "2024/08/29", implDate_bq: null        , obtain: "sp", rarity: "bh", depType: "van" , class: "開天の神話", name: "伏綺", fullName: "大華の礎たる者 伏綺" }
     , { id: 0x056b, implDate: "2024/09/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ボウライダー", name: "ちびエメルダ", fullName: "ちびエメルダ" }
     , { id: 0x056c, implDate: "2024/09/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "both", class: "スカイヒーラー", name: "ちびイエラ", fullName: "ちびイエラ" }
+    , { id: 0x056d, implDate: "2024/09/05", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "メディック", name: "セレン", fullName: "慈愛の衛生兵セレン" }
+    , { id: 0x056e, implDate: "2024/09/05", implDate_bq: null        , obtain: "sp", rarity: "b" , depType: "van" , class: "憤怒の海神", name: "ジーラトス", fullName: "戦鯨の亜神ジーラトス", male: 1 }
     
     
     

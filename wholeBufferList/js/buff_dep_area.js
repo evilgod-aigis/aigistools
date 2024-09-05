@@ -75,13 +75,21 @@ buff.dep_area = [
         , stats: { rege: [ "80/秒", "40/15f" ], abn: "-100%" }
         , note: "メディック系"
     }
-    /*
     , {
-        name: "", cl: "メディック", AW: "覚2b"
-        , stats: { rege: [ "0/秒", "?/?f" ], abn: "-100%" }
+        name: "医神の代行者", cl: "メディック", AW: "覚2b"
+        , stats: { abn: "-100%" }
         , note: "メディック系"
     }
-    */
+    , {
+        name: "セレン", rarity: "白", cl: "メディック", AW: "未"
+        , stats: { other: "" }
+        , note: "HP回復量×1.2"
+    }
+    , {
+        name: "セレン", rarity: "白", cl: "メディック", AW: "覚醒"
+        , stats: { other: "" }
+        , note: "HP回復量×1.3"
+    }
     , {
         name: "桃源郷", rarity: "金", cl: "桃源郷"
         , stats: { hp: "+10%", atk: "×0.8" }

@@ -546,6 +546,14 @@ buff.dep_gl = [
         , note: "時の俯瞰者系"
     }
     , {
+        name: "セレン", rarity: "白", cl: "メディック", AW: "未"
+        , stats: { def: "+5%" }
+    }
+    , {
+        name: "セレン", rarity: "白", cl: "メディック", AW: "覚醒"
+        , stats: { def: "+7%" }
+    }
+    , {
         name: "魔王の玉座", rarity: "金", cl: "魔王の玉座"
         , stats: { atk: "+5%", def: "+5%", other: "" }
         , note: "魔界-50%"
