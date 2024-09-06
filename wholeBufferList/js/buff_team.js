@@ -97,7 +97,7 @@ buff.team = [
         , note: "呪殺(9%)付与"
     }
     , {
-        name: "ユキザクラ", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚醒"
+        name: "ユキザクラ", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚1"
         , stats: { other: "" }
         , note: "呪殺(9%)付与"
     }
@@ -107,12 +107,17 @@ buff.team = [
         , note: [ "呪殺(11%)付与", "値は暫定" ]
     }
     , {
+        name: "ユキザクラ", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚2b"
+        , stats: { other: "" }
+        , note: "呪殺(9%)付与"
+    }
+    , {
         name: "フジムラサキ", rarity: "黒", cl: "霊刀つくもがみ", AW: "未"
         , stats: { other: "" }
         , note: "奇跡の盾(16%)付与"
     }
     , {
-        name: "フジムラサキ", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚醒"
+        name: "フジムラサキ", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚1"
         , stats: { other: "" }
         , note: "奇跡の盾(16%)付与"
     }
@@ -122,12 +127,17 @@ buff.team = [
         , note: [ "奇跡の盾(20%)付与", "値は暫定" ]
     }
     , {
+        name: "フジムラサキ", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚2b"
+        , stats: { other: "" }
+        , note: "奇跡の盾(16%)付与"
+    }
+    , {
         name: "魔王城", rarity: "黒", cl: "霊刀つくもがみ", AW: "未"
         , stats: { other: "" }
         , note: "貫通攻撃(16%)付与"
     }
     , {
-        name: "魔王城", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚醒"
+        name: "魔王城", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚1"
         , stats: { other: "" }
         , note: "貫通攻撃(16%)付与"
     }
@@ -137,12 +147,17 @@ buff.team = [
         , note: [ "貫通攻撃(20%)付与", "値は暫定" ]
     }
     , {
+        name: "魔王城", rarity: "黒", cl: "霊刀つくもがみ", AW: "覚2b"
+        , stats: { other: "" }
+        , note: "貫通攻撃(16%)付与"
+    }
+    , {
         name: "シラハユリ", rarity: "白", cl: "霊刀つくもがみ", AW: "未"
         , stats: { other: "" }
         , note: "癒しの奇跡(300)付与"
     }
     , {
-        name: "シラハユリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚醒"
+        name: "シラハユリ", rarity: "白", cl: "霊刀つくもがみ", AW: "覚1"
         , stats: { other: "" }
         , note: "癒しの奇跡(600)付与"
     }
