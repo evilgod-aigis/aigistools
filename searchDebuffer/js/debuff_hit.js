@@ -935,14 +935,24 @@ debuff.hit = [
         , note: "ボム"
     }
     , {
+        name: "オロチヒメ", rarity: "黒", cl: "呪術使い", AW: "覚醒"
+        , stats: { atkCd: "+23f" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
         name: "オロチヒメ/お正月", rarity: "黒", cl: "呪術使い", AW: "覚醒", skill: "非"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "9f"
     }
     , {
-        name: "オロチヒメ/お正月", rarity: "黒", cl: "呪術使い", AW: "覚醒", skill: [ "通常", "覚醒" ]
+        name: "オロチヒメ/お正月", rarity: "黒", cl: "呪術使い", AW: "覚醒", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "14f"
+    }
+    , {
+        name: "オロチヒメ/お正月", rarity: "黒", cl: "呪術使い", AW: "覚醒", skill: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "貫通", dur: "14f"
     }
     , {
         name: "ヒルデ", rarity: "白", cl: "モンスタースレイヤー", AW: "覚1"

@@ -6,7 +6,7 @@ lists.buff.rWT = {};
 lists.buff.rWT.jap = "初動短縮";
 lists.buff.rWT.list = [
     {
-        id: null, buffer: "エンプレス", isClass: true, awaken: "未覚醒"
+        id: null, buffer: "エンプレス", isClass: true, awaken: "未"
         , value: 15, disabled: null, req: "team"
         , tooltip: "[編成] 全味方の初動-15%"
     }
@@ -30,15 +30,15 @@ lists.buff.rWT.list = [
         , tooltip: "[編成] 全味方の初動-25%"
     }
     , {
-        id: null, buffer: "発明家", isClass: true, awaken: "未覚醒"
+        id: null, buffer: "発明家", isClass: true, awaken: "未"
         , value: 20, disabled: null, req: "team"
         , target: [ { attribution: [ "機械" ] } ]
         , compound: { rWT: [
-            { buffer: "超古代発明家アルレット", awaken: "未覚醒" }
-            , { buffer: "奇想の発明家タバサ", awaken: "未覚醒" }
-            , { buffer: "帝国発明家ヘンドリカ", awaken: "未覚醒" }
-            , { buffer: "天性の発明家マギー", awaken: "未覚醒" }
-            , { buffer: "魔電流の発明家レクテ", awaken: "未覚醒" }
+            { buffer: "超古代発明家アルレット", awaken: "未" }
+            , { buffer: "奇想の発明家タバサ", awaken: "未" }
+            , { buffer: "帝国発明家ヘンドリカ", awaken: "未" }
+            , { buffer: "天性の発明家マギー", awaken: "未" }
+            , { buffer: "魔電流の発明家レクテ", awaken: "未" }
         ] }
         , tooltip: "[編成] 属性：機械の初動-20%"
     }
@@ -76,7 +76,7 @@ lists.buff.rWT.list = [
         , tooltip: "[編成] 属性：機械の初動-30%"
     }
     , {
-        id: null, buffer: "小覇王【恋姫】", isClass: true, awaken: "未覚醒"
+        id: null, buffer: "小覇王【恋姫】", isClass: true, awaken: "未"
         , value: 10, disabled: null, req: "team"
         , tooltip: "[編成] 全味方の初動-10%"
     }
@@ -105,7 +105,7 @@ lists.buff.rWT.list = [
         , tooltip: "[編成] 属性：騎兵の初動-30%"
     }
     , {
-        id: null, buffer: "竜姫婚姻譚メリュジアナ", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "竜姫婚姻譚メリュジアナ", awaken: "未", showAwaken: true
         , value: 20, disabled: null, req: "team"
         , target: [ { attribution: [ "ジューンブライド", "ドラゴン" ] } ]
         , tooltip: "\
@@ -142,7 +142,7 @@ lists.buff.rWT.list = [
         , tooltip: "[編成] 属性：デーモン・オーク・ゴブリンの初動-30%"
     }
     , {
-        id: null, buffer: "砂漠の傭兵ナシート", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "砂漠の傭兵ナシート", awaken: "未", showAwaken: true
         , value: 30, disabled: null, req: "team"
         , target: [ { attribution: [ "砂漠の国" ] } ]
         , tooltip: "[編成] 属性：砂漠の国の初動-30%"
@@ -160,7 +160,7 @@ lists.buff.rWT.list = [
         , tooltip: "[編成] レアリティ：白の初動-25%"
     }
     , {
-        id: null, buffer: "夏の花火師メル", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "夏の花火師メル", awaken: "未", showAwaken: true
         , value: 10, disabled: null, req: "team"
         , target: [ { attribution: [ "サマー" ] } ]
         , tooltip: "[編成] 属性：サマーの初動-10%"
@@ -172,7 +172,7 @@ lists.buff.rWT.list = [
         , tooltip: "[編成] 属性：サマーの初動-15%"
     }
     , {
-        id: null, buffer: "ロゼット", awaken: "未覚醒"
+        id: null, buffer: "ロゼット", awaken: "未"
         , value: 30, disabled: null, req: "team"
         , target: [ { rarity: [ "銀" ] } ]
         , tooltip: "[編成] レアリティ：銀の初動-30%"
@@ -244,6 +244,30 @@ lists.buff.rCT.list = [
         , value: 50, disabled: null, req: "deploy"
         , target: [ { attribution: [ "魔術師" ] } ]
         , tooltip: "[配置] 属性：魔術師の再動-50%"
+    }
+    , {
+        id: null, buffer: "ビショップ", isClass: true, awaken: "未"
+        , value: 20, disabled: null, req: "deploy"
+        , target: [ { attribution: [ "聖職者" ] } ]
+        , tooltip: "[配置] 属性：聖職者の再動-20%"
+    }
+    , {
+        id: null, buffer: "エルダービショップ", isClass: true, awaken: "覚1"
+        , value: 30, disabled: null, req: "deploy"
+        , target: [ { attribution: [ "聖職者" ] } ]
+        , tooltip: "[配置] 属性：聖職者の再動-30%"
+    }
+    , {
+        id: null, buffer: "パトリアーク", isClass: true, awaken: "覚2a"
+        , value: 50, disabled: null, req: "deploy"
+        , target: [ { attribution: [ "聖職者" ] } ]
+        , tooltip: "[配置] 属性：聖職者の再動-50%"
+    }
+    , {
+        id: null, buffer: "フィロソファー", isClass: true, awaken: "覚2b"
+        , value: 35, disabled: null, req: "deploy"
+        , target: [ { attribution: [ "聖職者" ] } ]
+        , tooltip: "[配置] 属性：聖職者の再動-35%"
     }
     , {
         id: null, buffer: "闘志の癒し湯アナトリア", awaken: "覚醒"
@@ -341,7 +365,7 @@ lists.buff.skillExtend = {};
 lists.buff.skillExtend.jap = "スキル時間延長";
 lists.buff.skillExtend.list = [
     {
-        id: null, buffer: "誓いの妖精姫オリヴィエ", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "誓いの妖精姫オリヴィエ", awaken: "未", showAwaken: true
         , value: 20, disabled: null, req: "team"
         , target: [ { unitClass: [ "王子" ] } ]
         , tooltip: "[編成] 王子のスキル時間+20%"
@@ -353,7 +377,7 @@ lists.buff.skillExtend.list = [
         , tooltip: "[編成] 王子のスキル時間+30%"
     }
     , {
-        id: null, buffer: "天馬騎士団長エスタ", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "天馬騎士団長エスタ", awaken: "未", showAwaken: true
         , value: 20, disabled: null, req: "team"
         , target: [
             { unitClass: [ "ペガサスライダー系", "ちびペガサスライダー", "ちびペガサスロード", "ペガサスライダー", "ペガサスロード", "スカイキャバリア", "ペガサスマスター" ] }
@@ -377,7 +401,7 @@ lists.buff.skillExtend.list = [
         , tooltip: "[編成] クラス：ダークファイター系のスキル時間+30%"
     }
     , {
-        id: null, buffer: "時空魔法の優等生トワ", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "時空魔法の優等生トワ", awaken: "未", showAwaken: true
         , value: 10, disabled: null, req: "team"
         , target: [ { deployType: [ "遠距離型" ] } ]
         , tooltip: "[編成] 遠距離ユニットのスキル時間+10%"
@@ -405,7 +429,7 @@ lists.buff.skillExtend.list = [
         , tooltip: "[編成] クラス：ボウライダー系のスキル時間+20%"
     }
     , {
-        id: null, buffer: "術士女官シャーリー", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "術士女官シャーリー", awaken: "未", showAwaken: true
         , value: 20, disabled: null, req: "team"
         , target: [
             { unitClass: [ "メイジ系", "下級メイジ", "ちびメイジ", "ちびアークメイジ", "メイジ", "アークメイジ", "メイガスアデプト", "メイジデストラクト" ] }
@@ -519,7 +543,7 @@ lists.buff.haste.list = [
         , tooltip: "[編成] 全味方の攻撃硬直-20%"
     }
     , {
-        id: null, buffer: "帝国辺境総督アレイダ", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "帝国辺境総督アレイダ", awaken: "未", showAwaken: true
         , value: 25, disabled: null, req: "team"
         , target: [ { deployType: [ "近接型" ] , attribution: [ "白の帝国" ] } ]
         , tooltip: "[編成] 属性：帝国の近接ユニットの攻撃硬直-25%"
@@ -531,7 +555,7 @@ lists.buff.haste.list = [
         , tooltip: "[編成] 属性：帝国の近接ユニットの攻撃硬直-35%"
     }
     , {
-        id: null, buffer: "金獣の領主リンクス", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "金獣の領主リンクス", awaken: "未", showAwaken: true
         , value: 25, disabled: null, req: "team"
         , target: [ { attribution: [ "獣人" ] } ]
         , tooltip: "[編成] 属性：獣人の攻撃硬直-25%"
@@ -802,7 +826,7 @@ lists.buff.giveDmgMul = {};
 lists.buff.giveDmgMul.jap = "特攻付与";
 lists.buff.giveDmgMul.list = [
     {
-        id: null, buffer: "超古代発明家アルレット", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "超古代発明家アルレット", awaken: "未", showAwaken: true
         , value: 15, disabled: null, req: "team"
         , compound: { rWT: [ { buffer: "発明家" } ] }
         , tooltip: "\
@@ -828,7 +852,7 @@ lists.buff.giveDmgMul.list = [
         "
     }
     , {
-        id: null, buffer: "奇想の発明家タバサ", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "奇想の発明家タバサ", awaken: "未", showAwaken: true
         , value: 10, disabled: null, req: "team"
         , compound: { rWT: [ { buffer: "発明家" } ] }
         , tooltip: "\
@@ -846,7 +870,7 @@ lists.buff.giveDmgMul.list = [
         "
     }
     , {
-        id: null, buffer: "帝国発明家ヘンドリカ", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "帝国発明家ヘンドリカ", awaken: "未", showAwaken: true
         , value: 10, disabled: null, req: "team"
         , compound: { rWT: [ { buffer: "発明家" } ] }
         , tooltip: "[編成] 天使に対して全味方の攻撃力が10%上昇"
@@ -862,7 +886,7 @@ lists.buff.giveDmgMul.list = [
         "
     }
     , {
-        id: null, buffer: "天性の発明家マギー", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "天性の発明家マギー", awaken: "未", showAwaken: true
         , value: 10, disabled: null, req: "team"
         , compound: { rWT: [ { buffer: "発明家" } ] }
         , tooltip: "\
@@ -880,7 +904,7 @@ lists.buff.giveDmgMul.list = [
         "
     }
     , {
-        id: null, buffer: "魔電流の発明家レクテ", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "魔電流の発明家レクテ", awaken: "未", showAwaken: true
         , value: 10, disabled: null, req: "team"
         , compound: { rWT: [ { buffer: "発明家" } ] }
         , tooltip: "\
@@ -972,7 +996,7 @@ lists.buff.takenDmg.list = [
         }
     }
     , {
-        id: null, buffer: "魔神の残滓ウェパル", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "魔神の残滓ウェパル", awaken: "未", showAwaken: true
         , value: 7, disabled: null, req: "deploy"
         , tooltip: "[全体] 被ダメージが7%上昇"
     }
@@ -996,7 +1020,7 @@ lists.buff.takenDmg.list = [
         }
     }
     , {
-        id: null, buffer: "叡智の管理者プリニース", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "叡智の管理者プリニース", awaken: "未", showAwaken: true
         , value: 10, disabled: null, req: "deploy"
         , tooltip: "[射程内] 被ダメージが10%上昇"
     }
@@ -1063,7 +1087,7 @@ lists.buff.redMapEff.list = [
         , tooltip: "[編成] 全味方の深海の影響を30%軽減"
     }
     , {
-        id: null, buffer: "渦潮の亜神メシナ", awaken: "未覚醒", showAwaken: true
+        id: null, buffer: "渦潮の亜神メシナ", awaken: "未", showAwaken: true
         , map: "深海", value: 30, disabled: null, req: "deploy"
         , tooltip: "[配置] 全味方の深海の影響を30%軽減"
     }

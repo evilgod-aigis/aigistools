@@ -212,6 +212,22 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "キャリー/新装", rarity: "黒", cl: "ワルキューレ", AW: "未"
+        , stats: {
+            def: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: [ "配置後30秒", "分類未確認" ]
+    }
+    , {
+        name: "キャリー/新装", rarity: "黒", cl: "ワルキューレ", AW: "覚醒"
+        , stats: {
+            def: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: [ "配置後45秒", "分類未確認" ]
+    }
+    , {
         name: "ジュノン/お正月", rarity: "白", cl: "ローグ", AW: "未", skill: "通常"
         , stats: {
             stop: { value: "89f", type: "global" }
@@ -695,6 +711,14 @@ debuff.mixture = [
             mr: { value: "-50%", type: "area" }
         }
         , domain: "area"
+    }
+    , {
+        name: "マーガレット/新装", rarity: "黒", cl: "ボウライダー", AW: "覚醒", skill: [ "通常", "覚醒" ]
+        , stats: {
+            stop: { value: "59f", type: "global" }
+        }
+        , domain: "global"
+        , target: { attr: [ "妖怪", "デーモン" ] }
     }
     , {
         name: "マーガレット/水着", rarity: "白", cl: "ボウライダー", AW: "未", skill: "通常"

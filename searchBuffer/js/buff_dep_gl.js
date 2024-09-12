@@ -369,6 +369,16 @@ buff.dep_gl = [
         , target: { season: [ "バレンタイン" ] }
     }
     , {
+        name: "マーガレット/新装", rarity: "黒", cl: "ボウライダー", AW: "未"
+        , stats: { atk: "+5%" }
+        , target: { others: [ "弓兵", "騎兵", "高貴" ] }
+    }
+    , {
+        name: "マーガレット/新装", rarity: "黒", cl: "ボウライダー", AW: "覚醒"
+        , stats: { atk: "+10%" }
+        , target: { others: [ "弓兵", "騎兵", "高貴" ] }
+    }
+    , {
         name: "フラフィー", rarity: "白", cl: "ボウライダー", AW: "覚醒"
         , stats: { atk: "+5%" }
         , target: { race: [ "獣人" ] }
@@ -1134,6 +1144,12 @@ buff.dep_gl = [
         , target: { cl: [ "セーラー", "パイレーツ" ] }
     }
     , {
+        name: "極神竜巫女", cl: "ドラゴンシャーマン", AW: "覚2b"
+        , stats: { atk: "+5%" }
+        , target: { others: [ "ドラゴン" ] }
+        , note: "ドラゴンシャーマン系"
+    }
+    , {
         name: "フーリ/水着", rarity: "金", cl: "ヴァンパイアハンター", AW: "覚醒"
         , stats: { atk: "+5%" }
         , target: { sex: [ "男性" ] }
@@ -1153,6 +1169,29 @@ buff.dep_gl = [
             { home: [ "東の国" ] }
             , { race: [ "天界人" ] }
         ]
+    }
+    , {
+        name: "ビショップ", cl: "ビショップ", AW: "未"
+        , stats: { ct: "-20%" }
+        , target: { others: [ "聖職者" ] }
+    }
+    , {
+        name: "エルダービショップ", cl: "ビショップ", AW: "覚1"
+        , stats: { ct: "-30%" }
+        , target: { others: [ "聖職者" ] }
+        , note: "ビショップ系"
+    }
+    , {
+        name: "パトリアーク", cl: "ビショップ", AW: "覚2a"
+        , stats: { ct: "-50%" }
+        , target: { others: [ "聖職者" ] }
+        , note: "ビショップ系"
+    }
+    , {
+        name: "フィロソファー", cl: "ビショップ", AW: "覚2b"
+        , stats: { ct: "-35%" }
+        , target: { others: [ "聖職者" ] }
+        , note: "ビショップ系"
     }
     , {
         name: "セレイナ", rarity: "白", cl: "ビショップ", AW: "覚醒"

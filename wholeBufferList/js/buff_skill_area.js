@@ -362,7 +362,7 @@ buff.skill_area = [
     }
     , {
         name: "アウローラ/水着", rarity: "黒", cl: "ヒーラー", AW: "覚醒", skill: "覚醒"
-        , stats: { def: "×1.5" }
+        , stats: { def: "×2.0" }
     }
     , {
         name: "リアナ/浴衣", rarity: "黒", cl: "ヒーラー", AW: "未", skill: "通常"
@@ -391,7 +391,6 @@ buff.skill_area = [
     , {
         name: "アンジェラ", rarity: "黒", cl: "ウィッチ", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.3" }
-        , note: "分類未確認"
     }
     , {
         name: "クルス/クリスマス", rarity: "黒", cl: "ヴァンパイアハンター", AW: "未", skill: "通常"
@@ -955,7 +954,6 @@ buff.skill_area = [
     , {
         name: "セレン", rarity: "白", cl: "メディック", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.2", def: "×1.2" }
-        , note: "分類未確認"
     }
     , {
         name: "戦場に集う聖霊たち", rarity: "黒", cl: "支援の聖霊", skill: "通常"

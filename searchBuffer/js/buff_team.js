@@ -223,6 +223,16 @@ buff.team = [
         , target: { cl: [ "ワルキューレ", "ペガサスライダー", "ドラゴンライダー", "魔竜騎士" ] }
     }
     , {
+        name: "キャリー/新装", rarity: "黒", cl: "ワルキューレ", AW: "未"
+        , stats: { atk: "+7%" }
+        , target: { others: [ "騎兵" ] }
+    }
+    , {
+        name: "キャリー/新装", rarity: "黒", cl: "ワルキューレ", AW: "覚醒"
+        , stats: { atk: "+10%" }
+        , target: { others: [ "騎兵" ] }
+    }
+    , {
         name: "ダリア", rarity: "白", cl: "ワルキューレ", AW: "覚醒"
         , stats: { atk: "+7%" }
         , target: { cl: [ "ワルキューレ", "ボウライダー" ] }
