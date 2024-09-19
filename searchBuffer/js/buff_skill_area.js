@@ -95,6 +95,11 @@ buff.skill_area = [
         ]
     }
     , {
+        name: "イルミナ", rarity: "白", cl: "儀式魔術師", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.2" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
         name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "覚醒"
         , stats: { range: "×1.1" }
         , target: { depType: [ "遠距離" ] }

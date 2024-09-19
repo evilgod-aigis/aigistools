@@ -1416,6 +1416,7 @@ const unitList = [
     , { id: 0x056f, implDate: "2024/09/12", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ワルキューレ", name: "キャリー/新装", fullName: "精鋭槍騎兵キャリー" }
     , { id: 0x0570, implDate: "2024/09/12", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ボウライダー", name: "マーガレット/新装", fullName: "光輝弓マーガレット" }
     , { id: 0x0571, implDate: "2024/09/12", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "パイレーツ", name: "ちびジョヴァンニ", fullName: "ちびジョヴァンニ", male: 1 }
+    , { id: 0x0572, implDate: "2024/09/19", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "儀式魔術師", name: "イルミナ", fullName: "擬神憑きイルミナ" }
     
     
     

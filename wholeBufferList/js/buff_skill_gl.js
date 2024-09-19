@@ -767,6 +767,14 @@ buff.skill_gl = [
         , note: [ "発動時", "死亡・撤退最後1体" ]
     }
     , {
+        name: "イルミナ", rarity: "白", cl: "儀式魔術師", AW: "未", skill: "通常"
+        , stats: { draw: "○" }
+    }
+    , {
+        name: "イルミナ", rarity: "白", cl: "儀式魔術師", AW: "覚醒", skill: "通常"
+        , stats: { draw: "○" }
+    }
+    , {
         name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "未", skill: "通常"
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }

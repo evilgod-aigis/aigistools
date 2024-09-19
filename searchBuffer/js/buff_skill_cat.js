@@ -122,13 +122,13 @@ buff.skill_cat = [
     , {
         name: "フリア", rarity: "黒", cl: "ワルキューレ", AW: "未", skill: "通常"
         , stats: { draw: "(○)", redep: "40秒" }
-        , target: { race: [ "人間", "天使", "鳥人"/*, "半神"*/ ] }
+        , target: { race: [ "人間", "天使", "鳥人", "天界人"/*, "半神"*/ ] }
         , note: "永続"
     }
     , {
         name: "フリア", rarity: "黒", cl: "ワルキューレ", AW: "覚醒", skill: "通常"
         , stats: { draw: "(○)", redep: "40秒" }
-        , target: { race: [ "人間", "天使", "鳥人"/*, "半神"*/ ] }
+        , target: { race: [ "人間", "天使", "鳥人", "天界人"/*, "半神"*/ ] }
         , note: "永続"
     }
     , {

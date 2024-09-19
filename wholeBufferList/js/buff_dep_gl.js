@@ -212,7 +212,7 @@ buff.dep_gl = [
     }
     , {
         name: "ソフィー", rarity: "黒", cl: "エンジェル", AW: "覚醒", skill: "非"
-        , stats: { rege: [ "44/秒", "22/15f" ] }
+        , stats: { rege: [ "90/秒", "45/15f" ] }
     }
     , {
         name: "ソフィー", rarity: "黒", cl: "エンジェル", AW: "覚醒"

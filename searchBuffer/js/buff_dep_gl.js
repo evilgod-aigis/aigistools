@@ -815,9 +815,20 @@ buff.dep_gl = [
         ]
     }
     , {
-        name: "オークブレイバー", cl: "グラディエーター", AW: "覚2a"
+        name: "グラディエーター", cl: "グラディエーター", AW: "未"
+        , stats: { atk: "+5%" }
+        , target: { others: [ "魔界" ] }
+    }
+    , {
+        name: "筆頭剣闘士", cl: "グラディエーター", AW: "覚1"
         , stats: { atk: "+10%" }
-        , target: { race: [ "オーク" ] }
+        , target: { others: [ "魔界" ] }
+        , note: "グラディエーター系"
+    }
+    , {
+        name: "オークブレイバー", cl: "グラディエーター", AW: "覚2a"
+        , stats: { atk: "+15%" }
+        , target: { others: [ "魔界" ] }
         , note: "グラディエーター系"
     }
     , {
@@ -827,7 +838,6 @@ buff.dep_gl = [
             { season: [ "温泉" ] }
             , { others: [ "魔界" ] }
         ]
-        , note: "グラディエーター系"
     }
     , {
         name: "サリス", rarity: "白", cl: "グランドナイト", AW: "覚醒"
@@ -1431,6 +1441,12 @@ buff.dep_gl = [
         name: "パリオス", rarity: "黒", cl: "スカイウォリアー", AW: "覚醒"
         , stats: { atk: "+10%", def: "+10%", mr: "+5" }
         , target: { race: [ "鳥人" ] }
+    }
+    , {
+        name: "スカイスプレマシー", cl: "スカイシューター", AW: "覚2a"
+        , stats: { atk: "+10%" }
+        , target: { others: [ "飛行" ] }
+        , note: "スカイシューター系"
     }
     , {
         name: "ジタリス", rarity: "白", cl: "スカイヒーラー", AW: "未"
