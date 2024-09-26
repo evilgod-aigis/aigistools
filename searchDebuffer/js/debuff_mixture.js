@@ -1330,6 +1330,28 @@ debuff.mixture = [
         , note: "妖糸使い系"
     }
     , {
+        name: "ヴァイセカイゼリン", cl: "初代皇帝", AW: "覚2a"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "初代皇帝系"
+    }
+    , {
+        name: "ヴィラヘルム", rarity: "黒", cl: "初代皇帝", AW: "未", skill: "通常"
+        , stats: {
+            def: { value: "-50%", type: "global" }
+        }
+        , domain: "global"
+    }
+    , {
+        name: "ヴィラヘルム", rarity: "黒", cl: "初代皇帝", AW: "覚醒", skill: "通常"
+        , stats: {
+            def: { value: "-50%", type: "global" }
+        }
+        , domain: "global"
+    }
+    , {
         name: "ヴィクトリア/浴衣", rarity: "白", cl: "アーチャー", AW: "未", skill: "通常"
         , stats: {
             def: { value: "-25%", type: "area" }
@@ -1640,6 +1662,20 @@ debuff.mixture = [
         }
         , domain: "area"
         , note: "分類未確認"
+    }
+    , {
+        name: "天墜神星", rarity: "黒", cl: "シャーマン", AW: "未"
+        , stats: {
+            def: { value: "-10%", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "天墜神星", rarity: "黒", cl: "シャーマン", AW: "覚醒"
+        , stats: {
+            def: { value: "-15%", type: "area" }
+        }
+        , domain: "area"
     }
     , {
         name: "レーヴ", rarity: "白", cl: "ビショップ", AW: "未", skill: "通常"
@@ -3116,7 +3152,7 @@ debuff.mixture = [
             def: { value: "-20%", type: "area" }
         }
         , domain: "area"
-        , note: [ "オルフィー", "永続" ]
+        , note: [ "ハデスシャーマン", "永続" ]
     }
     , {
         name: "緑魂", rarity: "トークン", AW: "未", skill: "通常"
@@ -3124,7 +3160,7 @@ debuff.mixture = [
             mr: { value: "-20%", type: "area" }
         }
         , domain: "area"
-        , note: [ "オルフィー", "永続" ]
+        , note: [ "ハデスシャーマン", "永続" ]
     }
     , {
         name: "大赤魂", rarity: "トークン", AW: "覚1", skill: "通常"
@@ -3132,7 +3168,7 @@ debuff.mixture = [
             def: { value: "-25%", type: "area" }
         }
         , domain: "area"
-        , note: [ "オルフィー", "永続" ]
+        , note: [ "ハデスカーディナル", "(ハデスシャーマン系)", "永続" ]
     }
     , {
         name: "大緑魂", rarity: "トークン", AW: "覚1", skill: "通常"
@@ -3140,7 +3176,7 @@ debuff.mixture = [
             mr: { value: "-25%", type: "area" }
         }
         , domain: "area"
-        , note: [ "オルフィー", "永続" ]
+        , note: [ "ハデスカーディナル", "(ハデスシャーマン系)", "永続" ]
     }
     , {
         name: "大赤魂", rarity: "トークン", AW: "覚2a", skill: "通常"
@@ -3148,7 +3184,7 @@ debuff.mixture = [
             def: { value: "-45%", type: "area" }
         }
         , domain: "area"
-        , note: [ "オルフィー", "永続" ]
+        , note: [ "レテマギア", "(ハデスシャーマン系)", "永続" ]
     }
     , {
         name: "大緑魂", rarity: "トークン", AW: "覚2a", skill: "通常"
@@ -3156,7 +3192,7 @@ debuff.mixture = [
             mr: { value: "-45%", type: "area" }
         }
         , domain: "area"
-        , note: [ "オルフィー", "永続" ]
+        , note: [ "レテマギア", "(ハデスシャーマン系)", "永続" ]
     }
     , {
         name: "大赤魂", rarity: "トークン", AW: "覚2b", skill: "通常"
@@ -3164,7 +3200,7 @@ debuff.mixture = [
             def: { value: "-35%", type: "area" }
         }
         , domain: "area"
-        , note: [ "オルフィー", "永続" ]
+        , note: [ "フィリアトリウィア", "(ハデスシャーマン系)", "永続" ]
     }
     , {
         name: "大緑魂", rarity: "トークン", AW: "覚2b", skill: "通常"
@@ -3172,7 +3208,7 @@ debuff.mixture = [
             mr: { value: "-35%", type: "area" }
         }
         , domain: "area"
-        , note: [ "オルフィー", "永続" ]
+        , note: [ "フィリアトリウィア", "(ハデスシャーマン系)", "永続" ]
     }
 ];
 

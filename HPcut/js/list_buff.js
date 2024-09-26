@@ -283,7 +283,7 @@ lists.buff.rCT.list = [
         , unitInfo: {
             unitName: "戦場の政務官アンナ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "政務官系" }
-            , attribution: [ "王国", "人間" ], note: []
+            , attribution: [ "王国", "人間" ], note: [ "女性" ]
             , WT: 5, CT: 50, dur: 30
         }
     }
@@ -307,11 +307,11 @@ lists.buff.rCT.list = [
             , { attribution: [ "白の帝国" ], deployType: [ "近接型" ] }
             , { attribution: [ "サマー" ], deployType: [ "近接型" ] }
         ]
-        , tooltip: "[スキル・全体] 王子、属性：帝国・サマーの近接ユニットの再動-50%"
+        , tooltip: "[スキル・全体] 王子、属性：白の帝国・サマーの近接ユニットの再動-50%"
         , unitInfo: {
             unitName: "夏空の鍛冶師グラティア", deployType: "近接型", rarity: "白"
             , unitClass: { selected: "鍛冶職人系" }
-            , attribution: [ "白の帝国", "人間", "サマー" ], note: []
+            , attribution: [ "白の帝国", "人間", "サマー" ], note: [ "女性" ]
             , WT: 20, CT: 40, dur: 30
         }
     }
@@ -337,7 +337,7 @@ lists.buff.rCT.list = [
             { unitClass: [
                 "犬神系", "ちび犬神", "ちび犬神頭", "犬神", "犬神頭", "お犬さま", "厄神霊犬"
                 , "陰陽師系", "ちび陰陽師", "ちび陰陽頭", "陰陽師", "陰陽頭", "悟徳陰陽頭", "召鬼陰陽頭"
-                , "邪仙系", "ちび邪仙", "ちび大邪仙", "邪仙", "大邪仙"
+                , "邪仙系", "ちび邪仙", "ちび大邪仙", "邪仙", "大邪仙", "邪神仙", "邪鬼仙"
                 , "呪術使い系", "ちび呪術使い", "ちび大呪術師長", "呪術使い", "大呪術師長", "大呪術師祖", "妖厄神"
             ] }
         ]
@@ -351,6 +351,20 @@ lists.buff.rCT.list = [
         , value: 40, disabled: null, req: "deploy"
         , target: [ { attribution: [ "学園" ] } ]
         , tooltip: "[配置] 属性：学園の再動-40%"
+    }
+    , {
+        id: null, buffer: "帝国悪魔召喚士ザミエル", awaken: "覚醒"
+        , value: 50, disabled: null, req: "skill"
+        , target: [ { attribution: [ "白の帝国", "魔界" ] }
+        ]
+        , tooltip: "[スキル・範囲] 属性：白の帝国・魔界の再動-50%"
+        , unitInfo: {
+            unitName: "帝国悪魔召喚士ザミエル", deployType: "遠距離型", rarity: "白"
+            , unitClass: { selected: "デモンサモナー系" }
+            , attribution: [ "白の帝国", "デーモン", "魔術師", "魔界" ]
+            , note: [ "女性", "魔界適応" ]
+            , WT: 35, CT: 75, dur: Infinity
+        }
     }
     , {
         id: null, buffer: "ちびメカゴブリンクイーン", awaken: "-"
@@ -546,13 +560,13 @@ lists.buff.haste.list = [
         id: null, buffer: "帝国辺境総督アレイダ", awaken: "未", showAwaken: true
         , value: 25, disabled: null, req: "team"
         , target: [ { deployType: [ "近接型" ] , attribution: [ "白の帝国" ] } ]
-        , tooltip: "[編成] 属性：帝国の近接ユニットの攻撃硬直-25%"
+        , tooltip: "[編成] 属性：白の帝国の近接ユニットの攻撃硬直-25%"
     }
     , {
         id: null, buffer: "帝国辺境総督アレイダ", awaken: "覚醒", showAwaken: true
         , value: 35, disabled: null, req: "team"
         , target: [ { deployType: [ "近接型" ] , attribution: [ "白の帝国" ] } ]
-        , tooltip: "[編成] 属性：帝国の近接ユニットの攻撃硬直-35%"
+        , tooltip: "[編成] 属性：白の帝国の近接ユニットの攻撃硬直-35%"
     }
     , {
         id: null, buffer: "金獣の領主リンクス", awaken: "未", showAwaken: true
@@ -881,7 +895,7 @@ lists.buff.giveDmgMul.list = [
         , compound: { rWT: [ { buffer: "超発明王" } ] }
         , tooltip: "\
             [編成] 天使に対して全味方の攻撃力が15%上昇<br>\
-            　　　 竜族に対して属性：帝国の攻撃力が15%上昇<br>\
+            　　　 竜族に対して属性：白の帝国の攻撃力が15%上昇<br>\
             　　　 (敵の属性は特に指定してないので、2行目は特に意味ない)\
         "
     }

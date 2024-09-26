@@ -395,6 +395,29 @@ lists.units.onSkillAct.list = [
     , {
         id: null, hidden: false
         , unitInfo: {
+            unitName: "帝国悪魔召喚士ザミエル", deployType: "遠距離型", rarity: "白"
+            , unitClass: { selected: "デモンサモナー系" }
+            , attribution: [ "白の帝国", "デーモン", "魔術師", "魔界" ]
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: [ "女性", "魔界適応" ]
+        }
+        , skill: {
+            selected: "通常"
+            , detail: {
+                "通常": [
+                    {
+                        target: "全敵"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 40, dur: 15, HPred: 10 }
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
             unitName: "魔神の共鳴者レライエ", deployType: "遠距離型", rarity: "白"
             , unitClass: { selected: "デモンシャーマン系" }
             , attribution: [ "人間", "魔界" ]

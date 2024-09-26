@@ -1417,6 +1417,13 @@ const unitList = [
     , { id: 0x0570, implDate: "2024/09/12", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "ボウライダー", name: "マーガレット/新装", fullName: "光輝弓マーガレット" }
     , { id: 0x0571, implDate: "2024/09/12", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "パイレーツ", name: "ちびジョヴァンニ", fullName: "ちびジョヴァンニ", male: 1 }
     , { id: 0x0572, implDate: "2024/09/19", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "儀式魔術師", name: "イルミナ", fullName: "擬神憑きイルミナ" }
+    , { id: 0x0573, implDate: "2024/09/26", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "rear", class: "シャーマン", name: "天墜神星", fullName: "煌星の亜神 天墜神星" }
+    , { id: 0x0574, implDate: "2024/09/26", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "インペリアルナイト", name: "ヘイズル", fullName: "初代帝国騎士団長ヘイズル" }
+    , { id: 0x0575, implDate: "2024/09/26", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "初代皇帝", name: "ヴィラヘルム", fullName: "初代白の皇帝ヴィラヘルム" }
+    , { id: 0x0576, implDate: "2024/09/26", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "van" , class: "グラディエーター", name: "アグナ", fullName: "帝国剣闘士アグナ" }
+    , { id: 0x0577, implDate: "2024/09/26", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "デモンサモナー", name: "ザミエル", fullName: "帝国悪魔召喚士ザミエル" }
+    , { id: 0x0578, implDate: "2024/09/26", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "ライフリンカー", name: "ルスティ", fullName: "帝国命鎖使いルスティ" }
+    , { id: 0x0579, implDate: "2024/09/26", implDate_bq: null        , obtain: "tr", rarity: "p" , depType: "rear", class: "ハデスシャーマン", name: "スイゼ", fullName: "冥庭園の巫女スイゼ" }
     
     
     
@@ -1435,7 +1442,7 @@ const unitList = [
     obtain
         sh  召喚
         ev  イベント
-        tr  交換
+        tr  交換/覚醒ちび/帝国大戦
         sp  配布/パック/シリアルコード
     
     rarity

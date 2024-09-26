@@ -1410,6 +1410,11 @@ buff.dep_gl = [
         , target: { others: [ "魔界" ] }
     }
     , {
+        name: "スイゼ", rarity: "白", cl: "ハデスシャーマン", AW: "覚醒"
+        , stats: { atk: "+10%" }
+        , target: { race: [ "冥界人" ] }
+    }
+    , {
         name: "ゴブリン博士", cl: "ゴブリン博士"
         , stats: { hp: "+10%", atk: "+10%" }
         , target: [

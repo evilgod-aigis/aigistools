@@ -136,6 +136,21 @@ buff.add = [
         , note: "範囲"
     }
     , {
+        name: "ヴィラヘルム", rarity: "黒", cl: "初代皇帝", AW: "未"
+        , stats: { atk: "7%", def: "7%" }
+        , note: "範囲"
+    }
+    , {
+        name: "ヴィラヘルム", rarity: "黒", cl: "初代皇帝", AW: "覚醒"
+        , stats: { atk: "10%", def: "10%" }
+        , note: "範囲"
+    }
+    , {
+        name: "ヴィラヘルム", rarity: "黒", cl: "初代皇帝", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "*1.5", def: "*1.5" }
+        , note: "範囲"
+    }
+    , {
         name: "小悪魔アイドル", cl: "小悪魔アイドル", AW: "覚1"
         , stats: { atk: "5%", def: "5%" }
         , note: "範囲"

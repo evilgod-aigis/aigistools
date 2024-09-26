@@ -717,6 +717,18 @@ debuff.hit = [
         , note: [ "永続", "分類未確認" ]
     }
     , {
+        name: "天墜神星", rarity: "黒", cl: "シャーマン", AW: "未"
+        , stats: { atk: "-15%", def: "-15%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "天墜神星", rarity: "黒", cl: "シャーマン", AW: "覚醒"
+        , stats: { atk: "-20%", def: "-20%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒"
         , stats: { def: "-40%" }
         , atkAttr: "物理", dur: "59f"

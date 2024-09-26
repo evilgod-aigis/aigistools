@@ -2336,6 +2336,16 @@ buff.skill_cat = [
         , target: { depType: [ "遠距離" ] }
     }
     , {
+        name: "スイゼ", rarity: "白", cl: "ハデスシャーマン", AW: "未", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { race: [ "冥界人" ] }
+    }
+    , {
+        name: "スイゼ", rarity: "白", cl: "ハデスシャーマン", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { race: [ "冥界人" ] }
+    }
+    , {
         name: "ちびゴブリン博士", rarity: "ちび", cl: "ゴブリン博士", skill: "通常"
         , stats: { atk: "×1.2" }
         , target: [

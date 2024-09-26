@@ -2211,6 +2211,16 @@ buff.team = [
         , target: { cl: [ "ライフリンカー" ] }
     }
     , {
+        name: "ルスティ", rarity: "白", cl: "ライフリンカー", AW: "未"
+        , stats: { hp: "+7%" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "ルスティ", rarity: "白", cl: "ライフリンカー", AW: "覚醒"
+        , stats: { hp: "+7%" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
         name: "サルース", rarity: "青", cl: "ライフリンカー", AW: "覚醒"
         , stats: { range: "+10" }
         , target: { cl: [ "ライフリンカー" ] }

@@ -87,6 +87,15 @@ buff.skill_area = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "ザミエル", rarity: "白", cl: "デモンサモナー", AW: "覚醒", skill: "覚醒"
+        , stats: { ct: "-50%" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { others: [ "魔界" ] }
+        ]
+        , note: "永続"
+    }
+    , {
         name: "パトリシア/水着", rarity: "白", cl: "支援工兵", AW: "覚醒", skill: "覚醒"
         , stats: { hp: "+50%" }
         , target: [

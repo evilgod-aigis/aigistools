@@ -188,6 +188,18 @@ buff.unique = [
     
     // 猫又
     , {
+        name: "天墜神星", rarity: "黒", cl: "シャーマン", AW: "未"
+        , stats: { def: "-10%" }
+        , type: "nekomata"
+        , note: [ "区分：猫又", "範囲" ]
+    }
+    , {
+        name: "天墜神星", rarity: "黒", cl: "シャーマン", AW: "覚醒"
+        , stats: { def: "-15%" }
+        , type: "nekomata"
+        , note: [ "区分：猫又", "範囲" ]
+    }
+    , {
         name: "猫又", cl: "猫又", AW: "未"
         , stats: { atk: "-10%", def: "-10%" }
         , type: "nekomata"
