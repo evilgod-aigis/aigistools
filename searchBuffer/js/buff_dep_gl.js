@@ -1077,7 +1077,7 @@ buff.dep_gl = [
         , target: { race: [ "獣人" ] }
     }
     , {
-        name: "アイギス像", rarity: "金", cl: "アイギス像"
+        name: "アイギス像", rarity: "金", cl: "女神像"
         , stats: { hp: "+3%", atk: "+3%" }
         , target: { cl: [ "王子" ] }
     }
@@ -1086,6 +1086,11 @@ buff.dep_gl = [
         , stats: { atk: "+15%", def: "+15%" }
         , target: { season: [ "学園" ] }
         , note: "無差別バフと合わせて+20%"
+    }
+    , {
+        name: "アダマス像", rarity: "金", cl: "女神像"
+        , stats: { atk: "+7%" }
+        , target: { home: [ "白の帝国" ] }
     }
     , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒"

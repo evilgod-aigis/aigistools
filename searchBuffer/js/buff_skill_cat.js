@@ -120,6 +120,12 @@ buff.skill_cat = [
         , target: { cl: [ "魔神", "ダークストーカー", "デモンサモナー" ] }
     }
     , {
+        name: "ちびマルゴット", rarity: "ちび", cl: "ソルジャー", skill: "通常"
+        , stats: { def: "×1.2" }
+        , target: { depType: [ "近接" ] }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "フリア", rarity: "黒", cl: "ワルキューレ", AW: "未", skill: "通常"
         , stats: { draw: "(○)", redep: "40秒" }
         , target: { race: [ "人間", "天使", "鳥人", "天界人"/*, "半神"*/ ] }
