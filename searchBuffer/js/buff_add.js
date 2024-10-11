@@ -247,7 +247,7 @@ buff.add = [
         , note: [ "範囲", "永続" ]
     }
     , {
-        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒", skill: "通常"
+        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { def: "20%" }
         , target: { home: [ "白の帝国" ] }
         , note: [ "範囲", "永続" ]

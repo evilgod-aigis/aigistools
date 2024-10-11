@@ -227,12 +227,12 @@ buff.skill_gl = [
         , note: [ "オート", "永続" ]
     }
     , {
-        name: "レオラ", rarity: "白", cl: "前衛戦術家", AW: "覚醒", skill: "通常"
+        name: "レオラ", rarity: "白", cl: "前衛戦術家", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { atk: "×1.15", def: "×1.15", other: "" }
         , note: [ "オート", "永続" ]
     }
     , {
-        name: "レオラ", rarity: "白", cl: "前衛戦術家", AW: "覚醒", skill: "覚醒"
+        name: "レオラ", rarity: "白", cl: "前衛戦術家", AW: "覚醒", skill: "覚醒(1)"
         , stats: { atk: "×1.25", def: "×1.25" }
     }
     , {
@@ -251,7 +251,7 @@ buff.skill_gl = [
         , note: [ "オート", "永続" ]
     }
     , {
-        name: "レオラ/水着", rarity: "白", cl: "前衛戦術家", AW: "覚醒", skill: "通常"
+        name: "レオラ/水着", rarity: "白", cl: "前衛戦術家", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { other: "" }
         , note: [ "オート", "永続" ]
     }
@@ -324,8 +324,18 @@ buff.skill_gl = [
         , stats: { rege: [ "80/秒", "40/15f" ] }
     }
     , {
-        name: "シロガネ", rarity: "白", cl: "鬼刃忍", AW: "覚醒", skill: "覚醒"
+        name: "シロガネ", rarity: "白", cl: "鬼刃忍", AW: "覚醒", skill: "通常"
         , stats: { rege: [ "80/秒", "40/15f" ] }
+    }
+    , {
+        name: "アイネ", rarity: "白", cl: "ランスマスター", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , note: [ "オート", "ボム" ]
+    }
+    , {
+        name: "アイネ", rarity: "白", cl: "ランスマスター", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
+        , stats: { other: "" }
+        , note: [ "オート", "ボム" ]
     }
     , {
         name: "デーモンロード", cl: "デーモンロード", AW: "未", skill: "通常"
@@ -422,7 +432,7 @@ buff.skill_gl = [
         , stats: { atk: "×1.2", def: "×1.2" }
     }
     , {
-        name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒", skill: "覚醒"
+        name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒", skill: "覚醒(1)"
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
@@ -602,7 +612,7 @@ buff.skill_gl = [
         , stats: { rege: [ "80/秒", "40/15f" ] }
     }
     , {
-        name: "アンリ/学園", rarity: "黒", cl: "エンチャンター", AW: "覚醒", skill: "通常"
+        name: "アンリ/学園", rarity: "黒", cl: "エンチャンター", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { rege: [ "80/秒", "40/15f" ] }
     }
     , {
@@ -636,7 +646,7 @@ buff.skill_gl = [
         , stats: { atk: "×1.4", def: "×1.3", mr: "×1.2" }
     }
     , {
-        name: "リズリー", rarity: "黒", cl: "道化師", AW: "覚醒", skill: "覚醒"
+        name: "リズリー", rarity: "黒", cl: "道化師", AW: "覚醒", skill: "覚醒(1)"
         , stats: { ct: "-60%" }
     }
     , {
@@ -968,7 +978,7 @@ buff.skill_gl = [
         , stats: { hp: "+30%" }
     }
     , {
-        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒", skill: "通常"
+        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { hp: "+30%" }
     }
     , {

@@ -31,6 +31,11 @@ buff.perm = [
         , note: "発動時"
     }
     , {
+        name: "アイネ", rarity: "白", cl: "ランスマスター", AW: "覚醒", skill: "覚醒(1)"
+        , stats: { def: "×1.02" }
+        , note: [ "ボム", "分類未確認" ]
+    }
+    , {
         name: "リアナ/浴衣", rarity: "黒", cl: "ヒーラー", AW: "未"
         , stats: { hp: "×1.05" }
         , note: [ "配置時", "分類未確認" ]

@@ -926,8 +926,8 @@ const unitList = [
     , { id: 0x038b, implDate: "2021/08/12", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "風伯", name: "クーコ/浴衣", fullName: "風雲の浴衣クーコ" }
     , { id: 0x038c, implDate: "2021/08/12", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "クロノウィッチ", name: "ココロ/浴衣", fullName: "お祭り夕涼みココロ" }
     , { id: 0x038d, implDate: "2021/08/12", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "rear", class: "アーチャー", name: "ベラ/浴衣", fullName: "晩夏の狩人ベラ" }
-    , { id: 0x038e, implDate: "2021/08/26", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "霊刀つくもがみ", name: "ユキザクラ", fullName: "呪刀付喪神ユキザクラ" }
-    , { id: 0x038f, implDate: "2021/08/26", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "霊刀つくもがみ", name: "フジムラサキ", fullName: "名刀付喪神フジムラサキ" }
+    , { id: 0x038e, implDate: "2021/08/26", implDate_bq: "2024/10/10", obtain: "sh", rarity: "b" , depType: "van" , class: "霊刀つくもがみ", name: "ユキザクラ", fullName: "呪刀付喪神ユキザクラ" }
+    , { id: 0x038f, implDate: "2021/08/26", implDate_bq: "2024/10/10", obtain: "sh", rarity: "b" , depType: "van" , class: "霊刀つくもがみ", name: "フジムラサキ", fullName: "名刀付喪神フジムラサキ" }
     , { id: 0x0390, implDate: "2021/09/02", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "雷公", name: "ちびレミィ", fullName: "ちびレミィ" }
     , { id: 0x0391, implDate: "2021/09/02", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "風伯", name: "ちびクーコ", fullName: "ちびクーコ" }
     , { id: 0x0392, implDate: "2021/09/09", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "霊刀つくもがみ", name: "カザキリ", fullName: "斬刀付喪神カザキリ" }
@@ -1424,6 +1424,11 @@ const unitList = [
     , { id: 0x0577, implDate: "2024/09/26", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "デモンサモナー", name: "ザミエル", fullName: "帝国悪魔召喚士ザミエル" }
     , { id: 0x0578, implDate: "2024/09/26", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "ライフリンカー", name: "ルスティ", fullName: "帝国命鎖使いルスティ" }
     , { id: 0x0579, implDate: "2024/09/26", implDate_bq: null        , obtain: "tr", rarity: "p" , depType: "rear", class: "ハデスシャーマン", name: "スイゼ", fullName: "冥庭園の巫女スイゼ" }
+    , { id: 0x057a, implDate: "2024/10/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "ソルジャー", name: "ちびマルゴット", fullName: "ちびマルゴット" }
+    , { id: 0x057b, implDate: "2024/10/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "神官戦士", name: "ちびルチア", fullName: "ちびルチア" }
+    , { id: 0x057c, implDate: "2024/10/10", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "吟遊詩人", name: "アミー", fullName: "妖魔の旋律アミー" }
+    , { id: 0x057d, implDate: "2024/10/10", implDate_bq: null        , obtain: "tr", rarity: "p" , depType: "van" , class: "ランスマスター", name: "アイネ", fullName: "戦火の槍士アイネ" }
+    , { id: 0x057e, implDate: "2024/10/10", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "忍者", name: "ちびヒエン", fullName: "ちびヒエン", male: 1 }
     
     
     
@@ -1442,7 +1447,7 @@ const unitList = [
     obtain
         sh  召喚
         ev  イベント
-        tr  交換/覚醒ちび/帝国大戦
+        tr  交換/覚醒ちび/帝国大戦/戦神コロシアム
         sp  配布/パック/シリアルコード
     
     rarity

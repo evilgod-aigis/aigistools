@@ -623,7 +623,7 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減", "属性不問-10%" ]
     }
     , {
-        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒", skill: "通常"
+        name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-10%" ]

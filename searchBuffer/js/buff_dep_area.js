@@ -32,6 +32,11 @@ buff.dep_area = [
         , target: { others: [ "ドラゴン" ] }
         , note: "ドラグーン系"
     }
+    , {
+        name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚2a"
+        , stats: { atkCd: "-40%" }
+        , target: { others: [ "魔界" ] }
+    }
 ];
 
 /*

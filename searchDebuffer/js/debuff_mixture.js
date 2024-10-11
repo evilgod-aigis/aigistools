@@ -655,7 +655,7 @@ debuff.mixture = [
         , note: "永続"
     }
     , {
-        name: "シルセス", rarity: "黒", cl: "メイジアーマー", AW: "覚醒", skill: "通常"
+        name: "シルセス", rarity: "黒", cl: "メイジアーマー", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: {
             mr: { value: "-20", type: "fixed" }
         }
@@ -663,7 +663,7 @@ debuff.mixture = [
         , note: "永続"
     }
     , {
-        name: "シルセス", rarity: "黒", cl: "メイジアーマー", AW: "覚醒", skill: "覚醒"
+        name: "シルセス", rarity: "黒", cl: "メイジアーマー", AW: "覚醒", skill: "覚醒(1)"
         , stats: {
             mr: { value: "-30", type: "fixed" }
         }
@@ -729,7 +729,7 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
-        name: "マーガレット/水着", rarity: "白", cl: "ボウライダー", AW: "覚醒", skill: "通常"
+        name: "マーガレット/水着", rarity: "白", cl: "ボウライダー", AW: "覚醒", skill: [ "通常", "覚醒(4～)" ]
         , stats: {
             def: { value: "-50%", type: "area" }
         }
@@ -746,7 +746,7 @@ debuff.mixture = [
         , note: [ "発動時", "ボム" ]
     }
     , {
-        name: "サンドラ/水着", rarity: "白", cl: "ソードマスター", AW: "覚醒", skill: "通常"
+        name: "サンドラ/水着", rarity: "白", cl: "ソードマスター", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: {
             stop: { value: "119f", type: "global" }
         }
@@ -1235,7 +1235,7 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
-        name: "ティルト", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒", skill: "通常"
+        name: "ティルト", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒", skill: [ "通常", "覚醒(3～)" ]
         , stats: {
             def: { value: "-30%", type: "area" }
         }
@@ -1567,7 +1567,7 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
-        name: "デューオ/浴衣", rarity: "黒", cl: "パイレーツ", AW: "覚醒", skill: "通常"
+        name: "デューオ/浴衣", rarity: "黒", cl: "パイレーツ", AW: "覚醒", skill: [ "通常", "覚醒(3～)" ]
         , stats: {
             def: { value: "-70%", type: "area" }
         }
@@ -1844,7 +1844,7 @@ debuff.mixture = [
         , note: [ "発動時", "ボム" ]
     }
     , {
-        name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒", skill: "通常"
+        name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: {
             stop: { value: "149f", type: "area" }
         }
@@ -1852,7 +1852,7 @@ debuff.mixture = [
         , note: [ "発動時", "ボム" ]
     }
     , {
-        name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒", skill: "覚醒"
+        name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒", skill: "覚醒(1)"
         , stats: {
             stop: { value: "209f", type: "area" }
         }
@@ -1927,7 +1927,7 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
-        name: "フウカ/お正月", rarity: "金", cl: "レンジャー", AW: "覚醒", skill: "通常"
+        name: "フウカ/お正月", rarity: "金", cl: "レンジャー", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: {
             mr: { value: "-10", type: "fixed" }
         }
@@ -2144,7 +2144,7 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
-        name: "アンリ/学園", rarity: "黒", cl: "エンチャンター", AW: "覚醒", skill: "通常"
+        name: "アンリ/学園", rarity: "黒", cl: "エンチャンター", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: {
             mr: { value: "-50%", type: "area" }
         }
@@ -2267,7 +2267,7 @@ debuff.mixture = [
         , note: "発動時"
     }
     , {
-        name: "ドルチェ/水着", rarity: "白", cl: "モンスタースレイヤー", AW: "覚醒", skill: "覚醒"
+        name: "ドルチェ/水着", rarity: "白", cl: "モンスタースレイヤー", AW: "覚醒", skill: "覚醒(1)"
         , stats: {
             stop: { value: "209f", type: "global" }
         }
@@ -2661,6 +2661,20 @@ debuff.mixture = [
         }
         , domain: "global"
         , note: "発動時"
+    }
+    , {
+        name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "未"
+        , stats: {
+            def: { value: "-15%", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚醒"
+        , stats: {
+            def: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
     }
     , {
         name: "ヤシマ", rarity: "黒", cl: "妖狸", AW: "未", skill: "通常"

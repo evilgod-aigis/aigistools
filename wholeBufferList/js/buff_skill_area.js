@@ -78,7 +78,7 @@ buff.skill_area = [
         , stats: { rege: [ "40/秒", "20/15f" ] }
     }
     , {
-        name: "マリレーヌ", rarity: "白", cl: "魔法剣士", AW: "覚醒", skill: "通常"
+        name: "マリレーヌ", rarity: "白", cl: "魔法剣士", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { rege: [ "40/秒", "20/15f" ] }
     }
     , {
@@ -298,7 +298,7 @@ buff.skill_area = [
         , note: "分類未確認"
     }
     , {
-        name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒", skill: "通常"
+        name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { atk: "×1.2" }
         , note: "分類未確認"
     }
@@ -470,11 +470,11 @@ buff.skill_area = [
         , stats: { eva: "50%" }
     }
     , {
-        name: "リンネ/花嫁", rarity: "黒", cl: "風水使い", AW: "覚醒", skill: "通常"
+        name: "リンネ/花嫁", rarity: "黒", cl: "風水使い", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { eva: "50%" }
     }
     , {
-        name: "リンネ/花嫁", rarity: "黒", cl: "風水使い", AW: "覚醒", skill: "覚醒"
+        name: "リンネ/花嫁", rarity: "黒", cl: "風水使い", AW: "覚醒", skill: "覚醒(1)"
         , stats: { eva: "100%" }
     }
     , {
@@ -582,7 +582,7 @@ buff.skill_area = [
         , note: "魔法化"
     }
     , {
-        name: "アンリ/学園", rarity: "黒", cl: "エンチャンター", AW: "覚醒", skill: "通常"
+        name: "アンリ/学園", rarity: "黒", cl: "エンチャンター", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { other: "" }
         , note: "魔法化"
     }
@@ -651,7 +651,7 @@ buff.skill_area = [
         , stats: { def: "×1.2" }
     }
     , {
-        name: "ディエーラ", rarity: "黒", cl: "マーチャント", AW: "覚醒", skill: "通常"
+        name: "ディエーラ", rarity: "黒", cl: "マーチャント", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { def: "×1.2" }
     }
     , {
@@ -729,12 +729,12 @@ buff.skill_area = [
         , note: "永続"
     }
     , {
-        name: "リズリー", rarity: "黒", cl: "道化師", AW: "覚醒", skill: "通常"
+        name: "リズリー", rarity: "黒", cl: "道化師", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { ct: "-50%", eva: "50%" }
         , note: "永続"
     }
     , {
-        name: "リズリー", rarity: "黒", cl: "道化師", AW: "覚醒", skill: "覚醒"
+        name: "リズリー", rarity: "黒", cl: "道化師", AW: "覚醒", skill: "覚醒(1)"
         , stats: { eva: "50%" }
     }
     , {
@@ -956,6 +956,19 @@ buff.skill_area = [
         , stats: { atk: "×1.2", def: "×1.2" }
     }
     , {
+        name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "未", skill: "通常"
+        , stats: { rege: [ "70/秒", "?/?f" ] }
+    }
+    , {
+        name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
+        , stats: { rege: [ "70/秒", "?/?f" ] }
+    }
+    , {
+        name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
+        , stats: { hp: "+30%" }
+        , note: "永続"
+    }
+    , {
         name: "戦場に集う聖霊たち", rarity: "黒", cl: "支援の聖霊", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3", rege: [ "100/秒", "50/15f" ] }
     }
@@ -1046,7 +1059,7 @@ buff.skill_area = [
         , note: "ボム"
     }
     , {
-        name: "エリザベス", rarity: "黒", cl: "王女【七つの大罪】", AW: "覚醒", skill: "通常"
+        name: "エリザベス", rarity: "黒", cl: "王女【七つの大罪】", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { abn: "-100%" }
         , note: "ボム"
     }
@@ -1073,7 +1086,7 @@ buff.skill_area = [
         , note: [ "リーフ/バニー", "タラニア/バニー", "ニーヴ/バニー", "永続" ]
     }
     , {
-        name: "マジックエッグ", rarity: "トークン", AW: "覚醒"
+        name: "マジックエッグ", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , note: [ "リーザ/バニー", "イルマ/バニー", "エレオノーラ/バニー", "魔法化" ]
     }

@@ -16,6 +16,29 @@ buff.unique = [
        , note: [ "区分：ダモクレスの剣", "終了時、対象のHP-50%" ]
     }
     
+    // 吟遊詩人
+    , {
+        name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "未"
+        , stats: { atk: "×1.15", def: "×1.15" }
+        , target: { others: [ "魔界" ] }
+        , type: "bard"
+        , note: [ "区分：吟遊詩人", "範囲", "最大値(倍率+0.02/4秒)" ]
+    }
+    , {
+        name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚醒"
+        , stats: { atk: "×1.25", def: "×1.25" }
+        , target: { others: [ "魔界" ] }
+        , type: "bard"
+        , note: [ "区分：吟遊詩人", "範囲", "最大値(倍率+0.02/3秒)" ]
+    }
+    , {
+        name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: { others: [ "魔界" ] }
+        , type: "bard"
+        , note: [ "区分：吟遊詩人", "範囲", "最大値(倍率+0.02/3秒)", "永続" ]
+    }
+    
     // 死亡時
     , {
         name: "レライエ", rarity: "白", cl: "デモンシャーマン", AW: "覚醒"

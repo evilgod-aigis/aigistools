@@ -613,6 +613,12 @@ lists.buff.haste.list = [
         "
     }
     , {
+        id: null, buffer: "妖魔の旋律アミー", awaken: "覚2a", showAwaken: true
+        , value: 40, disabled: null, req: "deploy"
+        , target: [ { attribution: [ "魔界" ] } ]
+        , tooltip: "[範囲] 属性：魔界の攻撃硬直-40%"
+    }
+    , {
         id: null, buffer: "孫策 伯符", awaken: "-"
         , value: 20, disabled: null, req: "team"
         , compound: { rWT: [ { buffer: "風雲児【恋姫】" } ] }

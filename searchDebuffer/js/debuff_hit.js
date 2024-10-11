@@ -96,7 +96,7 @@ debuff.hit = [
         , atkAttr: "物理", dur: "9f"
     }
     , {
-        name: "チヨメ", rarity: "黒", cl: "忍者", AW: "覚醒", skill: "通常"
+        name: "チヨメ", rarity: "黒", cl: "忍者", AW: "覚醒", skill: [ "通常", "覚醒(4～)" ]
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "9f"
     }
@@ -448,7 +448,7 @@ debuff.hit = [
         , note: [ "サベージファイター系", "分類未確認" ]
     }
     , {
-        name: "ティルト", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒", skill: "覚醒"
+        name: "ティルト", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒", skill: "覚醒(～2)"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "119f"
     }
@@ -565,7 +565,7 @@ debuff.hit = [
         , note: [ "永続", "分類未確認" ]
     }
     , {
-        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒", skill: "通常"
+        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { atkCd: "+30f" }
         , atkAttr: "物理", dur: "?f"
         , note: [ "永続", "分類未確認" ]
@@ -667,7 +667,7 @@ debuff.hit = [
         , note: "ボム"
     }
     , {
-        name: "ポミエ/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒", skill: "通常"
+        name: "ポミエ/バレンタイン", rarity: "白", cl: "アーチャー", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "59f"
         , note: "ボム"
@@ -830,13 +830,13 @@ debuff.hit = [
         , note: "ボム"
     }
     , {
-        name: "ココロ", rarity: "白", cl: "クロノウィッチ", AW: "覚醒", skill: "通常"
+        name: "ココロ", rarity: "白", cl: "クロノウィッチ", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "129f"
         , note: "ボム"
     }
     , {
-        name: "ココロ", rarity: "白", cl: "クロノウィッチ", AW: "覚醒", skill: "覚醒"
+        name: "ココロ", rarity: "白", cl: "クロノウィッチ", AW: "覚醒", skill: "覚醒(1)"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "129f"
         , note: "ボム"
@@ -884,13 +884,13 @@ debuff.hit = [
         , note: "ボム"
     }
     , {
-        name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒", skill: "通常"
+        name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { def: "-50%" }
         , atkAttr: "魔法", dur: "149f"
         , note: "ボム"
     }
     , {
-        name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒", skill: "覚醒"
+        name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "覚醒", skill: "覚醒(1)"
         , stats: { def: "-80%" }
         , atkAttr: "魔法", dur: "209f"
         , note: "ボム"
@@ -935,13 +935,13 @@ debuff.hit = [
         , note: "ボム"
     }
     , {
-        name: "アニータ", rarity: "白", cl: "シーフ", AW: "覚醒", skill: "通常"
+        name: "アニータ", rarity: "白", cl: "シーフ", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "129f"
         , note: "ボム"
     }
     , {
-        name: "アニータ", rarity: "白", cl: "シーフ", AW: "覚醒", skill: "覚醒"
+        name: "アニータ", rarity: "白", cl: "シーフ", AW: "覚醒", skill: "覚醒(1)"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "225f?"
         , note: "ボム"
@@ -982,7 +982,7 @@ debuff.hit = [
         , atkAttr: "物理", dur: "19f"
     }
     , {
-        name: "ドルチェ/水着", rarity: "白", cl: "モンスタースレイヤー", AW: "覚醒", skill: "通常"
+        name: "ドルチェ/水着", rarity: "白", cl: "モンスタースレイヤー", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "19f"
     }

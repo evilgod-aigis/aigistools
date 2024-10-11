@@ -236,7 +236,7 @@ buff.skill_cat = [
         , target: { cl: [ "王子" ] }
     }
     , {
-        name: "ヒバリ/バレンタイン", rarity: "黒", cl: "サムライ", AW: "覚醒", skill: "通常"
+        name: "ヒバリ/バレンタイン", rarity: "黒", cl: "サムライ", AW: "覚醒", skill: [ "通常", "覚醒(4～)" ]
         , stats: { atk: "×1.1", def: "×1.1" }
         , target: { cl: [ "王子" ] }
     }
@@ -305,7 +305,7 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
-        name: "レオラ/水着", rarity: "白", cl: "前衛戦術家", AW: "覚醒", skill: "通常"
+        name: "レオラ/水着", rarity: "白", cl: "前衛戦術家", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { atk: "×1.2" }
         , target: [
             { home: [ "白の帝国" ] }
@@ -314,7 +314,7 @@ buff.skill_cat = [
         , note: "永続"
     }
     , {
-        name: "レオラ/水着", rarity: "白", cl: "前衛戦術家", AW: "覚醒", skill: "覚醒"
+        name: "レオラ/水着", rarity: "白", cl: "前衛戦術家", AW: "覚醒", skill: "覚醒(1)"
         , stats: { atk: "×1.3" }
         , target: [
             { home: [ "白の帝国" ] }
@@ -1208,7 +1208,7 @@ buff.skill_cat = [
         , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
     }
     , {
-        name: "イルムガルト", rarity: "白", cl: "デーモンロード", AW: "覚醒", skill: "通常"
+        name: "イルムガルト", rarity: "白", cl: "デーモンロード", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { atk: "×1.6", mr: "+15" }
         , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
     }
@@ -1247,7 +1247,7 @@ buff.skill_cat = [
         , target: { others: [ "魔術師" ] }
     }
     , {
-        name: "タオパオ", rarity: "白", cl: "料理人", AW: "覚醒", skill: "通常"
+        name: "タオパオ", rarity: "白", cl: "料理人", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { atk: "×1.3" }
         , target: { others: [ "魔術師" ] }
     }
@@ -1654,7 +1654,7 @@ buff.skill_cat = [
         , target: { cl: [ "王子" ] }
     }
     , {
-        name: "クロリス/私服", rarity: "白", cl: "ウィッチ", AW: "覚醒", skill: "通常"
+        name: "クロリス/私服", rarity: "白", cl: "ウィッチ", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: { cl: [ "王子" ] }
     }
@@ -1788,19 +1788,19 @@ buff.skill_cat = [
         , note: "範囲"
     }
     , {
-        name: "ナターリエ/水着", rarity: "白", cl: "ダンサー", AW: "覚醒", skill: "通常"
+        name: "ナターリエ/水着", rarity: "白", cl: "ダンサー", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { def: "×1.2" }
         , target: { home: [ "白の帝国" ] }
         , note: "範囲"
     }
     , {
-        name: "ナターリエ/水着", rarity: "白", cl: "ダンサー", AW: "覚醒", skill: "通常"
+        name: "ナターリエ/水着", rarity: "白", cl: "ダンサー", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { atk: "×1.2" }
         , target: { season: [ "サマー" ] }
         , note: "範囲"
     }
     , {
-        name: "ナターリエ/水着", rarity: "白", cl: "ダンサー", AW: "覚醒", skill: "覚醒"
+        name: "ナターリエ/水着", rarity: "白", cl: "ダンサー", AW: "覚醒", skill: "覚醒(1)"
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: [
             { home: [ "白の帝国" ] }

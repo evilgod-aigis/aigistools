@@ -61,7 +61,7 @@ buff.add = [
         , note: [ "範囲", "永続" ]
     }
     , {
-        name: "ディアナ/水着", rarity: "黒", cl: "インペリアルナイト", AW: "覚醒", skill: "通常"
+        name: "ディアナ/水着", rarity: "黒", cl: "インペリアルナイト", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { atk: "12%" }
         , note: [ "範囲", "永続" ]
     }
@@ -301,12 +301,12 @@ buff.add = [
         , note: "範囲"
     }
     , {
-        name: "ナターリエ/水着", rarity: "白", cl: "ダンサー", AW: "覚醒", skill: "通常"
+        name: "ナターリエ/水着", rarity: "白", cl: "ダンサー", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { atk: "*10", def: "*10" }
         , note: "範囲"
     }
     , {
-        name: "ナターリエ/水着", rarity: "白", cl: "ダンサー", AW: "覚醒", skill: "覚醒"
+        name: "ナターリエ/水着", rarity: "白", cl: "ダンサー", AW: "覚醒", skill: "覚醒(1)"
         , stats: { atk: "*10", def: "*10" }
         , note: "範囲"
     }
