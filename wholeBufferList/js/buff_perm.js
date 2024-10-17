@@ -33,7 +33,7 @@ buff.perm = [
     , {
         name: "アイネ", rarity: "白", cl: "ランスマスター", AW: "覚醒", skill: "覚醒(1)"
         , stats: { def: "×1.02" }
-        , note: [ "ボム", "分類未確認" ]
+        , note: "ボム"
     }
     , {
         name: "リアナ/浴衣", rarity: "黒", cl: "ヒーラー", AW: "未"

@@ -961,7 +961,7 @@ buff.skill_area = [
     }
     , {
         name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
-        , stats: { rege: [ "70/秒", "?/?f" ] }
+        , stats: { rege: [ "70/秒", "35/15f" ] }
     }
     , {
         name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"

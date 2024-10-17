@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2024/10/17(木)"
+        , detail: [
+            "調整を反映"
+        ]
+    }
+    , {
         date: "2024/10/10(木)"
         , detail: [
             "アミー、アイネを追加"

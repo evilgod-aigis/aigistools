@@ -2447,12 +2447,12 @@ buff.team = [
     }
     , {
         name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "未"
-        , stats: { atk: "+7%", cost: "-3" }
+        , stats: { atk: "+7%", cost: "-?" }
         , target: { cl: [ "王子" ] }
     }
     , {
         name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒"
-        , stats: { atk: "+10%", cost: "-5" }
+        , stats: { atk: "+10%", cost: "-8" }
         , target: { cl: [ "王子" ] }
     }
     , {
