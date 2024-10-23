@@ -253,6 +253,16 @@ buff.add = [
         , note: [ "範囲", "永続" ]
     }
     , {
+        name: "王城", rarity: "黒", cl: "王城", AW: "未"
+        , stats: { hp: "max900", def: "max450" }
+        , target: { home: [ "王国" ] }
+    }
+    , {
+        name: "王城", rarity: "黒", cl: "王城", AW: "覚醒"
+        , stats: { hp: "max1200", def: "max600" }
+        , target: { home: [ "王国" ] }
+    }
+    , {
         name: "王国民的アイドル", cl: "王国民的アイドル", AW: "覚1"
         , stats: { atk: "4%", def: "4%" }
         , target: { sex: [ "女性" ] }

@@ -281,6 +281,46 @@ lists.units.onSkillAct.list = [
     , {
         id: null, hidden: false
         , unitInfo: {
+            unitName: "悪戯な黒猫コハル", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "猫又系" }
+            , attribution: [ "東の国", "妖怪", "ハロウィン" ]
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: [ "女性" ]
+        }
+        , skill: {
+            selected: "覚醒"
+            , detail: {
+                "覚醒": [
+                    {
+                        target: "全敵"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 40, dur: 30, HPred: 16 }
+                        , next: 1
+                    }
+                    , {
+                        target: "全敵"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 40, dur: 30, HPred: 20 }
+                        , next: 2
+                    }
+                    , {
+                        target: "全敵"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 40, dur: 30, HPred: 24 }
+                        , next: 3
+                    }
+                    , {
+                        corr: { WT: null, CT: null, dur: null }
+                        , uncorr: { CT: Infinity, dur: Infinity }
+                        , next: 3
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
             unitName: "闇の墓守リッチ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "リッチ【闇の軍勢】系" }
             , attribution: [ "アンデッド", "魔術師" ]

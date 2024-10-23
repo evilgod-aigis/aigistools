@@ -1057,6 +1057,11 @@ buff.dep_gl = [
         , target: { home: [ "東の国" ] }
     }
     , {
+        name: "王城", rarity: "黒", cl: "王城", AW: "覚醒"
+        , stats: { draw: "○" }
+        , target: { home: [ "王国" ] }
+    }
+    , {
         name: "王国民的アイドル", cl: "王国民的アイドル", AW: "覚1"
         , stats: { cost: "+3" }
         , target: { sex: [ "男性" ] }

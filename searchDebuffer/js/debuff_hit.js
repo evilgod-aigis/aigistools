@@ -461,7 +461,7 @@ debuff.hit = [
     , {
         name: "ティルト/水着", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒"
         , stats: { stop: "○" }
-        , atkAttr: "物理", dur: "?f"
+        , atkAttr: "物理", dur: "149f"
         , note: "配置時"
     }
     , {
@@ -1344,6 +1344,18 @@ debuff.hit = [
         , stats: { atk: "-40%" }
         , atkAttr: "物理", dur: "?f"
         , note: "分類未確認"
+    }
+    , {
+        name: "鉄腕娘【モンスター娘TD】", cl: "鉄腕娘【モンスター娘TD】", AW: "未"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "配置時"
+    }
+    , {
+        name: "超鉄腕娘【モンスター娘TD】", cl: "鉄腕娘【モンスター娘TD】", AW: "覚1"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "149f"
+        , note: [ "鉄腕娘【モンスター娘TD】系", "配置時" ]
     }
     , {
         name: "井河アサギ", rarity: "黒", cl: "対魔忍 超人【対魔忍】", AW: "覚醒", skill: "覚醒"

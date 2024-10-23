@@ -1429,6 +1429,9 @@ const unitList = [
     , { id: 0x057c, implDate: "2024/10/10", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "吟遊詩人", name: "アミー", fullName: "妖魔の旋律アミー" }
     , { id: 0x057d, implDate: "2024/10/10", implDate_bq: null        , obtain: "tr", rarity: "p" , depType: "van" , class: "ランスマスター", name: "アイネ", fullName: "戦火の槍士アイネ" }
     , { id: 0x057e, implDate: "2024/10/10", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "忍者", name: "ちびヒエン", fullName: "ちびヒエン", male: 1 }
+    , { id: 0x057f, implDate: "2024/10/23", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "王城", name: "王城", fullName: "王城", collabo: 1 }
+    , { id: 0x0580, implDate: "2024/10/23", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "鉄腕娘【モンスター娘TD】", name: "アイレン", fullName: "アイアンゴーレム娘アイレン", collabo: 1 }
+    , { id: 0x0581, implDate: "2024/10/23", implDate_bq: null        , obtain: "sp", rarity: "b" , depType: "rear", class: "猫又", name: "コハル/ハロウィン", fullName: "悪戯な黒猫コハル" }
     
     
     

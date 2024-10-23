@@ -719,6 +719,7 @@ debuff.mixture = [
         }
         , domain: "global"
         , target: { attr: [ "妖怪", "デーモン" ] }
+        , note: "発動時"
     }
     , {
         name: "マーガレット/水着", rarity: "白", cl: "ボウライダー", AW: "未", skill: "通常"
@@ -2349,6 +2350,38 @@ debuff.mixture = [
             , def: { value: "*2.0", type: "area" }
         }
         , domain: "area"
+    }
+    , {
+        name: "コハル/ハロウィン", rarity: "黒", cl: "猫又", AW: "未", skill: "通常"
+        , stats: {
+            atk: { value: "*2.0", type: "noAttr" }
+            , def: { value: "*2.0", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "コハル/ハロウィン", rarity: "黒", cl: "猫又", AW: "覚醒", skill: [ "通常", "覚醒(4～)" ]
+        , stats: {
+            atk: { value: "*2.0", type: "noAttr" }
+            , def: { value: "*2.0", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "コハル/ハロウィン", rarity: "黒", cl: "猫又", AW: "覚醒", skill: "覚醒(～3)"
+        , stats: {
+            atk: { value: "*2.0", type: "noAttr" }
+            , def: { value: "*2.0", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "コハル/ハロウィン", rarity: "黒", cl: "猫又", AW: "覚醒", skill: "覚醒(～3)"
+        , stats: {
+            stop: { value: "89f", type: "area" }
+        }
+        , domain: "area"
+        , note: "発動時"
     }
     , {
         name: "ちびコハル", rarity: "ちび", cl: "猫又", skill: "通常"

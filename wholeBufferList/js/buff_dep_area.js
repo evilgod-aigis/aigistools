@@ -48,6 +48,11 @@ buff.dep_area = [
         , note: "ロード系"
     }
     , {
+        name: "神威狛犬", cl: "狛犬", AW: "覚2a"
+        , stats: { other: "" }
+        , note: [ "狛犬系", "HP回復量×1.2" ]
+    }
+    , {
         name: "時の俯瞰者", cl: "時の俯瞰者", AW: "未"
         , stats: { mr: "×1.1" }
     }

@@ -213,7 +213,7 @@ table.CreateFilter = () => {
     newTitle.className = "filter-title tooltip-ts";
     newTitle.setAttribute(
         "data-tippy-content"
-        , "チェックしたバフを持つユニットがすべて表示される"
+        , "チェックしたデバフを持つユニットがすべて表示される"
     );
     newTitle.innerHTML = "種類";
     newTitleArea.appendChild(newTitle);

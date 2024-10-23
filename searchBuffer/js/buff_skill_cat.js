@@ -1529,6 +1529,16 @@ buff.skill_cat = [
         , target: { race: [ "人間", "半神" ] }
     }
     , {
+        name: "王城", rarity: "黒", cl: "王城", AW: "未", skill: "通常"
+        , stats: { atk: "×1.4", def: "×1.4" }
+        , target: { home: [ "王国" ] }
+    }
+    , {
+        name: "王城", rarity: "黒", cl: "王城", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
+        , stats: { atk: "×1.4", def: "×1.4" }
+        , target: { home: [ "王国" ] }
+    }
+    , {
         name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.15", def: "×1.15", other: "" }
         , target: { sex: [ "女性" ] }
@@ -2023,6 +2033,22 @@ buff.skill_cat = [
         name: "ミネット/学園", rarity: "白", cl: "マーチャント", AW: "覚醒", skill: "通常"
         , stats: { cost: "×0.5" }
         , target: { season: [ "学園" ] }
+    }
+    , {
+        name: "コハル/ハロウィン", rarity: "黒", cl: "猫又", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: [
+            { race: [ "妖怪" ] }
+            , { season: [ "ハロウィン" ] }
+        ]
+    }
+    , {
+        name: "コハル/ハロウィン", rarity: "黒", cl: "猫又", AW: "覚醒", skill: [ "通常", "覚醒(4～)" ]
+        , stats: { atk: "×1.3" }
+        , target: [
+            { race: [ "妖怪" ] }
+            , { season: [ "ハロウィン" ] }
+        ]
     }
     , {
         name: "ツキコ", rarity: "黒", cl: "幻獣使い", AW: "未", skill: "通常"
