@@ -2786,6 +2786,22 @@ debuff.mixture = [
         , note: "永続"
     }
     , {
+        name: "ヘルメルク", rarity: "黒", cl: "スカウト", AW: "未", skill: "通常"
+        , stats: {
+            def: { value: "*1.6", type: "area" }
+        }
+        , domain: "area"
+        , note: "クラス特性強化"
+    }
+    , {
+        name: "ヘルメルク", rarity: "黒", cl: "スカウト", AW: "覚醒", skill: "通常"
+        , stats: {
+            def: { value: "*1.6", type: "area" }
+        }
+        , domain: "area"
+        , note: "クラス特性強化"
+    }
+    , {
         name: "カーナ", rarity: "白", cl: "スカウト", AW: "覚醒", skill: "覚醒"
         , stats: {
             stop: { value: "119f", type: "area" }
@@ -3256,6 +3272,24 @@ debuff.mixture = [
         }
         , domain: "area"
         , note: [ "フィリアトリウィア", "(ハデスシャーマン系)", "永続" ]
+    }
+    , {
+        name: "自由人(幻影)", rarity: "トークン", AW: "未"
+        , stats: {
+            def: { value: "-40%", type: "area" }
+            , mr: { value: "-40%", type: "clAttr" }
+        }
+        , domain: "area"
+        , note: [ "ヘルメルク", "分類未確認" ]
+    }
+    , {
+        name: "自由人(幻影)", rarity: "トークン", AW: "覚醒"
+        , stats: {
+            def: { value: "-50%", type: "area" }
+            , mr: { value: "-50%", type: "clAttr" }
+        }
+        , domain: "area"
+        , note: [ "ヘルメルク", "分類未確認" ]
     }
 ];
 
