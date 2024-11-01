@@ -655,6 +655,12 @@ debuff.hit = [
         , note: "死亡時"
     }
     , {
+        name: "トリックオアトリート", rarity: "金", cl: "ハロウィン会場"
+        , stats: { atk: "-25%", def: "25%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "ソーマ/新装", rarity: "黒", cl: "アーチャー", AW: "覚醒", skill: "覚醒"
         , stats: { def: "-50%" }
         , atkAttr: "物理", dur: "?f"

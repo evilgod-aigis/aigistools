@@ -1433,6 +1433,8 @@ const unitList = [
     , { id: 0x0580, implDate: "2024/10/23", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "鉄腕娘【モンスター娘TD】", name: "アイレン", fullName: "アイアンゴーレム娘アイレン", collabo: 1 }
     , { id: 0x0581, implDate: "2024/10/23", implDate_bq: null        , obtain: "sp", rarity: "b" , depType: "rear", class: "猫又", name: "コハル/ハロウィン", fullName: "悪戯な黒猫コハル" }
     , { id: 0x0582, implDate: "2024/10/30", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "both", class: "スカウト", name: "ヘルメルク", fullName: "亜神の伝書士ヘルメルク" }
+    , { id: 0x0583, implDate: "2024/11/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "砲術士", name: "ちびカノン", fullName: "ちびカノン" }
+    , { id: 0x0584, implDate: "2024/11/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ドラグーン", name: "ちびイーファ", fullName: "ちびイーファ" }
     
     
     

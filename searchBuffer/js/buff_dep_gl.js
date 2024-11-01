@@ -1098,6 +1098,11 @@ buff.dep_gl = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
+        name: "トリックオアトリート", rarity: "金", cl: "ハロウィン会場"
+        , stats: { atk: "+10%", def: "+10%" }
+        , note: "無差別バフと合わせて+15%"
+    }
+    , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒"
         , stats: { def: "+10%" }
         , target: { season: [ "温泉" ] }

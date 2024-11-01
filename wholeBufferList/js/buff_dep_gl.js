@@ -354,6 +354,10 @@ buff.dep_gl = [
         , stats: { atk: "+5%", def: "+5%", rege: [ "40/秒", "?/?f" ] }
     }
     , {
+        name: "トリックオアトリート", rarity: "金", cl: "ハロウィン会場"
+        , stats: { atk: "+5%", def: "+5%" }
+    }
+    , {
         name: "ヴェロッテ/ハロウィン", rarity: "金", cl: "パイレーツ", AW: "覚醒"
         , stats: { def: "+5%", mr: "+5", cost: "+1" }
     }
