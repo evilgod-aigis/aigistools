@@ -61,13 +61,13 @@ buff.unique = [
     }
     , {
         name: "王国の学び舎", cl: "王国の学び舎"
-        , stats: { hp: "×1.3", atk: "×1.3", other: "" }
+        , stats: { hp: "×1.3", atk: "×1.3" }
         , type: "spot_over"
         , note: [ "区分：マス上書き", "近→近", "分類未確認" ]
     }
     , {
         name: "ハロウィン会場", cl: "ハロウィン会場"
-        , stats: { hp: "×1.3", atk: "×1.3", other: "" }
+        , stats: { hp: "×1.3", atk: "×1.3" }
         , type: "spot_over"
         , note: [ "区分：マス上書き", "近→近", "分類未確認" ]
     }
@@ -85,13 +85,13 @@ buff.unique = [
     }
     , {
         name: "デッドマン号", rarity: "トークン"
-        , stats: { atk: "×1.25", def: "×1.25", other: "" }
+        , stats: { atk: "×1.25", def: "×1.25" }
         , type: "spot_over"
         , note: [ "イヴリール[黒]", "区分：マス上書き", "深海-100%", "両→両", "分類未確認" ]
     }
     , {
         name: "デッドマン号", rarity: "トークン"
-        , stats: { atk: "×0.8", def: "×0.8" }
+        , stats: { atk: "×0.8", def: "×0.8", other: "" }
         , type: "spot_over"
         , note: [ "イヴリール[白]", "区分：マス上書き", "近→遠", "分類未確認" ]
     }
@@ -609,6 +609,18 @@ buff.unique = [
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-30%" ]
+    }
+    , {
+        name: "ニーカ", rarity: "白", cl: "メディック", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "物理・魔法-20%(範囲)", "分類未確認" ]
+    }
+    , {
+        name: "ニーカ", rarity: "白", cl: "メディック", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "物理・魔法-20%(範囲)", "分類未確認" ]
     }
     , {
         name: "魔想志津香", rarity: "黒", cl: "魔法使い【ランス】", AW: "未", skill: "通常"

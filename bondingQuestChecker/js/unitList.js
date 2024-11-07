@@ -1435,6 +1435,7 @@ const unitList = [
     , { id: 0x0582, implDate: "2024/10/30", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "both", class: "スカウト", name: "ヘルメルク", fullName: "亜神の伝書士ヘルメルク" }
     , { id: 0x0583, implDate: "2024/11/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "砲術士", name: "ちびカノン", fullName: "ちびカノン" }
     , { id: 0x0584, implDate: "2024/11/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ドラグーン", name: "ちびイーファ", fullName: "ちびイーファ" }
+    , { id: 0x0585, implDate: "2024/11/07", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "メディック", name: "ニーカ", fullName: "新任医官ニーカ" }
     
     
     

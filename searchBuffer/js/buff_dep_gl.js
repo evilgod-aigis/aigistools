@@ -1430,6 +1430,16 @@ buff.dep_gl = [
         , target: { race: [ "冥界人" ] }
     }
     , {
+        name: "ニーカ", rarity: "白", cl: "メディック", AW: "未"
+        , stats: { atk: "+5%" }
+        , target: { home: [ "王国" ] }
+    }
+    , {
+        name: "ニーカ", rarity: "白", cl: "メディック", AW: "覚醒"
+        , stats: { atk: "+7%" }
+        , target: { home: [ "王国" ] }
+    }
+    , {
         name: "ゴブリン博士", cl: "ゴブリン博士"
         , stats: { hp: "+10%", atk: "+10%" }
         , target: [
