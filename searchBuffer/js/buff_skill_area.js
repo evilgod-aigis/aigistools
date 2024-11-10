@@ -113,6 +113,16 @@ buff.skill_area = [
         , stats: { range: "×1.1" }
         , target: { depType: [ "遠距離" ] }
     }
+    , {
+        name: "ニーカ", rarity: "白", cl: "メディック", AW: "覚醒", skill: "覚醒(～2)"
+        , stats: { atk: "×1.2" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "ニーカ", rarity: "白", cl: "メディック", AW: "覚醒", skill: "覚醒(3～)"
+        , stats: { atk: "×1.3" }
+        , target: { depType: [ "近接" ] }
+    }
 ];
 
 /*

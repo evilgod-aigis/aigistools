@@ -3280,7 +3280,7 @@ debuff.mixture = [
             , mr: { value: "-40%", type: "clAttr" }
         }
         , domain: "area"
-        , note: [ "ヘルメルク", "分類未確認" ]
+        , note: "ヘルメルク"
     }
     , {
         name: "自由人(幻影)", rarity: "トークン", AW: "覚醒"
@@ -3289,7 +3289,7 @@ debuff.mixture = [
             , mr: { value: "-50%", type: "clAttr" }
         }
         , domain: "area"
-        , note: [ "ヘルメルク", "分類未確認" ]
+        , note: "ヘルメルク"
     }
 ];
 
