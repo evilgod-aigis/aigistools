@@ -174,7 +174,7 @@ debuff.mixture = [
         , note: [ "永続", "分類未確認" ]
     }
     , {
-        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラ", AW: "覚醒", skill: "覚醒"
+        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラー", AW: "覚醒", skill: "覚醒"
         , stats: {
             def: { value: "-30%", type: "global" }
             , mr: { value: "-30%", type: "global" }
@@ -182,14 +182,14 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
-        name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒", skill: "通常"
+        name: "モルフェサ", rarity: "白", cl: "カースウィスパラー", AW: "覚醒", skill: "通常"
         , stats: {
             mr: { value: "-50%", type: "area" }
         }
         , domain: "area"
     }
     , {
-        name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒", skill: "覚醒"
+        name: "モルフェサ", rarity: "白", cl: "カースウィスパラー", AW: "覚醒", skill: "覚醒"
         , stats: {
             atk: { value: "-20%", type: "noAttr" }
         }
@@ -1788,6 +1788,15 @@ debuff.mixture = [
             def: { value: "-30%", type: "area" }
         }
         , domain: "area"
+    }
+    , {
+        name: "シャルキー/新装", rarity: "黒", cl: "ダンサー", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            def: { value: "-20%", type: "global" }
+            , mr: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+        , note: [ "永続", "分類未確認" ]
     }
     , {
         name: "ブレリア", rarity: "金", cl: "ダンサー", AW: "覚醒", skill: "覚醒"

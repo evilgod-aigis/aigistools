@@ -206,6 +206,21 @@ buff.add = [
         , note: "範囲"
     }
     , {
+        name: "シャルキー/新装", rarity: "黒", cl: "ダンサー", AW: "未", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , note: "範囲"
+    }
+    , {
+        name: "シャルキー/新装", rarity: "黒", cl: "ダンサー", AW: "覚醒", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , note: "範囲"
+    }
+    , {
+        name: "シャルキー/新装", rarity: "黒", cl: "ダンサー", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "*10", def: "*5" }
+        , note: [ "範囲", "永続" ]
+    }
+    , {
         name: "マーニー", rarity: "白", cl: "ダンサー", AW: "未", skill: "通常"
         , stats: { atk: "*10", def: "*10" }
         , note: "範囲"

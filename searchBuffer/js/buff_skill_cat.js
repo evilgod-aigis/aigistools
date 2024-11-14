@@ -1361,6 +1361,34 @@ buff.skill_cat = [
         , target: { others: [ "深海" ] }
     }
     , {
+        name: "マージ", rarity: "黒", cl: "テンプルナイト", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: [
+            { cl: [ "テンプルナイト" ] }
+            , { others: [ "重装" ] }
+        ]
+    }
+    , {
+        name: "マージ", rarity: "黒", cl: "テンプルナイト", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: [
+            { cl: [ "テンプルナイト" ] }
+            , { others: [ "重装" ] }
+        ]
+    }
+    , {
+        name: "パルセ", rarity: "白", cl: "オートマタ", AW: "覚醒", skill: "覚醒(1)"
+        , stats: { atk: "×1.2" }
+        , target: { others: [ "機械" ] }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
+        name: "パルセ", rarity: "白", cl: "オートマタ", AW: "覚醒", skill: "覚醒(2～)"
+        , stats: { atk: "×1.3" }
+        , target: { others: [ "機械" ] }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
         name: "カゴメ", rarity: "黒", cl: "ぬりかべ", AW: "未", skill: "通常"
         , stats: { atk: "×1.5" }
         , target: { race: [ "妖怪" ] }

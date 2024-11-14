@@ -30,7 +30,7 @@ const unitList = [
     , { id: 0x001b, implDate: "2013/11/26", implDate_bq: null        , obtain: "sh", rarity: "g" , depType: "rear", class: "メイジ", name: "バルバストラフ", fullName: "賢者バルバストラフ", male: 1 }
     , { id: 0x001c, implDate: "2013/11/26", implDate_bq: null        , obtain: "sh", rarity: "g" , depType: "rear", class: "メイジ", name: "サイラス", fullName: "黒衣のサイラス", male: 1 }
     , { id: 0x001d, implDate: "2013/11/26", implDate_bq: "2016/05/12", obtain: "sh", rarity: "g" , depType: "rear", class: "ヒーラー", name: "イーリス", fullName: "癒し手イーリス" }
-    , { id: 0x001e, implDate: "2013/11/26", implDate_bq: null        , obtain: "sh", rarity: "g" , depType: "rear", class: "ヒーラー", name: "フェドラ", fullName: "狂聖女フェドラ" }
+    , { id: 0x001e, implDate: "2013/11/26", implDate_bq: "2024/11/14", obtain: "sh", rarity: "g" , depType: "rear", class: "ヒーラー", name: "フェドラ", fullName: "狂聖女フェドラ" }
     , { id: 0x001f, implDate: "2013/11/26", implDate_bq: null        , obtain: "sh", rarity: "sl", depType: "van" , class: "ソルジャー", name: "クレイブ", fullName: "傭兵クレイブ", male: 1 }
     , { id: 0x0020, implDate: "2013/11/26", implDate_bq: null        , obtain: "sh", rarity: "sl", depType: "van" , class: "ソルジャー", name: "フィリス", fullName: "新緑の兵士フィリス" }
     , { id: 0x0021, implDate: "2013/11/26", implDate_bq: null        , obtain: "sh", rarity: "sl", depType: "van" , class: "ヘビーアーマー", name: "ベルナール", fullName: "金色の盾ベルナール", male: 1 }
@@ -1025,7 +1025,7 @@ const unitList = [
     , { id: 0x03ec, implDate: "2022/05/12", implDate_bq: null        , obtain: "ev", rarity: "ph", depType: "both", class: "異世界戦士", name: "エフトラ", fullName: "世界を超える者エフトラ" }
     , { id: 0x03ed, implDate: "2022/05/12", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "ドラゴンメイジ", name: "ロカ", fullName: "土竜魔術士ロカ" }
     , { id: 0x03ee, implDate: "2022/05/19", implDate_bq: "2024/05/09", obtain: "sh", rarity: "p" , depType: "rear", class: "ドラグーン", name: "ミカ", fullName: "流浪の竜砲騎兵ミカ" }
-    , { id: 0x03ef, implDate: "2022/05/26", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "儀式魔術師", name: "メシナ", fullName: "渦潮の亜神メシナ" }
+    , { id: 0x03ef, implDate: "2022/05/26", implDate_bq: "2024/11/14", obtain: "sh", rarity: "b" , depType: "rear", class: "儀式魔術師", name: "メシナ", fullName: "渦潮の亜神メシナ" }
     , { id: 0x03f0, implDate: "2022/06/02", implDate_bq: "2023/01/12", obtain: "sh", rarity: "b" , depType: "van" , class: "儀仗軍神", name: "アラン", fullName: "銀月の亜神アラン" }
     , { id: 0x03f1, implDate: "2022/06/02", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "サムライ", name: "ちびジュウベエ", fullName: "ちびジュウベエ" }
     , { id: 0x03f2, implDate: "2022/06/02", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "忍者", name: "ちびハツネ", fullName: "ちびハツネ" }
@@ -1436,6 +1436,12 @@ const unitList = [
     , { id: 0x0583, implDate: "2024/11/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "砲術士", name: "ちびカノン", fullName: "ちびカノン" }
     , { id: 0x0584, implDate: "2024/11/01", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "rear", class: "ドラグーン", name: "ちびイーファ", fullName: "ちびイーファ" }
     , { id: 0x0585, implDate: "2024/11/07", implDate_bq: null        , obtain: "sh", rarity: "p" , depType: "rear", class: "メディック", name: "ニーカ", fullName: "新任医官ニーカ" }
+    , { id: 0x0586, implDate: "2024/11/14", implDate_bq: null        , obtain: "ev", rarity: "p" , depType: "van" , class: "オートマタ", name: "パルセ", fullName: "飛空戦艦管理頭脳パルセ" }
+    , { id: 0x0587, implDate: "2024/11/14", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "van" , class: "神話の継承者", name: "ヘラクレイア", fullName: "武の半神ヘラクレイア" }
+    , { id: 0x0588, implDate: "2024/11/14", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "ダンサー", name: "シャルキー/新装", fullName: "激励の踊り子シャルキー" }
+    , { id: 0x0589, implDate: "2024/11/14", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "rear", class: "魔物使い", name: "バスカット", fullName: "魔物使いバスカット" }
+    , { id: 0x058a, implDate: "2024/11/14", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "テンプルナイト", name: "マージ", fullName: "雷神の騎士マージ" }
+    , { id: 0x057b, implDate: "2024/11/14", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "モンク", name: "ちびダン", fullName: "ちびダン", male: 1 }
     
     
     

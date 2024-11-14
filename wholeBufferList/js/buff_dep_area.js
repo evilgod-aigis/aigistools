@@ -38,6 +38,10 @@ buff.dep_area = [
         , stats: { atk: "×1.15" }
     }
     , {
+        name: "シャルキー/新装", rarity: "黒", cl: "ダンサー", AW: "覚醒"
+        , stats: { poison: "-100%", abn: "-100%" }
+    }
+    , {
         name: "ソシエ/ハロウィン", rarity: "黒", cl: "モンスタースレイヤー", AW: "覚醒"
         , stats: { atk: "×1.1" }
         , note: "分類未確認"

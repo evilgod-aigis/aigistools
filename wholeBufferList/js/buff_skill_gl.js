@@ -402,8 +402,12 @@ buff.skill_gl = [
         , stats: { atk: "×1.3" }
     }
     , {
-        name: "アレグロ", rarity: "銅", cl: "料理人", AW: "未", skill: "覚醒"
+        name: "アレグロ", rarity: "銅", cl: "料理人", AW: "未", skill: "通常"
         , stats: { rege: [ "20/秒", "?/?f" ] }
+    }
+    , {
+        name: "パルセ", rarity: "白", cl: "オートマタ", AW: "覚醒", skill: "覚醒(1)"
+        , stats: { range: "×1.2" }
     }
     , {
         name: "シラヌイ", rarity: "白", cl: "ぬりかべ", AW: "未", skill: "通常"

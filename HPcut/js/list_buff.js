@@ -1040,6 +1040,18 @@ lists.buff.takenDmg.list = [
         }
     }
     , {
+        id: null, buffer: "激励の踊り子シャルキー", awaken: "覚醒"
+        , value: 10, disabled: null, req: "skill"
+        , tooltip: "[スキル・射程内] 被ダメージが10%上昇"
+        , unitInfo: {
+            unitName: "激励の踊り子シャルキー", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "ダンサー" }
+            , attribution: [ "人間", "魔界" ]
+            , note: [ "女性", "状態異常無効", "魔界適応" ]
+            , WT: 5, CT: 50, dur: 50
+        }
+    }
+    , {
         id: null, buffer: "叡智の管理者プリニース", awaken: "未", showAwaken: true
         , value: 10, disabled: null, req: "deploy"
         , tooltip: "[射程内] 被ダメージが10%上昇"

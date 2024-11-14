@@ -962,6 +962,16 @@ buff.dep_gl = [
         , target: { cl: [ "テンプルナイト" ] }
     }
     , {
+        name: "パルセ", rarity: "白", cl: "オートマタ", AW: "未"
+        , stats: { atk: "+7%" }
+        , target: { others: [ "機械" ] }
+    }
+    , {
+        name: "パルセ", rarity: "白", cl: "オートマタ", AW: "覚醒"
+        , stats: { atk: "+10%" }
+        , target: { others: [ "機械" ] }
+    }
+    , {
         name: "シラヌイ", rarity: "白", cl: "ぬりかべ", AW: "覚醒"
         , stats: { def: "+7%" }
         , target: { depType: [ "近接" ] }

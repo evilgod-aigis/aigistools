@@ -1,27 +1,27 @@
 // 被ダメージ
 debuff.takenDmg = [
     {
-        name: "カースウィスパラー", cl: "カースウィスパラ", AW: "覚1"
+        name: "カースウィスパラー", cl: "カースウィスパラー", AW: "覚1"
         , stats: { value: "+15%" }
         , note: "範囲"
     }
     , {
-        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラ", AW: "覚醒", skill: "通常"
+        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラー", AW: "覚醒", skill: "通常"
         , stats: { value: "*1.5" }
         , note: [ "範囲", "永続" ]
     }
     , {
-        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラ", AW: "覚醒", skill: "覚醒"
+        name: "モルフェサ", rarity: "黒", cl: "カースウィスパラー", AW: "覚醒", skill: "覚醒"
         , stats: { value: "*3.0" }
         , note: "範囲"
     }
     , {
-        name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒", skill: "通常"
+        name: "モルフェサ", rarity: "白", cl: "カースウィスパラー", AW: "覚醒", skill: "通常"
         , stats: { value: "*1.5" }
         , note: [ "範囲", "永続" ]
     }
     , {
-        name: "モルフェサ", rarity: "白", cl: "カースウィスパラ", AW: "覚醒", skill: "覚醒"
+        name: "モルフェサ", rarity: "白", cl: "カースウィスパラー", AW: "覚醒", skill: "覚醒"
         , stats: { value: "*2.0" }
         , note: "範囲"
     }
@@ -38,14 +38,24 @@ debuff.takenDmg = [
         , stats: { value: "*3.0" }
     }
     , {
-        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "未"
+        name: "シャルキー/新装", rarity: "黒", cl: "ダンサー", AW: "未", skill: "通常"
         , stats: { value: "+10%" }
         , note: [ "範囲", "分類未確認" ]
     }
     , {
+        name: "シャルキー/新装", rarity: "黒", cl: "ダンサー", AW: "覚醒", skill: "通常"
+        , stats: { value: "+10%" }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
+        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "未"
+        , stats: { value: "+10%" }
+        , note: "範囲"
+    }
+    , {
         name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒"
         , stats: { value: "+15%" }
-        , note: [ "範囲", "分類未確認" ]
+        , note: "範囲"
     }
 ];
 
