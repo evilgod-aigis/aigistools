@@ -88,7 +88,6 @@ funcs.createHTML.Opt_rCTdepType = () => {
                 ${depType}
                 <select onchange="lists.buff.rCTdepType.list['${depType}']=Number(this.value); ${txt_saveInfo}funcs.graph.SetGraphData('rCTdepType')">`;
         _.forEach(values, v => {
-            if(depType === "遠近距離型" && v === 45) return;
             txt += `
                 <option value='${v}'${v === value ? " selected" : ""}>${v}</option>`
         });

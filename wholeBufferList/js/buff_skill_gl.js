@@ -89,6 +89,36 @@ buff.skill_gl = [
         , note: [ "深海-70%", "永続" ]
     }
     , {
+        name: "フィネス", rarity: "黒", cl: "盤上の支配者", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.2", rege: [ "80/秒", "40/15f" ], other: "" }
+        , note: [ "オート", "永続、手動中断可能" ]
+    }
+    , {
+        name: "フィネス", rarity: "黒", cl: "盤上の支配者", AW: "覚醒", skill: "覚醒(3n-2)"
+        , stats: { atk: "×1.3", ct: "-60%" }
+        , note: "永続、手動中断可能"
+    }
+    , {
+        name: "フィネス", rarity: "黒", cl: "盤上の支配者", AW: "覚醒", skill: "覚醒(3n-1)"
+        , stats: { range: "×1.2", ct: "-60%" }
+        , note: "永続、手動中断可能"
+    }
+    , {
+        name: "フィネス", rarity: "黒", cl: "盤上の支配者", AW: "覚醒", skill: "覚醒(3n)"
+        , stats: { hp: "+30%", ct: "-60%" }
+        , note: "永続、手動中断可能"
+    }
+    , {
+        name: "フィネス", rarity: "白", cl: "盤上の支配者", AW: "覚醒", skill: "通常"
+        , stats: { def: "×1.2", other: "" }
+        , note: [ "オート", "永続、手動中断可能" ]
+    }
+    , {
+        name: "フィネス", rarity: "白", cl: "盤上の支配者", AW: "覚醒", skill: "覚醒(偶)"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , note: "永続、手動中断可能"
+    }
+    , {
         name: "ケイティ/学園", rarity: "白", cl: "ソルジャー", AW: "未", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
     }

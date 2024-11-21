@@ -99,8 +99,20 @@ lists.units.onSkillAct.list = [
                     {
                         target: "全員"
                         , corr: { WT: null, CT: null, dur: null, HPred: null }
-                        , uncorr: { CT: 100, dur: 40, HPred: 20 }
-                        , next: 0
+                        , uncorr: { CT: 85, dur: 40, HPred: 20 }
+                        , next: 1
+                    }
+                    , {
+                        target: "全員"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 70, dur: 40, HPred: 20 }
+                        , next: 2
+                    }
+                    , {
+                        target: "全員"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 50, dur: 40, HPred: 20 }
+                        , next: 2
                     }
                 ]
             }

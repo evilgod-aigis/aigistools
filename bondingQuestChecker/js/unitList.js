@@ -1441,7 +1441,10 @@ const unitList = [
     , { id: 0x0588, implDate: "2024/11/14", implDate_bq: null        , obtain: "sh", rarity: "b" , depType: "rear", class: "ダンサー", name: "シャルキー/新装", fullName: "激励の踊り子シャルキー" }
     , { id: 0x0589, implDate: "2024/11/14", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "rear", class: "魔物使い", name: "バスカット", fullName: "魔物使いバスカット" }
     , { id: 0x058a, implDate: "2024/11/14", implDate_bq: null        , obtain: "ev", rarity: "b" , depType: "van" , class: "テンプルナイト", name: "マージ", fullName: "雷神の騎士マージ" }
-    , { id: 0x057b, implDate: "2024/11/14", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "モンク", name: "ちびダン", fullName: "ちびダン", male: 1 }
+    , { id: 0x058b, implDate: "2024/11/14", implDate_bq: null        , obtain: "sp", rarity: "gc", depType: "van" , class: "モンク", name: "ちびダン", fullName: "ちびダン", male: 1 }
+    , { id: 0x058c, implDate: "2024/11/21", implDate_bq: null        , obtain: "sh", rarity: "bh", depType: "both", class: "異世界戦士", name: "エフトラ/最終決戦仕様", fullName: "最終決戦仕様エフトラ" }
+    , { id: 0x058d, implDate: "2024/11/21", implDate_bq: null        , obtain: "sh", rarity: "bh", depType: "both", class: "盤上の支配者", name: "フィネス", fullName: "戦場を編む者フィネス" }
+    , { id: 0x058e, implDate: "2024/11/21", implDate_bq: null        , obtain: "tr", rarity: "ph", depType: "both", class: "盤上の支配者", name: "フィネス", fullName: "戦場を編む者フィネス" }
     
     
     

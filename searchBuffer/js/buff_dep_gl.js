@@ -1110,6 +1110,7 @@ buff.dep_gl = [
     , {
         name: "トリックオアトリート", rarity: "金", cl: "ハロウィン会場"
         , stats: { atk: "+10%", def: "+10%" }
+        , target: { season: [ "ハロウィン" ] }
         , note: "無差別バフと合わせて+15%"
     }
     , {

@@ -176,8 +176,8 @@ debuff.mixture = [
     , {
         name: "モルフェサ", rarity: "黒", cl: "カースウィスパラー", AW: "覚醒", skill: "覚醒"
         , stats: {
-            def: { value: "-30%", type: "global" }
-            , mr: { value: "-30%", type: "global" }
+            def: { value: "-50%", type: "global" }
+            , mr: { value: "-50%", type: "global" }
         }
         , domain: "global"
     }

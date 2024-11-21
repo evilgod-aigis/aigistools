@@ -519,6 +519,11 @@ lists.buff.haste = {};
 lists.buff.haste.jap = "硬直短縮";
 lists.buff.haste.list = [
     {
+        id: null, buffer: "盤上の支配者", isClass: true, awaken: "覚1"
+        , value: 40, disabled: null, req: "deploy"
+        , tooltip: "[射程内] 全味方の攻撃硬直-40%"
+    }
+    , {
         id: null, buffer: "雷鳴大妖ぬえ", isClass: true, awaken: "覚2a"
         , value: 20, disabled: null, req: "team"
         , target: [ { attribution: [ "妖怪" ] } ]
@@ -986,7 +991,7 @@ lists.buff.takenDmg.list = [
             , unitClass: { selected: "カースウィスパラー" }
             , attribution: [ "人間", "魔術師", "英傑" ]
             , note: [ "女性" ]
-            , WT: 5, CT: 55, dur: 30
+            , WT: 5, CT: 45, dur: 40
         }
     }
     , {

@@ -148,6 +148,12 @@ buff.team = [
         , target: { others: [ "アンデッド" ] }
     }
     , {
+        name: "王子【不死】", cl: "王子"
+        , stats: { hp: "+15%", atk: "+12%" }
+        , target: { others: [ "アンデッド" ] }
+        , note: "Lv3以上"
+    }
+    , {
         name: "ちび王子", cl: "王子"
         , stats: { atk: "+15%" }
         , target: { others: [ "ちび" ] }

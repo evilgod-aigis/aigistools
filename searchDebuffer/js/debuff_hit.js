@@ -41,6 +41,11 @@ debuff.hit = [
         , atkAttr: "貫通", dur: "?f"
     }
     , {
+        name: "エフトラ/最終決戦仕様", rarity: "黒", cl: "異世界戦士", AW: "覚醒", skill: "通常"
+        , stats: { atkCd: "+30f" }
+        , atkAttr: "貫通", dur: "?f"
+    }
+    , {
         name: "マルゴット", rarity: "黒", cl: "ソルジャー", AW: "覚醒", skill: "覚醒"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "59f"

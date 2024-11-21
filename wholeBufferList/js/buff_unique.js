@@ -3,7 +3,7 @@ buff.unique = [
     // 乗算マス
     {
         name: "ジオマンサートークン", rarity: "トークン", AW: "覚醒"
-        , stats: { hp: "×1.35", atk: "×1.35" }
+        , stats: { hp: "×1.4", atk: "×1.4" }
         , type: "spot_mul"
         , note: [ "サナラ[黒]", "区分：乗算マス", "継続：600秒" ]
     }
@@ -481,6 +481,11 @@ buff.unique = [
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-10%(範囲)" ]
+    }
+    , {
+        name: "フィネス", rarity: "黒", cl: "盤上の支配者", AW: "覚醒", skill: "覚醒(3n)"
+        , stats: { other: "" }
+        , note: [ "区分：被ダメージ軽減", "属性不問-20%", "永続、手動中断可能" ]
     }
     , {
         name: "ベルニス/花嫁", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒", skill: "覚醒"

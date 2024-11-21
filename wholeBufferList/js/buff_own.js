@@ -12,6 +12,14 @@ buff.own = [
         name: "サナラ", rarity: "白", cl: "ジオマンサー", AW: "覚醒"
         , stats: { hp: "+5%" }
     }
+    , {
+        name: "フィネス", rarity: "黒", cl: "盤上の支配者", AW: "覚醒"
+        , stats: { atk: "+2%" }
+    }
+    , {
+        name: "フィネス", rarity: "白", cl: "盤上の支配者", AW: "覚醒"
+        , stats: { def: "+2%" }
+    }
 ];
 
 /*

@@ -5,6 +5,10 @@ buff.dep_area = [
         , stats: { atk: "×1.15" }
     }
     , {
+        name: "盤上の支配者", cl: "盤上の支配者", AW: "覚1"
+        , stats: { atkCd: "-40%" }
+    }
+    , {
         name: "フォートレス", cl: "重装砲兵", AW: "覚2b"
         , stats: { def: "×1.15" }
         , note: "重装砲兵系"
