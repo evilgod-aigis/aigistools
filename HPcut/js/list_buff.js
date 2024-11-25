@@ -520,8 +520,8 @@ lists.buff.haste.jap = "硬直短縮";
 lists.buff.haste.list = [
     {
         id: null, buffer: "盤上の支配者", isClass: true, awaken: "覚1"
-        , value: 40, disabled: null, req: "deploy"
-        , tooltip: "[射程内] 全味方の攻撃硬直-40%"
+        , value: 35, disabled: null, req: "deploy"
+        , tooltip: "[射程内] 全味方の攻撃硬直-35%"
     }
     , {
         id: null, buffer: "雷鳴大妖ぬえ", isClass: true, awaken: "覚2a"

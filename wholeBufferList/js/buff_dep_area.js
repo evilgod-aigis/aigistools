@@ -6,7 +6,7 @@ buff.dep_area = [
     }
     , {
         name: "盤上の支配者", cl: "盤上の支配者", AW: "覚1"
-        , stats: { atkCd: "-40%" }
+        , stats: { atkCd: "-35%" }
     }
     , {
         name: "フォートレス", cl: "重装砲兵", AW: "覚2b"
@@ -138,13 +138,11 @@ buff.dep_area = [
         , stats: { atk: "×1.2", def: "×1.2" }
         , note: [ "リャオレン", "分類未確認" ]
     }
-    /*
     , {
-        name: "イルミナトークン", rarity: "トークン", AW: "未"
-        , stats: { atk: "×1.1", mr: "+" }
+        name: [ "イルミナトークン", "(防・魔耐)" ], rarity: "トークン", AW: "未"
+        , stats: { def: "×1.1", mr: "+5" }
         , note: "イルミナ"
     }
-    */
     , {
         name: [ "イルミナトークン", "(攻・魔耐)" ], rarity: "トークン", AW: "覚醒"
         , stats: { atk: "×1.2", mr: "+10" }
