@@ -128,6 +128,11 @@ buff.dep_gl = [
         , stats: { atk: "+20%", def: "+20%" }
     }
     , {
+        name: "王子【雷霆】", cl: "王子"
+        , stats: { atk: "+20%", def: "+20%", other: "" }
+        , note: "魔界-100%"
+    }
+    , {
         name: "王子【幼少】", cl: "王子"
         , stats: { atk: "+10%", def: "+10%" }
     }

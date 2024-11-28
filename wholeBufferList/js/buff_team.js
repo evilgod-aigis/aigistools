@@ -31,6 +31,10 @@ buff.team = [
         , stats: { hp: "+20%" }
     }
     , {
+        name: "王子【雷霆】", cl: "王子"
+        , stats: { hp: "+15%" }
+    }
+    , {
         name: "アリア", rarity: "金", cl: "ソルジャー", AW: "覚醒"
         , stats: { atk: "+2%" }
     }
@@ -240,6 +244,16 @@ buff.team = [
         name: "ヤシキノカミ", cl: "座敷わらし", AW: "覚2b"
         , stats: { rege: [ "30/秒", "15/15f" ] }
         , note: "座敷わらし系"
+    }
+    , {
+        name: "狸神刑部", cl: "妖狸", AW: "覚2a"
+        , stats: { hp: "+5%", def: "+5%" }
+        , note: "妖狸系"
+    }
+    , {
+        name: "八百八狸大首領", cl: "妖狸", AW: "覚2b"
+        , stats: { atk: "+7%" }
+        , note: "妖狸系"
     }
     , {
         name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "未"

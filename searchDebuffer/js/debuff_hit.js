@@ -1,6 +1,11 @@
 // 命中
 debuff.hit = [
     {
+        name: "王子【雷霆】", cl: "王子", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "7f"
+    }
+    , {
         name: "トラム", rarity: "黒", cl: "銀腕の神話", AW: "覚醒", skill: [ "通常", "覚醒" ]
         , stats: { def: "-40%" }
         , atkAttr: "物理", dur: "?f"

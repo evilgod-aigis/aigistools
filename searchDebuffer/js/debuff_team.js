@@ -3,6 +3,10 @@ const debuff = {};
 // 編成
 debuff.team = [
     {
+        name: "王子【雷霆】", cl: "王子"
+        , stats: { mr: "-10" }
+    }
+    , {
         name: "英傑", rarity: "黒", AW: "覚1"
         , stats: { atk: "-50%", def: "-50%", mr: "-50%" }
         , target: { attr: [ "英傑" ] }
