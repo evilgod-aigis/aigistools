@@ -1,5 +1,5 @@
 const saveData = {};
-saveData.version = 2;
+saveData.version = 3;
 saveData.CHAR = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$=";
 saveData.compressChars = Object.freeze({ "0": "bc", "7": "jk", "i": "op", "U": "st", "=": "xy" });
 saveData.divider = "|";
@@ -174,11 +174,18 @@ saveData.setting.Save = _settingName => {
             break;
         case "column":
         case "rarity":
-        case "obtain":
         case "depType":
+        case "derivation":
         case "year":
         case "year_bq":
             data = _.reduce(table.filter[_settingName], (txt, bool, key) => txt += `${key}:${bool ? 1 : 0} `, "").trimEnd();
+            break;
+        case "obtain":
+            data = _.reduce(table.filter[_settingName], (txt1, obj, key) => {
+                txt1 += `${key}:${obj.checked ? 1 : 0} `;
+                txt1 += _.reduce(obj.part, (txt2, bool, part) => txt2 += `${part}:${bool ? 1 : 0} `, "");
+                return txt1.replace(/.$/, "|");
+            }, "").replace(/.$/, "");
             break;
         case "own":
         case "clear":
@@ -205,6 +212,11 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             saveData: [ "checkbox" ]
             , setting: [ "unitName", "backgroundColor" ]
             , filter: [ "column", "rarity", "obtain", "depType", "year", "year_bq", "own", "clear" ]
+        }
+        , 3: {
+            saveData: [ "checkbox" ]
+            , setting: [ "unitName", "backgroundColor" ]
+            , filter: [ "column", "rarity", "obtain", "depType", "derivation", "year", "year_bq", "own", "clear" ]
         }
     };
     
@@ -242,6 +254,13 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                                 objStore.put({ dataName: "year", data: "" });
                             }
                         }
+                    }
+                case 2: {
+                        const objStore = e1.target.transaction.objectStore(saveData.objStoreName);
+                        objStore.get("obtain").onsuccess = e2 => {
+                            objStore.put({ dataName: "obtain", data: e2.target.result.data.replace(/ /g, "|") });
+                        }
+                        objStore.put({ dataName: "derivation", data: "" });
                     }
                     break;
             }
@@ -283,6 +302,16 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             _.forEach(saveItem[saveData.version].filter, dataName => {
                 const request = objStore.get(dataName);
                 switch(dataName) {
+                    case "obtain":
+                        request.onsuccess = e2 => {
+                            _.forEach(e2.target.result.data.split("|"), text => {
+                                _.forEach(_.map(text.split(" "), t => t.split(":")), ([ key, value ], i, arr) => {
+                                    if(i) table.filter[dataName][arr[0][0]].part[key] = value === "1";
+                                    else table.filter[dataName][key].checked = value === "1";
+                                });
+                            });
+                        }
+                        break;
                     case "own":
                     case "clear":
                         request.onsuccess = e2 => table.filter[dataName] = e2.target.result.data;
@@ -390,6 +419,9 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             case 1:
                 localStorage.setItem("year_bq", localStorage.getItem("year"));
                 localStorage.setItem("year", "");
+            case 2:
+                localStorage.setItem("obtain", localStorage.getItem("obtain").replace(/ /g, "|"));
+                localStorage.setItem("derivation", "");
                 localStorage.setItem("version", saveData.version);
                 break;
         }
@@ -416,6 +448,14 @@ saveData.Construct = (_canUseIndexedDB = true) => {
         _.forEach(saveItem[saveData.version].filter, dataName => {
             const data = localStorage.getItem(dataName);
             switch(dataName) {
+                case "obtain":
+                    _.forEach(data.split("|"), text => {
+                        _.forEach(_.map(text.split(" "), t => t.split(":")), ([ key, value ], i, arr) => {
+                            if(i) table.filter[dataName][arr[0][0]].part[key] = value === "1";
+                            else table.filter[dataName][key].checked = value === "1";
+                        });
+                    });
+                    break;
                 case "own":
                 case "clear":
                     table.filter[dataName] = Number(data);

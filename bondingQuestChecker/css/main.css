@@ -9,6 +9,9 @@ p {
 summary {
     cursor: pointer;
 }
+img {
+    white-space: pre;
+}
 .inactive {
     position: relative;
 }
@@ -114,6 +117,9 @@ summary {
 }
 .setting-area {
     margin-top: 10px;
+}
+.setting-area .nest-area {
+    margin-left: 1.5em;
 }
 .setting-title-area {
     width: 6em;

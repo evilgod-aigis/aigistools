@@ -6,15 +6,24 @@ table.word = {
     , name: "簡易", fullName: "ゲーム準拠", icon: "アイコン"
     , bh: "ブラック[英傑]", b: "ブラック", ph: "プラチナ[英傑]", p: "プラチナ", g: "ゴールド", s: "サファイア", sl: "シルバー"
     , gc: "ちび(ゴールド)"
-    , sh: "召喚", ev: "イベント", tr: "交換", sp: "その他"
+    , sh: "召喚"
+    , ev: "イベント", drop: "ドロップ", star: "試練", item: "収集", subj: "大討伐", popu: "人気闘兵", maji: "魔神最終決戦"
+    , tr: "交換", rain: "虹水晶", demo: "魔水晶", dark: "闇水晶", mili: "武勲結晶", hero: "英傑結晶"
+    , sp: "その他", gift: "配布", shop: "課金", code: "シリアルコード", else: "その他"
     , van: "近接", rear: "遠距離", both: "遠近距離"
     , none: "未実装", "year_bq-none": "クエ未実装"
 };
 
 table.unitName = [ "name", "fullName", "icon" ];
 table.rarity = [ "bh", "b", "ph", "p", "g", "s" ];
-table.obtain = [ "sh", "ev", "tr", "sp" ];
+table.obtain = {
+    sh: []
+    , ev: [ "drop", "star", "item", "subj", "popu", "maji", "else" ]
+    , tr: [ "rain", "demo", "dark", "mili", "hero", "else" ]
+    , sp: [ "gift", "shop", "code", "else" ]
+};
 table.depType = [ "van", "rear", "both" ];
+table.derivation = [ "無印", "白の帝国", "お正月", "温泉", "バレンタイン", "学園", "バニー", "花嫁", "水着", "浴衣", "ハロウィン", "クリスマス", "私服", "その他" ];
 table.class = {
     van: [
         // 英傑
@@ -137,10 +146,16 @@ table.SetObjects = () => {
     _.forEach(table.rarity, rarity => table.filter.rarity[rarity] = true);
     // 入手
     table.filter.obtain = {};
-    _.forEach(table.obtain, obtain => table.filter.obtain[obtain] = true);
+    _.forEach(table.obtain, (arr, obtain) => {
+        table.filter.obtain[obtain] = { checked: true, part: {} };
+        _.forEach(arr, part => table.filter.obtain[obtain].part[part] = true);
+    });
     // 配置型
     table.filter.depType = {};
     _.forEach(table.depType, depType => table.filter.depType[depType] = true);
+    // 衣装違い等
+    table.filter.derivation = {};
+    _.forEach(table.derivation, derivation => table.filter.derivation[derivation] = true);
     // ユニット実装年
     table.filter.year = {};
     _.forEach(table.year, year => table.filter.year[year] = true);
@@ -263,7 +278,7 @@ table.CreateSetting = () => {
     newFilterCont.id = "filter-content";
     newFilterCont.innerHTML = "<p>フィルタ</p>";
     
-    const CreateFilterArea = (title, filterType, inputType) => {
+    const CreateFilterArea = (title, filterType, isNest = false) => {
         const newFliterArea = document.createElement("div");
         newFliterArea.className = "setting-area";
         const newTitleArea = document.createElement("div");
@@ -273,27 +288,92 @@ table.CreateSetting = () => {
         newTitle.innerHTML = title;
         newTitleArea.appendChild(newTitle);
         newFliterArea.appendChild(newTitleArea);
-        switch(inputType) {
-            case "checkbox": {
-                    const newCheckboxArea = document.createElement("div");
-                    newCheckboxArea.id = `filter_${filterType}`;
-                    newCheckboxArea.className = "setting-checkbox-area";
-                    CreateButtons(newCheckboxArea, filterType);
-                    const newBr = document.createElement("br");
-                    newCheckboxArea.appendChild(newBr);
-                    CreateCheckbox(newCheckboxArea, filterType);
-                    newFliterArea.appendChild(newCheckboxArea);
-                }
-                break;
-            case "radio": {
-                    const newRadioArea = document.createElement("div");
-                    newRadioArea.id = `filter_${filterType}`;
-                    newRadioArea.className = "setting-radio-area";
-                    CreateRadio(newRadioArea, title, filterType);
-                    newFliterArea.appendChild(newRadioArea);
-                }
-                break;
-            default:
+        if(typeof table.filter[filterType] === "object") {
+            const newCheckboxArea = document.createElement("div");
+            newCheckboxArea.id = `filter_${filterType}`;
+            newCheckboxArea.className = "setting-checkbox-area";
+            CreateButtons(newCheckboxArea, filterType);
+            /* //--
+            _.forEach({ "全部ON": true, "全部OFF": false }, (bool, text) => {
+                const newButton = document.createElement("button");
+                newButton.type = "button";
+                newButton.setAttribute("onclick", `table.ToggleAllFilter(this.parentElement, ${bool}, "${filterType}")`);
+                newButton.innerHTML = text;
+                newCheckboxArea.appendChild(newButton);
+            });
+            */
+            newCheckboxArea.appendChild(document.createElement("br"));
+            if(isNest) {
+                _.forEach(table.filter[filterType], (obj, key) => {
+                    let newLabel = document.createElement("label");
+                    let newCheckbox = document.createElement("input");
+                    newCheckbox.type = "checkbox";
+                    if(obj.checked) newCheckbox.setAttribute("checked", "true");
+                    newCheckbox.setAttribute(
+                        "onchange"
+                        , `table.filter.${filterType}["${key}"].checked=this.checked;
+                            table.ToggleNestedCheckboxes(document.getElementById("${filterType}-${key}"), this.checked);
+                            table.ApplyFilter("${filterType}")`
+                    );
+                    newLabel.appendChild(newCheckbox);
+                    newLabel.innerHTML += key in table.word ? table.word[key].replace(/<br \/>/g, "") : key;
+                    newCheckboxArea.appendChild(newLabel);
+                    if(_.size(obj.part)) CreateButtons(newCheckboxArea, `${filterType}-${key}`);
+                    const newNestArea = document.createElement("div");
+                    newNestArea.id = `${filterType}-${key}`;
+                    newNestArea.classList.add("nest-area");
+                    if(!obj.checked) newNestArea.classList.add("inactive");
+                    _.forEach(obj.part, (bool, part) => {
+                        newLabel = document.createElement("label");
+                        newCheckbox = document.createElement("input");
+                        newCheckbox.type = "checkbox";
+                        if(bool) newCheckbox.setAttribute("checked", "true");
+                        newCheckbox.disabled = !obj.checked;
+                        newCheckbox.setAttribute(
+                            "onchange"
+                            , `table.filter.${filterType}["${key}"].part["${part}"]=this.checked;
+                                table.ApplyFilter("${filterType}")`
+                        );
+                        newLabel.appendChild(newCheckbox);
+                        newLabel.innerHTML += part in table.word ? table.word[part].replace(/<br \/>/g, "") : key;
+                        newNestArea.appendChild(newLabel);
+                    });
+                    newCheckboxArea.appendChild(newNestArea);
+                });
+            } else {
+                _.forEach(table.filter[filterType], (bool, key) => {
+                    //if(_.includes(except, key)) return;
+                    const newLabel = document.createElement("label");
+                    const newCheckbox = document.createElement("input");
+                    newCheckbox.type = "checkbox";
+                    if(bool) newCheckbox.setAttribute("checked", "true");
+                    newCheckbox.setAttribute("onchange", `table.filter.${filterType}["${key}"]=this.checked; table.ApplyFilter("${filterType}")`);
+                    newLabel.appendChild(newCheckbox);
+                    newLabel.innerHTML += key in table.word ? table.word[key].replace(/<br \/>/g, "") : key;
+                    newCheckboxArea.appendChild(newLabel);
+                });
+            }
+            newFliterArea.appendChild(newCheckboxArea);
+        } else {
+            const newRadioArea = document.createElement("div");
+            newRadioArea.id = `filter_${filterType}`;
+            newRadioArea.className = "setting-radio-area";
+            const labelNames = _.reduce([ "全部", `${title}済`, `未${title}` ], (obj, key, i) => {
+                obj[key] = 3 - i;
+                return obj;
+            }, {});
+            _.forEach(labelNames, (value, labelName) => {
+                const newLabel = document.createElement("label");
+                const newRadio = document.createElement("input");
+                newRadio.type = "radio";
+                newRadio.setAttribute("name", filterType);
+                if(table.filter[filterType] === value) newRadio.setAttribute("checked", "true");
+                newRadio.setAttribute("onchange", `table.filter.${filterType}=${value}; table.ApplyFilter("${filterType}")`);
+                newLabel.appendChild(newRadio);
+                newLabel.innerHTML += labelName;
+                newRadioArea.appendChild(newLabel);
+            });
+            newFliterArea.appendChild(newRadioArea);
         }
         newFilterCont.appendChild(newFliterArea);
     }
@@ -306,45 +386,16 @@ table.CreateSetting = () => {
             element.appendChild(newButton);
         });
     }
-    const CreateCheckbox = (element, filterType, except = []) => {
-        _.forEach(table.filter[filterType], (bool, key) => {
-            if(_.includes(except, key)) return;
-            const newLabel = document.createElement("label");
-            const newCheckbox = document.createElement("input");
-            newCheckbox.type = "checkbox";
-            if(bool) newCheckbox.setAttribute("checked", "true");
-            newCheckbox.setAttribute("onchange", `table.filter.${filterType}["${key}"]=this.checked; table.ApplyFilter("${filterType}")`);
-            newLabel.appendChild(newCheckbox);
-            newLabel.innerHTML += key in table.word ? table.word[key].replace(/<br \/>/g, "") : key;
-            element.appendChild(newLabel);
-        });
-    }
-    const CreateRadio = (element, title, filterType) => {
-        const labelNames = _.reduce([ "全部", `${title}済`, `未${title}` ], (obj, key, i) => {
-            obj[key] = 3 - i;
-            return obj;
-        }, {});
-        _.forEach(labelNames, (value, labelName) => {
-            const newLabel = document.createElement("label");
-            const newRadio = document.createElement("input");
-            newRadio.type = "radio";
-            newRadio.setAttribute("name", filterType);
-            if(table.filter[filterType] === value) newRadio.setAttribute("checked", "true");
-            newRadio.setAttribute("onchange", `table.filter.${filterType}=${value}; table.ApplyFilter("${filterType}")`);
-            newLabel.appendChild(newRadio);
-            newLabel.innerHTML += labelName;
-            element.appendChild(newLabel);
-        });
-    }
     
-    CreateFilterArea("列", "column", "checkbox");
-    CreateFilterArea("レアリティ", "rarity", "checkbox");
-    CreateFilterArea("入手", "obtain", "checkbox");
-    CreateFilterArea("配置型", "depType", "checkbox");
-    CreateFilterArea("ユニ実装年", "year", "checkbox");
-    CreateFilterArea("クエ実装年", "year_bq", "checkbox");
-    CreateFilterArea("所持", "own", "radio");
-    CreateFilterArea("クリア", "clear", "radio");
+    CreateFilterArea("列", "column");
+    CreateFilterArea("レアリティ", "rarity");
+    CreateFilterArea("入手", "obtain", true);
+    CreateFilterArea("配置型", "depType");
+    CreateFilterArea("衣装違い等", "derivation");
+    CreateFilterArea("ユニ実装年", "year");
+    CreateFilterArea("クエ実装年", "year_bq");
+    CreateFilterArea("所持", "own");
+    CreateFilterArea("クリア", "clear");
     
     newSettingCont.appendChild(newFilterCont);
     newSettingWindow.appendChild(newSettingCont);
@@ -363,13 +414,37 @@ table.ToggleSettingShown = _this => {
 }
 // フィルタ一括ON/OFF
 table.ToggleAllFilter = (_element, _bool, _filterType) => {
-    const labels = _element.getElementsByTagName("label");
-    _.forEach(labels, label => {
-        if(!label.classList.contains("except")) label.firstElementChild.checked = _bool;
-    });
-    _.forEach(table.filter[_filterType], (_, key, obj) => { obj[key] = _bool; });
-    
-    table.ApplyFilter(_filterType);
+    if(_filterType === "obtain") {
+        _.forEach(_element.children, elem1 => {
+            if(elem1.tagName === "LABEL"/*&& !elem1.classList.contains("except")*/) elem1.firstElementChild.checked = _bool;
+            else if(elem1.classList.contains("nest-area")) {
+                if(_bool) elem1.classList.remove("inactive");
+                else elem1.classList.add("inactive");
+                _.forEach(elem1.children, elem2 => {
+                    if(elem2.tagName === "LABEL"/*&& !elem2.classList.contains("except")*/) elem2.firstElementChild.disabled = !_bool;
+                });
+            }
+        });
+        _.forEach(table.filter[_filterType], obj => { obj.checked = _bool; });
+    } else if(_.includes(_filterType, "obtain")) {
+        _.forEach(document.getElementById(_filterType).children, elem => {
+            if(elem.tagName === "LABEL"/*&& !elem.classList.contains("except")*/) elem.firstElementChild.checked = _bool;
+        });
+        const [ filterType, key ] = _filterType.split("-");
+        _.forEach(table.filter[filterType][key].part, (_, part, obj) => { obj[part] = _bool; });
+    } else {
+        _.forEach(_element.children, elem => {
+            if(elem.tagName === "LABEL"/*&& !elem.classList.contains("except")*/) elem.firstElementChild.checked = _bool;
+        });
+        _.forEach(table.filter[_filterType], (_, key, obj) => { obj[key] = _bool; });
+    }
+    table.ApplyFilter(_filterType.split("-")[0]);
+}
+// ネストされたチェックボックスのactive/inactive化
+table.ToggleNestedCheckboxes = (_element, _bool) => {
+    if(_bool) _element.classList.remove("inactive");
+    else _element.classList.add("inactive");
+    _.forEach(_element.getElementsByTagName("input"), elem => { elem.disabled = !_bool; });
 }
 
 // テーブル生成
@@ -428,32 +503,59 @@ table.CreateTable = () => {
         const newTbody = document.createElement("tbody");
         _.forEach(obj.list, unit => {
             newTr = document.createElement("tr");
-            newTr.classList.add(`obtain-${unit.obtain}`);
+            newTr.classList.add(`obtain-${unit.obtain[0]}`);
+            if(unit.obtain[1]) newTr.classList.add(`obtain-${unit.obtain[0]}-${unit.obtain[1]}`);
             newTr.classList.add(`depType-${unit.depType}`);
+            let isGeneric = true;
+            if("derivation" in unit) {
+                if(_.includes(table.derivation, unit.derivation))
+                    newTr.classList.add(`derivation-${unit.derivation}`);
+                else newTr.classList.add(`derivation-その他`);
+                isGeneric = false;
+            }
+            if("latent" in unit) {
+                _.forEach(Array.isArray(unit.latent) ? unit.latent : [unit.latent ], latent => {
+                    if(_.includes(table.derivation, latent))
+                        newTr.classList.add(`derivation-${latent}`);
+                    else newTr.classList.add(`derivation-その他`);
+                    if(latent === "白の帝国") isGeneric = false;
+                });
+            }
+            if(isGeneric) newTr.classList.add(`derivation-無印`);
             newTr.classList.add(`year-${unit.implDate.slice(0, 4)}`);
             if(unit.implDate_bq) newTr.classList.add(`year_bq-${unit.implDate_bq.slice(0, 4)}`);
             else newTr.classList.add("year_bq-none");
+            if("extra" in unit) {
+                newTr.classList.add(`obtain-${unit.extra.obtain[0]}`);
+                if(unit.extra.obtain[1]) newTr.classList.add(`obtain-${unit.extra.obtain[0]}-${unit.extra.obtain[1]}`);
+            }
             _.forEach(table.column, elem => {
                 const newTd = document.createElement("td");
                 newTd.className = `column-${elem}`;
                 switch(elem) {
-                    case "unitName":
-                        _.forEach(table.unitName, key => {
-                            if(key === "icon") {
-                                const newImg = document.createElement("img");
-                                newImg.className = `display-${key}`;
-                                newImg.setAttribute("title", unit.fullName);
-                                newImg.setAttribute("alt", unit.fullName);
-                                newImg.setAttribute("draggable", false);
-                                newImg.setAttribute("src", `./icon/${unit.id.toString().padStart(5, "0")}.png`);
-                                newTd.appendChild(newImg);
-                            } else {
-                                const newSpan = document.createElement("span");
-                                newSpan.className = `display-${key}`;
-                                newSpan.innerText = unit[key];
-                                newTd.appendChild(newSpan);
-                            }
-                        });
+                    case "unitName": {
+                            const display = { name: unit.name, fullName: "" };
+                            if(unit.derivation) display.name += `/${unit.derivation}`;
+                            if(unit.modifier) display.fullName += unit.modifier;
+                            display.fullName += unit.name;
+                            if(unit.qualifier) display.fullName += unit.qualifier;
+                            _.forEach(table.unitName, key => {
+                                if(key === "icon") {
+                                    const newImg = document.createElement("img");
+                                    newImg.className = `display-${key}`;
+                                    newImg.setAttribute("title", `${display.fullName}\n${display.name}`);
+                                    newImg.setAttribute("alt", `${display.fullName}\n${display.name}`);
+                                    newImg.setAttribute("draggable", false);
+                                    newImg.setAttribute("src", `./icon/${unit.id.toString().padStart(5, "0")}.png`);
+                                    newTd.appendChild(newImg);
+                                } else {
+                                    const newSpan = document.createElement("span");
+                                    newSpan.className = `display-${key}`;
+                                    newSpan.innerText = display[key];
+                                    newTd.appendChild(newSpan);
+                                }
+                            });
+                        }
                         break;
                     case "implDate_bq":
                         newTd.innerHTML = unit.implDate_bq ? unit.implDate_bq : "未実装";
@@ -508,7 +610,12 @@ table.CreateTable = () => {
             if(typeof obj !== "object") {
                 sheet.insertRule(`#tables .${filterType} {}`, sheet.cssRules.length);
                 sheet.insertRule(`#tables tbody tr:not(.${filterType}) {}`, sheet.cssRules.length);
-            } else if(filterType !== "rarity")
+            }/* else if(filterType === "obtain") {
+                _.forEach(obj, (obj2, key) => {
+                    sheet.insertRule(`#tables .${filterType}-${key} {}`, sheet.cssRules.length);
+                    _.forEach(obj2.part, (bool, part) => sheet.insertRule(`#tables .${filterType}-${key}-${part} {}`, sheet.cssRules.length));
+                });
+            } */else if(filterType !== "rarity" || filterType !== "obtain" || filterType !== "derivation")
                 _.forEach(obj, (bool, key) => sheet.insertRule(`#tables .${filterType}-${key} {}`, sheet.cssRules.length));
         });
     }
@@ -666,7 +773,7 @@ table.ChangeBackColor = _className => {
 
 // フィルタ適用
 table.ApplyFilter = (_filterType = null, _judgeDisplay = true) => {
-    const style = document.getElementById("created-style");
+    const rules = document.getElementById("created-style").sheet.cssRules;
     let rule;
     switch(_filterType) {
         case null:
@@ -679,20 +786,65 @@ table.ApplyFilter = (_filterType = null, _judgeDisplay = true) => {
                 else tableArea.classList.add("is-unshown");
             });
             break;
+        case "obtain":
+            // OR
+            _.forEach(document.querySelectorAll("#tables tbody"), tbody => {
+                _.forEach(tbody.children, tr => {
+                    const isShown = _.some(tr.classList, className => {
+                        if(!_.includes(className, "obtain-")) return;
+                        const [ noUse, obtain, part ] = className.split("-");
+                        if(obtain === "sh") return table.filter.obtain.sh.checked;
+                        if(!part) return false;
+                        if(!table.filter.obtain[obtain].checked) return false;
+                        return table.filter.obtain[obtain].part[part];
+                    });
+                    // 他のフィルタタイプトはAND
+                    if(isShown) {
+                        if(!_.some(tr.classList, className => _.includes(className, "is-unshown-") && className !== "is-unshown-obtain"))
+                            tr.classList.remove("is-unshown");
+                        tr.classList.remove("is-unshown-obtain");
+                    } else {
+                        tr.classList.add("is-unshown");
+                        tr.classList.add("is-unshown-obtain");
+                    }
+                });
+            });
+            break;
+        case "derivation":
+            // OR
+            _.forEach(document.querySelectorAll("#tables tbody"), tbody => {
+                _.forEach(tbody.children, tr => {
+                    const isShown = _.some(tr.classList, className => {
+                        if(!_.includes(className, "derivation-")) return;
+                        return table.filter.derivation[className.split("-")[1]];
+                    });
+                    // 他のフィルタタイプトはAND
+                    if(isShown) {
+                        if(!_.some(tr.classList, className => _.includes(className, "is-unshown-") && className !== "is-unshown-derivation"))
+                            tr.classList.remove("is-unshown");
+                        tr.classList.remove("is-unshown-derivation");
+                    } else {
+                        tr.classList.add("is-unshown");
+                        tr.classList.add("is-unshown-derivation");
+                    }
+                });
+            });
+            break;
         case "own":
         case "clear":
-            rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables .${_filterType}`);
+            rule = _.find(rules, rule => rule.selectorText === `#tables .${_filterType}`);
             if(table.filter[_filterType] & 0b10)
                 rule.style.removeProperty("display");
             else rule.style.setProperty("display", "none", "important");
-            rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables tbody tr:not(.${_filterType})`);
+            rule = _.find(rules, rule => rule.selectorText === `#tables tbody tr:not(.${_filterType})`);
             if(table.filter[_filterType] & 0b01)
                 rule.style.removeProperty("display");
             else rule.style.setProperty("display", "none", "important");
             break;
         default:
+            // AND
             _.forEach(table.filter[_filterType], (bool, key) => {
-                rule = _.find(style.sheet.cssRules, rule => rule.selectorText === `#tables .${_filterType}-${key}`);
+                rule = _.find(rules, rule => rule.selectorText === `#tables .${_filterType}-${key}`);
                 if(bool) rule.style.removeProperty("display");
                 else rule.style.setProperty("display", "none", "important");
             });
