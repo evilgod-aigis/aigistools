@@ -1074,6 +1074,11 @@ buff.team = [
         , target: { race: [ "妖怪" ] }
     }
     , {
+        name: "ちびシノ", rarity: "ちび", cl: "ぬらりひょん"
+        , stats: { cost: "-1" }
+        , target: { race: [ "妖怪" ] }
+    }
+    , {
         name: "ヴァネッサ", rarity: "黒", cl: "重装砲兵", AW: "未"
         , stats: { hp: "+7%" }
         , target: { depType: [ "近接" ] }

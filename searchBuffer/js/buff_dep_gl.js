@@ -616,6 +616,11 @@ buff.dep_gl = [
         , target: { race: [ "妖怪" ] }
     }
     , {
+        name: "ちびシノ", rarity: "ちび", cl: "ぬらりひょん"
+        , stats: { draw: "○" }
+        , target: { race: [ "妖怪" ] }
+    }
+    , {
         name: "エルミラ", rarity: "黒", cl: "重装砲兵", AW: "覚醒"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { cl: [ "重装砲兵", "インペリアルナイト", "皇帝" ] }

@@ -230,22 +230,23 @@ buff.skill_area = [
     , {
         name: "コウメ", rarity: "白", cl: "戦巫女", AW: "未", skill: "通常"
         , stats: { def: "×1.8" }
-        , note: "分類未確認"
     }
     , {
         name: "コウメ", rarity: "白", cl: "戦巫女", AW: "覚醒", skill: "通常"
         , stats: { def: "×1.8" }
-        , note: "分類未確認"
     }
     , {
         name: "コウメ", rarity: "白", cl: "戦巫女", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.5" }
-        , note: "分類未確認"
     }
     , {
         name: "ちびタツミ", rarity: "ちび", cl: "戦巫女", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.4", eva: "30%" }
         , note: "永続"
+    }
+    , {
+        name: "ちびコウメ", rarity: "ちび", cl: "戦巫女", skill: "通常"
+        , stats: { def: "×1.8" }
     }
     , {
         name: "誅子", rarity: "黒", cl: "武侠", AW: "覚醒", skill: "覚醒(4n)"
