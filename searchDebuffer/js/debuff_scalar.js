@@ -19,19 +19,19 @@ debuff.scalar = [
     , {
         name: "プリニース", rarity: "黒", cl: "スカラー", AW: "未", skill: "通常"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
-        , target: { race: [ "人間", "デーモン", "神" ] }
+        , target: { attr: [ "人間", "デーモン", "神" ] }
         , note: "永続"
     }
     , {
         name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒", skill: "通常"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
-        , target: { race: [ "人間", "デーモン", "神" ] }
+        , target: { attr: [ "人間", "デーモン", "神" ] }
         , note: "永続"
     }
     , {
         name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
-        , target: { race: [ "人間", "デーモン", "神" ] }
+        , target: { attr: [ "人間", "デーモン", "神" ] }
     }
     , {
         name: "アナベラ", rarity: "白", cl: "スカラー", AW: "未"

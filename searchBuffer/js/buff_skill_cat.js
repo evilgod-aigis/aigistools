@@ -2251,8 +2251,7 @@ buff.skill_cat = [
     , {
         name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.5" }
-        , target: { race: [ "人間", "デーモン系", "神" ] }
-        , note: "分類未確認"
+        , target: { race: [ "人間", "デーモン系", "神", "半神" ] }
     }
     , {
         name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "覚醒"
