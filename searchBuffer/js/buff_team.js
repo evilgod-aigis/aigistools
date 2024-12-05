@@ -179,6 +179,11 @@ buff.team = [
         , target: { season: [ "サマー" ], depType: [ "近接" ] }
     }
     , {
+        name: "アリア/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒"
+        , stats: { def: "+7%" }
+        , target: { home: [ "王国" ] }
+    }
+    , {
         name: "リーゼロッテ", rarity: "白", cl: "ソルジャー", AW: "覚醒"
         , stats: { def: "+5%", mr: "+5" }
         , target: { cl: [ "ソルジャー", "ヘビーアーマー" ] }

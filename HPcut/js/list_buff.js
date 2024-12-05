@@ -618,6 +618,12 @@ lists.buff.haste.list = [
         "
     }
     , {
+        id: null, buffer: "歴史の観測者ホルミース", awaken: "覚2a", showAwaken: true
+        , value: 40, disabled: null, req: "deploy"
+        , target: [ { attribution: [ "人間", "神", "半神" ] } ]
+        , tooltip: "[範囲] 属性：人間・神・半神の攻撃硬直-40%"
+    }
+    , {
         id: null, buffer: "妖魔の旋律アミー", awaken: "覚2a", showAwaken: true
         , value: 40, disabled: null, req: "deploy"
         , target: [ { attribution: [ "魔界" ] } ]

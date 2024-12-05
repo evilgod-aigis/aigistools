@@ -33,6 +33,11 @@ buff.dep_area = [
         , note: "ドラグーン系"
     }
     , {
+        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚2a"
+        , stats: { atkCd: "-40%" }
+        , target: { race: [ "人間", "神", "半神" ] }
+    }
+    , {
         name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚2a"
         , stats: { atkCd: "-40%" }
         , target: { others: [ "魔界" ] }

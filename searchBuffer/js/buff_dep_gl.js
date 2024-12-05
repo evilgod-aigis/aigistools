@@ -922,7 +922,7 @@ buff.dep_gl = [
     }
     , {
         name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚醒"
-        , stats: { rege: [ "50/秒", "?/?f" ] }
+        , stats: { rege: [ "50/秒", "25/15f" ] }
         , target: [
             { home: [ "白の帝国" ] }
             , { season: [ "サマー" ] }
@@ -943,12 +943,12 @@ buff.dep_gl = [
     }
     , {
         name: "ティマ", rarity: "白", cl: "アクアナイト", AW: "未"
-        , stats: { rege: [ "50/秒", "?/?f" ] }
+        , stats: { rege: [ "50/秒", "25/15f" ] }
         , target: { others: [ "深海" ] }
     }
     , {
         name: "ティマ", rarity: "白", cl: "アクアナイト", AW: "覚醒"
-        , stats: { rege: [ "80/秒", "?/?f" ] }
+        , stats: { rege: [ "80/秒", "40/15f" ] }
         , target: { others: [ "深海" ] }
     }
     , {

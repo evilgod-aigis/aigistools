@@ -377,7 +377,6 @@ buff.skill_cat = [
             { home: [ "白の帝国" ] }
             , { season: [ "学園" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "キュウビ/学園", rarity: "黒", cl: "妖狐", AW: "覚醒", skill: "通常"
@@ -386,7 +385,6 @@ buff.skill_cat = [
             { home: [ "白の帝国" ] }
             , { season: [ "学園" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "イズナ", rarity: "白", cl: "妖狐", AW: "未", skill: "通常"
@@ -2294,7 +2292,6 @@ buff.skill_cat = [
         name: "コラリー", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.3" }
         , target: { others: [ "ドラゴン" ] }
-        , note: "分類未確認"
     }
     , {
         name: "ロカ/花嫁", rarity: "白", cl: "ドラゴンメイジ", AW: "未", skill: "通常"
@@ -2382,7 +2379,6 @@ buff.skill_cat = [
         name: "シルヴァーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.3" }
         , target: { others: [ "銃士" ] }
-        , note: "分類未確認"
     }
     , {
         name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒", skill: "覚醒"
@@ -2403,6 +2399,26 @@ buff.skill_cat = [
         name: "スイゼ", rarity: "白", cl: "ハデスシャーマン", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.2" }
         , target: { race: [ "冥界人" ] }
+    }
+    , {
+        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "未", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { race: [ "人間", "神", "半神" ] }
+    }
+    , {
+        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { race: [ "人間", "神", "半神" ] }
+    }
+    , {
+        name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: { others: [ "魔界" ] }
+    }
+    , {
+        name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: { others: [ "魔界" ] }
     }
     , {
         name: "ちびゴブリン博士", rarity: "ちび", cl: "ゴブリン博士", skill: "通常"

@@ -571,6 +571,14 @@ buff.dep_gl = [
         , stats: { def: "+7%" }
     }
     , {
+        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "未"
+        , stats: { rege: [ "30/秒", "15/15f" ] }
+    }
+    , {
+        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚醒"
+        , stats: { rege: [ "50/秒", "25/15f" ] }
+    }
+    , {
         name: "魔王の玉座", rarity: "金", cl: "魔王の玉座"
         , stats: { atk: "+5%", def: "+5%", other: "" }
         , note: "魔界-50%"

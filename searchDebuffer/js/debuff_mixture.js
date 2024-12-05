@@ -2705,6 +2705,22 @@ debuff.mixture = [
         , note: "発動時"
     }
     , {
+        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "未"
+        , stats: {
+            mr: { value: "-10%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚醒"
+        , stats: {
+            mr: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "未"
         , stats: {
             def: { value: "-15%", type: "area" }

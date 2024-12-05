@@ -9,18 +9,18 @@ debuff.scalar = [
         }
     }
     , {
-        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "未"
+        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "未", skill: "通常"
+        , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
+        , target: { attr: [ "人間", "デーモン", "神" ] }
+        , note: "永続"
+    }
+    , {
+        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒"
         , stats: {
             atk: [ "-15%", "→-30%" ]
             , def: [ "-15%", "→-30%" ]
             , mr: [ "-15%", "→-30%" ]
         }
-    }
-    , {
-        name: "プリニース", rarity: "黒", cl: "スカラー", AW: "未", skill: "通常"
-        , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
-        , target: { attr: [ "人間", "デーモン", "神" ] }
-        , note: "永続"
     }
     , {
         name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒", skill: "通常"
@@ -42,17 +42,17 @@ debuff.scalar = [
         }
     }
     , {
+        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
+        , stats: { atk: "*1.2", def: "*1.2", mr: "*1.2" }
+        , target: { attr: [ "ゴーレム" ] }
+    }
+    , {
         name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒"
         , stats: {
             atk: [ "-10%", "→-25%" ]
             , def: [ "-10%", "→-25%" ]
             , mr: [ "-10%", "→-25%" ]
         }
-    }
-    , {
-        name: "アナベラ", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
-        , stats: { atk: "*1.2", def: "*1.2", mr: "*1.2" }
-        , target: { attr: [ "ゴーレム" ] }
     }
     , {
         name: "アナベラ", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "通常"
@@ -73,17 +73,17 @@ debuff.scalar = [
         }
     }
     , {
+        name: "フェリシア", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
+        , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
+        , target: { attr: [ "神獣", "魔獣", "妖獣", "獣", "獣人" ] }
+    }
+    , {
         name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒"
         , stats: {
             atk: [ "-10%", "→-25%" ]
             , def: [ "-10%", "→-25%" ]
             , mr: [ "-10%", "→-25%" ]
         }
-    }
-    , {
-        name: "フェリシア", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
-        , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
-        , target: { attr: [ "神獣", "魔獣", "妖獣", "獣", "獣人" ] }
     }
     , {
         name: "フェリシア", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "通常"
@@ -104,17 +104,17 @@ debuff.scalar = [
         }
     }
     , {
+        name: "コレット", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
+        , stats: { atk: "*1.4", def: "*1.4", mr: "*1.4" }
+        , target: { attr: [ "天使", "天界人", "神" ] }
+    }
+    , {
         name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒"
         , stats: {
             atk: [ "-10%", "→-25%" ]
             , def: [ "-10%", "→-25%" ]
             , mr: [ "-10%", "→-25%" ]
         }
-    }
-    , {
-        name: "コレット", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
-        , stats: { atk: "*1.4", def: "*1.4", mr: "*1.4" }
-        , target: { attr: [ "天使", "天界人", "神" ] }
     }
     , {
         name: "コレット", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "通常"
@@ -135,17 +135,17 @@ debuff.scalar = [
         }
     }
     , {
+        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
+        , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
+        , target: { attr: [ "人間", "冥界人", "アンデッド" ] }
+    }
+    , {
         name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒"
         , stats: {
             atk: [ "-10%", "→-25%" ]
             , def: [ "-10%", "→-25%" ]
             , mr: [ "-10%", "→-25%" ]
         }
-    }
-    , {
-        name: "ジェニー", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
-        , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
-        , target: { attr: [ "人間", "冥界人", "アンデッド" ] }
     }
     , {
         name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "通常"
@@ -167,17 +167,17 @@ debuff.scalar = [
         }
     }
     , {
-        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "未"
+        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
+        , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
+        , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
+    }
+    , {
+        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒"
         , stats: {
             atk: [ "-10%", "→-25%" ]
             , def: [ "-10%", "→-25%" ]
             , mr: [ "-10%", "→-25%" ]
         }
-    }
-    , {
-        name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
-        , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
-        , target: { attr: [ "妖怪", "デーモン", "アンデッド" ] }
     }
     , {
         name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "通常"

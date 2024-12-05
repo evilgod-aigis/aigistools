@@ -1445,6 +1445,10 @@ const unitList = [
     , { id: 0x058c, implDate: "2024/11/21", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "both", class: "異世界戦士", name: "エフトラ", modifier: "最終決戦仕様", derivation: "最終決戦仕様" }
     , { id: 0x058d, implDate: "2024/11/21", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "both", class: "盤上の支配者", name: "フィネス", modifier: "戦場を編む者" }
     , { id: 0x058e, implDate: "2024/11/21", implDate_bq: null        , obtain: [ "tr", "hero" ], rarity: "ph", depType: "both", class: "盤上の支配者", name: "フィネス", modifier: "戦場を編む者" }
+    , { id: 0x058f, implDate: "2024/12/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "van" , class: "ぬらりひょん", name: "ちびシノ" }
+    , { id: 0x0590, implDate: "2024/12/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "van" , class: "戦巫女", name: "ちびコウメ" }
+    , { id: 0x0591, implDate: "2024/12/05", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "van" , class: "ソルジャー", name: "アリア", modifier: "歴戦の副官", derivation: "新装" }
+    , { id: 0x0592, implDate: "2024/12/05", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "rear", class: "吟遊詩人", name: "ホルミース", modifier: "歴史の観測者" }
     
     
     

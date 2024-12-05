@@ -46,6 +46,16 @@ buff.skill_area = [
         , note: [ "永続", "分類未確認" ]
     }
     , {
+        name: "アリア/新装", rarity: "黒", cl: "ソルジャー", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
+        name: "アリア/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , note: "魔法化"
+    }
+    , {
         name: "ベルニス/花嫁", rarity: "白", cl: "ヘビーアーマー", AW: "覚醒", skill: "覚醒"
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
@@ -173,7 +183,7 @@ buff.skill_area = [
     , {
         name: "クーコ/ハロウィン", rarity: "黒", cl: "風伯", AW: "覚醒", skill: "覚醒"
         , stats: { mr: "×1.4" }
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "未", skill: "通常"
@@ -481,12 +491,12 @@ buff.skill_area = [
     , {
         name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "未", skill: "通常"
         , stats: { atk: "×1.2", eva: "50%" }
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.2", eva: "50%" }
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒", skill: "覚醒(4～)"
@@ -955,6 +965,14 @@ buff.skill_area = [
     , {
         name: "セレン", rarity: "白", cl: "メディック", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.2", def: "×1.2" }
+    }
+    , {
+        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "未", skill: "通常"
+        , stats: { hp: "+30%" }
+    }
+    , {
+        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
+        , stats: { hp: "+30%" }
     }
     , {
         name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "未", skill: "通常"

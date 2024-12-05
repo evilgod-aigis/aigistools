@@ -548,7 +548,7 @@ debuff.hit = [
         name: "リムリィ", rarity: "白", cl: "処刑人", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "-30%" }
         , atkAttr: "物理", dur: "300f"
-        , note: [ "ボム", "分類未確認" ]
+        , note: "ボム"
     }
     , {
         name: "リムリィ/水着", rarity: "白", cl: "処刑人", AW: "覚醒", skill: "覚醒(1)"
@@ -649,7 +649,7 @@ debuff.hit = [
     }
     , {
         name: "クローシェ", rarity: "白", cl: "妖糸使い", AW: "覚醒", skill: "覚醒"
-        , stats: { atkCd: "+?f" }
+        , stats: { atkCd: "+23f" }
         , atkAttr: "物理", dur: "?f"
     }
     , {
@@ -735,14 +735,12 @@ debuff.hit = [
     , {
         name: "天墜神星", rarity: "黒", cl: "シャーマン", AW: "未"
         , stats: { atk: "-15%", def: "-15%" }
-        , atkAttr: "魔法", dur: "?f"
-        , note: "分類未確認"
+        , atkAttr: "魔法", dur: "119f"
     }
     , {
         name: "天墜神星", rarity: "黒", cl: "シャーマン", AW: "覚醒"
         , stats: { atk: "-20%", def: "-20%" }
-        , atkAttr: "魔法", dur: "?f"
-        , note: "分類未確認"
+        , atkAttr: "魔法", dur: "119f"
     }
     , {
         name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒"

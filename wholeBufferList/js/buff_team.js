@@ -35,6 +35,14 @@ buff.team = [
         , stats: { hp: "+15%" }
     }
     , {
+        name: "アリア/新装", rarity: "黒", cl: "ソルジャー", AW: "未"
+        , stats: { atk: "+3%" }
+    }
+    , {
+        name: "アリア/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒"
+        , stats: { atk: "+5%" }
+    }
+    , {
         name: "アリア", rarity: "金", cl: "ソルジャー", AW: "覚醒"
         , stats: { atk: "+2%" }
     }
