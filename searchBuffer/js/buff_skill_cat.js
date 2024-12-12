@@ -427,6 +427,15 @@ buff.skill_cat = [
         , note: "範囲"
     }
     , {
+        name: "ルチア/クリスマス", rarity: "白", cl: "神官戦士", AW: "覚醒", skill: "覚醒"
+        , stats: { redep: "?秒" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+        , note: [ "発動時", "死亡・撤退最後1体" ]
+    }
+    , {
         name: "シルセス/花嫁", rarity: "黒", cl: "メイジアーマー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.2", abn: "-100%" }
         , target: { sex: [ "女性" ] }
@@ -494,8 +503,7 @@ buff.skill_cat = [
         name: "アリエル", rarity: "黒", cl: "メイド", AW: "覚醒", skill: "覚醒(3～)"
         , stats: { atk: "×1.8", def: "×1.8", mr: "×1.8", other: "" }
         , target: { cl: [ "神官戦士", "ヒーラー", "ビショップ", "ルーンアコライト", "アコライト" ] }
-        , note: "隠密付与"
-        , note: "永続"
+        , note: [ "隠密付与", "永続" ]
     }
     , {
         name: "セーラ/水着", rarity: "黒", cl: "メイド", AW: "未", skill: "通常"
@@ -505,7 +513,6 @@ buff.skill_cat = [
             , { season: [ "サマー" ] }
             , { others: [ "全プリンセス系" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "セーラ/水着", rarity: "黒", cl: "メイド", AW: "覚醒", skill: "通常"
@@ -515,7 +522,6 @@ buff.skill_cat = [
             , { season: [ "サマー" ] }
             , { others: [ "全プリンセス系" ] }
         ]
-        , note: "分類未確認"
     }
     , {
         name: "セーラ/水着", rarity: "黒", cl: "メイド", AW: "覚醒", skill: "覚醒"
@@ -525,7 +531,7 @@ buff.skill_cat = [
             , { season: [ "サマー" ] }
             , { others: [ "全プリンセス系" ] }
         ]
-        , note: [ "永続", "分類未確認" ]
+        , note: "永続"
     }
     , {
         name: "ファニュア", rarity: "黒", cl: "メイド", AW: "未", skill: "通常"
@@ -551,6 +557,35 @@ buff.skill_cat = [
             , { others: [ "アンデッド" ] }
         ]
         , note: "分類未確認"
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "未", skill: "通常"
+        , stats: { def: "×1.3", mr: "×1.3" }
+        , target: [
+            { sex: [ "女性" ] }
+            , { season: [ "クリスマス" ] }
+            , { others: [ "高貴" ] }
+        ]
+        , note: "永続"
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "覚醒", skill: "通常"
+        , stats: { def: "×1.3", mr: "×1.3" }
+        , target: [
+            { sex: [ "女性" ] }
+            , { season: [ "クリスマス" ] }
+            , { others: [ "高貴" ] }
+        ]
+        , note: "永続"
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.5" }
+        , target: [
+            { sex: [ "女性" ] }
+            , { season: [ "クリスマス" ] }
+            , { others: [ "高貴" ] }
+        ]
     }
     , {
         name: "リーナ", rarity: "白", cl: "メイド", AW: "覚醒", skill: "覚醒"
@@ -2059,6 +2094,33 @@ buff.skill_cat = [
         name: "ミネット/学園", rarity: "白", cl: "マーチャント", AW: "覚醒", skill: "通常"
         , stats: { cost: "×0.5" }
         , target: { season: [ "学園" ] }
+    }
+    , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "未", skill: "通常"
+        , stats: { atk: "×1.7" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+        , note: "範囲"
+    }
+    , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.7" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+        , note: "範囲"
+    }
+    , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.5" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+        , note: [ "範囲", "永続" ]
     }
     , {
         name: "コハル/ハロウィン", rarity: "黒", cl: "猫又", AW: "未", skill: "通常"

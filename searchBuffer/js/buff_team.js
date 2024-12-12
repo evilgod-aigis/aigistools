@@ -154,6 +154,11 @@ buff.team = [
         , note: "Lv3以上"
     }
     , {
+        name: "王子【聖夜】", cl: "王子"
+        , stats: { hp: "+15%" }
+        , target: { season: [ "クリスマス" ] }
+    }
+    , {
         name: "ちび王子", cl: "王子"
         , stats: { atk: "+15%" }
         , target: { others: [ "ちび" ] }
@@ -792,6 +797,32 @@ buff.team = [
         , target: [
             { race: [ "デーモン系" ] }
             , { others: [ "アンデッド" ] }
+        ]
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "未"
+        , stats: { atk: "+5%" }
+        , target: [ { sex: [ "女性" ] } ]
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "未"
+        , stats: { atk: "+10%" }
+        , target: [
+            { season: [ "クリスマス" ] }
+            , { others: [ "高貴" ] }
+        ]
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "覚醒"
+        , stats: { atk: "+10%" }
+        , target: [ { sex: [ "女性" ] } ]
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "覚醒"
+        , stats: { atk: "+20%" }
+        , target: [
+            { season: [ "クリスマス" ] }
+            , { others: [ "高貴" ] }
         ]
     }
     , {
@@ -2205,6 +2236,26 @@ buff.team = [
         name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒"
         , stats: { range: "+10" }
         , target: { season: [ "お正月" ] }
+    }
+    , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "未"
+        , stats: { atk: "+5%" }
+        , target: { sex: [ "女性" ] }
+    }
+    , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "未"
+        , stats: { hp: "+7%" }
+        , target: { season: [ "クリスマス" ] }
+    }
+    , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒"
+        , stats: { atk: "+7%" }
+        , target: { sex: [ "女性" ] }
+    }
+    , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒"
+        , stats: { hp: "+10%" }
+        , target: { season: [ "クリスマス" ] }
     }
     , {
         name: "リヴル", rarity: "白", cl: "デモンサモナー", AW: "覚醒"

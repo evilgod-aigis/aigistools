@@ -322,7 +322,7 @@ table.CreateTable = () => {
                 newTd.classList.add(`column-${elem}`);
                 if(elem in buffer.stats) {
                     newTr.classList.add(`stats-${elem}`);
-                    newTd.className = "cell-filled";
+                    newTd.classList.add("cell-filled");
                     if(Array.isArray(buffer.stats[elem]))
                         newTd.innerHTML = buffer.stats[elem].join("<br>");
                     else if(buffer.stats[elem][0] === "m" && buffer.stats[elem].length === 6)
@@ -374,7 +374,7 @@ table.CreateTable = () => {
             if("note" in buffer) {
                 if("other" in buffer.stats) {
                     newTr.classList.add("stats-other");
-                    newTd.className = "cell-filled";
+                    newTd.classList.add("cell-filled");
                 }
                 newTd.innerHTML = Array.isArray(buffer.note) ? buffer.note.join("<br>") : buffer.note;
             }

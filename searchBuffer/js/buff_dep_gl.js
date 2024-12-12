@@ -110,6 +110,11 @@ buff.dep_gl = [
         , target: { home: [ "東の国" ] }
     }
     , {
+        name: "トレシア", rarity: "白", cl: "プリンセス", AW: "覚醒"
+        , stats: { def: "+5%" }
+        , target: { others: [ "高貴" ] }
+    }
+    , {
         name: "ちびヨシノ", rarity: "ちび", cl: "プリンセス"
         , stats: { draw: "○" }
         , target: { home: [ "東の国" ] }
@@ -349,6 +354,22 @@ buff.dep_gl = [
         , target: { season: [ "バレンタイン" ] }
     }
     , {
+        name: "ルチア/クリスマス", rarity: "白", cl: "神官戦士", AW: "未"
+        , stats: { atk: "+5%" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+    }
+    , {
+        name: "ルチア/クリスマス", rarity: "白", cl: "神官戦士", AW: "覚醒"
+        , stats: { atk: "+7%" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+    }
+    , {
         name: "シルセス/花嫁", rarity: "黒", cl: "メイジアーマー", AW: "未"
         , stats: { atk: "+7%" }
         , target: { season: [ "ジューンブライド" ] }
@@ -419,6 +440,15 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "セーラ/水着", rarity: "黒", cl: "メイド", AW: "覚醒"
+        , stats: { draw: "○" }
+        , target: [
+            { cl: [ "王子", "皇帝" ] }
+            , { season: [ "サマー" ] }
+            , { others: [ "全プリンセス系" ] }
+        ]
+    }
+    , {
         name: "ファニュア", rarity: "黒", cl: "メイド", AW: "未"
         , stats: { draw: "○" }
         , target: [
@@ -435,12 +465,21 @@ buff.dep_gl = [
         ]
     }
     , {
-        name: "セーラ/水着", rarity: "黒", cl: "メイド", AW: "覚醒"
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "未"
         , stats: { draw: "○" }
         , target: [
-            { cl: [ "王子", "皇帝" ] }
-            , { season: [ "サマー" ] }
-            , { others: [ "全プリンセス系" ] }
+            { sex: [ "女性" ] }
+            , { season: [ "クリスマス" ] }
+            , { others: [ "高貴" ] }
+        ]
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "覚醒"
+        , stats: { draw: "○" }
+        , target: [
+            { sex: [ "女性" ] }
+            , { season: [ "クリスマス" ] }
+            , { others: [ "高貴" ] }
         ]
     }
     , {
@@ -504,6 +543,22 @@ buff.dep_gl = [
         , target: [
             { home: [ "白の帝国" ] }
             , { season: [ "サマー" ] }
+        ]
+    }
+    , {
+        name: "ソーマ/メイド", rarity: "白", cl: "メイド", AW: "未"
+        , stats: { draw: "○" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { others: [ "弓兵" ] }
+        ]
+    }
+    , {
+        name: "ソーマ/メイド", rarity: "白", cl: "メイド", AW: "覚醒"
+        , stats: { draw: "○" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { others: [ "弓兵" ] }
         ]
     }
     /*

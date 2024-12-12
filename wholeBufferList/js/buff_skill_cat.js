@@ -1,6 +1,10 @@
 // 属性スキル
 buff.skill_cat = [
     {
+        name: "王子【聖夜】", cl: "王子", skill: "通常(4～)"
+        , stats: { atk: "×1.2" }
+    }
+    , {
         name: "ヘレナ", rarity: "白", cl: "前衛戦術家", AW: "未", skill: "通常(奇)"
         , stats: { def: "×1.2" }
     }

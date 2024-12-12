@@ -128,6 +128,12 @@ debuff.hit = [
         , note: "ボム"
     }
     , {
+        name: "ちびデシウス", rarity: "ちび", cl: "ダークファイター"
+        , stats: { atk: "-15%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "レティシア/学園", rarity: "白", cl: "アベンジャー", AW: "覚醒", skill: [ "通常", "覚醒" ]
         , stats: { atk: "-20%" }
         , atkAttr: "物理", dur: "?f"
@@ -162,6 +168,12 @@ debuff.hit = [
         name: "エメルダ/バレンタイン", rarity: "黒", cl: "ボウライダー", AW: "覚醒", skill: "覚醒"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "89f"
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "覚醒"
+        , stats: { def: "-40%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "ジークリンデ", rarity: "黒", cl: "ソードマスター", AW: "覚醒", skill: "覚醒"

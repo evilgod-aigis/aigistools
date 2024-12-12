@@ -1,6 +1,24 @@
 // 永続
 buff.perm = [
     {
+        name: "王子【聖夜】", cl: "王子", skill: "通常(1)"
+        , stats: { hp: "×1.1" }
+        , target: { season: [ "クリスマス" ] }
+        , note: "発動時"
+    }
+    , {
+        name: "王子【聖夜】", cl: "王子", skill: "通常(2)"
+        , stats: { atk: "×1.1" }
+        , target: { season: [ "クリスマス" ] }
+        , note: "発動時"
+    }
+    , {
+        name: "王子【聖夜】", cl: "王子", skill: "通常(3)"
+        , stats: { def: "×1.1" }
+        , target: { season: [ "クリスマス" ] }
+        , note: "発動時"
+    }
+    , {
         name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚醒", skill: "覚醒"
         , stats: { hp: "×1.2" }
         , target: [

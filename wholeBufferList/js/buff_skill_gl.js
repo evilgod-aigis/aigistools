@@ -147,6 +147,10 @@ buff.skill_gl = [
         , stats: { hp: "+20%" }
     }
     , {
+        name: "トレシア", rarity: "白", cl: "プリンセス", AW: "覚醒", skill: "覚醒"
+        , stats: { eva: "40%" }
+    }
+    , {
         name: "ヴルム", rarity: "黒", cl: "中級竜兵", AW: "未", skill: "通常"
         , stats: { nul: "100%" }
     }
@@ -313,6 +317,14 @@ buff.skill_gl = [
     , {
         name: "サラサ", rarity: "白", cl: "ボウライダー", AW: "覚醒", skill: "覚醒"
         , stats: { nul: "50%" }
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "未", skill: "通常"
+        , stats: { rege: [ "60/秒", "30/15f" ] }
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "覚醒", skill: "通常"
+        , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
         name: "エマ/温泉", rarity: "黒", cl: "ヴァンパイアロード", AW: "覚醒", skill: "覚醒"

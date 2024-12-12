@@ -133,6 +133,10 @@ buff.dep_gl = [
         , note: "魔界-100%"
     }
     , {
+        name: "王子【聖夜】", cl: "王子"
+        , stats: { atk: "+15%", def: "+15%" }
+    }
+    , {
         name: "王子【幼少】", cl: "王子"
         , stats: { atk: "+10%", def: "+10%" }
     }
@@ -276,6 +280,14 @@ buff.dep_gl = [
     , {
         name: "ティファ", rarity: "黒", cl: "ドラゴンライダー", AW: "覚醒"
         , stats: { def: "+5%", mr: "+5" }
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "未"
+        , stats: { rege: [ "30/秒", "15/15f" ] }
+    }
+    , {
+        name: "セーラ/クリスマス", rarity: "黒", cl: "メイド", AW: "覚醒"
+        , stats: { rege: [ "50/秒", "25/15f" ] }
     }
     , {
         name: "ソーマ/メイド", rarity: "白", cl: "メイド", AW: "覚醒"

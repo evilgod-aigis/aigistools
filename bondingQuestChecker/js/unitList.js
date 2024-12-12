@@ -248,7 +248,7 @@ const unitList = [
     , { id: 0x00f1, implDate: "2015/11/19", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "van" , class: "ダークファイター", name: "暗黒騎士", male: 1 }
     , { id: 0x00f2, implDate: "2015/11/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "sl", depType: "van" , class: "ワルキューレ", name: "チグリ", modifier: "密林の槍騎兵" }
     , { id: 0x00f3, implDate: "2015/12/03", implDate_bq: "2017/11/22", obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "ローグ", name: "ジュノン", modifier: "秘刃の暗殺者" }
-    , { id: 0x00f4, implDate: "2015/12/03", implDate_bq: null        , obtain: [ "sh"         ], rarity: "g" , depType: "van" , class: "忍者", name: "カナメ", modifier: "封妖の忍者" }
+    , { id: 0x00f4, implDate: "2015/12/03", implDate_bq: "2024/12/12", obtain: [ "sh"         ], rarity: "g" , depType: "van" , class: "忍者", name: "カナメ", modifier: "封妖の忍者" }
     , { id: 0x00f5, implDate: "2015/12/17", implDate_bq: "2017/04/13", obtain: [ "ev", "star" ], rarity: "p" , depType: "van" , class: "メイド", name: "アイリーン", modifier: "召使い" }
     , { id: 0x00f6, implDate: "2015/12/17", implDate_bq: "2019/07/25", obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "マーチャント", name: "トトノ", modifier: "行商人" }
     , { id: 0x00f7, implDate: "2015/12/17", implDate_bq: "2017/12/28", obtain: [ "ev", "drop" ], rarity: "p" , depType: "van" , class: "ボウライダー", name: "サラサ", modifier: "聖夜の弓騎兵", latent: "クリスマス" }
@@ -1035,7 +1035,7 @@ const unitList = [
     , { id: 0x03f6, implDate: "2022/06/09", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ウィッチ", name: "ユーティ", modifier: "ひだまりの花嫁", derivation: "花嫁" }
     , { id: 0x03f7, implDate: "2022/06/23", implDate_bq: null        , obtain: [ "ev", "item" ], rarity: "b" , depType: "rear", class: "狛犬", name: "コマ", modifier: "白無垢の狛犬", derivation: "花嫁" }
     , { id: 0x03f8, implDate: "2022/06/23", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "料理人", name: "アシュリン", modifier: "常夜の料理人" }
-    , { id: 0x03f9, implDate: "2022/06/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ドラグーン", name: "イーファ", modifier: "紫風の竜砲騎兵" }
+    , { id: 0x03f9, implDate: "2022/06/30", implDate_bq: "2024/12/12", obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ドラグーン", name: "イーファ", modifier: "紫風の竜砲騎兵" }
     , { id: 0x03fa, implDate: "2022/07/07", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "van" , class: "テンプルナイト", name: "デシレア", modifier: "光剣の神聖騎士" }
     , { id: 0x03fb, implDate: "2022/07/07", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "ソルジャー", name: "アルティア", modifier: "潮風の守護者", derivation: "水着" }
     , { id: 0x03fc, implDate: "2022/07/07", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "真人", name: "清源妙道真君", modifier: "夏の賢仙 ", derivation: "水着" }
@@ -1449,6 +1449,11 @@ const unitList = [
     , { id: 0x0590, implDate: "2024/12/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "van" , class: "戦巫女", name: "ちびコウメ" }
     , { id: 0x0591, implDate: "2024/12/05", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "van" , class: "ソルジャー", name: "アリア", modifier: "歴戦の副官", derivation: "新装" }
     , { id: 0x0592, implDate: "2024/12/05", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "rear", class: "吟遊詩人", name: "ホルミース", modifier: "歴史の観測者" }
+    , { id: 0x0593, implDate: "2024/12/12", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "van" , class: "プリンセス", name: "トレシア", modifier: "北部城塞の姫君" }
+    , { id: 0x0594, implDate: "2024/12/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "メイド", name: "セーラ", modifier: "白雪の筆頭侍女", derivation: "クリスマス" }
+    , { id: 0x0595, implDate: "2024/12/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "デモンサモナー", name: "ラピス", modifier: "大悪魔と雪景色", derivation: "クリスマス" }
+    , { id: 0x0596, implDate: "2024/12/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "神官戦士", name: "雪駆け神官", modifier: "ルチア", derivation: "クリスマス" }
+    , { id: 0x0597, implDate: "2024/12/12", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "van" , class: "ダークファイター", name: "ちびデシウス", male: 1 }
     
     
     

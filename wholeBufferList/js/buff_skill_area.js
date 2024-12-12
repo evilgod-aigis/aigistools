@@ -219,8 +219,8 @@ buff.skill_area = [
         name: "ハリナ/水着", rarity: "黒", cl: "エンプレス", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: [
-            { not: [ "season" ], season: [ "サマー" ] }
-            , { not: [ "home" ], home: [ "帝国" ] }
+            { not: [ "home" ], home: [ "帝国" ] }
+            , { not: [ "season" ], season: [ "サマー" ] }
         ]
     }
     , {
@@ -710,9 +710,46 @@ buff.skill_area = [
         , note: "永続"
     }
     , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "未", skill: "通常"
+        , stats: { hp: "+40%" }
+    }
+    , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "未", skill: "通常"
+        , stats: { atk: "×1.4" }
+        , target: [
+            { not: [ "race" ], race: [ "デーモン系" ] }
+            , { not: [ "season" ], season: [ "帝国" ] }
+        ]
+    }
+    , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒", skill: "通常"
+        , stats: { hp: "+40%" }
+    }
+    , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.4" }
+        , target: [
+            { not: [ "race" ], race: [ "デーモン系" ] }
+            , { not: [ "season" ], season: [ "帝国" ] }
+        ]
+    }
+    , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒", skill: "覚醒"
+        , stats: { hp: "+20%" }
+        , note: "永続"
+    }
+    , {
+        name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.2" }
+        , target: [
+            { not: [ "race" ], race: [ "デーモン系" ] }
+            , { not: [ "season" ], season: [ "帝国" ] }
+        ]
+        , note: "永続"
+    }
+    , {
         name: "リヴル/ハロウィン", rarity: "白", cl: "デモンサモナー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.5" }
-        , note: "範囲"
     }
     , {
         name: "ちびラピス", rarity: "ちび", cl: "デモンサモナー", skill: "覚醒"

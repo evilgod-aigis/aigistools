@@ -619,15 +619,15 @@ lists.buff.haste.list = [
     }
     , {
         id: null, buffer: "歴史の観測者ホルミース", awaken: "覚2a", showAwaken: true
-        , value: 40, disabled: null, req: "deploy"
+        , value: 30, disabled: null, req: "deploy"
         , target: [ { attribution: [ "人間", "神", "半神" ] } ]
-        , tooltip: "[範囲] 属性：人間・神・半神の攻撃硬直-40%"
+        , tooltip: "[範囲] 属性：人間・神・半神の攻撃硬直-30%"
     }
     , {
         id: null, buffer: "妖魔の旋律アミー", awaken: "覚2a", showAwaken: true
-        , value: 40, disabled: null, req: "deploy"
+        , value: 30, disabled: null, req: "deploy"
         , target: [ { attribution: [ "魔界" ] } ]
-        , tooltip: "[範囲] 属性：魔界の攻撃硬直-40%"
+        , tooltip: "[範囲] 属性：魔界の攻撃硬直-30%"
     }
     , {
         id: null, buffer: "孫策 伯符", awaken: "-"
