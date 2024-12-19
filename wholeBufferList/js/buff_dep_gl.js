@@ -544,6 +544,11 @@ buff.dep_gl = [
         , note: "深海-50%"
     }
     , {
+        name: "神宝九十九神", cl: "霊宝つくもがみ", AW: "覚2a"
+        , stats: { atk: "+15%", def: "+15%" }
+        , note: "霊宝つくもがみ系"
+    }
+    , {
         name: "ロカ", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒"
         , stats: { nul: "7%" }
     }
