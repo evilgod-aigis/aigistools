@@ -428,7 +428,7 @@ buff.skill_cat = [
     }
     , {
         name: "ルチア/クリスマス", rarity: "白", cl: "神官戦士", AW: "覚醒", skill: "覚醒"
-        , stats: { redep: "?秒" }
+        , stats: { redep: "20秒" }
         , target: [
             { home: [ "白の帝国" ] }
             , { season: [ "クリスマス" ] }

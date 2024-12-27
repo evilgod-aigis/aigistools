@@ -398,6 +398,40 @@ buff.add = [
         , note: [ "範囲", "永続" ]
     }
     , {
+        name: "アンナ/お正月", rarity: "黒", cl: "政務官", AW: "未"
+        , stats: { atk: "max100", def: "max100" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "お正月" ] }
+        ]
+    }
+    , {
+        name: "アンナ/お正月", rarity: "黒", cl: "政務官", AW: "覚醒"
+        , stats: { atk: "max200", def: "max200" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "お正月" ] }
+        ]
+    }
+    , {
+        name: "アンナ/お正月", rarity: "黒", cl: "政務官", AW: "未", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "アンナ/お正月", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "アンナ/お正月", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "範囲", "永続" ]
+    }
+    , {
         name: "マレブランケ", rarity: "黒", cl: "ダークプリースト", AW: "覚醒"
         , stats: { mr: "+20" }
         , target: { home: [ "白の帝国" ] }

@@ -55,6 +55,15 @@ buff.skill_area = [
         , note: "ボム"
     }
     , {
+        name: "アンナ/お正月", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒"
+        , stats: { eva: "20%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "お正月" ] }
+        ]
+        , note: "永続"
+    }
+    , {
         name: "トワ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒", skill: "覚醒"
         , stats: { atkCd: "6f化" }
         , target: { others: [ "魔術師" ] }

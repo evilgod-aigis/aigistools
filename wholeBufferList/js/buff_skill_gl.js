@@ -470,6 +470,14 @@ buff.skill_gl = [
         , note: "深海-100%"
     }
     , {
+        name: "太上老君", rarity: "黒", cl: "天尊", AW: "未", skill: "通常"
+        , stats: { hp: "+50%" }
+    }
+    , {
+        name: "太上老君", rarity: "黒", cl: "天尊", AW: "覚醒", skill: "通常"
+        , stats: { hp: "+50%" }
+    }
+    , {
         name: "村人", rarity: "銅", cl: "村人", skill: "通常"
         , stats: { rege: [ "10/秒", "?/?f" ] }
     }

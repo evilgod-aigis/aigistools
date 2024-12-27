@@ -271,6 +271,16 @@ buff.skill_area = [
         , stats: { rege: [ "400/秒", "200/15f" ] }
     }
     , {
+        name: "太上道君", rarity: "黒", cl: "天尊", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , note: "HP回復量×1.2"
+    }
+    , {
+        name: "太上道君", rarity: "黒", cl: "天尊", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , note: "HP回復量×1.2"
+    }
+    , {
         name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "未", skill: "通常"
         , stats: { eva: "50%" }
         , note: "永続"

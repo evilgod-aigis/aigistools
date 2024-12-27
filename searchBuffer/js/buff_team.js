@@ -2143,6 +2143,15 @@ buff.team = [
         , target: { cl: [ "王子" ] }
     }
     , {
+        name: "メープル/クリスマス", rarity: "白", cl: "ドルイド", AW: "覚醒"
+        , stats: { atk: "+3%" }
+        , target: [
+            { cl: [ "ドルイド", "レンジャー" ] }
+            , { season: [ "クリスマス" ] }
+            , { others: [ "騎兵" ] }
+        ]
+    }
+    , {
         name: "ロヴィニア/学園", rarity: "黒", cl: "レンジャー", AW: "未"
         , stats: { poison: "-80%", abn: "-80%" }
         , target: { season: [ "学園" ] }
