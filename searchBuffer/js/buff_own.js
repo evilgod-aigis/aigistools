@@ -212,6 +212,14 @@ buff.own = [
         , target: { others: [ "弓兵" ] }
     }
     , {
+        name: "ユージェン/お正月", rarity: "白", cl: "チェイスハンター", AW: "覚醒"
+        , stats: { atk: "+3%" }
+        , target: [
+            { cl: [ "チェイスハンター" ] }
+            , { season: [ "お正月" ] }
+        ]
+    }
+    , {
         name: "サナラ/水着", rarity: "白", cl: "ジオマンサー", AW: "覚醒"
         , stats: { hp: "+3%" }
         , target: { season: [ "サマー" ] }

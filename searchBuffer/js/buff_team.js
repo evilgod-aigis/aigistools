@@ -159,6 +159,11 @@ buff.team = [
         , target: { season: [ "クリスマス" ] }
     }
     , {
+        name: "王子【翼蛇】", cl: "王子"
+        , stats: { atk: "+7%", def: "+7%" }
+        , target: { year: [ "2013年", "2025年" ] }
+    }
+    , {
         name: "ちび王子", cl: "王子"
         , stats: { atk: "+15%" }
         , target: { others: [ "ちび" ] }
@@ -1400,6 +1405,14 @@ buff.team = [
         , target: { cl: [ "ペガサスライダー", "グリフィンライダー" ] }
     }
     , {
+        name: "クゥイル/お正月", rarity: "白", cl: "グリフィンライダー", AW: "覚醒"
+        , stats: { hp: "+5%", atk: "+5%", cost: "+1" }
+        , target: [
+            { season: [ "お正月" ] }
+            , { others: [ "騎兵" ] }
+        ]
+    }
+    , {
         name: "太公望", rarity: "白", cl: "真人", AW: "覚醒"
         , stats: { hp: "+5%" }
         , target: { cl: [ "仙人", "仙猿", "真人" ] }
@@ -2459,6 +2472,22 @@ buff.team = [
         name: "ジゼル", rarity: "黒", cl: "ドラグーン", AW: "覚醒"
         , stats: { cost: "-3" }
         , target: { others: [ "ドラゴン" ] }
+    }
+    , {
+        name: "イーファ/お正月", rarity: "黒", cl: "ドラグーン", AW: "未"
+        , stats: { atkCd: "-?%" }
+        , target: [
+            { season: [ "お正月" ] }
+            , { others: [ "ドラゴン" ] }
+        ]
+    }
+    , {
+        name: "イーファ/お正月", rarity: "黒", cl: "ドラグーン", AW: "覚醒"
+        , stats: { atkCd: "-?%" }
+        , target: [
+            { season: [ "お正月" ] }
+            , { others: [ "ドラゴン" ] }
+        ]
     }
     , {
         name: "エンジュ/花嫁", rarity: "黒", cl: "座敷わらし", AW: "未"

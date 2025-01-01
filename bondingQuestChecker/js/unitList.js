@@ -1458,6 +1458,12 @@ const unitList = [
     , { id: 0x0599, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "天尊", name: "太上道君" }
     , { id: 0x059a, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "天尊", name: "太上老君" }
     , { id: 0x059b, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "晴れ着の政務官", derivation: "お正月" }
+    , { id: 0x059c, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "邪仙", name: "聞忠", modifier: "異国の迎春祭 ", derivation: "お正月" }
+    , { id: 0x059d, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ドラグーン", name: "イーファ", modifier: "新年撃ち初め", derivation: "お正月" }
+    , { id: 0x059e, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "チェイスハンター", name: "ユージェン", modifier: "破魔の影矢", derivation: "お正月" }
+    , { id: 0x059f, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "p" , depType: "van" , class: "グリフィンライダー", name: "クゥイル", modifier: "鷲獅の迎春飛行", derivation: "お正月" }
+    , { id: 0x05a0, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "van" , class: "ワルキューレ", name: "ちびレシア" }
+    , { id: 0x05a1, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "van" , class: "妖狐", name: "ちびイズナ" }
     
     
     

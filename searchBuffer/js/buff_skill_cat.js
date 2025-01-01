@@ -415,6 +415,11 @@ buff.skill_cat = [
         , note: "オート"
     }
     , {
+        name: "ちびイズナ", rarity: "ちび", cl: "妖狐", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { race: [ "妖怪" ] }
+    }
+    , {
         name: "エレット/バレンタイン", rarity: "白", cl: "神官戦士", AW: "未", skill: "通常"
         , stats: { atk: "×1.6" }
         , target: { season: [ "バレンタイン" ] }
@@ -1181,6 +1186,15 @@ buff.skill_cat = [
         name: "プルーム", rarity: "白", cl: "グリフィンライダー", AW: "覚醒", skill: "通常"
         , stats: { hp: "+30%", atk: "×1.5" }
         , target: { race: [ "エルフ系", "ドワーフ" ] }
+    }
+    , {
+        name: "聞忠/お正月", rarity: "黒", cl: "邪仙", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.5" }
+        , target: [
+            { depType: [ "近接" ] }
+            , { season: [ "お正月" ] }
+        ]
+        , note: "分類未確認"
     }
     , {
         name: "胡喜美", rarity: "白", cl: "邪仙", AW: "未", skill: "通常"

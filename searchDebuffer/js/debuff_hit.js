@@ -283,6 +283,16 @@ debuff.hit = [
         , note: "通常スキルは確率40%で貫通"
     }
     , {
+        name: "聞忠/お正月", rarity: "黒", cl: "邪仙", AW: "未", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: "聞忠/お正月", rarity: "黒", cl: "邪仙", AW: "覚醒", skill: [ "通常", "覚醒" ]
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
         name: "胡喜美", rarity: "白", cl: "邪仙", AW: "覚醒", skill: "覚醒(奇)"
         , stats: { atk: "-20%" }
         , atkAttr: "魔法", dur: "29f"

@@ -36,6 +36,11 @@ buff.dep_gl = [
         , target: { year: [ "2024年" ] }
     }
     , {
+        name: "王子【翼蛇】", cl: "王子"
+        , stats: { draw: "○" }
+        , target: { year: [ "2013年", "2025年" ] }
+    }
+    , {
         name: "ソラス", rarity: "白", cl: "占星術師", AW: "覚醒"
         , stats: { cost: "-10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }
@@ -70,6 +75,11 @@ buff.dep_gl = [
         name: "レシア", rarity: "黒", cl: "ワルキューレ", AW: "覚醒"
         , stats: { draw: "○" }
         , target: { cl: [ "ワルキューレ", "ペガサスライダー", "ドラゴンライダー", "魔竜騎士" ] }
+    }
+    , {
+        name: "ちびレシア", rarity: "ちび", cl: "ワルキューレ"
+        , stats: { draw: "○" }
+        , target: { cl: [ "ワルキューレ" ] }
     }
     , {
         name: "キュテリ", rarity: "金", cl: "ローグ", AW: "覚醒"

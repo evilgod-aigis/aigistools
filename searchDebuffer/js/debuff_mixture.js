@@ -144,6 +144,14 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "ユージェン/お正月", rarity: "白", cl: "チェイスハンター", AW: "覚醒"
+        , stats: {
+            def: { value: "-15%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "サナラ", rarity: "黒", cl: "ジオマンサー", AW: "覚醒"
         , stats: {
             def: { value: "-20%", type: "area" }

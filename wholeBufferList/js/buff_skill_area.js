@@ -24,6 +24,11 @@ buff.skill_area = [
         , note: "全体"
     }
     , {
+        name: "ユージェン/お正月", rarity: "白", cl: "チェイスハンター", AW: "覚醒", skill: "覚醒"
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒", skill: "通常"
         , stats: { def: "×2.5", mr: "×2.5" }
     }
