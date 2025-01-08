@@ -1063,7 +1063,7 @@ const unitList = [
     , { id: 0x0412, implDate: "2022/08/18", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "デーモンロード", name: "アブグルント", modifier: "深潭の魔将", latent: "白の帝国" }
     , { id: 0x0413, implDate: "2022/08/18", implDate_bq: null        , obtain: [ "tr", "dark" ], rarity: "p" , depType: "van" , class: "鍛冶職人", name: "グラティア", modifier: "帝国鍛冶師", latent: "白の帝国" }
     , { id: 0x0414, implDate: "2022/09/01", implDate_bq: "2024/03/14", obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ロード", name: "リンクス", modifier: "金獣の領主" }
-    , { id: 0x0415, implDate: "2022/09/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "both", class: "スカイシューター", name: "ラシティ", modifier: "黒翼の精鋭射手" }
+    , { id: 0x0415, implDate: "2022/09/01", implDate_bq: "2025/01/08", obtain: [ "sh"         ], rarity: "b" , depType: "both", class: "スカイシューター", name: "ラシティ", modifier: "黒翼の精鋭射手" }
     , { id: 0x0416, implDate: "2022/09/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "van" , class: "前衛戦術家", name: "ちびルヴェア" }
     , { id: 0x0417, implDate: "2022/09/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "van" , class: "スチームナイト", name: "ちびイザムバード" }
     , { id: 0x0418, implDate: "2022/09/08", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ドラゴンメイジ", name: "コラリー", modifier: "風竜魔術士" }
@@ -1229,7 +1229,7 @@ const unitList = [
     , { id: 0x04b6, implDate: "2023/08/04", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "p" , depType: "both", class: "対魔忍 自然【対魔忍】", name: "井河さくら", collabo: 1 }
     , { id: 0x04b7, implDate: "2023/08/10", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "rear", class: "ゴブリン博士", name: "ちびゴブリン博士", male: 1 }
     , { id: 0x04b8, implDate: "2023/08/18", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "van" , class: "対魔忍 超人【対魔忍】", name: "鬼崎きらら", collabo: 1 }
-    , { id: 0x04b9, implDate: "2023/08/18", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "処刑人", name: "リムリィ", modifier: "虚月の断罪者" }
+    , { id: 0x04b9, implDate: "2023/08/18", implDate_bq: "2025/01/08", obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "処刑人", name: "リムリィ", modifier: "虚月の断罪者" }
     , { id: 0x04ba, implDate: "2023/08/18", implDate_bq: null        , obtain: [ "tr", "mili" ], rarity: "p" , depType: "rear", class: "ガンスリンガー", name: "トネール", modifier: "荒野の旋風" }
     , { id: 0x04bb, implDate: "2023/08/18", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "p" , depType: "rear", class: "後衛戦術家", name: "レオナ", modifier: "就寝前のひととき", derivation: "私服" }
     , { id: 0x04bc, implDate: "2023/08/24", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "パイレーツ", name: "デューオ", modifier: "お祭大好き海賊", derivation: "浴衣" }
