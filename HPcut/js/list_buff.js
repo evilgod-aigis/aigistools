@@ -618,6 +618,18 @@ lists.buff.haste.list = [
         "
     }
     , {
+        id: null, buffer: "新年撃ち初めイーファ", awaken: "未", showAwaken: true
+        , value: 20, disabled: null, req: "team"
+        , target: [ { attribution: [ "お正月", "ドラゴン" ] } ]
+        , tooltip: "[範囲] 属性：お正月・ドラゴンの攻撃硬直-20%"
+    }
+    , {
+        id: null, buffer: "新年撃ち初めイーファ", awaken: "覚醒", showAwaken: true
+        , value: 30, disabled: null, req: "team"
+        , target: [ { attribution: [ "お正月", "ドラゴン" ] } ]
+        , tooltip: "[範囲] 属性：お正月・ドラゴンの攻撃硬直-30%"
+    }
+    , {
         id: null, buffer: "歴史の観測者ホルミース", awaken: "覚2a", showAwaken: true
         , value: 30, disabled: null, req: "deploy"
         , target: [ { attribution: [ "人間", "神", "半神" ] } ]

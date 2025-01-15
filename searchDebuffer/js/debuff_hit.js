@@ -290,7 +290,7 @@ debuff.hit = [
     , {
         name: "聞忠/お正月", rarity: "黒", cl: "邪仙", AW: "覚醒", skill: [ "通常", "覚醒" ]
         , stats: { stop: "○" }
-        , atkAttr: "魔法", dur: "?f"
+        , atkAttr: "魔法", dur: "14f"
     }
     , {
         name: "胡喜美", rarity: "白", cl: "邪仙", AW: "覚醒", skill: "覚醒(奇)"

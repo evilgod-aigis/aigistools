@@ -1,6 +1,12 @@
 window.addEventListener("DOMContentLoaded", () => {
     saveData.Construct();
     
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    if(userAgent.indexOf("edg") !== -1)
+        document.getElementById("alert").innerHTML = "\
+            <p>お使いのブラウザは、本ページの機能に対応していません。</p>\
+            <p>Google ChromeやFireFoxをご利用ください。</p>";
+    
     const checkStateArea = document.getElementById("check-state-area");
     const buttons = checkStateArea.getElementsByTagName("button");
     const input = checkStateArea.getElementsByTagName("input")[0];

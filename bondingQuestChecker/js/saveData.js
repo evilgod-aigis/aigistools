@@ -368,7 +368,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
         if(!canUseLocalStorage) {
             document.getElementById("alert").innerHTML = "\
                 <p>お使いのブラウザは、本ページのデータ保存に対応していない模様。</p>\
-                <p>ページ下部のデータ入出力を利用してください。</p>";
+                <p>ページ下部のデータ入出力をご利用ください。</p>";
             
             saveData.Save = () => {};
             _.forEach(saveItem[saveData.version].saveData, dataName => saveData[dataName].Load());
@@ -378,14 +378,14 @@ saveData.Construct = (_canUseIndexedDB = true) => {
         }
         const userAgent = window.navigator.userAgent.toLowerCase();
         if (
-            userAgent.indexOf('safari') !== -1
-            && userAgent.indexOf('chrome') === -1
-            && userAgent.indexOf('edge') === -1
+            userAgent.indexOf("safari") !== -1
+            && userAgent.indexOf("chrome") === -1
+            && userAgent.indexOf("edg") === -1
             && "visualViewport" in window
         ) {
             document.getElementById("alert").innerHTML = "\
                 <p>お使いのブラウザは、本ページの保存されたデータが7日間で消える可能性があります。</p>\
-                <p>本ページをこまめに利用するか、ページ下部のデータ入出力を利用してください。</p>";
+                <p>本ページをこまめに利用するか、ページ下部のデータ入出力をご利用ください。</p>";
             
             saveData.Save = () => {};
             _.forEach(saveItem[saveData.version].saveData, dataName => saveData[dataName].Load());

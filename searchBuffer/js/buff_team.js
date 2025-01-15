@@ -2475,7 +2475,7 @@ buff.team = [
     }
     , {
         name: "イーファ/お正月", rarity: "黒", cl: "ドラグーン", AW: "未"
-        , stats: { atkCd: "-?%" }
+        , stats: { atkCd: "-20%" }
         , target: [
             { season: [ "お正月" ] }
             , { others: [ "ドラゴン" ] }
@@ -2483,7 +2483,7 @@ buff.team = [
     }
     , {
         name: "イーファ/お正月", rarity: "黒", cl: "ドラグーン", AW: "覚醒"
-        , stats: { atkCd: "-?%" }
+        , stats: { atkCd: "-30%" }
         , target: [
             { season: [ "お正月" ] }
             , { others: [ "ドラゴン" ] }
