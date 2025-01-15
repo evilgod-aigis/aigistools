@@ -305,9 +305,12 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                     case "obtain":
                         request.onsuccess = e2 => {
                             _.forEach(e2.target.result.data.split("|"), text => {
-                                _.forEach(_.map(text.split(" "), t => t.split(":")), ([ key, value ], i, arr) => {
-                                    if(i) table.filter[dataName][arr[0][0]].part[key] = value === "1";
-                                    else table.filter[dataName][key].checked = value === "1";
+                                const [ main, ...parts ] = _.map(text.split(" "), t => t.split(":"));
+                                if(!(main[0] in table.filter[dataName])) return;
+                                const obj = table.filter[dataName][main[0]];
+                                obj.checked = main[1] === "1";
+                                _.forEach(parts, ([ key, value ]) => {
+                                    if(key in obj.part) obj.part[key] = value === "1";
                                 });
                             });
                         }
