@@ -287,6 +287,11 @@ buff.add = [
         , note: "範囲"
     }
     , {
+        name: "ちびデーモンシェフ", rarity: "ちび", cl: "デーモンシェフ"
+        , stats: { atk: "max450", def: "max450" }
+        , target: { race: [ "人間", "デーモン系", "オーク" ] }
+    }
+    , {
         name: "王国学園", rarity: "金", cl: "王国の学び舎"
         , stats: { hp: "max600" }
         , target: { season: [ "学園" ] }

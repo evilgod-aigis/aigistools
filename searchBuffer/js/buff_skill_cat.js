@@ -1861,6 +1861,22 @@ buff.skill_cat = [
         , note: "範囲"
     }
     , {
+        name: "ハイデマリー/温泉", rarity: "白", cl: "砲術士", AW: "未", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: [
+            { season: [ "温泉" ] }
+            , { others: [ "砲兵" ] }
+        ]
+    }
+    , {
+        name: "ハイデマリー/温泉", rarity: "白", cl: "砲術士", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: [
+            { season: [ "温泉" ] }
+            , { others: [ "砲兵" ] }
+        ]
+    }
+    , {
         name: "ナターリエ/水着", rarity: "白", cl: "ダンサー", AW: "未", skill: "通常"
         , stats: { def: "×1.2" }
         , target: { home: [ "白の帝国" ] }

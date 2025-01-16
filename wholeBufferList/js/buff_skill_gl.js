@@ -478,6 +478,10 @@ buff.skill_gl = [
         , stats: { hp: "+50%" }
     }
     , {
+        name: "元始天尊/温泉", rarity: "黒", cl: "天尊", AW: "覚醒", skill: "覚醒(奇)"
+        , stats: { rege: [ "150/秒", "?/?f" ] }
+    }
+    , {
         name: "村人", rarity: "銅", cl: "村人", skill: "通常"
         , stats: { rege: [ "10/秒", "?/?f" ] }
     }

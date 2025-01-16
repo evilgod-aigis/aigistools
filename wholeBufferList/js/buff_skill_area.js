@@ -286,6 +286,14 @@ buff.skill_area = [
         , note: "HP回復量×1.2"
     }
     , {
+        name: "元始天尊/温泉", rarity: "黒", cl: "天尊", AW: "未", skill: "通常"
+        , stats: { rege: [ "100/秒", "?/?f" ] }
+    }
+    , {
+        name: "元始天尊/温泉", rarity: "黒", cl: "天尊", AW: "覚醒", skill: "通常"
+        , stats: { rege: [ "100/秒", "?/?f" ] }
+    }
+    , {
         name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "未", skill: "通常"
         , stats: { eva: "50%" }
         , note: "永続"

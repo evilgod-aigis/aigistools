@@ -1265,6 +1265,22 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "元始天尊/温泉", rarity: "黒", cl: "天尊", AW: "未", skill: "通常"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "元始天尊/温泉", rarity: "黒", cl: "天尊", AW: "覚醒", skill: "通常"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
         name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "未", skill: "通常"
         , stats: {
             atk: { value: "-20%", type: "noAttr" }

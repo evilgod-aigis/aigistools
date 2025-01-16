@@ -845,6 +845,12 @@ debuff.hit = [
         , atkAttr: "物理", dur: "10f"
     }
     , {
+        name: "ハイデマリー/温泉", rarity: "白", cl: "砲術士", AW: "覚醒", skill: "覚醒"
+        , stats: { def: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "トワ/学園", rarity: "黒", cl: "クロノウィッチ", AW: "未", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "19f"
