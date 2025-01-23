@@ -1042,6 +1042,12 @@ buff.dep_gl = [
         , target: { others: [ "機械" ] }
     }
     , {
+        name: "さえのかみ", rarity: "白", cl: "ぬりかべ", AW: "覚2a"
+        , stats: { mr: "+10" }
+        , target: { race: [ "妖怪" ] }
+        , note: "ぬりかべ系"
+    }
+    , {
         name: "シラヌイ", rarity: "白", cl: "ぬりかべ", AW: "覚醒"
         , stats: { def: "+7%" }
         , target: { depType: [ "近接" ] }

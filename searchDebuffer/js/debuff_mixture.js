@@ -1251,6 +1251,22 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "ピーク", rarity: "白", cl: "隧道掘削兵", AW: "未", skill: "通常"
+        , stats: {
+            def: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ピーク", rarity: "白", cl: "隧道掘削兵", AW: "覚醒", skill: "通常"
+        , stats: {
+            def: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
         name: "元始天尊", rarity: "黒", cl: "天尊", AW: "未", skill: "通常"
         , stats: {
             def: { value: "-60%", type: "global" }

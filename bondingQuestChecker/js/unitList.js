@@ -1456,7 +1456,7 @@ const unitList = [
     , { id: 0x0597, implDate: "2024/12/12", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "van" , class: "ダークファイター", name: "ちびデシウス", male: 1 }
     , { id: 0x0598, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "ドルイド", name: "メープル", modifier: "聖なる森の乙女", derivation: "クリスマス" }
     , { id: 0x0599, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "天尊", name: "太上道君" }
-    , { id: 0x059a, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "天尊", name: "太上老君" }
+    , { id: 0x059a, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "天尊", name: "太上老君" }
     , { id: 0x059b, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "晴れ着の政務官", derivation: "お正月" }
     , { id: 0x059c, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "邪仙", name: "聞忠", modifier: "異国の迎春祭 ", derivation: "お正月" }
     , { id: 0x059d, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ドラグーン", name: "イーファ", modifier: "新年撃ち初め", derivation: "お正月" }
@@ -1466,8 +1466,9 @@ const unitList = [
     , { id: 0x05a1, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "van" , class: "妖狐", name: "ちびイズナ" }
     , { id: 0x05a2, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "天尊", name: "元始天尊", modifier: "万象の湯 ", derivation: "温泉" }
     , { id: 0x05a3, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "プリンセス", name: "メルヴィナ", modifier: "姫の湯治", derivation: "温泉" }
-    , { id: 0x05a4, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "p" , depType: "rear", class: "砲術士", name: "ハイデマリー", modifier: "温泉砲術士", derivation: "温泉" }
+    , { id: 0x05a4, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "砲術士", name: "ハイデマリー", modifier: "温泉砲術士", derivation: "温泉" }
     , { id: 0x05a5, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "van" , class: "デーモンシェフ", name: "ちびデーモンシェフ", male: 1 }
+    , { id: 0x05a6, implDate: "2025/01/23", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "隧道掘削兵", name: "ピーク", modifier: "鋼の掘削兵" }
     
     
     
