@@ -12,7 +12,7 @@ debuff.scalar = [
         name: "プリニース", rarity: "黒", cl: "スカラー", AW: "未", skill: "通常"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
         , target: { attr: [ "人間", "デーモン", "神" ] }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒"
@@ -26,7 +26,7 @@ debuff.scalar = [
         name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒", skill: "通常"
         , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
         , target: { attr: [ "人間", "デーモン", "神" ] }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "プリニース", rarity: "黒", cl: "スカラー", AW: "覚醒", skill: "覚醒"
@@ -156,7 +156,7 @@ debuff.scalar = [
         name: "ジェニー", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*1.2", def: "*1.2", mr: "*1.2" }
         , target: { attr: [ "人間", "冥界人", "アンデッド" ] }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "コレット/ハロウィン", rarity: "白", cl: "スカラー", AW: "未"

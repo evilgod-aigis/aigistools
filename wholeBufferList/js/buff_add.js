@@ -3,7 +3,7 @@ buff.add = [
     {
         name: "王子【太鼓】", cl: "王子", skill: "通常"
         , stats: { atk: "30%", def: "30%" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "王子【ファンダム】", cl: "王子"
@@ -58,12 +58,12 @@ buff.add = [
     , {
         name: "ディアナ/水着", rarity: "黒", cl: "インペリアルナイト", AW: "未", skill: "通常"
         , stats: { atk: "12%" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "ディアナ/水着", rarity: "黒", cl: "インペリアルナイト", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { atk: "12%" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "フーロン/浴衣", rarity: "黒", cl: "キョンシー", AW: "未"
@@ -78,7 +78,7 @@ buff.add = [
     , {
         name: "フーロン/浴衣", rarity: "黒", cl: "キョンシー", AW: "覚醒", skill: "覚醒(4～)"
         , stats: { atk: "*2" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "レミィ/ハロウィン", rarity: "黒", cl: "雷公", AW: "未"
@@ -103,12 +103,12 @@ buff.add = [
     , {
         name: "レミィ/ハロウィン", rarity: "黒", cl: "雷公", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*2" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "アスラハ", rarity: "黒", cl: "グランドナイト", AW: "覚醒", skill: "覚醒"
         , stats: { def: "15%" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "聞忠", rarity: "黒", cl: "邪仙", AW: "覚醒", skill: "覚醒"
@@ -158,7 +158,7 @@ buff.add = [
     , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒", skill: "通常"
         , stats: { atk: "*4" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒", skill: "覚醒"
@@ -193,12 +193,12 @@ buff.add = [
     , {
         name: "ミヤビ", rarity: "黒", cl: "ダンサー", AW: "未", skill: "通常"
         , stats: { atk: "*7", def: "*7" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "ミヤビ", rarity: "黒", cl: "ダンサー", AW: "覚醒", skill: "通常"
         , stats: { atk: "*7", def: "*7" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "ミヤビ", rarity: "黒", cl: "ダンサー", AW: "覚醒", skill: "覚醒"
@@ -218,7 +218,7 @@ buff.add = [
     , {
         name: "シャルキー/新装", rarity: "黒", cl: "ダンサー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*10", def: "*5" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "マーニー", rarity: "白", cl: "ダンサー", AW: "未", skill: "通常"
@@ -258,7 +258,7 @@ buff.add = [
     , {
         name: "ワルツ", rarity: "白", cl: "ダンサー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*4", def: "*4" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "ハナ", rarity: "白", cl: "ダンサー", AW: "未", skill: "通常"
@@ -338,7 +338,7 @@ buff.add = [
     , {
         name: "ブレリア/クリスマス", rarity: "白", cl: "ダンサー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*4", def: "*4" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "ワルツ/バレンタイン", rarity: "白", cl: "ダンサー", AW: "未", skill: "通常"
@@ -403,7 +403,7 @@ buff.add = [
     , {
         name: "ちびミヤビ", rarity: "ちび", cl: "ダンサー", skill: "通常"
         , stats: { atk: "*7", def: "*7" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "シャルキー", rarity: "銀", cl: "ダンサー", AW: "未", skill: "通常"
@@ -424,6 +424,31 @@ buff.add = [
         name: "アスバール/闘兵", rarity: "黒", cl: "魔界総帥", AW: "覚醒"
         , stats: { mr: "+7" }
         , note: "範囲"
+    }
+    , {
+        name: "キリエ", rarity: "黒", cl: "メディック", AW: "未"
+        , stats: { atk: "+200", range: "+5" }
+        , note: [ "ヒール対象(優先：攻撃力)", "継続：12.5秒" ]
+    }
+    , {
+        name: "キリエ", rarity: "黒", cl: "メディック", AW: "未", skill: "通常"
+        , stats: { atk: "*2.0" }
+        , note: [ "ヒール対象(優先：攻撃力)", "継続：12.5秒" ]
+    }
+    , {
+        name: "キリエ", rarity: "黒", cl: "メディック", AW: "覚醒"
+        , stats: { atk: "+300", range: "+10" }
+        , note: [ "ヒール対象(優先：攻撃力)", "継続：12.5秒" ]
+    }
+    , {
+        name: "キリエ", rarity: "黒", cl: "メディック", AW: "覚醒", skill: "通常"
+        , stats: { atk: "*2.0" }
+        , note: [ "ヒール対象(優先：攻撃力)", "継続：12.5秒" ]
+    }
+    , {
+        name: "キリエ", rarity: "黒", cl: "メディック", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "*1.2", range: "*1.2" }
+        , note: [ "ヒール対象(優先：攻撃力)", "継続：12.5秒", "永続スキル" ]
     }
     , {
         name: "ジュディス", rarity: "白", cl: "メディック", AW: "未"
@@ -526,7 +551,7 @@ buff.add = [
     , {
         name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*3" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "支援の聖霊", cl: "支援の聖霊"
@@ -560,7 +585,7 @@ buff.add = [
     , {
         name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*7" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "関羽 雲長", rarity: "黒", cl: "武将【恋姫】", AW: "覚醒", skill: "覚醒(1)"
@@ -627,7 +652,7 @@ buff.add = [
     
     常時 非 通常 覚醒
     
-    hp atk def mr 範囲 分類未確認
+    hp atk def mr range 範囲 分類未確認
     
     正月 水着 浴衣 バニー 花嫁
     

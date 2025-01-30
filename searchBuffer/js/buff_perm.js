@@ -4,19 +4,19 @@ buff.perm = [
         name: "王子【聖夜】", cl: "王子", skill: "通常(1)"
         , stats: { hp: "×1.1" }
         , target: { season: [ "クリスマス" ] }
-        , note: "発動時"
+        , note: "スキル発動時"
     }
     , {
         name: "王子【聖夜】", cl: "王子", skill: "通常(2)"
         , stats: { atk: "×1.1" }
         , target: { season: [ "クリスマス" ] }
-        , note: "発動時"
+        , note: "スキル発動時"
     }
     , {
         name: "王子【聖夜】", cl: "王子", skill: "通常(3)"
         , stats: { def: "×1.1" }
         , target: { season: [ "クリスマス" ] }
-        , note: "発動時"
+        , note: "スキル発動時"
     }
     , {
         name: "ユッタ/水着", rarity: "白", cl: "料理人", AW: "覚醒", skill: "覚醒"
@@ -25,49 +25,49 @@ buff.perm = [
             { home: [ "白の帝国" ] }
             , { season: [ "サマー" ] }
         ]
-        , note: "発動時"
+        , note: "スキル発動時"
     }
     , {
         name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒", skill: "覚醒(1)"
         , stats: { hp: "×1.2" }
         , target: { others: [ "ドラゴン" ] }
-        , note: [ "発動時", "ボム" ]
+        , note: [ "スキル発動時", "ボムスキル" ]
     }
     , {
         name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒", skill: "覚醒(2)"
         , stats: { atk: "×1.2" }
         , target: { others: [ "ドラゴン" ] }
-        , note: [ "発動時", "ボム" ]
+        , note: [ "スキル発動時", "ボムスキル" ]
     }
     , {
         name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒", skill: "覚醒(3)"
         , stats: { def: "×1.2" }
         , target: { others: [ "ドラゴン" ] }
-        , note: [ "発動時", "ボム" ]
+        , note: [ "スキル発動時", "ボムスキル" ]
     }
     , {
         name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒", skill: "覚醒(1)"
         , stats: { hp: "×1.06", atk: "×1.06", def: "×1.06" }
         , target: { others: [ "機械" ] }
-        , note: "発動時"
+        , note: "スキル発動時"
     }
     , {
         name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒", skill: "覚醒(2)"
         , stats: { hp: "×1.12", atk: "×1.12", def: "×1.12" }
         , target: { others: [ "機械" ] }
-        , note: "発動時"
+        , note: "スキル発動時"
     }
     , {
         name: "斎主の獅子", rarity: "トークン", AW: "未", skill: "通常"
         , stats: { hp: "×1.5" }
         , target: { cl: [ "狛犬" ] }
-        , note: [ "コマ/花嫁", "発動時", "ボム" ]
+        , note: [ "コマ/花嫁", "スキル発動時", "ボムスキル" ]
     }
     , {
         name: "斎主の大獅子", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { hp: "×1.5" }
         , target: { cl: [ "狛犬" ] }
-        , note: [ "コマ/花嫁", "発動時", "ボム" ]
+        , note: [ "コマ/花嫁", "スキル発動時", "ボムスキル" ]
     }
 ];
 

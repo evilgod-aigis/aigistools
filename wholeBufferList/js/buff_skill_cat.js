@@ -75,7 +75,7 @@ buff.skill_cat = [
     , {
         name: "ダルフィア", rarity: "白", cl: "騎士【封緘】", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.1" }
-        , note: "永続"
+        , note: "永続スキル"
     }
 ];
 

@@ -244,13 +244,13 @@ buff.add = [
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "未", skill: "通常"
         , stats: { def: "20%" }
         , target: { home: [ "白の帝国" ] }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { def: "20%" }
         , target: { home: [ "白の帝国" ] }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "王城", rarity: "黒", cl: "王城", AW: "未"
@@ -346,13 +346,13 @@ buff.add = [
         name: "アンナ/水着", rarity: "黒", cl: "政務官", AW: "未", skill: "通常(2〜)"
         , stats: { atk: "*12", def: "*12" }
         , target: { cl: [ "王子" ] }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "アンナ/水着", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "通常(2〜)"
         , stats: { atk: "*12", def: "*12" }
         , target: { cl: [ "王子" ] }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "アンナ/水着", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒(奇)"
@@ -388,19 +388,19 @@ buff.add = [
         name: "アンナ/アイドル", rarity: "黒", cl: "政務官", AW: "未", skill: "通常"
         , stats: { atk: "*10", def: "*10" }
         , target: { cl: [ "王子" ] }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "アンナ/アイドル", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "通常"
         , stats: { atk: "*10", def: "*10" }
         , target: { cl: [ "王子" ] }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "アンナ/アイドル", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*13", def: "*13" }
         , target: { cl: [ "王子" ] }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "アンナ/お正月", rarity: "黒", cl: "政務官", AW: "未"
@@ -434,7 +434,7 @@ buff.add = [
         name: "アンナ/お正月", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*10", def: "*10" }
         , target: { cl: [ "王子" ] }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "マレブランケ", rarity: "黒", cl: "ダークプリースト", AW: "覚醒"

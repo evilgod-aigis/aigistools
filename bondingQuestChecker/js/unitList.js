@@ -1469,6 +1469,7 @@ const unitList = [
     , { id: 0x05a4, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "砲術士", name: "ハイデマリー", modifier: "温泉砲術士", derivation: "温泉" }
     , { id: 0x05a5, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "van" , class: "デーモンシェフ", name: "ちびデーモンシェフ", male: 1 }
     , { id: 0x05a6, implDate: "2025/01/23", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "隧道掘削兵", name: "ピーク", modifier: "鋼の掘削兵" }
+    , { id: 0x05a7, implDate: "2025/01/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "メディック", name: "キリエ", modifier: "王国医学伝" }
     
     
     

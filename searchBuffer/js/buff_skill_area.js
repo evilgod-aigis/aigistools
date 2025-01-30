@@ -46,13 +46,13 @@ buff.skill_area = [
         name: "シナト", rarity: "白", cl: "後衛戦術家", AW: "未", skill: "通常"
         , stats: { ct: "-100%" }
         , target: { depType: [ "遠距離" ] }
-        , note: "ボム"
+        , note: "ボムスキル"
     }
     , {
         name: "シナト", rarity: "白", cl: "後衛戦術家", AW: "覚醒", skill: "通常"
         , stats: { ct: "-100%" }
         , target: { depType: [ "遠距離" ] }
-        , note: "ボム"
+        , note: "ボムスキル"
     }
     , {
         name: "アンナ/お正月", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒"
@@ -61,7 +61,7 @@ buff.skill_area = [
             { cl: [ "王子" ] }
             , { season: [ "お正月" ] }
         ]
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "トワ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒", skill: "覚醒"
@@ -102,7 +102,7 @@ buff.skill_area = [
             { home: [ "白の帝国" ] }
             , { others: [ "魔界" ] }
         ]
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "パトリシア/水着", rarity: "白", cl: "支援工兵", AW: "覚醒", skill: "覚醒"

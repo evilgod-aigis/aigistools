@@ -3,37 +3,37 @@ buff.perm = [
     {
         name: "ホルテウス", rarity: "黒", cl: "ファラオ", AW: "覚醒", skill: "通常(1)"
         , stats: { hp: "×1.15", atk: "×1.15", def: "×1.15" }
-        , note: "発動時"
+        , note: "スキル発動時"
     }
     , {
         name: "ホルテウス", rarity: "黒", cl: "ファラオ", AW: "覚醒", skill: "覚醒(1)"
         , stats: { hp: "×1.15", atk: "×1.15", def: "×1.15" }
-        , note: "発動時"
+        , note: [ "スキル発動時", "ボムスキル" ]
     }
     , {
         name: "ホルテウス", rarity: "白", cl: "ファラオ", AW: "覚醒", skill: "通常(1)"
         , stats: { hp: "×1.1", atk: "×1.1", def: "×1.1" }
-        , note: "発動時"
+        , note: [ "スキル発動時", "永続スキル" ]
     }
     , {
         name: "ホルテウス", rarity: "白", cl: "ファラオ", AW: "覚醒", skill: "覚醒(1)"
         , stats: { hp: "×1.1", atk: "×1.1", def: "×1.1" }
-        , note: "発動時"
+        , note: "スキル発動時"
     }
     , {
         name: "ホルテウス/水着", rarity: "白", cl: "ファラオ", AW: "覚醒", skill: "通常(1)"
         , stats: { hp: "×1.15", atk: "×1.15" }
-        , note: "発動時"
+        , note: "スキル発動時"
     }
     , {
         name: "ホルテウス/水着", rarity: "白", cl: "ファラオ", AW: "覚醒", skill: "覚醒(1)"
         , stats: { hp: "×1.15", atk: "×1.15" }
-        , note: "発動時"
+        , note: [ "スキル発動時", "永続スキル" ]
     }
     , {
         name: "アイネ", rarity: "白", cl: "ランスマスター", AW: "覚醒", skill: "覚醒(1)"
         , stats: { def: "×1.02" }
-        , note: "ボム"
+        , note: "ボムスキル"
     }
     , {
         name: "リアナ/浴衣", rarity: "黒", cl: "ヒーラー", AW: "未"

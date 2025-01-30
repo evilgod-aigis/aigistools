@@ -3,7 +3,7 @@ buff.skill_area = [
     {
         name: "王子", cl: "王子", skill: "通常"
         , stats: { atk: [ "×1.12", "～1.21" ], def: [ "×1.12", "～1.21" ] }
-        , note: [ "全体", "永続" ]
+        , note: [ "全体", "永続スキル" ]
     }
     , {
         name: "王子【玉兎】", cl: "王子", skill: "通常"
@@ -35,7 +35,7 @@ buff.skill_area = [
     , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒", skill: "覚醒"
         , stats: { hp: "+30%", atk: "×1.3" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "イムラウ", rarity: "白", cl: "ピューティアー", AW: "覚醒", skill: "通常"
@@ -48,7 +48,7 @@ buff.skill_area = [
     , {
         name: "イムラウ/お正月", rarity: "白", cl: "ピューティアー", AW: "覚醒", skill: "覚醒"
         , stats: { hp: "+20%", def: "×1.3" }
-        , note: [ "永続", "分類未確認" ]
+        , note: [ "永続スキル", "分類未確認" ]
     }
     , {
         name: "アリア/新装", rarity: "黒", cl: "ソルジャー", AW: "未", skill: "通常"
@@ -107,12 +107,12 @@ buff.skill_area = [
     , {
         name: "エクス", rarity: "黒", cl: "神官戦士", AW: "未", skill: "通常"
         , stats: { def: "×1.5" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "エクス", rarity: "黒", cl: "神官戦士", AW: "覚醒", skill: "通常"
         , stats: { def: "×1.5" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "エクス", rarity: "黒", cl: "神官戦士", AW: "覚醒", skill: "覚醒"
@@ -136,7 +136,7 @@ buff.skill_area = [
     , {
         name: "ちびエクス", rarity: "ちび", cl: "神官戦士", skill: "通常"
         , stats: { def: "×1.5" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "グレーテル/クリスマス", rarity: "白", cl: "ダークストーカー", AW: "未", skill: "通常"
@@ -164,7 +164,7 @@ buff.skill_area = [
     , {
         name: "レミィ", rarity: "黒", cl: "雷公", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.3" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "エレカ", rarity: "白", cl: "モンスターブレイカー", AW: "覚醒", skill: "覚醒"
@@ -174,7 +174,7 @@ buff.skill_area = [
     , {
         name: "クーコ", rarity: "黒", cl: "風伯", AW: "覚醒", skill: "覚醒"
         , stats: { def: "×1.9" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "クーコ/浴衣", rarity: "黒", cl: "風伯", AW: "覚醒", skill: "通常"
@@ -183,22 +183,22 @@ buff.skill_area = [
     , {
         name: "クーコ/浴衣", rarity: "黒", cl: "風伯", AW: "覚醒", skill: "覚醒"
         , stats: { def: "×1.3" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "クーコ/ハロウィン", rarity: "黒", cl: "風伯", AW: "覚醒", skill: "覚醒"
         , stats: { mr: "×1.4" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "未", skill: "通常"
         , stats: { hp: "+30%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "清源妙道真君/水着", rarity: "黒", cl: "真人", AW: "覚醒", skill: "通常"
         , stats: { hp: "+30%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "太公望/お正月", rarity: "白", cl: "真人", AW: "覚醒", skill: "覚醒"
@@ -231,12 +231,12 @@ buff.skill_area = [
     , {
         name: "タツミ", rarity: "黒", cl: "戦巫女", AW: "未", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.4", eva: "30%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "タツミ", rarity: "黒", cl: "戦巫女", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.4", eva: "30%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "タツミ", rarity: "黒", cl: "戦巫女", AW: "覚醒", skill: "覚醒"
@@ -257,7 +257,7 @@ buff.skill_area = [
     , {
         name: "ちびタツミ", rarity: "ちび", cl: "戦巫女", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.4", eva: "30%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "ちびコウメ", rarity: "ちび", cl: "戦巫女", skill: "通常"
@@ -296,12 +296,12 @@ buff.skill_area = [
     , {
         name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "未", skill: "通常"
         , stats: { eva: "50%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "覚醒", skill: "通常"
         , stats: { eva: "50%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "ダルティエ", rarity: "白", cl: "衛士", AW: "覚醒", skill: "覚醒"
@@ -437,12 +437,12 @@ buff.skill_area = [
     , {
         name: "クルス/クリスマス", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.3" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "ピックル", rarity: "金", cl: "ヴァンパイアハンター", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
-        , note: [ "オート", "永続" ]
+        , note: [ "オート", "永続スキル" ]
     }
     , {
         name: "キキョウ", rarity: "黒", cl: "シャーマン", AW: "覚醒", skill: "通常(奇)"
@@ -471,12 +471,12 @@ buff.skill_area = [
     , {
         name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒", skill: "覚醒(3～)"
         , stats: { atk: "×1.3", def: "×1.3", ct: "-60%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "シナト", rarity: "白", cl: "後衛戦術家", AW: "覚醒", skill: "覚醒"
         , stats: { ct: "-100%" }
-        , note: "ボム"
+        , note: "ボムスキル"
     }
     , {
         name: "レオナ/水着", rarity: "白", cl: "後衛戦術家", AW: "覚醒", skill: "覚醒"
@@ -497,7 +497,7 @@ buff.skill_area = [
     , {
         name: "リンネ", rarity: "黒", cl: "風水使い", AW: "覚醒", skill: "覚醒"
         , stats: { eva: "30%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "リンネ/花嫁", rarity: "黒", cl: "風水使い", AW: "未", skill: "通常"
@@ -514,12 +514,12 @@ buff.skill_area = [
     , {
         name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "未", skill: "通常"
         , stats: { atk: "×1.2", eva: "50%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.2", eva: "50%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒", skill: "覚醒(4～)"
@@ -548,12 +548,12 @@ buff.skill_area = [
     , {
         name: "アーリー", rarity: "白", cl: "クロノウィッチ", AW: "未", skill: "通常"
         , stats: { other: "" }
-        , note: [ "発動時オート", "ボム" ]
+        , note: [ "発動時オート", "ボムスキル" ]
     }
     , {
         name: "アーリー", rarity: "白", cl: "クロノウィッチ", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
-        , note: [ "発動時オート", "ボム" ]
+        , note: [ "発動時オート", "ボムスキル" ]
     }
     , {
         name: "フィオレ", rarity: "黒", cl: "ドルイド", AW: "覚醒", skill: [ "通常", "覚醒" ]
@@ -573,7 +573,7 @@ buff.skill_area = [
     , {
         name: "レーレン", rarity: "白", cl: "アルケミスト", AW: "覚醒", skill: "覚醒"
         , stats: { abn: "-100%" }
-        , note: "ボム"
+        , note: "ボムスキル"
     }
     , {
         name: "セリド", rarity: "白", cl: "アルケミスト", AW: "未", skill: "通常"
@@ -598,12 +598,12 @@ buff.skill_area = [
     , {
         name: "アンリ", rarity: "黒", cl: "エンチャンター", AW: "未", skill: "通常"
         , stats: { other: "" }
-        , note: [ "魔法化", "永続" ]
+        , note: [ "魔法化", "永続スキル" ]
     }
     , {
         name: "アンリ", rarity: "黒", cl: "エンチャンター", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
-        , note: [ "魔法化", "永続" ]
+        , note: [ "魔法化", "永続スキル" ]
     }
     , {
         name: "アンリ", rarity: "黒", cl: "エンチャンター", AW: "覚醒", skill: "覚醒"
@@ -673,7 +673,7 @@ buff.skill_area = [
     , {
         name: "ちびアンリ", rarity: "ちび", cl: "エンチャンター", skill: "通常"
         , stats: { other: "" }
-        , note: [ "魔法化", "永続" ]
+        , note: [ "魔法化", "永続スキル" ]
     }
     , {
         name: "ヒース", rarity: "銀", cl: "エンチャンター", AW: "未", skill: "通常"
@@ -715,7 +715,7 @@ buff.skill_area = [
     , {
         name: "ラピス/水着", rarity: "黒", cl: "デモンサモナー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.3", mr: "×1.3" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "未", skill: "通常"
@@ -730,7 +730,7 @@ buff.skill_area = [
     , {
         name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.2" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "未", skill: "通常"
@@ -759,7 +759,7 @@ buff.skill_area = [
     , {
         name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒", skill: "覚醒"
         , stats: { hp: "+20%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "覚醒", skill: "覚醒"
@@ -768,7 +768,7 @@ buff.skill_area = [
             { not: [ "race" ], race: [ "デーモン系" ] }
             , { not: [ "season" ], season: [ "帝国" ] }
         ]
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "リヴル/ハロウィン", rarity: "白", cl: "デモンサモナー", AW: "覚醒", skill: "覚醒"
@@ -797,12 +797,12 @@ buff.skill_area = [
     , {
         name: "リズリー", rarity: "黒", cl: "道化師", AW: "未", skill: "通常"
         , stats: { ct: "-50%", eva: "50%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "リズリー", rarity: "黒", cl: "道化師", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { ct: "-50%", eva: "50%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "リズリー", rarity: "黒", cl: "道化師", AW: "覚醒", skill: "覚醒(1)"
@@ -819,7 +819,7 @@ buff.skill_area = [
     , {
         name: "リズリー/温泉", rarity: "黒", cl: "道化師", AW: "覚醒", skill: "覚醒"
         , stats: { ct: "-60%", abn: "-100%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "スピリア", rarity: "黒", cl: "ライフリンカー", AW: "未", skill: "通常"
@@ -840,7 +840,7 @@ buff.skill_area = [
     , {
         name: "シンフー", rarity: "黒", cl: "幻獣使い", AW: "覚醒", skill: "覚醒"
         , stats: { draw: "(○)", redep: "60秒" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "ツキコ", rarity: "黒", cl: "幻獣使い", AW: "未", skill: "通常"
@@ -853,12 +853,12 @@ buff.skill_area = [
     , {
         name: "ツキコ/水着", rarity: "黒", cl: "幻獣使い", AW: "未", skill: "通常"
         , stats: { abn: "-100%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "ツキコ/水着", rarity: "黒", cl: "幻獣使い", AW: "覚醒", skill: "通常"
         , stats: { abn: "-100%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "ホリー", rarity: "白", cl: "幻獣使い", AW: "覚醒", skill: "覚醒"
@@ -912,7 +912,7 @@ buff.skill_area = [
     , {
         name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒", skill: "覚醒"
         , stats: { def: "×1.3" }
-        , note: [ "永続", "分類未確認" ]
+        , note: [ "永続スキル", "分類未確認" ]
     }
     , {
         name: "ハルフゥ", rarity: "黒", cl: "シービショップ", AW: "覚醒", skill: "覚醒"
@@ -976,7 +976,7 @@ buff.skill_area = [
     , {
         name: "ローズ", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "覚醒"
         , stats: { abn: "-100%" }
-        , note: "ボム"
+        , note: "ボムスキル"
     }
     , {
         name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "未", skill: "通常"
@@ -1009,6 +1009,16 @@ buff.skill_area = [
     , {
         name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒", skill: "覚醒"
         , stats: { range: "×1.2" }
+    }
+    , {
+        name: "キリエ", rarity: "黒", cl: "メディック", AW: "未", skill: "通常"
+        , stats: { def: "×1.5" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "キリエ", rarity: "黒", cl: "メディック", AW: "覚醒", skill: "通常"
+        , stats: { def: "×1.5" }
+        , note: "分類未確認"
     }
     , {
         name: "ジュディス", rarity: "白", cl: "メディック", AW: "覚醒", skill: "覚醒"
@@ -1045,7 +1055,7 @@ buff.skill_area = [
     , {
         name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
         , stats: { hp: "+30%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "戦場に集う聖霊たち", rarity: "黒", cl: "支援の聖霊", skill: "通常"
@@ -1062,7 +1072,7 @@ buff.skill_area = [
     , {
         name: "カーニア", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒", skill: "覚醒"
         , stats: { rege: [ "250/秒", "125/15f" ] }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "イエラ", rarity: "白", cl: "スカイヒーラー", AW: "未", skill: "通常"
@@ -1087,7 +1097,7 @@ buff.skill_area = [
     , {
         name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒", skill: "覚醒"
         , stats: { abn: "-100%" }
-        , note: "永続"
+        , note: "永続スキル"
     }
     , {
         name: "迷い家", rarity: "金", cl: "迷い家", skill: "通常"
@@ -1105,12 +1115,12 @@ buff.skill_area = [
     , {
         name: [ "ウルザ・", "プラナアイス" ], rarity: "黒", cl: "ゼス警察長官【ランス】", AW: "未", skill: "通常"
         , stats: { def: "×1.5", mr: "×1.5" }
-        , note: [ "永続", "分類未確認" ]
+        , note: [ "永続スキル", "分類未確認" ]
     }
     , {
         name: [ "ウルザ・", "プラナアイス" ], rarity: "黒", cl: "ゼス警察長官【ランス】", AW: "覚醒", skill: "通常"
         , stats: { def: "×1.5", mr: "×1.5" }
-        , note: [ "永続", "分類未確認" ]
+        , note: [ "永続スキル", "分類未確認" ]
     }
     , {
         name: "孫策 伯符", rarity: "黒", cl: "小覇王【恋姫】", AW: "未", skill: "通常"
@@ -1135,12 +1145,12 @@ buff.skill_area = [
     , {
         name: "エリザベス", rarity: "黒", cl: "王女【七つの大罪】", AW: "未", skill: "通常"
         , stats: { abn: "-100%" }
-        , note: "ボム"
+        , note: "ボムスキル"
     }
     , {
         name: "エリザベス", rarity: "黒", cl: "王女【七つの大罪】", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { abn: "-100%" }
-        , note: "ボム"
+        , note: "ボムスキル"
     }
     , {
         name: [ "クラリス・", "ツァインブルグ" ], rarity: "黒", cl: "新米刑事【流星WA】", AW: "未", skill: "通常"
@@ -1162,7 +1172,7 @@ buff.skill_area = [
     , {
         name: "お守りエッグ", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
-        , note: [ "リーフ/バニー", "タラニア/バニー", "ニーヴ/バニー", "永続" ]
+        , note: [ "リーフ/バニー", "タラニア/バニー", "ニーヴ/バニー", "永続スキル" ]
     }
     , {
         name: "マジックエッグ", rarity: "トークン", AW: "覚醒", skill: "通常"
@@ -1202,17 +1212,17 @@ buff.skill_area = [
     , {
         name: "かぼちゃ馬車", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.2" }
-        , note: [ "デスピア/ハロウィン", "永続" ]
+        , note: [ "デスピア/ハロウィン", "永続スキル" ]
     }
     , {
         name: "ウェディングケーキ", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.3" }
-        , note: [ "エターナー/花嫁", "永続" ]
+        , note: [ "エターナー/花嫁", "永続スキル" ]
     }
     , {
         name: "ルベドアタノール", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { def: "×1.5" }
-        , note: [ "ニコル", "永続" ]
+        , note: [ "ニコル", "永続スキル" ]
     }
     , {
         name: "アウローラ(幻影)", rarity: "トークン", AW: "未", skill: "通常"

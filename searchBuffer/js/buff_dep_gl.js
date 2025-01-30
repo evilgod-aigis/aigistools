@@ -1517,6 +1517,16 @@ buff.dep_gl = [
         , target: { race: [ "冥界人" ] }
     }
     , {
+        name: "キリエ", rarity: "黒", cl: "メディック", AW: "未"
+        , stats: { def: "+10%" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
+        name: "キリエ", rarity: "黒", cl: "メディック", AW: "覚醒"
+        , stats: { def: "+15%" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
         name: "ニーカ", rarity: "白", cl: "メディック", AW: "未"
         , stats: { atk: "+5%" }
         , target: { home: [ "王国" ] }

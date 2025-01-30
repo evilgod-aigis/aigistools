@@ -8,7 +8,7 @@ debuff.takenDmg = [
     , {
         name: "モルフェサ", rarity: "黒", cl: "カースウィスパラー", AW: "覚醒", skill: "通常"
         , stats: { value: "*1.5" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "モルフェサ", rarity: "黒", cl: "カースウィスパラー", AW: "覚醒", skill: "覚醒"
@@ -18,7 +18,7 @@ debuff.takenDmg = [
     , {
         name: "モルフェサ", rarity: "白", cl: "カースウィスパラー", AW: "覚醒", skill: "通常"
         , stats: { value: "*1.5" }
-        , note: [ "範囲", "永続" ]
+        , note: [ "範囲", "永続スキル" ]
     }
     , {
         name: "モルフェサ", rarity: "白", cl: "カースウィスパラー", AW: "覚醒", skill: "覚醒"
