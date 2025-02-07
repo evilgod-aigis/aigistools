@@ -46,6 +46,15 @@ buff.perm = [
         , note: [ "スキル発動時", "ボムスキル" ]
     }
     , {
+        name: "アンナ/バレンタイン", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒(1)"
+        , stats: { atk: "×1.05", def: "×1.05" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "バレンタイン" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒", skill: "覚醒(1)"
         , stats: { hp: "×1.06", atk: "×1.06", def: "×1.06" }
         , target: { others: [ "機械" ] }

@@ -1470,6 +1470,14 @@ const unitList = [
     , { id: 0x05a5, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "van" , class: "デーモンシェフ", name: "ちびデーモンシェフ", male: 1 }
     , { id: 0x05a6, implDate: "2025/01/23", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "隧道掘削兵", name: "ピーク", modifier: "鋼の掘削兵" }
     , { id: 0x05a7, implDate: "2025/01/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "メディック", name: "キリエ", modifier: "王国医学伝" }
+    , { id: 0x05a8, implDate: "2025/02/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "van" , class: "魔法剣士", name: "ちびタラニア" }
+    , { id: 0x05a9, implDate: "2025/02/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ドラゴンシャーマン", name: "ちびハクノカミ" }
+    , { id: 0x05aa, implDate: "2025/02/06", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "支援工兵", name: "アイゼルフ", modifier: "鋼の支援工兵" }
+    , { id: 0x05ab, implDate: "2025/02/06", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "前衛戦術家", name: "マツリ", modifier: "赤心の智将 ", derivation: "バレンタイン" }
+    , { id: 0x05ac, implDate: "2025/02/06", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "グランドナイト", name: "アデライド", modifier: "乙女の守護者 ", derivation: "バレンタイン" }
+    , { id: 0x05ad, implDate: "2025/02/06", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "ワルキューレ", name: "エレイン", modifier: "恋の騎槍乙女 ", derivation: "バレンタイン" }
+    , { id: 0x05ae, implDate: "2025/02/06", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "マーチャント", name: "ノストラ", modifier: "甘い言葉 ", derivation: "バレンタイン" }
+    , { id: 0x05af, implDate: "2025/02/06", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "思慕の政務官 ", derivation: "バレンタイン" }
     
     
     

@@ -1039,6 +1039,30 @@ lists.buff.takenDmg.list = [
         }
     }
     , {
+        id: null, buffer: "乙女の守護者アデライド", awaken: "未", showAwaken: true
+        , value: 5, disabled: null, req: "deploy"
+        , tooltip: "[射程内] 被ダメージが5%上昇"
+    }
+    , {
+        id: null, buffer: "乙女の守護者アデライド", awaken: "覚醒", showAwaken: true
+        , value: 10, disabled: null, req: "deploy"
+        , compound: { takenDmg: [ { buffer: "乙女の守護者アデライド", req: "skill" } ] }
+        , tooltip: "[射程内] 被ダメージが5%上昇"
+    }
+    , {
+        id: null, buffer: "乙女の守護者アデライド", awaken: "覚醒"
+        , value: 50, disabled: null, req: "skill"
+        , compound: { takenDmg: [ { buffer: "乙女の守護者アデライド", awaken: "覚醒", req: "deploy" } ] }
+        , tooltip: "[スキル・射程内] 被ダメージが50%上昇"
+        , unitInfo: {
+            unitName: "乙女の守護者アデライド", deployType: "近接型", rarity: "黒"
+            , unitClass: { selected: "グランドナイト" }
+            , attribution: [ "人間", "重装", "バレンタイン" ]
+            , note: [ "女性", "状態異常無効" ]
+            , WT: 5, CT: 45, dur: 15
+        }
+    }
+    , {
         id: null, buffer: "魔神の残滓ウェパル", awaken: "未", showAwaken: true
         , value: 7, disabled: null, req: "deploy"
         , tooltip: "[全体] 被ダメージが7%上昇"

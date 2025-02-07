@@ -83,6 +83,18 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
+        name: "エレイン/バレンタイン", rarity: "白", cl: "ワルキューレ", AW: "未", skill: "通常"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "エレイン/バレンタイン", rarity: "白", cl: "ワルキューレ", AW: "覚醒", skill: "通常"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "メルヴィナ", rarity: "白", cl: "プリンセス", AW: "覚醒"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "359f"

@@ -658,6 +658,16 @@ buff.skill_gl = [
         , note: "永続スキル"
     }
     , {
+        name: "アンナ/バレンタイン", rarity: "黒", cl: "政務官", AW: "未", skill: "通常"
+        , stats: { atk: "×1.1", def: "×1.1" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "アンナ/バレンタイン", rarity: "黒", cl: "政務官", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
+        , stats: { atk: "×1.1", def: "×1.1" }
+        , note: "分類未確認"
+    }
+    , {
         name: "シャルル", rarity: "白", cl: "アルケミスト", AW: "覚醒", skill: "覚醒"
         , stats: { def: "×1.25" }
     }

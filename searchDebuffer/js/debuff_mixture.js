@@ -551,6 +551,22 @@ debuff.mixture = [
         , note: "スキル発動時"
     }
     , {
+        name: "マツリ/バレンタイン", rarity: "黒", cl: "前衛戦術家", AW: "未", skill: "通常"
+        , stats: {
+            stop: { value: "?f", type: "area" }
+        }
+        , domain: "area"
+        , note: "スキル発動時"
+    }
+    , {
+        name: "マツリ/バレンタイン", rarity: "黒", cl: "前衛戦術家", AW: "覚醒", skill: [ "通常", "覚醒" ]
+        , stats: {
+            stop: { value: "?f", type: "area" }
+        }
+        , domain: "area"
+        , note: "スキル発動時"
+    }
+    , {
         name: "ルヴェア", rarity: "白", cl: "前衛戦術家", AW: "未", skill: "通常"
         , stats: {
             def: { value: "-15%", type: "global" }
@@ -867,6 +883,14 @@ debuff.mixture = [
             , mr: { value: "-90%", type: "area" }
         }
         , domain: "area"
+    }
+    , {
+        name: "アデライド/バレンタイン", rarity: "黒", cl: "グランドナイト", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            atk: { value: "-90%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "清源妙道真君", rarity: "黒", cl: "真人", AW: "未", skill: "通常"
@@ -2227,6 +2251,14 @@ debuff.mixture = [
             atk: { value: "-20%", type: "noAttr" }
         }
         , domain: "area"
+    }
+    , {
+        name: "ノストラ/バレンタイン", rarity: "白", cl: "マーチャント", AW: "覚醒", skill: "覚醒(偶)"
+        , stats: {
+            def: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "ツァーユ", rarity: "黒", cl: "フェンリルシャーマン", AW: "未", skill: "通常"

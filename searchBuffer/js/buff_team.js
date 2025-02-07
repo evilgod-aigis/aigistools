@@ -264,6 +264,16 @@ buff.team = [
         , target: { others: [ "騎兵" ] }
     }
     , {
+        name: "エレイン/バレンタイン", rarity: "白", cl: "ワルキューレ", AW: "未"
+        , stats: { mr: "+5" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
+        name: "エレイン/バレンタイン", rarity: "白", cl: "ワルキューレ", AW: "覚醒"
+        , stats: { mr: "+7" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
         name: "オリヴィエ", rarity: "黒", cl: "プリンセス", AW: "未"
         , stats: { cost: "-1" }
         , target: { race: [ "エルフ系", "ドワーフ" ] }
@@ -534,6 +544,16 @@ buff.team = [
         name: "マツリ/お正月", rarity: "黒", cl: "前衛戦術家", AW: "覚醒"
         , stats: { hp: "+15%" }
         , target: { season: [ "お正月" ] }
+    }
+    , {
+        name: "マツリ/バレンタイン", rarity: "黒", cl: "前衛戦術家", AW: "未"
+        , stats: { atk: "+4%", def: "+4%" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
+        name: "マツリ/バレンタイン", rarity: "黒", cl: "前衛戦術家", AW: "覚醒"
+        , stats: { atk: "+7%", def: "+7%" }
+        , target: { season: [ "バレンタイン" ] }
     }
     , {
         name: "ルヴェア", rarity: "白", cl: "前衛戦術家", AW: "覚醒"

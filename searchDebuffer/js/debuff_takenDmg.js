@@ -26,6 +26,21 @@ debuff.takenDmg = [
         , note: "範囲"
     }
     , {
+        name: "アデライド/バレンタイン", rarity: "黒", cl: "グランドナイト", AW: "未"
+        , stats: { value: "+5%" }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
+        name: "アデライド/バレンタイン", rarity: "黒", cl: "グランドナイト", AW: "覚醒"
+        , stats: { value: "+10%" }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
+        name: "アデライド/バレンタイン", rarity: "黒", cl: "グランドナイト", AW: "覚醒", skill: "覚醒"
+        , stats: { value: "*5.0" }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
         name: "ウェパル", rarity: "黒", cl: "デモンリドゥ", AW: "未"
         , stats: { value: "+7%" }
     }

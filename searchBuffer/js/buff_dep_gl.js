@@ -259,6 +259,16 @@ buff.dep_gl = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "マツリ/バレンタイン", rarity: "黒", cl: "前衛戦術家", AW: "未"
+        , stats: { atk: "+3%", def: "+3%" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
+        name: "マツリ/バレンタイン", rarity: "黒", cl: "前衛戦術家", AW: "覚醒"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
         name: "ヘレナ", rarity: "白", cl: "前衛戦術家", AW: "覚醒"
         , stats: { atk: "+10%" }
         , target: { cl: [ "パイレーツ", "砲術士", "マーチャント" ] }
@@ -1422,6 +1432,16 @@ buff.dep_gl = [
         , target: { season: [ "学園" ] }
     }
     , {
+        name: "ノストラ/バレンタイン", rarity: "白", cl: "マーチャント", AW: "未"
+        , stats: { cost: "-1" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
+        name: "ノストラ/バレンタイン", rarity: "白", cl: "マーチャント", AW: "覚醒"
+        , stats: { cost: "-2" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
         name: "ソシエ", rarity: "黒", cl: "モンスタースレイヤー", AW: "覚醒"
         , stats: { atk: "+10%" }
         , target: { depType: [ "遠距離" ] }
@@ -1445,6 +1465,11 @@ buff.dep_gl = [
         name: "パトリシア", rarity: "白", cl: "支援工兵", AW: "覚醒"
         , stats: { def: "+7%" }
         , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "アイゼルフ", rarity: "白", cl: "支援工兵", AW: "覚醒"
+        , stats: { def: "+5%" }
+        , target: { others: [ "機械" ] }
     }
     , {
         name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒"

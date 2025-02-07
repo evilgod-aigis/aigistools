@@ -286,6 +286,24 @@ buff.skill_cat = [
         ]
     }
     , {
+        name: "マツリ/バレンタイン", rarity: "黒", cl: "前衛戦術家", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "バレンタイン" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
+        name: "マツリ/バレンタイン", rarity: "黒", cl: "前衛戦術家", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "バレンタイン" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "ヘレナ", rarity: "白", cl: "前衛戦術家", AW: "覚醒", skill: "覚醒"
         , stats: { def: "×1.25" }
         , target: { depType: [ "近接" ] }
@@ -2002,6 +2020,18 @@ buff.skill_cat = [
         , target: { cl: [ "王子" ] }
     }
     , {
+        name: "アンナ/バレンタイン", rarity: "黒", cl: "政務官", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { cl: [ "王子" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "アンナ/バレンタイン", rarity: "黒", cl: "政務官", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
+        , stats: { atk: "×1.3" }
+        , target: { cl: [ "王子" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "メルアビス", rarity: "黒", cl: "ネクロマンサー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.4" }
         , target: { others: [ "アンデッド" ] }
@@ -2126,6 +2156,16 @@ buff.skill_cat = [
         , target: { season: [ "学園" ] }
     }
     , {
+        name: "ノストラ/バレンタイン", rarity: "白", cl: "マーチャント", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
+        name: "ノストラ/バレンタイン", rarity: "白", cl: "マーチャント", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
         name: "ラピス/クリスマス", rarity: "黒", cl: "デモンサモナー", AW: "未", skill: "通常"
         , stats: { atk: "×1.7" }
         , target: [
@@ -2224,6 +2264,11 @@ buff.skill_cat = [
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { race: [ "獣人" ] }
         , note: "永続スキル"
+    }
+    , {
+        name: "アイゼルフ", rarity: "白", cl: "支援工兵", AW: "覚醒", skill: "覚醒"
+        , stats: { hp: "+20%" }
+        , target: { others: [ "機械" ] }
     }
     , {
         name: "リィーリ", rarity: "青", cl: "デモンシャーマン", AW: "未", skill: "通常"
