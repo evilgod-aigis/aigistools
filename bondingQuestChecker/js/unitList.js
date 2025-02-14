@@ -1154,7 +1154,7 @@ const unitList = [
     , { id: 0x046b, implDate: "2023/03/09", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "p" , depType: "rear", class: "ドラゴンメイジ", name: "カラザ", modifier: "竜兎の共宴", derivation: "バニー" }
     , { id: 0x046c, implDate: "2023/03/09", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "rear", class: "メイジ", name: "ちびヴァレリー", male: 1 }
     , { id: 0x046d, implDate: "2023/03/16", implDate_bq: "2024/06/13", obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "シールダー", name: "レジナレア", modifier: "盾騎士" }
-    , { id: 0x046e, implDate: "2023/03/16", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "van" , class: "武侠", name: "フェイロン", modifier: "武成豪侠" }
+    , { id: 0x046e, implDate: "2023/03/16", implDate_bq: "2025/02/13", obtain: [ "ev", "drop" ], rarity: "p" , depType: "van" , class: "武侠", name: "フェイロン", modifier: "武成豪侠" }
     , { id: 0x046f, implDate: "2023/03/23", implDate_bq: "2023/10/12", obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "シービショップ", name: "イヲナミ", modifier: "龍宮の海巫女" }
     , { id: 0x0470, implDate: "2023/03/23", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "sl", depType: "van" , class: "料理人", name: "マグリカ", modifier: "下町料理人" }
     , { id: 0x0471, implDate: "2023/03/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "van" , class: "神獣騎士", name: "ミルドリス", modifier: "獣を統べる者" }
@@ -1376,7 +1376,7 @@ const unitList = [
     , { id: 0x0547, implDate: "2024/06/20", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "シールダー", name: "レジナレア", modifier: "盾の花嫁", derivation: "花嫁" }
     , { id: 0x0548, implDate: "2024/06/20", implDate_bq: null        , obtain: [ "ev", "maji" ], rarity: "b" , depType: "van" , class: "魔神", name: "ゼパリエッテ", modifier: "愛欲の魔神" }
     , { id: 0x0549, implDate: "2024/06/20", implDate_bq: null        , obtain: [ "tr", "mili" ], rarity: "p" , depType: "van" , class: "デーモンロード", name: "ヤハール", modifier: "炎天の花嫁", derivation: "花嫁" }
-    , { id: 0x054a, implDate: "2024/06/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "スカラー", name: "プリニース", modifier: "叡智の管理者" }
+    , { id: 0x054a, implDate: "2024/06/27", implDate_bq: "2025/02/13", obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "スカラー", name: "プリニース", modifier: "叡智の管理者" }
     , { id: 0x054b, implDate: "2024/06/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "アクアナイト", name: "ティマ", modifier: "海洋遺跡の民" }
     , { id: 0x054c, implDate: "2024/06/27", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "rear", class: "アーチャー", name: "ソーマ", modifier: "精鋭弓手", derivation: "新装" }
     , { id: 0x054d, implDate: "2024/07/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "van" , class: "ヘビーアーマー", name: "ちびテレーゼ" }
@@ -1458,6 +1458,8 @@ const unitList = [
     , { id: 0x0599, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "天尊", name: "太上道君" }
     , { id: 0x059a, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "天尊", name: "太上老君" }
     , { id: 0x059b, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "晴れ着の政務官", derivation: "お正月" }
+    
+    // 2025
     , { id: 0x059c, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "邪仙", name: "聞忠", modifier: "異国の迎春祭 ", derivation: "お正月" }
     , { id: 0x059d, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ドラグーン", name: "イーファ", modifier: "新年撃ち初め", derivation: "お正月" }
     , { id: 0x059e, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "ph", depType: "rear", class: "チェイスハンター", name: "ユージェン", modifier: "破魔の影矢", derivation: "お正月" }
@@ -1478,6 +1480,7 @@ const unitList = [
     , { id: 0x05ad, implDate: "2025/02/06", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "van" , class: "ワルキューレ", name: "エレイン", modifier: "恋の騎槍乙女 ", derivation: "バレンタイン" }
     , { id: 0x05ae, implDate: "2025/02/06", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "マーチャント", name: "ノストラ", modifier: "甘い言葉 ", derivation: "バレンタイン" }
     , { id: 0x05af, implDate: "2025/02/06", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "思慕の政務官 ", derivation: "バレンタイン" }
+    , { id: 0x05b0, implDate: "2025/02/13", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "van" , class: "中級竜兵", name: "ちびゴライア", male: 1 }
     
     
     
