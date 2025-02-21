@@ -442,7 +442,7 @@ buff.skill_area = [
     , {
         name: "ピックル", rarity: "金", cl: "ヴァンパイアハンター", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
-        , note: [ "オート", "永続スキル" ]
+        , note: [ "スキルオート", "永続スキル" ]
     }
     , {
         name: "キキョウ", rarity: "黒", cl: "シャーマン", AW: "覚醒", skill: "通常(奇)"
@@ -474,7 +474,7 @@ buff.skill_area = [
         , note: "永続スキル"
     }
     , {
-        name: "シナト", rarity: "白", cl: "後衛戦術家", AW: "覚醒", skill: "覚醒"
+        name: "シナト", rarity: "白", cl: "後衛戦術家", AW: "覚醒", skill: "覚醒(1)"
         , stats: { ct: "-100%" }
         , note: "ボムスキル"
     }
@@ -483,7 +483,7 @@ buff.skill_area = [
         , stats: { atk: "×1.3" }
     }
     , {
-        name: "シナト/バニー", rarity: "白", cl: "後衛戦術家", AW: "覚醒", skill: "覚醒"
+        name: "シナト/バニー", rarity: "白", cl: "後衛戦術家", AW: "覚醒", skill: "覚醒(～3)"
         , stats: { atkCd: "1f化" }
     }
     , {
@@ -548,12 +548,12 @@ buff.skill_area = [
     , {
         name: "アーリー", rarity: "白", cl: "クロノウィッチ", AW: "未", skill: "通常"
         , stats: { other: "" }
-        , note: [ "発動時オート", "ボムスキル" ]
+        , note: [ "発動時スキルオート", "ボムスキル" ]
     }
     , {
         name: "アーリー", rarity: "白", cl: "クロノウィッチ", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
-        , note: [ "発動時オート", "ボムスキル" ]
+        , note: [ "発動時スキルオート", "ボムスキル" ]
     }
     , {
         name: "フィオレ", rarity: "黒", cl: "ドルイド", AW: "覚醒", skill: [ "通常", "覚醒" ]
@@ -1167,7 +1167,7 @@ buff.skill_area = [
     , {
         name: "守護の聖樹", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { def: "×2.0" }
-        , note: [ "ベルニス/クリスマス", "永続(自壊)" ]
+        , note: [ "ベルニス/クリスマス", "自壊(HP-1%/15f)", "永続スキル" ]
     }
     , {
         name: "お守りエッグ", rarity: "トークン", AW: "覚醒", skill: "通常"
@@ -1182,7 +1182,7 @@ buff.skill_area = [
     , {
         name: "破魔の聖樹", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.4" }
-        , note: [ "シャルロット/クリスマス", "永続(自壊)" ]
+        , note: [ "シャルロット/クリスマス", "自壊(HP-2%/11f)", "永続スキル" ]
     }
     , {
         name: "かまいたちユキ", rarity: "トークン", AW: "未", skill: "通常"
@@ -1197,17 +1197,17 @@ buff.skill_area = [
     , {
         name: "門松トークン", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { rege: [ "20/秒", "10/15f" ] }
-        , note: "アラン/お正月"
+        , note: [ "アラン/お正月", "永続スキル" ]
     }
     , {
         name: "シャドー", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
-        , note: [ "リタ/水着", "隠密付与", "永続(自壊)" ]
+        , note: [ "リタ/水着", "隠密付与", "自壊(HP-3%/15f)", "永続スキル" ]
     }
     , {
         name: "破魔の風鈴", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { abn: "-100%", rege: [ "40/秒", "20/15f" ] }
-        , note: "リアナ/浴衣"
+        , note: [ "リアナ/浴衣", "スキル終了→HP0" ]
     }
     , {
         name: "かぼちゃ馬車", rarity: "トークン", AW: "覚醒", skill: "通常"
@@ -1245,12 +1245,12 @@ buff.skill_area = [
         , note: "マルティナ/クリスマス"
     }
     , {
-        name: "世界樹の苗", rarity: "トークン", AW: "覚醒", skill: "通常"
+        name: "世界樹の苗", rarity: "トークン", AW: "覚醒", skill: "通常(1)"
         , stats: { atk: "×1.3" }
         , note: "ラタトスク"
     }
     , {
-        name: "きらめく聖樹", rarity: "トークン", AW: "覚醒", skill: "通常"
+        name: "きらめく聖樹", rarity: "トークン", AW: "覚醒", skill: "通常(1)"
         , stats: { eva: "30%" }
         , note: "ローズ/クリスマス"
     }

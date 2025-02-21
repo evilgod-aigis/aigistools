@@ -1721,6 +1721,11 @@ buff.team = [
         , target: { others: [ "弓兵" ], depType: [ "遠距離" ] }
     }
     , {
+        name: "ダニエラ/新装", rarity: "黒", cl: "アーチャー", AW: "覚醒"
+        , stats: { atkCd: "-20%" }
+        , target: { others: [ "弓兵" ] }
+    }
+    , {
         name: "スピカ", rarity: "白", cl: "アーチャー", AW: "覚醒"
         , stats: { atk: "+7%" }
         , target: { cl: [ "アーチャー", "レンジャー" ] }

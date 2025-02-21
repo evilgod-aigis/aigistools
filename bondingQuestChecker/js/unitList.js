@@ -1481,6 +1481,10 @@ const unitList = [
     , { id: 0x05ae, implDate: "2025/02/06", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "マーチャント", name: "ノストラ", modifier: "甘い言葉 ", derivation: "バレンタイン" }
     , { id: 0x05af, implDate: "2025/02/06", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "思慕の政務官 ", derivation: "バレンタイン" }
     , { id: 0x05b0, implDate: "2025/02/13", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "van" , class: "中級竜兵", name: "ちびゴライア", male: 1 }
+    , { id: 0x05b1, implDate: "2025/02/20", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "風水使い", name: "ミア", modifier: "恋する花鏡", derivation: "バレンタイン" }
+    , { id: 0x05b2, implDate: "2025/02/20", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "バンデット", name: "リーフ", modifier: "可憐な山賊娘 ", derivation: "新装" }
+    , { id: 0x05b3, implDate: "2025/02/20", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "アーチャー", name: "ダニエラ", modifier: "歴戦弓兵 ", derivation: "新装" }
+    , { id: 0x05b4, implDate: "2025/02/20", implDate_bq: null        , obtain: [ "ev", "mili" ], rarity: "p" , depType: "rear", class: "幻術士", name: "チェルシー", modifier: "王国幻術士" }
     
     
     

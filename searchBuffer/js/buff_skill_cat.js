@@ -156,7 +156,7 @@ buff.skill_cat = [
         name: "ヨシノ", rarity: "黒", cl: "プリンセス", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.3", cost: "×0.5", redep: "40秒" }
         , target: { home: [ "東の国" ] }
-        , note: "永続スキル"
+        , note: [ "永続スキル", "(撤退扱い→配置全体)" ]
     }
     , {
         name: "シビラ/聖剣", rarity: "黒", cl: "プリンセス", AW: "未", skill: "通常"
@@ -199,7 +199,7 @@ buff.skill_cat = [
         name: "ピリカ", rarity: "白", cl: "イビルプリンセス", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.4", other: "" }
         , target: { race: [ "獣人" ] }
-        , note: "オート"
+        , note: "スキルオート"
     }
     , {
         name: "アマンダ", rarity: "黒", cl: "バンデット", AW: "覚醒", skill: "覚醒"
@@ -374,19 +374,19 @@ buff.skill_cat = [
         name: "イブキ", rarity: "黒", cl: "セーラー", AW: "未", skill: "通常"
         , stats: { atk: "×1.3", other: "" }
         , target: { depType: [ "遠距離" ] }
-        , note: "オート"
+        , note: "スキルオート"
     }
     , {
         name: "イブキ", rarity: "黒", cl: "セーラー", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.3", other: "" }
         , target: { depType: [ "遠距離" ] }
-        , note: "オート"
+        , note: "スキルオート"
     }
     , {
         name: "ちびイブキ", rarity: "ちび", cl: "セーラー", skill: "通常"
         , stats: { atk: "×1.3", other: "" }
         , target: { depType: [ "遠距離" ] }
-        , note: "オート"
+        , note: "スキルオート"
     }
     , {
         name: "キュウビ/学園", rarity: "黒", cl: "妖狐", AW: "未", skill: "通常"
@@ -418,19 +418,19 @@ buff.skill_cat = [
         name: "イズナ", rarity: "白", cl: "妖狐", AW: "覚醒", skill: "覚醒(1)"
         , stats: { atk: "×1.1", other: "" }
         , target: { race: [ "妖怪" ] }
-        , note: "オート"
+        , note: "スキルオート"
     }
     , {
         name: "イズナ", rarity: "白", cl: "妖狐", AW: "覚醒", skill: "覚醒(2)"
         , stats: { atk: "×1.3", other: "" }
         , target: { race: [ "妖怪" ] }
-        , note: "オート"
+        , note: "スキルオート"
     }
     , {
         name: "イズナ", rarity: "白", cl: "妖狐", AW: "覚醒", skill: "覚醒(3～)"
         , stats: { atk: "×1.5", other: "" }
         , target: { race: [ "妖怪" ] }
-        , note: "オート"
+        , note: "スキルオート"
     }
     , {
         name: "ちびイズナ", rarity: "ちび", cl: "妖狐", skill: "通常"
@@ -456,7 +456,7 @@ buff.skill_cat = [
             { home: [ "白の帝国" ] }
             , { season: [ "クリスマス" ] }
         ]
-        , note: [ "スキル発動時", "死亡・撤退最後1体" ]
+        , note: [ "死亡・撤退最後1体", "スキル発動時" ]
     }
     , {
         name: "シルセス/花嫁", rarity: "黒", cl: "メイジアーマー", AW: "覚醒", skill: "覚醒"
@@ -1635,7 +1635,7 @@ buff.skill_cat = [
         name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.15", def: "×1.15", other: "" }
         , target: { sex: [ "女性" ] }
-        , note: "オート"
+        , note: "スキルオート"
     }
     , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "未", skill: "通常"
@@ -1651,6 +1651,18 @@ buff.skill_cat = [
         name: "ちび白の皇帝", rarity: "ちび", cl: "皇帝", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "ダニエラ/新装", rarity: "黒", cl: "アーチャー", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , target: { others: [ "弓兵" ] }
+        , note: [ "スキルオート", "貫通化", "永続スキル" ]
+    }
+    , {
+        name: "ダニエラ/新装", rarity: "黒", cl: "アーチャー", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , target: { others: [ "弓兵" ] }
+        , note: [ "スキルオート", "貫通化", "永続スキル" ]
     }
     , {
         name: "キャロップ", rarity: "白", cl: "アーチャー", AW: "覚醒", skill: "覚醒"
@@ -1739,7 +1751,7 @@ buff.skill_cat = [
         name: "リアナ/浴衣", rarity: "黒", cl: "ヒーラー", AW: "覚醒", skill: "覚醒"
         , stats: { redep: "25秒" }
         , target: { season: [ "サマー" ] }
-        , note: [ "スキル発動時", "死亡・撤退最後1体" ]
+        , note: [ "死亡・撤退最後1体", "スキル発動時" ]
     }
     , {
         name: "デスピア/ハロウィン", rarity: "黒", cl: "ウィッチ", AW: "未", skill: "通常"
@@ -1865,6 +1877,15 @@ buff.skill_cat = [
         name: "リンネ/花嫁", rarity: "黒", cl: "風水使い", AW: "覚醒", skill: [ "通常", "覚醒" ]
         , stats: { atk: "×1.25" }
         , target: { sex: [ "女性" ] }
+    }
+    , {
+        name: "ミア/バレンタイン", rarity: "白", cl: "風水使い", AW: "覚醒", skill: "覚醒"
+        , stats: { def: "×1.3" }
+        , target: [
+            { season: [ "バレンタイン" ] }
+            , { others: [ "GG持ち" ] }
+        ]
+        , note: "分類未確認"
     }
     , {
         name: "エイプリル", rarity: "白", cl: "砲術士", AW: "未", skill: "通常"
@@ -2040,7 +2061,7 @@ buff.skill_cat = [
         name: "メルアビス", rarity: "黒", cl: "ネクロマンサー", AW: "覚醒", skill: "覚醒"
         , stats: { redep: "20秒" }
         , target: { others: [ "アンデッド" ] }
-        , note: [ "スキル発動時", "死亡・撤退最後1体" ]
+        , note: [ "死亡・撤退最後1体", "スキル発動時" ]
     }
     , {
         name: "メルアビス/水着", rarity: "黒", cl: "ネクロマンサー", AW: "未", skill: "通常"
@@ -2762,7 +2783,7 @@ buff.skill_cat = [
         , target: { depType: [ "近接" ] }
     }
     , {
-        name: "鳳統", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒", skill: "覚醒"
+        name: "鳳統", rarity: "白", cl: "軍師【恋姫】", AW: "覚醒", skill: "覚醒(1)"
         , stats: { draw: "(○)", redep: "40秒" }
         , target: { depType: [ "近接" ] }
     }
@@ -2785,13 +2806,25 @@ buff.skill_cat = [
         , note: [ "グリム/学園", "分類未確認" ]
     }
     , {
-        name: "阿形の獅子", rarity: "トークン", AW: "未", skill: "通常"
+        name: "阿形の獅子", rarity: "トークン", AW: "未", skill: "通常(1)"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { cl: [ "狛犬" ] }
         , note: "コマ"
     }
     , {
-        name: "阿形の大獅子", rarity: "トークン", AW: "覚醒", skill: "通常"
+        name: "阿形の大獅子", rarity: "トークン", AW: "覚1", skill: "通常(1)"
+        , stats: { atk: "×1.4", def: "×1.4" }
+        , target: { cl: [ "狛犬" ] }
+        , note: "コマ"
+    }
+    , {
+        name: "神威大獅子", rarity: "トークン", AW: "覚2a", skill: "通常(1)"
+        , stats: { atk: "×1.4", def: "×1.4" }
+        , target: { cl: [ "狛犬" ] }
+        , note: "コマ"
+    }
+    , {
+        name: "邪祓の大獅子", rarity: "トークン", AW: "覚2b", skill: "通常(1)"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { cl: [ "狛犬" ] }
         , note: "コマ"

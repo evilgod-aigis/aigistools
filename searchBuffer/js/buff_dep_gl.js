@@ -1371,6 +1371,11 @@ buff.dep_gl = [
         , target: { season: [ "サマー" ], depType: [ "遠距離" ] }
     }
     , {
+        name: "ミア/バレンタイン", rarity: "白", cl: "風水使い", AW: "覚醒"
+        , stats: { def: "+7%" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
         name: "マーニー", rarity: "白", cl: "ダンサー", AW: "覚醒"
         , stats: { cost: "-1" }
         , target: { depType: [ "近接" ] }

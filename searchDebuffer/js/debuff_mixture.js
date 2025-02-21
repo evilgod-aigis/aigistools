@@ -3275,6 +3275,22 @@ debuff.mixture = [
         , note: [ "リュティエ", "永続スキル", "分類未確認" ]
     }
     , {
+        name: "エスタ(幻影)", rarity: "トークン", AW: "未", skill: "通常"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+        }
+        , domain: "global"
+        , note: "チェルシー"
+    }
+    , {
+        name: "エスタ(幻影)", rarity: "トークン", AW: "覚醒", skill: "通常"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+        }
+        , domain: "global"
+        , note: "チェルシー"
+    }
+    , {
         name: "雪の精霊", rarity: "トークン", AW: "未", skill: "通常"
         , stats: {
             atk: { value: "-10%", type: "noAttr" }

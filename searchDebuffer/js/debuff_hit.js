@@ -101,6 +101,18 @@ debuff.hit = [
         , note: "死亡時"
     }
     , {
+        name: "リーフ/新装", rarity: "黒", cl: "バンデット", AW: "未", skill: "通常"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "リーフ/新装", rarity: "黒", cl: "バンデット", AW: "覚醒", skill: "通常"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "ウィリアス/ハロウィン", rarity: "白", cl: "中級竜兵", AW: "未", skill: "通常"
         , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "?f"
