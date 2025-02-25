@@ -1484,7 +1484,7 @@ const unitList = [
     , { id: 0x05b1, implDate: "2025/02/20", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "風水使い", name: "ミア", modifier: "恋する花鏡", derivation: "バレンタイン" }
     , { id: 0x05b2, implDate: "2025/02/20", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "van" , class: "バンデット", name: "リーフ", modifier: "可憐な山賊娘 ", derivation: "新装" }
     , { id: 0x05b3, implDate: "2025/02/20", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "アーチャー", name: "ダニエラ", modifier: "歴戦弓兵 ", derivation: "新装" }
-    , { id: 0x05b4, implDate: "2025/02/20", implDate_bq: null        , obtain: [ "ev", "mili" ], rarity: "p" , depType: "rear", class: "幻術士", name: "チェルシー", modifier: "王国幻術士" }
+    , { id: 0x05b4, implDate: "2025/02/20", implDate_bq: null        , obtain: [ "tr", "mili" ], rarity: "p" , depType: "rear", class: "幻術士", name: "チェルシー", modifier: "王国幻術士" }
     
     
     
