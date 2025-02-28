@@ -1075,6 +1075,16 @@ buff.skill_area = [
         , note: "永続スキル"
     }
     , {
+        name: "フェニカ", rarity: "黒", cl: "スカイヒーラー", AW: "未", skill: "通常"
+        , stats: { hp: "+30%", atk: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "フェニカ", rarity: "黒", cl: "スカイヒーラー", AW: "未", skill: "覚醒"
+        , stats: { hp: "+30%", atk: "×1.3" }
+        , note: "分類未確認"
+    }
+    , {
         name: "イエラ", rarity: "白", cl: "スカイヒーラー", AW: "未", skill: "通常"
         , stats: { def: "×1.3" }
     }

@@ -10,7 +10,7 @@ table.word = {
     , ev: "イベント", drop: "ドロップ", star: "試練", item: "収集", subj: "大討伐", popu: "人気闘兵", maji: "魔神最終決戦"
     , tr: "交換", rain: "虹水晶", demo: "魔水晶", dark: "闇水晶", mili: "武勲結晶", hero: "英傑結晶"
     , sp: "その他", gift: "配布", shop: "課金", code: "シリアルコード", else: "その他"
-    , van: "近接", rear: "遠距離", both: "遠近距離"
+    , vang: "近接", rear: "遠距離", both: "遠近距離"
     , none: "未実装", "year_bq-none": "クエ未実装"
 };
 
@@ -22,10 +22,10 @@ table.obtain = {
     , tr: [ "rain", "demo", "dark", "mili", "hero", "else" ]
     , sp: [ "gift", "shop", "code", "else" ]
 };
-table.depType = [ "van", "rear", "both" ];
+table.depType = [ "vang", "rear", "both" ];
 table.derivation = [ "無印", "白の帝国", "お正月", "温泉", "バレンタイン", "学園", "バニー", "花嫁", "水着", "浴衣", "ハロウィン", "クリスマス", "私服", "その他" ];
 table.class = {
-    van: [
+    vang: [
         // 英傑
         "魔竜騎士", "バーバリアンクイーン", "古代魔導機兵", "銀腕の神話", "ウェポンマスター", "魔導生命体", "アヤカシの王", "黎明の翼"
         , "トゥルーブラッド", "暁光の神話", "神獣騎士", "王国軍初代副司令", "大華の神話", "マギステルミリトゥム", "光槍ビルガの継承者", "祖竜"

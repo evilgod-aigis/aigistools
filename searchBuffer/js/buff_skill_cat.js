@@ -2544,6 +2544,22 @@ buff.skill_cat = [
         , target: { depType: [ "遠距離" ] }
     }
     , {
+        name: "クロノシア/闘兵", rarity: "黒", cl: "時の俯瞰者", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: [
+            { race: [ "神" ] }
+            , { others: [ "魔術師" ] }
+        ]
+    }
+    , {
+        name: "クロノシア/闘兵", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: [
+            { race: [ "神" ] }
+            , { others: [ "魔術師" ] }
+        ]
+    }
+    , {
         name: "ちびクロノシア", rarity: "ちび", cl: "時の俯瞰者", skill: "覚醒"
         , stats: { atk: "×1.4", range: "×1.2" }
         , target: { depType: [ "遠距離" ] }

@@ -2638,6 +2638,16 @@ buff.team = [
         , target: { season: [ "バレンタイン" ] }
     }
     , {
+        name: "フェニカ", rarity: "黒", cl: "スカイヒーラー", AW: "未"
+        , stats: { hp: "+10%" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
+        name: "フェニカ", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒"
+        , stats: { hp: "+15%" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
         name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒"
         , stats: { hp: "+10%", def: "+5%" }
         , target: { others: [ "機械" ] }

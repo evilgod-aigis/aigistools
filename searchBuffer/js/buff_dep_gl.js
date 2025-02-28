@@ -231,6 +231,16 @@ buff.dep_gl = [
         , target: { cl: [ "モンク" ] }
     }
     , {
+        name: "ロウユ", rarity: "黒", cl: "モンク", AW: "未"
+        , stats: { atk: "4%", def: "4%" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "ロウユ", rarity: "黒", cl: "モンク", AW: "覚醒"
+        , stats: { atk: "7%", def: "7%" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
         name: "モモ/温泉", rarity: "白", cl: "モンク", AW: "覚醒"
         , stats: { draw: "○" }
         , target: { season: [ "温泉" ] }
@@ -716,6 +726,16 @@ buff.dep_gl = [
         , target: { cl: [ "インペリアルナイト" ] }
     }
     , {
+        name: "ナゴミ", rarity: "黒", cl: "天狗", AW: "未"
+        , stats: { atk: "+7%" }
+        , target: { race: [ "妖怪" ] }
+    }
+    , {
+        name: "ナゴミ", rarity: "黒", cl: "天狗", AW: "覚醒"
+        , stats: { atk: "+10%" }
+        , target: { race: [ "妖怪" ] }
+    }
+    , {
         name: "グレン/学園", rarity: "白", cl: "天狗", AW: "覚醒"
         , stats: { atk: "+10%", draw: "○" }
         , target: { season: [ "学園" ] }
@@ -1069,6 +1089,11 @@ buff.dep_gl = [
     }
     , {
         name: "祓剣主神", rarity: "黒", cl: "儀仗軍神", AW: "覚醒"
+        , stats: { atk: "+10%" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "ちび祓剣主神", rarity: "ちび", cl: "儀仗軍神"
         , stats: { atk: "+10%" }
         , target: { depType: [ "近接" ] }
     }

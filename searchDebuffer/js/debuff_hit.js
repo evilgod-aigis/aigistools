@@ -1243,6 +1243,12 @@ debuff.hit = [
         , note: "時の俯瞰者系"
     }
     , {
+        name: "クロノシア/闘兵", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒", skill: "覚醒"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "ゴブリン博士", cl: "ゴブリン博士"
         , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "?f"

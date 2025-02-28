@@ -619,6 +619,14 @@ buff.dep_gl = [
         , note: "天界-30%"
     }
     , {
+        name: "フェニカ", rarity: "黒", cl: "スカイヒーラー", AW: "未"
+        , stats: { rege: [ "70/秒", "35/15f" ] }
+    }
+    , {
+        name: "フェニカ", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒"
+        , stats: { rege: [ "100/秒", "50/15f" ] }
+    }
+    , {
         name: "迷い家", cl: "迷い家"
         , stats: { cost: "-3" }
         , target: { not: [ "others" ], others: [ "高貴" ] }
