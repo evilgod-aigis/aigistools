@@ -1225,6 +1225,11 @@ buff.dep_gl = [
         , note: "無差別バフと合わせて+15%"
     }
     , {
+        name: "ひな壇", rarity: "金", cl: "ひな壇"
+        , stats: { atk: "+3%", def: "+3%", mr: "+3" }
+        , target: { sex: [ "女性" ] }
+    }
+    , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒"
         , stats: { def: "+10%" }
         , target: { season: [ "温泉" ] }

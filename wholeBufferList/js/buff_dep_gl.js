@@ -387,6 +387,10 @@ buff.dep_gl = [
         , stats: { atk: "+5%", def: "+5%" }
     }
     , {
+        name: "ひな壇", rarity: "金", cl: "ひな壇"
+        , stats: { rege: [ "33/秒", "?/?f" ] }
+    }
+    , {
         name: "ヴェロッテ/ハロウィン", rarity: "金", cl: "パイレーツ", AW: "覚醒"
         , stats: { def: "+5%", mr: "+5", cost: "+1" }
     }
