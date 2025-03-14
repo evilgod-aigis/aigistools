@@ -921,6 +921,26 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "清源妙道真君/学園", rarity: "黒", cl: "真人", AW: "未", skill: "通常"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+            , def: { value: "-10%", type: "global" }
+            , mr: { value: "-10%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
+        name: "清源妙道真君/学園", rarity: "黒", cl: "真人", AW: "覚醒", skill: "通常"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+            , def: { value: "-10%", type: "global" }
+            , mr: { value: "-10%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
         name: "太公望/お正月", rarity: "白", cl: "真人", AW: "未", skill: "通常"
         , stats: {
             atk: { value: "-20%", type: "noAttr" }
@@ -2543,6 +2563,15 @@ debuff.mixture = [
         }
         , domain: "area"
         , note: [ "スキル発動時", "ボムスキル" ]
+    }
+    , {
+        name: "ボルカ", rarity: "黒", cl: "発明家", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "global"
+        , target: { cond: [ "地上" ] }
+        , note: "分類未確認"
     }
     , {
         name: "レクテ", rarity: "白", cl: "発明家", AW: "未", skill: "通常"

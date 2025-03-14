@@ -111,6 +111,11 @@ buff.add = [
         , note: [ "範囲", "永続スキル" ]
     }
     , {
+        name: "清源妙道真君/学園", rarity: "黒", cl: "真人", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "30%", def: "30%" }
+        , note: "範囲"
+    }
+    , {
         name: "聞忠", rarity: "黒", cl: "邪仙", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "10%", def: "30%" }
         , note: "範囲"

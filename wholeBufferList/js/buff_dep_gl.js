@@ -527,6 +527,16 @@ buff.dep_gl = [
         , note: "ロード系"
     }
     , {
+        name: "メアリ/学園", rarity: "黒", cl: "ロード", AW: "未"
+        , stats: { cost: "-6" }
+        , note: "配置3体未満"
+    }
+    , {
+        name: "メアリ/学園", rarity: "黒", cl: "ロード", AW: "覚醒"
+        , stats: { cost: "-12" }
+        , note: "配置3体未満"
+    }
+    , {
         name: "戦闘工兵大隊長", cl: "支援工兵", AW: "覚2b"
         , stats: { cost: "-2" }
         , note: "支援工兵系"

@@ -546,6 +546,11 @@ buff.skill_area = [
         , stats: { eva: "50%" }
     }
     , {
+        name: "アンナ/学園", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒"
+        , stats: { other: "" }
+        , note: "スキルオート"
+    }
+    , {
         name: "アーリー", rarity: "白", cl: "クロノウィッチ", AW: "未", skill: "通常"
         , stats: { other: "" }
         , note: [ "発動時スキルオート", "ボムスキル" ]
@@ -903,6 +908,16 @@ buff.skill_area = [
     , {
         name: "リンクス", rarity: "黒", cl: "ロード", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.4" }
+    }
+    , {
+        name: "メアリ/学園", rarity: "黒", cl: "ロード", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , note: "HP回復量×1.3"
+    }
+    , {
+        name: "メアリ/学園", rarity: "黒", cl: "ロード", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , note: "HP回復量×1.3"
     }
     , {
         name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒", skill: "通常"

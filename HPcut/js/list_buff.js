@@ -288,6 +288,21 @@ lists.buff.rCT.list = [
         }
     }
     , {
+        id: null, buffer: "学園政務官アンナ", awaken: "通常"
+        , value: 20, disabled: null, req: "skill"
+        , target: [
+            { unitClass: [ "王子" ] }
+            , { attribution: [ "学園" ] }
+        ]
+        , tooltip: "[スキル・射程内] 王子・学園の再動-20%"
+        , unitInfo: {
+            unitName: "学園政務官アンナ", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "政務官系" }
+            , attribution: [ "王国", "人間", "学園" ], note: [ "女性" ]
+            , WT: 1, CT: 80, dur: Infinity
+        }
+    }
+    , {
         id: null, buffer: "約束の花嫁ディエーラ", awaken: "覚醒"
         , value: 45, disabled: null, req: "deploy"
         , target: [ { attribution: [ "ジューンブライド" ] } ]

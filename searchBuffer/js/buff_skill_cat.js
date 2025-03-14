@@ -1206,6 +1206,24 @@ buff.skill_cat = [
         , target: { race: [ "エルフ系", "ドワーフ" ] }
     }
     , {
+        name: "清源妙道真君/学園", rarity: "黒", cl: "真人", AW: "未", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: [
+            { depType: [ "近接" ] }
+            , { season: [ "学園" ] }
+        ]
+        , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
+        name: "清源妙道真君/学園", rarity: "黒", cl: "真人", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: [
+            { depType: [ "近接" ] }
+            , { season: [ "学園" ] }
+        ]
+        , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
         name: "聞忠/お正月", rarity: "黒", cl: "邪仙", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.5" }
         , target: [
@@ -2051,6 +2069,24 @@ buff.skill_cat = [
         , stats: { atk: "×1.3" }
         , target: { cl: [ "王子" ] }
         , note: "分類未確認"
+    }
+    , {
+        name: "アンナ/学園", rarity: "黒", cl: "政務官", AW: "未", skill: "通常"
+        , stats: { ct: "-20%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "学園" ] }
+        ]
+        , note: "永続スキル"
+    }
+    , {
+        name: "アンナ/学園", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "通常"
+        , stats: { ct: "-20%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "学園" ] }
+        ]
+        , note: "永続スキル"
     }
     , {
         name: "メルアビス", rarity: "黒", cl: "ネクロマンサー", AW: "覚醒", skill: "覚醒"

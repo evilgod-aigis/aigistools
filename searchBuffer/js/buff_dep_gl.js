@@ -1507,6 +1507,11 @@ buff.dep_gl = [
         , target: { others: [ "機械" ] }
     }
     , {
+        name: "ボルカ", rarity: "黒", cl: "発明家", AW: "覚醒"
+        , stats: { range: "+10" }
+        , target: { others: [ "機械" ] }
+    }
+    , {
         name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒"
         , stats: { def: "+5%" }
         , target: { season: [ "クリスマス" ] }

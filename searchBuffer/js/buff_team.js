@@ -2143,6 +2143,11 @@ buff.team = [
         , note: "特殊称号"
     }
     , {
+        name: "アンナ/学園", rarity: "黒", cl: "政務官", AW: "覚醒"
+        , stats: { cost: "-1" }
+        , target: { season: [ "学園" ] }
+    }
+    , {
         name: "メルアビス/水着", rarity: "黒", cl: "ネクロマンサー", AW: "覚醒"
         , stats: { atk: "+10%" }
         , target: [

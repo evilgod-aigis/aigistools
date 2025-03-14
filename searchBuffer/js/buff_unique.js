@@ -92,18 +92,32 @@ buff.unique = [
     
     // 特効
     , {
+        name: "ボルカ", rarity: "黒", cl: "発明家", AW: "未"
+        , stats: { atk: "×1.2", other: "" }
+        , target: { others: [ "機械" ] }
+        , type: "special"
+        , note: [ "区分：特効(編成)", "地上" ]
+    }
+    , {
+        name: "ボルカ", rarity: "黒", cl: "発明家", AW: "覚醒"
+        , stats: { atk: "×1.3", other: "" }
+        , target: { others: [ "機械" ] }
+        , type: "special"
+        , note: [ "区分：特効(編成)", "地上" ]
+    }
+    , {
         name: "ヘンドリカ", rarity: "白", cl: "発明家", AW: "覚醒"
         , stats: { atk: "×1.15", other: "" }
         , target: { home: [ "白の帝国" ] }
         , type: "special"
-        , note: [ "区分：特効", "編成", "竜族" ]
+        , note: [ "区分：特効(編成)", "竜族" ]
     }
     , {
         name: "カラザ", rarity: "白", cl: "ドラゴンメイジ", AW: "覚醒"
         , stats: { atk: "×1.1", other: "" }
         , target: { others: [ "ドラゴン" ] }
         , type: "special"
-        , note: [ "区分：特効", "編成", "地上" ]
+        , note: [ "区分：特効(編成)", "地上" ]
     }
     
     // 被ダメージ軽減

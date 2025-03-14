@@ -220,4 +220,37 @@ lists.units.onHit.list = [
             }
         }
     }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
+            unitName: "翠花の留学生メアリ", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "ロード系" }
+            , attribution: [ "人間", "高貴", "学園" ]
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: [ "女性", "状態異常無効" ]
+            , atkInterval: {
+                corr: {
+                    notSkill: { startup: null, remain: null, cooldown: null }
+                    , "覚醒": { startup: null, remain: null, cooldown: null }
+                }
+                , uncorr: {
+                    notSkill: { startup: 16, remain: 46, cooldown: 94 }
+                    , "覚醒": { startup: 16, remain: 46, cooldown: 94 }
+                }
+            }
+        }
+        , skill: {
+            selected: "覚醒"
+            , detail: {
+                "覚醒": [
+                    {
+                        target: "射程内", simult: Infinity
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 70, dur: 120, HPred: 3 }
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
 ];
