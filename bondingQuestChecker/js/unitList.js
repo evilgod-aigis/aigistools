@@ -1499,6 +1499,14 @@ const unitList = [
     , { id: 0x05c0, implDate: "2025/03/13", implDate_bq: null        , obtain: [ "ev", "maji" ], rarity: "b" , depType: "rear", class: "発明家", name: "ボルカ", modifier: "大地の発明家" }
     , { id: 0x05c1, implDate: "2025/03/13", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "学園政務官", derivation: "学園" }
     , { id: 0x05c2, implDate: "2025/02/13", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "一目の竜", name: "ちび一目連", male: 1 }
+    , { id: 0x05c3, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "サベージファイター", name: "ナシート", modifier: "早弁傭兵", derivation: "学園" }
+    , { id: 0x05c4, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "ワルキューレ", name: "メーア", modifier: "帝国騎兵隊長", derivation: "新装", latent: "白の帝国" }
+    , { id: 0x05c5, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "衛士", name: "カルペム", modifier: "封門の番人", latent: "白の帝国" }
+    , { id: 0x05c6, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ドラグーン", name: "ダグマール", modifier: "白竜機兵", latent: "白の帝国" }
+    , { id: 0x05c7, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "デモンルーン", name: "ヴィルデフラウ", modifier: "帝国魔兵", latent: "白の帝国" }
+    , { id: 0x05c8, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "妖糸使い", name: "ツザーネ", modifier: "帝国妖糸兵", latent: "白の帝国" }
+    , { id: 0x05c9, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "吟遊詩人", name: "トットン", modifier: "帝国音楽隊", latent: "白の帝国" }
+    , { id: 0x05ca, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "tr", "dark" ], rarity: "b" , depType: "both", class: "エアセイラー", name: "ヴァルデ", modifier: "帝国選抜飛行士", latent: "白の帝国" }
     
     
     

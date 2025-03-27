@@ -504,6 +504,18 @@ debuff.hit = [
         , note: [ "サベージファイター系", "分類未確認" ]
     }
     , {
+        name: "ナシート/学園", rarity: "白", cl: "サベージファイター", AW: "未", skill: "通常"
+        , stats: { def: "-10%", mr: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ナシート/学園", rarity: "白", cl: "サベージファイター", AW: "覚醒", skill: "通常"
+        , stats: { def: "-10%", mr: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "ティルト", rarity: "黒", cl: "ハデスソルジャー", AW: "覚醒", skill: "覚醒(～2)"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "119f"
@@ -656,6 +668,18 @@ debuff.hit = [
         , atkAttr: "物理", dur: "59f"
     }
     , {
+        name: "カルペム", rarity: "黒", cl: "衛士", AW: "未"
+        , stats: { def: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "カルペム", rarity: "黒", cl: "衛士", AW: "覚醒"
+        , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "センカ", rarity: "白", cl: "衛士", AW: "未"
         , stats: { def: "-20%" }
         , atkAttr: "物理", dur: "?f"
@@ -697,6 +721,18 @@ debuff.hit = [
         name: "クローシェ", rarity: "白", cl: "妖糸使い", AW: "覚醒", skill: "覚醒"
         , stats: { atkCd: "+23f" }
         , atkAttr: "物理", dur: "?f"
+    }
+    , {
+        name: "ツザーネ", rarity: "白", cl: "妖糸使い", AW: "未"
+        , stats: { mr: "-10%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ツザーネ", rarity: "白", cl: "妖糸使い", AW: "覚醒"
+        , stats: { mr: "-20%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒", skill: "通常"
@@ -1163,6 +1199,16 @@ debuff.hit = [
         , note: "ドラグーン系"
     }
     , {
+        name: "ダグマール", rarity: "黒", cl: "ドラグーン", AW: "未", skill: "通常"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
+        name: "ダグマール", rarity: "黒", cl: "ドラグーン", AW: "覚醒", skill: "通常"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
         name: "デリア", rarity: "白", cl: "ドラグーン", AW: "覚醒", skill: "覚醒"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "14f"
@@ -1521,6 +1567,18 @@ debuff.hit = [
         , stats: { atk: "-15%", def: "-30%" }
         , atkAttr: "物理", dur: "∞"
         , note: [ "乙姫", "ボムスキル" ]
+    }
+    , {
+        name: "苛縛トークン", rarity: "トークン", AW: "未"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "ツザーネ"
+    }
+    , {
+        name: "苛縛トークン", rarity: "トークン", AW: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "ツザーネ"
     }
     , {
         name: "最上級トラップ", rarity: "トークン", AW: "覚2b"

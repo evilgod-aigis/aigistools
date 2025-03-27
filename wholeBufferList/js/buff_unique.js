@@ -481,6 +481,18 @@ buff.unique = [
         , type: "dmg-red_selfSkill"
         , note: [ "区分：被ダメージ軽減(自己/スキル)", "物理-20%(範囲)" ]
     }
+    , {
+        name: "トットン", rarity: "白", cl: "吟遊詩人", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red_selfSkill"
+        , note: [ "区分：被ダメージ軽減(自己/スキル)", "物理-20%(範囲)" ]
+    }
+    , {
+        name: "トットン", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red_selfSkill"
+        , note: [ "区分：被ダメージ軽減(自己/スキル)", "物理-20%(範囲)" ]
+    }
     
     , {
         name: "王子【麒麟】", cl: "王子", skill: "通常"

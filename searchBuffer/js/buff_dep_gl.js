@@ -1116,6 +1116,19 @@ buff.dep_gl = [
         , target: { home: [ "砂漠の国" ] }
     }
     , {
+        name: "ナシート/学園", rarity: "白", cl: "サベージファイター", AW: "覚醒"
+        , stats: { def: "+5%", mr: "+5" }
+        , target: { season: [ "学園" ] }
+    }
+    , {
+        name: "ナシート/学園", rarity: "白", cl: "サベージファイター", AW: "覚醒"
+        , stats: { def: "+5%", mr: "+5" }
+        , target: [
+            { home: [ "砂漠の国" ] }
+            , { season: [ "学園" ] }
+        ]
+    }
+    , {
         name: "サフィール", rarity: "黒", cl: "シールダー", AW: "覚醒"
         , stats: { def: "+10%" }
         , target: { depType: [ "近接" ] }

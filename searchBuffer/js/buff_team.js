@@ -1681,6 +1681,22 @@ buff.team = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "カルペム", rarity: "黒", cl: "衛士", AW: "未"
+        , stats: { def: "+10%" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { others: [ "ドラゴン" ] }
+        ]
+    }
+    , {
+        name: "カルペム", rarity: "黒", cl: "衛士", AW: "覚醒"
+        , stats: { def: "+15%" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { others: [ "ドラゴン" ] }
+        ]
+    }
+    , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒"
         , stats: { hp: "+10%" }
         , target: { home: [ "白の帝国" ] }

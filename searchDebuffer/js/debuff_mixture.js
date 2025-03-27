@@ -236,6 +236,22 @@ debuff.mixture = [
         , note: [ "配置後45秒", "分類未確認" ]
     }
     , {
+        name: "メーア/新装", rarity: "黒", cl: "ワルキューレ", AW: "未"
+        , stats: {
+            mr: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+        , note: [ "配置後45秒", "分類未確認" ]
+    }
+    , {
+        name: "メーア/新装", rarity: "黒", cl: "ワルキューレ", AW: "覚醒"
+        , stats: {
+            mr: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: [ "配置後45秒", "分類未確認" ]
+    }
+    , {
         name: "ジュノン/お正月", rarity: "白", cl: "ローグ", AW: "未", skill: "通常"
         , stats: {
             stop: { value: "89f", type: "global" }
@@ -1413,6 +1429,22 @@ debuff.mixture = [
         }
         , domain: "area"
         , note: "妖糸使い系"
+    }
+    , {
+        name: "ツザーネ", rarity: "白", cl: "妖糸使い", AW: "未", skill: "通常"
+        , stats: {
+            mr: { value: "-15%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
+        name: "ツザーネ", rarity: "白", cl: "妖糸使い", AW: "覚醒", skill: "通常"
+        , stats: {
+            mr: { value: "-15%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "永続スキル", "分類未確認" ]
     }
     , {
         name: "ヴァイセカイゼリン", cl: "初代皇帝", AW: "覚2a"
@@ -2832,6 +2864,20 @@ debuff.mixture = [
         name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚醒"
         , stats: {
             def: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "トットン", rarity: "白", cl: "吟遊詩人", AW: "未"
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "トットン", rarity: "白", cl: "吟遊詩人", AW: "覚醒"
+        , stats: {
+            atk: { value: "-25%", type: "noAttr" }
         }
         , domain: "area"
     }

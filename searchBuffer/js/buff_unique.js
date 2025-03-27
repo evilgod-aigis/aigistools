@@ -25,18 +25,18 @@ buff.unique = [
         , note: [ "区分：吟遊詩人", "範囲", "最大値(+2%/4秒)" ]
     }
     , {
-        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚醒"
+        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚1"
         , stats: { hp: "+20%", atk: "+20%", def: "+20%" }
         , target: { race: [ "人間", "神", "半神" ] }
         , type: "bard"
         , note: [ "区分：吟遊詩人", "範囲", "最大値(+2%/4秒)" ]
     }
     , {
-        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
-        , stats: { atk: "+24%", def: "+24%" }
+        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚2a"
+        , stats: { hp: "+20%", atk: "+20%", def: "+20%" }
         , target: { race: [ "人間", "神", "半神" ] }
         , type: "bard"
-        , note: [ "区分：吟遊詩人", "範囲", "最大値(+2%/3秒)" ]
+        , note: [ "区分：吟遊詩人", "範囲", "最大値(+2%/4秒)" ]
     }
     , {
         name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚2b"
@@ -46,11 +46,11 @@ buff.unique = [
         , note: [ "区分：吟遊詩人", "範囲", "最大値(+?%/?秒)" ]
     }
     , {
-        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚2b", skill: "覚醒"
-        , stats: { atk: "+36%", def: "+36%" }
+        name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "*1.2", def: "*1.2" }
         , target: { race: [ "人間", "神", "半神" ] }
         , type: "bard"
-        , note: [ "区分：吟遊詩人", "範囲", "最大値(+?%/?秒)" ]
+        , note: [ "区分：吟遊詩人", "範囲", "最大値(+2%/3秒)" ]
     }
     , {
         name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "未"
@@ -64,14 +64,42 @@ buff.unique = [
         , stats: { atk: "+25%", def: "+25%" }
         , target: { others: [ "魔界" ] }
         , type: "bard"
-        , note: [ "区分：吟遊詩人", "範囲", "最大値(+2%/3秒)" ]
+        , note: [ "区分：吟遊詩人", "範囲", "最大値(+2%/4秒)" ]
     }
     , {
         name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
-        , stats: { atk: "+30%", def: "+30%" }
+        , stats: { atk: "*1.2", def: "*1.2" }
         , target: { others: [ "魔界" ] }
         , type: "bard"
         , note: [ "区分：吟遊詩人", "範囲", "最大値(+2%/3秒)", "永続スキル" ]
+    }
+    , {
+        name: "トットン", rarity: "白", cl: "吟遊詩人", AW: "未"
+        , stats: { atk: "+15%", def: "+15%" }
+        , target: { home: [ "白の帝国" ] }
+        , type: "bard"
+        , note: [ "区分：吟遊詩人", "範囲", "最大値(+2%/4秒)" ]
+    }
+    , {
+        name: "トットン", rarity: "白", cl: "吟遊詩人", AW: "覚1"
+        , stats: { atk: "+25%", def: "+25%" }
+        , target: { home: [ "白の帝国" ] }
+        , type: "bard"
+        , note: [ "区分：吟遊詩人", "範囲", "最大値(+2%/4秒)" ]
+    }
+    , {
+        name: "トットン", rarity: "白", cl: "吟遊詩人", AW: "覚2b"
+        , stats: { atk: "+35%", def: "+35%" }
+        , target: { home: [ "白の帝国" ] }
+        , type: "bard"
+        , note: [ "区分：吟遊詩人", "範囲", "最大値(+2%/4秒)" ]
+    }
+    , {
+        name: "トットン", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "*1.2", def: "*1.2" }
+        , target: { home: [ "白の帝国" ] }
+        , type: "bard"
+        , note: [ "区分：吟遊詩人", "範囲", "最大値(+2%/3秒)" ]
     }
     
     // 死亡時
