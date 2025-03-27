@@ -2638,19 +2638,19 @@ buff.skill_cat = [
     }
     , {
         name: "トットン", rarity: "白", cl: "吟遊詩人", AW: "未", skill: "通常"
-        , stats: { atk: "×1.3" }
+        , stats: { def: "×1.3" }
         , target: { home: [ "白の帝国" ] }
         , note: "範囲"
     }
     , {
         name: "トットン", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
-        , stats: { atk: "×1.3" }
+        , stats: { def: "×1.3" }
         , target: { home: [ "白の帝国" ] }
         , note: "範囲"
     }
     , {
         name: "トットン", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
-        , stats: { def: "×1.3" }
+        , stats: { atk: "×1.3" }
         , target: { home: [ "白の帝国" ] }
         , note: "範囲"
     }
