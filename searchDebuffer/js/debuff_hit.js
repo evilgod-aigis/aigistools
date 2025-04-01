@@ -1336,6 +1336,12 @@ debuff.hit = [
         , note: [ "ユニットに重ねて配置", "分類未確認" ]
     }
     , {
+        name: "装着型魔導砲台", rarity: "金", cl: "装着型魔導砲台"
+        , stats: { mr: "-20%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: [ "ユニットに重ねて配置", "分類未確認" ]
+    }
+    , {
         name: "ホーネット派魔人【ランス】", cl: "ホーネット派魔人【ランス】", AW: "未"
         , stats: { def: "-15%" }
         , atkAttr: "物理", dur: "?f"
@@ -1569,7 +1575,7 @@ debuff.hit = [
         , note: [ "乙姫", "ボムスキル" ]
     }
     , {
-        name: "苛縛トークン", rarity: "トークン", AW: "未"
+        name: "苛糸トークン", rarity: "トークン", AW: "未"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "?f"
         , note: "ツザーネ"
@@ -1615,6 +1621,12 @@ debuff.hit = [
         , stats: { atkCd: "+?f" }
         , atkAttr: "物理", dur: "?f"
         , note: [ "ストレイソッド", "範囲指定", "分類未確認" ]
+    }
+    , {
+        name: "魔導砲台", rarity: "トークン"
+        , stats: { mr: "-20%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: [ "装着型魔導砲台", "分類未確認" ]
     }
     , {
         name: "改良型セバスチャン", rarity: "トークン", AW: "覚醒"

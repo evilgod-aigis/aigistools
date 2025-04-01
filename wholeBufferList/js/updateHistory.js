@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2025/04/01(火)"
+        , detail: [
+            "王子【功夫】を追加"
+        ]
+    }
+    , {
         date: "2025/03/27(木)"
         , detail: [
             "トットンを追加"
