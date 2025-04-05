@@ -25,11 +25,11 @@ buff.dep_gl = [
     }
     , {
         name: "王子【風護】", cl: "王子"
-        , stats: { atk: "+20%", def: "+20%", nul: "5%" }
+        , stats: { atk: "+20%", def: "+20%", nul: "10%" }
     }
     , {
         name: "王子【風護】", cl: "王子"
-        , stats: { atk: "+20%", def: "+20%", nul: "10%" }
+        , stats: { atk: "+20%", def: "+20%", nul: "15%" }
         , note: "Lv3以上"
     }
     , {
