@@ -1363,7 +1363,6 @@ debuff.mixture = [
             , def: { value: "-20%", type: "global" }
         }
         , domain: "global"
-        , note: "分類未確認"
     }
     , {
         name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒", skill: "通常"
@@ -1372,6 +1371,30 @@ debuff.mixture = [
             , def: { value: "-20%", type: "global" }
         }
         , domain: "global"
+    }
+    , {
+        name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            atk: { value: "-40%", type: "noAttr" }
+            , def: { value: "-40%", type: "global" }
+        }
+        , domain: "global"
+    }
+    , {
+        name: "ちびダーク王子", rarity: "ちび", cl: "ダーク王子", skill: "通常"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+            , def: { value: "-20%", type: "global" }
+        }
+        , domain: "global"
+    }
+    , {
+        name: "ルイゼット", rarity: "黒", cl: "処刑人", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            mr: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "覚醒", skill: [ "通常", "覚醒" ]
@@ -1404,22 +1427,6 @@ debuff.mixture = [
             , mr: { value: "-20%", type: "clAttr" }
         }
         , domain: "area"
-    }
-    , {
-        name: "ダーク王子", rarity: "黒", cl: "ダーク王子", AW: "覚醒", skill: "覚醒"
-        , stats: {
-            atk: { value: "-40%", type: "noAttr" }
-            , def: { value: "-40%", type: "global" }
-        }
-        , domain: "global"
-    }
-    , {
-        name: "ルイゼット", rarity: "黒", cl: "処刑人", AW: "覚醒", skill: "覚醒"
-        , stats: {
-            mr: { value: "-30%", type: "area" }
-        }
-        , domain: "area"
-        , note: "分類未確認"
     }
     , {
         name: "ウィドウマイカー", cl: "妖糸使い", AW: "覚2b"
@@ -2647,7 +2654,7 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
-        name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "覚醒"
+        name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "覚醒(～4)"
         , stats: {
             stop: { value: "14f", type: "area" }
         }

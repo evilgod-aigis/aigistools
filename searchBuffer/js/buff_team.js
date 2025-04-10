@@ -1666,6 +1666,11 @@ buff.team = [
         , target: { others: [ "魔界" ] }
     }
     , {
+        name: "ちびダーク王子", rarity: "ちび", cl: "ダーク王子"
+        , stats: { atk: "+3%", def: "+3%" }
+        , target: { others: [ "魔界" ] }
+    }
+    , {
         name: "リムリィ/水着", rarity: "白", cl: "処刑人", AW: "未"
         , stats: { atk: "+7%" }
         , target: { season: [ "サマー" ] }

@@ -303,6 +303,14 @@ buff.skill_gl = [
         , stats: { nul: "50%" }
     }
     , {
+        name: "エクス/バニー", rarity: "黒", cl: "神官戦士", AW: "未", skill: "通常"
+        , stats: { nul: "50%" }
+    }
+    , {
+        name: "エクス/バニー", rarity: "黒", cl: "神官戦士", AW: "覚醒", skill: "通常"
+        , stats: { nul: "50%" }
+    }
+    , {
         name: "ライチ/学園", rarity: "白", cl: "メイジアーマー", AW: "覚醒", skill: "覚醒"
         , stats: { rege: [ "120/秒", "10/2.5f" ] }
     }

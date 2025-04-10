@@ -124,6 +124,11 @@ buff.skill_area = [
         , note: "分類未確認"
     }
     , {
+        name: "エクス/バニー", rarity: "黒", cl: "神官戦士", AW: "覚醒", skill: "覚醒"
+        , stats: { hp: "×1.2", atk: "×1.2", def: "×1.2" }
+        , note: [ "永続", "分類未確認" ]
+    }
+    , {
         name: "エレット/バレンタイン", rarity: "白", cl: "神官戦士", AW: "未", skill: "通常"
         , stats: { atk: "×1.3" }
         , target: { not: [ "season" ], season: [ "バレンタイン" ] }
@@ -963,42 +968,42 @@ buff.skill_area = [
         , stats: { eva: "70%" }
     }
     , {
-        name: "ラタトスク", rarity: "黒", cl: "ハーバリスト", AW: "未", skill: "通常"
+        name: "ラタトスク", rarity: "黒", cl: "ハーバリスト", AW: "未", skill: "通常(～5)"
         , stats: { def: "×1.4", mr: "×1.4", rege: [ "100/秒", "50/15f" ] }
     }
     , {
-        name: "ラタトスク", rarity: "黒", cl: "ハーバリスト", AW: "覚醒", skill: "通常"
+        name: "ラタトスク", rarity: "黒", cl: "ハーバリスト", AW: "覚醒", skill: "通常(～5)"
         , stats: { def: "×1.4", mr: "×1.4", rege: [ "100/秒", "50/15f" ] }
     }
     , {
-        name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "未", skill: "通常"
+        name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "未", skill: "通常(～5)"
         , stats: { atk: "×1.2", def: "×1.2" }
         , note: "分類未確認"
     }
     , {
-        name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒", skill: "通常"
+        name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒", skill: "通常(～5)"
         , stats: { atk: "×1.2", def: "×1.2" }
         , note: "分類未確認"
     }
     , {
-        name: "ローズ", rarity: "白", cl: "ハーバリスト", AW: "未", skill: "通常"
+        name: "ローズ", rarity: "白", cl: "ハーバリスト", AW: "未", skill: "通常(～4)"
         , stats: { abn: "-100%" }
     }
     , {
-        name: "ローズ", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "通常"
+        name: "ローズ", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "通常(～4)"
         , stats: { abn: "-100%" }
     }
     , {
-        name: "ローズ", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "覚醒"
+        name: "ローズ", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "覚醒(～4)"
         , stats: { abn: "-100%" }
         , note: "ボムスキル"
     }
     , {
-        name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "未", skill: "通常"
+        name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "未", skill: "通常(～4)"
         , stats: { eva: "30%" }
     }
     , {
-        name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "通常"
+        name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "通常(～4)"
         , stats: { eva: "30%" }
     }
     , {
@@ -1268,6 +1273,26 @@ buff.skill_area = [
         name: "ツキコ(幻影)", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { abn: "-100%" }
         , note: "マルティナ/クリスマス"
+    }
+    , {
+        name: "リンクス(幻影)", rarity: "トークン", AW: "未", skill: "通常"
+        , stats: { atk: "×1.4" }
+        , note: "リュティエ/バニー"
+    }
+    , {
+        name: "リンクス(幻影)", rarity: "トークン", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.4" }
+        , note: "リュティエ/バニー"
+    }
+    , {
+        name: "ラタトスク(幻影)", rarity: "トークン", AW: "未", skill: "通常(～5)"
+        , stats: { def: "×1.4", mr: "×1.4", rege: [ "100/秒", "50/15f" ] }
+        , note: "リュティエ/バニー"
+    }
+    , {
+        name: "ラタトスク(幻影)", rarity: "トークン", AW: "覚醒", skill: "通常(～5)"
+        , stats: { def: "×1.4", mr: "×1.4", rege: [ "100/秒", "50/15f" ] }
+        , note: "リュティエ/バニー"
     }
     , {
         name: "世界樹の苗", rarity: "トークン", AW: "覚醒", skill: "通常(1)"

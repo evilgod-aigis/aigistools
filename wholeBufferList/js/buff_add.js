@@ -51,6 +51,11 @@ buff.add = [
         , note: "範囲"
     }
     , {
+        name: "エクス/バニー", rarity: "黒", cl: "神官戦士", AW: "覚醒", skill: "覚醒"
+        , stats: { mr: "+10" }
+        , note: [ "範囲", "永続" ]
+    }
+    , {
         name: "グレーテル/クリスマス", rarity: "白", cl: "ダークストーカー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "20%" }
         , note: "範囲"

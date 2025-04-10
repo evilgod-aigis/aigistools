@@ -1175,6 +1175,15 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "ちびダーク王子", rarity: "ちび", cl: "ダーク王子"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: [
+            { cl: [ "政務官【闇の軍勢】" ] }
+            , { race: [ "デーモン系", "ゴブリン", "オーク" ] }
+            , { others: [ "アンデッド" ] }
+        ]
+    }
+    , {
         name: "紡がれる物語", cl: "神話の継承者", AW: "覚2a"
         , stats: { atk: "+8%" }
         , target: { depType: [ "近接" ] }
@@ -1662,6 +1671,19 @@ buff.dep_gl = [
         name: "ジタリス", rarity: "白", cl: "スカイヒーラー", AW: "覚醒"
         , stats: { atk: "+10%" }
         , target: { race: [ "天使", "鳥人", "天界人" ] }
+    }
+    , {
+        name: "ジタリス/バニー", rarity: "白", cl: "スカイヒーラー", AW: "未"
+        , stats: { atk: "+3%", def: "+3%" }
+        , target: { season: [ "エッグハント" ] }
+    }
+    , {
+        name: "ジタリス/バニー", rarity: "白", cl: "スカイヒーラー", AW: "覚醒"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: [
+            { race: [ "天使", "鳥人", "天界人" ] }
+            , { season: [ "エッグハント" ] }
+        ]
     }
     , {
         name: "帝国軍旗", rarity: "金", cl: "帝国軍旗"

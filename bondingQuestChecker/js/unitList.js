@@ -213,7 +213,7 @@ const unitList = [
     , { id: 0x00ce, implDate: "2015/07/23", implDate_bq: "2017/12/28", obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "ソードマスター", name: "グローリア", modifier: "剣士" }
     , { id: 0x00cf, implDate: "2015/07/23", implDate_bq: "2017/08/10", obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "ソルジャー", name: "アルティア", modifier: "光の守護者" }
     , { id: 0x00d0, implDate: "2015/07/23", implDate_bq: "2017/07/12", obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "砲術士", name: "カノン", modifier: "爆砲の新兵" }
-    , { id: 0x00d1, implDate: "2015/07/24", implDate_bq: null        , obtain: [ "sp", "code" ], rarity: "s" , depType: "rear", class: "魔物使い", name: "スイル", modifier: "魔物使い" }
+    , { id: 0x00d1, implDate: "2015/07/24", implDate_bq: null        , obtain: [ "sp", "code" ], rarity: "s" , depType: "rear", class: "魔物使い", name: "スイル", modifier: "魔物使い", extra: { obtain: [ "tr", "rain" ] } }
     , { id: 0x00d2, implDate: "2015/07/30", implDate_bq: "2017/11/22", obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "ソードマスター", name: "レイブン", modifier: "剣士" }
     , { id: 0x00d3, implDate: "2015/08/13", implDate_bq: "2018/02/01", obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "ダークプリースト", name: "ベルディナート", modifier: "闇司祭" }
     , { id: 0x00d4, implDate: "2015/08/13", implDate_bq: "2016/08/04", obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ドラゴンシャーマン", name: "ルビナス", modifier: "竜巫女" }
@@ -274,7 +274,7 @@ const unitList = [
     , { id: 0x0109, implDate: "2016/03/24", implDate_bq: null        , obtain: [ "sh"         ], rarity: "sl", depType: "vang", class: "神官戦士", name: "ニコラウス", modifier: "神官戦士", male: 1 }
     , { id: 0x010a, implDate: "2016/03/24", implDate_bq: "2017/03/14", obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "ヴァンパイアハンター", name: "ルマリア", modifier: "聖なる復讐者" }
     , { id: 0x010b, implDate: "2016/03/31", implDate_bq: "2017/06/29", obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "メイド", name: "セーラ", modifier: "王宮侍女武官" }
-    , { id: 0x010c, implDate: "2016/03/31", implDate_bq: null        , obtain: [ "sp", "code" ], rarity: "s" , depType: "vang", class: "エンジェル", name: "パフィリア", modifier: "堕天使" }
+    , { id: 0x010c, implDate: "2016/03/31", implDate_bq: null        , obtain: [ "sp", "code" ], rarity: "s" , depType: "vang", class: "エンジェル", name: "パフィリア", modifier: "堕天使", extra: { obtain: [ "tr", "rain" ] } }
     , { id: 0x010d, implDate: "2016/04/07", implDate_bq: "2017/03/14", obtain: [ "sp", "gift" ], rarity: "p" , depType: "rear", class: "後衛戦術家", name: "レオナ", modifier: "帝国軍師", latent: "白の帝国", extra: { obtain: [ "tr", "rain" ] } }
     , { id: 0x010e, implDate: "2016/04/14", implDate_bq: "2018/03/15", obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "エンジェル", name: "ミルノ", modifier: "天使長" }
     , { id: 0x010f, implDate: "2016/04/14", implDate_bq: null        , obtain: [ "sh"         ], rarity: "g" , depType: "rear", class: "サモナー", name: "リノ", modifier: "見習い召喚士" }
@@ -470,7 +470,7 @@ const unitList = [
     , { id: 0x01c9, implDate: "2018/03/29", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "真人", name: "太公望" }
     , { id: 0x01ca, implDate: "2018/03/29", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "キョンシー", name: "スーシェン", modifier: "屍仙道士" }
     , { id: 0x01cb, implDate: "2018/03/29", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "vang", class: "グランドナイト", name: "サリス", modifier: "亡国の守護騎士" }
-    , { id: 0x01cc, implDate: "2018/03/30", implDate_bq: null        , obtain: [ "sp", "code" ], rarity: "s" , depType: "rear", class: "ライフリンカー", name: "サルース", modifier: "神鎖の救命師" }
+    , { id: 0x01cc, implDate: "2018/03/30", implDate_bq: null        , obtain: [ "sp", "code" ], rarity: "s" , depType: "rear", class: "ライフリンカー", name: "サルース", modifier: "神鎖の救命師", extra: { obtain: [ "tr", "rain" ] } }
     , { id: 0x01cd, implDate: "2018/04/05", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "メイジ", name: "メーリス", modifier: "魔学の研修生", derivation: "学園" }
     , { id: 0x01ce, implDate: "2018/04/05", implDate_bq: null        , obtain: [ "sh"         ], rarity: "g" , depType: "rear", class: "ウィッチ", name: "ネーニャ", modifier: "勤勉猫魔女", derivation: "学園" }
     , { id: 0x01cf, implDate: "2018/04/05", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "g" , depType: "rear", class: "パイレーツ", name: "ジョヴァンニ", modifier: "海賊番長", derivation: "学園", male: 1 }
@@ -958,7 +958,7 @@ const unitList = [
     , { id: 0x03ab, implDate: "2021/11/04", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "パイレーツ", name: "ちびデューオ" }
     , { id: 0x03ac, implDate: "2021/11/11", implDate_bq: "2022/12/08", obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "デモンシャーマン", name: "レライエ", modifier: "魔神の共鳴者" }
     , { id: 0x03ad, implDate: "2021/11/11", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "vang", class: "魔法剣士", name: "マリレーヌ", modifier: "聖樹の魔剣士" }
-    , { id: 0x03ae, implDate: "2021/11/18", implDate_bq: "2023/11/09", obtain: [ "ev", "subj" ], rarity: "b" , depType: "rear", class: "幻術士", name: "タリエ", modifier: "奇譚の幻術士タリエ" }
+    , { id: 0x03ae, implDate: "2021/11/18", implDate_bq: "2023/11/09", obtain: [ "ev", "subj" ], rarity: "b" , depType: "rear", class: "幻術士", name: "タリエ", modifier: "奇譚の幻術士", extra: { obtain: [ "tr", "rain" ] } }
     , { id: 0x03af, implDate: "2021/11/18", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "p" , depType: "rear", class: "ライフリンカー", name: "シアーシャ", modifier: "絆鎖の救命師" }
     , { id: 0x03b0, implDate: "2021/11/25", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "vang", class: "魔導生命体", name: "ラーワル", modifier: "魔導を宿す者" }
     , { id: 0x03b1, implDate: "2021/11/25", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "rear", class: "ファラオ", name: "ホルテウス", modifier: "獅子女の覇者" }
@@ -1010,7 +1010,7 @@ const unitList = [
     , { id: 0x03dd, implDate: "2022/03/17", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "p" , depType: "vang", class: "バンデット", name: "モーティマ", modifier: "山賊食堂", derivation: "学園", male: 1 }
     , { id: 0x03de, implDate: "2022/03/31", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "アーチャー", name: "クレア", modifier: "鋼鉄の弓術部員", derivation: "学園" }
     , { id: 0x03df, implDate: "2022/03/31", implDate_bq: "2022/11/10", obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "かまいたち", name: "群青姉妹", modifier: "かまいたち" }
-    , { id: 0x03e0, implDate: "2022/04/01", implDate_bq: "2023/05/11", obtain: [ "ev", "subj" ], rarity: "b" , depType: "rear", class: "発明家", name: "アルレット", modifier: "超古代発明家" }
+    , { id: 0x03e0, implDate: "2022/04/01", implDate_bq: "2023/05/11", obtain: [ "ev", "subj" ], rarity: "b" , depType: "rear", class: "発明家", name: "アルレット", modifier: "超古代発明家", extra: { obtain: [ "tr", "rain" ] } }
     , { id: 0x03e1, implDate: "2022/04/07", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "vang", class: "鬼", name: "アクラ", modifier: "紫炎の鬼傭兵" }
     , { id: 0x03e2, implDate: "2022/04/07", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "グラディエーター", name: "ちびアナトリア" }
     , { id: 0x03e3, implDate: "2022/04/07", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "真人", name: "ちび竜吉公主" }
@@ -1098,7 +1098,7 @@ const unitList = [
     , { id: 0x0435, implDate: "2022/11/10", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "ソルジャー", name: "ちびジェローム", male: 1 }
     , { id: 0x0436, implDate: "2022/11/17", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "デーモンロード", name: "ヤハール", modifier: "炎天の魔将" }
     , { id: 0x0437, implDate: "2022/11/17", implDate_bq: "2023/05/11", obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "スカラー", name: "コレット", modifier: "神話学士" }
-    , { id: 0x0438, implDate: "2022/11/17", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "b" , depType: "vang", class: "ドラゴンプリンセス", name: "ロタン", modifier: "原初の竜姫" }
+    , { id: 0x0438, implDate: "2022/11/17", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "b" , depType: "vang", class: "ドラゴンプリンセス", name: "ロタン", modifier: "原初の竜姫", extra: { obtain: [ "tr", "rain" ] } }
     , { id: 0x0439, implDate: "2022/11/24", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "vang", class: "トゥルーブラッド", name: "リヴン", modifier: "永夜の始祖たる者" }
     , { id: 0x043a, implDate: "2022/11/24", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "vang", class: "黎明の翼", name: "ルキファ", modifier: "黎明を齎す者" }
     , { id: 0x043b, implDate: "2022/11/24", implDate_bq: null        , obtain: [ "tr", "hero" ], rarity: "ph", depType: "vang", class: "黎明の翼", name: "ルキファ", modifier: "黎明を齎す者" }
@@ -1151,7 +1151,7 @@ const unitList = [
     , { id: 0x0468, implDate: "2023/03/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "ランスマスター", name: "ちびトモエ" }
     , { id: 0x0469, implDate: "2023/03/09", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "モンスターブレイカー", name: "ランヒルド", modifier: "兎祭の封剣士", derivation: "バニー" }
     , { id: 0x046a, implDate: "2023/03/09", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "後衛戦術家", name: "シナト", modifier: "疾風軍師の祝福祭", derivation: "バニー" }
-    , { id: 0x046b, implDate: "2023/03/09", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "p" , depType: "rear", class: "ドラゴンメイジ", name: "カラザ", modifier: "竜兎の共宴", derivation: "バニー" }
+    , { id: 0x046b, implDate: "2023/03/09", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "p" , depType: "rear", class: "ドラゴンメイジ", name: "カラザ", modifier: "竜兎の共宴", derivation: "バニー", extra: { obtain: [ "tr", "rain" ] } }
     , { id: 0x046c, implDate: "2023/03/09", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "rear", class: "メイジ", name: "ちびヴァレリー", male: 1 }
     , { id: 0x046d, implDate: "2023/03/16", implDate_bq: "2024/06/13", obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "シールダー", name: "レジナレア", modifier: "盾騎士" }
     , { id: 0x046e, implDate: "2023/03/16", implDate_bq: "2025/02/13", obtain: [ "ev", "drop" ], rarity: "p" , depType: "vang", class: "武侠", name: "フェイロン", modifier: "武成豪侠" }
@@ -1498,7 +1498,7 @@ const unitList = [
     , { id: 0x05bf, implDate: "2025/03/13", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "処刑人", name: "サティン", modifier: "流れの断罪番長", derivation: "学園" }
     , { id: 0x05c0, implDate: "2025/03/13", implDate_bq: null        , obtain: [ "ev", "maji" ], rarity: "b" , depType: "rear", class: "発明家", name: "ボルカ", modifier: "大地の発明家" }
     , { id: 0x05c1, implDate: "2025/03/13", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "学園政務官", derivation: "学園" }
-    , { id: 0x05c2, implDate: "2025/02/13", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "一目の竜", name: "ちび一目連", male: 1 }
+    , { id: 0x05c2, implDate: "2025/03/13", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "一目の竜", name: "ちび一目連", male: 1 }
     , { id: 0x05c3, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "サベージファイター", name: "ナシート", modifier: "早弁傭兵", derivation: "学園" }
     , { id: 0x05c4, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "ワルキューレ", name: "メーア", modifier: "帝国騎兵隊長", derivation: "新装", latent: "白の帝国" }
     , { id: 0x05c5, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "衛士", name: "カルペム", modifier: "封門の番人", latent: "白の帝国" }
@@ -1507,8 +1507,14 @@ const unitList = [
     , { id: 0x05c8, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "妖糸使い", name: "ツザーネ", modifier: "帝国妖糸兵", latent: "白の帝国" }
     , { id: 0x05c9, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "吟遊詩人", name: "トットン", modifier: "帝国音楽隊", latent: "白の帝国" }
     , { id: 0x05ca, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "tr", "dark" ], rarity: "b" , depType: "both", class: "エアセイラー", name: "ヴァルデ", modifier: "帝国選抜飛行士", latent: "白の帝国" }
+    , { id: 0x05cb, implDate: "2025/04/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ダークプリースト", name: "ちびマレブランケ", latent: "白の帝国" }
+    , { id: 0x05cc, implDate: "2025/04/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "モンスタースレイヤー", name: "ちびヒルデ", latent: "白の帝国" }
+    , { id: 0x05cd, implDate: "2025/04/10", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "神官戦士", name: "エクス", modifier: "兎耳神官", derivation: "バニー" }
+    , { id: 0x05ce, implDate: "2025/04/10", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "幻術士", name: "リュティエ", modifier: "祝兎と向日葵", derivation: "バニー" }
+    , { id: 0x05cf, implDate: "2025/04/10", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "both", class: "スカイヒーラー", name: "ジタリス", modifier: "兎祭の癒し鳥", derivation: "バニー" }
+    , { id: 0x05d0, implDate: "2025/04/10", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "ダーク王子", name: "ちびダーク王子", male: 1 }
     
-    
+ 
     
     
     /*

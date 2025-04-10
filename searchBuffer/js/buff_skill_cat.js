@@ -1615,6 +1615,15 @@ buff.skill_cat = [
         ]
     }
     , {
+        name: "ちびダーク王子", rarity: "ちび", cl: "ダーク王子", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: [
+            { cl: [ "政務官【闇の軍勢】" ] }
+            , { race: [ "デーモン系", "ゴブリン", "オーク" ] }
+            , { others: [ "アンデッド", "魔界" ] }
+        ]
+    }
+    , {
         name: "アキレア", rarity: "黒", cl: "神話の継承者", AW: "未", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { race: [ "人間", "神", "半神" ] }
@@ -2432,7 +2441,19 @@ buff.skill_cat = [
         , target: { season: [ "クリスマス" ] }
     }
     , {
-        name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒", skill: "覚醒"
+        name: "リュティエ/バニー", rarity: "白", cl: "幻術士", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { season: [ "エッグハント" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "リュティエ/バニー", rarity: "白", cl: "幻術士", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { season: [ "エッグハント" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒", skill: "覚醒(～5)"
         , stats: { atk: "×1.4" }
         , target: [
             { cl: [ "王子" ] }
