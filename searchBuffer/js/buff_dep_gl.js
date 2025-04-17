@@ -1624,6 +1624,11 @@ buff.dep_gl = [
         , target: { home: [ "王国" ] }
     }
     , {
+        name: "ムーヨ", rarity: "白", cl: "呪命師", AW: "覚醒"
+        , stats: { hp: "+10%" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
         name: "ゴブリン博士", cl: "ゴブリン博士"
         , stats: { hp: "+10%", atk: "+10%" }
         , target: [
