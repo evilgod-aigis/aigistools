@@ -109,6 +109,12 @@ buff.skill_cat = [
         , target: { home: [ "砂漠の国" ] }
     }
     , {
+        name: "ケイティ/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒", skill: "覚醒(2～)"
+        , stats: { atk: "×1.5" }
+        , target: { home: [ "王国" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "ケイティ/お正月", rarity: "白", cl: "ソルジャー", AW: "覚醒", skill: "覚醒"
         , stats: { hp: "+50%", atk: "×1.5", def: "×1.5" }
         , target: { cl: [ "ソルジャー" ] }
@@ -207,6 +213,24 @@ buff.skill_cat = [
         , target: { cl: [ "バンデット" ] }
         , note: "永続スキル"
     }
+    , {
+        name: "モーティマ/新装", rarity: "黒", cl: "バンデット", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { sex: [ "男性" ] }
+    }
+    , {
+        name: "モーティマ/新装", rarity: "黒", cl: "バンデット", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { sex: [ "男性" ] }
+    }
+    /*
+    , {
+        name: "モーティマ/新装", rarity: "黒", cl: "バンデット", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×2.0" }
+        , target: { unitName: [ "モーティマ" ] }
+        , note: "分類未確認"
+    }
+    */
     , {
         name: "ヴルム/水着", rarity: "黒", cl: "中級竜兵", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.4" }

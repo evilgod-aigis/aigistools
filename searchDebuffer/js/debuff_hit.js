@@ -735,6 +735,18 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
+        name: "ジュジュカ", rarity: "白", cl: "妖糸使い", AW: "未"
+        , stats: { atk: "-7%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ジュジュカ", rarity: "白", cl: "妖糸使い", AW: "覚醒"
+        , stats: { atk: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "14f"
@@ -1585,6 +1597,18 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "?f"
         , note: "ツザーネ"
+    }
+    , {
+        name: "呪糸トークン", rarity: "トークン", AW: "未"
+        , stats: { def: "-7%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "ジュジュカ"
+    }
+    , {
+        name: "呪糸トークン", rarity: "トークン", AW: "覚醒"
+        , stats: { def: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "ジュジュカ"
     }
     , {
         name: "最上級トラップ", rarity: "トークン", AW: "覚2b"

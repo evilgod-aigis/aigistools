@@ -1468,7 +1468,7 @@ const unitList = [
     , { id: 0x05a1, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "妖狐", name: "ちびイズナ" }
     , { id: 0x05a2, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "天尊", name: "元始天尊", modifier: "万象の湯 ", derivation: "温泉" }
     , { id: 0x05a3, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "プリンセス", name: "メルヴィナ", modifier: "姫の湯治", derivation: "温泉" }
-    , { id: 0x05a4, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "砲術士", name: "ハイデマリー", modifier: "温泉砲術士", derivation: "温泉" }
+    , { id: 0x05a4, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "砲術士", name: "ハイデマリー", modifier: "温泉砲術士", derivation: "温泉", latent: "白の帝国" }
     , { id: 0x05a5, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "デーモンシェフ", name: "ちびデーモンシェフ", male: 1 }
     , { id: 0x05a6, implDate: "2025/01/23", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "隧道掘削兵", name: "ピーク", modifier: "鋼の掘削兵" }
     , { id: 0x05a7, implDate: "2025/01/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "メディック", name: "キリエ", modifier: "王国医学伝" }
@@ -1515,6 +1515,10 @@ const unitList = [
     , { id: 0x05d0, implDate: "2025/04/10", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "ダーク王子", name: "ちびダーク王子", male: 1 }
     , { id: 0x05d1, implDate: "2025/04/17", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "呪命師", name: "ムーヨ", modifier: "原始の術士" }
     , { id: 0x05d2, implDate: "2025/04/17", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "b" , depType: "vang", class: "コロッサス", name: "エオリス", modifier: "夜語りの亜神" }
+    , { id: 0x05d3, implDate: "2025/04/24", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "ソルジャー", name: "ケイティ", modifier: "戦術教官長", derivation: "新装" }
+    , { id: 0x05d4, implDate: "2025/04/24", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "ヘビーアーマー", name: "ベルニス", modifier: "大盾の守護乙女", derivation: "新装" }
+    , { id: 0x05d5, implDate: "2025/04/24", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "vang", class: "妖糸使い", name: "ジュジュカ", modifier: "毒花の妖糸" }
+    , { id: 0x05d6, implDate: "2025/04/24", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "b" , depType: "vang", class: "バンデット", name: "モーティマ", modifier: "王国山賊頭", derivation: "新装", male: 1 }
     
     
     

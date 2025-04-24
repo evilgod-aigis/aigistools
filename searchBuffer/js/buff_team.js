@@ -194,6 +194,16 @@ buff.team = [
         , target: { home: [ "王国" ] }
     }
     , {
+        name: "ケイティ/新装", rarity: "黒", cl: "ソルジャー", AW: "未"
+        , stats: { atk: "+4%" }
+        , target: { home: [ "王国" ] }
+    }
+    , {
+        name: "ケイティ/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒"
+        , stats: { atk: "+7%" }
+        , target: { home: [ "王国" ] }
+    }
+    , {
         name: "リーゼロッテ", rarity: "白", cl: "ソルジャー", AW: "覚醒"
         , stats: { def: "+5%", mr: "+5" }
         , target: { cl: [ "ソルジャー", "ヘビーアーマー" ] }
@@ -382,9 +392,25 @@ buff.team = [
         ]
     }
     , {
-        name: "レオーネ", rarity: "黒", cl: "バンデット", AW: "覚醒"
+        name: "レオーネ", rarity: "黒", cl: "バンデット", AW: "未"
         , stats: { hp: "+10%", atk: "+10%", def: "+10%" }
         , target: { race: [ "獣人" ] }
+    }
+    , {
+        name: "モーティマ/新装", rarity: "黒", cl: "バンデット", AW: "覚醒"
+        , stats: { atk: "+5%" }
+        , target: [
+            { cl: [ "ローグ", "バンデット" ] }
+            , { sex: [ "男性" ] }
+        ]
+    }
+    , {
+        name: "モーティマ/新装", rarity: "黒", cl: "バンデット", AW: "覚醒"
+        , stats: { atk: "+7%" }
+        , target: [
+            { cl: [ "ローグ", "バンデット" ] }
+            , { sex: [ "男性" ] }
+        ]
     }
     , {
         name: "イメリア", rarity: "白", cl: "バンデット", AW: "覚醒"

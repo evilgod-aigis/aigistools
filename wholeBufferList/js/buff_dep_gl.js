@@ -201,6 +201,14 @@ buff.dep_gl = [
         , note: "ソルジャー系"
     }
     , {
+        name: "ケイティ/新装", rarity: "黒", cl: "ソルジャー", AW: "未"
+        , stats: { cost: "-1" }
+    }
+    , {
+        name: "ケイティ/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒"
+        , stats: { cost: "-2" }
+    }
+    , {
         name: "フリア", rarity: "黒", cl: "ワルキューレ", AW: "覚醒"
         , stats: { cost: "-1" }
     }

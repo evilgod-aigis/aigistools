@@ -1454,6 +1454,32 @@ debuff.mixture = [
         , note: [ "永続スキル", "分類未確認" ]
     }
     , {
+        name: "ジュジュカ", rarity: "白", cl: "妖糸使い", AW: "未", skill: "通常"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+            , def: { value: "-10%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ジュジュカ", rarity: "白", cl: "妖糸使い", AW: "覚醒", skill: "通常"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+            , def: { value: "-10%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ジュジュカ", rarity: "白", cl: "妖糸使い", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "ヴァイセカイゼリン", cl: "初代皇帝", AW: "覚2a"
         , stats: {
             atk: { value: "-20%", type: "noAttr" }

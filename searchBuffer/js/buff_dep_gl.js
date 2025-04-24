@@ -62,6 +62,18 @@ buff.dep_gl = [
         , target: { cl: [ "ソルジャー", "ヘビーアーマー" ] }
     }
     , {
+        name: "ケイティ/新装", rarity: "黒", cl: "ソルジャー", AW: "未"
+        , stats: { cost: "-1" }
+        , target: { home: [ "王国" ] }
+        , note: "無差別バフと合わせて-2"
+    }
+    , {
+        name: "ケイティ/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒"
+        , stats: { cost: "-1" }
+        , target: { home: [ "王国" ] }
+        , note: "無差別バフと合わせて-3"
+    }
+    , {
         name: "ノーマ", rarity: "白", cl: "ソルジャー", AW: "覚醒"
         , stats: { cost: "-2" }
         , target: { cl: [ "魔神", "ダークストーカー", "デモンサモナー" ] }

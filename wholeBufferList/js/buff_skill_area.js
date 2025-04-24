@@ -332,6 +332,11 @@ buff.skill_area = [
         , note: "分類未確認"
     }
     , {
+        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒", skill: "通常"
+        , stats: { hp: "+30%", def: "×1.3" }
+        , note: "範囲"
+    }
+    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "未", skill: "通常"
         , stats: { atk: "×1.2" }
         , note: "分類未確認"

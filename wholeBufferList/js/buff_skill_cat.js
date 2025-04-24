@@ -33,11 +33,6 @@ buff.skill_cat = [
         , stats: { atk: "×1.3", def: "×1.3" }
     }
     , {
-        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒", skill: "通常"
-        , stats: { hp: "+30%", def: "×1.3" }
-        , note: "範囲"
-    }
-    , {
         name: "リノ/バレンタイン", rarity: "白", cl: "サモナー", AW: "未", skill: "通常"
         , stats: { atk: "×1.2" }
     }
