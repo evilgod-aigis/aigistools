@@ -392,12 +392,12 @@ buff.team = [
         ]
     }
     , {
-        name: "レオーネ", rarity: "黒", cl: "バンデット", AW: "未"
+        name: "レオーネ", rarity: "黒", cl: "バンデット", AW: "覚醒"
         , stats: { hp: "+10%", atk: "+10%", def: "+10%" }
         , target: { race: [ "獣人" ] }
     }
     , {
-        name: "モーティマ/新装", rarity: "黒", cl: "バンデット", AW: "覚醒"
+        name: "モーティマ/新装", rarity: "黒", cl: "バンデット", AW: "未"
         , stats: { atk: "+5%" }
         , target: [
             { cl: [ "ローグ", "バンデット" ] }

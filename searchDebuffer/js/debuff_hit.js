@@ -1605,7 +1605,7 @@ debuff.hit = [
         , note: "ジュジュカ"
     }
     , {
-        name: "呪糸トークン", rarity: "トークン", AW: "覚醒"
+        name: "呪花トークン", rarity: "トークン", AW: "覚醒"
         , stats: { def: "-10%" }
         , atkAttr: "物理", dur: "?f"
         , note: "ジュジュカ"
