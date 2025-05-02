@@ -1352,7 +1352,7 @@ const unitList = [
     , { id: 0x052f, implDate: "2024/04/25", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "vang", class: "祖竜", name: "アルコゥ", modifier: "頂に座す者" }
     , { id: 0x0530, implDate: "2024/04/25", implDate_bq: null        , obtain: [ "tr", "hero" ], rarity: "ph", depType: "vang", class: "光槍ビルガの継承者", name: "オーシェン", modifier: "光を継ぐ者" }
     , { id: 0x0531, implDate: "2024/04/25", implDate_bq: null        , obtain: [ "tr", "hero" ], rarity: "ph", depType: "vang", class: "祖竜", name: "アルコゥ", modifier: "頂に座す者" }
-    , { id: 0x0532, implDate: "2024/05/01", implDate_bq: null        , obtain: [ "sp", "eles" ], rarity: "gc", depType: "vang", class: "オートマタ", name: "ちびルイン" }
+    , { id: 0x0532, implDate: "2024/05/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "オートマタ", name: "ちびルイン" }
     , { id: 0x0533, implDate: "2024/05/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "幻獣使い", name: "ちびシンフー" }
     , { id: 0x0534, implDate: "2024/05/09", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "アルケミスト", name: "セリド", modifier: "詩歌と叡智の亜神" }
     , { id: 0x0535, implDate: "2024/05/09", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "ワルキューレ", name: "チャムチャム", modifier: "魔猪騎兵" }
@@ -1519,6 +1519,12 @@ const unitList = [
     , { id: 0x05d4, implDate: "2025/04/24", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "ヘビーアーマー", name: "ベルニス", modifier: "大盾の守護乙女", derivation: "新装" }
     , { id: 0x05d5, implDate: "2025/04/24", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "vang", class: "妖糸使い", name: "ジュジュカ", modifier: "毒花の妖糸" }
     , { id: 0x05d6, implDate: "2025/04/24", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "b" , depType: "vang", class: "バンデット", name: "モーティマ", modifier: "王国山賊頭", derivation: "新装", male: 1 }
+    , { id: 0x05d7, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "vang", class: "魔境の主", name: "神野悪五郎" }
+    , { id: 0x05d8, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "rear", class: "ギアマンサー", name: "アヴリック", modifier: "鋼を継ぐ者" }
+    , { id: 0x05d9, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "tr", "evil" ], rarity: "bh", depType: "vang", class: "魔境の主", name: "神野悪五郎" }
+    , { id: 0x05da, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "tr", "evil" ], rarity: "bh", depType: "rear", class: "ギアマンサー", name: "アヴリック", modifier: "鋼を継ぐ者" }
+    , { id: 0x05db, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "メイド", name: "ちびアリエル" }
+    , { id: 0x05dc, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ドラゴンメイジ", name: "ちびカラザ" }
     
     
     
@@ -1544,7 +1550,7 @@ const unitList = [
         ev  イベント
             ドロップ drop / 試練 star / 収集 item / 大討伐 subj / 人気闘兵 popu / 魔神最終決戦 maji / 他 else
         tr  交換/帝国大戦/戦神コロシアム
-            虹水晶 rain / 魔水晶 demo / 闇水晶 dark / 武勲結晶 mili / 英傑結晶 hero / 他 else
+            虹水晶 rain / 魔水晶 demo / 闇水晶 dark / 武勲結晶 mili / 英傑結晶 hero / 悪霊結晶 evil / 他 else
         sp  配布/覚醒ちび/課金/シリアルコード
             配布 gift / 課金 shop / シリアルコード code / 他 else
     

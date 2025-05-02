@@ -2,7 +2,7 @@
 debuff.takenDmg = [
     {
         name: "カースウィスパラー", cl: "カースウィスパラー", AW: "覚1"
-        , stats: { value: "+15%" }
+        , stats: { value: "+20%" }
         , note: "範囲"
     }
     , {

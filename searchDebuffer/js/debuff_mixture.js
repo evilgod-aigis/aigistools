@@ -136,6 +136,22 @@ debuff.mixture = [
         //, note: "永続スキル"
     }
     , {
+        name: "神野悪五郎", rarity: "黒", cl: "魔境の主", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "神野悪五郎", rarity: "白", cl: "魔境の主", AW: "覚醒", skill: "通常"
+        , stats: {
+            def: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "ソラス/水着", rarity: "白", cl: "占星術師", AW: "覚醒", skill: "覚醒(偶)"
         , stats: {
             def: { value: "-20%", type: "area" }

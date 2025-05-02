@@ -1003,15 +1003,15 @@ lists.buff.takenDmg.jap = "被ダメ増加";
 lists.buff.takenDmg.list = [
     {
         id: null, buffer: "カースウィスパラー", isClass: true, awaken: "覚醒"
-        , value: 15, disabled: null, req: "deploy"
+        , value: 20, disabled: null, req: "deploy"
         , compound: { takenDmg: [ { buffer: "災禍を律す者モルフェサ" } ] }
-        , tooltip: "[射程内] 被ダメージが15%上昇"
+        , tooltip: "[射程内] 被ダメージが20%上昇"
     }
     , {
         id: null, buffer: "災禍を律す者モルフェサ", rarity: "黒", awaken: "通常", showAwaken: true
-        , value: 22.5, disabled: null, req: "skill"
+        , value: 30, disabled: null, req: "skill"
         , compound: { takenDmg: [ { buffer: "カースウィスパラー" } ] }
-        , tooltip: "[スキル・射程内] 被ダメージが22.5%上昇"
+        , tooltip: "[スキル・射程内] 被ダメージが30%上昇"
         , unitInfo: {
             unitName: "災禍を律す者モルフェサ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "カースウィスパラー" }
@@ -1022,9 +1022,9 @@ lists.buff.takenDmg.list = [
     }
     , {
         id: null, buffer: "災禍を律す者モルフェサ", rarity: "黒", awaken: "覚醒", showAwaken: true
-        , value: 45, disabled: null, req: "skill"
+        , value: 60, disabled: null, req: "skill"
         , compound: { takenDmg: [ { buffer: "カースウィスパラー" } ] }
-        , tooltip: "[スキル・射程内] 被ダメージが45%上昇"
+        , tooltip: "[スキル・射程内] 被ダメージが60%上昇"
         , unitInfo: {
             unitName: "災禍を律す者モルフェサ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "カースウィスパラー" }
@@ -1035,9 +1035,9 @@ lists.buff.takenDmg.list = [
     }
     , {
         id: null, buffer: "災禍を律す者モルフェサ", rarity: "白", awaken: "通常", showAwaken: true
-        , value: 22.5, disabled: null, req: "skill"
+        , value: 30, disabled: null, req: "skill"
         , compound: { takenDmg: [ { buffer: "カースウィスパラー" } ] }
-        , tooltip: "[スキル・射程内] 被ダメージが22.5%上昇"
+        , tooltip: "[スキル・射程内] 被ダメージが30%上昇"
         , unitInfo: {
             unitName: "災禍を律す者モルフェサ", deployType: "遠距離型", rarity: "白"
             , unitClass: { selected: "カースウィスパラー" }
@@ -1048,9 +1048,9 @@ lists.buff.takenDmg.list = [
     }
     , {
         id: null, buffer: "災禍を律す者モルフェサ", rarity: "白", awaken: "覚醒", showAwaken: true
-        , value: 30, disabled: null, req: "skill"
+        , value: 40, disabled: null, req: "skill"
         , compound: { takenDmg: [ { buffer: "カースウィスパラー" } ] }
-        , tooltip: "[スキル・射程内] 被ダメージが30%上昇"
+        , tooltip: "[スキル・射程内] 被ダメージが40%上昇"
         , unitInfo: {
             unitName: "災禍を律す者モルフェサ", deployType: "遠距離型", rarity: "白"
             , unitClass: { selected: "カースウィスパラー" }

@@ -187,6 +187,16 @@ buff.own = [
         , target: { home: [ "華の国" ] }
     }
     , {
+        name: "神野悪五郎", rarity: "黒", cl: "魔境の主", AW: "覚醒"
+        , stats: { def: "+5%", mr: "+3" }
+        , target: { home: [ "東の国" ] }
+    }
+    , {
+        name: "神野悪五郎", rarity: "白", cl: "魔境の主", AW: "覚醒"
+        , stats: { def: "+3%", mr: "+2" }
+        , target: { home: [ "東の国" ] }
+    }
+    , {
         name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒"
         , stats: { atk: "+5%", range: "+10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }
@@ -298,6 +308,16 @@ buff.own = [
         name: "イヴリール", rarity: "白", cl: "未踏海域の覇者", AW: "覚醒"
         , stats: { def: "+5%" }
         , target: { others: [ "深海" ] }
+    }
+    , {
+        name: "アヴリック", rarity: "黒", cl: "ギアマンサー", AW: "覚醒"
+        , stats: { atk: "+5%" }
+        , target: { others: [ "砲兵" ] }
+    }
+    , {
+        name: "アヴリック", rarity: "白", cl: "ギアマンサー", AW: "覚醒"
+        , stats: { hp: "+3%" }
+        , target: { others: [ "砲兵" ] }
     }
     , {
         name: "エフトラ", rarity: "黒", cl: "異世界戦士", AW: "覚醒"

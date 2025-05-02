@@ -45,7 +45,7 @@ buff.skill_cat = [
     }
     , {
         name: "ラーワル", rarity: "黒", cl: "魔導生命体", AW: "覚醒", skill: "覚醒"
-        , stats: { atk: "×5.0", def: "×5.0" }
+        , stats: { atk: "×5.5", def: "×5.5" }
         , target: { cl: [ "魔導生命体" ] }
     }
     , {
@@ -63,6 +63,12 @@ buff.skill_cat = [
         name: "アルコゥ", rarity: "白", cl: "祖竜", AW: "覚醒", skill: "通常"
         , stats: { hp: "+50%" }
         , target: { others: [ "ドラゴン" ] }
+    }
+    , {
+        name: "アヴリック", rarity: "黒", cl: "ギアマンサー", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.2", range: "×1.2" }
+        , target: { others: [ "砲兵" ] }
+        , note: [ "永続スキル", "分類未確認" ]
     }
     , {
         name: "マルゴット", rarity: "黒", cl: "ソルジャー", AW: "未", skill: "通常"
@@ -670,6 +676,12 @@ buff.skill_cat = [
             { cl: [ "王子", "皇帝" ] }
             , { others: [ "全プリンセス系" ] }
         ]
+    }
+    , {
+        name: "ちびアリエル", rarity: "ちび", cl: "メイド", skill: "通常"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: { cl: [ "神官戦士", "ヒーラー", "ビショップ", "ルーンアコライト", "アコライト" ] }
+        , note: "永続スキル"
     }
     , {
         name: "アリシア", rarity: "白", cl: "ロイヤルガード", AW: "未", skill: "通常"
