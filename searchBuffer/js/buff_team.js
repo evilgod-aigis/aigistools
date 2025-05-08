@@ -1743,6 +1743,11 @@ buff.team = [
         , target: { cl: [ "王子" ] }
     }
     , {
+        name: "ちびダイオージ", rarity: "ちび", cl: "試験型英雄騎"
+        , stats: { hp: "+5%" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
         name: "アーシェラ", rarity: "黒", cl: "アーチャー", AW: "覚醒"
         , stats: { atk: "+10%" }
         , target: { others: [ "弓兵" ] }

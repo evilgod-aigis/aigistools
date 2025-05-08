@@ -1091,7 +1091,7 @@ const unitList = [
     , { id: 0x042e, implDate: "2022/10/27", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "vang", class: "君主【恋姫】", name: "孫堅 文台", collabo: 1 }
     , { id: 0x042f, implDate: "2022/10/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ヴァンパイアハンター", name: "クルス", modifier: "古城の探索者" }
     , { id: 0x0430, implDate: "2022/10/31", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "bh", depType: "vang", class: "アヤカシの王", name: "山ン本", qualifier: "五郎左衛門" }
-    , { id: 0x0431, implDate: "2022/11/02", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "サベージファイター", name: "ナシート", modifier: "砂漠の傭兵" }
+    , { id: 0x0431, implDate: "2022/11/02", implDate_bq: "2025/05/08", obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "サベージファイター", name: "ナシート", modifier: "砂漠の傭兵" }
     , { id: 0x0432, implDate: "2022/11/02", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "イビルプリンセス", name: "ちびスキュレ" }
     , { id: 0x0433, implDate: "2022/11/02", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "シービショップ", name: "ちびハルフゥ" }
     , { id: 0x0434, implDate: "2022/11/10", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "both", class: "スカイヒーラー", name: "イエラ", modifier: "蓑鳩翼の癒し手" }
@@ -1187,7 +1187,7 @@ const unitList = [
     , { id: 0x048c, implDate: "2023/05/25", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ドラゴンメイジ", name: "ロカ/花嫁", modifier: "花嫁土竜", derivation: "花嫁" }
     , { id: 0x048d, implDate: "2023/05/25", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "p" , depType: "vang", class: "かまいたち", name: "金糸雀姉妹/花嫁", modifier: "婚礼つむじ風", derivation: "花嫁" }
     , { id: 0x048e, implDate: "2023/05/25", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "p" , depType: "vang", class: "ソルジャー", name: "ケイティ", modifier: "休息の教官", derivation: "私服" }
-    , { id: 0x048f, implDate: "2023/06/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "儀仗軍神", name: "乙姫", modifier: "大海神の娘 " }
+    , { id: 0x048f, implDate: "2023/06/01", implDate_bq: "2025/05/08", obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "儀仗軍神", name: "乙姫", modifier: "大海神の娘 " }
     , { id: 0x0490, implDate: "2023/06/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "天尊", name: "元始天尊" }
     , { id: 0x0491, implDate: "2023/06/01", implDate_bq: null        , obtain: [ "ev", "popu" ], rarity: "b" , depType: "vang", class: "儀仗軍神", name: "アラン", modifier: "銀月大祭", derivation: "闘兵" }
     , { id: 0x0492, implDate: "2023/06/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "ソードマスター", name: "ちびリシェルテ" }
@@ -1525,6 +1525,7 @@ const unitList = [
     , { id: 0x05da, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "tr", "evil" ], rarity: "bh", depType: "rear", class: "ギアマンサー", name: "アヴリック", modifier: "鋼を継ぐ者" }
     , { id: 0x05db, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "メイド", name: "ちびアリエル" }
     , { id: 0x05dc, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ドラゴンメイジ", name: "ちびカラザ" }
+    , { id: 0x05dd, implDate: "2025/05/08", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "試作型英雄騎", name: "ちびダイオージ", male: 1 }
     
     
     

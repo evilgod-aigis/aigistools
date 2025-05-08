@@ -498,6 +498,10 @@ buff.skill_gl = [
         , stats: { atk: "×1.2", def: "×1.2" }
     }
     , {
+        name: "ちびダイオージ", rarity: "ちび", cl: "試験型英雄騎", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+    }
+    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "覚醒", skill: "覚醒(1)"
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
