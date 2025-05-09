@@ -8,7 +8,7 @@ table.word = {
     , gc: "ちび(ゴールド)"
     , sh: "召喚"
     , ev: "イベント", drop: "ドロップ", star: "試練", item: "収集", subj: "大討伐", popu: "人気闘兵", maji: "魔神最終決戦"
-    , tr: "交換", rain: "虹水晶", demo: "魔水晶", dark: "闇水晶", mili: "武勲結晶", hero: "英傑結晶"
+    , tr: "交換", rain: "虹水晶", demo: "魔水晶", dark: "闇水晶", mili: "武勲結晶", hero: "英傑結晶", evil: "悪霊結晶"
     , sp: "その他", gift: "配布", shop: "課金", code: "シリアルコード", else: "その他"
     , vang: "近接", rear: "遠距離", both: "遠近距離"
     , none: "未実装", "year_bq-none": "クエ未実装"
@@ -19,7 +19,7 @@ table.rarity = [ "bh", "b", "ph", "p", "g", "s" ];
 table.obtain = {
     sh: []
     , ev: [ "drop", "star", "item", "subj", "popu", "maji", "else" ]
-    , tr: [ "rain", "demo", "dark", "mili", "hero", "else" ]
+    , tr: [ "rain", "demo", "dark", "mili", "hero", "evil", "else" ]
     , sp: [ "gift", "shop", "code", "else" ]
 };
 table.depType = [ "vang", "rear", "both" ];

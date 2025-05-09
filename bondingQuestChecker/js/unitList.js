@@ -1521,8 +1521,8 @@ const unitList = [
     , { id: 0x05d6, implDate: "2025/04/24", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "b" , depType: "vang", class: "バンデット", name: "モーティマ", modifier: "王国山賊頭", derivation: "新装", male: 1 }
     , { id: 0x05d7, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "vang", class: "魔境の主", name: "神野悪五郎" }
     , { id: 0x05d8, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "rear", class: "ギアマンサー", name: "アヴリック", modifier: "鋼を継ぐ者" }
-    , { id: 0x05d9, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "tr", "evil" ], rarity: "bh", depType: "vang", class: "魔境の主", name: "神野悪五郎" }
-    , { id: 0x05da, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "tr", "evil" ], rarity: "bh", depType: "rear", class: "ギアマンサー", name: "アヴリック", modifier: "鋼を継ぐ者" }
+    , { id: 0x05d9, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "tr", "evil" ], rarity: "ph", depType: "vang", class: "魔境の主", name: "神野悪五郎" }
+    , { id: 0x05da, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "tr", "evil" ], rarity: "ph", depType: "rear", class: "ギアマンサー", name: "アヴリック", modifier: "鋼を継ぐ者" }
     , { id: 0x05db, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "メイド", name: "ちびアリエル" }
     , { id: 0x05dc, implDate: "2025/05/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ドラゴンメイジ", name: "ちびカラザ" }
     , { id: 0x05dd, implDate: "2025/05/08", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "試作型英雄騎", name: "ちびダイオージ", male: 1 }
