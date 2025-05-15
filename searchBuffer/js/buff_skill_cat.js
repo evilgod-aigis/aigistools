@@ -2525,6 +2525,18 @@ buff.skill_cat = [
         , target: { depType: [ "遠距離" ] }
     }
     , {
+        name: "ステルゥ", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"
+        , stats: { ct: "-50%" }
+        , target: { depType: [ "近接" ] }
+        , note: "永続スキル"
+    }
+    , {
+        name: "ステルゥ", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "通常"
+        , stats: { ct: "-50%" }
+        , target: { depType: [ "近接" ] }
+        , note: "永続スキル"
+    }
+    , {
         name: "ヨユキ", rarity: "黒", cl: "夜行さん", AW: "未", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5", cost: "×0.7" }
         , target: { race: [ "妖怪" ] }

@@ -61,6 +61,10 @@ buff.dep_area = [
         , note: [ "狛犬系", "HP回復量×1.2" ]
     }
     , {
+        name: "ステルゥ", rarity: "白", cl: "スカラー", AW: "覚醒"
+        , stats: { poison: "-100%", abn: "-100%" }
+    }
+    , {
         name: "時の俯瞰者", cl: "時の俯瞰者", AW: "未"
         , stats: { mr: "×1.1" }
     }

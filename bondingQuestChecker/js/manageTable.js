@@ -116,9 +116,13 @@ table.SetObjects = () => {
     // sortedBy: 今何でソートされているか
     table.tables = {};
     _.forEach(table.rarity, rarity => table.tables[rarity] = { list: [], sortedBy: "id" });
-    _.forEach(unitList, unit => {
+    _.forEach(unitList, (unit, id) => {
         const rarity = unit.rarity;
         if("male" in unit || "collabo" in unit || rarity === "sl" || rarity === "gc") return;
+        if(id !== unit.id) {
+            console.log(`0x${unit.id.toString(16).padStart(4, "0")} -> 0x${id.toString(16).padStart(4, "0")}`)
+            return;
+        }
         table.tables[rarity].list.push(unit);
     });
     

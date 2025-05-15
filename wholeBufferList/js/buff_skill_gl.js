@@ -899,6 +899,10 @@ buff.skill_gl = [
         , stats: { def: "×1.2" }
     }
     , {
+        name: "ステルゥ", rarity: "白", cl: "スカラー", AW: "覚醒", skill: "覚醒"
+        , stats: { hp: "+40%", abn: "-100%" }
+    }
+    , {
         name: "エンジュ", rarity: "黒", cl: "座敷わらし", AW: "未", skill: "通常"
         , stats: { hp: "+30%" }
     }

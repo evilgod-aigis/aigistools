@@ -2011,6 +2011,22 @@ debuff.mixture = [
         , note: "スキル発動時"
     }
     , {
+        name: "フィノーラ", rarity: "白", cl: "クロノウィッチ", AW: "未", skill: "通常"
+        , stats: {
+            stop: { value: "?f", type: "area" }
+        }
+        , domain: "area"
+        , note: "スキル発動時"
+    }
+    , {
+        name: "フィノーラ", rarity: "白", cl: "クロノウィッチ", AW: "覚醒", skill: "通常"
+        , stats: {
+            stop: { value: "?f", type: "area" }
+        }
+        , domain: "area"
+        , note: "スキル発動時"
+    }
+    , {
         name: "メリーファ", rarity: "白", cl: "ドルイド", AW: "未", skill: "通常"
         , stats: {
             stop: { value: "149f", type: "area" }

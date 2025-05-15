@@ -370,8 +370,7 @@ lists.buff.rCT.list = [
     , {
         id: null, buffer: "帝国悪魔召喚士ザミエル", awaken: "覚醒"
         , value: 50, disabled: null, req: "skill"
-        , target: [ { attribution: [ "白の帝国", "魔界" ] }
-        ]
+        , target: [ { attribution: [ "白の帝国", "魔界" ] } ]
         , tooltip: "[スキル・範囲] 属性：白の帝国・魔界の再動-50%"
         , unitInfo: {
             unitName: "帝国悪魔召喚士ザミエル", deployType: "遠距離型", rarity: "白"
@@ -379,6 +378,19 @@ lists.buff.rCT.list = [
             , attribution: [ "白の帝国", "デーモン", "魔術師", "魔界" ]
             , note: [ "女性", "魔界適応" ]
             , WT: 35, CT: 75, dur: Infinity
+        }
+    }
+    , {
+        id: null, buffer: "魔種人類学者ステルゥ", awaken: "通常"
+        , value: 50, disabled: null, req: "skill"
+        , target: [ { deployType: [ "近接型" ] } ]
+        , tooltip: "[スキル・全体] 近接ユニットの再動-50%"
+        , unitInfo: {
+            unitName: "魔種人類学者ステルゥ", deployType: "遠距離型", rarity: "白"
+            , unitClass: { selected: "スカラー系" }
+            , attribution: [ "人間", "魔術師" ]
+            , note: [ "女性" ]
+            , WT: 27.5, CT: 55, dur: Infinity
         }
     }
     , {

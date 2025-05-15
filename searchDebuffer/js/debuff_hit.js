@@ -968,6 +968,21 @@ debuff.hit = [
         , note: "ボムスキル"
     }
     , {
+        name: "フィノーラ", rarity: "白", cl: "クロノウィッチ", AW: "未"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: "フィノーラ", rarity: "白", cl: "クロノウィッチ", AW: "覚醒"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: "フィノーラ", rarity: "白", cl: "クロノウィッチ", AW: "覚醒", skill: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
         name: "リゼット", rarity: "青", cl: "クロノウィッチ", AW: "覚醒", skill: "覚醒"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "149f"
