@@ -1452,7 +1452,7 @@ const unitList = [
     , { id: 0x0593, implDate: "2024/12/12", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "プリンセス", name: "トレシア", modifier: "北部城塞の姫君" }
     , { id: 0x0594, implDate: "2024/12/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "メイド", name: "セーラ", modifier: "白雪の筆頭侍女", derivation: "クリスマス" }
     , { id: 0x0595, implDate: "2024/12/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "デモンサモナー", name: "ラピス", modifier: "大悪魔と雪景色", derivation: "クリスマス" }
-    , { id: 0x0596, implDate: "2024/12/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "神官戦士", name: "雪駆け神官", modifier: "ルチア", derivation: "クリスマス", latent: "白の帝国" }
+    , { id: 0x0596, implDate: "2024/12/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "神官戦士", name: "ルチア", modifier: "雪駆け神官", derivation: "クリスマス", latent: "白の帝国" }
     , { id: 0x0597, implDate: "2024/12/12", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "ダークファイター", name: "ちびデシウス", male: 1 }
     , { id: 0x0598, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "ドルイド", name: "メープル", modifier: "聖なる森の乙女", derivation: "クリスマス" }
     , { id: 0x0599, implDate: "2024/12/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "天尊", name: "太上道君" }

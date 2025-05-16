@@ -548,8 +548,9 @@ table.CreateTable = () => {
                                 if(key === "icon") {
                                     const newImg = document.createElement("img");
                                     newImg.className = `display-${key}`;
-                                    newImg.setAttribute("title", `${display.fullName}\n${display.name}`);
-                                    newImg.setAttribute("alt", `${display.fullName}\n${display.name}`);
+                                    const title = display.name === display.fullName ? display.name : `${display.fullName}\n${display.name}`;
+                                    newImg.setAttribute("title", title);
+                                    newImg.setAttribute("alt", title);
                                     newImg.setAttribute("draggable", false);
                                     newImg.setAttribute("src", `./icon/${unit.id.toString().padStart(5, "0")}.png`);
                                     newTd.appendChild(newImg);
