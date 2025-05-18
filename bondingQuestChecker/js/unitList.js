@@ -854,7 +854,7 @@ const unitList = [
     , { id: 0x0343, implDate: "2021/02/04", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "ヘビーアーマー", name: "テレーゼ", modifier: "陽光の獅盾" }
     , { id: 0x0344, implDate: "2021/02/04", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "ヴァンパイアロード", name: "ちびエマ" }
     , { id: 0x0345, implDate: "2021/02/04", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ネクロマンサー", name: "ちびメメント" }
-    , { id: 0x0346, implDate: "2021/02/10", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "ワルキューレ", name: "スルーズ", modifier: "天槍騎士団スルーズ" }
+    , { id: 0x0346, implDate: "2021/02/10", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "ワルキューレ", name: "スルーズ", modifier: "天槍騎士団" }
     , { id: 0x0347, implDate: "2021/02/10", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "料理人", name: "オーガスタ", modifier: "神業菓子職人", derivation: "バレンタイン" }
     , { id: 0x0348, implDate: "2021/02/10", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "前衛戦術家", name: "ルヴェア", modifier: "慕情の指揮官", derivation: "バレンタイン" }
     , { id: 0x0349, implDate: "2021/02/25", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "神官戦士", name: "エレット", modifier: "内緒の告白", derivation: "バレンタイン" }
@@ -930,7 +930,7 @@ const unitList = [
     , { id: 0x038f, implDate: "2021/08/26", implDate_bq: "2024/10/10", obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "霊刀つくもがみ", name: "フジムラサキ", modifier: "名刀付喪神" }
     , { id: 0x0390, implDate: "2021/09/02", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "雷公", name: "ちびレミィ" }
     , { id: 0x0391, implDate: "2021/09/02", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "風伯", name: "ちびクーコ" }
-    , { id: 0x0392, implDate: "2021/09/09", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "霊刀つくもがみ", name: "カザキリ", modifier: "斬刀付喪神カザキリ" }
+    , { id: 0x0392, implDate: "2021/09/09", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "霊刀つくもがみ", name: "カザキリ", modifier: "斬刀付喪神" }
     , { id: 0x0393, implDate: "2021/09/09", implDate_bq: null        , obtain: [ "sh"         ], rarity: "g" , depType: "vang", class: "ワルキューレ", name: "ピューロ", modifier: "純真の槍騎兵" }
     , { id: 0x0394, implDate: "2021/09/09", implDate_bq: null        , obtain: [ "sh"         ], rarity: "g" , depType: "vang", class: "シーソルジャー", name: "リトヴァ", modifier: "淡紅の深海兵" }
     , { id: 0x0395, implDate: "2021/09/09", implDate_bq: null        , obtain: [ "sh"         ], rarity: "g" , depType: "rear", class: "パイレーツ", name: "カリナ", modifier: "可憐海賊" }
@@ -1107,7 +1107,7 @@ const unitList = [
     , { id: 0x043e, implDate: "2022/12/01", implDate_bq: null        , obtain: [ "tr", "hero" ], rarity: "ph", depType: "vang", class: "暁光の神話", name: "イルドナ", modifier: "暁光を導く者", male: 1 }
     , { id: 0x043f, implDate: "2022/12/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "デーモンロード", name: "ちびハルモニア", modifier: "ちびハルモニア" }
     , { id: 0x0440, implDate: "2022/12/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ルーンアコライト", name: "ちびエリス", modifier: "ちびエリス" }
-    , { id: 0x0441, implDate: "2022/12/08", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "ph", depType: "vang", class: "トゥルーブラッド", name: "リヴン", modifier: "永夜の始祖たる者リヴン" }
+    , { id: 0x0441, implDate: "2022/12/08", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "ph", depType: "vang", class: "トゥルーブラッド", name: "リヴン", modifier: "永夜の始祖たる者" }
     , { id: 0x0442, implDate: "2022/12/08", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "デーモンロード", name: "ハルモニア", modifier: "聖夜の魔将", derivation: "クリスマス" }
     , { id: 0x0443, implDate: "2022/12/08", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "ダークストーカー", name: "グレーテル", modifier: "聖闇の贈り主", derivation: "クリスマス" }
     , { id: 0x0444, implDate: "2022/12/08", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "ph", depType: "vang", class: "アヤカシの王", name: "山ン本", qualifier: "五郎左衛門" }
@@ -1184,8 +1184,8 @@ const unitList = [
     , { id: 0x0489, implDate: "2023/05/18", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "vang", class: "真人", name: "普賢" }
     , { id: 0x048a, implDate: "2023/05/18", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "vang", class: "一目の竜", name: "一目連", male: 1 }
     , { id: 0x048b, implDate: "2023/05/25", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "both", class: "スカウト", name: "レナータ", modifier: "花嫁道の偵察者", derivation: "花嫁" }
-    , { id: 0x048c, implDate: "2023/05/25", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ドラゴンメイジ", name: "ロカ/花嫁", modifier: "花嫁土竜", derivation: "花嫁" }
-    , { id: 0x048d, implDate: "2023/05/25", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "p" , depType: "vang", class: "かまいたち", name: "金糸雀姉妹/花嫁", modifier: "婚礼つむじ風", derivation: "花嫁" }
+    , { id: 0x048c, implDate: "2023/05/25", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ドラゴンメイジ", name: "ロカ", modifier: "花嫁土竜", derivation: "花嫁" }
+    , { id: 0x048d, implDate: "2023/05/25", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "p" , depType: "vang", class: "かまいたち", name: "金糸雀姉妹", modifier: "婚礼つむじ風", derivation: "花嫁" }
     , { id: 0x048e, implDate: "2023/05/25", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "p" , depType: "vang", class: "ソルジャー", name: "ケイティ", modifier: "休息の教官", derivation: "私服" }
     , { id: 0x048f, implDate: "2023/06/01", implDate_bq: "2025/05/08", obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "儀仗軍神", name: "乙姫", modifier: "大海神の娘 " }
     , { id: 0x0490, implDate: "2023/06/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "天尊", name: "元始天尊" }
