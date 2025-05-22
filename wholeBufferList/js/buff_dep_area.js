@@ -19,19 +19,24 @@ buff.dep_area = [
         , note: [ "妖糸使い系", "分類未確認" ]
     }
     , {
+        name: "ヒーラー", cl: "ヒーラー", AW: "未"
+        , stats: { other: "" }
+        , note: "被HP回復量×1.3"
+    }
+    , {
         name: "セイント", cl: "ヒーラー", AW: "覚1"
-        , stats: { abn: [ "-50%", "(時間)" ] }
-        , note: "ヒーラー系"
+        , stats: { abn: [ "-50%", "(時間)" ], other: "" }
+        , note: [ "ヒーラー系", "被HP回復量×1.5" ]
     }
     , {
         name: "ハイエロファント", cl: "ヒーラー", AW: "覚2a"
-        , stats: { abn: [ "-50%", "(時間)" ] }
-        , note: "ヒーラー系"
+        , stats: { abn: [ "-50%", "(時間)" ], other: "" }
+        , note: [ "ヒーラー系", "被HP回復量×1.5" ]
     }
     , {
         name: "オラクル", cl: "ヒーラー", AW: "覚2b"
-        , stats: { abn: [ "-50%", "(時間)" ] }
-        , note: "ヒーラー系"
+        , stats: { abn: [ "-50%", "(時間)" ], other: "" }
+        , note: [ "ヒーラー系", "被HP回復量×1.5" ]
     }
     , {
         name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "未"
@@ -58,7 +63,7 @@ buff.dep_area = [
     , {
         name: "神威狛犬", cl: "狛犬", AW: "覚2a"
         , stats: { other: "" }
-        , note: [ "狛犬系", "HP回復量×1.2" ]
+        , note: [ "狛犬系", "被HP回復量×1.2" ]
     }
     , {
         name: "ステルゥ", rarity: "白", cl: "スカラー", AW: "覚醒"
@@ -105,12 +110,12 @@ buff.dep_area = [
     , {
         name: "セレン", rarity: "白", cl: "メディック", AW: "未"
         , stats: { other: "" }
-        , note: "HP回復量×1.2"
+        , note: "被HP回復量×1.2"
     }
     , {
         name: "セレン", rarity: "白", cl: "メディック", AW: "覚醒"
         , stats: { other: "" }
-        , note: "HP回復量×1.3"
+        , note: "被HP回復量×1.3"
     }
     , {
         name: "桃源郷", rarity: "金", cl: "桃源郷"

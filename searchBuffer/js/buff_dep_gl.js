@@ -89,6 +89,11 @@ buff.dep_gl = [
         , target: { cl: [ "ワルキューレ", "ペガサスライダー", "ドラゴンライダー", "魔竜騎士" ] }
     }
     , {
+        name: "メーア/水着", rarity: "白", cl: "ワルキューレ", AW: "覚醒"
+        , stats: { cost: "-1" }
+        , target: { season: [ "サマー" ] }
+    }
+    , {
         name: "ちびレシア", rarity: "ちび", cl: "ワルキューレ"
         , stats: { draw: "○" }
         , target: { cl: [ "ワルキューレ" ] }
@@ -317,6 +322,16 @@ buff.dep_gl = [
         name: "イングリッド", rarity: "黒", cl: "魔法剣士", AW: "覚醒"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { cl: [ "魔法剣士", "メイジアーマー", "メイジ", "ビショップ" ] }
+    }
+    , {
+        name: "ディシア", rarity: "黒", cl: "魔法剣士", AW: "未"
+        , stats: { atk: "+10%" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
+        name: "ディシア", rarity: "黒", cl: "魔法剣士", AW: "覚醒"
+        , stats: { atk: "+15%" }
+        , target: { others: [ "魔術師" ] }
     }
     , {
         name: "ホルエス", rarity: "白", cl: "魔法剣士", AW: "覚醒"
@@ -1487,7 +1502,7 @@ buff.dep_gl = [
     }
     , {
         name: "ブランシュ", rarity: "白", cl: "魔物使い", AW: "覚醒"
-        , stats: { atk: "+10%" }
+        , stats: { atk: "+15%" }
         , target: { race: [ "獣人" ] }
     }
     , {

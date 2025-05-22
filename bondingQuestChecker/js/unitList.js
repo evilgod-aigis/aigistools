@@ -1528,6 +1528,9 @@ const unitList = [
     , { id: 0x05dd, implDate: "2025/05/08", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "試作型英雄騎", name: "ちびダイオージ", male: 1 }
     , { id: 0x05de, implDate: "2025/05/15", implDate_bq: null        , obtain: [ "ev", "item" ], rarity: "p" , depType: "rear", class: "クロノウィッチ", name: "フィノーラ", modifier: "時の監視者" }
     , { id: 0x05df, implDate: "2025/05/15", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "スカラー", name: "ステルゥ", modifier: "魔種人類学者" }
+    , { id: 0x05e0, implDate: "2025/05/22", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "夜の魔女", name: "ラシュマシュ", modifier: "災夜の亜神" }
+    , { id: 0x05e1, implDate: "2025/05/22", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "悪疫の王", name: "ズィズィー", modifier: "狂風の亜神" }
+    , { id: 0x05e2, implDate: "2025/05/22", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "vang", class: "魔法剣士", name: "ディシア", modifier: "風焔の魔剣士" }
     
     
     

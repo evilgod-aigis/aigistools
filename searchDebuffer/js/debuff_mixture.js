@@ -721,7 +721,7 @@ debuff.mixture = [
     , {
         name: "シルセス", rarity: "黒", cl: "メイジアーマー", AW: "覚醒", skill: "覚醒(1)"
         , stats: {
-            mr: { value: "-30", type: "fixed" }
+            mr: { value: "-50", type: "fixed" }
         }
         , domain: "global"
     }
@@ -1516,6 +1516,69 @@ debuff.mixture = [
             def: { value: "-50%", type: "global" }
         }
         , domain: "global"
+    }
+    , {
+        name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "未"
+        , stats: {
+            atk: { value: "-25%", type: "noAttr" }
+            , mr: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "最大値(-5%～、-1%/敵撃破)", "分類未確認" ]
+    }
+    , {
+        name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚1"
+        , stats: {
+            atk: { value: "-35%", type: "noAttr" }
+            , mr: { value: "-35%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "最大値(-5%～、-1%/敵撃破)", "分類未確認" ]
+    }
+    , {
+        name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚1", skill: "覚醒"
+        , stats: {
+            atk: { value: "-85%", type: "noAttr" }
+            , mr: { value: "-85%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "最大値(-5%～、-1%/敵撃破)", "分類未確認" ]
+    }
+    , {
+        name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚2a"
+        , stats: {
+            atk: { value: "-40%", type: "noAttr" }
+            , mr: { value: "-40%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "最大値(-5%～、-1%/敵撃破)", "分類未確認" ]
+    }
+    , {
+        name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚2a", skill: "覚醒"
+        , stats: {
+            atk: { value: "-90%", type: "noAttr" }
+            , mr: { value: "-90%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "最大値(-5%～、-1%/敵撃破)", "分類未確認" ]
+    }
+    , {
+        name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚2b"
+        , stats: {
+            atk: { value: "-35%", type: "noAttr" }
+            , mr: { value: "-35%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "最大値(-5%～、-2%/敵撃破)", "分類未確認" ]
+    }
+    , {
+        name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚2b", skill: "覚醒"
+        , stats: {
+            atk: { value: "-85%", type: "noAttr" }
+            , mr: { value: "-85%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "最大値(-5%～、-2%/敵撃破)", "分類未確認" ]
     }
     , {
         name: "ヴィクトリア/浴衣", rarity: "白", cl: "アーチャー", AW: "未", skill: "通常"

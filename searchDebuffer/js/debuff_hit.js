@@ -174,6 +174,35 @@ debuff.hit = [
         , atkAttr: "物理", dur: "7f"
     }
     , {
+        name: "魔法剣士", cl: "魔法剣士", AW: "未"
+        , stats: { mr: "-20%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ルーンロード", cl: "魔法剣士", AW: "覚1"
+        , stats: { mr: "-30%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: [ "魔法剣士系", "分類未確認" ]
+    }
+    , {
+        name: "ルーンデルヴァー", cl: "魔法剣士", AW: "覚2a"
+        , stats: { mr: "-30%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: [ "魔法剣士系", "分類未確認" ]
+    }
+    , {
+        name: "ルーンスレイヤー", cl: "魔法剣士", AW: "覚2b"
+        , stats: { mr: "-30%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: [ "魔法剣士系", "分類未確認" ]
+    }
+    , {
+        name: "ディシア", rarity: "黒", cl: "魔法剣士", AW: "覚醒", skill: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
         name: "シャルロット", rarity: "白", cl: "魔法剣士", AW: "覚醒", skill: "覚醒"
         , stats: { mr: "-20%" }
         , atkAttr: "魔法", dur: "59f"
@@ -747,6 +776,16 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
+        name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "未", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚醒", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "14f"
@@ -1027,24 +1066,24 @@ debuff.hit = [
     , {
         name: "アルケミスト", cl: "アルケミスト", AW: "未"
         , stats: { def: "-50%", mr: "-50%" }
-        , atkAttr: "物理", dur: "119f"
+        , atkAttr: "物理", dur: "?f"
     }
     , {
         name: "マスターアルケミスト", cl: "アルケミスト", AW: "覚1"
         , stats: { def: "-60%", mr: "-60%" }
-        , atkAttr: "物理", dur: "139f"
+        , atkAttr: "物理", dur: "?f"
         , note: "アルケミスト系"
     }
     , {
         name: "ロードオブヘルメス", cl: "アルケミスト", AW: "覚2a"
         , stats: { def: "-60%", mr: "-60%" }
-        , atkAttr: "物理", dur: "139f"
+        , atkAttr: "物理", dur: "?f"
         , note: "アルケミスト系"
     }
     , {
         name: "マグヌムオプス", cl: "アルケミスト", AW: "覚2b"
         , stats: { def: "-70%", mr: "-70%" }
-        , atkAttr: "物理", dur: "139f"
+        , atkAttr: "物理", dur: "?f"
         , note: "アルケミスト系"
     }
     , {
@@ -1320,6 +1359,28 @@ debuff.hit = [
         , stats: { atkCd: "+?f" }
         , atkAttr: "魔法", dur: "?f"
         , note: "分類未確認"
+    }
+    , {
+        name: "ズィズィー", rarity: "黒", cl: "悪疫の王", AW: "未"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: "ズィズィー", rarity: "黒", cl: "悪疫の王", AW: "未", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "永続スキル"
+    }
+    , {
+        name: "ズィズィー", rarity: "黒", cl: "悪疫の王", AW: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: "ズィズィー", rarity: "黒", cl: "悪疫の王", AW: "覚醒", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "永続スキル"
     }
     , {
         name: "ゴブリン博士", cl: "ゴブリン博士"

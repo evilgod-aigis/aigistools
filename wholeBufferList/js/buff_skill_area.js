@@ -283,12 +283,12 @@ buff.skill_area = [
     , {
         name: "太上道君", rarity: "黒", cl: "天尊", AW: "未", skill: "通常"
         , stats: { other: "" }
-        , note: "HP回復量×1.2"
+        , note: "被HP回復量×1.2"
     }
     , {
         name: "太上道君", rarity: "黒", cl: "天尊", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
-        , note: "HP回復量×1.2"
+        , note: "被HP回復量×1.2"
     }
     , {
         name: "元始天尊/温泉", rarity: "黒", cl: "天尊", AW: "未", skill: "通常"
@@ -456,11 +456,11 @@ buff.skill_area = [
     }
     , {
         name: "キキョウ", rarity: "黒", cl: "シャーマン", AW: "覚醒", skill: "通常(奇)"
-        , stats: { def: "×1.1" }
+        , stats: { def: "×1.3" }
     }
     , {
         name: "キキョウ", rarity: "黒", cl: "シャーマン", AW: "覚醒", skill: "通常(偶)"
-        , stats: { atk: "×1.1" }
+        , stats: { atk: "×1.3" }
     }
     , {
         name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "未", skill: "通常"
@@ -922,12 +922,12 @@ buff.skill_area = [
     , {
         name: "メアリ/学園", rarity: "黒", cl: "ロード", AW: "未", skill: "通常"
         , stats: { other: "" }
-        , note: "HP回復量×1.3"
+        , note: "被HP回復量×1.3"
     }
     , {
         name: "メアリ/学園", rarity: "黒", cl: "ロード", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
-        , note: "HP回復量×1.3"
+        , note: "被HP回復量×1.3"
     }
     , {
         name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒", skill: "通常"

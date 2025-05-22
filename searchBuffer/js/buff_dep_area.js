@@ -11,6 +11,12 @@ buff.dep_area = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "フェルミ/浴衣", rarity: "白", cl: "神官戦士", AW: "覚醒"
+        , stats: { other: "" }
+        , target: { season: [ "サマー" ] }
+        , note: "被HP回復量×1.2"
+    }
+    , {
         name: "プロメ", rarity: "黒", cl: "コロッサス", AW: "未"
         , stats: { rege: [ "50/秒", "25/15f" ] }
         , target: { race: [ "人間", "半神" ] }

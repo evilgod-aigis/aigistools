@@ -265,7 +265,7 @@ buff.team = [
     }
     , {
         name: "ダリア", rarity: "白", cl: "ワルキューレ", AW: "覚醒"
-        , stats: { atk: "+7%" }
+        , stats: { atk: "+10%" }
         , target: { cl: [ "ワルキューレ", "ボウライダー" ] }
     }
     , {
@@ -898,22 +898,22 @@ buff.team = [
     }
     , {
         name: "シャーリー", rarity: "白", cl: "メイド", AW: "覚醒"
-        , stats: { dur: "+30%" }
+        , stats: { dur: "+35%" }
         , target: { cl: [ "メイジ" ] }
     }
     , {
         name: "シャーリー", rarity: "白", cl: "メイド", AW: "覚醒"
-        , stats: { atk: "+10%" }
+        , stats: { atk: "+13%" }
         , target: { cl: [ "ビショップ" ] }
     }
     , {
         name: "シャーリー", rarity: "白", cl: "メイド", AW: "覚醒"
-        , stats: { cost: "-4" }
+        , stats: { cost: "-5" }
         , target: { cl: [ "サモナー" ] }
     }
     , {
         name: "シャーリー", rarity: "白", cl: "メイド", AW: "覚醒"
-        , stats: { atk: "+7%" }
+        , stats: { atk: "+10%" }
         , target: { cl: [ "エレメンタラー" ] }
     }
     , {
@@ -2005,7 +2005,7 @@ buff.team = [
     }
     , {
         name: "エターナー", rarity: "黒", cl: "ビショップ", AW: "覚醒"
-        , stats: { range: "+10" }
+        , stats: { atk: "+5%", range: "+10" }
         , target: { cl: [ "ビショップ" ] }
     }
     , {

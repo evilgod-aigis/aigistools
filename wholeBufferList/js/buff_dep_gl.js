@@ -222,21 +222,21 @@ buff.dep_gl = [
     }
     , {
         name: "前衛戦術家", cl: "前衛戦術家", AW: "未"
-        , stats: { cost: "-2" }
+        , stats: { cost: "-3" }
     }
     , {
         name: "武人軍師", cl: "前衛戦術家", AW: "覚1"
-        , stats: { cost: "-3" }
+        , stats: { cost: "-4" }
         , note: "前衛戦術家系"
     }
     , {
         name: "猛将軍師", cl: "前衛戦術家", AW: "覚2a"
-        , stats: { cost: "-3" }
+        , stats: { cost: "-4" }
         , note: "前衛戦術家系"
     }
     , {
         name: "大軍配者", cl: "前衛戦術家", AW: "覚2b"
-        , stats: { cost: "-3" }
+        , stats: { cost: "-4" }
         , note: "前衛戦術家系"
     }
     , {
@@ -422,21 +422,21 @@ buff.dep_gl = [
     }
     , {
         name: "ビショップ", cl: "ビショップ", AW: "未"
-        , stats: { rege: [ "70/秒", "70/30f" ] }
+        , stats: { rege: [ "100/秒", "ビショップ/30f" ] }
     }
     , {
         name: "エルダービショップ", cl: "ビショップ", AW: "覚1"
-        , stats: { rege: [ "80/秒", "80/30f" ] }
+        , stats: { rege: [ "110/秒", "110/30f" ] }
         , note: "ビショップ系"
     }
     , {
         name: "パトリアーク", cl: "ビショップ", AW: "覚2a"
-        , stats: { rege: [ "100/秒", "100/30f" ] }
+        , stats: { rege: [ "130/秒", "130/30f" ] }
         , note: "ビショップ系"
     }
     , {
         name: "フィロソファー", cl: "ビショップ", AW: "覚2b"
-        , stats: { rege: [ "80/秒", "80/30f" ] }
+        , stats: { rege: [ "110/秒", "110/30f" ] }
         , note: "ビショップ系"
     }
     , {

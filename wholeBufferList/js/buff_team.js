@@ -254,6 +254,14 @@ buff.team = [
         , note: "座敷わらし系"
     }
     , {
+        name: "ズィズィー", rarity: "黒", cl: "悪疫の王", AW: "未"
+        , stats: { poison: "-100%", abn: "-100%" }
+    }
+    , {
+        name: "ズィズィー", rarity: "黒", cl: "悪疫の王", AW: "覚醒"
+        , stats: { poison: "-100%", abn: "-100%" }
+    }
+    , {
         name: "狸神刑部", cl: "妖狸", AW: "覚2a"
         , stats: { hp: "+5%", def: "+5%" }
         , note: "妖狸系"
