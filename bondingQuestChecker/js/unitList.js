@@ -567,7 +567,7 @@ const unitList = [
     , { id: 0x022a, implDate: "2018/12/30", implDate_bq: "2019/11/14", obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "ヒーラー", name: "カミラ", modifier: "聖祭の癒し手", derivation: "クリスマス" }
     
     // 2019
-    , { id: 0x022b, implDate: "2019/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "鬼", name: "鬼刃姫/お正月", modifier: "年賀の着衣始 ", derivation: "お正月" }
+    , { id: 0x022b, implDate: "2019/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "鬼", name: "鬼刃姫", modifier: "年賀の着衣始 ", derivation: "お正月" }
     , { id: 0x022c, implDate: "2019/01/01", implDate_bq: "2020/01/16", obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "マーチャント", name: "トトノ", modifier: "迎春の祝商人", derivation: "お正月" }
     , { id: 0x022d, implDate: "2019/01/02", implDate_bq: null        , obtain: [ "ev", "else" ], rarity: "g" , depType: "vang", class: "プリンセス", name: "ロゼット", modifier: "晴着の花姫", derivation: "お正月" }
     , { id: 0x022e, implDate: "2019/01/04", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "アベンジャー", name: "ちびドロシー" }
