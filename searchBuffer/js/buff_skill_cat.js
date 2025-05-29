@@ -287,7 +287,7 @@ buff.skill_cat = [
     }
     , {
         name: "ナキア", rarity: "白", cl: "アベンジャー", AW: "覚醒", skill: "覚醒"
-        , stats: { atk: "×1.4" }
+        , stats: { atk: "×1.5" }
         , target: { race: [ "デーモン系" ] }
     }
     , {
@@ -1624,12 +1624,12 @@ buff.skill_cat = [
     }
     , {
         name: "女王子", rarity: "黒", cl: "女王子", AW: "未", skill: "通常"
-        , stats: { hp: "+50%", atk: "×1.2", def: "×1.2" }
+        , stats: { hp: "+50%", atk: "×1.4", def: "×1.4" }
         , target: { sex: [ "女性" ] }
     }
     , {
         name: "女王子", rarity: "黒", cl: "女王子", AW: "覚醒", skill: "通常"
-        , stats: { hp: "+50%", atk: "×1.2", def: "×1.2" }
+        , stats: { hp: "+50%", atk: "×1.4", def: "×1.4" }
         , target: { sex: [ "女性" ] }
     }
     , {

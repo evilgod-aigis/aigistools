@@ -191,6 +191,10 @@ buff.team = [
         , stats: { atk: "+7%" }
     }
     , {
+        name: "レーヴ", rarity: "白", cl: "ビショップ", AW: "覚醒"
+        , stats: { hp: "+5%" }
+    }
+    , {
         name: "アイシャ", rarity: "黒", cl: "後衛戦術家", AW: "覚醒"
         , stats: { hp: "+20%" }
     }

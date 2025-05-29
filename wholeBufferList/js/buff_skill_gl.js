@@ -1179,7 +1179,7 @@ buff.skill_gl = [
     }
     , {
         name: "スチームタンク", rarity: "トークン", AW: "覚醒", skill: "通常"
-        , stats: { rege: [ "80/秒", "40/15f" ] }
+        , stats: { rege: [ "120/秒", "60/15f" ] }
         , note: [ "マキナ", "永続スキル" ]
     }
     , {

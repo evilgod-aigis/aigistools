@@ -1167,7 +1167,7 @@ debuff.mixture = [
     , {
         name: "ヴィアベル", rarity: "黒", cl: "アクアナイト", AW: "覚醒", skill: "覚醒"
         , stats: {
-            atk: { value: "-25%", type: "noAttr" }
+            atk: { value: "-30%", type: "noAttr" }
         }
         , domain: "global"
         , target: { attr: [ "魚人", "水棲" ] }
@@ -3448,7 +3448,7 @@ debuff.mixture = [
     , {
         name: "スチームタンク", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: {
-            def: { value: "-50%", type: "global" }
+            def: { value: "-35%", type: "global" }
         }
         , domain: "global"
         , note: [ "マキナ", "永続スキル" ]

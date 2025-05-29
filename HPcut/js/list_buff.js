@@ -1182,6 +1182,11 @@ lists.buff.redMapEff.list = [
         }
     }
     , {
+        id: null, buffer: "潜航騎士ヴィアベル", awaken: "覚醒"
+        , map: "深海", value: 40, disabled: null, req: "deploy"
+        , tooltip: "[配置] 全味方の深海の影響を40%軽減"
+    }
+    , {
         id: null, buffer: "大海神の娘 乙姫", awaken: "通常"
         , map: "深海", value: 100, disabled: null, req: "skill"
         , tooltip: "[スキル・全体] 全味方の深海の影響を100%軽減"

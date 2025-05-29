@@ -41,8 +41,8 @@ lists.selfBuff.rCT = [
     , { id: null, buffer: "ダイショーグン", value: 45 }
     , { id: null, buffer: "修羅", value: 45 }
     , { id: null, buffer: "ボウライダーマスター", value: 45 }
-    , { id: null, buffer: "デッドリーエッジ", value: 40 }
-    , { id: null, buffer: "剣神", value: 50 }
+    , { id: null, buffer: "デッドリーエッジ", value: 50 }
+    , { id: null, buffer: "剣神", value: 60 }
     , { id: null, buffer: "天魔天狗", value: 45 }
     , { id: null, buffer: "オランピア", value: 45 }
     , { id: null, buffer: "アーセナルドール", value: 45 }
@@ -124,21 +124,56 @@ lists.selfBuff.hasteFixed = [
 
 // 鈍化(マップ)軽減リスト
 lists.selfBuff.redMapEff = [
-    { id: null, buffer: "セーラー系", map: "深海", value: 50 }
+    { id: null, buffer: "未踏海域の覇者系", map: "深海", value: 100 }
+    , { id: null, buffer: "未踏海域の覇者", map: "深海", value: 100 }
+    , { id: null, buffer: "セーラー系", map: "深海", value: 50 }
     , { id: null, buffer: "ちびセーラー", map: "深海", value: 50 }
     , { id: null, buffer: "ちびセーラーエリート", map: "深海", value: 50 }
     , { id: null, buffer: "セーラー", map: "深海", value: 50 }
     , { id: null, buffer: "セーラーエリート", map: "深海", value: 50 }
     , { id: null, buffer: "アドミラル", map: "深海", value: 50 }
     , { id: null, buffer: "ドレッドノート", map: "深海", value: 50 }
-    , { id: null, buffer: "パイレーツ系", map: "深海", value: 50 }
-    , { id: null, buffer: "下級パイレーツ", map: "深海", value: 50 }
-    , { id: null, buffer: "ちびパイレーツ", map: "深海", value: 50 }
-    , { id: null, buffer: "ちびキングオブパイレーツ", map: "深海", value: 50 }
-    , { id: null, buffer: "パイレーツ", map: "深海", value: 50 }
-    , { id: null, buffer: "キングオブパイレーツ", map: "深海", value: 50 }
-    , { id: null, buffer: "ネプチューン", map: "深海", value: 50 }
-    , { id: null, buffer: "エル・ドラゴ", map: "深海", value: 50 }
+    , { id: null, buffer: "シーソルジャー系", map: "深海", value: 100 }
+    , { id: null, buffer: "下級シーソルジャー", map: "深海", value: 100 }
+    , { id: null, buffer: "ちびシーソルジャー", map: "深海", value: 100 }
+    , { id: null, buffer: "ちびシーソルジャーエリート", map: "深海", value: 100 }
+    , { id: null, buffer: "シーソルジャー", map: "深海", value: 100 }
+    , { id: null, buffer: "シーソルジャーエリート", map: "深海", value: 100 }
+    , { id: null, buffer: "海神防人", map: "深海", value: 100 }
+    , { id: null, buffer: "コーラルウォリアー", map: "深海", value: 100 }
+    , { id: null, buffer: "アクアナイト系", map: "深海", value: 100 }
+    , { id: null, buffer: "ちびアクアナイト", map: "深海", value: 100 }
+    , { id: null, buffer: "ちびアビサルナイト", map: "深海", value: 100 }
+    , { id: null, buffer: "アクアナイト", map: "深海", value: 100 }
+    , { id: null, buffer: "アビサルナイト", map: "深海", value: 100 }
+    , { id: null, buffer: "タイダルガード", map: "深海", value: 100 }
+    , { id: null, buffer: "潮汐の騎士", map: "深海", value: 100 }
+    , { id: null, buffer: "シャークウォリアー系", map: "深海", value: 100 }
+    , { id: null, buffer: "ちびシャークウォリアー", map: "深海", value: 100 }
+    , { id: null, buffer: "シャークウォリアー", map: "深海", value: 100 }
+    , { id: null, buffer: "憤怒の海神系", map: "深海", value: 100 }
+    , { id: null, buffer: "ちび憤怒の海神", map: "深海", value: 100 }
+    , { id: null, buffer: "憤怒の海神", map: "深海", value: 100 }
+    , { id: null, buffer: "パイレーツ系", map: "深海", value: 100 }
+    , { id: null, buffer: "下級パイレーツ", map: "深海", value: 100 }
+    , { id: null, buffer: "ちびパイレーツ", map: "深海", value: 100 }
+    , { id: null, buffer: "ちびキングオブパイレーツ", map: "深海", value: 100 }
+    , { id: null, buffer: "パイレーツ", map: "深海", value: 100 }
+    , { id: null, buffer: "キングオブパイレーツ", map: "深海", value: 100 }
+    , { id: null, buffer: "ネプチューン", map: "深海", value: 100 }
+    , { id: null, buffer: "エル・ドラゴ", map: "深海", value: 100 }
+    , { id: null, buffer: "シービショップ系", map: "深海", value: 100 }
+    , { id: null, buffer: "ちびシービショップ", map: "深海", value: 100 }
+    , { id: null, buffer: "ちびシーエルダービショップ", map: "深海", value: 100 }
+    , { id: null, buffer: "シービショップ", map: "深海", value: 100 }
+    , { id: null, buffer: "シーエルダービショップ", map: "深海", value: 100 }
+    , { id: null, buffer: "深き海の巫女", map: "深海", value: 100 }
+    , { id: null, buffer: "タイダルビショップ", map: "深海", value: 100 }
+    , { id: null, buffer: "海魔の麗姫スキュレ", map: "深海", value: 100 }
+    , { id: null, buffer: "夏祭りの金魚姫スキュレ", map: "深海", value: 100 }
     //, { id: null, buffer: "水遁遊戯ハツネ", skill: "覚醒", map: "深海", value: 50 }
     , { id: null, buffer: "夏陽海仙 竜吉公主", map: "深海", value: 50 }
+    , { id: null, buffer: "魔神の残滓ウェパル", map: "深海", value: 100 }
+    , { id: null, buffer: "渦潮の亜神メシナ", map: "深海", value: 100 }
+    , { id: null, buffer: "海神の曙光メシナ", map: "深海", value: 100 }
 ];

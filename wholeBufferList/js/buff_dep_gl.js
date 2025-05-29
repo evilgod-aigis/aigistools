@@ -280,6 +280,11 @@ buff.dep_gl = [
         , stats: { rege: [ "20/秒", "10/15f" ] }
     }
     , {
+        name: "イブキ", rarity: "黒", cl: "セーラー", AW: "覚醒"
+        , stats: { other: "" }
+        , note: "深海-40%"
+    }
+    , {
         name: "堕姫", rarity: "白", cl: "妖狐", AW: "覚醒"
         , stats: { cost: "+2" }
     }

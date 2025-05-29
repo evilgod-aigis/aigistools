@@ -1542,17 +1542,17 @@ buff.team = [
     }
     , {
         name: "ヴィアベル", rarity: "黒", cl: "アクアナイト", AW: "未"
-        , stats: { def: "+5%", cost: "-1" }
+        , stats: { def: "+15%", cost: "-1" }
         , target: { others: [ "深海" ] }
     }
     , {
         name: "ヴィアベル", rarity: "黒", cl: "アクアナイト", AW: "覚醒"
-        , stats: { def: "+10%", cost: "-2" }
+        , stats: { def: "+20%", cost: "-2" }
         , target: { others: [ "深海" ] }
     }
     , {
         name: "ちびヴィアベル", rarity: "ちび", cl: "アクアナイト"
-        , stats: { def: "+5%", cost: "-1" }
+        , stats: { def: "+15%", cost: "-1" }
         , target: { others: [ "深海" ] }
     }
     , {
@@ -2005,7 +2005,7 @@ buff.team = [
     }
     , {
         name: "エターナー", rarity: "黒", cl: "ビショップ", AW: "覚醒"
-        , stats: { atk: "+5%", range: "+10" }
+        , stats: { atk: "+10%", range: "+10" }
         , target: { cl: [ "ビショップ" ] }
     }
     , {
