@@ -169,6 +169,11 @@ buff.dep_gl = [
         , stats: { cost: "×0.8" }
     }
     , {
+        name: "伏綺", rarity: "白", cl: "開天の神話", AW: "覚醒"
+        , stats: { other: "" }
+        , note: [ "悪天候-50%" ]
+    }
+    , {
         name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒"
         , stats: { atk: "+7%", def: "+7%" }
     }
@@ -206,6 +211,14 @@ buff.dep_gl = [
     }
     , {
         name: "ケイティ/新装", rarity: "黒", cl: "ソルジャー", AW: "覚醒"
+        , stats: { cost: "-2" }
+    }
+    , {
+        name: "ガレア", rarity: "黒", cl: "ソルジャー", AW: "未"
+        , stats: { cost: "-1" }
+    }
+    , {
+        name: "ガレア", rarity: "黒", cl: "ソルジャー", AW: "覚醒"
         , stats: { cost: "-2" }
     }
     , {

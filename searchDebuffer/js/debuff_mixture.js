@@ -3010,6 +3010,14 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "ポワワ", rarity: "白", cl: "ポーター", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            stop: { value: "?f", type: "area" }
+        }
+        , domain: "area"
+        , note: "スキル発動時"
+    }
+    , {
         name: "ヤシマ", rarity: "黒", cl: "妖狸", AW: "未", skill: "通常"
         , stats: {
             stop: { value: "149f", type: "global" }

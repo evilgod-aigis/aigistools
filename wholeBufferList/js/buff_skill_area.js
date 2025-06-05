@@ -24,6 +24,10 @@ buff.skill_area = [
         , note: "全体"
     }
     , {
+        name: "伏綺", rarity: "白", cl: "開天の神話", AW: "覚醒", skill: "通常"
+        , stats: { abn: "-100%" }
+    }
+    , {
         name: "ユージェン/お正月", rarity: "白", cl: "チェイスハンター", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , note: "隠密付与"

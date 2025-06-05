@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2025/06/05(木)"
+        , detail: [
+            "ポワワを追加"
+        ]
+    }
+    , {
         date: "2025/05/29(木)"
         , detail: [
             "バランス調整を反映"

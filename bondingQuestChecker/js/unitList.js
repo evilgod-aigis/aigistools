@@ -1531,6 +1531,13 @@ const unitList = [
     , { id: 0x05e0, implDate: "2025/05/22", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "夜の魔女", name: "ラシュマシュ", modifier: "災夜の亜神" }
     , { id: 0x05e1, implDate: "2025/05/22", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "悪疫の王", name: "ズィズィー", modifier: "狂風の亜神" }
     , { id: 0x05e2, implDate: "2025/05/22", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "vang", class: "魔法剣士", name: "ディシア", modifier: "風焔の魔剣士" }
+    , { id: 0x05e3, implDate: "2025/06/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "エンジェル", name: "ちびシェミア" }
+    , { id: 0x05e4, implDate: "2025/06/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "サベージファイター", name: "ちびファルア" }
+    , { id: 0x05e5, implDate: "2025/06/05", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "rear", class: "ロード", name: "ロヴィサ", modifier: "越境要塞の領主" }
+    , { id: 0x05e6, implDate: "2025/06/05", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "ph", depType: "vang", class: "開天の神話", name: "伏綺", modifier: "大華の礎たる者 " }
+    , { id: 0x05e7, implDate: "2025/06/05", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ポーター", name: "ポワワ", modifier: "寒冷の支援者" }
+    , { id: 0x05e8, implDate: "2025/06/05", implDate_bq: null        , obtain: [ "tr", "mili" ], rarity: "p" , depType: "rear", class: "蟲使い", name: "ハニービー", modifier: "蜂殻の蟲使い" }
+    , { id: 0x05e9, implDate: "2025/06/05", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "vang", class: "ソルジャー", name: "ガレア" , male: 1}
     
     
     

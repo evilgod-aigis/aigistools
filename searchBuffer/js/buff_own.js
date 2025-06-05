@@ -187,6 +187,11 @@ buff.own = [
         , target: { home: [ "華の国" ] }
     }
     , {
+        name: "伏綺", rarity: "白", cl: "開天の神話", AW: "覚醒"
+        , stats: { hp: "+2%", def: "+2%" }
+        , target: { home: [ "華の国" ] }
+    }
+    , {
         name: "神野悪五郎", rarity: "黒", cl: "魔境の主", AW: "覚醒"
         , stats: { def: "+5%", mr: "+3" }
         , target: { home: [ "東の国" ] }

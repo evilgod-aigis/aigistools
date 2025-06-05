@@ -65,6 +65,10 @@ buff.skill_gl = [
         , stats: { draw: "(○)", redep: "30秒" }
     }
     , {
+        name: "伏綺", rarity: "白", cl: "開天の神話", AW: "覚醒", skill: [ "通常", "覚醒" ]
+        , stats: { draw: "(○)", redep: "60秒" }
+    }
+    , {
         name: "イムラウ", rarity: "黒", cl: "ピューティアー", AW: "覚醒", skill: "通常"
         , stats: { rege: [ "1000/秒", "2000/60f" ] }
     }
@@ -117,6 +121,16 @@ buff.skill_gl = [
         name: "フィネス", rarity: "白", cl: "盤上の支配者", AW: "覚醒", skill: "覚醒(偶)"
         , stats: { atk: "×1.2", def: "×1.2" }
         , note: "永続スキル、手動中断可能"
+    }
+    , {
+        name: "ガレア", rarity: "黒", cl: "ソルジャー", AW: "未", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ガレア", rarity: "黒", cl: "ソルジャー", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , note: "分類未確認"
     }
     , {
         name: "ケイティ/学園", rarity: "白", cl: "ソルジャー", AW: "未", skill: "通常"

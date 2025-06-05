@@ -244,6 +244,10 @@ buff.team = [
         , stats: { hp: "+5%" }
     }
     , {
+        name: "ロヴィサ", rarity: "黒", cl: "ダンサー", AW: "覚醒"
+        , stats: { mr: "+7" }
+    }
+    , {
         name: "ハルフゥ", rarity: "黒", cl: "シービショップ", AW: "覚醒"
         , stats: { other: "" }
         , note: "深海-30%"
