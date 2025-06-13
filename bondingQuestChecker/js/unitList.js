@@ -1117,7 +1117,7 @@ const unitList = [
     , { id: 0x0448, implDate: "2022/12/21", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "黒竜娘【モンスター娘TD】", name: "マウロ", modifier: "ブラックドラゴン娘", collabo: 1 }
     , { id: 0x0449, implDate: "2022/12/21", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "vang", class: "鬼刃忍", name: "シロガネ", modifier: "鬼刃忍" }
     , { id: 0x044a, implDate: "2022/12/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "鍛冶職人", name: "ウルカノ", modifier: "火と鉄の亜神" }
-    , { id: 0x044b, implDate: "2022/12/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "テンプルナイト", name: "トゥーリ", modifier: "輝天の神聖騎士" }
+    , { id: 0x044b, implDate: "2022/12/30", implDate_bq: "2025/06/12", obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "テンプルナイト", name: "トゥーリ", modifier: "輝天の神聖騎士" }
     , { id: 0x044c, implDate: "2022/12/30", implDate_bq: "2024/07/11", obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "魔界総帥", name: "アスバール", modifier: "嵐雨の亜神" }
     
     // 2023
@@ -1212,7 +1212,7 @@ const unitList = [
     , { id: 0x04a5, implDate: "2023/07/06", implDate_bq: null        , obtain: [ "ev", "maji" ], rarity: "b" , depType: "vang", class: "デーモンロード", name: "パヤモ", modifier: "深閑の魔将" }
     , { id: 0x04a6, implDate: "2023/07/13", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "ph", depType: "rear", class: "ジオマンサー", name: "サナラ", modifier: "君と最高の夏", derivation: "水着" }
     , { id: 0x04a7, implDate: "2023/07/13", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "rear", class: "ヴァンパイアハンター", name: "ちびヴィンセント", male: 1 }
-    , { id: 0x04a8, implDate: "2023/07/20", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "処刑人", name: "サティン", modifier: "流浪の断罪者" }
+    , { id: 0x04a8, implDate: "2023/07/20", implDate_bq: "2025/06/12", obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "処刑人", name: "サティン", modifier: "流浪の断罪者" }
     , { id: 0x04a9, implDate: "2023/07/20", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "p" , depType: "vang", class: "ヘビーアーマー", name: "ベルニス", modifier: "憧れの休日", derivation: "私服" }
     , { id: 0x04aa, implDate: "2023/07/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "料理人", name: "デルフィーナ", modifier: "食の芸術家" }
     , { id: 0x04ab, implDate: "2023/08/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "ローグ", name: "ちびシネイド" }
@@ -1538,6 +1538,10 @@ const unitList = [
     , { id: 0x05e7, implDate: "2025/06/05", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ポーター", name: "ポワワ", modifier: "寒冷の支援者" }
     , { id: 0x05e8, implDate: "2025/06/05", implDate_bq: null        , obtain: [ "tr", "mili" ], rarity: "p" , depType: "rear", class: "蟲使い", name: "ハニービー", modifier: "蜂殻の蟲使い" }
     , { id: 0x05e9, implDate: "2025/06/05", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "vang", class: "ソルジャー", name: "ガレア" , male: 1}
+    , { id: 0x05ea, implDate: "2025/06/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "鍛冶職人", name: "ウルカノ", modifier: "火と鉄の誓約", derivation: "花嫁" }
+    , { id: 0x05eb, implDate: "2025/06/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "シーソルジャー", name: "ムルーア", modifier: "朱珠の深海花嫁", derivation: "花嫁" }
+    , { id: 0x05ec, implDate: "2025/06/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "天狗", name: "ホムラ", modifier: "嫁入り天狗", derivation: "花嫁" }
+    , { id: 0x05ed, implDate: "2025/06/12", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "憤怒の海神", name: "ちびジーラトス", male: 1 }
     
     
     

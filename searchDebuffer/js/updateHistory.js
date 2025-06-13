@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2025/06/12(木)"
+        , detail: [
+            "ホムラ/花嫁を追加"
+        ]
+    }
+    , {
         date: "2025/06/05(木)"
         , detail: [
             "ポワワを追加"

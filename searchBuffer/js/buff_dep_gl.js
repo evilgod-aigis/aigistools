@@ -810,6 +810,22 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "ウルカノ/花嫁", rarity: "黒", cl: "鍛冶職人", AW: "未"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { sex: [ "女性" ] }
+        ]
+    }
+    , {
+        name: "ウルカノ/花嫁", rarity: "黒", cl: "鍛冶職人", AW: "覚醒"
+        , stats: { atk: "+15%", def: "+15%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { sex: [ "女性" ] }
+        ]
+    }
+    , {
         name: "サンディー", rarity: "白", cl: "鍛冶職人", AW: "未"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { cl: [

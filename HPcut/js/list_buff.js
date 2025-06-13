@@ -1014,6 +1014,16 @@ lists.buff.takenDmg = {};
 lists.buff.takenDmg.jap = "被ダメ増加";
 lists.buff.takenDmg.list = [
     {
+        id: null, buffer: "嫁入り天狗ホムラ", awaken: "未", showAwaken: true
+        , value: 3, disabled: null, req: "deploy"
+        , tooltip: "[射程内] 被ダメージが3%上昇"
+    }
+    , {
+        id: null, buffer: "嫁入り天狗ホムラ", awaken: "覚醒", showAwaken: true
+        , value: 10, disabled: null, req: "deploy"
+        , tooltip: "[射程内] 被ダメージが10%上昇"
+    }
+    , {
         id: null, buffer: "カースウィスパラー", isClass: true, awaken: "覚醒"
         , value: 20, disabled: null, req: "deploy"
         , compound: { takenDmg: [ { buffer: "災禍を律す者モルフェサ" } ] }

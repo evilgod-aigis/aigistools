@@ -1,6 +1,16 @@
 // 被ダメージ
 debuff.takenDmg = [
     {
+        name: "ホムラ/花嫁", rarity: "白", cl: "天狗", AW: "未"
+        , stats: { value: "+3%" }
+        , note: "範囲"
+    }
+    , {
+        name: "ホムラ/花嫁", rarity: "白", cl: "天狗", AW: "覚醒"
+        , stats: { value: "+10%" }
+        , note: "範囲"
+    }
+    , {
         name: "カースウィスパラー", cl: "カースウィスパラー", AW: "覚1"
         , stats: { value: "+20%" }
         , note: "範囲"
