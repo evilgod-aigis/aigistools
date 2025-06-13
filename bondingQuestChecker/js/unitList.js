@@ -1540,7 +1540,7 @@ const unitList = [
     , { id: 0x05e9, implDate: "2025/06/05", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "vang", class: "ソルジャー", name: "ガレア" , male: 1}
     , { id: 0x05ea, implDate: "2025/06/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "鍛冶職人", name: "ウルカノ", modifier: "火と鉄の誓約", derivation: "花嫁" }
     , { id: 0x05eb, implDate: "2025/06/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "シーソルジャー", name: "ムルーア", modifier: "朱珠の深海花嫁", derivation: "花嫁" }
-    , { id: 0x05ec, implDate: "2025/06/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "天狗", name: "ホムラ", modifier: "嫁入り天狗", derivation: "花嫁" }
+    , { id: 0x05ec, implDate: "2025/06/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "天狗", name: "ホムラ", modifier: "嫁入り天狗", derivation: "花嫁" }
     , { id: 0x05ed, implDate: "2025/06/12", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "憤怒の海神", name: "ちびジーラトス", male: 1 }
     
     
