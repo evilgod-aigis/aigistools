@@ -1311,7 +1311,7 @@ const unitList = [
     , { id: 0x0506, implDate: "2024/01/25", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "発明家", name: "レクテ", modifier: "魔電流の発明家" }
     , { id: 0x0507, implDate: "2024/01/25", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "rear", class: "ウィッチ", name: "アンジェラ", modifier: "王国の魔女" }
     , { id: 0x0508, implDate: "2024/02/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "魔王親衛隊", name: "シャディア", modifier: "恋の親衛隊", derivation: "バレンタイン" }
-    , { id: 0x0509, implDate: "2024/02/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "アーチャー", name: "キャロット", modifier: "ハートの射手", derivation: "バレンタイン" }
+    , { id: 0x0509, implDate: "2024/02/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "アーチャー", name: "キャロップ", modifier: "ハートの射手", derivation: "バレンタイン" }
     , { id: 0x050a, implDate: "2024/02/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "デモンルーン", name: "ちびエスネア" }
     , { id: 0x050b, implDate: "2024/02/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "デモンルーン", name: "ちびエフネ" }
     , { id: 0x050c, implDate: "2024/02/08", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "天狗", name: "ちびグレン", male: 1 }
