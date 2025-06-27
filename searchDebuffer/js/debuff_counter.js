@@ -1,4 +1,4 @@
-// 命中
+// 反撃
 debuff.counter = [
     {
         name: "カオスルーラー", cl: "カオスルーラー", AW: "未"
@@ -27,6 +27,22 @@ debuff.counter = [
         name: "イコル", rarity: "黒", cl: "カオスルーラー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "*1.4", def: "*1.4", mr: "*1.4" }
         , atkAttr: "貫通", dur: "150f"
+    }
+    , {
+        name: "イコル/水着", rarity: "黒", cl: "カオスルーラー", AW: "未", skill: "通常"
+        , stats: { atk: "*1.3", def: "*1.3", mr: "*1.3" }
+        , atkAttr: "貫通", dur: "150f"
+    }
+    , {
+        name: "イコル/水着", rarity: "黒", cl: "カオスルーラー", AW: "覚醒", skill: "通常"
+        , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
+        , atkAttr: "貫通", dur: "150f"
+    }
+    , {
+        name: "イコル/水着", rarity: "黒", cl: "カオスルーラー", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "*1.5", def: "*1.5", mr: "*1.5" }
+        , atkAttr: "貫通", dur: "150f"
+        , note: "永続スキル"
     }
 ];
 

@@ -1234,6 +1234,26 @@ buff.skill_area = [
         , note: "群青姉妹"
     }
     , {
+        name: "祝福ゴースト", rarity: "トークン", AW: "未", skill: "通常"
+        , stats: { rege: [ "80/秒", "40/15f" ] }
+        , note: "ニミュエ/花嫁"
+    }
+    , {
+        name: "式典ゴースト", rarity: "トークン", AW: "未", skill: "覚1"
+        , stats: { rege: [ "80/秒", "40/15f" ] }
+        , note: "ニミュエ/花嫁"
+    }
+    , {
+        name: "エスコートゴースト", rarity: "トークン", AW: "未", skill: "覚2a"
+        , stats: { rege: [ "80/秒", "40/15f" ] }
+        , note: "ニミュエ/花嫁"
+    }
+    , {
+        name: "フラッグゴースト", rarity: "トークン", AW: "未", skill: "覚2b"
+        , stats: { rege: [ "80/秒", "40/15f" ] }
+        , note: "ニミュエ/花嫁"
+    }
+    , {
         name: "門松トークン", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { rege: [ "20/秒", "10/15f" ] }
         , note: [ "アラン/お正月", "永続スキル" ]

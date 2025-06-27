@@ -3424,7 +3424,7 @@ debuff.mixture = [
             , def: { value: "-10%", type: "area" }
         }
         , domain: "area"
-        , note: "迷宮の悪霊"
+        , note: "ニミュエ"
     }
     , {
         name: "ファントム", rarity: "トークン", AW: "覚1"
@@ -3433,7 +3433,7 @@ debuff.mixture = [
             , def: { value: "-10%", type: "area" }
         }
         , domain: "area"
-        , note: [ "大迷宮の守護霊", "(迷宮の悪霊系)" ]
+        , note: "ニミュエ"
     }
     , {
         name: "ファントム", rarity: "トークン", AW: "覚2a"
@@ -3442,7 +3442,7 @@ debuff.mixture = [
             , def: { value: "-20%", type: "area" }
         }
         , domain: "area"
-        , note: [ "巡り咲く迷宮守", "(迷宮の悪霊系)" ]
+        , note: "ニミュエ"
     }
     , {
         name: "キューティレイス", rarity: "トークン", AW: "覚2b"
@@ -3451,7 +3451,43 @@ debuff.mixture = [
             , def: { value: "-23%", type: "area" }
         }
         , domain: "area"
-        , note: [ "人造守護神霊", "(迷宮の悪霊系)" ]
+        , note: "ニミュエ"
+    }
+    , {
+        name: "祝福ゴースト", rarity: "トークン", AW: "未"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+            , def: { value: "-10%", type: "area" }
+        }
+        , domain: "area"
+        , note: "ニミュエ/花嫁"
+    }
+    , {
+        name: "式典ゴースト", rarity: "トークン", AW: "覚1"
+        , stats: {
+            atk: { value: "-10%", type: "noAttr" }
+            , def: { value: "-10%", type: "area" }
+        }
+        , domain: "area"
+        , note: "ニミュエ/花嫁"
+    }
+    , {
+        name: "エスコートゴースト", rarity: "トークン", AW: "覚2a"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+            , def: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: "ニミュエ/花嫁"
+    }
+    , {
+        name: "フラッグゴースト", rarity: "トークン", AW: "覚2b"
+        , stats: {
+            atk: { value: "-23%", type: "noAttr" }
+            , def: { value: "-23%", type: "area" }
+        }
+        , domain: "area"
+        , note: "ニミュエ/花嫁"
     }
     , {
         name: "スチームタンク", rarity: "トークン", AW: "覚醒", skill: "通常"

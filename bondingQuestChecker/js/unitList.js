@@ -1542,6 +1542,16 @@ const unitList = [
     , { id: 0x05eb, implDate: "2025/06/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "シーソルジャー", name: "ムルーア", modifier: "朱珠の深海花嫁", derivation: "花嫁" }
     , { id: 0x05ec, implDate: "2025/06/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "天狗", name: "ホムラ", modifier: "嫁入り天狗", derivation: "花嫁" }
     , { id: 0x05ed, implDate: "2025/06/12", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "憤怒の海神", name: "ちびジーラトス", male: 1 }
+    , { id: 0x05ee, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "vang", class: "迷宮の悪霊", name: "ニミュエ", modifier: "迷宮の花嫁", derivation: "花嫁" }
+    , { id: 0x05ef, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "ph", depType: "vang", class: "古代魔導機兵", name: "アージェ", modifier: "夏の守護機士", derivation: "水着" }
+    , { id: 0x05f0, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "ph", depType: "rear", class: "未踏海域の覇者", name: "イヴリール", modifier: "海賊王の休暇", derivation: "水着" }
+    , { id: 0x05f1, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "キョンシー", name: "スーシェン", modifier: "盛夏道士", derivation: "水着" }
+    , { id: 0x05f2, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "儀仗軍神", name: "乙姫", modifier: "龍宮城の夏 ", derivation: "水着" }
+    , { id: 0x05f3, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "カオスルーラー", name: "イコル", modifier: "白日の夢", derivation: "水着" }
+    , { id: 0x05f4, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "時の俯瞰者", name: "クロノシア", modifier: "時の海辺", derivation: "水着" }
+    , { id: 0x05f5, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "サムライ", name: "サクヤ", modifier: "薙刀海水浴", derivation: "水着" }
+    , { id: 0x05f6, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "戦巫女", name: "コウメ", modifier: "夏のご褒美", derivation: "水着" }
+    , { id: 0x05f7, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "夏服の政務官", derivation: "夏服" }
     
     
     

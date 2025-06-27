@@ -228,6 +228,22 @@ buff.dep_gl = [
         , target: { season: [ "学園" ] }
     }
     , {
+        name: "サクヤ/水着", rarity: "白", cl: "サムライ", AW: "未"
+        , stats: { atk: "+3%", mr: "+5" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "深海" ] }
+        ]
+    }
+    , {
+        name: "サクヤ/水着", rarity: "白", cl: "サムライ", AW: "覚醒"
+        , stats: { atk: "+5%", mr: "+5" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "深海" ] }
+        ]
+    }
+    , {
         name: "ジーニア", rarity: "白", cl: "ペガサスライダー", AW: "覚醒"
         , stats: { draw: "○" }
         , target: { cl: [ "ペガサスライダー" ] }
@@ -1110,6 +1126,16 @@ buff.dep_gl = [
         , target: { cl: [ "テンプルナイト" ] }
     }
     , {
+        name: "ニミュエ/花嫁", rarity: "黒", cl: "迷宮の悪霊", AW: "未"
+        , stats: { rege: [ "50/秒", "25/15f" ] }
+        , target: { season: [ "ジューンブライド" ] }
+    }
+    , {
+        name: "ニミュエ/花嫁", rarity: "黒", cl: "迷宮の悪霊", AW: "覚醒"
+        , stats: { rege: [ "80/秒", "40/15f" ] }
+        , target: { season: [ "ジューンブライド" ] }
+    }
+    , {
         name: "パルセ", rarity: "白", cl: "オートマタ", AW: "未"
         , stats: { atk: "+7%" }
         , target: { others: [ "機械" ] }
@@ -1129,6 +1155,26 @@ buff.dep_gl = [
         name: "シラヌイ", rarity: "白", cl: "ぬりかべ", AW: "覚醒"
         , stats: { def: "+7%" }
         , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "コウメ/水着", rarity: "白", cl: "戦巫女", AW: "未"
+        , stats: { atk: "+10%" }
+        , target: { race: [ "人間", "半神" ] }
+    }
+    , {
+        name: "コウメ/水着", rarity: "白", cl: "戦巫女", AW: "未"
+        , stats: { mr: "+5" }
+        , target: { season: [ "サマー" ] }
+    }
+    , {
+        name: "コウメ/水着", rarity: "白", cl: "戦巫女", AW: "覚醒"
+        , stats: { atk: "+15%" }
+        , target: { race: [ "人間", "半神" ] }
+    }
+    , {
+        name: "コウメ/水着", rarity: "白", cl: "戦巫女", AW: "覚醒"
+        , stats: { mr: "+10" }
+        , target: { season: [ "サマー" ] }
     }
     , {
         name: "祓剣主神", rarity: "黒", cl: "儀仗軍神", AW: "未"

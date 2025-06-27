@@ -1,6 +1,15 @@
 // 範囲スキル
 buff.skill_area = [
     {
+        name: "イヴリール/水着", rarity: "白", cl: "未踏海域の覇者", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "深海" ] }
+        ]
+        , note: [ "全体", "最大値(倍率+0.1/サマー、深海属性ユニット)" ]
+    }
+    , {
         name: "グレン/学園", rarity: "白", cl: "天狗", AW: "未", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.2" }
         , target: { season: [ "学園" ] }
@@ -36,6 +45,24 @@ buff.skill_area = [
         name: "金糸雀姉妹/花嫁", rarity: "白", cl: "かまいたち", AW: "覚醒", skill: "通常"
         , stats: { atkCd: "6f化" }
         , target: { cl: [ "かまいたち" ] }
+    }
+    , {
+        name: "コウメ/水着", rarity: "白", cl: "戦巫女", AW: "未", skill: "通常"
+        , stats: { def: "×1.8" }
+        , target: [
+            { home: [ "東の国" ] }
+            , { race: [ "人間", "半神" ] }
+            , { season: [ "サマー" ] }
+        ]
+    }
+    , {
+        name: "コウメ/水着", rarity: "白", cl: "戦巫女", AW: "覚醒", skill: "通常"
+        , stats: { def: "×1.8" }
+        , target: [
+            { home: [ "東の国" ] }
+            , { race: [ "人間", "半神" ] }
+            , { season: [ "サマー" ] }
+        ]
     }
     , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒", skill: "覚醒"

@@ -93,6 +93,11 @@ buff.skill_gl = [
         , note: [ "深海-70%", "永続スキル" ]
     }
     , {
+        name: "イヴリール/水着", rarity: "白", cl: "未踏海域の覇者", AW: "覚醒", skill: "覚醒"
+        , stats: { other: "" }
+        , note: "深海-80%"
+    }
+    , {
         name: "フィネス", rarity: "黒", cl: "盤上の支配者", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.2", rege: [ "80/秒", "40/15f" ], other: "" }
         , note: [ "スキルオート", "永続スキル、手動中断可能" ]
@@ -480,6 +485,14 @@ buff.skill_gl = [
     , {
         name: "シラヌイ", rarity: "白", cl: "ぬりかべ", AW: "覚醒", skill: "通常"
         , stats: { def: "×1.6" }
+    }
+    , {
+        name: "コウメ/水着", rarity: "白", cl: "戦巫女", AW: "未", skill: "通常"
+        , stats: { nul: "30%" }
+    }
+    , {
+        name: "コウメ/水着", rarity: "白", cl: "戦巫女", AW: "覚醒", skill: "通常"
+        , stats: { nul: "30%" }
     }
     , {
         name: "乙姫", rarity: "黒", cl: "儀仗軍神", AW: "未", skill: "通常"

@@ -36,6 +36,11 @@ buff.own = [
         , target: { others: [ "機械" ] }
     }
     , {
+        name: "アージェ/水着", rarity: "白", cl: "古代魔導機兵", AW: "覚醒"
+        , stats: { atk: "+2%" }
+        , target: { season: [ "サマー" ], depType: [ "近接" ] }
+    }
+    , {
         name: "トラム", rarity: "黒", cl: "銀腕の神話", AW: "覚醒"
         , stats: { def: "+5%" }
         , target: { depType: [ "近接" ] }
@@ -312,6 +317,11 @@ buff.own = [
     , {
         name: "イヴリール", rarity: "白", cl: "未踏海域の覇者", AW: "覚醒"
         , stats: { def: "+5%" }
+        , target: { others: [ "深海" ] }
+    }
+    , {
+        name: "イヴリール/水着", rarity: "白", cl: "未踏海域の覇者", AW: "覚醒"
+        , stats: { hp: "+2%", mr: "+2" }
         , target: { others: [ "深海" ] }
     }
     , {

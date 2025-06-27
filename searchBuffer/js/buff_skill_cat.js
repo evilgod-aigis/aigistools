@@ -271,6 +271,22 @@ buff.skill_cat = [
         , target: { cl: [ "王子" ] }
     }
     , {
+        name: "サクヤ/水着", rarity: "白", cl: "サムライ", AW: "未", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "深海" ] }
+        ]
+    }
+    , {
+        name: "サクヤ/水着", rarity: "白", cl: "サムライ", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "深海" ] }
+        ]
+    }
+    , {
         name: "コーネリア/クリスマス", rarity: "黒", cl: "ダークファイター", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.4" }
         , target: { season: [ "クリスマス" ] }
@@ -2697,6 +2713,22 @@ buff.skill_cat = [
         , stats: { atk: "×1.3" }
         , target: [
             { race: [ "神" ] }
+            , { others: [ "魔術師" ] }
+        ]
+    }
+    , {
+        name: "クロノシア/水着", rarity: "黒", cl: "時の俯瞰者", AW: "未", skill: "通常"
+        , stats: { atk: "×1.4", range: "×1.1" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "魔術師" ] }
+        ]
+    }
+    , {
+        name: "クロノシア/水着", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.4", range: "×1.1" }
+        , target: [
+            { season: [ "サマー" ] }
             , { others: [ "魔術師" ] }
         ]
     }

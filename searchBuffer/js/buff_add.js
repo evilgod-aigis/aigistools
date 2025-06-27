@@ -467,6 +467,24 @@ buff.add = [
         , note: "範囲"
     }
     , {
+        name: "アンナ/夏服", rarity: "黒", cl: "政務官", AW: "未", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "範囲" ]
+    }
+    , {
+        name: "アンナ/夏服", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "通常"
+        , stats: { atk: "*10", def: "*10" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "範囲" ]
+    }
+    , {
+        name: "アンナ/夏服", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "*15" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "範囲" ]
+    }
+    , {
         name: "マレブランケ", rarity: "黒", cl: "ダークプリースト", AW: "覚醒"
         , stats: { mr: "+20" }
         , target: { home: [ "白の帝国" ] }

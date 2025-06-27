@@ -288,6 +288,18 @@ debuff.hit = [
         , note: "死亡時"
     }
     , {
+        name: "スーシェン/水着", rarity: "黒", cl: "キョンシー", AW: "未"
+        , stats: { stop: "○" }
+        , atkAttr: "貫通", dur: "179f"
+        , note: "配置時"
+    }
+    , {
+        name: "スーシェン/水着", rarity: "黒", cl: "キョンシー", AW: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "貫通", dur: "179f"
+        , note: "配置時"
+    }
+    , {
         name: "ちびスーシェン", rarity: "ちび", cl: "キョンシー"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "359f"
@@ -501,6 +513,12 @@ debuff.hit = [
         name: "ちびスカー", rarity: "ちび", cl: "シャークウォリアー"
         , stats: { def: "-30%" }
         , atkAttr: "物理", dur: "59f"
+    }
+    , {
+        name: "乙姫/水着", rarity: "黒", cl: "儀仗軍神", AW: "未", skill: "通常"
+        , stats: { atkCd: "+30f" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "フーイェン", rarity: "白", cl: "武侠", AW: "未", skill: "通常"
@@ -1709,6 +1727,12 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "89f"
         , note: "ローズ"
+    }
+    , {
+        name: "クロノシア/水着(分身)", rarity: "トークン", AW: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "179f"
+        , note: [ "クロノシア/水着", "死亡時" ]
     }
     , {
         name: "誓いのチャペル", rarity: "トークン", AW: "覚醒"
