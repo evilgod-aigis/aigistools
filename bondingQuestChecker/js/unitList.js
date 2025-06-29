@@ -1206,7 +1206,7 @@ const unitList = [
     , { id: 0x049f, implDate: "2023/06/29", implDate_bq: null        , obtain: [ "sh"         ], rarity: "ph", depType: "vang", class: "銀腕の神話", name: "トラム", modifier: "浜辺の看板娘", derivation: "水着" }
     , { id: 0x04a0, implDate: "2023/06/29", implDate_bq: null        , obtain: [ "sh"         ], rarity: "ph", depType: "rear", class: "ファラオ", name: "ホルテウス", modifier: "女王の避暑", derivation: "水着" }
     , { id: 0x04a1, implDate: "2023/06/29", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "ワルキューレ", name: "ピューロ", modifier: "純真海日記", derivation: "水着" }
-    , { id: 0x04a2, implDate: "2023/06/29", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "鍛冶職人", name: "グラティア", modifier: "夏空の鍛冶師", latent: "白の帝国" }
+    , { id: 0x04a2, implDate: "2023/06/29", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "鍛冶職人", name: "グラティア", modifier: "夏空の鍛冶師", derivation: "水着", latent: "白の帝国" }
     , { id: 0x04a3, implDate: "2023/07/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "エンプレス", name: "ちびハリナ", latent: "白の帝国" }
     , { id: 0x04a4, implDate: "2023/07/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ヒーラー", name: "ちびエリアス", latent: "白の帝国" }
     , { id: 0x04a5, implDate: "2023/07/06", implDate_bq: null        , obtain: [ "ev", "maji" ], rarity: "b" , depType: "vang", class: "デーモンロード", name: "パヤモ", modifier: "深閑の魔将" }
