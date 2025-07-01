@@ -176,6 +176,10 @@ buff.add = [
         , note: "範囲"
     }
     , {
+        name: "龍宮城の宴", rarity: "金", cl: "龍宮城の宴"
+        , stats: { atk: "10%", def: "10%" }
+    }
+    , {
         name: "ソーマ/新装", rarity: "黒", cl: "アーチャー", AW: "覚醒"
         , stats: { atk: "+200" }
         , note: "範囲"

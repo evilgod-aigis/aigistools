@@ -1552,6 +1552,8 @@ const unitList = [
     , { id: 0x05f5, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "サムライ", name: "サクヤ", modifier: "薙刀海水浴", derivation: "水着" }
     , { id: 0x05f6, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "戦巫女", name: "コウメ", modifier: "夏のご褒美", derivation: "水着" }
     , { id: 0x05f7, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "夏服の政務官", derivation: "夏服" }
+    , { id: 0x05f8, implDate: "2025/07/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "デーモンロード", name: "ちびヤハール" }
+    , { id: 0x05f9, implDate: "2025/07/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ハーバリスト", name: "ちびラタトスク" }
     
     
     

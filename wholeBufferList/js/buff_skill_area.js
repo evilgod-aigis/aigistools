@@ -1016,6 +1016,10 @@ buff.skill_area = [
         , stats: { eva: "30%" }
     }
     , {
+        name: "ちびラタトスク", rarity: "ちび", cl: "ハーバリスト", skill: "通常(～5)"
+        , stats: { def: "×1.4", mr: "×1.4", rege: [ "100/秒", "50/15f" ] }
+    }
+    , {
         name: "シュカ", rarity: "白", cl: "霊宝つくもがみ", AW: "未", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
     }

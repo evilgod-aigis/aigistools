@@ -1764,6 +1764,14 @@ buff.team = [
         , target: { cl: [ "王子" ] }
     }
     , {
+        name: "龍宮城の宴", rarity: "金", cl: "龍宮城の宴"
+        , stats: { cost: "-1" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "深海" ] }
+        ]
+    }
+    , {
         name: "アーシェラ", rarity: "黒", cl: "アーチャー", AW: "覚醒"
         , stats: { atk: "+10%" }
         , target: { others: [ "弓兵" ] }
