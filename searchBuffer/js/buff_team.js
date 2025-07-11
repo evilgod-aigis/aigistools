@@ -1749,6 +1749,11 @@ buff.team = [
         ]
     }
     , {
+        name: "ちびチェインソン男", rarity: "ちび", cl: "チェインソン男"
+        , stats: { atk: "+5%", mr: "+5" }
+        , target: { others: [ "アンデッド" ] }
+    }
+    , {
         name: "白の皇帝", rarity: "黒", cl: "皇帝", AW: "覚醒"
         , stats: { hp: "+10%" }
         , target: { home: [ "白の帝国" ] }

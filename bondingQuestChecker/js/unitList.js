@@ -1068,7 +1068,7 @@ const unitList = [
     , { id: 0x0417, implDate: "2022/09/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "スチームナイト", name: "ちびイザムバード" }
     , { id: 0x0418, implDate: "2022/09/08", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ドラゴンメイジ", name: "コラリー", modifier: "風竜魔術士" }
     , { id: 0x0419, implDate: "2022/09/15", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "both", class: "スカイヒーラー", name: "レフカ", modifier: "鶚翼の癒し手" }
-    , { id: 0x041a, implDate: "2022/09/15", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "座敷わらし", name: "エンジュ", modifier: "座敷わらし" }
+    , { id: 0x041a, implDate: "2022/09/15", implDate_bq: "2025/07/10", obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "座敷わらし", name: "エンジュ", modifier: "座敷わらし" }
     , { id: 0x041b, implDate: "2022/09/15", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "サベージファイター", name: "ファルア", modifier: "砂漠の勇士" }
     , { id: 0x041c, implDate: "2022/09/15", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "符術士", name: "リャオレン", modifier: "符術士" }
     , { id: 0x041d, implDate: "2022/09/15", implDate_bq: null        , obtain: [ "ev", "popu" ], rarity: "b" , depType: "vang", class: "シーソルジャー", name: "ムルーア", modifier: "朱珠の深海兵長" }
@@ -1416,7 +1416,7 @@ const unitList = [
     , { id: 0x056f, implDate: "2024/09/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "ワルキューレ", name: "キャリー", modifier: "精鋭槍騎兵", derivation: "新装" }
     , { id: 0x0570, implDate: "2024/09/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "ボウライダー", name: "マーガレット", modifier: "光輝弓", derivation: "新装" }
     , { id: 0x0571, implDate: "2024/09/12", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "rear", class: "パイレーツ", name: "ちびジョヴァンニ", male: 1 }
-    , { id: 0x0572, implDate: "2024/09/19", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "儀式魔術師", name: "イルミナ", modifier: "擬神憑き" }
+    , { id: 0x0572, implDate: "2024/09/19", implDate_bq: "2025/07/10", obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "儀式魔術師", name: "イルミナ", modifier: "擬神憑き" }
     , { id: 0x0573, implDate: "2024/09/26", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "rear", class: "シャーマン", name: "天墜神星", modifier: "煌星の亜神 " }
     , { id: 0x0574, implDate: "2024/09/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "インペリアルナイト", name: "ヘイズル", modifier: "初代帝国騎士団長", latent: "白の帝国" }
     , { id: 0x0575, implDate: "2024/09/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "初代皇帝", name: "ヴィラヘルム", modifier: "初代白の皇帝", latent: "白の帝国" }
@@ -1554,6 +1554,9 @@ const unitList = [
     , { id: 0x05f7, implDate: "2025/06/26", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "夏服の政務官", derivation: "夏服" }
     , { id: 0x05f8, implDate: "2025/07/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "デーモンロード", name: "ちびヤハール" }
     , { id: 0x05f9, implDate: "2025/07/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ハーバリスト", name: "ちびラタトスク" }
+    , { id: 0x05fa, implDate: "2025/07/10", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "vang", class: "神話の継承者", name: "ペルセナス", modifier: "真夏の奇譚", derivation: "水着" }
+    , { id: 0x05fb, implDate: "2025/07/10", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "b" , depType: "rear", class: "シャーマン", name: "天墜神星", modifier: "夏の流星 ", derivation: "水着" }
+    , { id: 0x05fc, implDate: "2025/07/10", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "チェインソン男", name: "ちびチェインソン男", male: 1 }
     
     
     
