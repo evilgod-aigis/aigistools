@@ -1091,6 +1091,14 @@ buff.skill_area = [
         , note: "永続スキル"
     }
     , {
+        name: "プルーシア", rarity: "白", cl: "吟遊詩人", AW: "未", skill: "通常"
+        , stats: { ct: "-35%", eva: "50%" }
+    }
+    , {
+        name: "プルーシア", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
+        , stats: { ct: "-35%", eva: "50%" }
+    }
+    , {
         name: "戦場に集う聖霊たち", rarity: "黒", cl: "支援の聖霊", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3", rege: [ "100/秒", "50/15f" ] }
     }

@@ -2554,6 +2554,15 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "クラリーチェ/水着", rarity: "白", cl: "エレメンタラー", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            atk: { value: "-30%", type: "noAttr" }
+        }
+        , domain: "area"
+        , target: { attr: [ "魚人", "水棲" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "猫又", cl: "猫又", AW: "未"
         , stats: {
             atk: { value: "-15%", type: "noAttr" }

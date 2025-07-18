@@ -101,6 +101,34 @@ buff.unique = [
         , type: "time"
         , note: [ "区分：時間経過", "範囲", "最大値(+2%/3秒)" ]
     }
+    , {
+        name: "プルーシア", rarity: "白", cl: "吟遊詩人", AW: "未"
+        , stats: { hp: "+15%", atk: "+15%" }
+        , target: { home: [ "王国" ] }
+        , type: "time"
+        , note: [ "区分：時間経過", "範囲", "最大値(+2%/4秒)" ]
+    }
+    , {
+        name: "プルーシア", rarity: "白", cl: "吟遊詩人", AW: "覚1"
+        , stats: { hp: "+25%", atk: "+25%" }
+        , target: { home: [ "王国" ] }
+        , type: "time"
+        , note: [ "区分：時間経過", "範囲", "最大値(+2%/4秒)" ]
+    }
+    , {
+        name: "プルーシア", rarity: "白", cl: "吟遊詩人", AW: "覚2b"
+        , stats: { hp: "+35%", atk: "+35%" }
+        , target: { home: [ "王国" ] }
+        , type: "time"
+        , note: [ "区分：時間経過", "範囲", "最大値(+2%/4秒)" ]
+    }
+    , {
+        name: "プルーシア", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
+        , stats: { hp: "*1.2", atk: "*1.2" }
+        , target: { home: [ "王国" ] }
+        , type: "time"
+        , note: [ "区分：時間経過", "範囲", "最大値(+2%/3秒)", "永続スキル" ]
+    }
     
     // 死亡時
     , {
@@ -189,6 +217,26 @@ buff.unique = [
         , target: [
             { cl: [ "王子" ] }
             , { season: [ "サマー" ] }
+        ]
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "属性不問-20%(範囲)", "分類未確認" ]
+    }
+    , {
+        name: "クラリーチェ/水着", rarity: "白", cl: "エレメンタラー", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "深海" ] }
+        ]
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "属性不問-20%(範囲)", "分類未確認" ]
+    }
+    , {
+        name: "クラリーチェ/水着", rarity: "白", cl: "エレメンタラー", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "深海" ] }
         ]
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-20%(範囲)", "分類未確認" ]
