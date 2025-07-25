@@ -51,6 +51,12 @@ debuff.hit = [
         , atkAttr: "貫通", dur: "?f"
     }
     , {
+        name: "ロイジィ", rarity: "黒", cl: "エレメンタルハーミット", AW: "覚醒", skill: "覚醒(5n-1)"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "永続スキル(手動中断可能)"
+    }
+    , {
         name: "マルゴット", rarity: "黒", cl: "ソルジャー", AW: "覚醒", skill: "覚醒"
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "59f"

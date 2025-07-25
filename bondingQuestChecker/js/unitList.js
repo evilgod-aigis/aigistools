@@ -1559,6 +1559,8 @@ const unitList = [
     , { id: 0x05fc, implDate: "2025/07/10", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "チェインソン男", name: "ちびチェインソン男", male: 1 }
     , { id: 0x05fd, implDate: "2025/07/17", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "吟遊詩人", name: "プルーシア", modifier: "花咲きの奏者" }
     , { id: 0x05fe, implDate: "2025/07/17", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "p" , depType: "rear", class: "エレメンタラー", name: "クラリーチェ", modifier: "悪戯娘の夏", derivation: "水着" }
+    , { id: 0x05ff, implDate: "2025/07/24", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "サベージファイター", name: "マータン", modifier: "白き熊戦士" }
+    , { id: 0x0600, implDate: "2025/07/24", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "bh", depType: "both", class: "エレメンタルハーミット", name: "ロイジィ", modifier: "歴史を彷徨う者" }
     
     
     

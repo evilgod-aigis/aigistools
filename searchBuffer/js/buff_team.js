@@ -169,6 +169,11 @@ buff.team = [
         , target: { others: [ "ちび" ] }
     }
     , {
+        name: "ロイジィ", rarity: "黒", cl: "エレメンタルハーミット", AW: "覚醒"
+        , stats: { cost: "-3" }
+        , target: { others: [ "コスト回復スキル持ち" ] }
+    }
+    , {
         name: "アルティア", rarity: "黒", cl: "ソルジャー", AW: "未"
         , stats: { hp: "+15%" }
         , target: { cl: [ "ソルジャー" ] }

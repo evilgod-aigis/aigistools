@@ -360,6 +360,11 @@ buff.own = [
         , target: { others: [ "銃士" ] }
     }
     , {
+        name: "ロイジィ", rarity: "黒", cl: "エレメンタルハーミット", AW: "覚醒"
+        , stats: { hp: "+2%", atk: "+2%", def: "+2%" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒"
         , stats: { atk: "+1%" }
         , target: { depType: [ "近接" ] }
