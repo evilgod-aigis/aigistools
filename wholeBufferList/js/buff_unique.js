@@ -389,6 +389,12 @@ buff.unique = [
         , type: "special"
         , note: [ "区分：特効(編成)", "デーモン" ]
     }
+    , {
+        name: "ちびマギー", rarity: "ちび", cl: "発明家"
+        , stats: { atk: "×1.1", other: "" }
+        , type: "special"
+        , note: [ "区分：特効(編成)", "アーマー・ゴーレム" ]
+    }
     
     // ダメージ上昇
     , {

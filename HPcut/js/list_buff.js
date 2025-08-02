@@ -1214,6 +1214,23 @@ lists.buff.redMapEff.list = [
         , tooltip: "[編成] 全味方の深海の影響を30%軽減"
     }
     , {
+        id: null, buffer: "蒼の海巫女ピュレスカ", awaken: "覚醒"
+        , map: "深海", value: 50, disabled: null, req: "deploy"
+        , tooltip: "[配置] 全味方の深海の影響を50%軽減"
+    }
+    , {
+        id: null, buffer: "蒼の海巫女ピュレスカ", awaken: "覚醒"
+        , map: "深海", value: 70, disabled: null, req: "skill"
+        , tooltip: "[スキル・全体] 全味方の深海の影響を70%軽減"
+        , unitInfo: {
+            unitName: "蒼の海巫女ピュレスカ", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "シービショップ系" }
+            , attribution: [ "魚人", "魔術師", "聖職者", "深海" ]
+            , note: [ "女性", "深海適応" ]
+            , WT: 5, CT: 50, dur: Infinity
+        }
+    }
+    , {
         id: null, buffer: "渦潮の亜神メシナ", awaken: "未", showAwaken: true
         , map: "深海", value: 30, disabled: null, req: "deploy"
         , tooltip: "[配置] 全味方の深海の影響を30%軽減"

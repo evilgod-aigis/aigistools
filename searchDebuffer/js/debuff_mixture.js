@@ -3164,6 +3164,13 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "ちびカーニア", rarity: "ちび", cl: "スカイヒーラー", skill: "通常"
+        , stats: {
+            def: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
         name: "スカイバトルシップ", cl: "エアセイラー", AW: "覚2b"
         , stats: {
             def: { value: "-20%", type: "area" }
@@ -3184,6 +3191,22 @@ debuff.mixture = [
         , stats: {
             def: { value: "-20%", type: "area" }
             , mr: { value: "-10%", type: "clAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "エスエフの悪戯バルーン", rarity: "金", cl: "悪戯バルーン", skill: "通常"
+        , stats: {
+            def: { value: "-40%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "エスエフの悪戯バルーン・赤", rarity: "金", cl: "悪戯バルーン", skill: "通常"
+        , stats: {
+            def: { value: "-40%", type: "area" }
         }
         , domain: "area"
         , note: "分類未確認"

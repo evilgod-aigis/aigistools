@@ -880,6 +880,11 @@ buff.skill_gl = [
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
+        name: "ピュレスカ", rarity: "黒", cl: "シービショップ", AW: "覚醒", skill: "覚醒"
+        , stats: { other: "" }
+        , note: [ "深海-70%", "永続スキル" ]
+    }
+    , {
         name: "コマ/花嫁", rarity: "黒", cl: "狛犬", AW: "覚醒", skill: "覚醒"
         , stats: { nul: "50%" }
     }

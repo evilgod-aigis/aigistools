@@ -288,6 +288,10 @@ buff.team = [
         , stats: { mr: "+10" }
     }
     , {
+        name: "ちびカーニア", rarity: "ちび", cl: "スカイヒーラー"
+        , stats: { mr: "+5" }
+    }
+    , {
         name: "孫権 仲謀", rarity: "白", cl: "君主【恋姫】", AW: "覚醒"
         , stats: { hp: "+10%" }
     }

@@ -582,6 +582,16 @@ buff.dep_gl = [
         , note: "シービショップ系"
     }
     , {
+        name: "ピュレスカ", rarity: "黒", cl: "シービショップ", AW: "未"
+        , stats: { other: "" }
+        , note: "深海-50%"
+    }
+    , {
+        name: "ピュレスカ", rarity: "黒", cl: "シービショップ", AW: "覚醒"
+        , stats: { other: "" }
+        , note: "深海-50%"
+    }
+    , {
         name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "未"
         , stats: { other: "" }
         , note: "深海-30%"
@@ -669,6 +679,11 @@ buff.dep_gl = [
     , {
         name: "フェニカ", rarity: "黒", cl: "スカイヒーラー", AW: "覚醒"
         , stats: { rege: [ "100/秒", "50/15f" ] }
+    }
+    , {
+        name: "ちびカーニア", rarity: "ちび", cl: "スカイヒーラー"
+        , stats: { other: "" }
+        , note: "天界-20%"
     }
     , {
         name: "迷い家", cl: "迷い家"

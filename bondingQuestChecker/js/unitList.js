@@ -1561,6 +1561,10 @@ const unitList = [
     , { id: 0x05fe, implDate: "2025/07/17", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "p" , depType: "rear", class: "エレメンタラー", name: "クラリーチェ", modifier: "悪戯娘の夏", derivation: "水着" }
     , { id: 0x05ff, implDate: "2025/07/24", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "サベージファイター", name: "マータン", modifier: "白き熊戦士" }
     , { id: 0x0600, implDate: "2025/07/24", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "bh", depType: "both", class: "エレメンタルハーミット", name: "ロイジィ", modifier: "歴史を彷徨う者" }
+    , { id: 0x0601, implDate: "2025/07/31", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "ローグ", name: "ファオル", modifier: "無頼の白狼" }
+    , { id: 0x0602, implDate: "2025/07/31", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "シービショップ", name: "ピュレスカ", modifier: "蒼の海巫女" }
+    , { id: 0x0603, implDate: "2025/08/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "発明家", name: "ちびマギー" }
+    , { id: 0x0604, implDate: "2025/08/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "both", class: "スカイヒーラー", name: "ちびカーニア" }
     
     
     

@@ -1251,6 +1251,11 @@ debuff.hit = [
         , atkAttr: "貫通", dur: "?f"
     }
     , {
+        name: "ちびマギー", rarity: "ちび", cl: "発明家", skill: "通常"
+        , stats: { def: "-30%" }
+        , atkAttr: "貫通", dur: "?f"
+    }
+    , {
         name: "タイダルビショップ", cl: "シービショップ", AW: "覚2b"
         , stats: { atkCd: "+30f" }
         , atkAttr: "魔法", dur: "?f"
@@ -1452,6 +1457,30 @@ debuff.hit = [
         , stats: { mr: "-20%" }
         , atkAttr: "魔法", dur: "?f"
         , note: [ "ユニットに重ねて配置", "分類未確認" ]
+    }
+    , {
+        name: "エスエフの悪戯バルーン", rarity: "金", cl: "悪戯バルーン"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "死亡時"
+    }
+    , {
+        name: "エスエフの悪戯バルーン", rarity: "金", cl: "悪戯バルーン"
+        , stats: { atk: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "死亡時", "分類未確認" ]
+    }
+    , {
+        name: "エスエフの悪戯バルーン・赤", rarity: "金", cl: "悪戯バルーン"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "死亡時"
+    }
+    , {
+        name: "エスエフの悪戯バルーン・赤", rarity: "金", cl: "悪戯バルーン"
+        , stats: { atk: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "死亡時", "分類未確認" ]
     }
     , {
         name: "ホーネット派魔人【ランス】", cl: "ホーネット派魔人【ランス】", AW: "未"

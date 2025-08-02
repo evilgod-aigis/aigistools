@@ -80,6 +80,16 @@ buff.dep_area = [
         , note: "ロード系"
     }
     , {
+        name: "ピュレスカ", rarity: "黒", cl: "シービショップ", AW: "未"
+        , stats: { other: "" }
+        , note: "被HP回復量×1.3"
+    }
+    , {
+        name: "ピュレスカ", rarity: "黒", cl: "シービショップ", AW: "覚醒"
+        , stats: { other: "" }
+        , note: "被HP回復量×1.5"
+    }
+    , {
         name: "神威狛犬", cl: "狛犬", AW: "覚2a"
         , stats: { other: "" }
         , note: [ "狛犬系", "被HP回復量×1.2" ]
