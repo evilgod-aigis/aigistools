@@ -3416,6 +3416,30 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "クロミ", rarity: "黒", cl: "淫魔娘【モンスター娘TD】", AW: "未", skill: "通常"
+        , stats: {
+            mr: { value: "-25%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "クロミ", rarity: "黒", cl: "淫魔娘【モンスター娘TD】", AW: "覚醒", skill: "通常"
+        , stats: {
+            mr: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "クロミ", rarity: "黒", cl: "淫魔娘【モンスター娘TD】", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            stop: { value: "180f", type: "global" }
+        }
+        , domain: "global"
+        , note: "スキル発動時"
+    }
+    , {
         name: "イビルアイ", rarity: "トークン", AW: "未", skill: "通常"
         , stats: {
             stop: { value: "119f", type: "area" }

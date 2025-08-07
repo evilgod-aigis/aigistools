@@ -1740,6 +1740,18 @@ debuff.hit = [
         , note: "ジュジュカ"
     }
     , {
+        name: "ニーヴ/異装トークン", rarity: "トークン", AW: "未"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "貫通", dur: "?f"
+        , note: [ "ニーヴ/異装", "重ね置き(遠近)" ]
+    }
+    , {
+        name: "ニーヴ/異装トークン", rarity: "トークン", AW: "覚醒"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "貫通", dur: "?f"
+        , note: [ "ニーヴ/異装", "重ね置き(遠近)" ]
+    }
+    , {
         name: "最上級トラップ", rarity: "トークン", AW: "覚2b"
         , stats: { def: "-50%" }
         , atkAttr: "貫通", dur: "∞"
@@ -1779,7 +1791,7 @@ debuff.hit = [
         name: "ストレイソッドトークン", rarity: "トークン"
         , stats: { atkCd: "+?f" }
         , atkAttr: "物理", dur: "?f"
-        , note: [ "ストレイソッド", "範囲指定", "分類未確認" ]
+        , note: [ "ストレイソッド", "指定範囲", "分類未確認" ]
     }
     , {
         name: "魔導砲台", rarity: "トークン"

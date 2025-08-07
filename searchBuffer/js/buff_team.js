@@ -1733,6 +1733,11 @@ buff.team = [
         , target: { season: [ "サマー" ] }
     }
     , {
+        name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒"
+        , stats: { hp: "+10%" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
         name: "ユリクセス", rarity: "黒", cl: "神話の継承者", AW: "覚醒"
         , stats: { hp: "+15%" }
         , target: { depType: [ "近接" ] }

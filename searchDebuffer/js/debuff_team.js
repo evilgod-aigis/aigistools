@@ -299,6 +299,14 @@ debuff.team = [
         , stats: { atk: "-15%" }
         , target: { attr: [ "魚人", "水棲" ] }
     }
+    , {
+        name: "クロミ", rarity: "黒", cl: "淫魔娘【モンスター娘TD】", AW: "未"
+        , stats: { mr: "-25%" }
+    }
+    , {
+        name: "クロミ", rarity: "黒", cl: "淫魔娘【モンスター娘TD】", AW: "覚醒"
+        , stats: { mr: "-50%" }
+    }
 ];
 
 /*

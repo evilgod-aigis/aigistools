@@ -620,7 +620,7 @@ buff.unique = [
         name: "タツミ", rarity: "黒", cl: "戦巫女", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
-        , note: [ "区分：被ダメージ軽減", "属性不問-35%" ]
+        , note: [ "区分：被ダメージ軽減", "属性不問-35%(範囲)" ]
     }
     , {
         name: "カオル", rarity: "白", cl: "戦巫女", AW: "未", skill: "通常"
@@ -638,13 +638,31 @@ buff.unique = [
         name: "クリッペ", rarity: "黒", cl: "シールダー", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"
-        , note: [ "区分：被ダメージ軽減", "属性不問-50%" ]
+        , note: [ "区分：被ダメージ軽減", "属性不問-50%(範囲)" ]
+    }
+    , {
+        name: "サフィール", rarity: "黒", cl: "シールダー", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "物理魔法-40%(範囲)" ]
     }
     , {
         name: "サフィール", rarity: "黒", cl: "シールダー", AW: "覚醒", skill: "通常"
         , stats: { other: "" }
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "物理魔法-40%(範囲)" ]
+    }
+    , {
+        name: "統帥の塔", rarity: "黒", cl: "統帥の塔", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "属性不問-20%(範囲)", "分類未確認" ]
+    }
+    , {
+        name: "統帥の塔", rarity: "黒", cl: "統帥の塔", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "属性不問-20%(範囲)", "分類未確認" ]
     }
     , {
         name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒", skill: "覚醒"
@@ -694,7 +712,7 @@ buff.unique = [
         name: "イーファ/お正月", rarity: "黒", cl: "ドラグーン", AW: "覚醒", skill: [ "通常", "覚醒" ]
         , stats: { other: "" }
         , type: "dmg-red"
-        , note: [ "区分：被ダメージ軽減", "属性不問-15%", "分類未確認" ]
+        , note: [ "区分：被ダメージ軽減", "属性不問-15%(範囲)", "分類未確認" ]
     }
     , {
         name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "未", skill: "通常"

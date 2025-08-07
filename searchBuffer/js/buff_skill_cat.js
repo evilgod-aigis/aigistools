@@ -1743,6 +1743,26 @@ buff.skill_cat = [
         , target: { home: [ "王国" ] }
     }
     , {
+        name: "ティルト/異装", rarity: "黒", cl: "冥府の騎士【円卓】", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "ティルト/異装", rarity: "黒", cl: "冥府の騎士【円卓】", AW: "未", skill: "通常"
+        , stats: { range: "×1.3" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
+        name: "ティルト/異装", rarity: "黒", cl: "冥府の騎士【円卓】", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "ティルト/異装", rarity: "黒", cl: "冥府の騎士【円卓】", AW: "覚醒", skill: "通常"
+        , stats: { range: "×1.3" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
         name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.15", def: "×1.15", other: "" }
         , target: { sex: [ "女性" ] }
@@ -2995,6 +3015,54 @@ buff.skill_cat = [
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { home: [ "恋姫" ] }
         , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
+        name: "クロミ", rarity: "黒", cl: "淫魔娘【モンスター娘TD】", AW: "未", skill: "通常"
+        , stats: { atk: "×2.0" }
+        , target: { sex: [ "男性" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "クロミ", rarity: "黒", cl: "淫魔娘【モンスター娘TD】", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×2.0" }
+        , target: { sex: [ "男性" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "剣の駒", rarity: "トークン", AW: "未", skill: "通常"
+        , stats: { atk: "×1.5" }
+        , target: { race: [ "人間" ] }
+        , note: "統帥の塔"
+    }
+    , {
+        name: "盾の駒", rarity: "トークン", AW: "未", skill: "通常"
+        , stats: { def: "×1.5" }
+        , target: { race: [ "人間" ] }
+        , note: "統帥の塔"
+    }
+    , {
+        name: "杖の駒", rarity: "トークン", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3", atkCd: "-?%" }
+        , target: { others: [ "魔術師" ] }
+        , note: "統帥の塔"
+    }
+    , {
+        name: "統帥の剣", rarity: "トークン", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.5" }
+        , target: { race: [ "人間" ] }
+        , note: "統帥の塔"
+    }
+    , {
+        name: "統帥の盾", rarity: "トークン", AW: "覚醒", skill: "通常"
+        , stats: { def: "×1.5" }
+        , target: { race: [ "人間" ] }
+        , note: "統帥の塔"
+    }
+    , {
+        name: "統帥の杖", rarity: "トークン", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3", atkCd: "-?%" }
+        , target: { others: [ "魔術師" ] }
+        , note: "統帥の塔"
     }
     , {
         name: [ "暗黒学ラン騎士", "【並行世界】" ], rarity: "トークン", AW: "未", skill: "通常"
