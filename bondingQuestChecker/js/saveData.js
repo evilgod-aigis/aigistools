@@ -1,5 +1,5 @@
 const saveData = {};
-saveData.version = 3;
+saveData.version = 4;
 saveData.CHAR = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$=";
 saveData.compressChars = Object.freeze({ "0": "bc", "7": "jk", "i": "op", "U": "st", "=": "xy" });
 saveData.divider = "|";
@@ -174,6 +174,7 @@ saveData.setting.Save = _settingName => {
             break;
         case "column":
         case "rarity":
+        case "sex":
         case "depType":
         case "derivation":
         case "year":
@@ -218,6 +219,11 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             , setting: [ "unitName", "backgroundColor" ]
             , filter: [ "column", "rarity", "obtain", "depType", "derivation", "year", "year_bq", "own", "clear" ]
         }
+        , 4: {
+            saveData: [ "checkbox" ]
+            , setting: [ "unitName", "backgroundColor" ]
+            , filter: [ "column", "rarity", "sex", "obtain", "depType", "derivation", "year", "year_bq", "own", "clear" ]
+        }
     };
     
     if(_canUseIndexedDB && window.indexedDB) {
@@ -261,6 +267,10 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                             objStore.put({ dataName: "obtain", data: e2.target.result.data.replace(/ /g, "|") });
                         }
                         objStore.put({ dataName: "derivation", data: "" });
+                    }
+                case 3: {
+                        const objStore = e1.target.transaction.objectStore(saveData.objStoreName);
+                        objStore.put({ dataName: "sex", data: "" });
                     }
                     break;
             }
@@ -425,6 +435,8 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             case 2:
                 localStorage.setItem("obtain", localStorage.getItem("obtain").replace(/ /g, "|"));
                 localStorage.setItem("derivation", "");
+            case 3:
+                localStorage.setItem("sex", "");
                 localStorage.setItem("version", saveData.version);
                 break;
         }

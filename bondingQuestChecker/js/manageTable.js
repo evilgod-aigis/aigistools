@@ -4,6 +4,7 @@ table.word = {
     id: "id", unitName: "ユニット", class: "クラス", implDate: "ユニット<br />実装日", implDate_bq: "クエスト<br />実装日"
     , own: "所持<br />", clear: "クリア<br />"
     , name: "簡易", fullName: "ゲーム準拠", icon: "アイコン"
+    , female: "女性", male: "男性"
     , bh: "ブラック[英傑]", b: "ブラック", ph: "プラチナ[英傑]", p: "プラチナ", g: "ゴールド", s: "サファイア", sl: "シルバー"
     , gc: "ちび(ゴールド)"
     , sh: "召喚"
@@ -16,6 +17,8 @@ table.word = {
 
 table.unitName = [ "name", "fullName", "icon" ];
 table.rarity = [ "bh", "b", "ph", "p", "g", "s" ];
+table.rarity_unshown = [ "gc", "sl" ];
+table.sex = [ "female", "male" ];
 table.obtain = {
     sh: []
     , ev: [ "drop", "star", "item", "subj", "popu", "maji", "else" ]
@@ -23,7 +26,11 @@ table.obtain = {
     , sp: [ "gift", "shop", "code", "else" ]
 };
 table.depType = [ "vang", "rear", "both" ];
-table.derivation = [ "無印", "白の帝国", "お正月", "温泉", "バレンタイン", "学園", "バニー", "花嫁", "水着", "浴衣", "ハロウィン", "クリスマス", "私服", "その他" ];
+table.derivation = [
+    "無印", "白の帝国"
+    , "お正月", "温泉", "バレンタイン", "学園", "バニー", "花嫁", "水着", "浴衣", "ハロウィン", "クリスマス"
+    , "私服", "コラボ", "その他"
+];
 table.class = {
     vang: [
         // 英傑
@@ -109,6 +116,10 @@ table.column = [ "id", "unitName", "class", "implDate", "implDate_bq", "own", "c
 table.sortable = [ "id", "class", "implDate", "implDate_bq", "own", "clear" ];
 // 非表示可能な見出し
 table.hidable = [ "class", "implDate", "implDate_bq" ];
+// 非表示のフィルタ
+table.unshownFilterIDs = [ "filter_rarity-gc", "filter_rarity-sl", "filter-area_sex", "filter_derivation-コラボ" ];
+// 規制解除済みか
+table.isUnlimited = false;
 
 // オブジェクト生成
 table.SetObjects = () => {
@@ -121,10 +132,12 @@ table.SetObjects = () => {
     _.forEach(unitList, (unit, id) => {
         const rarity = unit.rarity;
         if("male" in unit || "collabo" in unit || rarity === "sl" || rarity === "gc") return;
+        /*
         if(id !== unit.id) {
-            console.log(`0x${unit.id.toString(16).padStart(4, "0")} -> 0x${id.toString(16).padStart(4, "0")}`)
+            console.log(`0x${unit.id.toString(16).padStart(4, "0")} -> 0x${id.toString(16).padStart(4, "0")}`);
             return;
         }
+        */
         table.tables[rarity].list.push(unit);
     });
     
@@ -150,7 +163,10 @@ table.SetObjects = () => {
     table.filter.column.implDate_bq = winWidth > 429;
     // レアリティ
     table.filter.rarity = {};
-    _.forEach(table.rarity, rarity => table.filter.rarity[rarity] = true);
+    _.forEach([ ...table.rarity, ...table.rarity_unshown ], rarity => table.filter.rarity[rarity] = true);
+    // 性別
+    table.filter.sex = {};
+    _.forEach(table.sex, sex => table.filter.sex[sex] = true);
     // 入手
     table.filter.obtain = {};
     _.forEach(table.obtain, (arr, obtain) => {
@@ -285,8 +301,9 @@ table.CreateSetting = () => {
     newFilterCont.id = "filter-content";
     newFilterCont.innerHTML = "<p>フィルタ</p>";
     
-    const CreateFilterArea = (title, filterType, isNest = false) => {
+    const CreateFilterArea = (title, filterType, needButtons = true, isNest = false) => {
         const newFliterArea = document.createElement("div");
+        newFliterArea.id = `filter-area_${filterType}`;
         newFliterArea.className = "setting-area";
         const newTitleArea = document.createElement("div");
         newTitleArea.className = "setting-title-area";
@@ -299,27 +316,30 @@ table.CreateSetting = () => {
             const newCheckboxArea = document.createElement("div");
             newCheckboxArea.id = `filter_${filterType}`;
             newCheckboxArea.className = "setting-checkbox-area";
-            CreateButtons(newCheckboxArea, filterType);
-            /* //--
-            _.forEach({ "全部ON": true, "全部OFF": false }, (bool, text) => {
-                const newButton = document.createElement("button");
-                newButton.type = "button";
-                newButton.setAttribute("onclick", `table.ToggleAllFilter(this.parentElement, ${bool}, "${filterType}")`);
-                newButton.innerHTML = text;
-                newCheckboxArea.appendChild(newButton);
-            });
-            */
-            newCheckboxArea.appendChild(document.createElement("br"));
+            if(needButtons) {
+                CreateButtons(newCheckboxArea, filterType);
+                /* //--
+                _.forEach({ "全部ON": true, "全部OFF": false }, (bool, text) => {
+                    const newButton = document.createElement("button");
+                    newButton.type = "button";
+                    newButton.setAttribute("onclick", `table.ToggleAllFilter(this.parentElement, ${bool}, "${filterType}")`);
+                    newButton.innerHTML = text;
+                    newCheckboxArea.appendChild(newButton);
+                });
+                */
+                newCheckboxArea.appendChild(document.createElement("br"));
+            }
             if(isNest) {
                 _.forEach(table.filter[filterType], (obj, key) => {
                     let newLabel = document.createElement("label");
+                    newLabel.id = `filter_${filterType}-${key}`;
                     let newCheckbox = document.createElement("input");
                     newCheckbox.type = "checkbox";
                     if(obj.checked) newCheckbox.setAttribute("checked", "true");
                     newCheckbox.setAttribute(
                         "onchange"
                         , `table.filter.${filterType}["${key}"].checked=this.checked;
-                            table.ToggleNestedCheckboxes(document.getElementById("${filterType}-${key}"), this.checked);
+                            table.ToggleNestedCheckboxes(document.getElementById("filter-area_${filterType}-${key}"), this.checked);
                             table.ApplyFilter("${filterType}")`
                     );
                     newLabel.appendChild(newCheckbox);
@@ -327,11 +347,12 @@ table.CreateSetting = () => {
                     newCheckboxArea.appendChild(newLabel);
                     if(_.size(obj.part)) CreateButtons(newCheckboxArea, `${filterType}-${key}`);
                     const newNestArea = document.createElement("div");
-                    newNestArea.id = `${filterType}-${key}`;
+                    newNestArea.id = `filter-area_${filterType}-${key}`;
                     newNestArea.classList.add("nest-area");
                     if(!obj.checked) newNestArea.classList.add("inactive");
                     _.forEach(obj.part, (bool, part) => {
                         newLabel = document.createElement("label");
+                        newLabel.id = `filter_${filterType}-${key}-${part}`;
                         newCheckbox = document.createElement("input");
                         newCheckbox.type = "checkbox";
                         if(bool) newCheckbox.setAttribute("checked", "true");
@@ -351,6 +372,7 @@ table.CreateSetting = () => {
                 _.forEach(table.filter[filterType], (bool, key) => {
                     //if(_.includes(except, key)) return;
                     const newLabel = document.createElement("label");
+                    newLabel.id = `filter_${filterType}-${key}`;
                     const newCheckbox = document.createElement("input");
                     newCheckbox.type = "checkbox";
                     if(bool) newCheckbox.setAttribute("checked", "true");
@@ -396,7 +418,8 @@ table.CreateSetting = () => {
     
     CreateFilterArea("列", "column");
     CreateFilterArea("レアリティ", "rarity");
-    CreateFilterArea("入手", "obtain", true);
+    CreateFilterArea("性別", "sex", false);
+    CreateFilterArea("入手", "obtain", true, true);
     CreateFilterArea("配置型", "depType");
     CreateFilterArea("衣装違い等", "derivation");
     CreateFilterArea("ユニ実装年", "year");
@@ -407,6 +430,7 @@ table.CreateSetting = () => {
     newSettingCont.appendChild(newFilterCont);
     newSettingWindow.appendChild(newSettingCont);
     settings.appendChild(newSettingWindow);
+    _.forEach(table.unshownFilterIDs, id => document.getElementById(id).classList.add("is-unshown"));
 }
 // 設定表示/非表示
 table.ToggleSettingShown = _this => {
@@ -434,7 +458,7 @@ table.ToggleAllFilter = (_element, _bool, _filterType) => {
         });
         _.forEach(table.filter[_filterType], obj => { obj.checked = _bool; });
     } else if(_.includes(_filterType, "obtain")) {
-        _.forEach(document.getElementById(_filterType).children, elem => {
+        _.forEach(document.getElementById(`filter-area_${_filterType}`).children, elem => {
             if(elem.tagName === "LABEL"/*&& !elem.classList.contains("except")*/) elem.firstElementChild.checked = _bool;
         });
         const [ filterType, key ] = _filterType.split("-");
@@ -510,6 +534,7 @@ table.CreateTable = () => {
         const newTbody = document.createElement("tbody");
         _.forEach(obj.list, unit => {
             newTr = document.createElement("tr");
+            newTr.classList.add(`sex-${unit.male ? "male" : "female"}`);
             newTr.classList.add(`obtain-${unit.obtain[0]}`);
             if(unit.obtain[1]) newTr.classList.add(`obtain-${unit.obtain[0]}-${unit.obtain[1]}`);
             newTr.classList.add(`depType-${unit.depType}`);
@@ -517,16 +542,20 @@ table.CreateTable = () => {
             if("derivation" in unit) {
                 if(_.includes(table.derivation, unit.derivation))
                     newTr.classList.add(`derivation-${unit.derivation}`);
-                else newTr.classList.add(`derivation-その他`);
+                else newTr.classList.add("derivation-その他");
                 isGeneric = false;
             }
             if("latent" in unit) {
-                _.forEach(Array.isArray(unit.latent) ? unit.latent : [unit.latent ], latent => {
+                _.forEach(Array.isArray(unit.latent) ? unit.latent : [ unit.latent ], latent => {
                     if(_.includes(table.derivation, latent))
                         newTr.classList.add(`derivation-${latent}`);
-                    else newTr.classList.add(`derivation-その他`);
+                    else newTr.classList.add("derivation-その他");
                     if(latent === "白の帝国") isGeneric = false;
                 });
+            }
+            if("collabo" in unit) {
+                newTr.classList.add("derivation-コラボ");
+                isGeneric = false;
             }
             if(isGeneric) newTr.classList.add(`derivation-無印`);
             newTr.classList.add(`year-${unit.implDate.slice(0, 4)}`);
@@ -623,7 +652,7 @@ table.CreateTable = () => {
                     sheet.insertRule(`#tables .${filterType}-${key} {}`, sheet.cssRules.length);
                     _.forEach(obj2.part, (bool, part) => sheet.insertRule(`#tables .${filterType}-${key}-${part} {}`, sheet.cssRules.length));
                 });
-            } */else if(filterType !== "rarity" || filterType !== "obtain" || filterType !== "derivation")
+            } */else if(filterType !== "rarity" && filterType !== "obtain" && filterType !== "derivation")
                 _.forEach(obj, (bool, key) => sheet.insertRule(`#tables .${filterType}-${key} {}`, sheet.cssRules.length));
         });
     }
@@ -790,6 +819,7 @@ table.ApplyFilter = (_filterType = null, _judgeDisplay = true) => {
         case "rarity":
             _.forEach(table.filter.rarity, (bool, rarity) => {
                 const tableArea = document.getElementById(`table-area_${rarity}`);
+                if(!tableArea) return;
                 if(bool) tableArea.classList.remove("is-unshown");
                 else tableArea.classList.add("is-unshown");
             });

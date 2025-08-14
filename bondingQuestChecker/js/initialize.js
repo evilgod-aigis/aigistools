@@ -5,6 +5,14 @@ window.addEventListener("DOMContentLoaded", () => {
     const buttons = checkStateArea.getElementsByTagName("button");
     const input = checkStateArea.getElementsByTagName("input")[0];
     input.value = "";
+    // enter
+    input.addEventListener("keydown", e => {
+        if(e.key === "Enter") {
+            buttons[3].dispatchEvent(new PointerEvent("click"));
+            e.preventDefault();
+        }
+        return false;
+    })
     const report = document.getElementById("report");
     const displayTime = 2000;
     /*
@@ -65,7 +73,29 @@ window.addEventListener("DOMContentLoaded", () => {
         if(text === "") newSpan.innerHTML = "";
         else if(text === saveData.version + saveData.divider + saveData.checkbox.data_short)
             newSpan.innerHTML = "変化なし";
-        else {
+        else if(_.includes([ "全表示", "「全表示」", "全部表示", "規制解除", "show all", "display all" ], text)) {
+            if(table.isUnlimited) {
+                input.value = "";
+                newSpan.innerHTML = "表示済み";
+            } else {
+                table.rarity.push(...table.rarity_unshown);
+                _.forEach(table.rarity, rarity => table.tables[rarity] = { list: [], sortedBy: "id" });
+                _.forEach(unitList, (unit, id) => {
+                    /*
+                    if(id !== unit.id) {
+                        console.log(`0x${unit.id.toString(16).padStart(4, "0")} -> 0x${id.toString(16).padStart(4, "0")}`);
+                        return;
+                    }
+                    */
+                    table.tables[unit.rarity].list.push(unit);
+                });
+                _.forEach(table.unshownFilterIDs, id => document.getElementById(id).classList.remove("is-unshown"));
+                table.CreateTable();
+                input.value = "";
+                newSpan.innerHTML = "全表示！";
+                table.isUnlimited = true;
+            }
+        } else {
             text = text.split(saveData.divider);
             let canLoad =
                 text.length === 2

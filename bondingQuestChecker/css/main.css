@@ -329,8 +329,24 @@ img {
     top: 0;
     background: rgba(255, 255, 255, 1);
 }
+#outline p {
+    position: relative;
+    margin: 0 0 0.5em 1em;
+}
 #outline p::before {
     content: "・";
+    position: absolute;
+    left: -1em;
+}
+#outline .supplement {
+    position: relative;
+    display: block;
+    margin: 0 0 0 1.5em;
+}
+#outline .supplement::before {
+    content: "→";
+    position: absolute;
+    left: -1em;
 }
 #updated {
     margin: 10px 0;
