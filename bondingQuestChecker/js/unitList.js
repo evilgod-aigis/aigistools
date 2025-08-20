@@ -1570,6 +1570,10 @@ const unitList = [
     , { id: 0x0607, implDate: "2025/08/05", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "淫魔娘【モンスター娘TD】", name: "クロミ", modifier: "リリス娘", collabo: 1 }
     , { id: 0x0608, implDate: "2025/08/05", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "vang", class: "冥府の騎士【円卓】", name: "ティルト", modifier: "円卓城の異装", derivation: "異装", latent: "白の帝国", collabo: 1 }
     , { id: 0x0609, implDate: "2025/08/12", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "ソルジャー", name: "ちびクレイブ", male: 1 }
+    , { id: 0x060a, implDate: "2025/08/19", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "vang", class: "オートマタ", name: "ファリエ", modifier: "塔の守護人形" }
+    , { id: 0x060b, implDate: "2025/08/19", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ガンスリンガー", name: "デステリカ", modifier: "祭夜の凶銃", derivation: "浴衣" }
+    , { id: 0x060c, implDate: "2025/08/19", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "妖糸使い", name: "クローシェ", modifier: "夏夜の紫編", derivation: "浴衣" }
+    , { id: 0x060d, implDate: "2025/08/19", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "vang", class: "ワルキューレ", name: "チャムチャム", modifier: "魔界式夏祭", derivation: "浴衣" }
     
     
     
