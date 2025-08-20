@@ -1496,6 +1496,22 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "クローシェ/浴衣", rarity: "白", cl: "妖糸使い", AW: "未", skill: "通常"
+        , stats: {
+            atk: { value: "-40%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "クローシェ/浴衣", rarity: "白", cl: "妖糸使い", AW: "覚醒", skill: "通常"
+        , stats: {
+            atk: { value: "-40%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "ヴァイセカイゼリン", cl: "初代皇帝", AW: "覚2a"
         , stats: {
             atk: { value: "-20%", type: "noAttr" }

@@ -297,6 +297,11 @@ buff.add = [
         , target: { season: [ "学園" ] }
     }
     , {
+        name: "王国ファッションショー", rarity: "金", cl: "王国ランウェイ"
+        , stats: { hp: "max1000", def: "max300" }
+        , target: { sex: [ "女性" ] }
+    }
+    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "未"
         , stats: { hp: "max300", atk: "max150", def: "max150" }
         , target: { cl: [ "王子" ] }

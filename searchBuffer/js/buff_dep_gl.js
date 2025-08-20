@@ -94,6 +94,22 @@ buff.dep_gl = [
         , target: { season: [ "サマー" ] }
     }
     , {
+        name: "チャムチャム/浴衣", rarity: "白", cl: "ワルキューレ", AW: "未"
+        , stats: { def: "+3%", mr: "+5" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "魔界" ] }
+        ]
+    }
+    , {
+        name: "チャムチャム/浴衣", rarity: "白", cl: "ワルキューレ", AW: "覚醒"
+        , stats: { def: "+5%", mr: "+5" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "魔界" ] }
+        ]
+    }
+    , {
         name: "ちびレシア", rarity: "ちび", cl: "ワルキューレ"
         , stats: { draw: "○" }
         , target: { cl: [ "ワルキューレ" ] }

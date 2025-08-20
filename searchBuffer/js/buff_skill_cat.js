@@ -150,6 +150,16 @@ buff.skill_cat = [
         , note: "永続スキル"
     }
     , {
+        name: "チャムチャム/浴衣", rarity: "白", cl: "ワルキューレ", AW: "未", skill: "通常"
+        , stats: { hp: "+20%", atk: "×1.2", def: "×1.2" }
+        , target: { season: [ "サマー" ] }
+    }
+    , {
+        name: "チャムチャム/浴衣", rarity: "白", cl: "ワルキューレ", AW: "覚醒", skill: "通常"
+        , stats: { hp: "+20%", atk: "×1.2", def: "×1.2" }
+        , target: { season: [ "サマー" ] }
+    }
+    , {
         name: "ヨシノ", rarity: "黒", cl: "プリンセス", AW: "未", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { cl: [ "サムライ", "忍者" ] }
@@ -2707,6 +2717,15 @@ buff.skill_cat = [
         , target: { cl: [ "ダーク王子" ] }
     }
     , {
+        name: "デステリカ/浴衣", rarity: "黒", cl: "ガンスリンガー", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.2", range: "×1.2" }
+        , target: [
+            { season: [ "サマー" ] }
+            , { others: [ "銃士" ] }
+        ]
+        , note: "分類未確認"
+    }
+    , {
         name: "シルヴァーナ", rarity: "白", cl: "ガンスリンガー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.3" }
         , target: { others: [ "銃士" ] }
@@ -3050,19 +3069,19 @@ buff.skill_cat = [
         name: "統帥の剣", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.5" }
         , target: { race: [ "人間" ] }
-        , note: "統帥の塔"
+        , note: [ "塔の管理者", "(統帥の塔系)" ]
     }
     , {
         name: "統帥の盾", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { def: "×1.5" }
         , target: { race: [ "人間" ] }
-        , note: "統帥の塔"
+        , note: [ "塔の管理者", "(統帥の塔系)" ]
     }
     , {
         name: "統帥の杖", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.3", atkCd: "-?%" }
         , target: { others: [ "魔術師" ] }
-        , note: "統帥の塔"
+        , note: [ "塔の管理者", "(統帥の塔系)" ]
     }
     , {
         name: [ "暗黒学ラン騎士", "【並行世界】" ], rarity: "トークン", AW: "未", skill: "通常"
