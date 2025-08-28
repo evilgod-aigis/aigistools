@@ -1115,6 +1115,16 @@ buff.team = [
         , target: { season: [ "サマー" ], depType: [ "近接" ] }
     }
     , {
+        name: "アリシア/新装", rarity: "黒", cl: "ロイヤルガード", AW: "未"
+        , stats: { hp: "+7%" }
+        , target: { others: [ "騎兵", "重装"] }
+    }
+    , {
+        name: "アリシア/新装", rarity: "黒", cl: "ロイヤルガード", AW: "覚醒"
+        , stats: { hp: "+10%" }
+        , target: { others: [ "騎兵", "重装"] }
+    }
+    , {
         name: "アリシア", rarity: "白", cl: "ロイヤルガード", AW: "未"
         , stats: { atk: "+3%", def: "+3%" }
         , target: { cl: [ "ワルキューレ", "ペガサスライダー", "ドラゴンライダー", "魔竜騎士", "ロイヤルガード"] }
@@ -1759,6 +1769,16 @@ buff.team = [
         ]
     }
     , {
+        name: "白虎", rarity: "黒", cl: "西の守護虎", AW: "未"
+        , stats: { atkCd: "-?%" }
+        , target: { home: [ "華の国" ] }
+    }
+    , {
+        name: "白虎", rarity: "黒", cl: "西の守護虎", AW: "覚醒"
+        , stats: { atkCd: "-?%" }
+        , target: { home: [ "華の国" ] }
+    }
+    , {
         name: "ちびチェインソン男", rarity: "ちび", cl: "チェインソン男"
         , stats: { atk: "+5%", mr: "+5" }
         , target: { others: [ "アンデッド" ] }
@@ -2107,6 +2127,16 @@ buff.team = [
         name: "ファルネ/花嫁", rarity: "黒", cl: "サモナー", AW: "覚醒"
         , stats: { mr: "+10" }
         , target: { sex: [ "女性" ] }
+    }
+    , {
+        name: "リノ/新装", rarity: "黒", cl: "サモナー", AW: "未"
+        , stats: { hp: "+10%", atk: "+10%" }
+        , target: { cl: [ "サモナー", "デモンサモナー", "異界召喚士", "アイドル召喚士" ] }
+    }
+    , {
+        name: "リノ/新装", rarity: "黒", cl: "サモナー", AW: "覚醒"
+        , stats: { hp: "+20%", atk: "+20%" }
+        , target: { cl: [ "サモナー", "デモンサモナー", "異界召喚士", "アイドル召喚士" ] }
     }
     , {
         name: "ミア", rarity: "白", cl: "風水使い", AW: "覚醒"

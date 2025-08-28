@@ -511,6 +511,16 @@ buff.skill_area = [
         , stats: { atkCd: "1f化" }
     }
     , {
+        name: "リノ/新装", rarity: "黒", cl: "サモナー", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3", range: "×1.2" }
+        , note: "分類未確認"
+    }
+    , {
+        name: "リノ/新装", rarity: "黒", cl: "サモナー", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3", range: "×1.2" }
+        , note: "分類未確認"
+    }
+    , {
         name: "リンネ", rarity: "黒", cl: "風水使い", AW: "未", skill: "通常"
         , stats: { eva: "50%" }
     }

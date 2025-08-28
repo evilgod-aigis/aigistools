@@ -1203,6 +1203,22 @@ buff.dep_gl = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "祓剣主神/闘兵", rarity: "黒", cl: "儀仗軍神", AW: "未"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: [
+            { home: [ "東の国" ] }
+            , { race: [ "神" ] }
+        ]
+    }
+    , {
+        name: "祓剣主神/闘兵", rarity: "黒", cl: "儀仗軍神", AW: "覚醒"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: [
+            { home: [ "東の国" ] }
+            , { race: [ "神" ] }
+        ]
+    }
+    , {
         name: "ちび祓剣主神", rarity: "ちび", cl: "儀仗軍神"
         , stats: { atk: "+10%" }
         , target: { depType: [ "近接" ] }

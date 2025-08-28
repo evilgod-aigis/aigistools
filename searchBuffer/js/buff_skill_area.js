@@ -82,6 +82,16 @@ buff.skill_area = [
         , note: "ボムスキル"
     }
     , {
+        name: "リノ/新装", rarity: "黒", cl: "サモナー", AW: "未", skill: "通常"
+        , stats: { atkCd: "-?%" }
+        , target: { cl: [ "サモナー" ] }
+    }
+    , {
+        name: "リノ/新装", rarity: "黒", cl: "サモナー", AW: "覚醒", skill: [ "通常", "覚醒" ]
+        , stats: { atkCd: "-?%" }
+        , target: { cl: [ "サモナー" ] }
+    }
+    , {
         name: "アンナ/お正月", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒"
         , stats: { eva: "20%" }
         , target: [

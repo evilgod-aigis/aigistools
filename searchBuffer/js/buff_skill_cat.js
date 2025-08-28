@@ -710,6 +710,18 @@ buff.skill_cat = [
         , note: "永続スキル"
     }
     , {
+        name: "アリシア/新装", rarity: "黒", cl: "ロイヤルガード", AW: "未", skill: "通常"
+        , stats: { atk: "×2.0" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
+        name: "アリシア/新装", rarity: "黒", cl: "ロイヤルガード", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×2.0" }
+        , target: { cl: [ "王子" ] }
+        , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
         name: "アリシア", rarity: "白", cl: "ロイヤルガード", AW: "未", skill: "通常"
         , stats: { atk: "×2.0" }
         , target: { cl: [
