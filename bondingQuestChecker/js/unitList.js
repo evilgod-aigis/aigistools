@@ -1580,6 +1580,8 @@ const unitList = [
     , { id: 0x0611, implDate: "2025/08/28", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "p" , depType: "vang", class: "東の守護龍", name: "青龍", modifier: "華の四神 " }//, extra: { obtain: [ "sh" ] } }
     , { id: 0x0612, implDate: "2025/08/28", implDate_bq: null        , obtain: [ "ev", "popu" ], rarity: "b" , depType: "vang", class: "儀仗軍神", name: "祓剣主神", modifier: "剣神大祭 ", derivation: "闘兵" }
     , { id: 0x0613, implDate: "2025/08/28", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "gc", depType: "vang", class: "初代皇帝", name: "ちびヴィラヘルム" }//, extra: { obtain: [ "tr", "rain" ] } }
+    , { id: 0x0614, implDate: "2025/09/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "ワルキューレ", name: "ちびフリア" }
+    , { id: 0x0615, implDate: "2025/09/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ドラゴンメイジ", name: "ちびコラリー" }
     
     
     

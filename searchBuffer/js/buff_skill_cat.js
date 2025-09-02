@@ -160,6 +160,12 @@ buff.skill_cat = [
         , target: { season: [ "サマー" ] }
     }
     , {
+        name: "ちびフリア", rarity: "ちび", cl: "ワルキューレ", skill: "通常"
+        , stats: { draw: "(○)", redep: "40秒" }
+        , target: { race: [ "人間", "天使", "鳥人", "天界人"/*, "半神"*/ ] }
+        , note: "永続スキル"
+    }
+    , {
         name: "ヨシノ", rarity: "黒", cl: "プリンセス", AW: "未", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { cl: [ "サムライ", "忍者" ] }
