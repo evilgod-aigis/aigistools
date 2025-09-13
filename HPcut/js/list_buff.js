@@ -30,6 +30,17 @@ lists.buff.rWT.list = [
         , tooltip: "[編成] 全味方の初動-25%"
     }
     , {
+        id: null, buffer: "小覇王【恋姫】", isClass: true, awaken: "未"
+        , value: 10, disabled: null, req: "team"
+        , tooltip: "[編成] 全味方の初動-10%"
+    }
+    , {
+        id: null, buffer: "風雲児【恋姫】", isClass: true, awaken: "覚醒"
+        , value: 20, disabled: null, req: "team"
+        , compound: { haste: [ { buffer: "孫策 伯符" } ] }
+        , tooltip: "[編成] 全味方の初動-20%"
+    }
+    , {
         id: null, buffer: "発明家", isClass: true, awaken: "未"
         , value: 20, disabled: null, req: "team"
         , target: [ { attribution: [ "機械" ] } ]
@@ -76,17 +87,6 @@ lists.buff.rWT.list = [
         , tooltip: "[編成] 属性：機械の初動-30%"
     }
     , {
-        id: null, buffer: "小覇王【恋姫】", isClass: true, awaken: "未"
-        , value: 10, disabled: null, req: "team"
-        , tooltip: "[編成] 全味方の初動-10%"
-    }
-    , {
-        id: null, buffer: "風雲児【恋姫】", isClass: true, awaken: "覚醒"
-        , value: 20, disabled: null, req: "team"
-        , compound: { haste: [ { buffer: "孫策 伯符" } ] }
-        , tooltip: "[編成] 全味方の初動-20%"
-    }
-    , {
         id: null, buffer: "井河アサギ", awaken: "覚醒"
         , value: 40, disabled: null, req: "team"
         , target: [ { deployType: [ "近接型" ] } ]
@@ -115,8 +115,7 @@ lists.buff.rWT.list = [
     , {
         id: null, buffer: "竜姫婚姻譚メリュジアナ", awaken: "覚醒", showAwaken: true
         , value: 25, disabled: null, req: "team"
-        , target: [
-            { attribution: [ "ジューンブライド", "ドラゴン" ] } ]
+        , target: [ { attribution: [ "ジューンブライド", "ドラゴン" ] } ]
         , tooltip: "\
             [編成] 属性：ジューンブライド・ドラゴンの初動-25%\
         "
@@ -371,7 +370,7 @@ lists.buff.rCT.list = [
         id: null, buffer: "帝国悪魔召喚士ザミエル", awaken: "覚醒"
         , value: 50, disabled: null, req: "skill"
         , target: [ { attribution: [ "白の帝国", "魔界" ] } ]
-        , tooltip: "[スキル・範囲] 属性：白の帝国・魔界の再動-50%"
+        , tooltip: "[スキル・射程内] 属性：白の帝国・魔界の再動-50%"
         , unitInfo: {
             unitName: "帝国悪魔召喚士ザミエル", deployType: "遠距離型", rarity: "白"
             , unitClass: { selected: "デモンサモナー系" }
@@ -576,6 +575,38 @@ lists.buff.haste.list = [
         , target: [ { attribution: [ "アンデッド", "温泉" ] } ]
         , tooltip: "[編成] 属性：アンデッド・温泉の攻撃硬直-20%"
     }
+    /*
+    , {
+        id: null, buffer: "円卓城の異装ティルト", awaken: "通常"
+        , value: , disabled: null, req: "skill"
+        , tooltip: "[スキル・射程内] 全味方の攻撃硬直-%"
+        , unitInfo: {
+            unitName: "円卓城の異装ティルト", deployType: "近接型", rarity: "黒"
+            , unitClass: { selected: "冥府の騎士【円卓】系" }
+            , attribution: [ "白の帝国", "冥界人" ]
+            , note: [ "女性" ]
+            , WT: 1, CT: 45, dur: 40
+        }
+    }
+    , {
+        id: null, buffer: "華の四神 白虎", awaken: "未", showAwaken: true
+        , value: , disabled: null, req: "team"
+        , target: [ { attribution: [ "華の国" ] } ]
+        , tooltip: "[編成] 属性：華の国の攻撃硬直-%"
+    }
+    , {
+        id: null, buffer: "華の四神 白虎", awaken: "覚醒", showAwaken: true
+        , value: , disabled: null, req: "team"
+        , target: [ { attribution: [ "華の国" ] } ]
+        , tooltip: "[編成] 属性：華の国の攻撃硬直-%"
+    }
+    */
+    , {
+        id: null, buffer: "孫策 伯符", awaken: "-"
+        , value: 20, disabled: null, req: "team"
+        , compound: { rWT: [ { buffer: "風雲児【恋姫】" } ] }
+        , tooltip: "[編成] 全味方の攻撃硬直-20%"
+    }
     , {
         id: null, buffer: "歴戦弓兵ダニエラ", awaken: "-"
         , value: 20, disabled: null, req: "team"
@@ -588,6 +619,32 @@ lists.buff.haste.list = [
         , target: [ { attribution: [ "クリスマス" ] } ]
         , tooltip: "[編成] 属性：クリスマスの攻撃硬直-20%"
     }
+    /*
+    , {
+        id: null, buffer: "火蜥蜴の召喚士リノ", awaken: "通常", showAwaken: true
+        , value: , disabled: null, req: "skill"
+        , tooltip: "[スキル・射程内] クラス：サモナー系の攻撃硬直-%"
+        , unitInfo: {
+            unitName: "火蜥蜴の召喚士リノ", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "サモナー系" }
+            , attribution: [ "人間", "魔術師" ]
+            , note: [ "女性" ]
+            , WT: 1, CT: 25, dur: 30
+        }
+    }
+    , {
+        id: null, buffer: "火蜥蜴の召喚士リノ", awaken: "覚醒", showAwaken: true
+        , value: , disabled: null, req: "skill"
+        , tooltip: "[スキル・射程内] クラス：サモナー系の攻撃硬直-%"
+        , unitInfo: {
+            unitName: "火蜥蜴の召喚士リノ", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "サモナー系" }
+            , attribution: [ "人間", "魔術師" ]
+            , note: [ "女性" ]
+            , WT: 5, CT: 5, dur: Infinity
+        }
+    }
+    */
     , {
         id: null, buffer: "時の調停者トワ", awaken: "-"
         , value: 20, disabled: null, req: "team"
@@ -597,13 +654,13 @@ lists.buff.haste.list = [
     , {
         id: null, buffer: "帝国辺境総督アレイダ", awaken: "未", showAwaken: true
         , value: 25, disabled: null, req: "team"
-        , target: [ { deployType: [ "近接型" ] , attribution: [ "白の帝国" ] } ]
+        , target: [ { deployType: [ "近接型" ], attribution: [ "白の帝国" ] } ]
         , tooltip: "[編成] 属性：白の帝国の近接ユニットの攻撃硬直-25%"
     }
     , {
         id: null, buffer: "帝国辺境総督アレイダ", awaken: "覚醒", showAwaken: true
         , value: 35, disabled: null, req: "team"
-        , target: [ { deployType: [ "近接型" ] , attribution: [ "白の帝国" ] } ]
+        , target: [ { deployType: [ "近接型" ], attribution: [ "白の帝国" ] } ]
         , tooltip: "[編成] 属性：白の帝国の近接ユニットの攻撃硬直-35%"
     }
     , {
@@ -654,31 +711,53 @@ lists.buff.haste.list = [
         id: null, buffer: "新年撃ち初めイーファ", awaken: "未", showAwaken: true
         , value: 20, disabled: null, req: "team"
         , target: [ { attribution: [ "お正月", "ドラゴン" ] } ]
-        , tooltip: "[範囲] 属性：お正月・ドラゴンの攻撃硬直-20%"
+        , tooltip: "[射程内] 属性：お正月・ドラゴンの攻撃硬直-20%"
     }
     , {
         id: null, buffer: "新年撃ち初めイーファ", awaken: "覚醒", showAwaken: true
         , value: 30, disabled: null, req: "team"
         , target: [ { attribution: [ "お正月", "ドラゴン" ] } ]
-        , tooltip: "[範囲] 属性：お正月・ドラゴンの攻撃硬直-30%"
+        , tooltip: "[射程内] 属性：お正月・ドラゴンの攻撃硬直-30%"
     }
     , {
         id: null, buffer: "歴史の観測者ホルミース", awaken: "覚2a", showAwaken: true
         , value: 30, disabled: null, req: "deploy"
         , target: [ { attribution: [ "人間", "神", "半神" ] } ]
-        , tooltip: "[範囲] 属性：人間・神・半神の攻撃硬直-30%"
+        , tooltip: "[射程内] 属性：人間・神・半神の攻撃硬直-30%"
     }
+    /*
+    , {
+        id: null, buffer: "夏侯淵 妙才", awaken: "通常", showAwaken: true
+        , value: , disabled: null, req: "skill"
+        , tooltip: "[スキル・射程内] 属性：恋姫の攻撃硬直-%"
+        , unitInfo: {
+            unitName: "夏侯淵 妙才", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "弓将【恋姫】系" }
+            , attribution: [ "恋姫", "人間", "弓兵" ]
+            , note: [ "女性" ]
+            , WT: 1, CT: 70, dur: Infinity
+        }
+    }
+    // compound: { giveDmgMul: [ { buffer: "夏侯淵 妙才" } ] } 相手のコメントアウト
+    , {
+        id: null, buffer: "夏侯淵 妙才", awaken: "覚醒", showAwaken: true
+        , value: , disabled: null, req: "skill"
+        , compound: { giveDmgMul: [ { buffer: "夏侯淵 妙才" } ] }
+        , tooltip: "[スキル・射程内] 属性：恋姫の攻撃硬直-%"
+        , unitInfo: {
+            unitName: "夏侯淵 妙才", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "弓将【恋姫】系" }
+            , attribution: [ "恋姫", "人間", "弓兵" ]
+            , note: [ "女性" ]
+            , WT: 5, CT: 40, dur: 50
+        }
+    }
+    */
     , {
         id: null, buffer: "妖魔の旋律アミー", awaken: "覚2a", showAwaken: true
         , value: 30, disabled: null, req: "deploy"
         , target: [ { attribution: [ "魔界" ] } ]
-        , tooltip: "[範囲] 属性：魔界の攻撃硬直-30%"
-    }
-    , {
-        id: null, buffer: "孫策 伯符", awaken: "-"
-        , value: 20, disabled: null, req: "team"
-        , compound: { rWT: [ { buffer: "風雲児【恋姫】" } ] }
-        , tooltip: "[編成] 全味方の攻撃硬直-20%"
+        , tooltip: "[射程内] 属性：魔界の攻撃硬直-30%"
     }
     , {
         // 区分が好感度と同じらしいので、対象が出てきたら要プログラム見直し
@@ -697,6 +776,20 @@ lists.buff.haste.list = [
             , WT: 1, CT: 60, dur: Infinity
         }
     }
+    /*
+    , {
+        id: null, buffer: "統帥の杖", awaken: "-"
+        , value: , disabled: null, req: "skill"
+        , target: [ { attribution: [ "魔術師" ] } ]
+        , tooltip: "[スキル・射程内] 属性：魔術師の攻撃硬直-%"
+        , unitInfo: {
+            unitName: "統帥の杖", deployType: "遠距離型", rarity: "-"
+            , unitClass: { selected: "-" }
+            , attribution: [], note: []
+            , WT: 1, CT: 60, dur: 30
+        }
+    }
+    */
 ];
 
 // 硬直短縮(固定値化)リスト
@@ -832,7 +925,7 @@ lists.buff.hasteFixed.list = [
         id: null, buffer: "婚礼つむじ風金糸雀姉妹", awaken: "通常"
         , value: 11, disabled: null, req: "skill"
         , target: [ { unitClass: [ "かまいたち系", "ちびかまいたち", "ちび疾風かまいたち", "かまいたち", "疾風かまいたち", "風刃かまいたち", "夜風闇刃かまいたち" ] } ]
-        , tooltip: "[スキル・範囲] クラス：かまいたち系の攻撃硬直6f化"
+        , tooltip: "[スキル・射程内] クラス：かまいたち系の攻撃硬直6f化"
         , unitInfo: {
             unitName: "婚礼つむじ風金糸雀姉妹", deployType: "近接型", rarity: "白"
             , unitClass: { selected: "かまいたち系" }
@@ -1150,6 +1243,19 @@ lists.buff.takenDmg.list = [
         id: null, buffer: "叡智の管理者プリニース", awaken: "覚醒", showAwaken: true
         , value: 15, disabled: null, req: "deploy"
         , tooltip: "[射程内] 被ダメージが15%上昇"
+    }
+    , {
+        id: null, buffer: "夏侯淵 妙才", awaken: "覚醒"
+        , value: 30, disabled: null, req: "skill"
+        //, compound: { haste: [ { buffer: "夏侯淵 妙才" } ] }
+        , tooltip: "[スキル・射程内] 被ダメージが30%上昇"
+        , unitInfo: {
+            unitName: "夏侯淵 妙才", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "弓将【恋姫】系" }
+            , attribution: [ "恋姫", "人間", "弓兵" ]
+            , note: [ "女性" ]
+            , WT: 5, CT: 40, dur: 50
+        }
     }
 ];
 

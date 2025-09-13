@@ -2809,6 +2809,18 @@ buff.team = [
         , target: { home: [ "恋姫" ] }
     }
     , {
+        name: "曹操 孟徳", rarity: "黒", cl: "奸雄【恋姫】", AW: "未"
+        , stats: { other: "" }
+        , target: { sex: [ "女性" ] }
+        , note: "追撃(24%)付与"
+    }
+    , {
+        name: "曹操 孟徳", rarity: "黒", cl: "奸雄【恋姫】", AW: "覚醒"
+        , stats: { other: "" }
+        , target: { sex: [ "女性" ] }
+        , note: "追撃(30%)付与"
+    }
+    , {
         name: "諸葛亮", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { home: [ "恋姫" ], depType: [ "近接" ] }
@@ -2835,12 +2847,12 @@ buff.team = [
     }
     , {
         name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "未"
-        , stats: { hp: "+7%" }
+        , stats: { hp: "+10%" }
         , target: { home: [ "恋姫" ] }
     }
     , {
         name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒"
-        , stats: { hp: "+10%" }
+        , stats: { hp: "+15%", atk: "+10%" }
         , target: { home: [ "恋姫" ] }
     }
     , {

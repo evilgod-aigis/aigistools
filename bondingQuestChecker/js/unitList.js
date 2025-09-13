@@ -1582,6 +1582,10 @@ const unitList = [
     , { id: 0x0613, implDate: "2025/08/28", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "gc", depType: "vang", class: "初代皇帝", name: "ちびヴィラヘルム" }//, extra: { obtain: [ "tr", "rain" ] } }
     , { id: 0x0614, implDate: "2025/09/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "ワルキューレ", name: "ちびフリア" }
     , { id: 0x0615, implDate: "2025/09/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ドラゴンメイジ", name: "ちびコラリー" }
+    , { id: 0x0616, implDate: "2025/09/11", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "武将【恋姫】", name: "夏侯惇 元譲", collabo: 1 }
+    , { id: 0x0617, implDate: "2025/09/11", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "奸雄【恋姫】", name: "曹操 孟徳", collabo: 1 }
+    , { id: 0x0618, implDate: "2025/09/11", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "弓将【恋姫】", name: "夏侯淵 妙才", collabo: 1 }
+    , { id: 0x0619, implDate: "2025/09/11", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "p" , depType: "vang", class: "武将【恋姫】", name: "楽進 文謙", collabo: 1 }
     
     
     

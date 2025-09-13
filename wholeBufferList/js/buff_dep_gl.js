@@ -755,12 +755,12 @@ buff.dep_gl = [
     , {
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "未"
         , stats: { other: "" }
-        , note: "地形-30%"
+        , note: "地形-40%"
     }
     , {
         name: "諸葛亮 孔明", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒"
         , stats: { other: "" }
-        , note: "地形-50%"
+        , note: "地形-60%"
     }
     , {
         name: "キング", rarity: "黒", cl: "妖精【七つの大罪】", AW: "覚醒", skill: "非"

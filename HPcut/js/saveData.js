@@ -156,7 +156,10 @@ funcs.saveData.DeleteData = (dataName, path = null) => {
                 _.unset(obj.data, path);
                 if(_.endsWith(path, "]")) {
                     const pathBeforeArray = _.dropRight(_.dropRightWhile(path, c => c !== "[")).join("");
-                    _.pull(_.get(obj.data, pathBeforeArray), undefined);
+                    if(pathBeforeArray === "")
+                        _.pull(obj.data, undefined);
+                    else
+                        _.pull(_.get(obj.data, pathBeforeArray), undefined);
                 }
                 const requestUpdate = objStore.put(obj);
                 requestUpdate.onsuccess = e => {}

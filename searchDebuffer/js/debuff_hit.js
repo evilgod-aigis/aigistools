@@ -1521,6 +1521,18 @@ debuff.hit = [
         , atkAttr: "魔法", dur: "?f"
     }
     , {
+        name: "夏侯惇 元譲", rarity: "黒", cl: "武将【恋姫】", AW: "未", skill: "通常"
+        , stats: { atk: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "夏侯惇 元譲", rarity: "黒", cl: "武将【恋姫】", AW: "覚醒", skill: "通常"
+        , stats: { atk: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "奸雄【恋姫】", cl: "奸雄【恋姫】", AW: "未"
         , stats: { atk: "-20%" }
         , atkAttr: "物理", dur: "?f"

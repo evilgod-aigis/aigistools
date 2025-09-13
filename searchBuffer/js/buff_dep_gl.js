@@ -1868,6 +1868,12 @@ buff.dep_gl = [
         , target: { sex: [ "女性" ] }
     }
     , {
+        name: [ "曹家の旗トークン", "(名前の情報募集中)" ], rarity: "金", cl: "曹家の旗"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: { home: [ "恋姫" ] }
+        , note: [ "自身と競合せず加算", "分類未確認" ]
+    }
+    , {
         name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "未"
         , stats: { draw: "○" }
         , target: { home: [ "恋姫" ] }
@@ -1875,6 +1881,16 @@ buff.dep_gl = [
     , {
         name: "董卓 仲穎", rarity: "黒", cl: "暴君【恋姫】", AW: "覚醒"
         , stats: { draw: "○" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
+        name: "夏侯淵 妙才", rarity: "黒", cl: "弓将【恋姫】", AW: "未"
+        , stats: { atk: "+7%", def: "+7%" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
+        name: "夏侯淵 妙才", rarity: "黒", cl: "弓将【恋姫】", AW: "覚醒"
+        , stats: { atk: "+10%", def: "+10%" }
         , target: { home: [ "恋姫" ] }
     }
     , {

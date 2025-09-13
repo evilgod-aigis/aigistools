@@ -169,6 +169,16 @@ buff.skill_area = [
         , stats: { atk: "×1.3" }
         , target: { depType: [ "近接" ] }
     }
+    , {
+        name: "夏侯淵 妙才", rarity: "黒", cl: "弓将【恋姫】", AW: "未", skill: "通常"
+        , stats: { atkCd: "-?%" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
+        name: "夏侯淵 妙才", rarity: "黒", cl: "弓将【恋姫】", AW: "覚醒", skill: [ "通常", "覚醒" ]
+        , stats: { atkCd: "-?%" }
+        , target: { home: [ "恋姫" ] }
+    }
 ];
 
 /*

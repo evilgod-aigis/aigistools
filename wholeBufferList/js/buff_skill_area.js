@@ -1214,6 +1214,16 @@ buff.skill_area = [
         , note: "貫通化"
     }
     , {
+        name: "夏侯淵 妙才", rarity: "黒", cl: "弓将【恋姫】", AW: "未", skill: "通常"
+        , stats: { hp: "+20%", atk: "×1.2" }
+        , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
+        name: "夏侯淵 妙才", rarity: "黒", cl: "弓将【恋姫】", AW: "覚醒", skill: "通常"
+        , stats: { hp: "+20%", atk: "×1.2" }
+        , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
         name: "エリザベス", rarity: "黒", cl: "王女【七つの大罪】", AW: "未", skill: "通常"
         , stats: { abn: "-100%" }
         , note: "ボムスキル"
