@@ -106,14 +106,14 @@ debuff.mixture = [
     , {
         name: "魔導生命体(大)", cl: "魔導生命体", AW: "覚1"
         , stats: {
-            mr: { value: "-50%", type: "clAttr" }
+            mr: { value: "-50%", type: "dep_area" }
         }
         , domain: "area"
     }
     , {
         name: "アルコゥ", rarity: "黒", cl: "祖竜", AW: "覚醒"
         , stats: {
-            mr: { value: "-30%", type: "clAttr" }
+            mr: { value: "-30%", type: "dep_area" }
         }
         , domain: "area"
         , note: "分類未確認"
@@ -869,7 +869,7 @@ debuff.mixture = [
         name: "モンスターデモリッシャー", cl: "モンスターブレイカー", AW: "覚2b"
         , stats: {
             def: { value: "-15%", type: "area" }
-            , mr: { value: "-15%", type: "clAttr" }
+            , mr: { value: "-15%", type: "dep_area" }
         }
         , domain: "global"
         , note: "モンスターブレイカー系"
@@ -991,7 +991,7 @@ debuff.mixture = [
     , {
         name: "邪鬼仙", cl: "邪仙", AW: "覚2b"
         , stats: {
-            mr: { value: "-20%", type: "clAttr" }
+            mr: { value: "-20%", type: "dep_area" }
         }
         , domain: "area"
         , note: [ "邪仙系", "分類未確認" ]
@@ -1431,7 +1431,7 @@ debuff.mixture = [
         , stats: {
             atk: { value: "-10%", type: "noAttr" }
             , def: { value: "-10%", type: "area" }
-            , mr: { value: "-10%", type: "clAttr" }
+            , mr: { value: "-10%", type: "dep_area" }
         }
         , domain: "area"
     }
@@ -1440,7 +1440,7 @@ debuff.mixture = [
         , stats: {
             atk: { value: "-20%", type: "noAttr" }
             , def: { value: "-20%", type: "area" }
-            , mr: { value: "-20%", type: "clAttr" }
+            , mr: { value: "-20%", type: "dep_area" }
         }
         , domain: "area"
     }
@@ -1537,7 +1537,7 @@ debuff.mixture = [
         name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "未"
         , stats: {
             atk: { value: "-25%", type: "noAttr" }
-            , mr: { value: "-25%", type: "clAttr" }
+            , mr: { value: "-25%", type: "dep_area" }
         }
         , domain: "area"
         , note: "最大値(-5%～、-1%/敵撃破)"
@@ -1546,7 +1546,7 @@ debuff.mixture = [
         name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚1"
         , stats: {
             atk: { value: "-35%", type: "noAttr" }
-            , mr: { value: "-35%", type: "clAttr" }
+            , mr: { value: "-35%", type: "dep_area" }
         }
         , domain: "area"
         , note: "最大値(-5%～、-1%/敵撃破)"
@@ -1555,7 +1555,7 @@ debuff.mixture = [
         name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚1", skill: "覚醒"
         , stats: {
             atk: { value: "-85%", type: "noAttr" }
-            , mr: { value: "-85%", type: "clAttr" }
+            , mr: { value: "-85%", type: "dep_area" }
         }
         , domain: "area"
         , note: "最大値(-5%～、-1%/敵撃破)"
@@ -1564,7 +1564,7 @@ debuff.mixture = [
         name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚2a"
         , stats: {
             atk: { value: "-40%", type: "noAttr" }
-            , mr: { value: "-40%", type: "clAttr" }
+            , mr: { value: "-40%", type: "dep_area" }
         }
         , domain: "area"
         , note: "最大値(-5%～、-1%/敵撃破)"
@@ -1573,7 +1573,7 @@ debuff.mixture = [
         name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚2a", skill: "覚醒"
         , stats: {
             atk: { value: "-90%", type: "noAttr" }
-            , mr: { value: "-90%", type: "clAttr" }
+            , mr: { value: "-90%", type: "dep_area" }
         }
         , domain: "area"
         , note: "最大値(-5%～、-1%/敵撃破)"
@@ -1582,7 +1582,7 @@ debuff.mixture = [
         name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚2b"
         , stats: {
             atk: { value: "-35%", type: "noAttr" }
-            , mr: { value: "-35%", type: "clAttr" }
+            , mr: { value: "-35%", type: "dep_area" }
         }
         , domain: "area"
         , note: "最大値(-5%～、-2%/敵撃破)"
@@ -1591,7 +1591,7 @@ debuff.mixture = [
         name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "覚2b", skill: "覚醒"
         , stats: {
             atk: { value: "-85%", type: "noAttr" }
-            , mr: { value: "-85%", type: "clAttr" }
+            , mr: { value: "-85%", type: "dep_area" }
         }
         , domain: "area"
         , note: "最大値(-5%～、-2%/敵撃破)"
@@ -1738,14 +1738,14 @@ debuff.mixture = [
     , {
         name: "ウィッチ", cl: "ウィッチ", AW: "未"
         , stats: {
-            mr: { value: "-10%", type: "clAttr" }
+            mr: { value: "-10%", type: "dep_area" }
         }
         , domain: "area"
     }
     , {
         name: "アークウィッチ", cl: "ウィッチ", AW: "覚1"
         , stats: {
-            mr: { value: "-15%", type: "clAttr" }
+            mr: { value: "-15%", type: "dep_area" }
         }
         , domain: "area"
         , note: "ウィッチ系"
@@ -1753,7 +1753,7 @@ debuff.mixture = [
     , {
         name: "ホーリーウィッチ", cl: "ウィッチ", AW: "覚2a"
         , stats: {
-            mr: { value: "-20%", type: "clAttr" }
+            mr: { value: "-20%", type: "dep_area" }
         }
         , domain: "area"
         , note: "ウィッチ系"
@@ -1761,7 +1761,7 @@ debuff.mixture = [
     , {
         name: "ソーサレス", cl: "ウィッチ", AW: "覚2b"
         , stats: {
-            mr: { value: "-25%", type: "clAttr" }
+            mr: { value: "-25%", type: "dep_area" }
         }
         , domain: "area"
         , note: "ウィッチ系"
@@ -2862,14 +2862,14 @@ debuff.mixture = [
     , {
         name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "未"
         , stats: {
-            mr: { value: "-20%", type: "clAttr" }
+            mr: { value: "-20%", type: "dep_area" }
         }
         , domain: "area"
     }
     , {
         name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒"
         , stats: {
-            mr: { value: "-25%", type: "clAttr" }
+            mr: { value: "-25%", type: "dep_area" }
         }
         , domain: "area"
     }
@@ -3062,7 +3062,7 @@ debuff.mixture = [
         name: "スカウト", cl: "スカウト", AW: "未"
         , stats: {
             def: { value: "-40%", type: "area" }
-            , mr: { value: "-40%", type: "clAttr" }
+            , mr: { value: "-40%", type: "dep_area" }
         }
         , domain: "area"
     }
@@ -3070,7 +3070,7 @@ debuff.mixture = [
         name: "スカウトオフィサー", cl: "スカウト", AW: "覚1"
         , stats: {
             def: { value: "-50%", type: "area" }
-            , mr: { value: "-50%", type: "clAttr" }
+            , mr: { value: "-50%", type: "dep_area" }
         }
         , domain: "area"
         , note: "スカウト系"
@@ -3079,7 +3079,7 @@ debuff.mixture = [
         name: "スカウトジェネラル", cl: "スカウト", AW: "覚2a"
         , stats: {
             def: { value: "-55%", type: "area" }
-            , mr: { value: "-55%", type: "clAttr" }
+            , mr: { value: "-55%", type: "dep_area" }
         }
         , domain: "area"
         , note: "スカウト系"
@@ -3088,7 +3088,7 @@ debuff.mixture = [
         name: "ファントムリコン", cl: "スカウト", AW: "覚2b"
         , stats: {
             def: { value: "-50%", type: "area" }
-            , mr: { value: "-50%", type: "clAttr" }
+            , mr: { value: "-50%", type: "dep_area" }
         }
         , domain: "area"
         , note: "スカウト系"
@@ -3206,7 +3206,7 @@ debuff.mixture = [
         name: "ストレイソッド", rarity: "金", cl: "ストレイソッド"
         , stats: {
             def: { value: "-20%", type: "area" }
-            , mr: { value: "-10%", type: "clAttr" }
+            , mr: { value: "-10%", type: "dep_area" }
         }
         , domain: "area"
         , note: "分類未確認"
@@ -3237,14 +3237,14 @@ debuff.mixture = [
     , {
         name: "魔法使い【ランス】", cl: "魔法使い【ランス】", AW: "未"
         , stats: {
-            mr: { value: "-15%", type: "clAttr" }
+            mr: { value: "-15%", type: "dep_area" }
         }
         , domain: "area"
     }
     , {
         name: "四魔女【ランス】", cl: "魔法使い【ランス】", AW: "覚1"
         , stats: {
-            mr: { value: "-30%", type: "clAttr" }
+            mr: { value: "-30%", type: "dep_area" }
         }
         , domain: "area"
         , note: "魔法使い【ランス】系"
@@ -3432,17 +3432,17 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
-        name: "クロミ", rarity: "黒", cl: "淫魔娘【モンスター娘TD】", AW: "未", skill: "通常"
+        name: "クロミ", rarity: "黒", cl: "淫魔娘【モンスター娘TD】", AW: "未"
         , stats: {
-            mr: { value: "-25%", type: "area" }
+            mr: { value: "-25%", type: "dep_area" }
         }
         , domain: "area"
         , note: "分類未確認"
     }
     , {
-        name: "クロミ", rarity: "黒", cl: "淫魔娘【モンスター娘TD】", AW: "覚醒", skill: "通常"
+        name: "クロミ", rarity: "黒", cl: "淫魔娘【モンスター娘TD】", AW: "覚醒"
         , stats: {
-            mr: { value: "-50%", type: "area" }
+            mr: { value: "-50%", type: "dep_area" }
         }
         , domain: "area"
         , note: "分類未確認"
@@ -3709,7 +3709,7 @@ debuff.mixture = [
         name: "自由人(幻影)", rarity: "トークン", AW: "未"
         , stats: {
             def: { value: "-40%", type: "area" }
-            , mr: { value: "-40%", type: "clAttr" }
+            , mr: { value: "-40%", type: "dep_area" }
         }
         , domain: "area"
         , note: "ヘルメルク"
@@ -3718,7 +3718,7 @@ debuff.mixture = [
         name: "自由人(幻影)", rarity: "トークン", AW: "覚醒"
         , stats: {
             def: { value: "-50%", type: "area" }
-            , mr: { value: "-50%", type: "clAttr" }
+            , mr: { value: "-50%", type: "dep_area" }
         }
         , domain: "area"
         , note: "ヘルメルク"
@@ -3750,7 +3750,7 @@ debuff.mixture = [
     
     domain area global
     
-    type noAttr limAttr death clAttr fixed
+    type noAttr limAttr death dep_area fixed
     
     target
     

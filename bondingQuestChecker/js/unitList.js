@@ -1586,6 +1586,7 @@ const unitList = [
     , { id: 0x0617, implDate: "2025/09/11", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "奸雄【恋姫】", name: "曹操 孟徳", collabo: 1 }
     , { id: 0x0618, implDate: "2025/09/11", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "弓将【恋姫】", name: "夏侯淵 妙才", collabo: 1 }
     , { id: 0x0619, implDate: "2025/09/11", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "p" , depType: "vang", class: "武将【恋姫】", name: "楽進 文謙", collabo: 1 }
+    , { id: 0x061a, implDate: "2025/09/18", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "蟲使い", name: "ココン", modifier: "森の繭守" }
     
     
     

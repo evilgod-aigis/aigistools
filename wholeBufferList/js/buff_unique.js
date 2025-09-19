@@ -780,6 +780,18 @@ buff.unique = [
         , type: "dmg-red"
         , note: [ "区分：被ダメージ軽減", "属性不問-10%" ]
     }
+    , {
+        name: "ワームトークン", rarity: "トークン", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "物理-20%(範囲)", "分類未確認" ]
+    }
+    , {
+        name: "トモダチトークン", rarity: "トークン", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "物理-20%(範囲)", "分類未確認" ]
+    }
 ];
 
 /*

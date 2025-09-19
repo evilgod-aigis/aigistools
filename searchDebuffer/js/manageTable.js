@@ -2,7 +2,7 @@ const table = {};
 
 table.word = {
     team: "編成", area: "範囲", global: "全体", noAttr: "属性不問", limAttr: "属性指定"
-    , clAttr: "クラス特性", fixed: "固定値", hit: "攻撃命中", counter: "反撃"
+    , dep_area: "範囲配置", fixed: "固定値", hit: "攻撃命中", counter: "反撃"
     , scalar: "スカラー", death: "死亡時", takenDmg: "被ダメージ"
     
     , id: "id", name: "ユニット", rarity: "レア", cl: "クラス", AW: "覚醒", skill: "スキル"
@@ -43,7 +43,7 @@ table.debuffType.type = {
         , color: "rgba(0, 0, 255, 0.3)"
     }
     , mr: {
-        list: [ "area", "global", "clAttr", "fixed" ]
+        list: [ "area", "global", "dep_area", "fixed" ]
         , color: "rgba(255, 255, 0, 0.3)"
     }
     , atkCd: {
@@ -512,7 +512,7 @@ table.CreateTableSub = (_element, _list, _isCommon, _stat = "") => {
             newTd = document.createElement("td");
             //newTd.classList.add("column-note");
             const showDomain = isType
-                && ((debuffer.domain === "area" && type !== "area") || (debuffer.domain === "global" && type === "area"));
+                && ((debuffer.domain === "area" && !_.includes(type, "area")) || (debuffer.domain === "global" && _.includes(type, "area")));
             newTd.innerHTML = _.map(showType, stat =>
                 `${table.word[stat].replace(/<br>/g, "")}：${table.word[debuffer.stats[stat].type]}`
             ).join("<br>");
