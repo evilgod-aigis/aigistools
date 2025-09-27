@@ -2836,6 +2836,16 @@ buff.team = [
         , target: { home: [ "恋姫" ] }
     }
     , {
+        name: "荀彧 文若", rarity: "黒", cl: "軍師【恋姫】", AW: "未"
+        , stats: { hp: "+5%", def: "+5%" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
+        name: "荀彧 文若", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒"
+        , stats: { hp: "+7%", def: "+7%" }
+        , target: { home: [ "恋姫" ] }
+    }
+    , {
         name: "賈駆", rarity: "白", cl: "軍師【恋姫】", AW: "未"
         , stats: { mr: "+5" }
         , target: { home: [ "恋姫" ] }

@@ -356,6 +356,29 @@ lists.units.onSkillAct.list = [
     , {
         id: null, hidden: false
         , unitInfo: {
+            unitName: "荀彧 文若", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "大軍師【恋姫】" }
+            , attribution: [ "恋姫", "人間" ]
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: [ "女性" ]
+        }
+        , skill: {
+            selected: "通常"
+            , detail: {
+                "通常": [
+                    {
+                        target: "全敵"
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 35, dur: 20, HPred: 10 }
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
             unitName: "清心の花嫁スイレン", deployType: "近接型", rarity: "白"
             , unitClass: { selected: "ドラゴンライダー系" }
             , attribution: [ "華の国", "人間", "騎兵", "ドラゴン", "高貴", "ジューンブライド" ]

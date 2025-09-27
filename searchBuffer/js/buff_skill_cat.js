@@ -2845,6 +2845,12 @@ buff.skill_cat = [
         , note: "範囲"
     }
     , {
+        name: "ヤサカ", rarity: "白", cl: "吟遊詩人", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { home: [ "東の国" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "ちびゴブリン博士", rarity: "ちび", cl: "ゴブリン博士", skill: "通常"
         , stats: { atk: "×1.2" }
         , target: [

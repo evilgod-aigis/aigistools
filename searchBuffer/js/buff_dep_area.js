@@ -48,6 +48,11 @@ buff.dep_area = [
         , stats: { atkCd: "-30%" }
         , target: { others: [ "魔界" ] }
     }
+    , {
+        name: "ヤサカ", rarity: "白", cl: "吟遊詩人", AW: "覚2a"
+        , stats: { atkCd: "-30%" }
+        , target: { home: [ "東の国" ] }
+    }
 ];
 
 /*

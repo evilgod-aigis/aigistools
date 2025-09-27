@@ -3035,6 +3035,49 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "ヤサカ", rarity: "白", cl: "吟遊詩人", AW: "未", skill: "通常"
+        , stats: {
+            def: { value: "-40%", type: "area" }
+        }
+        , domain: "area"
+        , target: { attr: [ "妖怪" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ヤサカ", rarity: "白", cl: "吟遊詩人", AW: "未", skill: "通常"
+        , stats: {
+            stop: { value: "149f", type: "area" }
+        }
+        , domain: "area"
+        , note: "スキル発動時"
+    }
+    , {
+        name: "ヤサカ", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
+        , stats: {
+            def: { value: "-40%", type: "area" }
+        }
+        , domain: "area"
+        , target: { attr: [ "妖怪" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "ヤサカ", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
+        , stats: {
+            stop: { value: "149f", type: "area" }
+        }
+        , domain: "area"
+        , note: "スキル発動時"
+    }
+    , {
+        name: "ヤサカ", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+            , def: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
         name: "ポワワ", rarity: "白", cl: "ポーター", AW: "覚醒", skill: "覚醒"
         , stats: {
             stop: { value: "?f", type: "area" }
@@ -3338,6 +3381,24 @@ debuff.mixture = [
         }
         , domain: "global"
         , note: "永続スキル"
+    }
+    , {
+        name: "荀彧 文若", rarity: "黒", cl: "軍師【恋姫】", AW: "未", skill: "通常"
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+            , def: { value: "-15%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "荀彧 文若", rarity: "黒", cl: "軍師【恋姫】", AW: "覚醒", skill: "通常"
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+            , def: { value: "-15%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "鳳統", rarity: "白", cl: "軍師【恋姫】", AW: "未", skill: "通常"

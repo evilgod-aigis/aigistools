@@ -760,6 +760,12 @@ lists.buff.haste.list = [
         , tooltip: "[射程内] 属性：魔界の攻撃硬直-30%"
     }
     , {
+        id: null, buffer: "琵琶法師ヤサカ", awaken: "覚2a", showAwaken: true
+        , value: 30, disabled: null, req: "deploy"
+        , target: [ { attribution: [ "東の国" ] } ]
+        , tooltip: "[射程内] 属性：東の国の攻撃硬直-30%"
+    }
+    , {
         // 区分が好感度と同じらしいので、対象が出てきたら要プログラム見直し
         id: null, buffer: "夜行わらし【馬廻】", awaken: "-"
         , value: 50, disabled: null, req: "skill"

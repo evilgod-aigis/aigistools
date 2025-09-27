@@ -383,7 +383,7 @@ funcs.unitsData.CorrectSkill = (unit, withBuff = true) => {
     if(withBuff) {
         const buffValue = {
             WT: 1.0 - funcs.unitsData.GetBuffValue(unit, "rWT")
-            , CT: 1.0 - funcs.unitsData.GetBuffValue(unit, "rCT", true, false)
+            , CT: 1.0 - funcs.unitsData.GetBuffValue(unit, "rCT")//, true, false)
             , dur: 1.0 + funcs.unitsData.GetBuffValue(unit, "skillExtend")
             , dur_fixed: funcs.unitsData.GetBuffValue(unit, "skillExtendFixed", false)[0]
         };

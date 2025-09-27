@@ -47,7 +47,7 @@ buff.unique = [
     }
     , {
         name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
-        , stats: { atk: "*1.2", def: "*1.2" }
+        , stats: { atk: "*1.2", def: "*1.2", other: "" }
         , target: { race: [ "人間", "神", "半神" ] }
         , type: "time"
         , note: [ "区分：時間経過", "範囲", "最大値(+2%/3秒)" ]
@@ -68,7 +68,7 @@ buff.unique = [
     }
     , {
         name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
-        , stats: { atk: "*1.2", def: "*1.2" }
+        , stats: { atk: "*1.2", def: "*1.2", other: "" }
         , target: { others: [ "魔界" ] }
         , type: "time"
         , note: [ "区分：時間経過", "範囲", "最大値(+2%/3秒)", "永続スキル" ]
@@ -96,7 +96,7 @@ buff.unique = [
     }
     , {
         name: "トットン", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
-        , stats: { atk: "*1.2", def: "*1.2" }
+        , stats: { atk: "*1.2", def: "*1.2", other: "" }
         , target: { home: [ "白の帝国" ] }
         , type: "time"
         , note: [ "区分：時間経過", "範囲", "最大値(+2%/3秒)" ]
@@ -124,10 +124,31 @@ buff.unique = [
     }
     , {
         name: "プルーシア", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
-        , stats: { hp: "*1.2", atk: "*1.2" }
+        , stats: { hp: "*1.2", atk: "*1.2", other: "" }
         , target: { home: [ "王国" ] }
         , type: "time"
         , note: [ "区分：時間経過", "範囲", "最大値(+2%/3秒)", "永続スキル" ]
+    }
+    , {
+        name: "ヤサカ", rarity: "白", cl: "吟遊詩人", AW: "未"
+        , stats: { atk: "+15%", def: "+15%" }
+        , target: { home: [ "東の国" ] }
+        , type: "time"
+        , note: [ "区分：時間経過", "範囲", "最大値(+2%/4秒)" ]
+    }
+    , {
+        name: "ヤサカ", rarity: "白", cl: "吟遊詩人", AW: "覚醒"
+        , stats: { atk: "+25%", def: "+25%" }
+        , target: { home: [ "東の国" ] }
+        , type: "time"
+        , note: [ "区分：時間経過", "範囲", "最大値(+2%/4秒)" ]
+    }
+    , {
+        name: "ヤサカ", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
+        , stats: { other: "" }
+        , target: { home: [ "東の国" ] }
+        , type: "time"
+        , note: [ "区分：時間経過", "範囲", "最大値(+2%/2秒)", "永続スキル" ]
     }
     
     // 死亡時
