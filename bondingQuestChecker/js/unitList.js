@@ -1589,6 +1589,12 @@ const unitList = [
     , { id: 0x061a, implDate: "2025/09/18", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "蟲使い", name: "ココン", modifier: "森の繭守" }
     , { id: 0x061b, implDate: "2025/09/25", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "軍師【恋姫】", name: "荀彧 文若", collabo: 1 }
     , { id: 0x061c, implDate: "2025/09/25", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "吟遊詩人", name: "ヤサカ", modifier: "琵琶法師" }
+    , { id: 0x061d, implDate: "2025/09/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "妖精術師【冥府館】", name: "テュト", modifier: "冥府館の異装", derivation: "異装", collabo: 1 }
+    , { id: 0x061e, implDate: "2025/09/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "蠅王娘【モンスター娘TD】", name: "アゼプ", modifier: "ベルゼブブ娘", collabo: 1 }
+    , { id: 0x061f, implDate: "2025/09/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "both", class: "古代戦艦管理頭脳", name: "ドーンブリンガー", modifier: "旗艦乙女", collabo: 1 }
+    , { id: 0x0620, implDate: "2025/09/30", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "both", class: "冬姫【白面金毛】", name: "しづり", modifier: "九尾娘の異装", derivation: "異装", collabo: 1 }
+    , { id: 0x0621, implDate: "2025/10/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "武侠", name: "ちびプロエ" }
+    , { id: 0x0622, implDate: "2025/10/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "戦の聖霊", name: "ちびフーイェン" }
     
     
     

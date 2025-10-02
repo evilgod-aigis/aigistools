@@ -2707,6 +2707,17 @@ buff.team = [
         ]
     }
     , {
+        name: "妖精術師【冥府館】", cl: "妖精術師【冥府館】", AW: "未"
+        , stats: { range: "+5" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
+        name: "妖精賢者【冥府館】", cl: "妖精術師【冥府館】", AW: "覚1"
+        , stats: { range: "+10" }
+        , target: { others: [ "魔術師" ] }
+        , note: "妖精術師【冥府館】系"
+    }
+    , {
         name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "未"
         , stats: { atk: "+7%", cost: "-5" }
         , target: { cl: [ "王子" ] }
@@ -2910,6 +2921,16 @@ buff.team = [
         name: "芙蓉", rarity: "白", cl: "鬼【ななリン】", AW: "覚醒"
         , stats: { hp: "+10%", atk: "+10%", def: "+10%" }
         , target: { cl: [ "鬼【ななリン】" ] }
+    }
+    , {
+        name: "アゼプ", rarity: "黒", cl: "蠅王娘【モンスター娘TD】", AW: "未"
+        , stats: { atk: "+10%" }
+        , target: { race: [ "デーモン系" ] }
+    }
+    , {
+        name: "アゼプ", rarity: "黒", cl: "蠅王娘【モンスター娘TD】", AW: "覚醒"
+        , stats: { atk: "+14%" }
+        , target: { race: [ "デーモン系" ] }
     }
     , {
         name: "井河アサギ", rarity: "黒", cl: "対魔忍 超人【対魔忍】", AW: "覚醒"

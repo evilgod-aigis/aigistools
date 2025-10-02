@@ -3517,6 +3517,21 @@ debuff.mixture = [
         , note: "スキル発動時"
     }
     , {
+        name: "蠅王娘【モンスター娘TD】", cl: "蠅王娘【モンスター娘TD】", AW: "未"
+        , stats: {
+            mr: { value: "-20%", type: "dep_area" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "超蠅王娘【モンスター娘TD】", cl: "蠅王娘【モンスター娘TD】", AW: "覚1"
+        , stats: {
+            mr: { value: "-30%", type: "dep_area" }
+        }
+        , domain: "area"
+        , note: "蠅王娘【モンスター娘TD】系"
+    }
+    , {
         name: "イビルアイ", rarity: "トークン", AW: "未", skill: "通常"
         , stats: {
             stop: { value: "119f", type: "area" }

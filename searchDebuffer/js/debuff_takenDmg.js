@@ -83,6 +83,11 @@ debuff.takenDmg = [
         , note: "範囲"
     }
     , {
+        name: "テュト/異装", rarity: "黒", cl: "妖精術師【冥府館】", AW: "覚醒", skill: "覚醒"
+        , stats: { value: "+30%" }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
         name: "夏侯淵 妙才", rarity: "黒", cl: "弓将【恋姫】", AW: "覚醒", skill: "覚醒"
         , stats: { value: "+30%" }
         , note: [ "範囲", "分類未確認" ]

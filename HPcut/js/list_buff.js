@@ -903,15 +903,25 @@ lists.buff.hasteFixed.list = [
         , value: 11, disabled: null, req: "skill"
         , target: [ { attribution: [ "魔術師" ] } ]
         , compound: { haste: [ { buffer: "時の調停者トワ" } ] }
-        , tooltip: "\
-            [スキル・射程内] 属性：魔術師の攻撃硬直6f化\
-        "
+        , tooltip: "[スキル・射程内] 属性：魔術師の攻撃硬直6f化"
         , unitInfo: {
             unitName: "時の調停者トワ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "クロノマスター" }
             , attribution: [ "人間", "魔術師" ]
             , note: [ "女性" ]
             , WT: 5, CT: 45, dur: 25
+        }
+    }
+    , {
+        id: null, buffer: "九尾娘の異装しづり", awaken: "覚醒", showAwaken: true
+        , value: 21, disabled: null, req: "skill"
+        , tooltip: "[スキル・射程内]全味方の攻撃硬直11f化"
+        , unitInfo: {
+            unitName: "九尾娘の異装しづり", deployType: "遠近距離型", rarity: "黒"
+            , unitClass: { selected: "冬姫【白面金毛】系" }
+            , attribution: [ "東の国", "妖怪" ]
+            , note: [ "女性" ]
+            , WT: 1, CT: 30, dur: 20
         }
     }
     , {
@@ -1125,7 +1135,7 @@ lists.buff.takenDmg.list = [
         , tooltip: "[スキル・射程内] 被ダメージが30%上昇"
         , unitInfo: {
             unitName: "災禍を律す者モルフェサ", deployType: "遠距離型", rarity: "黒"
-            , unitClass: { selected: "カースウィスパラー" }
+            , unitClass: { selected: "カースウィスパラー系" }
             , attribution: [ "人間", "魔術師", "英傑" ]
             , note: [ "女性" ]
             , WT: 1, CT: 80, dur: Infinity
@@ -1138,7 +1148,7 @@ lists.buff.takenDmg.list = [
         , tooltip: "[スキル・射程内] 被ダメージが60%上昇"
         , unitInfo: {
             unitName: "災禍を律す者モルフェサ", deployType: "遠距離型", rarity: "黒"
-            , unitClass: { selected: "カースウィスパラー" }
+            , unitClass: { selected: "カースウィスパラー系" }
             , attribution: [ "人間", "魔術師", "英傑" ]
             , note: [ "女性" ]
             , WT: 5, CT: 45, dur: 40
@@ -1151,7 +1161,7 @@ lists.buff.takenDmg.list = [
         , tooltip: "[スキル・射程内] 被ダメージが30%上昇"
         , unitInfo: {
             unitName: "災禍を律す者モルフェサ", deployType: "遠距離型", rarity: "白"
-            , unitClass: { selected: "カースウィスパラー" }
+            , unitClass: { selected: "カースウィスパラー系" }
             , attribution: [ "人間", "魔術師", "英傑" ]
             , note: [ "女性" ]
             , WT: 30, CT: 48, dur: 40
@@ -1164,7 +1174,7 @@ lists.buff.takenDmg.list = [
         , tooltip: "[スキル・射程内] 被ダメージが40%上昇"
         , unitInfo: {
             unitName: "災禍を律す者モルフェサ", deployType: "遠距離型", rarity: "白"
-            , unitClass: { selected: "カースウィスパラー" }
+            , unitClass: { selected: "カースウィスパラー系" }
             , attribution: [ "人間", "魔術師", "英傑" ]
             , note: [ "女性" ]
             , WT: 27.5, CT: 44, dur: 20
@@ -1198,7 +1208,7 @@ lists.buff.takenDmg.list = [
         , tooltip: "[スキル・射程内] 被ダメージが50%上昇"
         , unitInfo: {
             unitName: "乙女の守護者アデライド", deployType: "近接型", rarity: "黒"
-            , unitClass: { selected: "グランドナイト" }
+            , unitClass: { selected: "グランドナイト系" }
             , attribution: [ "人間", "重装", "バレンタイン" ]
             , note: [ "女性", "状態異常無効" ]
             , WT: 5, CT: 45, dur: 15
@@ -1222,7 +1232,7 @@ lists.buff.takenDmg.list = [
         , tooltip: "[スキル・全体] 被ダメージが30%上昇"
         , unitInfo: {
             unitName: "魔神の残滓ウェパル", deployType: "近接型", rarity: "黒"
-            , unitClass: { selected: "デモンリドゥ" }
+            , unitClass: { selected: "デモンリドゥ系" }
             , attribution: [ "デーモン", "魔界", "深海" ]
             , note: [ "女性", "状態異常無効", "魔界適応", "深海適応" ]
             , WT: 5, CT: 60, dur: 15
@@ -1234,7 +1244,7 @@ lists.buff.takenDmg.list = [
         , tooltip: "[スキル・射程内] 被ダメージが10%上昇"
         , unitInfo: {
             unitName: "激励の踊り子シャルキー", deployType: "遠距離型", rarity: "黒"
-            , unitClass: { selected: "ダンサー" }
+            , unitClass: { selected: "ダンサー系" }
             , attribution: [ "人間", "魔界" ]
             , note: [ "女性", "状態異常無効", "魔界適応" ]
             , WT: 5, CT: 50, dur: 50
@@ -1249,6 +1259,18 @@ lists.buff.takenDmg.list = [
         id: null, buffer: "叡智の管理者プリニース", awaken: "覚醒", showAwaken: true
         , value: 15, disabled: null, req: "deploy"
         , tooltip: "[射程内] 被ダメージが15%上昇"
+    }
+    , {
+        id: null, buffer: "冥府館の異装テュト", awaken: "覚醒"
+        , value: 30, disabled: null, req: "skill"
+        , tooltip: "[スキル・射程内] 被ダメージが30%上昇"
+        , unitInfo: {
+            unitName: "冥府館の異装テュト", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "妖精術師【冥府館】系" }
+            , attribution: [ "エルフ", "魔術師" ]
+            , note: [ "女性" ]
+            , WT: 5, CT: 40, dur: 30
+        }
     }
     , {
         id: null, buffer: "夏侯淵 妙才", awaken: "覚醒"

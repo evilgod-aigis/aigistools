@@ -2851,6 +2851,12 @@ buff.skill_cat = [
         , note: "分類未確認"
     }
     , {
+        name: "ヤサカ", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { home: [ "東の国" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "ちびゴブリン博士", rarity: "ちび", cl: "ゴブリン博士", skill: "通常"
         , stats: { atk: "×1.2" }
         , target: [
@@ -2971,6 +2977,30 @@ buff.skill_cat = [
         , stats: { hp: "+20%", def: "×1.2" }
         , target: { others: [ "機械" ] }
         , note: "永続スキル"
+    }
+    , {
+        name: "しづり/異装", rarity: "黒", cl: "冬姫【白面金毛】", AW: "未", skill: "通常"
+        , stats: { atk: "×1.2", range: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { race: [ "妖怪" ] }
+        ]
+    }
+    , {
+        name: "しづり/異装", rarity: "黒", cl: "冬姫【白面金毛】", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.2", range: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { race: [ "妖怪" ] }
+        ]
+    }
+    , {
+        name: "しづり/異装", rarity: "黒", cl: "冬姫【白面金毛】", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.2", range: "×1.2", cost: "-20%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { race: [ "妖怪" ] }
+        ]
     }
     , {
         name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒", skill: "通常"

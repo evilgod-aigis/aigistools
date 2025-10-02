@@ -366,6 +366,10 @@ buff.skill_gl = [
         , stats: { atk: "×1.1" }
     }
     , {
+        name: "ちびプロエ", rarity: "ちび", cl: "戦の聖霊", skill: "通常"
+        , stats: { atk: "×1.1" }
+    }
+    , {
         name: "サギリ", rarity: "白", cl: "ぬらりひょん", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , note: "隠密付与"

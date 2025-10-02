@@ -1162,6 +1162,16 @@ buff.skill_area = [
         , stats: { def: "×1.3" }
     }
     , {
+        name: "しづり/異装", rarity: "黒", cl: "冬姫【白面金毛】", AW: "未", skill: "通常"
+        , stats: { atkCd: "11f化" }
+        , note: "範囲"
+    }
+    , {
+        name: "しづり/異装", rarity: "黒", cl: "冬姫【白面金毛】", AW: "覚醒", skill: "通常"
+        , stats: { atkCd: "11f化" }
+        , note: "範囲"
+    }
+    , {
         name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒", skill: "通常"
         , stats: { abn: "-100%" }
     }
@@ -1244,6 +1254,7 @@ buff.skill_area = [
     , {
         name: "アテエル", rarity: "黒", cl: "不死鳥娘【モンスター娘TD】", AW: "覚醒", skill: "覚醒"
         , stats: { draw: "(○)", redep: "25秒" }
+        , note: "永続スキル"
     }
     , {
         name: "守護の聖樹", rarity: "トークン", AW: "覚醒", skill: "通常"

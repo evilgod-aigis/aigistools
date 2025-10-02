@@ -539,6 +539,12 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
+        name: "ちびフーイェン", rarity: "ちび", cl: "武侠", skill: "通常"
+        , stats: { def: "-40%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "サベージウォーチーフ", cl: "サベージファイター", AW: "覚1"
         , stats: { atk: "-5%" }
         , atkAttr: "物理", dur: "?f"
@@ -1445,6 +1451,12 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "59f"
         , note: "ボムスキル"
+    }
+    , {
+        name: "しづり/異装", rarity: "黒", cl: "冬姫【白面金毛】", AW: "覚醒", skill: "覚醒"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
     }
     , {
         name: "妖精の丘", rarity: "金", cl: "妖精の丘"

@@ -270,6 +270,16 @@ buff.team = [
         , stats: { poison: "-100%", abn: "-100%" }
     }
     , {
+        name: "テュト/異装", rarity: "黒", cl: "妖精術師【冥府館】", AW: "未"
+        , stats: { other: "" }
+        , note: "貫通攻撃(15%)付与"
+    }
+    , {
+        name: "テュト/異装", rarity: "黒", cl: "妖精術師【冥府館】", AW: "覚醒"
+        , stats: { other: "" }
+        , note: "貫通攻撃(15%)付与"
+    }
+    , {
         name: "狸神刑部", cl: "妖狸", AW: "覚2a"
         , stats: { hp: "+5%", def: "+5%" }
         , note: "妖狸系"
