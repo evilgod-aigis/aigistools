@@ -1543,6 +1543,16 @@ buff.skill_cat = [
         , note: "範囲"
     }
     , {
+        name: "ベアッカ/ハロウィン", rarity: "白", cl: "スチームナイト", AW: "未", skill: "通常"
+        , stats: { abn: "-100%" }
+        , target: { season: [ "ハロウィン" ] }
+    }
+    , {
+        name: "ベアッカ/ハロウィン", rarity: "白", cl: "スチームナイト", AW: "覚醒", skill: "通常"
+        , stats: { abn: "-100%" }
+        , target: { season: [ "ハロウィン" ] }
+    }
+    , {
         name: "ハリナ/水着", rarity: "黒", cl: "エンプレス", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: [
@@ -2965,6 +2975,18 @@ buff.skill_cat = [
         , stats: { range: "×1.2" }
         , target: { depType: [ "遠距離" ] }
         , note: "分類未確認"
+    }
+    , {
+        name: "ミリアム/ハロウィン", rarity: "白", cl: "スカウト", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { season: [ "ハロウィン" ] }
+        , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
+        name: "ミリアム/ハロウィン", rarity: "白", cl: "スカウト", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { season: [ "ハロウィン" ] }
+        , note: [ "永続スキル", "分類未確認" ]
     }
     , {
         name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "未", skill: "通常"

@@ -233,6 +233,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
         request.onupgradeneeded = e1 => {
             saveData.db = e1.target.result;
             saveData.db.onerror = e2 => saveData.Construct(false);
+            // バージョン確認
             switch(e1.oldVersion) {
                 case 0: {
                         const objStore = saveData.db.createObjectStore(saveData.objStoreName, { keyPath: "dataName" });

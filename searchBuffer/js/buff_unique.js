@@ -199,6 +199,20 @@ buff.unique = [
     
     // 被ダメージ軽減
     , {
+        name: "ベアッカ/ハロウィン", rarity: "白", cl: "スチームナイト", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , target: { season: [ "ハロウィン" ] }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "属性不問-10%" ]
+    }
+    , {
+        name: "ベアッカ/ハロウィン", rarity: "白", cl: "スチームナイト", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , target: { season: [ "ハロウィン" ] }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "属性不問-10%" ]
+    }
+    , {
         name: "アラン/お正月", rarity: "黒", cl: "儀仗軍神", AW: "未", skill: "通常"
         , stats: { other: "" }
         , target: [

@@ -1122,6 +1122,40 @@ debuff.hit = [
         , atkAttr: "物理", dur: "9f"
     }
     , {
+        name: "ニコル/ハロウィン", rarity: "黒", cl: "アルケミスト", AW: "未"
+        , stats: { atk: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "最大値(-5%～、-1%/敵撃破)", "分類未確認" ]
+    }
+    , {
+        name: "ニコル/ハロウィン", rarity: "黒", cl: "アルケミスト", AW: "未", skill: "通常"
+        , stats: { atk: "-20%" }
+        , atkAttr: "貫通", dur: "?f"
+        , note: [ "最大値(-5%～、-1%/敵撃破)", "分類未確認" ]
+    }
+    , {
+        name: "ニコル/ハロウィン", rarity: "黒", cl: "アルケミスト", AW: "未", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "貫通", dur: "?f"
+    }
+    , {
+        name: "ニコル/ハロウィン", rarity: "黒", cl: "アルケミスト", AW: "覚醒"
+        , stats: { atk: "-25%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "最大値(-5%～、-1%/敵撃破)", "分類未確認" ]
+    }
+    , {
+        name: "ニコル/ハロウィン", rarity: "黒", cl: "アルケミスト", AW: "覚醒", skill: "通常"
+        , stats: { atk: "-25%" }
+        , atkAttr: "貫通", dur: "?f"
+        , note: [ "最大値(-5%～、-1%/敵撃破)", "分類未確認" ]
+    }
+    , {
+        name: "ニコル/ハロウィン", rarity: "黒", cl: "アルケミスト", AW: "覚醒", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "貫通", dur: "?f"
+    }
+    , {
         name: "レーレン", rarity: "白", cl: "アルケミスト", AW: "覚醒"
         , stats: { atk: "-5%" }
         , atkAttr: "物理", dur: "69f"

@@ -1431,7 +1431,7 @@ const unitList = [
     , { id: 0x057e, implDate: "2024/10/10", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "忍者", name: "ちびヒエン", male: 1 }
     , { id: 0x057f, implDate: "2024/10/23", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "王城", name: "王城", collabo: 1 }
     , { id: 0x0580, implDate: "2024/10/23", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "鉄腕娘【モンスター娘TD】", name: "アイレン", modifier: "アイアンゴーレム娘", collabo: 1 }
-    , { id: 0x0581, implDate: "2024/10/23", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "rear", class: "猫又", name: "コハル", modifier: "悪戯な黒猫", derivation: "ハロウィン" }
+    , { id: 0x0581, implDate: "2024/10/23", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "rear", class: "猫又", name: "コハル", modifier: "悪戯な黒猫", derivation: "ハロウィン", extra: { obtain: [ "sh" ] } }
     , { id: 0x0582, implDate: "2024/10/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "both", class: "スカウト", name: "ヘルメルク", modifier: "亜神の伝書士" }
     , { id: 0x0583, implDate: "2024/11/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "砲術士", name: "ちびカノン" }
     , { id: 0x0584, implDate: "2024/11/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ドラグーン", name: "ちびイーファ" }
@@ -1586,15 +1586,21 @@ const unitList = [
     , { id: 0x0617, implDate: "2025/09/11", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "奸雄【恋姫】", name: "曹操 孟徳", collabo: 1 }
     , { id: 0x0618, implDate: "2025/09/11", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "弓将【恋姫】", name: "夏侯淵 妙才", collabo: 1 }
     , { id: 0x0619, implDate: "2025/09/11", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "p" , depType: "vang", class: "武将【恋姫】", name: "楽進 文謙", collabo: 1 }
+    // ちびオルカレクス
     , { id: 0x061a, implDate: "2025/09/18", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "蟲使い", name: "ココン", modifier: "森の繭守" }
-    , { id: 0x061b, implDate: "2025/09/25", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "軍師【恋姫】", name: "荀彧 文若", collabo: 1 }
+    , { id: 0x061b, implDate: "2025/09/25", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "rear", class: "軍師【恋姫】", name: "荀彧 文若", collabo: 1 }
     , { id: 0x061c, implDate: "2025/09/25", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "吟遊詩人", name: "ヤサカ", modifier: "琵琶法師" }
     , { id: 0x061d, implDate: "2025/09/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "妖精術師【冥府館】", name: "テュト", modifier: "冥府館の異装", derivation: "異装", collabo: 1 }
     , { id: 0x061e, implDate: "2025/09/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "蠅王娘【モンスター娘TD】", name: "アゼプ", modifier: "ベルゼブブ娘", collabo: 1 }
     , { id: 0x061f, implDate: "2025/09/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "both", class: "古代戦艦管理頭脳", name: "ドーンブリンガー", modifier: "旗艦乙女", collabo: 1 }
     , { id: 0x0620, implDate: "2025/09/30", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "both", class: "冬姫【白面金毛】", name: "しづり", modifier: "九尾娘の異装", derivation: "異装", collabo: 1 }
-    , { id: 0x0621, implDate: "2025/10/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "武侠", name: "ちびプロエ" }
-    , { id: 0x0622, implDate: "2025/10/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "戦の聖霊", name: "ちびフーイェン" }
+    , { id: 0x0621, implDate: "2025/10/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "戦の聖霊", name: "ちびプロエ" }
+    , { id: 0x0622, implDate: "2025/10/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "武侠", name: "ちびフーイェン" }
+    , { id: 0x0623, implDate: "2025/10/14", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "vang", class: "サキュバス", name: "スウィーティア", modifier: "桃色の夢" }
+    , { id: 0x0624, implDate: "2025/10/14", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "アルケミスト", name: "ニコル", modifier: "幽幻仮装", derivation: "ハロウィン" }
+    , { id: 0x0625, implDate: "2025/10/14", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "both", class: "スカウト", name: "ミリアム", modifier: "南瓜の偵察兵", derivation: "ハロウィン" }
+    , { id: 0x0626, implDate: "2025/10/14", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "vang", class: "スチームナイト", name: "ベアッカ", modifier: "秋祭の蒸気騎士", derivation: "ハロウィン" }
+    , { id: 0x0627, implDate: "2025/10/14", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "テンプルナイト", name: "ちび神聖騎士団長の鎧", male: 1 }
     
     
     

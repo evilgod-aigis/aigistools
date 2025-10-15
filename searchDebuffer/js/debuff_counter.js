@@ -44,6 +44,24 @@ debuff.counter = [
         , atkAttr: "貫通", dur: "150f"
         , note: "永続スキル"
     }
+    , {
+        name: "スウィーティア", rarity: "黒", cl: "サキュバス", AW: "未"
+        , stats: { def: "-20%", mr: "-20%" }
+        , atkAttr: "貫通", dur: "150f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "スウィーティア", rarity: "黒", cl: "サキュバス", AW: "覚醒"
+        , stats: { def: "-30%", mr: "-30%" }
+        , atkAttr: "貫通", dur: "150f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "スウィーティア", rarity: "黒", cl: "サキュバス", AW: "覚醒", skill: "覚醒"
+        , stats: { def: "*1.5", mr: "*1.5" }
+        , atkAttr: "貫通", dur: "150f"
+        , note: "分類未確認"
+    }
 ];
 
 /*

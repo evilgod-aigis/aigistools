@@ -3799,6 +3799,15 @@ debuff.mixture = [
         , domain: "area"
         , note: "ヘルメルク"
     }
+    , {
+        name: "仮装偵察隊", cl: "トークン", AW: "覚醒"
+        , stats: {
+            def: { value: "-50%", type: "area" }
+            , mr: { value: "-50%", type: "dep_area" }
+        }
+        , domain: "area"
+        , note: [ "ミリアム/ハロウィン", "分類未確認" ]
+    }
 ];
 
 /*

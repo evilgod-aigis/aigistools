@@ -1104,6 +1104,16 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "ベアッカ/ハロウィン", rarity: "白", cl: "スチームナイト", AW: "未"
+        , stats: { hp: "+5%", def: "+5%" }
+        , target: { season: [ "ハロウィン" ] }
+    }
+    , {
+        name: "ベアッカ/ハロウィン", rarity: "白", cl: "スチームナイト", AW: "覚醒"
+        , stats: { hp: "+10%", def: "+10%" }
+        , target: { season: [ "ハロウィン" ] }
+    }
+    , {
         name: "金糸雀姉妹/花嫁", rarity: "白", cl: "かまいたち", AW: "覚醒"
         , stats: { atk: "+5%", def: "+5%" }
         , target: [

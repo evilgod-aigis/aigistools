@@ -336,6 +336,10 @@ buff.skill_area = [
         , note: "分類未確認"
     }
     , {
+        name: "スウィーティア", rarity: "黒", cl: "サキュバス", AW: "覚醒", skill: "覚醒"
+        , stats: { ho: "+30%" }
+    }
+    , {
         name: "ティルト/異装", rarity: "黒", cl: "冥府の騎士【円卓】", AW: "未", skill: "通常"
         , stats: { atkCd: "-?%" }
         , note: "分類未確認"
