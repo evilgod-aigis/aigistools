@@ -157,6 +157,39 @@ lists.units.onHit.list = [
     , {
         id: null, hidden: false
         , unitInfo: {
+            unitName: "幽幻仮装ニコル", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "ロードオブヘルメス" , options: [ "アルケミスト系", "ロードオブヘルメス" ] }
+            , attribution: [ "人間", "ハロウィン" ]
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: [ "女性" ]
+            , atkInterval: {
+                corr: {
+                    notSkill: { startup: null, remain: null, cooldown: null }
+                    , "覚醒": { startup: null, remain: null, cooldown: null }
+                }
+                , uncorr: {
+                    notSkill: { startup: 31, remain: 30, cooldown: 71 }
+                    , "覚醒": { startup: 31, remain: 30, cooldown: 71 }
+                }
+            }
+        }
+        , skill: {
+            selected: "覚醒"
+            , detail: {
+                "覚醒": [
+                    {
+                        target: "2体", simult: 2
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 45, dur: 15, HPred: 5, redep: 15 }
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
             unitName: "迎春の呪姫オロチヒメ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "呪術使い系" }
             , attribution: [ "東の国", "人間", "魔術師", "お正月" ]
@@ -190,39 +223,6 @@ lists.units.onHit.list = [
     , {
         id: null, hidden: false
         , unitInfo: {
-            unitName: "道化師ワンダーハート", deployType: "遠距離型", rarity: "白"
-            , unitClass: { selected: "道化師系" }
-            , attribution: [ "人間" ]
-            , affection: { percentage: null, bonus: "その他", changeRate: null }
-            , note: [ "女性" ]
-            , atkInterval: {
-                corr: {
-                    notSkill: { startup: null, remain: null, cooldown: null }
-                    , "覚醒": { startup: null, remain: null, cooldown: null }
-                }
-                , uncorr: {
-                    notSkill: { startup: 9, remain: 12, cooldown: 31 }
-                    , "覚醒": { startup: 13, remain: 9, cooldown: 2 }
-                }
-            }
-        }
-        , skill: {
-            selected: "覚醒"
-            , detail: {
-                "覚醒": [
-                    {
-                        target: "射程内", simult: Infinity
-                        , corr: { WT: null, CT: null, dur: null, HPred: null }
-                        , uncorr: { CT: 40, dur: 20, HPred: 1 }
-                        , next: 0
-                    }
-                ]
-            }
-        }
-    }
-    , {
-        id: null, hidden: false
-        , unitInfo: {
             unitName: "翠花の留学生メアリ", deployType: "遠距離型", rarity: "黒"
             , unitClass: { selected: "ロード系" }
             , attribution: [ "人間", "高貴", "学園" ]
@@ -247,6 +247,39 @@ lists.units.onHit.list = [
                         target: "射程内", simult: Infinity
                         , corr: { WT: null, CT: null, dur: null, HPred: null }
                         , uncorr: { CT: 70, dur: 120, HPred: 3 }
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
+            unitName: "道化師ワンダーハート", deployType: "遠距離型", rarity: "白"
+            , unitClass: { selected: "道化師系" }
+            , attribution: [ "人間" ]
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: [ "女性" ]
+            , atkInterval: {
+                corr: {
+                    notSkill: { startup: null, remain: null, cooldown: null }
+                    , "覚醒": { startup: null, remain: null, cooldown: null }
+                }
+                , uncorr: {
+                    notSkill: { startup: 9, remain: 12, cooldown: 31 }
+                    , "覚醒": { startup: 13, remain: 9, cooldown: 2 }
+                }
+            }
+        }
+        , skill: {
+            selected: "覚醒"
+            , detail: {
+                "覚醒": [
+                    {
+                        target: "射程内", simult: Infinity
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 40, dur: 20, HPred: 1 }
                         , next: 0
                     }
                 ]

@@ -260,6 +260,35 @@ funcs.createHTML.modal.AddSkill = (type, index) => {
                 >秒
             </span>
         </div>
+        <!--スキル終了→撤退/HP0-->
+        <div class="box">
+            <label
+                for="check_modalRedep-${index}-${nSet}"
+                class="tooltip-ts"
+                data-tippy-content="スキル終了時に自動で撤退またはHP0になり一定時間後に再出撃となる場合"
+            >
+                スキル終了→撤退/HP0
+            </label>
+            <input
+                type="checkbox"
+                id="check_modalRedep-${index}-${nSet}"
+                class="check_modalRedep"
+                onchange="funcs.createHTML.modal.ToggleActive(this)"
+            >
+            <span class="inactive">
+                <span class="reqTerm">
+                    再出撃
+                </span>
+                <input
+                    type="number"
+                    class="modalRedep reqInput tooltip-ts"
+                    data-tippy-content="1～1,000秒<br>設定した秒数後にちょうど再出撃"
+                    onchange="funcs.LimitNum_int(this, 1, 1000)"
+                    disabled
+                >秒
+            </span>
+        </div>
+        
         <!--HP減少率-->
         <div class="box inactive">
             <span class="reqTerm" style="margin-right: 5px;">
@@ -604,7 +633,7 @@ funcs.createHTML.modal.Create = type => {
                             <span class="reqTerm reqMark">クラス</span>：
                         </div>
                         <div class="modalOptset1">
-                            <div class="box tooltip-ts" data-tippy-content="正確に入力しないとバフが反映されない<br>特にこだわりがなければ「[未CC(未覚醒)クラス名]系」と入力すればおｋ">
+                            <div class="box tooltip-ts" data-tippy-content="正確に入力しないとバフが反映されない<br>特にこだわりがなければ「[未覚醒クラス名]系」と入力すればおｋ">
                                 <input type="text" class="modalClass reqInput">
                                 <button type="button" onclick="funcs.createHTML.modal.AddClass(this)">追加</button>
                             </div>

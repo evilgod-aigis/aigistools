@@ -86,6 +86,8 @@ funcs.unitsData.AddUnit = type => {
             }
             if(elem.getElementsByClassName("check_modalWT")[0].checked)
                 obj.WT = Number(elem.getElementsByClassName("modalWT")[0].value);
+            if(elem.getElementsByClassName("check_modalRedep")[0].checked)
+                obj.redep = Number(elem.getElementsByClassName("modalRedep")[0].value);
             if(elem.getElementsByClassName("check_modalDmgMul")[0].checked) {
                 obj.dmgMul = {};
                 obj.dmgMul.mul = Number(elem.getElementsByClassName("modalDmgMul")[0].value);
@@ -156,6 +158,7 @@ funcs.unitsData.AddUnit = type => {
                 if("simult" in skillInfo) obj.simult = skillInfo.simult;
             }
             if("WT" in skillInfo) obj.uncorr.WT = skillInfo.WT;
+            if("redep" in skillInfo) obj.uncorr.redep = skillInfo.redep;
             if("dmgMul" in skillInfo) {
                 obj.dmgMul = {};
                 obj.dmgMul.checked = false;
@@ -393,7 +396,8 @@ funcs.unitsData.CorrectSkill = (unit, withBuff = true) => {
                 if(rarity === "黒") obj.corr.WT = (AW === "通常" ? 1 : 5) * buffValue.WT;
                 else obj.corr.WT = obj.uncorr.CT * corr_WT * buffValue.WT;
             }
-            obj.corr.CT = obj.uncorr.CT * rateByAff.CT * buffValue.CT;
+            if("redep" in obj.uncorr) obj.corr.CT = obj.corr.WT + obj.uncorr.redep
+            else obj.corr.CT = obj.uncorr.CT * rateByAff.CT * buffValue.CT;
             if(IsBomb(obj)) obj.corr.dur = obj.uncorr.dur;
             else obj.corr.dur = obj.uncorr.dur * rateByAff.dur * buffValue.dur + buffValue.dur_fixed;
         });
@@ -404,7 +408,8 @@ funcs.unitsData.CorrectSkill = (unit, withBuff = true) => {
                 if(rarity === "黒") obj.corr.WT = (AW === "通常" ? 1 : 5);
                 else obj.corr.WT = obj.uncorr.CT * corr_WT;
             }
-            obj.corr.CT = obj.uncorr.CT * rateByAff.CT;
+            if("redep" in obj.uncorr) obj.corr.CT = obj.corr.WT + obj.uncorr.redep
+            else obj.corr.CT = obj.uncorr.CT * rateByAff.CT;
             if(IsBomb(obj)) obj.corr.dur = obj.uncorr.dur;
             else obj.corr.dur = obj.uncorr.dur * rateByAff.dur;
         });
