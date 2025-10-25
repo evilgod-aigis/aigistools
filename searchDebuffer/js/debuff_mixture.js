@@ -3091,7 +3091,7 @@ debuff.mixture = [
             stop: { value: "149f", type: "global" }
         }
         , domain: "global"
-        , note: [ "スキル発動時", "ボムスキル" ]
+        , note: [ "スキル発動後", "ボムスキル" ]
     }
     , {
         name: "ヤシマ", rarity: "黒", cl: "妖狸", AW: "覚醒", skill: [ "通常", "覚醒" ]
@@ -3099,7 +3099,7 @@ debuff.mixture = [
             stop: { value: "149f", type: "global" }
         }
         , domain: "global"
-        , note: [ "スキル発動時", "ボムスキル" ]
+        , note: [ "スキル発動後", "ボムスキル" ]
     }
     , {
         name: "スカウト", cl: "スカウト", AW: "未"

@@ -324,6 +324,22 @@ buff.team = [
         , target: { home: [ "東の国" ] }
     }
     , {
+        name: "ベラドンナ", rarity: "黒", cl: "プリンセス", AW: "未"
+        , stats: { atk: "+10%" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { others: [ "高貴" ] }
+        ]
+    }
+    , {
+        name: "ベラドンナ", rarity: "黒", cl: "プリンセス", AW: "覚醒"
+        , stats: { atk: "+20%" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { others: [ "高貴" ] }
+        ]
+    }
+    , {
         name: "シェリー", rarity: "白", cl: "プリンセス", AW: "覚醒"
         , stats: { hp: "+5%", atk: "+5%", def: "+5%" }
         , target: { rarity: [ "白", "青", "金", "銀", "銅", "鉄" ] }
@@ -1741,6 +1757,16 @@ buff.team = [
         name: "リムリィ/水着", rarity: "白", cl: "処刑人", AW: "覚醒"
         , stats: { atk: "+10%" }
         , target: { season: [ "サマー" ] }
+    }
+    , {
+        name: "カルラ", rarity: "白", cl: "処刑人", AW: "未"
+        , stats: { hp: "+5%", atk: "+5%" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "カルラ", rarity: "白", cl: "処刑人", AW: "覚醒"
+        , stats: { hp: "+7%", atk: "+7%" }
+        , target: { home: [ "白の帝国" ] }
     }
     , {
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒"

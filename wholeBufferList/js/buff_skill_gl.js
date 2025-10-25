@@ -243,6 +243,16 @@ buff.skill_gl = [
         , note: [ "スキルオート", "永続スキル" ]
     }
     , {
+        name: "レオラ/新装", rarity: "黒", cl: "前衛戦術家", AW: "未", skill: "通常"
+        , stats: { atk: "×1.2", range: "×1.2", other: "" }
+        , note: [ "スキルオート", "永続スキル", "分類未確認" ]
+    }
+    , {
+        name: "レオラ/新装", rarity: "黒", cl: "前衛戦術家", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.2", range: "×1.2", other: "" }
+        , note: [ "スキルオート", "永続スキル", "分類未確認" ]
+    }
+    , {
         name: "ウズメ", rarity: "白", cl: "前衛戦術家", AW: "未", skill: "通常"
         , stats: { atk: "×1.2" }
     }
@@ -611,6 +621,14 @@ buff.skill_gl = [
     , {
         name: "ラウラ", rarity: "黒", cl: "ドラゴンシャーマン", AW: "覚醒", skill: "通常(3n)"
         , stats: { def: "×2.0" }
+    }
+    , {
+        name: "レオナ/新装", rarity: "黒", cl: "後衛戦術家", AW: "未", skill: "通常"
+        , stats: { nul: "65%" }
+    }
+    , {
+        name: "レオナ/新装", rarity: "黒", cl: "後衛戦術家", AW: "覚醒", skill: [ "通常", "覚醒" ]
+        , stats: { nul: "75%" }
     }
     , {
         name: "レン", rarity: "白", cl: "後衛戦術家", AW: "未", skill: "通常"

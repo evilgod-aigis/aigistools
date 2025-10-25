@@ -152,6 +152,11 @@ buff.dep_area = [
         , note: "ポーター系"
     }
     , {
+        name: "グッズデリバリー", cl: "ポーター", AW: "覚2b"
+        , stats: { atk: "×1.1" }
+        , note: "ポーター系"
+    }
+    , {
         name: "桃源郷", rarity: "金", cl: "桃源郷"
         , stats: { hp: "+10%", atk: "×0.8" }
         , note: "分類未確認"

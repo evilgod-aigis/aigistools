@@ -7,7 +7,25 @@ buff.skill_area = [
             { season: [ "サマー" ] }
             , { others: [ "深海" ] }
         ]
-        , note: [ "全体", "最大値(倍率+0.1/サマー、深海属性ユニット)" ]
+        , note: [ "全域", "最大値(倍率+0.1/サマー、深海属性ユニット)" ]
+    }
+    , {
+        name: "ベラドンナ", rarity: "黒", cl: "プリンセス", AW: "未", skill: "通常"
+        , stats: { atk: "×1.1", def: "×1.1" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { others: [ "高貴" ] }
+        ]
+        , note: [ "全域", "永続スキル" ]
+    }
+    , {
+        name: "ベラドンナ", rarity: "黒", cl: "プリンセス", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.1", def: "×1.1" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { others: [ "高貴" ] }
+        ]
+        , note: [ "全域", "永続スキル" ]
     }
     , {
         name: "グレン/学園", rarity: "白", cl: "天狗", AW: "未", skill: "通常"
@@ -28,13 +46,13 @@ buff.skill_area = [
         name: "アスラハ", rarity: "黒", cl: "グランドナイト", AW: "未", skill: "通常"
         , stats: { atk: "×1.3" }
         , target: { home: [ "砂漠の国" ] }
-        , note: "全体"
+        , note: "全域"
     }
     , {
         name: "アスラハ", rarity: "黒", cl: "グランドナイト", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.3" }
         , target: { home: [ "砂漠の国" ] }
-        , note: "全体"
+        , note: "全域"
     }
     , {
         name: "金糸雀姉妹/花嫁", rarity: "白", cl: "かまいたち", AW: "未", skill: "通常"
@@ -68,6 +86,16 @@ buff.skill_area = [
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒", skill: "覚醒"
         , stats: { atkCd: "2f化" }
         , target: { cl: [ "アーチャー" ] }
+    }
+    , {
+        name: "レオナ/新装", rarity: "黒", cl: "後衛戦術家", AW: "未", skill: "通常"
+        , stats: { def: "×1.4", mr: "×1.4" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "レオナ/新装", rarity: "黒", cl: "後衛戦術家", AW: "覚醒", skill: "通常"
+        , stats: { def: "×1.4", mr: "×1.4" }
+        , target: { home: [ "白の帝国" ] }
     }
     , {
         name: "シナト", rarity: "白", cl: "後衛戦術家", AW: "未", skill: "通常"
@@ -235,7 +263,7 @@ buff.skill_area = [
     
     year 年
     
-    note 全体 分類未確認
+    note 全域 分類未確認
     
     正月 水着 浴衣 バニー 花嫁
 

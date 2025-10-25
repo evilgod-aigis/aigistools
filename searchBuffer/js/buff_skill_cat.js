@@ -2867,6 +2867,18 @@ buff.skill_cat = [
         , note: "分類未確認"
     }
     , {
+        name: "ベネー", rarity: "白", cl: "吟遊詩人", AW: "未", skill: "通常"
+        , stats: { redep: "20秒" }
+        , target: { home: [ "白の帝国" ] }
+        , note: [ "死亡最後1体", "スキル発動時" ]
+    }
+    , {
+        name: "ベネー", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
+        , stats: { redep: "20秒" }
+        , target: { home: [ "白の帝国" ] }
+        , note: [ "死亡最後1体", "スキル発動時" ]
+    }
+    , {
         name: "ちびゴブリン博士", rarity: "ちび", cl: "ゴブリン博士", skill: "通常"
         , stats: { atk: "×1.2" }
         , target: [

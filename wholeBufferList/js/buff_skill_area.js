@@ -3,7 +3,7 @@ buff.skill_area = [
     {
         name: "王子", cl: "王子", skill: "通常"
         , stats: { atk: [ "×1.12", "～1.21" ], def: [ "×1.12", "～1.21" ] }
-        , note: [ "全体", "永続スキル" ]
+        , note: [ "全域", "永続スキル" ]
     }
     , {
         name: "王子【玉兎】", cl: "王子", skill: "通常"
@@ -21,7 +21,7 @@ buff.skill_area = [
     , {
         name: "ランシェ", rarity: "黒", cl: "マギステルミリトゥム", AW: "覚醒", skill: "覚醒"
         , stats: { def: "×2.0" }
-        , note: "全体"
+        , note: "全域"
     }
     , {
         name: "伏綺", rarity: "白", cl: "開天の神話", AW: "覚醒", skill: "通常"
@@ -1127,6 +1127,11 @@ buff.skill_area = [
         , stats: { atk: "×1.3", def: "×1.3", rege: [ "100/秒", "50/15f" ] }
     }
     , {
+        name: "ギョウブ", rarity: "黒", cl: "妖狸", AW: "覚醒", skill: [ "通常(1)", "覚醒(1)" ]
+        , stats: { ct: "-100%" }
+        , note: [ "スキル発動後", "ボムスキル", "初回配置時のみ" ]
+    }
+    , {
         name: "アエロ/クリスマス", rarity: "金", cl: "スカイシューター", AW: "未", skill: "通常"
         , stats: { atk: "×1.07" }
     }
@@ -1415,7 +1420,7 @@ buff.skill_area = [
     ○
     (○)
     
-    target note 全体 発動時 分類未確認
+    target note 全域 発動時 分類未確認
     
     正月 水着 浴衣 バニー 花嫁
     

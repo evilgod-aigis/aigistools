@@ -53,6 +53,18 @@ buff.dep_area = [
         , stats: { atkCd: "-30%" }
         , target: { home: [ "東の国" ] }
     }
+    , {
+        name: "オルドネッタトークン", rarity: "トークン", AW: "未"
+        , stats: { range: "×1.1" }
+        , target: { depType: [ "遠距離" ] }
+        , note: [ "オルドネッタ", "重ね置き(遠近)", "自壊(HP-30/15f)", "分類未確認" ]
+    }
+    , {
+        name: "オルドネッタトークン", rarity: "トークン", AW: "覚醒"
+        , stats: { range: "×1.1" }
+        , target: { depType: [ "遠距離" ] }
+        , note: [ "オルドネッタ", "重ね置き(遠近)", "自壊(HP-40/15f)", "分類未確認" ]
+    }
 ];
 
 /*

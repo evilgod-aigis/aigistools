@@ -328,6 +328,18 @@ buff.dep_gl = [
         , target: { season: [ "バレンタイン" ] }
     }
     , {
+        name: "レオラ/新装", rarity: "黒", cl: "前衛戦術家", AW: "未"
+        , stats: { cost: "-1" }
+        , target: { home: [ "白の帝国" ] }
+        , note: "クラスアビと合わせて-4"
+    }
+    , {
+        name: "レオラ/新装", rarity: "黒", cl: "前衛戦術家", AW: "覚醒"
+        , stats: { cost: "-1" }
+        , target: { home: [ "白の帝国" ] }
+        , note: "クラスアビと合わせて-5"
+    }
+    , {
         name: "ヘレナ", rarity: "白", cl: "前衛戦術家", AW: "覚醒"
         , stats: { atk: "+10%" }
         , target: { cl: [ "パイレーツ", "砲術士", "マーチャント" ] }
@@ -1388,6 +1400,11 @@ buff.dep_gl = [
         , target: { sex: [ "女性" ] }
     }
     , {
+        name: "ベラートの黄金戦車", rarity: "金", cl: "ベラートの黄金戦車"
+        , stats: { mr: "+10" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒"
         , stats: { def: "+10%" }
         , target: { season: [ "温泉" ] }
@@ -1519,6 +1536,16 @@ buff.dep_gl = [
         , stats: { ct: "-45%" }
         , target: { depType: [ "近接" ] }
         , note: "後衛戦術家系"
+    }
+    , {
+        name: "レオナ/新装", rarity: "黒", cl: "後衛戦術家", AW: "未"
+        , stats: { ct: "-45%" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "レオナ/新装", rarity: "黒", cl: "後衛戦術家", AW: "覚醒"
+        , stats: { ct: "-65%" }
+        , target: { home: [ "白の帝国" ] }
     }
     , {
         name: "イリオス", rarity: "白", cl: "後衛戦術家", AW: "未"
