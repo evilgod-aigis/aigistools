@@ -298,7 +298,7 @@ buff.add = [
     }
     , {
         name: "王国ファッションショー", rarity: "金", cl: "王国ランウェイ"
-        , stats: { hp: "max1000", def: "max300" }
+        , stats: { hp: "max1500", def: "max500" }
         , target: { sex: [ "女性" ] }
     }
     , {

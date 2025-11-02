@@ -1435,6 +1435,14 @@ buff.team = [
         ]
     }
     , {
+        name: "ちびグラティア", rarity: "ちび", cl: "鍛冶職人"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
         name: "アナトリア", rarity: "黒", cl: "グラディエーター", AW: "覚醒"
         , stats: { atk: "+12%", def: "+12%" }
         , target: { race: [ "オーク", "ゴブリン" ] }

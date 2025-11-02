@@ -1007,6 +1007,14 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "ちびグラティア", rarity: "ちび", cl: "鍛冶職人"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
         name: "グラディエーター", cl: "グラディエーター", AW: "未"
         , stats: { atk: "+5%" }
         , target: { others: [ "魔界" ] }

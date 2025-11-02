@@ -1276,6 +1276,14 @@ buff.skill_cat = [
         ]
     }
     , {
+        name: "ちびグラティア", rarity: "ちび", cl: "鍛冶職人", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
         name: "フーロン/浴衣", rarity: "黒", cl: "キョンシー", AW: "未", skill: "通常"
         , stats: { atk: "×1.3" }
         , target: { season: [ "サマー" ] }

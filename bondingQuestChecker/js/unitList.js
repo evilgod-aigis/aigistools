@@ -1608,6 +1608,8 @@ const unitList = [
     , { id: 0x062c, implDate: "2025/10/23", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "呪命師", name: "ベネー", modifier: "帝国生贄術士", latent: "白の帝国" }
     , { id: 0x062d, implDate: "2025/10/23", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ポーター", name: "オルドネッタ", modifier: "帝国補給兵", latent: "白の帝国" }
     , { id: 0x062e, implDate: "2025/10/23", implDate_bq: null        , obtain: [ "tr", "dark" ], rarity: "b" , depType: "vang", class: "プリンセス", name: "ベラドンナ", modifier: "伯爵令嬢", latent: "白の帝国" }
+    , { id: 0x062f, implDate: "2025/11/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "鍛冶職人", name: "ちびグラティア", latent: "白の帝国" }
+    , { id: 0x0630, implDate: "2025/11/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "シールダー", name: "ちびクリッペ", latent: "白の帝国" }
     
     
     
