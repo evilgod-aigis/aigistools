@@ -393,7 +393,7 @@ funcs.unitsData.CorrectSkill = (unit, withBuff = true) => {
         _.forEach(skill, obj => {
             if("WT" in obj.uncorr) obj.corr.WT = obj.uncorr.WT * buffValue.WT;
             else {
-                if(rarity === "黒") obj.corr.WT = (AW === "通常" ? 1 : 5) * buffValue.WT;
+                if(!rarity || rarity === "黒") obj.corr.WT = (AW === "通常" ? 1 : 5) * buffValue.WT;
                 else obj.corr.WT = obj.uncorr.CT * corr_WT * buffValue.WT;
             }
             if("redep" in obj.uncorr) obj.corr.CT = obj.corr.WT + obj.uncorr.redep
@@ -405,7 +405,7 @@ funcs.unitsData.CorrectSkill = (unit, withBuff = true) => {
         _.forEach(skill, obj => {
             if("WT" in obj.uncorr) obj.corr.WT = obj.uncorr.WT;
             else {
-                if(rarity === "黒") obj.corr.WT = (AW === "通常" ? 1 : 5);
+                if(!rarity || rarity === "黒") obj.corr.WT = (AW === "通常" ? 1 : 5);
                 else obj.corr.WT = obj.uncorr.CT * corr_WT;
             }
             if("redep" in obj.uncorr) obj.corr.CT = obj.corr.WT + obj.uncorr.redep

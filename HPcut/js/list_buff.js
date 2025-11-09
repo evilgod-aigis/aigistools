@@ -275,6 +275,12 @@ lists.buff.rCT.list = [
         , tooltip: "[配置] 属性：温泉・魔界の再動-35%"
     }
     , {
+        id: null, buffer: "帝国参謀総長レオナ", awaken: "覚醒"
+        , value: 65, disabled: null, req: "deploy"
+        , target: [ { attribution: [ "白の帝国" ] } ]
+        , tooltip: "[配置] 属性：白の帝国の再動-65%"
+    }
+    , {
         id: null, buffer: "戦場の政務官アンナ", awaken: "覚醒"
         , value: 50, disabled: null, req: "skill"
         , target: [ { unitClass: [ "王子" ] } ]
@@ -1123,6 +1129,20 @@ lists.buff.takenDmg = {};
 lists.buff.takenDmg.jap = "被ダメ増加";
 lists.buff.takenDmg.list = [
     {
+    /*
+        id: null, buffer: "王子【双鴉】", awaken: null
+        , value: 25, disabled: null, req: "skill"
+        , tooltip: "[スキル・射程内] 被魔法ダメージが25%上昇"
+        , unitInfo: {
+            unitName: "王子【双鴉】", deployType: "近接型"
+            , unitClass: { selected: "王子系" }
+            , attribution: [ "王国", "人間", "高貴" ]
+            , note: [ "男性" ]
+            , WT: 1, CT: 40, dur: 35 //偶数回目
+        }
+    }
+    , {
+    */
         id: null, buffer: "カースウィスパラー", isClass: true, awaken: "覚醒"
         , value: 20, disabled: null, req: "deploy"
         , compound: { takenDmg: [ { buffer: "災禍を律す者モルフェサ" } ] }

@@ -71,10 +71,6 @@ saveData.checkbox.Load = (_data = "", _version = saveData.version, _adapt = fals
     saveData.checkbox.Decompress(_data);
     if(_version < saveData.version) {
         switch(_version) {
-            case 1:
-            case 2:
-            case 3:
-                break;
             case 4:
                 saveData.checkbox.Insert(0x061a);
                 break
@@ -316,7 +312,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
         // indexedDB利用可能
         const request = indexedDB.open("aigis_bondingQuestChecker", saveData.version);
         saveData.objStoreName = "data";
-        let oldVersion = 0;
+        let oldVersion = saveData.version;
         request.onupgradeneeded = e1 => {
             saveData.db = e1.target.result;
             saveData.db.onerror = e2 => saveData.Construct(false);
@@ -380,9 +376,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             const objStore = transaction.objectStore(saveData.objStoreName);
             _.forEach(saveItem[saveData.version].saveData, dataName => {
                 const request = objStore.get(dataName);
-                request.onsuccess = e2 => {
-                    saveData[dataName].Load(e2.target.result.data, oldVersion);
-                }
+                request.onsuccess = e2 => saveData[dataName].Load(e2.target.result.data, oldVersion);
             });
             table.SetObjects();
             _.forEach(saveItem[saveData.version].setting, dataName => {
