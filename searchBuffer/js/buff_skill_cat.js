@@ -29,6 +29,11 @@ buff.skill_cat = [
         , note: [ "永続スキル", "Lv4" ]
     }
     , {
+        name: "王子【双鴉】", cl: "王子", skill: "通常(奇)"
+        , stats: { cost: "×0.7" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
         name: "ちび王子", cl: "王子", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { others: [ "ちび" ] }

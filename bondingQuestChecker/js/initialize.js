@@ -58,7 +58,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // 元に戻す
     buttons[2].addEventListener("click", () => {
         if(!("data_tmp" in saveData.checkbox)) return;
-        saveData.checkbox.Load(saveData.checkbox.data_tmp, true);
+        saveData.checkbox.Load(saveData.checkbox.data_tmp, saveData.version, true);
         buttons[2].disabled = true;
         delete saveData.checkbox.data_tmp;
         const newSpan = document.createElement("span");
@@ -121,7 +121,7 @@ window.addEventListener("DOMContentLoaded", () => {
             }
             if(canLoad) {
                 saveData.checkbox.data_tmp = saveData.checkbox.data_short;
-                saveData.checkbox.Load(text[1], true, Number(text[0]));
+                saveData.checkbox.Load(text[1], Number(text[0]), true);
                 buttons[2].disabled = false;
                 input.value = "";
                 newSpan.innerHTML = "読み込み完了";

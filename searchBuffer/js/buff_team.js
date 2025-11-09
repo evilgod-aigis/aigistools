@@ -164,6 +164,11 @@ buff.team = [
         , target: { year: [ "2013年", "2025年" ] }
     }
     , {
+        name: "王子【双鴉】", cl: "王子"
+        , stats: { atk: "+10%", range: "+10" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
         name: "ちび王子", cl: "王子"
         , stats: { atk: "+15%" }
         , target: { others: [ "ちび" ] }

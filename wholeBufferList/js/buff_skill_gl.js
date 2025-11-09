@@ -15,6 +15,10 @@ buff.skill_gl = [
         , note: "倍率+0.02/配置数"
     }
     , {
+        name: "王子【双鴉】", cl: "王子", skill: "通常(奇)"
+        , stats: { rege: [ "100/秒", "50/15f" ] }
+    }
+    , {
         name: "王子【幼少】", cl: "王子", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
     }

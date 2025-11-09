@@ -270,6 +270,11 @@ buff.team = [
         , stats: { poison: "-100%", abn: "-100%" }
     }
     , {
+        name: "サリエット", rarity: "黒", cl: "育成の聖霊", AW: "覚醒"
+        , stats: { cost: "-1" }
+        , note: "永続スキル"
+    }
+    , {
         name: "テュト/異装", rarity: "黒", cl: "妖精術師【冥府館】", AW: "未"
         , stats: { other: "" }
         , note: "貫通攻撃(15%)付与"

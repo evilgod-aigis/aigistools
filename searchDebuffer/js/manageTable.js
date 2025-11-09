@@ -47,8 +47,8 @@ table.debuffType.type = {
         , color: "rgba(255, 255, 0, 0.3)"
     }
     , atkCd: {
-        list: []
-        , color: "rgba(255, 127, 0, 0.3)"
+        list: [ "area" ]
+        , color: "rgba(255, 0, 255, 0.3)"
     }
     , stop: {
         list: [ "area", "global" ]

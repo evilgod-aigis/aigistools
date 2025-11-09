@@ -3086,6 +3086,13 @@ debuff.mixture = [
         , note: "スキル発動時"
     }
     , {
+        name: "ヘスティス", rarity: "黒", cl: "炉の亜神", AW: "覚醒"
+        , stats: {
+            atkCd: { value: "+?f", type: "area" }
+        }
+        , domain: "area"
+    }
+    , {
         name: "ヤシマ", rarity: "黒", cl: "妖狸", AW: "未", skill: "通常"
         , stats: {
             stop: { value: "149f", type: "global" }

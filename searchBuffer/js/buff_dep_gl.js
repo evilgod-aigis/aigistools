@@ -1800,6 +1800,16 @@ buff.dep_gl = [
         , target: { others: [ "魔術師" ] }
     }
     , {
+        name: "クルーナ", rarity: "白", cl: "呪命師", AW: "未"
+        , stats: { atk: "+3%", def: "+3%" }
+        , target: { race: [ "獣人" ] }
+    }
+    , {
+        name: "クルーナ", rarity: "白", cl: "呪命師", AW: "覚醒"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: { race: [ "獣人" ] }
+    }
+    , {
         name: "ゴブリン博士", cl: "ゴブリン博士"
         , stats: { hp: "+10%", atk: "+10%" }
         , target: [

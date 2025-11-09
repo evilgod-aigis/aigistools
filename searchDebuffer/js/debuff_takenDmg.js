@@ -1,6 +1,11 @@
 // 被ダメージ
 debuff.takenDmg = [
     {
+        name: "王子【双鴉】", cl: "王子", skill: "通常(偶)"
+        , stats: { value: "+25%" }
+        , note: "範囲"
+    }
+    , {
         name: "カースウィスパラー", cl: "カースウィスパラー", AW: "覚1"
         , stats: { value: "+20%" }
         , note: "範囲"

@@ -54,6 +54,18 @@ buff.dep_area = [
         , target: { home: [ "東の国" ] }
     }
     , {
+        name: "ヘスティス", rarity: "黒", cl: "炉の亜神", AW: "未"
+        , stats: { other: "" }
+        , target: { depType: [ "近接" ] }
+        , note: "被HP回復量×1.4"
+    }
+    , {
+        name: "ヘスティス", rarity: "黒", cl: "炉の亜神", AW: "覚醒"
+        , stats: { other: "" }
+        , target: { depType: [ "近接" ] }
+        , note: "被HP回復量×1.6"
+    }
+    , {
         name: "オルドネッタトークン", rarity: "トークン", AW: "未"
         , stats: { range: "×1.1" }
         , target: { depType: [ "遠距離" ] }

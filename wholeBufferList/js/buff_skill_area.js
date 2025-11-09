@@ -452,7 +452,7 @@ buff.skill_area = [
     }
     , {
         name: "アンジェラ", rarity: "黒", cl: "ウィッチ", AW: "覚醒", skill: "覚醒"
-        , stats: { atk: "×1.3" }
+        , stats: { atk: "×1.4" }
     }
     , {
         name: "クルス/クリスマス", rarity: "黒", cl: "ヴァンパイアハンター", AW: "未", skill: "通常"
@@ -1121,6 +1121,25 @@ buff.skill_area = [
     , {
         name: "プルーシア", rarity: "白", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
         , stats: { ct: "-35%", eva: "50%" }
+    }
+    , {
+        name: "サリエット", rarity: "黒", cl: "育成の聖霊", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.2", def: "×1.2", mr: "×1.2", rege: [ "120/秒", "60/15f" ] }
+        , note: "永続スキル"
+    }
+    , {
+        name: "ヘスティス", rarity: "黒", cl: "炉の亜神", AW: "未", skill: "通常"
+        , stats: { rege: [ "400/秒", "200/15f" ] }
+        , note: "永続スキル"
+    }
+    , {
+        name: "ヘスティス", rarity: "黒", cl: "炉の亜神", AW: "覚醒", skill: "通常"
+        , stats: { rege: [ "400/秒", "200/15f" ] }
+        , note: "永続スキル"
+    }
+    , {
+        name: "ヘスティス", rarity: "黒", cl: "炉の亜神", AW: "覚醒", skill: "覚醒"
+        , stats: { hp: "+60%" }
     }
     , {
         name: "戦場に集う聖霊たち", rarity: "黒", cl: "支援の聖霊", skill: "通常"

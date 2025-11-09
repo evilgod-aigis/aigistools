@@ -1,5 +1,5 @@
 const saveData = {};
-saveData.version = 4;
+saveData.version = 5;
 saveData.CHAR = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$=";
 saveData.compressChars = Object.freeze({ "0": "bc", "7": "jk", "i": "op", "U": "st", "=": "xy" });
 saveData.divider = "|";
@@ -67,17 +67,21 @@ saveData.checkbox.Save = (_id, _own, _clear) => {
     saveData.Save("checkbox", saveData.checkbox.data_short);
 }
 // 所持・クリアのチェック・ロック状況を読み込み
-saveData.checkbox.Load = (_data = "", _adapt = false, _version = saveData.version) => {
-    /* データ形態が変わったらバージョンチェンジかなぁ
-    switch(_version) {
-        case 1:
-        case 2:
-            break;
+saveData.checkbox.Load = (_data = "", _version = saveData.version, _adapt = false) => {
+    saveData.checkbox.Decompress(_data);
+    if(_version < saveData.version) {
+        switch(_version) {
+            case 1:
+            case 2:
+            case 3:
+                break;
+            case 4:
+                saveData.checkbox.Insert(0x061a);
+                break
+        }
     }
-    */
     let id = 0;
     let exist = true;
-    saveData.checkbox.Decompress(_data);
     _.forEach(saveData.checkbox.data, char => {
         _.forEach(saveData.To3bits(char), bitData => {
             if(!unitList[id]) return exist = false;
@@ -116,14 +120,91 @@ saveData.checkbox.Load = (_data = "", _adapt = false, _version = saveData.versio
         table.ToggleCheckbox.load();
     }
 }
+// ユニットリストへの挿入をデータ列に適用
+saveData.checkbox.Insert = (..._ids) => {
+    if(Object.isFrozen(saveData) && !saveData.checkbox.data_tmp) return;
+    let ids = _.reduce(_ids, (result, id) => {
+        if(unitList[id]) result.push(id);
+        return result;
+    }, []);
+    ids = _.sortBy(ids);
+    // 複数挿入したとき、データ列の変化の有無が交互に出ることから、ペアを作る
+    let n_insert = { all: 0, pair: 0, odd: false };
+    ids = _.reduce(ids, (result, id) => {
+        if(n_insert.odd) {
+            result[n_insert.pair].push(id + n_insert.pair * 2);
+            ++n_insert.pair;
+            n_insert.odd = false;
+        } else {
+            result.push([ id + n_insert.pair * 2 ]);
+            n_insert.odd = true;
+        }
+        ++n_insert.all;
+        return result;
+    }, []);
+    // プログラムの一貫性を保つため、最後にペアができなかったときの穴埋め
+    if(n_insert.odd) ids[n_insert.pair].push(unitList.length + n_insert.pair * 2);
+    
+    _.forEach(ids, pair => {
+        const index = [ Math.floor(pair[0] / 2), Math.ceil(pair[1] / 2) ];
+        const before = saveData.checkbox.data.substring(0, index[0]);
+        const target = saveData.checkbox.data.substring(index[0], index[1]);
+        const after = saveData.checkbox.data.substring(index[1]);
+        
+        const length = target.length;
+        const target_bitData = _.reduce(target, (result, char, i) => {
+            const bitData = saveData.To3bits(char);
+            if(i === 0 && pair[0] % 2) result[0][0] = bitData[0];               // pair[0]: odd
+            else result[i][1] = bitData[0];
+            if(i === length - 1 && pair[1] % 2) result.push([ 0, bitData[1] ]); // pair[1]: odd
+            else result.push([ bitData[1], 0 ]);
+            return result;
+        }, [ [ 0, 0 ] ]);
+        saveData.checkbox.data = before + _.reduce(target_bitData, (result, bitData) => result += saveData.To64base(bitData), "") + after;
+    });
+    saveData.checkbox.Compress();
+    //saveData.Save("checkbox", saveData.checkbox.data_short);
+}
+// ユニットリストの交換をデータ列に適用
+saveData.checkbox.Swap = (_id1, _id2) => {
+    if(Object.isFrozen(saveData) && !saveData.checkbox.data_tmp) return;
+    if(!unitList[_id1] || !unitList[_id2] || _id1 === id2) return;
+    let id1, id2;
+    if(_id1 < _id2) {
+        id1 = _id1;
+        id2 = _id2;
+    } else {
+        id1 = _id2;
+        id2 = _id1;
+    }
+    
+    const index1 = Math.floor(id1 / 2);
+    const index2 = Math.floor(id2 / 2);
+    const before = saveData.checkbox.data.substring(0, index1);
+    let char1 = saveData.checkbox.data.substring(index1, index1 + 1);
+    const middle = saveData.checkbox.data.substring(index1 + 1, index2);
+    let char2 = saveData.checkbox.data.substring(index2, index2 + 1);
+    const after = saveData.checkbox.data.substring(index2 + 1);
+    const bitData1 = saveData.To3bits(char1);
+    const bitData2 = saveData.To3bits(char2);
+    const i1 = id1 % 2;
+    const i2 = id2 % 2;
+    const tmp = bitData1[i1];
+    bitData1[i1] = bitData2[i2];
+    bitData2[i2]= tmp;
+    char1 = saveData.To64base(bitData1);
+    char2 = saveData.To64base(bitData2);
+    saveData.checkbox.data = before + char1 + middle + char2 + after;
+    saveData.checkbox.Compress();
+    saveData.Save("checkbox", saveData.checkbox.data_short);
+}
 // データ圧縮
 saveData.checkbox.Compress = () => {
     saveData.checkbox.data_short = saveData.checkbox.data;
-    if(_.last(saveData.checkbox.data) === "0")
-        _.forEachRight(saveData.checkbox.data, char => {    // 末尾の0を省略
-            if(char === "0") saveData.checkbox.data_short = saveData.checkbox.data_short.slice(0, -1);
-            else return false;
-        });
+    // 末尾の0を省略
+    while(_.last(saveData.checkbox.data_short) === "0")
+        saveData.checkbox.data_short = saveData.checkbox.data_short.slice(0, -1);
+    
     _.forEach(saveData.compressChars, (marker, compressChar) => {
         // 比較的多そうな07iU=を圧縮
         let length = saveData.checkbox.data_short.length;
@@ -224,17 +305,24 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             , setting: [ "unitName", "backgroundColor" ]
             , filter: [ "column", "rarity", "sex", "obtain", "depType", "derivation", "year", "year_bq", "own", "clear" ]
         }
+        , 5: {
+            saveData: [ "checkbox" ]
+            , setting: [ "unitName", "backgroundColor" ]
+            , filter: [ "column", "rarity", "sex", "obtain", "depType", "derivation", "year", "year_bq", "own", "clear" ]
+        }
     };
     
     if(_canUseIndexedDB && window.indexedDB) {
         // indexedDB利用可能
         const request = indexedDB.open("aigis_bondingQuestChecker", saveData.version);
         saveData.objStoreName = "data";
+        let oldVersion = 0;
         request.onupgradeneeded = e1 => {
             saveData.db = e1.target.result;
             saveData.db.onerror = e2 => saveData.Construct(false);
             // バージョン確認
-            switch(e1.oldVersion) {
+            oldVersion = e1.oldVersion;
+            switch(oldVersion) {
                 case 0: {
                         const objStore = saveData.db.createObjectStore(saveData.objStoreName, { keyPath: "dataName" });
                         _.forEach(saveItem[saveData.version], arr =>
@@ -273,6 +361,7 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                         const objStore = e1.target.transaction.objectStore(saveData.objStoreName);
                         objStore.put({ dataName: "sex", data: "" });
                     }
+                case 4:
                     break;
             }
         }
@@ -291,7 +380,9 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             const objStore = transaction.objectStore(saveData.objStoreName);
             _.forEach(saveItem[saveData.version].saveData, dataName => {
                 const request = objStore.get(dataName);
-                request.onsuccess = e2 => saveData[dataName].Load(e2.target.result.data);
+                request.onsuccess = e2 => {
+                    saveData[dataName].Load(e2.target.result.data, oldVersion);
+                }
             });
             table.SetObjects();
             _.forEach(saveItem[saveData.version].setting, dataName => {
@@ -439,12 +530,13 @@ saveData.Construct = (_canUseIndexedDB = true) => {
             case 3:
                 localStorage.setItem("sex", "");
                 localStorage.setItem("version", saveData.version);
+            case 4:
                 break;
         }
         // データ取得
         _.forEach(saveItem[saveData.version].saveData, dataName => {
             const data = localStorage.getItem(dataName);
-            saveData[dataName].Load(data);
+            saveData[dataName].Load(data, oldVersion);
         });
         table.SetObjects();
         _.forEach(saveItem[saveData.version].setting, dataName => {
