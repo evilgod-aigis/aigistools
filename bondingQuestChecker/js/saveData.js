@@ -73,6 +73,9 @@ saveData.checkbox.Load = (_data = "", _version = saveData.version, _adapt = fals
         switch(_version) {
             case 4:
                 saveData.checkbox.Insert(0x061a);
+                document.getElementById("alert").innerHTML = "\
+                    <p>2025年9月以降に実装されたユニットについて、チェックがずれている可能性が高いです。</p>\
+                    <p>お手数ですが、ご確認ください。</p>";
                 break
         }
     }
@@ -357,7 +360,11 @@ saveData.Construct = (_canUseIndexedDB = true) => {
                         const objStore = e1.target.transaction.objectStore(saveData.objStoreName);
                         objStore.put({ dataName: "sex", data: "" });
                     }
-                case 4:
+                case 4: {
+                        document.getElementById("alert").innerHTML = "\
+                            <p>2025年9月以降に実装されたユニットについて、チェックがずれている可能性が高いです。</p>\
+                            <p>お手数ですが、ご確認ください。</p>";
+                    }
                     break;
             }
         }
