@@ -159,7 +159,7 @@ saveData.checkbox.Insert = (..._ids) => {
         saveData.checkbox.data = before + _.reduce(target_bitData, (result, bitData) => result += saveData.To64base(bitData), "") + after;
     });
     saveData.checkbox.Compress();
-    //saveData.Save("checkbox", saveData.checkbox.data_short);
+    saveData.Save("checkbox", saveData.checkbox.data_short);
 }
 // ユニットリストの交換をデータ列に適用
 saveData.checkbox.Swap = (_id1, _id2) => {
