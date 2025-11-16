@@ -1784,6 +1784,18 @@ buff.skill_cat = [
         , target: { race: [ "人間", "半神" ] }
     }
     , {
+        name: "ネーヴェ", rarity: "黒", cl: "妖糸使い", AW: "未", skill: "通常"
+        , stats: { atk: "×1.5", def: "×1.5", other: "" }
+        , target: { others: [ "高貴" ] }
+        , note: "身代わり"
+    }
+    , {
+        name: "ネーヴェ", rarity: "黒", cl: "妖糸使い", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.5", def: "×1.5", other: "" }
+        , target: { others: [ "高貴" ] }
+        , note: "身代わり"
+    }
+    , {
         name: "王城", rarity: "黒", cl: "王城", AW: "未", skill: "通常"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { home: [ "王国" ] }
@@ -2902,6 +2914,12 @@ buff.skill_cat = [
     }
     , {
         name: "アンナホープネス", rarity: "金", cl: "試験型支援騎", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: { others: [ "機械" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "ちびアンナホープネス", rarity: "ちび", cl: "試験型支援騎", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { others: [ "機械" ] }
         , note: "範囲"

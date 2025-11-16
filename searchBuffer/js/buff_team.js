@@ -1808,6 +1808,18 @@ buff.team = [
         ]
     }
     , {
+        name: "ネーヴェ", rarity: "黒", cl: "妖糸使い", AW: "未"
+        , stats: { other: "" }
+        , target: { others: [ "高貴" ] }
+        , note: "奇跡の盾(10%)付与"
+    }
+    , {
+        name: "ネーヴェ", rarity: "黒", cl: "妖糸使い", AW: "覚醒"
+        , stats: { other: "" }
+        , target: { others: [ "高貴" ] }
+        , note: "奇跡の盾(15%)付与"
+    }
+    , {
         name: "白虎", rarity: "黒", cl: "西の守護虎", AW: "未"
         , stats: { atkCd: "-?%" }
         , target: { home: [ "華の国" ] }
@@ -2778,11 +2790,6 @@ buff.team = [
             { race: [ "ゴブリン" ] }
             , { others: [ "機械" ] }
         ]
-    }
-    , {
-        name: "アンナホープネス", rarity: "金", cl: "試験型支援騎"
-        , stats: { atk: "+10%" }
-        , target: { cl: [ "試験型英雄騎" ] }
     }
     , {
         name: "ヤシマ", rarity: "黒", cl: "妖狸", AW: "覚醒"

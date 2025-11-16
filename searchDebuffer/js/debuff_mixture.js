@@ -1454,6 +1454,14 @@ debuff.mixture = [
         , note: "妖糸使い系"
     }
     , {
+        name: "ネーヴェ", rarity: "黒", cl: "妖糸使い", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            def: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
+    }
+    , {
         name: "ツザーネ", rarity: "白", cl: "妖糸使い", AW: "未", skill: "通常"
         , stats: {
             mr: { value: "-15%", type: "area" }

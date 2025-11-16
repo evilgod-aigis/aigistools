@@ -1838,6 +1838,16 @@ buff.dep_gl = [
         , note: "無差別バフと合わせて+15%"
     }
     , {
+        name: "アンナホープネス", rarity: "金", cl: "試験型支援騎"
+        , stats: { atk: "+10%" }
+        , target: { cl: [ "試験型英雄騎" ] }
+    }
+    , {
+        name: "ちびアンナホープネス", rarity: "ちび", cl: "試験型支援騎"
+        , stats: { atk: "+10%" }
+        , target: { cl: [ "試験型英雄騎" ] }
+    }
+    , {
         name: "パリオス", rarity: "黒", cl: "スカイウォリアー", AW: "覚醒"
         , stats: { atk: "+10%", def: "+10%", mr: "+5" }
         , target: { race: [ "鳥人" ] }
@@ -1870,6 +1880,12 @@ buff.dep_gl = [
             { race: [ "天使", "鳥人", "天界人" ] }
             , { season: [ "エッグハント" ] }
         ]
+    }
+    , {
+        name: "ドラゴンソブリン", cl: "ドラゴンノーブル", AW: "覚2b"
+        , stats: { atk: "+25%", def: "+25%" }
+        , target: { others: [ "ドラゴン", "飛行" ] }
+        , note: "ドラゴンノーブル系"
     }
     , {
         name: "帝国軍旗", rarity: "金", cl: "帝国軍旗"
@@ -2014,6 +2030,12 @@ buff.dep_gl = [
                 , "対魔忍 自然【対魔忍】"
             ]
         }
+    }
+    , {
+        name: "帝国騎士", rarity: "トークン", AW: "覚醒"
+        , stats: { other: "" }
+        , target: { home: [ "白の帝国" ] }
+        , note: [ "ディアナ", "身代わり" ]
     }
     , {
         name: "恋の応援団（霊）", rarity: "トークン", AW: "覚醒"

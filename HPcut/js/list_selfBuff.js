@@ -22,6 +22,7 @@ lists.selfBuff.rWT = [
     , { id: null, buffer: "普賢", value: 40 }
     , { id: null, buffer: "信仰の槍士コルム", value: 50 }
     , { id: null, buffer: "祭夜の遊侠フーイェン", value: 50 }
+    , { id: null, buffer: "剣姫の指南役ロゼルヌ", value: 100 }
     , { id: null, buffer: "帝国魔術師イルマ", value: 50 }
     , { id: null, buffer: "炎のサンタ召喚士ソラノ", value: 40 }
     , { id: null, buffer: "甘美な踊り子マーニー", value: 60 }

@@ -933,7 +933,7 @@ const unitList = [
     , { id: 0x0392, implDate: "2021/09/09", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "vang", class: "霊刀つくもがみ", name: "カザキリ", modifier: "斬刀付喪神" }
     , { id: 0x0393, implDate: "2021/09/09", implDate_bq: null        , obtain: [ "sh"         ], rarity: "g" , depType: "vang", class: "ワルキューレ", name: "ピューロ", modifier: "純真の槍騎兵" }
     , { id: 0x0394, implDate: "2021/09/09", implDate_bq: null        , obtain: [ "sh"         ], rarity: "g" , depType: "vang", class: "シーソルジャー", name: "リトヴァ", modifier: "淡紅の深海兵" }
-    , { id: 0x0395, implDate: "2021/09/09", implDate_bq: null        , obtain: [ "sh"         ], rarity: "g" , depType: "rear", class: "パイレーツ", name: "カリナ", modifier: "可憐海賊" }
+    , { id: 0x0395, implDate: "2021/09/09", implDate_bq: "2025/11/13", obtain: [ "sh"         ], rarity: "g" , depType: "rear", class: "パイレーツ", name: "カリナ", modifier: "可憐海賊" }
     , { id: 0x0396, implDate: "2021/09/09", implDate_bq: null        , obtain: [ "sh"         ], rarity: "g" , depType: "both", class: "スカイシューター", name: "フーザント", modifier: "黒翼の射手" }
     , { id: 0x0397, implDate: "2021/09/16", implDate_bq: "2025/08/12", obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "霊宝つくもがみ", name: "シュカ", modifier: "分福茶釜付喪神" }
     , { id: 0x0398, implDate: "2021/09/22", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "スカラー", name: "アナベラ", modifier: "知識の求道者" }
@@ -1471,7 +1471,7 @@ const unitList = [
     , { id: 0x05a4, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "砲術士", name: "ハイデマリー", modifier: "温泉砲術士", derivation: "温泉", latent: "白の帝国" }
     , { id: 0x05a5, implDate: "2025/01/16", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "デーモンシェフ", name: "ちびデーモンシェフ", male: 1 }
     , { id: 0x05a6, implDate: "2025/01/23", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "隧道掘削兵", name: "ピーク", modifier: "鋼の掘削兵" }
-    , { id: 0x05a7, implDate: "2025/01/30", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "メディック", name: "キリエ", modifier: "王国医学伝" }
+    , { id: 0x05a7, implDate: "2025/01/30", implDate_bq: "2025/11/13", obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "メディック", name: "キリエ", modifier: "王国医学伝" }
     , { id: 0x05a8, implDate: "2025/02/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "魔法剣士", name: "ちびタラニア" }
     , { id: 0x05a9, implDate: "2025/02/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ドラゴンシャーマン", name: "ちびハクノカミ" }
     , { id: 0x05aa, implDate: "2025/02/06", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "支援工兵", name: "アイゼルフ", modifier: "鋼の支援工兵" }
@@ -1614,6 +1614,10 @@ const unitList = [
     , { id: 0x0633, implDate: "2025/11/06", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "呪命師", name: "クルーナ", modifier: "銀狼術士" }
     , { id: 0x0634, implDate: "2025/11/06", implDate_bq: null        , obtain: [ "tr", "else" ], rarity: "gc", depType: "both", class: "スカイウォリアー", name: "ちびパリオス" }
     , { id: 0x0635, implDate: "2025/11/06", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "rear", class: "育成の聖霊", name: "サリエット", modifier: "育成聖霊" }
+    , { id: 0x0636, implDate: "2025/11/13", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "ソードマスター", name: "ロゼルヌ", modifier: "剣姫の指南役" }
+    , { id: 0x0637, implDate: "2025/11/13", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "both", class: "ドラゴンノーブル", name: "エヴェリーナ", modifier: "竜騎の公爵" }
+    , { id: 0x0638, implDate: "2025/11/13", implDate_bq: null        , obtain: [ "ev", "subj" ], rarity: "b" , depType: "vang", class: "妖糸使い", name: "ネーヴェ", modifier: "雪豹執事" }
+    , { id: 0x0639, implDate: "2025/11/13", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "rear", class: "試作型支援騎", name: "ちびアンナホープネス" }
     
     
     
