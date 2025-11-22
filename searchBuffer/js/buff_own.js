@@ -207,6 +207,11 @@ buff.own = [
         , target: { home: [ "東の国" ] }
     }
     , {
+        name: "セーラ/新装", rarity: "黒", cl: "侍従の英雄譚", AW: "覚醒"
+        , stats: { atk: "+5%" }
+        , target: { home: [ "王国" ] }
+    }
+    , {
         name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒"
         , stats: { atk: "+5%", range: "+10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }
@@ -333,6 +338,11 @@ buff.own = [
         name: "アヴリック", rarity: "白", cl: "ギアマンサー", AW: "覚醒"
         , stats: { hp: "+3%" }
         , target: { others: [ "砲兵" ] }
+    }
+    , {
+        name: "モリグナン", rarity: "黒", cl: "黒鴉の神話", AW: "覚醒"
+        , stats: { atk: "+5%" }
+        , target: { cl: [ "黒鴉の神話", "ウィッチ", "クロノウィッチ" ] }
     }
     , {
         name: "エフトラ", rarity: "黒", cl: "異世界戦士", AW: "覚醒"

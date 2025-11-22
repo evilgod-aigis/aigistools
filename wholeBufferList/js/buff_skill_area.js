@@ -28,6 +28,10 @@ buff.skill_area = [
         , stats: { abn: "-100%" }
     }
     , {
+        name: "侍従の英雄譚", cl: "侍従の英雄譚", AW: "覚1", skill: [ "通常", "覚醒" ]
+        , stats: { atk: "×1.2", def: "×1.2" }
+    }
+    , {
         name: "ユージェン/お正月", rarity: "白", cl: "チェイスハンター", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , note: "隠密付与"

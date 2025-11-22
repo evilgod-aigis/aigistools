@@ -70,10 +70,19 @@ buff.skill_cat = [
         , target: { others: [ "ドラゴン" ] }
     }
     , {
+        name: "セーラ/新装", rarity: "黒", cl: "侍従の英雄譚", AW: "覚醒", skill: "覚醒"
+        , stats: { def: "×1.8" }
+        , target: [
+            { depType: [ "近接" ] }
+            , { home: [ "王国" ] }
+        ]
+        , note: "永続スキル"
+    }
+    , {
         name: "アヴリック", rarity: "黒", cl: "ギアマンサー", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.2", range: "×1.2" }
         , target: { others: [ "砲兵" ] }
-        , note: [ "永続スキル", "分類未確認" ]
+        , note: "永続スキル"
     }
     , {
         name: "マルゴット", rarity: "黒", cl: "ソルジャー", AW: "未", skill: "通常"

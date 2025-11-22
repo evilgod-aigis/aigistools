@@ -41,6 +41,12 @@ debuff.hit = [
         , note: "確率30%で貫通"
     }
     , {
+        name: "黒鴉の神話", cl: "黒鴉の神話", AW: "覚1"
+        , stats: { atk: "-90%", def: "-90%", mr: "-90%" }
+        , atkAttr: "魔法", dur: "300f"
+        , note: [ "カエル化", "確率" ]
+    }
+    , {
         name: "エフトラ", rarity: "黒", cl: "異世界戦士", AW: "覚醒"
         , stats: { atkCd: "+30f" }
         , atkAttr: "貫通", dur: "?f"
@@ -1760,6 +1766,18 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "149f"
         , note: [ "転生魔導士", "死亡?時" ]
+    }
+    , {
+        name: "モリグナン[黒]トークン(狼)", rarity: "トークン", AW: "覚醒"
+        , stats: { atk: "-90%", def: "-90%", mr: "-90%" }
+        , atkAttr: "物理", dur: "300f"
+        , note: [ "モリグナン[黒]", "カエル化", "確率" ]
+    }
+    , {
+        name: "モリグナン[黒]トークン(烏)", rarity: "トークン", AW: "覚醒"
+        , stats: { atk: "-90%", def: "-90%", mr: "-90%" }
+        , atkAttr: "物理", dur: "300f"
+        , note: [ "モリグナン[黒]", "カエル化", "確率" ]
     }
     , {
         name: "操屍人", rarity: "トークン", AW: "覚醒"

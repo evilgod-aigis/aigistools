@@ -35,6 +35,10 @@ buff.team = [
         , stats: { hp: "+15%" }
     }
     , {
+        name: "王子【極北神剣】", cl: "王子"
+        , stats: { hp: "+10%" }
+    }
+    , {
         name: "アリア/新装", rarity: "黒", cl: "ソルジャー", AW: "未"
         , stats: { atk: "+3%" }
     }

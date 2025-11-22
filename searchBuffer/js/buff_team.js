@@ -174,6 +174,14 @@ buff.team = [
         , target: { others: [ "ちび" ] }
     }
     , {
+        name: "侍従の英雄譚", cl: "侍従の英雄譚", AW: "覚醒"
+        , stats: { hp: "+15%", atk: "+15%", def: "+15%" }
+        , target: [
+            { depType: [ "近接" ] }
+            , { home: [ "王国" ] }
+        ]
+    }
+    , {
         name: "ロイジィ", rarity: "黒", cl: "エレメンタルハーミット", AW: "覚醒"
         , stats: { cost: "-3" }
         , target: { others: [ "コスト回復スキル持ち" ] }

@@ -13,6 +13,10 @@ buff.own = [
         , stats: { hp: "+5%" }
     }
     , {
+        name: "トリステラ", rarity: "黒", cl: "悲哀の騎士", AW: "覚醒"
+        , stats: { hp: "+5%" }
+    }
+    , {
         name: "フィネス", rarity: "黒", cl: "盤上の支配者", AW: "覚醒"
         , stats: { atk: "+2%" }
     }

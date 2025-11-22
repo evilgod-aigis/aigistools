@@ -89,6 +89,14 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "王子【極北神剣】", cl: "王子", skill: "通常"
+        , stats: {
+            stop: { value: "?f", type: "area" }
+        }
+        , domain: "area"
+        , note: "スキル発動時"
+    }
+    , {
         name: "トラム/水着", rarity: "白", cl: "銀腕の神話", AW: "覚醒", skill: [ "通常", "覚醒" ]
         , stats: {
             mr: { value: "-25%", type: "area" }
