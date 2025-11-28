@@ -1621,6 +1621,8 @@ const unitList = [
     , { id: 0x063a, implDate: "2025/11/20", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "rear", class: "悲哀の騎士", name: "トリステラ", modifier: "悲劇を奏でし者" }
     , { id: 0x063b, implDate: "2025/11/20", implDate_bq: null        , obtain: [ "sh"         ], rarity: "bh", depType: "rear", class: "黒鴉の神話", name: "モリグナン", modifier: "黒翼を灯す者" }
     , { id: 0x063c, implDate: "2025/11/20", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "bh", depType: "vang", class: "侍従の英雄譚", name: "セーラ", modifier: "極白の侍女武官", derivation: "新装" }
+    , { id: 0x063d, implDate: "2025/11/27", implDate_bq: null        , obtain: [ "ev", "maji" ], rarity: "b" , depType: "rear", class: "永き夢の亜神", name: "ヒュープ", modifier: "眠りの亜神", male: 1 }
+    , { id: 0x063e, implDate: "2025/11/27", implDate_bq: null        , obtain: [ "tr", "evil" ], rarity: "ph", depType: "rear", class: "黒鴉の神話", name: "モリグナン", modifier: "黒翼を灯す者" }
     
     
     

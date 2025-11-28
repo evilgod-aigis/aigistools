@@ -11,7 +11,7 @@ buff.skill_area = [
     }
     , {
         name: "ベラドンナ", rarity: "黒", cl: "プリンセス", AW: "未", skill: "通常"
-        , stats: { atk: "×1.1", def: "×1.1" }
+        , stats: { atk: "×1.2", def: "×1.2" }
         , target: [
             { home: [ "白の帝国" ] }
             , { others: [ "高貴" ] }
@@ -20,7 +20,7 @@ buff.skill_area = [
     }
     , {
         name: "ベラドンナ", rarity: "黒", cl: "プリンセス", AW: "覚醒", skill: "通常"
-        , stats: { atk: "×1.1", def: "×1.1" }
+        , stats: { atk: "×1.2", def: "×1.2" }
         , target: [
             { home: [ "白の帝国" ] }
             , { others: [ "高貴" ] }
