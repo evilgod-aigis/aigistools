@@ -1939,6 +1939,14 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "ちびヒミコ", rarity: "ちび", cl: "シャーマン", skill: "通常"
+        , stats: {
+            mr: { value: "-50%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "レーヴ", rarity: "白", cl: "ビショップ", AW: "未", skill: "通常"
         , stats: {
             atk: { value: "-15%", type: "limAttr" }

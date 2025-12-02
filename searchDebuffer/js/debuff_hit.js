@@ -42,9 +42,9 @@ debuff.hit = [
     }
     , {
         name: "黒鴉の神話", cl: "黒鴉の神話", AW: "覚1"
-        , stats: { atk: "-90%", def: "-90%", mr: "-90%" }
+        , stats: { atk: "-90%", def: "-90%", mr: "-90%", other: "" }
         , atkAttr: "魔法", dur: "300f"
-        , note: [ "カエル化", "確率" ]
+        , note: [ "カエル化", "攻撃間隔92f化", "確率" ]
     }
     , {
         name: "エフトラ", rarity: "黒", cl: "異世界戦士", AW: "覚醒"
@@ -912,6 +912,11 @@ debuff.hit = [
         , atkAttr: "魔法", dur: "119f"
     }
     , {
+        name: "ちびヒミコ", rarity: "ちび", cl: "シャーマン"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
         name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒"
         , stats: { def: "-40%" }
         , atkAttr: "物理", dur: "59f"
@@ -1769,15 +1774,15 @@ debuff.hit = [
     }
     , {
         name: "モリグナン[黒]トークン(狼)", rarity: "トークン", AW: "覚醒"
-        , stats: { atk: "-90%", def: "-90%", mr: "-90%" }
+        , stats: { atk: "-90%", def: "-90%", mr: "-90%", other: "" }
         , atkAttr: "物理", dur: "300f"
-        , note: [ "モリグナン[黒]", "カエル化", "確率" ]
+        , note: [ "モリグナン[黒]", "カエル化", "攻撃間隔92f化", "確率" ]
     }
     , {
         name: "モリグナン[黒]トークン(烏)", rarity: "トークン", AW: "覚醒"
-        , stats: { atk: "-90%", def: "-90%", mr: "-90%" }
+        , stats: { atk: "-90%", def: "-90%", mr: "-90%", other: "" }
         , atkAttr: "物理", dur: "300f"
-        , note: [ "モリグナン[黒]", "カエル化", "確率" ]
+        , note: [ "モリグナン[黒]", "カエル化", "攻撃間隔92f化", "確率" ]
     }
     , {
         name: "操屍人", rarity: "トークン", AW: "覚醒"

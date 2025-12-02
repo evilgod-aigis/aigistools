@@ -2573,6 +2573,12 @@ buff.skill_cat = [
         , note: "永続スキル"
     }
     , {
+        name: "ちびアルレット", rarity: "ちび", cl: "発明家", skill: "通常"
+        , stats: { range: "×1.2" }
+        , target: { others: [ "機械" ] }
+        , note: "永続スキル"
+    }
+    , {
         name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "未", skill: "通常"
         , stats: { atk: "×1.5", def: "×1.5" }
         , target: { others: [ "深海" ] }
@@ -3092,6 +3098,12 @@ buff.skill_cat = [
         , stats: { atk: "×1.1", def: "×1.1" }
         , target: { home: [ "王国" ] }
         , note: [ "範囲", "永続スキル", "終了時、対象のHP-90%", "分類未確認" ]
+    }
+    , {
+        name: "イルフェイス", rarity: "金", cl: "王子の従竜", skill: "通常"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: { cl: [ "王子", "ドラゴンライダー", "ドラグーン" ] }
+        , note: "分類未確認"
     }
     , {
         name: "アルスラーン", rarity: "白", cl: "王太子", AW: "未", skill: "通常"

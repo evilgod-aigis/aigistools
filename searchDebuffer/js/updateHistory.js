@@ -9,6 +9,12 @@ const updateHistory = [
     , 
     */
     {
+        date: "2025/12/01(月)"
+        , detail: [
+            "ちびヒミコを追加"
+        ]
+    }
+    , {
         date: "2025/11/27(木)"
         , detail: [
             "ヒュープを追加"

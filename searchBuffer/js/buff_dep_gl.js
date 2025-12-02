@@ -1506,6 +1506,14 @@ buff.dep_gl = [
         ]
     }
     , {
+        name: "ちびヒミコ", rarity: "ちび", cl: "シャーマン"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: [
+            { home: [ "東の国" ] }
+            , { race: [ "天界人" ] }
+        ]
+    }
+    , {
         name: "ビショップ", cl: "ビショップ", AW: "未"
         , stats: { ct: "-20%" }
         , target: { others: [ "聖職者" ] }
