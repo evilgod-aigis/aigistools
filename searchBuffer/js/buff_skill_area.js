@@ -129,6 +129,33 @@ buff.skill_area = [
         , note: "永続スキル"
     }
     , {
+        name: "アンナ/クリスマス", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒(1)"
+        , stats: { atk: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
+        name: "アンナ/クリスマス", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒(2)"
+        , stats: { def: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
+        name: "アンナ/クリスマス", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "覚醒(3～)"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+        , note: [ "範囲", "永続スキル", "分類未確認" ]
+    }
+    , {
         name: "トワ", rarity: "黒", cl: "クロノウィッチ", AW: "覚醒", skill: "覚醒"
         , stats: { atkCd: "6f化" }
         , target: { others: [ "魔術師" ] }
@@ -196,6 +223,18 @@ buff.skill_area = [
         name: "ニーカ", rarity: "白", cl: "メディック", AW: "覚醒", skill: "覚醒(3～)"
         , stats: { atk: "×1.3" }
         , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "ジュディス/クリスマス", rarity: "白", cl: "メディック", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , target: { season: [ "クリスマス" ] }
+        , note: "被HP回復量×1.8"
+    }
+    , {
+        name: "ジュディス/クリスマス", rarity: "白", cl: "メディック", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , target: { season: [ "クリスマス" ] }
+        , note: "被HP回復量×1.8"
     }
     , {
         name: "夏侯淵 妙才", rarity: "黒", cl: "弓将【恋姫】", AW: "未", skill: "通常"

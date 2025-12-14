@@ -743,6 +743,14 @@ buff.skill_gl = [
         , note: "分類未確認"
     }
     , {
+        name: "アンナ/クリスマス", rarity: "黒", cl: "政務官", AW: "未", skill: "通常"
+        , stats: { rege: [ "80/秒", "40/15f" ] }
+    }
+    , {
+        name: "アンナ/クリスマス", rarity: "黒", cl: "政務官", AW: "覚醒", skill: "通常"
+        , stats: { rege: [ "80/秒", "40/15f" ] }
+    }
+    , {
         name: "シャルル", rarity: "白", cl: "アルケミスト", AW: "覚醒", skill: "覚醒"
         , stats: { def: "×1.25" }
     }
@@ -939,6 +947,14 @@ buff.skill_gl = [
     , {
         name: "ラタトスク/バレンタイン", rarity: "黒", cl: "ハーバリスト", AW: "覚醒", skill: [ "通常", "覚醒" ]
         , stats: { rege: [ "150/秒", "75/15f" ] }
+    }
+    , {
+        name: "プリニース/クリスマス", rarity: "黒", cl: "スカラー", AW: "未", skill: "通常"
+        , stats: { nul: "50%" }
+    }
+    , {
+        name: "プリニース/クリスマス", rarity: "黒", cl: "スカラー", AW: "覚醒", skill: "通常"
+        , stats: { nul: "50%" }
     }
     , {
         name: "フェリシア", rarity: "白", cl: "スカラー", AW: "未", skill: "通常"

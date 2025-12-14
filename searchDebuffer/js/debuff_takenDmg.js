@@ -88,6 +88,16 @@ debuff.takenDmg = [
         , note: "範囲"
     }
     , {
+        name: "プリニース/クリスマス", rarity: "黒", cl: "スカラー", AW: "覚醒", skill: "覚醒(3～)"
+        , stats: { value: "+25%" }
+        , note: [ "範囲", "永続スキル", "分類未確認" ]
+    }
+    , {
+        name: "ルーシー", rarity: "白", cl: "ガンスリンガー", AW: "未", skill: "通常"
+        , stats: { value: "+20%" }
+        , note: [ "範囲", "魔法のみ" ]
+    }
+    , {
         name: "テュト/異装", rarity: "黒", cl: "妖精術師【冥府館】", AW: "覚醒", skill: "覚醒"
         , stats: { value: "+30%" }
         , note: [ "範囲", "分類未確認" ]

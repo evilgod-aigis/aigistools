@@ -212,6 +212,11 @@ buff.own = [
         , target: { home: [ "王国" ] }
     }
     , {
+        name: "ミレイユ/新装", rarity: "黒", cl: "キングダムガード", AW: "覚醒"
+        , stats: { def: "+5%" }
+        , target: { home: [ "王国" ] }
+    }
+    , {
         name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒"
         , stats: { atk: "+5%", range: "+10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }

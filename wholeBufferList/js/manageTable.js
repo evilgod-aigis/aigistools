@@ -325,8 +325,6 @@ table.CreateTable = () => {
                     newTd.classList.add("cell-filled");
                     if(Array.isArray(buffer.stats[elem]))
                         newTd.innerHTML = buffer.stats[elem].join("<br>");
-                    else if(buffer.stats[elem][0] === "m" && buffer.stats[elem].length === 6)
-                        newTd.innerHTML = `max<span style="margin-left: 0.5em;">${buffer.stats[elem].substring(3)}</span>`;
                     else
                         newTd.innerHTML = buffer.stats[elem];
                 }
@@ -570,10 +568,6 @@ table.Sort = (_buffType, _colName, _allowReverse = true) => {
                         priority_a = 3;
                         value_a = Number.parseFloat(text_a.substring(1));
                         break;
-                    case "m":
-                        priority_a = 4;
-                        value_a = Number.parseFloat(text_a.substring(3));
-                        break;
                     default:
                         if(_.includes(text_a, "%")) priority_a = 0;
                         value_a = Number.parseFloat(text_a);
@@ -586,10 +580,6 @@ table.Sort = (_buffType, _colName, _allowReverse = true) => {
                     case "*":
                         priority_b = 3;
                         value_b = Number.parseFloat(text_b.substring(1));
-                        break;
-                    case "m":
-                        priority_b = 4;
-                        value_b = Number.parseFloat(text_b.substring(3));
                         break;
                     default:
                         if(_.includes(text_b, "%")) priority_b = 0;

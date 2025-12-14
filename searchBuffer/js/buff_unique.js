@@ -277,6 +277,13 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減", "属性不問-20%(範囲)", "分類未確認" ]
     }
     , {
+        name: "ジュディス/クリスマス", rarity: "白", cl: "メディック", AW: "覚醒", skill: "覚醒"
+        , stats: { other: "" }
+        , target: { depType: [ "近接" ] }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "物理-30%(範囲)", "分類未確認" ]
+    }
+    , {
         name: "遠見の眷属猫", rarity: "トークン", AW: "未", skill: "通常"
         , stats: { other: "" }
         , target: [

@@ -41,6 +41,19 @@ buff.dep_gl = [
         , target: { year: [ "2013年", "2025年" ] }
     }
     , {
+        name: "キングダムガード", cl: "キングダムガード", AW: "覚1"
+        , stats: { def: "+15%" }
+        , target: [
+            { home: [ "王国" ] }
+            , { others: [ "重装" ] }
+        ]
+    }
+    , {
+        name: "ミレイユ/新装", rarity: "黒", cl: "キングダムガード", AW: "覚醒"
+        , stats: { draw: "○" }
+        , target: { cl: [ "キングダムガード", "ロイヤルガード" ] }
+    }
+    , {
         name: "ソラス", rarity: "白", cl: "占星術師", AW: "覚醒"
         , stats: { cost: "-10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }
@@ -1379,6 +1392,11 @@ buff.dep_gl = [
         name: "ちびガオレオン", rarity: "ちび", cl: "ガオレオン"
         , stats: { hp: "+5%", def: "+5%" }
         , target: { race: [ "獣人" ] }
+    }
+    , {
+        name: "ちびグラシャラボラス", rarity: "ちび", cl: "グラシャラボラス"
+        , stats: { hp: "+5%", atk: "+5%" }
+        , target: { race: [ "デーモン系" ] }
     }
     , {
         name: "アイギス像", rarity: "金", cl: "女神像"

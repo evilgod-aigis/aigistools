@@ -1429,6 +1429,24 @@ debuff.hit = [
         , atkAttr: "物理", dur: "14f"
     }
     , {
+        name: "ルーシー", rarity: "白", cl: "ガンスリンガー", AW: "未"
+        , stats: { mr: "-10%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ルーシー", rarity: "白", cl: "ガンスリンガー", AW: "覚醒"
+        , stats: { mr: "-15%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ルーシー", rarity: "白", cl: "ガンスリンガー", AW: "覚醒", skill: "覚醒"
+        , stats: { mr: "-25%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "ラピドゥスアイオーン", cl: "時の俯瞰者", AW: "覚2b"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "9f"

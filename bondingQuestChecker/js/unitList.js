@@ -1625,6 +1625,14 @@ const unitList = [
     , { id: 0x063e, implDate: "2025/11/27", implDate_bq: null        , obtain: [ "tr", "evil" ], rarity: "ph", depType: "rear", class: "黒鴉の神話", name: "モリグナン", modifier: "黒翼を灯す者" }
     , { id: 0x063f, implDate: "2025/12/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "シャーマン", name: "ちびヒミコ" }
     , { id: 0x0640, implDate: "2025/12/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "発明家", name: "ちびアルレット" }
+    , { id: 0x0641, implDate: "2025/12/04", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "bh", depType: "vang", class: "キングダムガード", name: "ミレイユ", modifier: "王権の守護騎士", derivation: "新装" }
+    , { id: 0x0642, implDate: "2025/12/04", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "ph", depType: "rear", class: "悲哀の騎士", name: "トリステラ", modifier: "悲劇を奏でし者" }
+    , { id: 0x0643, implDate: "2025/12/04", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "ガンスリンガー", name: "ルーシー", modifier: "瀟洒なる銃士" }
+    , { id: 0x0644, implDate: "2025/12/11", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "戦巫女", name: "タツミ", modifier: "純白の聖夜", derivation: "クリスマス" }
+    , { id: 0x0645, implDate: "2025/12/11", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "スカラー", name: "プリニース", modifier: "聖夜の賢者", derivation: "クリスマス" }
+    , { id: 0x0646, implDate: "2025/12/11", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "メディック", name: "ジュディス", modifier: "聖夜の回診", derivation: "クリスマス" }
+    , { id: 0x0647, implDate: "2025/12/11", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "聖夜の政務官", derivation: "クリスマス" }
+    , { id: 0x0648, implDate: "2025/12/11", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "グラシャラボラス", name: "ちびグラシャラボラス", male: 1 }
     
     
     

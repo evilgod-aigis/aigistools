@@ -354,9 +354,13 @@ buff.skill_area = [
         , note: "分類未確認"
     }
     , {
+        name: "ちびグラシャラボラス", rarity: "ちび", cl: "グラシャラボラス", skill: "通常"
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
         name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "覚醒", skill: "通常"
         , stats: { hp: "+30%", def: "×1.3" }
-        , note: "範囲"
     }
     , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "未", skill: "通常"
@@ -1098,6 +1102,16 @@ buff.skill_area = [
         , stats: { atk: "×1.2", def: "×1.2" }
     }
     , {
+        name: "ジュディス/クリスマス", rarity: "白", cl: "メディック", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , note: "被HP回復量×1.5"
+    }
+    , {
+        name: "ジュディス/クリスマス", rarity: "白", cl: "メディック", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , note: "被HP回復量×1.5"
+    }
+    , {
         name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "未", skill: "通常"
         , stats: { hp: "+30%" }
     }
@@ -1201,12 +1215,10 @@ buff.skill_area = [
     , {
         name: "しづり/異装", rarity: "黒", cl: "冬姫【白面金毛】", AW: "未", skill: "通常"
         , stats: { atkCd: "11f化" }
-        , note: "範囲"
     }
     , {
         name: "しづり/異装", rarity: "黒", cl: "冬姫【白面金毛】", AW: "覚醒", skill: "通常"
         , stats: { atkCd: "11f化" }
-        , note: "範囲"
     }
     , {
         name: "ツキコ★トゥーダ", rarity: "黒", cl: "帝国アイドル", AW: "覚醒", skill: "通常"

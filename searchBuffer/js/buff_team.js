@@ -2766,6 +2766,32 @@ buff.team = [
         ]
     }
     , {
+        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "未"
+        , stats: { atk: "+7%", cost: "-5" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒"
+        , stats: { atk: "+10%", cost: "-8" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
+        name: "ジュディス/クリスマス", rarity: "白", cl: "メディック", AW: "未"
+        , stats: { hp: "+5%" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+    }
+    , {
+        name: "ジュディス/クリスマス", rarity: "白", cl: "メディック", AW: "覚醒"
+        , stats: { hp: "+7%" }
+        , target: [
+            { home: [ "白の帝国" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+    }
+    , {
         name: "妖精術師【冥府館】", cl: "妖精術師【冥府館】", AW: "未"
         , stats: { range: "+5" }
         , target: { others: [ "魔術師" ] }
@@ -2775,16 +2801,6 @@ buff.team = [
         , stats: { range: "+10" }
         , target: { others: [ "魔術師" ] }
         , note: "妖精術師【冥府館】系"
-    }
-    , {
-        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "未"
-        , stats: { atk: "+7%", cost: "-5" }
-        , target: { cl: [ "王子" ] }
-    }
-    , {
-        name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒"
-        , stats: { atk: "+10%", cost: "-8" }
-        , target: { cl: [ "王子" ] }
     }
     , {
         name: "リノ/アイドル", rarity: "白", cl: "アイドル召喚士", AW: "覚醒"
