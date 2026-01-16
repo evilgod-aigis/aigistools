@@ -169,6 +169,16 @@ buff.team = [
         , target: { others: [ "魔術師" ] }
     }
     , {
+        name: "王子【神馬】", cl: "王子"
+        , stats: { cost: "-2" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
+        name: "王子【神馬】", cl: "王子"
+        , stats: { atk: "+7%", def: "+7%" }
+        , target: { year: [ "2014年", "2026年" ] }
+    }
+    , {
         name: "ちび王子", cl: "王子"
         , stats: { atk: "+15%" }
         , target: { others: [ "ちび" ] }
@@ -1637,6 +1647,22 @@ buff.team = [
         ]
     }
     , {
+        name: "シラヌイ/温泉", rarity: "白", cl: "ぬりかべ", AW: "未"
+        , stats: { hp: "+5%", def: "+5%" }
+        , target: [
+            { race: [ "妖怪" ] }
+            , { season: [ "温泉" ] }
+        ]
+    }
+    , {
+        name: "シラヌイ/温泉", rarity: "白", cl: "ぬりかべ", AW: "覚醒"
+        , stats: { hp: "+7%", def: "+7%" }
+        , target: [
+            { race: [ "妖怪" ] }
+            , { season: [ "温泉" ] }
+        ]
+    }
+    , {
         name: "カザキリ", rarity: "白", cl: "霊刀つくもがみ", AW: "未"
         , stats: { other: "" }
         , target: { home: [ "東の国" ], depType: [ "近接" ] }
@@ -2173,6 +2199,22 @@ buff.team = [
         ]
     }
     , {
+        name: "シナト/クリスマス", rarity: "白", cl: "後衛戦術家", AW: "未"
+        , stats: { def: "+5%" }
+        , target: [
+            { cl: [ "前衛戦術家", "後衛戦術家" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+    }
+    , {
+        name: "シナト/クリスマス", rarity: "白", cl: "後衛戦術家", AW: "覚醒"
+        , stats: { def: "+7%" }
+        , target: [
+            { cl: [ "前衛戦術家", "後衛戦術家" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+    }
+    , {
         name: "タマミ", rarity: "白", cl: "陰陽師", AW: "覚醒"
         , stats: { wt: "-25%" }
         , target: { rarity: [ "白" ] }
@@ -2211,6 +2253,22 @@ buff.team = [
         name: "クーシン", rarity: "白", cl: "風水使い", AW: "覚醒"
         , stats: { hp: "+5%", def: "+5%" }
         , target: { cl: [ "モンク", "風水使い" ] }
+    }
+    , {
+        name: "クーシン/温泉", rarity: "白", cl: "風水使い", AW: "未"
+        , stats: { hp: "+5%" }
+        , target: [
+            { cl: [ "モンク" ] }
+            , { season: [ "温泉" ] }
+        ]
+    }
+    , {
+        name: "クーシン/温泉", rarity: "白", cl: "風水使い", AW: "覚醒"
+        , stats: { hp: "+7%" }
+        , target: [
+            { cl: [ "モンク" ] }
+            , { season: [ "温泉" ] }
+        ]
     }
     , {
         name: "エイプリル", rarity: "白", cl: "砲術士", AW: "覚醒"

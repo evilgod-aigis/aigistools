@@ -1633,6 +1633,25 @@ const unitList = [
     , { id: 0x0646, implDate: "2025/12/11", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "メディック", name: "ジュディス", modifier: "聖夜の回診", derivation: "クリスマス" }
     , { id: 0x0647, implDate: "2025/12/11", implDate_bq: null        , obtain: [ "tr", "rain" ], rarity: "b" , depType: "rear", class: "政務官", name: "アンナ", modifier: "聖夜の政務官", derivation: "クリスマス" }
     , { id: 0x0648, implDate: "2025/12/11", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "グラシャラボラス", name: "ちびグラシャラボラス", male: 1 }
+    , { id: 0x0649, implDate: "2025/12/25", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "後衛戦術家", name: "シナト", modifier: "聖夜の疾風軍師", derivation: "クリスマス" }
+    , { id: 0x064a, implDate: "2025/12/25", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "真人", name: "申公豹" }
+    , { id: 0x064b, implDate: "2025/12/25", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "both", class: "南の守護鳥", name: "朱雀", modifier: "華の四神 " }
+    , { id: 0x064c, implDate: "2025/12/25", implDate_bq: null        , obtain: [ "tr", "mili" ], rarity: "p" , depType: "vang", class: "北の守護亀蛇", name: "玄武", modifier: "華の四神 " }
+    , { id: 0x064d, implDate: "2025/12/29", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ポーター", name: "シトー", modifier: "天頂運輸" }
+    , { id: 0x064e, implDate: "2025/12/29", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "月の神", name: "月夜弥命", modifier: "月夜の亜神 " }
+    
+    // 2026
+    , { id: 0x064f, implDate: "2026/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "道化師", name: "リズリー", modifier: "迎春奇術", derivation: "お正月" }
+    , { id: 0x0650, implDate: "2026/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "儀式魔術師", name: "へカティエ", modifier: "除夜の冥神", derivation: "お正月" }
+    , { id: 0x0651, implDate: "2026/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "ph", depType: "vang", class: "黎明の翼", name: "ルキファ", modifier: "新年の黒翼", derivation: "お正月" }
+    , { id: 0x0652, implDate: "2026/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "ph", depType: "rear", class: "占星術師", name: "ソラス", modifier: "星を詠む新年", derivation: "お正月" }
+    , { id: 0x0653, implDate: "2026/01/01", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "rear", class: "シャーマン", name: "ヒミコ", modifier: "新春の巫女", derivation: "お正月" }
+    , { id: 0x0654, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "忍者", name: "ちびウルスラ" }
+    , { id: 0x0655, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ガンスリンガー", name: "ちびデステリカ" }
+    , { id: 0x0656, implDate: "2026/01/15", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "狛犬", name: "コマ", modifier: "狛犬温泉", derivation: "温泉" }
+    , { id: 0x0657, implDate: "2026/01/15", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "ぬりかべ", name: "シラヌイ", modifier: "停滞の湯", derivation: "温泉" }
+    , { id: 0x0658, implDate: "2026/01/15", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "風水使い", name: "クーシン", modifier: "風水の湯", derivation: "温泉" }
+    , { id: 0x0659, implDate: "2025/12/11", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "ソルジャー", name: "ちびガレア", male: 1 }
     
     
     

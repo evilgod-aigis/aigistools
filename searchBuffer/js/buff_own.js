@@ -107,6 +107,15 @@ buff.own = [
         ]
     }
     , {
+        name: "ルキファ/お正月", rarity: "白", cl: "黎明の翼", AW: "覚醒"
+        , stats: { hp: "+3%" }
+        , target: [
+            { race: [ "天使", "天界人" ] }
+            , { season: [ "お正月" ] }
+            , { others: [ "魔界" ] }
+        ]
+    }
+    , {
         name: "リヴン", rarity: "黒", cl: "トゥルーブラッド", AW: "覚醒"
         , stats: { atk: "+5%" }
         , target: { others: [ "アンデッド" ] }
@@ -230,6 +239,11 @@ buff.own = [
         name: "ソラス/水着", rarity: "白", cl: "占星術師", AW: "覚醒"
         , stats: { range: "+5" }
         , target: { season: [ "サマー" ], depType: [ "遠距離" ] }
+    }
+    , {
+        name: "ソラス/お正月", rarity: "白", cl: "占星術師", AW: "覚醒"
+        , stats: { mr: "+2" }
+        , target: { season: [ "お正月" ] }
     }
     , {
         name: "ユージェン", rarity: "黒", cl: "チェイスハンター", AW: "覚醒"

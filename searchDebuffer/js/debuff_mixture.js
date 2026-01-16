@@ -1939,6 +1939,14 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "ヒミコ/お正月", rarity: "黒", cl: "シャーマン", AW: "未", skill: "通常"
+        , stats: {
+            mr: { value: "-25", type: "fixed" }
+        }
+        , domain: "global"
+        , note: "永続スキル"
+    }
+    , {
         name: "ちびヒミコ", rarity: "ちび", cl: "シャーマン", skill: "通常"
         , stats: {
             mr: { value: "-50%", type: "area" }
@@ -2824,6 +2832,14 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "ヘカティエ/お正月", rarity: "黒", cl: "儀式魔術師", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            mr: { value: "-70%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "覚醒(～4)"
         , stats: {
             stop: { value: "14f", type: "area" }
@@ -2999,6 +3015,14 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "ちびデステリカ", rarity: "ちび", cl: "ガンスリンガー", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "永続スキル"
+    }
+    , {
         name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒", skill: "覚醒"
         , stats: {
             stop: { value: "179f", type: "global" }
@@ -3115,6 +3139,14 @@ debuff.mixture = [
             atkCd: { value: "+?f", type: "area" }
         }
         , domain: "area"
+    }
+    , {
+        name: "月夜弥命", rarity: "黒", cl: "月の神", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            stop: { value: "1f", type: "area" }
+        }
+        , domain: "area"
+        , note: "スキル中常時"
     }
     , {
         name: "ヤシマ", rarity: "黒", cl: "妖狸", AW: "未", skill: "通常"

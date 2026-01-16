@@ -19,6 +19,10 @@ buff.skill_area = [
         , note: "隠密付与"
     }
     , {
+        name: "ルキファ/お正月", rarity: "白", cl: "黎明の翼", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.2", rege: [ "100/秒", "50/15f" ] }
+    }
+    , {
         name: "ランシェ", rarity: "黒", cl: "マギステルミリトゥム", AW: "覚醒", skill: "覚醒"
         , stats: { def: "×2.0" }
         , note: "全域"
@@ -30,6 +34,10 @@ buff.skill_area = [
     , {
         name: "侍従の英雄譚", cl: "侍従の英雄譚", AW: "覚1", skill: [ "通常", "覚醒" ]
         , stats: { atk: "×1.2", def: "×1.2" }
+    }
+    , {
+        name: "ソラス/お正月", rarity: "白", cl: "占星術師", AW: "覚醒", skill: "通常(偶)"
+        , stats: { eva: "40%" }
     }
     , {
         name: "ユージェン/お正月", rarity: "白", cl: "チェイスハンター", AW: "覚醒", skill: "覚醒"
@@ -481,12 +489,26 @@ buff.skill_area = [
         , note: [ "スキルオート", "永続スキル" ]
     }
     , {
-        name: "キキョウ", rarity: "黒", cl: "シャーマン", AW: "覚醒", skill: "通常(奇)"
+        name: "キキョウ", rarity: "黒", cl: "シャーマン", AW: "覚醒", skill: "覚醒(奇)"
         , stats: { def: "×1.3" }
     }
     , {
-        name: "キキョウ", rarity: "黒", cl: "シャーマン", AW: "覚醒", skill: "通常(偶)"
+        name: "キキョウ", rarity: "黒", cl: "シャーマン", AW: "覚醒", skill: "覚醒(偶)"
         , stats: { atk: "×1.3" }
+    }
+    , {
+        name: "ヒミコ/お正月", rarity: "黒", cl: "シャーマン", AW: "未", skill: "通常"
+        , stats: { def: "×1.5", mr: "×1.5" }
+        , note: "永続スキル"
+    }
+    , {
+        name: "ヒミコ/お正月", rarity: "黒", cl: "シャーマン", AW: "覚醒", skill: "通常"
+        , stats: { def: "×1.5", mr: "×1.5" }
+        , note: "永続スキル"
+    }
+    , {
+        name: "ヒミコ/お正月", rarity: "黒", cl: "シャーマン", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.8" }
     }
     , {
         name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "未", skill: "通常"
@@ -873,6 +895,11 @@ buff.skill_area = [
         , note: "永続スキル"
     }
     , {
+        name: "リズリー/お正月", rarity: "黒", cl: "道化師", AW: "覚醒", skill: "覚醒"
+        , stats: { range: "×1.3", ct: "-60%" }
+        , note: "永続スキル"
+    }
+    , {
         name: "スピリア", rarity: "黒", cl: "ライフリンカー", AW: "未", skill: "通常"
         , stats: { hp: "+20%" }
     }
@@ -995,6 +1022,16 @@ buff.skill_area = [
         name: "大魔導神", cl: "儀式魔術師", AW: "覚2b", skill: [ "通常", "覚醒" ]
         , stats: { atk: "×1.12" }
         , note: "儀式魔術師系"
+    }
+    , {
+        name: "へカティエ/お正月", rarity: "黒", cl: "儀式魔術師", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
+        name: "へカティエ/お正月", rarity: "黒", cl: "儀式魔術師", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , note: "隠密付与"
     }
     , {
         name: "マルティナ", rarity: "白", cl: "幻術士", AW: "未", skill: "通常"

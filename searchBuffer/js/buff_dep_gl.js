@@ -41,6 +41,11 @@ buff.dep_gl = [
         , target: { year: [ "2013年", "2025年" ] }
     }
     , {
+        name: "王子【神馬】", cl: "王子"
+        , stats: { draw: "○" }
+        , target: { year: [ "2014年", "2026年" ] }
+    }
+    , {
         name: "キングダムガード", cl: "キングダムガード", AW: "覚1"
         , stats: { def: "+15%" }
         , target: [
@@ -1521,6 +1526,15 @@ buff.dep_gl = [
         , target: [
             { home: [ "東の国" ] }
             , { race: [ "天界人" ] }
+        ]
+    }
+    , {
+        name: "ヒミコ/お正月", rarity: "黒", cl: "シャーマン", AW: "覚醒"
+        , stats: { cost: "-30%" }
+        , target: [
+            { home: [ "東の国" ] }
+            , { race: [ "天界人" ] }
+            , { season: [ "お正月" ] }
         ]
     }
     , {

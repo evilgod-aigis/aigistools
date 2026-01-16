@@ -158,6 +158,11 @@ buff.skill_gl = [
         , stats: { draw: "○" }
     }
     , {
+        name: "ちびガレア", rarity: "ちび", cl: "ソルジャー", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , note: "分類未確認"
+    }
+    , {
         name: "エレイン/水着", rarity: "金", cl: "ワルキューレ", AW: "未", skill: "通常"
         , stats: { hp: "+20%" }
     }
@@ -1058,6 +1063,11 @@ buff.skill_gl = [
         , note: [ "スキルオート", "永続スキル" ]
     }
     , {
+        name: "シトー", rarity: "黒", cl: "ポーター", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.3" }
+        , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
         name: "ヒュープ", rarity: "黒", cl: "永き夢の亜神", skill: "通常"
         , stats: { rege: [ "150/秒", "?/?f" ] }
     }
@@ -1264,6 +1274,16 @@ buff.skill_gl = [
         name: "スチームタンク", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { rege: [ "120/秒", "60/15f" ] }
         , note: [ "マキナ", "永続スキル" ]
+    }
+    , {
+        name: "湯船の獅子", rarity: "トークン", AW: "未", skill: "通常"
+        , stats: { def: "×1.4" }
+        , note: [ "コマ/温泉", "分類未確認" ]
+    }
+    , {
+        name: "湯船の大獅子", rarity: "トークン", AW: "覚醒", skill: "通常"
+        , stats: { def: "×1.4" }
+        , note: [ "コマ/温泉", "分類未確認" ]
     }
     , {
         name: "王子【英雄王】(幻影)", rarity: "トークン", AW: "覚醒", skill: "通常"

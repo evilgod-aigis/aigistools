@@ -2030,6 +2030,24 @@ buff.skill_cat = [
         , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
     }
     , {
+        name: "シナト/クリスマス", rarity: "白", cl: "後衛戦術家", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: [
+            { cl: [ "前衛戦術家", "後衛戦術家" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+        , note: "範囲"
+    }
+    , {
+        name: "シナト/クリスマス", rarity: "白", cl: "後衛戦術家", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: [
+            { cl: [ "前衛戦術家", "後衛戦術家" ] }
+            , { season: [ "クリスマス" ] }
+        ]
+        , note: "範囲"
+    }
+    , {
         name: "ちびイリオス", rarity: "ちび", cl: "後衛戦術家", skill: "通常"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
@@ -2577,6 +2595,16 @@ buff.skill_cat = [
         , stats: { range: "×1.2" }
         , target: { others: [ "機械" ] }
         , note: "永続スキル"
+    }
+    , {
+        name: "コマ/温泉", rarity: "黒", cl: "狛犬", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , target: [
+            { home: [ "東の国" ] }
+            , { race: [ "神" ] }
+            , { season: [ "お正月" ] }
+        ]
+        , note: "被HP回復量×2.0"
     }
     , {
         name: "メシナ", rarity: "黒", cl: "儀式魔術師", AW: "未", skill: "通常"
@@ -3258,6 +3286,18 @@ buff.skill_cat = [
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { cl: [ "狛犬" ] }
         , note: "コマ"
+    }
+    , {
+        name: "湯船の獅子", rarity: "トークン", AW: "未", skill: "通常"
+        , stats: { def: "×1.3" }
+        , target: { cl: [ "狛犬" ] }
+        , note: [ "コマ/温泉", "分類未確認" ]
+    }
+    , {
+        name: "湯船の大獅子", rarity: "トークン", AW: "覚醒", skill: "通常"
+        , stats: { def: "×1.3" }
+        , target: { cl: [ "狛犬" ] }
+        , note: [ "コマ/温泉", "分類未確認" ]
     }
     , {
         name: "夜行わらし【戦支度】", rarity: "トークン", AW: "覚2b", skill: "通常"

@@ -153,6 +153,10 @@ buff.dep_gl = [
         , stats: { atk: "+20%", def: "+20%" }
     }
     , {
+        name: "王子【神馬】", cl: "王子"
+        , stats: { atk: "+20%", def: "+20%" }
+    }
+    , {
         name: "王子【幼少】", cl: "王子"
         , stats: { atk: "+10%", def: "+10%" }
     }
@@ -228,6 +232,10 @@ buff.dep_gl = [
     , {
         name: "ガレア", rarity: "黒", cl: "ソルジャー", AW: "覚醒"
         , stats: { cost: "-2" }
+    }
+    , {
+        name: "ちびガレア", rarity: "ちび", cl: "ソルジャー"
+        , stats: { cost: "-1" }
     }
     , {
         name: "フリア", rarity: "黒", cl: "ワルキューレ", AW: "覚醒"
@@ -400,6 +408,14 @@ buff.dep_gl = [
     , {
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒"
         , stats: { rege: [ "80/秒", "30/15f" ] }
+    }
+    , {
+        name: "玄武", rarity: "白", cl: "北の守護亀蛇", AW: "未"
+        , stats: { def: "+5%" }
+    }
+    , {
+        name: "玄武", rarity: "白", cl: "北の守護亀蛇", AW: "覚醒"
+        , stats: { def: "+7%" }
     }
     , {
         name: "皇帝", cl: "皇帝", AW: "未"

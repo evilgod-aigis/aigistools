@@ -17,6 +17,12 @@ debuff.hit = [
         , atkAttr: "物理", dur: "?f"
     }
     , {
+        name: "ルキファ/お正月", rarity: "白", cl: "黎明の翼", AW: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "死亡時"
+    }
+    , {
         name: "ランシェ", rarity: "黒", cl: "マギステルミリトゥム", AW: "覚醒", skill: "通常"
         , stats: { atk: "-20%" }
         , atkAttr: "貫通", dur: "?f"
@@ -340,6 +346,16 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "物理", dur: "14f"
         , note: "永続スキル"
+    }
+    , {
+        name: "申公豹", rarity: "黒", cl: "真人", AW: "未"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
+        name: "申公豹", rarity: "黒", cl: "真人", AW: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
     }
     , {
         name: "邪鬼仙", cl: "邪仙", AW: "覚2b"
@@ -822,6 +838,11 @@ debuff.hit = [
         , atkAttr: "魔法", dur: "?f"
     }
     , {
+        name: "玄武", rarity: "白", cl: "北の守護亀蛇", AW: "覚醒", skill: "覚醒"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "14f"
@@ -920,6 +941,11 @@ debuff.hit = [
         name: "アイシャ/学園", rarity: "黒", cl: "後衛戦術家", AW: "覚醒"
         , stats: { def: "-40%" }
         , atkAttr: "物理", dur: "59f"
+    }
+    , {
+        name: "シナト/クリスマス", rarity: "白", cl: "後衛戦術家", AW: "覚醒", skill: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
     }
     , {
         name: "ミコト", rarity: "黒", cl: "陰陽師", AW: "未", skill: "通常"
