@@ -2390,7 +2390,13 @@ buff.skill_cat = [
         , target: { cl: [ "王子" ] }
     }
     , {
-        name: "シャラランカ", rarity: "白", cl: "ダークプリースト", AW: "覚醒"
+        name: "シャラランカ", rarity: "白", cl: "ダークプリースト", AW: "未", skill: "通常"
+        , stats: { hp: "×1.3", atk: "×1.3" }
+        , target: { others: [ "聖職者", "魔界" ] }
+        , note: "分類未確認"
+    }
+    , {
+        name: "シャラランカ", rarity: "白", cl: "ダークプリースト", AW: "覚醒", skill: "通常"
         , stats: { hp: "×1.3", atk: "×1.3" }
         , target: { others: [ "聖職者", "魔界" ] }
         , note: "分類未確認"
