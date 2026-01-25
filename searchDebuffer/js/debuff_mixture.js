@@ -2403,6 +2403,22 @@ debuff.mixture = [
         , note: "永続スキル"
     }
     , {
+        name: "シャラランカ", rarity: "白", cl: "ダークプリースト", AW: "未"
+        , stats: {
+            mr: { value: "-30%", type: "global" }
+        }
+        , domain: "global"
+        , note: [ "配置後30秒", "分類未確認" ]
+    }
+    , {
+        name: "シャラランカ", rarity: "白", cl: "ダークプリースト", AW: "覚醒"
+        , stats: {
+            mr: { value: "-40%", type: "global" }
+        }
+        , domain: "global"
+        , note: [ "配置後30秒", "分類未確認" ]
+    }
+    , {
         name: "エンチャンター", cl: "エンチャンター", AW: "未", skill: "通常"
         , stats: {
             stop: { value: "299f", type: "global" }

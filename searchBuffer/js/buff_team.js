@@ -2482,6 +2482,11 @@ buff.team = [
         , target: { race: [ "デーモン系" ] }
     }
     , {
+        name: "シャラランカ", rarity: "白", cl: "ダークプリースト", AW: "覚醒"
+        , stats: { hp: "+7%" }
+        , target: { others: [ "聖職者", "魔界" ] }
+    }
+    , {
         name: "邪狼の使徒", cl: "フェンリルシャーマン", AW: "覚2b"
         , stats: { atk: "+10%", def: "+10%" }
         , target: { race: [ "獣人" ] }

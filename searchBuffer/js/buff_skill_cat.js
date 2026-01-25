@@ -2390,6 +2390,12 @@ buff.skill_cat = [
         , target: { cl: [ "王子" ] }
     }
     , {
+        name: "シャラランカ", rarity: "白", cl: "ダークプリースト", AW: "覚醒"
+        , stats: { hp: "×1.3", atk: "×1.3" }
+        , target: { others: [ "聖職者", "魔界" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "トトノ/お正月", rarity: "白", cl: "マーチャント", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { others: [ "GG持ち" ] }
