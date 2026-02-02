@@ -53,6 +53,29 @@ debuff.hit = [
         , note: [ "カエル化", "攻撃間隔92f化", "確率" ]
     }
     , {
+        name: "時間の操者", cl: "時間の操者", AW: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: "マイズ", rarity: "黒", cl: "時間の操者", AW: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "非本体"
+    }
+    , {
+        name: "マイズ", rarity: "黒", cl: "時間の操者", AW: "覚醒", skill: "通常"
+        , stats: { mr: "-80%" }
+        , atkAttr: "魔法", dur: "∞f"
+        , note: [ "ボムスキル", "分類未確認" ]
+    }
+    , {
+        name: "マイズ", rarity: "黒", cl: "時間の操者", AW: "覚醒", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "ボムスキル"
+    }
+    , {
         name: "エフトラ", rarity: "黒", cl: "異世界戦士", AW: "覚醒"
         , stats: { atkCd: "+30f" }
         , atkAttr: "貫通", dur: "?f"
@@ -355,7 +378,7 @@ debuff.hit = [
     , {
         name: "申公豹", rarity: "黒", cl: "真人", AW: "覚醒"
         , stats: { stop: "○" }
-        , atkAttr: "物理", dur: "?f"
+        , atkAttr: "物理", dur: "7f"
     }
     , {
         name: "邪鬼仙", cl: "邪仙", AW: "覚2b"
@@ -757,6 +780,42 @@ debuff.hit = [
     , {
         name: "カルペム", rarity: "黒", cl: "衛士", AW: "覚醒"
         , stats: { def: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "レストレイン", rarity: "黒", cl: "衛士", AW: "未"
+        , stats: { atk: "-35%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "ブロック時", "分類未確認" ]
+    }
+    , {
+        name: "レストレイン", rarity: "黒", cl: "衛士", AW: "未"
+        , stats: { def: "-35%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "非ブロック時", "分類未確認" ]
+    }
+    , {
+        name: "レストレイン", rarity: "黒", cl: "衛士", AW: "未", skill: "通常"
+        , stats: { atk: "-35%", def: "-35%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "レストレイン", rarity: "黒", cl: "衛士", AW: "覚醒"
+        , stats: { atk: "-45%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "ブロック時", "分類未確認" ]
+    }
+    , {
+        name: "レストレイン", rarity: "黒", cl: "衛士", AW: "覚醒"
+        , stats: { def: "-45%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "非ブロック時", "分類未確認" ]
+    }
+    , {
+        name: "レストレイン", rarity: "黒", cl: "衛士", AW: "覚醒", skill: "通常"
+        , stats: { atk: "-45%", def: "-45%" }
         , atkAttr: "物理", dur: "?f"
         , note: "分類未確認"
     }

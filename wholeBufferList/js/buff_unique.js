@@ -793,6 +793,12 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減", "魔法-50%(範囲)" ]
     }
     , {
+        name: "ちびトリシャ", rarity: "ちび", cl: "ドラゴンメイジ", AW: "未"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "魔法-50%(範囲)" ]
+    }
+    , {
         name: "イーファ/お正月", rarity: "黒", cl: "ドラグーン", AW: "覚醒", skill: [ "通常", "覚醒" ]
         , stats: { other: "" }
         , type: "dmg-red"

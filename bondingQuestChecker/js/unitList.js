@@ -1646,13 +1646,17 @@ const unitList = [
     , { id: 0x0651, implDate: "2026/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "ph", depType: "vang", class: "黎明の翼", name: "ルキファ", modifier: "新年の黒翼", derivation: "お正月" }
     , { id: 0x0652, implDate: "2026/01/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "ph", depType: "rear", class: "占星術師", name: "ソラス", modifier: "星を詠む新年", derivation: "お正月" }
     , { id: 0x0653, implDate: "2026/01/01", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "rear", class: "シャーマン", name: "ヒミコ", modifier: "新春の巫女", derivation: "お正月" }
-    , { id: 0x0654, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "忍者", name: "ちびウルスラ" }
-    , { id: 0x0655, implDate: "2025/01/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ガンスリンガー", name: "ちびデステリカ" }
+    , { id: 0x0654, implDate: "2026/01/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "忍者", name: "ちびウルスラ" }
+    , { id: 0x0655, implDate: "2026/01/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ガンスリンガー", name: "ちびデステリカ" }
     , { id: 0x0656, implDate: "2026/01/15", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "狛犬", name: "コマ", modifier: "狛犬温泉", derivation: "温泉" }
     , { id: 0x0657, implDate: "2026/01/15", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "ぬりかべ", name: "シラヌイ", modifier: "停滞の湯", derivation: "温泉" }
     , { id: 0x0658, implDate: "2026/01/15", implDate_bq: null        , obtain: [ "ev", "drop" ], rarity: "p" , depType: "rear", class: "風水使い", name: "クーシン", modifier: "風水の湯", derivation: "温泉" }
     , { id: 0x0659, implDate: "2026/01/15", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "ソルジャー", name: "ちびガレア", male: 1 }
     , { id: 0x065a, implDate: "2026/01/22", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ダークプリースト", name: "シャラランカ", modifier: "魔教の信徒" }
+    , { id: 0x065b, implDate: "2026/01/29", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "衛士", name: "レストレイン", modifier: "警備局長" }
+    , { id: 0x065c, implDate: "2026/01/29", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "bh", depType: "rear", class: "時間の操者", name: "マイズ", modifier: "時を手繰る者" }
+    , { id: 0x065d, implDate: "2026/02/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "メイド", name: "ちびサクラ" }
+    , { id: 0x065e, implDate: "2026/02/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ドラゴンメイジ", name: "ちびトリシャ" }
     
     
     

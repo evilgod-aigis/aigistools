@@ -1112,6 +1112,11 @@ buff.team = [
         , target: { cl: [ "神官戦士", "ヒーラー", "ビショップ", "ルーンアコライト", "アコライト" ] }
     }
     , {
+        name: "ちびサクラ", rarity: "ちび", cl: "メイド"
+        , stats: { atk: "+8%", def: "+8%" }
+        , target: { home: [ "東の国" ] }
+    }
+    , {
         name: "エマ/温泉", rarity: "黒", cl: "ヴァンパイアロード", AW: "未"
         , stats: { atkCd: "-20%" }
         , target: [
@@ -2745,6 +2750,11 @@ buff.team = [
             { cl: [ "王子" ] }
             , { season: [ "ジューンブライド" ] }
         ]
+    }
+    , {
+        name: "ちびトリシャ", rarity: "ちび", cl: "ドラゴンメイジ"
+        , stats: { atk: "+5%" }
+        , target: { home: [ "白の帝国" ] }
     }
     , {
         name: "ジゼル", rarity: "黒", cl: "ドラグーン", AW: "覚醒"

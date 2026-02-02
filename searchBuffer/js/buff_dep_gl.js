@@ -1436,6 +1436,11 @@ buff.dep_gl = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
+        name: "カカオ豆の魔物", rarity: "金", cl: "デリシャス！（自己評価）"
+        , stats: { cost: "-2" }
+        , target: { season: [ "バレンタイン" ] }
+    }
+    , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒"
         , stats: { def: "+10%" }
         , target: { season: [ "温泉" ] }

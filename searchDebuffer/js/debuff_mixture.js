@@ -228,6 +228,14 @@ debuff.mixture = [
         , domain: "area"
     }
     , {
+        name: "時間の操者", cl: "時間の操者", AW: "覚醒"
+        , stats: {
+            stop: { value: "299f", type: "global" }
+        }
+        , domain: "global"
+        , note: "配置時"
+    }
+    , {
         name: "エルデ", rarity: "白", cl: "ヘビーアーマー", AW: "未", skill: "通常"
         , stats: {
             def: { value: "-50%", type: "area" }
@@ -2926,6 +2934,13 @@ debuff.mixture = [
         name: "トリシャ", rarity: "黒", cl: "ドラゴンメイジ", AW: "覚醒"
         , stats: {
             mr: { value: "-25%", type: "dep_area" }
+        }
+        , domain: "area"
+    }
+    , {
+        name: "ちびトリシャ", rarity: "ちび", cl: "ドラゴンメイジ"
+        , stats: {
+            mr: { value: "-20%", type: "dep_area" }
         }
         , domain: "area"
     }

@@ -21,6 +21,10 @@ buff.own = [
         , stats: { def: "+3%" }
     }
     , {
+        name: "マイズ", rarity: "黒", cl: "時間の操者", AW: "覚醒"
+        , stats: { atk: "+3%" }
+    }
+    , {
         name: "フィネス", rarity: "黒", cl: "盤上の支配者", AW: "覚醒"
         , stats: { atk: "+2%" }
     }

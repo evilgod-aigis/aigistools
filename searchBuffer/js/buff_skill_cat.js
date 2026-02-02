@@ -730,6 +730,11 @@ buff.skill_cat = [
         , note: "永続スキル"
     }
     , {
+        name: "ちびサクラ", rarity: "ちび", cl: "メイド", skill: "通常"
+        , stats: { atk: "×1.4" }
+        , target: { home: [ "東の国" ] }
+    }
+    , {
         name: "アリシア/新装", rarity: "黒", cl: "ロイヤルガード", AW: "未", skill: "通常"
         , stats: { atk: "×2.0" }
         , target: { cl: [ "王子" ] }
@@ -1854,6 +1859,12 @@ buff.skill_cat = [
         name: "ちび白の皇帝", rarity: "ちび", cl: "皇帝", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3" }
         , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "カカオ豆の魔物", rarity: "金", cl: "デリシャス！（自己評価）", skill: "通常(1)"
+        , stats: { atk: "×1.4", def: "×1.4" }
+        , target: { season: [ "バレンタイン" ] }
+        , note: "分類未確認"
     }
     , {
         name: "ダニエラ/新装", rarity: "黒", cl: "アーチャー", AW: "未", skill: "通常"
