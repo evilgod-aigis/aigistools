@@ -236,6 +236,10 @@ img {
 #tables table .display-icon {
     display: block;
     margin: 0 auto;
+    width: max-content;
+    height: 50px;
+}
+#tables img {
     width: 50px;
 }
 #tables table .column-class {

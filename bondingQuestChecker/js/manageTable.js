@@ -64,6 +64,7 @@ table.class = {
         , "鬼【ななリン】"
         , "黒竜娘【モンスター娘TD】", "鉄腕娘【モンスター娘TD】"
         , "対魔忍 超人【対魔忍】", "対魔忍 魔性【対魔忍】", "対魔忍 精神【対魔忍】", "対魔忍 科学【対魔忍】"
+        , "天才魔道士\n燈火の魔女", "リナの保護者\n流離いの剣姫", "セイルーンの巫女\n拳の聖女"
     ]
     , rear: [
         // 英傑
@@ -90,6 +91,7 @@ table.class = {
         , "水底の支配者【GBM】", "錬金術師【GBM】"
         , "新米刑事【流星WA】", "交通課職員【流星WA】"
         , "百腕娘【モンスター娘TD】", "淫魔娘【モンスター娘TD】", "蠅王娘【モンスター娘TD】"
+        , "白蛇の魔道士\n氷岩のゴーレム使い"
     ]
     , both: [
         // 英傑
@@ -542,7 +544,7 @@ table.CreateTable = () => {
             newTr = document.createElement("tr");
             newTr.classList.add(`sex-${unit.male ? "male" : "female"}`);
             newTr.classList.add(`obtain-${unit.obtain[0]}`);
-            if(unit.obtain[1]) newTr.classList.add(`obtain-${unit.obtain[0]}-${unit.obtain[1]}`);
+            if(unit.obtain.length > 1) newTr.classList.add(`obtain-${unit.obtain[0]}-${unit.obtain[1]}`);
             newTr.classList.add(`depType-${unit.depType}`);
             let isGeneric = true;
             if("derivation" in unit) {
@@ -568,35 +570,59 @@ table.CreateTable = () => {
             if(unit.implDate_bq) newTr.classList.add(`year_bq-${unit.implDate_bq.slice(0, 4)}`);
             else newTr.classList.add("year_bq-none");
             if("extra" in unit) {
-                newTr.classList.add(`obtain-${unit.extra.obtain[0]}`);
-                if(unit.extra.obtain[1]) newTr.classList.add(`obtain-${unit.extra.obtain[0]}-${unit.extra.obtain[1]}`);
+                if("obtain" in unit.extra) {
+                    newTr.classList.add(`obtain-${unit.extra.obtain[0]}`);
+                    if(unit.extra.obtain[1]) newTr.classList.add(`obtain-${unit.extra.obtain[0]}-${unit.extra.obtain[1]}`);
+                }
             }
             _.forEach(table.column, elem => {
                 const newTd = document.createElement("td");
                 newTd.className = `column-${elem}`;
                 switch(elem) {
                     case "unitName": {
-                            const display = { name: unit.name, fullName: "" };
-                            if(unit.derivation) display.name += `/${unit.derivation}`;
-                            if(unit.modifier) display.fullName += unit.modifier;
-                            display.fullName += unit.name;
-                            if(unit.qualifier) display.fullName += unit.qualifier;
+                            const newSpans = {};
+                            _.forEach(table.unitName, key => newSpans[key] = document.createElement("span"));
+                            let name = unit.name;
+                            if("derivation" in unit) name += `/${unit.derivation}`;
+                            newSpans.name.innerText = name;
+                            
+                            let fullName = "";
+                            if("derivation" in unit) name += `/${unit.derivation}`;
+                            if("modifier" in unit) fullName += unit.modifier;
+                            fullName += unit.name;
+                            if("qualifier" in unit) fullName += unit.qualifier;
+                            newSpans.fullName.innerText = fullName;
+                            
+                            const title = name === fullName ? name : `${fullName}\n${name}`;
+                            const newImg = document.createElement("img");
+                            newImg.setAttribute("title", title);
+                            newImg.setAttribute("alt", title);
+                            newImg.setAttribute("draggable", false);
+                            newImg.setAttribute("src", `./icon/${unit.id.toString().padStart(5, "0")}.png`);
+                            newSpans.icon.appendChild(newImg);
+                            
+                            if("extra" in unit && "name" in unit.extra) {
+                                name = unit.extra.name;
+                                if("derivation" in unit.extra) name += `/${unit.derivation.derivation}`;
+                                newSpans.name.innerText += `\n${name}`;
+                                
+                                fullName = "";
+                                if("modifier" in unit.extra) fullName += unit.extra.modifier;
+                                fullName += unit.extra.name;
+                                if("qualifier" in unit.extra) fullName += unit.extra.qualifier;
+                                newSpans.fullName.innerText += `\n${fullName}`;
+                                
+                                const title = name === fullName ? name : `${fullName}\n${name}`;
+                                const newImg = document.createElement("img");
+                                newImg.setAttribute("title", title);
+                                newImg.setAttribute("alt", title);
+                                newImg.setAttribute("draggable", false);
+                                newImg.setAttribute("src", `./icon/${unit.id.toString().padStart(5, "0")}_r.png`);
+                                newSpans.icon.appendChild(newImg);
+                            }
                             _.forEach(table.unitName, key => {
-                                if(key === "icon") {
-                                    const newImg = document.createElement("img");
-                                    newImg.className = `display-${key}`;
-                                    const title = display.name === display.fullName ? display.name : `${display.fullName}\n${display.name}`;
-                                    newImg.setAttribute("title", title);
-                                    newImg.setAttribute("alt", title);
-                                    newImg.setAttribute("draggable", false);
-                                    newImg.setAttribute("src", `./icon/${unit.id.toString().padStart(5, "0")}.png`);
-                                    newTd.appendChild(newImg);
-                                } else {
-                                    const newSpan = document.createElement("span");
-                                    newSpan.className = `display-${key}`;
-                                    newSpan.innerText = display[key];
-                                    newTd.appendChild(newSpan);
-                                }
+                                newSpans[key].className = `display-${key}`;
+                                newTd.appendChild(newSpans[key]);
                             });
                         }
                         break;
@@ -623,7 +649,8 @@ table.CreateTable = () => {
                         }
                         break;
                     default:
-                        newTd.innerHTML = unit[elem];
+                        newTd.innerText = unit[elem];
+                        if("extra" in unit && elem in unit.extra) newTd.innerText += `\n${unit.extra[elem]}`;
                 }
                 newTr.appendChild(newTd);
             });
@@ -801,7 +828,7 @@ table.ToggleNameDisplay = () => {
     });
     const rule = _.find(style.sheet.cssRules, rule => rule.selectorText === "#tables table td.column-unitName");
     if(table.setting.unitName === "icon")
-        rule.style.setProperty("min-width", "5em");
+        rule.style.setProperty("min-width", "110px");
     else rule.style.setProperty("min-width", "12em");
     saveData.setting.Save("unitName");
 }

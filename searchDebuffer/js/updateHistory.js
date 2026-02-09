@@ -9,7 +9,7 @@ const updateHistory = [
     , 
     */
     {
-        date: "2026/02/01(木)"
+        date: "2026/02/01(日)"
         , detail: [
             "ちびトリシャを追加"
         ]

@@ -418,6 +418,16 @@ buff.own = [
         , stats: { atk: "+1%", def: "+1%" }
         , target: { home: [ "白の帝国" ] }
     }
+    , {
+        name: [ "リナ", "フレンディア" ], rarity: "黒", cl: "天才魔道士/燈火の魔女", AW: "覚醒"
+        , stats: { range: "+5" }
+        , target: { others: [ "魔術師" ] }
+    }
+    , {
+        name: [ "リナ", "フレンディア" ], rarity: "白", cl: "天才魔道士/燈火の魔女", AW: "覚醒"
+        , stats: { mr: "+2" }
+        , target: { others: [ "魔術師" ] }
+    }
 ];
 
 /*
