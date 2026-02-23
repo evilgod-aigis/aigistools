@@ -2102,6 +2102,22 @@ buff.team = [
         , target: { cl: [ "パイレーツ", "モンスタースレイヤー" ] }
     }
     , {
+        name: "アネリア/バレンタイン", rarity: "白", cl: "パイレーツ", AW: "未"
+        , stats: { hp: "+3%", atk: "+3%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "バレンタイン" ] }
+        ]
+    }
+    , {
+        name: "アネリア/バレンタイン", rarity: "白", cl: "パイレーツ", AW: "覚醒"
+        , stats: { hp: "+5%", atk: "+5%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { season: [ "バレンタイン" ] }
+        ]
+    }
+    , {
         name: "モニカ", rarity: "金", cl: "パイレーツ", AW: "覚醒"
         , stats: { mr: "+5" }
         , target: { depType: [ "遠距離" ] }

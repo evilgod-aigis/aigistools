@@ -1266,6 +1266,20 @@ lists.buff.takenDmg.list = [
         , value: 15, disabled: null, req: "deploy"
         , tooltip: "[射程内] 被ダメージが15%上昇"
     }
+    /*
+    , {
+        id: null, buffer: "聖夜の賢者プリニース", awaken: "覚醒"
+        , value: 25, disabled: null, req: "skill"
+        , tooltip: "[スキル・射程内] 被ダメージが25%上昇"
+        , unitInfo: {
+            unitName: "聖夜の賢者プリニース", deployType: "遠距離型", rarity: "黒"
+            , unitClass: { selected: "スカラー系" }
+            , attribution: [ "人間", "クリスマス" ]
+            , note: [ "女性" ]
+            , WT: 5, CT: [ 20, 20, 20 ], dur: [ 25, 25, Infinity ]
+        }
+    }
+    */
     , {
         id: null, buffer: "冥府館の異装テュト", awaken: "覚醒"
         , value: 30, disabled: null, req: "skill"

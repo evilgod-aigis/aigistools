@@ -468,6 +468,18 @@ buff.unique = [
         , note: [ "区分：特効(編成)", "デーモン" ]
     }
     , {
+        name: "レクテ/バレンタイン", rarity: "白", cl: "発明家", AW: "未"
+        , stats: { atk: "×1.1", other: "" }
+        , type: "special"
+        , note: [ "区分：特効(編成)", "デーモン・魔神" ]
+    }
+    , {
+        name: "レクテ/バレンタイン", rarity: "白", cl: "発明家", AW: "覚醒"
+        , stats: { atk: "×1.1", other: "" }
+        , type: "special"
+        , note: [ "区分：特効(編成)", "デーモン・魔神" ]
+    }
+    , {
         name: "ちびマギー", rarity: "ちび", cl: "発明家"
         , stats: { atk: "×1.1", other: "" }
         , type: "special"

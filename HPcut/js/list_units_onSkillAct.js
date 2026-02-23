@@ -121,6 +121,29 @@ lists.units.onSkillAct.list = [
     , {
         id: null, hidden: false
         , unitInfo: {
+            unitName: "恋愛工作員シネイド", deployType: "近接型", rarity: "黒"
+            , unitClass: { selected: "ナイトアサシン" }
+            , attribution: [ "王国", "人間", "バレンタイン" ]
+            , affection: { percentage: null, bonus: "その他", changeRate: null }
+            , note: [ "女性" ]
+        }
+        , skill: {
+            selected: "覚醒"
+            , detail: {
+                "覚醒": [
+                    {
+                        target: "射程内", simult: Infinity
+                        , corr: { WT: null, CT: null, dur: null, HPred: null }
+                        , uncorr: { CT: 7, dur: 2, HPred: 7 }
+                        , next: 0
+                    }
+                ]
+            }
+        }
+    }
+    , {
+        id: null, hidden: false
+        , unitInfo: {
             unitName: "九尾狐カヨウ", deployType: "近接型", rarity: "黒"
             , unitClass: { selected: "妖狐絢爛", options: [ "妖狐系", "妖狐絢爛" ] }
             , attribution: [ "東の国", "妖怪" ]

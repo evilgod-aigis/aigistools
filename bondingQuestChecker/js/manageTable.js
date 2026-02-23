@@ -48,7 +48,7 @@ table.class = {
         , "迷宮の悪霊", "オートマタ", "ぬりかべ", "霊刀つくもがみ", "戦巫女", "シャークウォリアー", "儀仗軍神", "武侠", "サベージファイター"
         , "ハデスソルジャー", "隧道掘削兵", "シールダー", "女王子", "一目の竜", "天尊", "ダーク王子", "処刑人", "白の帝国城", "神話の継承者"
         , "デモンリドゥ", "カオスルーラー", "衛士", "コロッサス", "妖糸使い", "憤怒の海神", "初代皇帝", "王城", "夜の魔女", "統帥の塔", "西の守護虎"
-        , "東の守護龍", "サキュバス", "北の守護亀蛇"
+        , "東の守護龍", "サキュバス", "北の守護亀蛇", "飛電客"
         , "混沌霊使い【魔蛸】", "冥府の騎士【円卓】"
         , "小悪魔アイドル", "王国民的アイドル"
         , "グレーターデーモン", "ガオレオン", "デーモンシェフ", "チェインソン男", "グラシャラボラス", "皇帝"
@@ -64,7 +64,7 @@ table.class = {
         , "鬼【ななリン】"
         , "黒竜娘【モンスター娘TD】", "鉄腕娘【モンスター娘TD】"
         , "対魔忍 超人【対魔忍】", "対魔忍 魔性【対魔忍】", "対魔忍 精神【対魔忍】", "対魔忍 科学【対魔忍】"
-        , "天才魔道士\n燈火の魔女", "リナの保護者\n流離いの剣姫", "セイルーンの巫女\n拳の聖女"
+        , "天才魔道士\n燈火の魔女", "リナの保護者\n流離いの剣姫", "セイルーンの巫女\n拳の聖女", "孤高の魔剣士\n魔法剣の使い手"
     ]
     , rear: [
         // 英傑
@@ -542,7 +542,7 @@ table.CreateTable = () => {
         const newTbody = document.createElement("tbody");
         _.forEach(obj.list, unit => {
             newTr = document.createElement("tr");
-            newTr.classList.add(`sex-${unit.male ? "male" : "female"}`);
+            newTr.classList.add(`sex-${"male" in unit ? "male" : "female"}`);
             newTr.classList.add(`obtain-${unit.obtain[0]}`);
             if(unit.obtain.length > 1) newTr.classList.add(`obtain-${unit.obtain[0]}-${unit.obtain[1]}`);
             newTr.classList.add(`depType-${unit.depType}`);
@@ -570,6 +570,7 @@ table.CreateTable = () => {
             if(unit.implDate_bq) newTr.classList.add(`year_bq-${unit.implDate_bq.slice(0, 4)}`);
             else newTr.classList.add("year_bq-none");
             if("extra" in unit) {
+                newTr.classList.add(`sex-${"male" in unit.extra ? "male" : "female"}`);
                 if("obtain" in unit.extra) {
                     newTr.classList.add(`obtain-${unit.extra.obtain[0]}`);
                     if(unit.extra.obtain[1]) newTr.classList.add(`obtain-${unit.extra.obtain[0]}-${unit.extra.obtain[1]}`);

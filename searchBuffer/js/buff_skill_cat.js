@@ -2614,6 +2614,26 @@ buff.skill_cat = [
         , note: "永続スキル"
     }
     , {
+        name: "レクテ/バレンタイン", rarity: "白", cl: "発明家", AW: "未", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { sex: [ "男性" ] }
+            , { season: [ "バレンタイン" ] }
+            , { others: [ "機械" ] }
+        ]
+        , note: [ "範囲", "永続スキル(手動中断可能)", "分類未確認" ]
+    }
+    , {
+        name: "レクテ/バレンタイン", rarity: "白", cl: "発明家", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { sex: [ "男性" ] }
+            , { season: [ "バレンタイン" ] }
+            , { others: [ "機械" ] }
+        ]
+        , note: [ "範囲", "永続スキル(手動中断可能)", "分類未確認" ]
+    }
+    , {
         name: "ちびアルレット", rarity: "ちび", cl: "発明家", skill: "通常"
         , stats: { range: "×1.2" }
         , target: { others: [ "機械" ] }

@@ -569,7 +569,6 @@ debuff.hit = [
         name: "乙姫/水着", rarity: "黒", cl: "儀仗軍神", AW: "未", skill: "通常"
         , stats: { atkCd: "+30f" }
         , atkAttr: "物理", dur: "?f"
-        , note: "分類未確認"
     }
     , {
         name: "フーイェン", rarity: "白", cl: "武侠", AW: "未", skill: "通常"
@@ -734,13 +733,13 @@ debuff.hit = [
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "未", skill: "通常"
         , stats: { atkCd: "+30f" }
         , atkAttr: "物理", dur: "?f"
-        , note: [ "永続スキル", "分類未確認" ]
+        , note: "永続スキル"
     }
     , {
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒", skill: [ "通常", "覚醒(2～)" ]
         , stats: { atkCd: "+30f" }
         , atkAttr: "物理", dur: "?f"
-        , note: [ "永続スキル", "分類未確認" ]
+        , note: "永続スキル"
     }
     , {
         name: "神話の継承者", cl: "神話の継承者", AW: "未"
@@ -1387,6 +1386,11 @@ debuff.hit = [
         , atkAttr: "貫通", dur: "?f"
     }
     , {
+        name: "レクテ/バレンタイン", rarity: "白", cl: "発明家", AW: "覚醒", skill: "覚醒"
+        , stats: { atkCd: "+?f" }
+        , atkAttr: "貫通", dur: "?f"
+    }
+    , {
         name: "ちびマギー", rarity: "ちび", cl: "発明家", skill: "通常"
         , stats: { def: "-30%" }
         , atkAttr: "貫通", dur: "?f"
@@ -1466,7 +1470,6 @@ debuff.hit = [
         name: "しづり", rarity: "黒", cl: "雪娘", AW: "未", skill: "通常"
         , stats: { atkCd: "+23f" }
         , atkAttr: "魔法", dur: "?f"
-        , note: "分類未確認"
     }
     , {
         name: "しづり", rarity: "黒", cl: "雪娘", AW: "未", skill: "通常"
@@ -1477,7 +1480,6 @@ debuff.hit = [
         name: "しづり", rarity: "黒", cl: "雪娘", AW: "覚醒", skill: "通常"
         , stats: { atkCd: "+23f" }
         , atkAttr: "魔法", dur: "?f"
-        , note: "分類未確認"
     }
     , {
         name: "しづり", rarity: "黒", cl: "雪娘", AW: "覚醒", skill: "通常"
@@ -1489,13 +1491,11 @@ debuff.hit = [
         name: "ふゆの", rarity: "白", cl: "雪娘", AW: "未", skill: "通常"
         , stats: { atkCd: "+30f" }
         , atkAttr: "物理", dur: "?f"
-        , note: "分類未確認"
     }
     , {
         name: "ふゆの", rarity: "白", cl: "雪娘", AW: "覚醒", skill: "通常"
         , stats: { atkCd: "+30f" }
         , atkAttr: "物理", dur: "?f"
-        , note: "分類未確認"
     }
     , {
         name: "リッチ", rarity: "黒", cl: "リッチ【闇の軍勢】", AW: "覚醒", skill: "覚醒"
@@ -1541,7 +1541,6 @@ debuff.hit = [
         name: "クロノシア/闘兵", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒", skill: "覚醒"
         , stats: { atkCd: "+?f" }
         , atkAttr: "魔法", dur: "?f"
-        , note: "分類未確認"
     }
     , {
         name: "ズィズィー", rarity: "黒", cl: "悪疫の王", AW: "未"
@@ -1604,7 +1603,6 @@ debuff.hit = [
         name: "しづり/異装", rarity: "黒", cl: "冬姫【白面金毛】", AW: "覚醒", skill: "覚醒"
         , stats: { atkCd: "+?f" }
         , atkAttr: "魔法", dur: "?f"
-        , note: "分類未確認"
     }
     , {
         name: "妖精の丘", rarity: "金", cl: "妖精の丘"
