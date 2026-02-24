@@ -588,7 +588,6 @@ table.CreateTable = () => {
                             newSpans.name.innerText = name;
                             
                             let fullName = "";
-                            if("derivation" in unit) name += `/${unit.derivation}`;
                             if("modifier" in unit) fullName += unit.modifier;
                             fullName += unit.name;
                             if("qualifier" in unit) fullName += unit.qualifier;
