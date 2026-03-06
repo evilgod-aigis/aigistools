@@ -688,6 +688,16 @@ buff.dep_gl = [
         , stats: { rege: [ "50/秒", "25/15f" ] }
     }
     , {
+        name: "ルクシエ", rarity: "黒", cl: "吟遊詩人", AW: "未"
+        , stats: { other: "" }
+        , note: "深海-50%"
+    }
+    , {
+        name: "ルクシエ", rarity: "黒", cl: "吟遊詩人", AW: "未"
+        , stats: { other: "" }
+        , note: "深海-70%"
+    }
+    , {
         name: "魔王の玉座", rarity: "金", cl: "魔王の玉座"
         , stats: { atk: "+5%", def: "+5%", other: "" }
         , note: "魔界-50%"

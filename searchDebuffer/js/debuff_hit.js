@@ -901,6 +901,11 @@ debuff.hit = [
         , atkAttr: "物理", dur: "?f"
     }
     , {
+        name: "オヴィー", rarity: "黒", cl: "スタンピード", AW: "覚醒", skill: "覚醒"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "14f"
@@ -1563,6 +1568,11 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "?f"
         , note: "永続スキル"
+    }
+    , {
+        name: "ちびズィズィー", rarity: "ちび", cl: "悪疫の王"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
     }
     , {
         name: "ゴブリン博士", cl: "ゴブリン博士"

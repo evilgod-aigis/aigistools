@@ -44,6 +44,15 @@ buff.dep_area = [
         , target: { race: [ "人間", "神", "半神" ] }
     }
     , {
+        name: "ルクシエ", rarity: "黒", cl: "吟遊詩人", AW: "覚2a"
+        , stats: { atkCd: "-30%" }
+        , target: [
+            { depType: [ "近接" ] }
+            , { race: [ "鳥人" ] }
+            , { others: [ "深海" ] }
+        ]
+    }
+    , {
         name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "覚2a"
         , stats: { atkCd: "-30%" }
         , target: { others: [ "魔界" ] }

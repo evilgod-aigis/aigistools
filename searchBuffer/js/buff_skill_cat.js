@@ -1867,6 +1867,12 @@ buff.skill_cat = [
         , note: "分類未確認"
     }
     , {
+        name: "ナイトメアハウス", rarity: "金", cl: "不死者たちの饗宴"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: { others: [ "アンデッド" ] }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
         name: "ダニエラ/新装", rarity: "黒", cl: "アーチャー", AW: "未", skill: "通常"
         , stats: { other: "" }
         , target: { others: [ "弓兵" ] }

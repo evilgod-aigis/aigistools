@@ -9,6 +9,7 @@
         , "buff_skill_gl"
         , "buff_skill_cat"
         , "buff_cons_cost"
+        , "buff_time"
         , "buff_add"
         , "buff_unique"
         , "updateHistory"

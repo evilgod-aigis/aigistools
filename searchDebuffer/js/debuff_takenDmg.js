@@ -98,6 +98,11 @@ debuff.takenDmg = [
         , note: [ "範囲", "魔法のみ" ]
     }
     , {
+        name: "ルクシエ", rarity: "黒", cl: "吟遊詩人", AW: "覚醒", skill: "覚醒"
+        , stats: { value: "+30%" }
+        , note: [ "範囲", "永続スキル", "分類未確認" ]
+    }
+    , {
         name: "テュト/異装", rarity: "黒", cl: "妖精術師【冥府館】", AW: "覚醒", skill: "覚醒"
         , stats: { value: "+30%" }
         , note: [ "範囲", "分類未確認" ]

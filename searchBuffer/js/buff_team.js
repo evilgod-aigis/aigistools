@@ -2881,6 +2881,11 @@ buff.team = [
         ]
     }
     , {
+        name: "ちびズィズィー", rarity: "ちび", cl: "悪疫の王"
+        , stats: { poison: "-100%", abn: "-100%" }
+        , target: { others: [ "ちび" ] }
+    }
+    , {
         name: "妖精術師【冥府館】", cl: "妖精術師【冥府館】", AW: "未"
         , stats: { range: "+5" }
         , target: { others: [ "魔術師" ] }

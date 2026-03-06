@@ -1558,6 +1558,22 @@ debuff.mixture = [
         , domain: "global"
     }
     , {
+        name: "ヴィラヘルム/闘兵", rarity: "黒", cl: "初代皇帝", AW: "未", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ヴィラヘルム/闘兵", rarity: "黒", cl: "初代皇帝", AW: "覚醒", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "ラシュマシュ", rarity: "黒", cl: "夜の魔女", AW: "未"
         , stats: {
             atk: { value: "-25%", type: "noAttr" }
@@ -1619,6 +1635,22 @@ debuff.mixture = [
         }
         , domain: "area"
         , note: "最大値(-5%～、-2%/敵撃破)"
+    }
+    , {
+        name: "オヴィー", rarity: "黒", cl: "スタンピード", AW: "未"
+        , stats: {
+            stop: { value: "149f", type: "area" }
+        }
+        , domain: "area"
+        , note: "配置時"
+    }
+    , {
+        name: "オヴィー", rarity: "黒", cl: "スタンピード", AW: "覚醒"
+        , stats: {
+            stop: { value: "149f", type: "area" }
+        }
+        , domain: "area"
+        , note: "配置時"
     }
     , {
         name: "ヴィクトリア/浴衣", rarity: "白", cl: "アーチャー", AW: "未", skill: "通常"

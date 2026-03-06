@@ -697,6 +697,24 @@ buff.add = [
         , note: [ "範囲", "永続スキル" ]
     }
     , {
+        name: "ヴィラヘルム/闘兵", rarity: "黒", cl: "初代皇帝", AW: "未"
+        , stats: { atk: "7%", def: "7%" }
+        , target: { home: [ "白の帝国" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "ヴィラヘルム/闘兵", rarity: "黒", cl: "初代皇帝", AW: "覚醒"
+        , stats: { atk: "10%", def: "10%" }
+        , target: { home: [ "白の帝国" ] }
+        , note: "範囲"
+    }
+    , {
+        name: "ヴィラヘルム/闘兵", rarity: "黒", cl: "初代皇帝", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "*2", def: "*2" }
+        , target: { home: [ "白の帝国" ] }
+        , note: "範囲"
+    }
+    , {
         name: "王城", rarity: "黒", cl: "王城", AW: "未"
         , stats: { hp: "+900", def: "+450" }
         , target: { home: [ "王国" ] }
@@ -711,12 +729,6 @@ buff.add = [
     , {
         name: "王国民的アイドル", cl: "王国民的アイドル", AW: "覚1"
         , stats: { atk: "4%", def: "4%" }
-        , target: { sex: [ "女性" ] }
-        , note: "範囲"
-    }
-    , {
-        name: "女王子/アイドル", rarity: "黒", cl: "王国民的アイドル", AW: "未", skill: "通常"
-        , stats: { atk: "*7", def: "*7" }
         , target: { sex: [ "女性" ] }
         , note: "範囲"
     }

@@ -67,6 +67,11 @@ buff.skill_area = [
         , note: [ "永続スキル", "分類未確認" ]
     }
     , {
+        name: "ウスキアス", rarity: "黒", cl: "フォーチュンルーラー", AW: "覚醒", skill: "覚醒(奇)"
+        , stats: { other: "" }
+        , note: [ "被HP回復量×2.0", "永続スキル(手動中断可能)" ]
+    }
+    , {
         name: "アリア/新装", rarity: "黒", cl: "ソルジャー", AW: "未", skill: "通常"
         , stats: { other: "" }
         , note: "魔法化"
@@ -1155,6 +1160,16 @@ buff.skill_area = [
     , {
         name: "ホルミース", rarity: "黒", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
         , stats: { hp: "+30%" }
+    }
+    , {
+        name: "ルクシエ", rarity: "黒", cl: "吟遊詩人", AW: "未", skill: "通常"
+        , stats: { rege: [ "350/秒", "175/15f" ] }
+        , note: "永続スキル"
+    }
+    , {
+        name: "ルクシエ", rarity: "黒", cl: "吟遊詩人", AW: "覚醒", skill: "通常"
+        , stats: { rege: [ "350/秒", "175/15f" ] }
+        , note: "永続スキル"
     }
     , {
         name: "アミー", rarity: "白", cl: "吟遊詩人", AW: "未", skill: "通常"

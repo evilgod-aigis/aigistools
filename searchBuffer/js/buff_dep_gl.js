@@ -1441,6 +1441,11 @@ buff.dep_gl = [
         , target: { season: [ "バレンタイン" ] }
     }
     , {
+        name: "ナイトメアハウス", rarity: "金", cl: "不死者たちの饗宴"
+        , stats: { cost: "-2" }
+        , target: { others: [ "アンデッド" ] }
+    }
+    , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒"
         , stats: { def: "+10%" }
         , target: { season: [ "温泉" ] }

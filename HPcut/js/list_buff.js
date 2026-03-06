@@ -731,6 +731,15 @@ lists.buff.haste.list = [
         , target: [ { attribution: [ "人間", "神", "半神" ] } ]
         , tooltip: "[射程内] 属性：人間・神・半神の攻撃硬直-30%"
     }
+    , {
+        id: null, buffer: "大海の歌声ルクシエ", awaken: "覚2a", showAwaken: true
+        , value: 30, disabled: null, req: "deploy"
+        , target: [
+            { deployType: [ "近接型" ] }
+            , { attribution: [ "鳥人", "深海" ] }
+        ]
+        , tooltip: "[射程内] 近接、属性：鳥人・深海の攻撃硬直-30%"
+    }
     /*
     , {
         id: null, buffer: "夏侯淵 妙才", awaken: "通常", showAwaken: true
