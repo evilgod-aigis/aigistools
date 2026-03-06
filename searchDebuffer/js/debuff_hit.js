@@ -1551,28 +1551,31 @@ debuff.hit = [
         name: "ズィズィー", rarity: "黒", cl: "悪疫の王", AW: "未"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "?f"
+        , note: "非本体"
     }
     , {
         name: "ズィズィー", rarity: "黒", cl: "悪疫の王", AW: "未", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "?f"
-        , note: "永続スキル"
+        , note: [ "非本体", "永続スキル" ]
     }
     , {
         name: "ズィズィー", rarity: "黒", cl: "悪疫の王", AW: "覚醒"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "?f"
+        , note: "非本体"
     }
     , {
         name: "ズィズィー", rarity: "黒", cl: "悪疫の王", AW: "覚醒", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "?f"
-        , note: "永続スキル"
+        , note: [ "非本体", "永続スキル" ]
     }
     , {
         name: "ちびズィズィー", rarity: "ちび", cl: "悪疫の王"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "?f"
+        , note: "非本体"
     }
     , {
         name: "ゴブリン博士", cl: "ゴブリン博士"

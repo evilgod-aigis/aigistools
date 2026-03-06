@@ -1403,4 +1403,14 @@ lists.buff.redMapEff.list = [
         , map: "深海", value: 50, disabled: null, req: "deploy"
         , tooltip: "[配置] 全味方の深海の影響を50%軽減"
     }
+    , {
+        id: null, buffer: "大海の歌声ルクシエ", awaken: "未", showAwaken: true
+        , map: "深海", value: 50, disabled: null, req: "deploy"
+        , tooltip: "[配置] 全味方の深海の影響を50%軽減"
+    }
+    , {
+        id: null, buffer: "大海の歌声ルクシエ", awaken: "覚醒", showAwaken: true
+        , map: "深海", value: 70, disabled: null, req: "deploy"
+        , tooltip: "[配置] 全味方の深海の影響を70%軽減"
+    }
 ];

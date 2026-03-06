@@ -693,7 +693,7 @@ buff.dep_gl = [
         , note: "深海-50%"
     }
     , {
-        name: "ルクシエ", rarity: "黒", cl: "吟遊詩人", AW: "未"
+        name: "ルクシエ", rarity: "黒", cl: "吟遊詩人", AW: "覚醒"
         , stats: { other: "" }
         , note: "深海-70%"
     }
