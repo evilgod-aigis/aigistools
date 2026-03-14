@@ -213,6 +213,12 @@ debuff.team = [
         , note: "サベージファイター系"
     }
     , {
+        name: "天落の陽", cl: "廻る暗陽", AW: "覚2a"
+        , stats: { atk: "-20%", def: "-20%" }
+        , target: { attr: [ "神" ] }
+        , note: "廻る暗陽系"
+    }
+    , {
         name: "ジャッジメント", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚2b"
         , stats: { atk: "-15%" }
         , target: { attr: [ "アンデッド" ] }

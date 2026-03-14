@@ -323,6 +323,11 @@ buff.dep_gl = [
         , note: "神官戦士系"
     }
     , {
+        name: "ルチア/新装", rarity: "黒", cl: "神官戦士", AW: "覚醒"
+        , stats: { rege: [ "150/秒", "?/?f" ] }
+        , note: "配置後45秒間"
+    }
+    , {
         name: "エーリカ", rarity: "白", cl: "メイジアーマー", AW: "覚醒"
         , stats: { cost: "+1" }
         , target: { not: [ "season" ], season: [ "ハロウィン" ] }
@@ -416,6 +421,11 @@ buff.dep_gl = [
     , {
         name: "玄武", rarity: "白", cl: "北の守護亀蛇", AW: "覚醒"
         , stats: { def: "+7%" }
+    }
+    , {
+        name: "ちびスフィンクス", rarity: "ちび", cl: "スフィンクス"
+        , stats: { other: "" }
+        , note: "地形-25%"
     }
     , {
         name: "皇帝", cl: "皇帝", AW: "未"

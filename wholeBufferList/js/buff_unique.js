@@ -693,6 +693,18 @@ buff.unique = [
         , note: [ "区分：被ダメージ軽減", "属性不問-20%(範囲)", "分類未確認" ]
     }
     , {
+        name: "エリアス/新装", rarity: "黒", cl: "ヒーラー", AW: "未", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "物理魔法-30%(範囲)" ]
+    }
+    , {
+        name: "エリアス/新装", rarity: "黒", cl: "ヒーラー", AW: "覚醒", skill: "通常"
+        , stats: { other: "" }
+        , type: "dmg-red"
+        , note: [ "区分：被ダメージ軽減", "物理魔法-30%(範囲)" ]
+    }
+    , {
         name: "ハリンヘイム", rarity: "白", cl: "砲術士", AW: "覚醒", skill: "覚醒"
         , stats: { other: "" }
         , type: "dmg-red"

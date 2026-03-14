@@ -48,10 +48,10 @@ table.class = {
         , "迷宮の悪霊", "オートマタ", "ぬりかべ", "霊刀つくもがみ", "戦巫女", "シャークウォリアー", "儀仗軍神", "武侠", "サベージファイター"
         , "ハデスソルジャー", "隧道掘削兵", "シールダー", "女王子", "一目の竜", "天尊", "ダーク王子", "処刑人", "白の帝国城", "神話の継承者"
         , "デモンリドゥ", "カオスルーラー", "衛士", "コロッサス", "妖糸使い", "憤怒の海神", "初代皇帝", "王城", "夜の魔女", "統帥の塔", "西の守護虎"
-        , "東の守護龍", "サキュバス", "北の守護亀蛇", "飛電客", "スタンピード"
+        , "東の守護龍", "サキュバス", "北の守護亀蛇", "飛電客", "スタンピード", "廻る暗陽", "エリニュス"
         , "混沌霊使い【魔蛸】", "冥府の騎士【円卓】"
         , "小悪魔アイドル", "王国民的アイドル"
-        , "グレーターデーモン", "ガオレオン", "デーモンシェフ", "チェインソン男", "グラシャラボラス", "皇帝"
+        , "グレーターデーモン", "ガオレオン", "デーモンシェフ", "チェインソン男", "グラシャラボラス", "スフィンクス", "皇帝"
         , "試作型英雄騎"
         // コラボ
         , "ねんどろいどプリンセス"
@@ -959,10 +959,14 @@ table.Sort = (_rarity, _colName, _allowReverse = true) => {
         const length = trs_array.length;
         switch(_colName) {
             case "id":
-            case "implDate":
-                // キャラ実装順と同義
                 trs_array.sort((a, b) => 
                     Number(a.children[colIndex_id].innerText) - Number(b.children[colIndex_id].innerText)
+                );
+                break;
+            case "implDate":
+                // IDの逆順
+                trs_array.sort((a, b) => 
+                    Number(b.children[colIndex_id].innerText) - Number(a.children[colIndex_id].innerText)
                 );
                 break;
             case "class":

@@ -749,6 +749,22 @@ buff.team = [
         , target: { season: [ "バレンタイン" ] }
     }
     , {
+        name: "ルチア/新装", rarity: "黒", cl: "神官戦士", AW: "未"
+        , stats: { cost: "-1" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { others: [ "聖職者" ] }
+        ]
+    }
+    , {
+        name: "ルチア/新装", rarity: "黒", cl: "神官戦士", AW: "覚醒"
+        , stats: { cost: "-2" }
+        , target: [
+            { race: [ "デーモン系" ] }
+            , { others: [ "聖職者" ] }
+        ]
+    }
+    , {
         name: "エレット/バレンタイン", rarity: "白", cl: "神官戦士", AW: "覚醒"
         , stats: { atk: "+7%" }
         , target: { season: [ "バレンタイン" ] }
@@ -2055,6 +2071,16 @@ buff.team = [
         name: "ドゥマルデ", rarity: "黒", cl: "ヒーラー", AW: "覚醒"
         , stats: { def: "+7%" }
         , target: { sex: [ "男性" ] }
+    }
+    , {
+        name: "エリアス/新装", rarity: "黒", cl: "ヒーラー", AW: "未"
+        , stats: { range: "+10" }
+        , target: { home: [ "白の帝国" ] }
+    }
+    , {
+        name: "エリアス/新装", rarity: "黒", cl: "ヒーラー", AW: "覚醒"
+        , stats: { range: "+20" }
+        , target: { home: [ "白の帝国" ] }
     }
     , {
         name: "ユーノ", rarity: "白", cl: "ヒーラー", AW: "覚醒"

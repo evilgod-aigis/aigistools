@@ -376,6 +376,11 @@ buff.skill_area = [
         , stats: { hp: "+30%", def: "×1.3" }
     }
     , {
+        name: "忍法ウルスラ遁術集(隠)", rarity: "金", cl: "帝国忍軍（仮）", skill: "通常"
+        , stats: { other: "" }
+        , note: "隠密付与"
+    }
+    , {
         name: "ナナリー/私服", rarity: "黒", cl: "アーチャー", AW: "未", skill: "通常"
         , stats: { atk: "×1.2" }
         , note: "分類未確認"
@@ -1088,6 +1093,16 @@ buff.skill_area = [
     , {
         name: "ローズ/クリスマス", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "通常(～4)"
         , stats: { eva: "30%" }
+    }
+    , {
+        name: "フルス", rarity: "白", cl: "ハーバリスト", AW: "未", skill: "通常(～4)"
+        , stats: { other: "" }
+        , note: "被HP回復量×1.6"
+    }
+    , {
+        name: "フルス", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "通常(～4)"
+        , stats: { other: "" }
+        , note: "被HP回復量×1.6"
     }
     , {
         name: "ちびラタトスク", rarity: "ちび", cl: "ハーバリスト", skill: "通常(～5)"

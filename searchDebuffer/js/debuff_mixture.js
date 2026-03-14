@@ -2603,6 +2603,30 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "アネット", rarity: "白", cl: "フェンリルシャーマン", AW: "未", skill: "通常"
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "アネット", rarity: "白", cl: "フェンリルシャーマン", AW: "覚醒", skill: "通常"
+        , stats: {
+            atk: { value: "-15%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+     , {
+        name: "アネット", rarity: "白", cl: "フェンリルシャーマン", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+   , {
         name: "プニル", rarity: "青", cl: "フェンリルシャーマン", AW: "未", skill: "通常"
         , stats: {
             atk: { value: "-15%", type: "noAttr" }

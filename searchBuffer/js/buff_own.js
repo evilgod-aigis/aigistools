@@ -433,6 +433,11 @@ buff.own = [
         , stats: { mr: "+2" }
         , target: { others: [ "魔術師" ] }
     }
+    , {
+        name: "忍法ウルスラ遁術集", rarity: "金", cl: "帝国忍軍（仮）"
+        , stats: { hp: "+4%" }
+        , target: { home: [ "白の帝国" ] }
+    }
 ];
 
 /*

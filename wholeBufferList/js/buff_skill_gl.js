@@ -954,6 +954,11 @@ buff.skill_gl = [
         , stats: { rege: [ "150/秒", "75/15f" ] }
     }
     , {
+        name: "フルス", rarity: "白", cl: "ハーバリスト", AW: "覚醒", skill: "覚醒(～4)"
+        , stats: { redep: "20秒" }
+        , note: [ "死亡・撤退最後1体", "スキル発動時" ]
+    }
+    , {
         name: "プリニース/クリスマス", rarity: "黒", cl: "スカラー", AW: "未", skill: "通常"
         , stats: { nul: "50%" }
     }

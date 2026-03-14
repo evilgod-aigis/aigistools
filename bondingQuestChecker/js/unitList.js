@@ -1332,7 +1332,7 @@ const unitList = [
     , { id: 0x051b, implDate: "2024/03/14", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "霊刀つくもがみ", name: "シラハユリ", modifier: "鉄刀付喪神" }
     , { id: 0x051c, implDate: "2024/03/14", implDate_bq: null        , obtain: [ "tr", "mili" ], rarity: "p" , depType: "vang", class: "シーソルジャー", name: "カウリオ", modifier: "逆戟の勇士" }
     , { id: 0x051d, implDate: "2024/03/14", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "ローグ", name: "ちびヴィクター", latent: "白の帝国", male: 1 }
-    , { id: 0x051e, implDate: "2024/03/21", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "シールダー", name: "クリッペ", modifier: "帝国聖盾騎士", latent: "白の帝国" }
+    , { id: 0x051e, implDate: "2024/03/21", implDate_bq: "2026/03/12", obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "シールダー", name: "クリッペ", modifier: "帝国聖盾騎士", latent: "白の帝国" }
     , { id: 0x051f, implDate: "2024/03/21", implDate_bq: "2025/10/23", obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ハデスシャーマン", name: "オルフィー", modifier: "冥府の巫女", latent: "白の帝国" }
     , { id: 0x0520, implDate: "2024/03/21", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "モンク", name: "キンドライヒ", modifier: "帝国猟犬", latent: "白の帝国" }
     , { id: 0x0521, implDate: "2024/03/21", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "ハデスソルジャー", name: "リチュエ", modifier: "冥界巡衛騎士", latent: "白の帝国" }
@@ -1505,7 +1505,7 @@ const unitList = [
     , { id: 0x05c6, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ドラグーン", name: "ダグマール", modifier: "白竜機兵", latent: "白の帝国" }
     , { id: 0x05c7, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "デモンルーン", name: "ヴィルデフラウ", modifier: "帝国魔兵", latent: "白の帝国" }
     , { id: 0x05c8, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "妖糸使い", name: "ツザーネ", modifier: "帝国妖糸兵", latent: "白の帝国" }
-    , { id: 0x05c9, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "吟遊詩人", name: "トットン", modifier: "帝国音楽隊", latent: "白の帝国" }
+    , { id: 0x05c9, implDate: "2025/03/27", implDate_bq: "2026/03/12", obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "吟遊詩人", name: "トットン", modifier: "帝国音楽隊", latent: "白の帝国" }
     , { id: 0x05ca, implDate: "2025/03/27", implDate_bq: null        , obtain: [ "tr", "dark" ], rarity: "b" , depType: "both", class: "エアセイラー", name: "ヴァルデ", modifier: "帝国選抜飛行士", latent: "白の帝国" }
     , { id: 0x05cb, implDate: "2025/04/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ダークプリースト", name: "ちびマレブランケ", latent: "白の帝国" }
     , { id: 0x05cc, implDate: "2025/04/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "モンスタースレイヤー", name: "ちびヒルデ", latent: "白の帝国" }
@@ -1677,6 +1677,13 @@ const unitList = [
     , { id: 0x0670, implDate: "2026/03/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ドラゴンシャーマン", name: "ちびラウラ", latent: "白の帝国" }
     , { id: 0x0671, implDate: "2026/03/05", implDate_bq: null        , obtain: [ "tr", "else" ], rarity: "bh", depType: "rear", class: "フォーチュンルーラー", name: "ウスキアス", modifier: "災禍を鎮める者" }
     , { id: 0x0672, implDate: "2026/03/05", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "gc", depType: "rear", class: "悪疫の王", name: "ちびズィズィー" }//, extra: { obtain: [ "tr", "rain" ] } }
+    , { id: 0x0673, implDate: "2026/03/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "廻る暗陽", name: "ヒュリオン", modifier: "暗き太陽の亜神", latent: "白の帝国" }
+    , { id: 0x0674, implDate: "2026/03/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "エリニュス", name: "ティシファ", modifier: "赫き復讐の亜神", latent: "白の帝国" }
+    , { id: 0x0675, implDate: "2026/03/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "ヒーラー", name: "エリアス", modifier: "帝国大治癒士", derivation: "新装", latent: "白の帝国" }
+    , { id: 0x0676, implDate: "2026/03/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "フェンリルシャーマン", name: "アネット", modifier: "帝国の狼巫", latent: "白の帝国" }
+    , { id: 0x0677, implDate: "2026/03/12", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ハーバリスト", name: "フルス", modifier: "帝国薬草師", latent: "白の帝国" }
+    , { id: 0x0678, implDate: "2026/03/12", implDate_bq: null        , obtain: [ "tr", "dark" ], rarity: "b" , depType: "vang", class: "神官戦士", name: "ルチア", modifier: "帝国守護神官", derivation: "新装", latent: "白の帝国" }
+    , { id: 0x0679, implDate: "2026/03/12", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "スフィンクス", name: "ちびスフィンクス", male: 1 }
     
     
     

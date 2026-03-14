@@ -1760,6 +1760,22 @@ buff.dep_gl = [
         , target: { season: [ "クリスマス" ] }
     }
     , {
+        name: "フルス", rarity: "白", cl: "ハーバリスト", AW: "未"
+        , stats: { cost: "-3" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ] }
+        ]
+    }
+    , {
+        name: "フルス", rarity: "白", cl: "ハーバリスト", AW: "覚醒"
+        , stats: { cost: "-5" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "白の帝国" ] }
+        ]
+    }
+    , {
         name: "夜行さん", cl: "夜行さん", AW: "未"
         , stats: { cost: "-2" }
         , target: { race: [ "妖怪" ] }
