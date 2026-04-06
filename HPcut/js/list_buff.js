@@ -176,6 +176,12 @@ lists.buff.rWT.list = [
         , target: [ { rarity: [ "銀" ] } ]
         , tooltip: "[編成] レアリティ：銀の初動-30%"
     }
+    , {
+        id: null, buffer: "王国演習場", awaken: "-"
+        , value: 25, disabled: null, req: "team"
+        , target: [ { attribution: [ "王国" ] } ]
+        , tooltip: "[編成] 属性：砂漠の国の初動-25%"
+    }
 ];
 
 // 再動短縮(配置型別)
@@ -607,6 +613,20 @@ lists.buff.haste.list = [
         , tooltip: "[編成] 属性：華の国の攻撃硬直-%"
     }
     */
+    /*
+    , {
+        id: null, buffer: "オリュンポス要塞宮殿", awaken: "未", showAwaken: true
+        , value: , disabled: null, req: "deploy"
+        , target: [ { deployType: [ "遠距離型" ] } ]
+        , tooltip: "[射程内] 遠距離ユニットの攻撃硬直-%"
+    }
+    , {
+        id: null, buffer: "オリュンポス要塞宮殿", awaken: "覚醒", showAwaken: true
+        , value: , disabled: null, req: "deploy"
+        , target: [ { deployType: [ "遠距離型" ] } ]
+        , tooltip: "[射程内] 遠距離ユニットの攻撃硬直-%"
+    }
+    */
     , {
         id: null, buffer: "孫策 伯符", awaken: "-"
         , value: 20, disabled: null, req: "team"
@@ -807,7 +827,7 @@ lists.buff.haste.list = [
             unitName: "統帥の杖", deployType: "遠距離型", rarity: "-"
             , unitClass: { selected: "-" }
             , attribution: [], note: []
-            , WT: 1, CT: 60, dur: 30
+            , WT: 1, CT: 60, dur: Infinity
         }
     }
     */
