@@ -138,6 +138,12 @@ buff.unique = [
         , note: [ "区分：マス上書き(近→近)", "分類未確認" ]
     }
     , {
+        name: "試しの場", rarity: "金", cl: "試しの場"
+        , stats: { hp: "×1.3", atk: "×1.3" }
+        , type: "spot_over"
+        , note: [ "区分：マス上書き(両→両)", "分類未確認" ]
+    }
+    , {
         name: "デッドマン号", rarity: "トークン"
         , stats: { atk: "×1.25", def: "×1.25" }
         , type: "spot_over"

@@ -1379,6 +1379,11 @@ buff.dep_gl = [
         , target: { home: [ "王国" ] }
     }
     , {
+        name: "デシウス", rarity: "黒", cl: "復讐の暗黒騎士", AW: "覚醒"
+        , stats: { atk: "+7%", def: "+7%" }
+        , target: { others: [ "魔界" ] }
+    }
+    , {
         name: "王国民的アイドル", cl: "王国民的アイドル", AW: "覚1"
         , stats: { cost: "+3" }
         , target: { sex: [ "男性" ] }

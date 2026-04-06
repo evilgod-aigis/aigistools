@@ -1885,6 +1885,11 @@ buff.team = [
         , target: { home: [ "華の国" ] }
     }
     , {
+        name: "イージス", rarity: "黒", cl: "導きの少女女神", AW: "覚醒"
+        , stats: { atk: "+15%", def: "+15%", cost: "-5" }
+        , target: { cl: [ "王子" ] }
+    }
+    , {
         name: "ちびチェインソン男", rarity: "ちび", cl: "チェインソン男"
         , stats: { atk: "+5%", mr: "+5" }
         , target: { others: [ "アンデッド" ] }
@@ -2882,12 +2887,12 @@ buff.team = [
     }
     , {
         name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "未"
-        , stats: { atk: "+7%", cost: "-5" }
+        , stats: { atk: "+10%", cost: "-8" }
         , target: { cl: [ "王子" ] }
     }
     , {
         name: "アイギス神殿", rarity: "黒", cl: "アイギス神殿", AW: "覚醒"
-        , stats: { atk: "+10%", cost: "-8" }
+        , stats: { atk: "+20%", cost: "-14" }
         , target: { cl: [ "王子" ] }
     }
     , {
@@ -2983,6 +2988,11 @@ buff.team = [
         name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒"
         , stats: { hp: "+10%", def: "+5%" }
         , target: { others: [ "機械" ] }
+    }
+    , {
+        name: "王国演習場", rarity: "金", cl: "試しの場"
+        , stats: { wt: "-25%" }
+        , target: { home: [ "王国" ] }
     }
     , {
         name: "アルスラーン", rarity: "白", cl: "王太子", AW: "未"

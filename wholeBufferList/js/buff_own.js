@@ -32,6 +32,10 @@ buff.own = [
         name: "フィネス", rarity: "白", cl: "盤上の支配者", AW: "覚醒"
         , stats: { def: "+2%" }
     }
+    , {
+        name: "イージス", rarity: "黒", cl: "導きの少女女神", AW: "覚醒"
+        , stats: { hp: "+1%", atk: "+1%", def: "+1%" }
+    }
 ];
 
 /*

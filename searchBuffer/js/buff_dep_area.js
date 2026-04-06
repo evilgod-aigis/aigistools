@@ -11,6 +11,11 @@ buff.dep_area = [
         , target: { depType: [ "近接" ] }
     }
     , {
+        name: "ちびトゥーダ", rarity: "ちび", cl: "神官戦士"
+        , stats: { def: "×1.1" }
+        , target: { depType: [ "近接" ] }
+    }
+    , {
         name: "フェルミ/浴衣", rarity: "白", cl: "神官戦士", AW: "覚醒"
         , stats: { other: "" }
         , target: { season: [ "サマー" ] }
@@ -25,6 +30,16 @@ buff.dep_area = [
         name: "プロメ", rarity: "黒", cl: "コロッサス", AW: "覚醒"
         , stats: { rege: [ "70/秒", "35/15f" ] }
         , target: { race: [ "人間", "半神" ] }
+    }
+    , {
+        name: "オリュンポス", rarity: "黒", cl: "オリュンポス要塞宮殿", AW: "未"
+        , stats: { atkCd: "-?%" }
+        , target: { depType: [ "遠距離" ] }
+    }
+    , {
+        name: "オリュンポス", rarity: "黒", cl: "オリュンポス要塞宮殿", AW: "覚醒"
+        , stats: { atkCd: "-?%" }
+        , target: { depType: [ "遠距離" ] }
     }
     , {
         name: "超発明王", cl: "発明家", AW: "覚2a"

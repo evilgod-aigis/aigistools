@@ -906,6 +906,17 @@ debuff.hit = [
         , atkAttr: "物理", dur: "?f"
     }
     , {
+        name: "アビスパラディン", cl: "復讐の暗黒騎士", AW: "覚2a"
+        , stats: { atk: "-20%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: [ "復讐の暗黒騎士系", "分類未確認" ]
+    }
+    , {
+        name: "デシウス", rarity: "黒", cl: "復讐の暗黒騎士", AW: "覚醒", skill: "覚醒(3～)"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "14f"
@@ -1806,6 +1817,18 @@ debuff.hit = [
         , note: [ "鉄腕娘【モンスター娘TD】系", "配置時" ]
     }
     , {
+        name: "セレン", rarity: "黒", cl: "真鍮竜娘【モンスター娘TD】", AW: "未", skill: "通常"
+        , stats: { def: "-90%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "セレン", rarity: "黒", cl: "真鍮竜娘【モンスター娘TD】", AW: "覚醒", skill: "通常"
+        , stats: { def: "-90%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "井河アサギ", rarity: "黒", cl: "対魔忍 超人【対魔忍】", AW: "覚醒", skill: "覚醒"
         , stats: { atkCd: "+30f" }
         , atkAttr: "魔法", dur: "?f"
@@ -1879,6 +1902,18 @@ debuff.hit = [
         , stats: { atk: "-20%" }
         , atkAttr: "魔法", dur: "?f"
         , note: "分類未確認"
+    }
+    , {
+        name: "ネオン", rarity: "黒", cl: "触手少女【ルルイエ】", AW: "未", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "確率20%で貫通"
+    }
+    , {
+        name: "ネオン", rarity: "黒", cl: "触手少女【ルルイエ】", AW: "覚醒", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "確率60～100%で貫通"
     }
     , {
         name: "ブルームペタル", rarity: "トークン", AW: "覚1"

@@ -353,10 +353,6 @@ buff.skill_area = [
         , note: "分類未確認"
     }
     , {
-        name: "スウィーティア", rarity: "黒", cl: "サキュバス", AW: "覚醒", skill: "覚醒"
-        , stats: { ho: "+30%" }
-    }
-    , {
         name: "ティルト/異装", rarity: "黒", cl: "冥府の騎士【円卓】", AW: "未", skill: "通常"
         , stats: { atkCd: "-?%" }
         , note: "分類未確認"
@@ -365,6 +361,15 @@ buff.skill_area = [
         name: "ティルト/異装", rarity: "黒", cl: "冥府の騎士【円卓】", AW: "覚醒", skill: [ "通常", "覚醒(4～)" ]
         , stats: { atkCd: "-?%" }
         , note: "分類未確認"
+    }
+    , {
+        name: "スウィーティア", rarity: "黒", cl: "サキュバス", AW: "覚醒", skill: "覚醒"
+        , stats: { hp: "+30%" }
+    }
+    , {
+        name: "オリュンポス", rarity: "黒", cl: "オリュンポス要塞宮殿", AW: "覚醒", skill: "覚醒(2～)"
+        , stats: { other: "" }
+        , note: [ "バリア(3000)付与", "スキル発動時" ]
     }
     , {
         name: "ちびグラシャラボラス", rarity: "ちび", cl: "グラシャラボラス", skill: "通常"

@@ -408,11 +408,11 @@ buff.dep_gl = [
     }
     , {
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "未"
-        , stats: { rege: [ "60/秒", "30/15f" ] }
+        , stats: { rege: [ "120/秒", "60/15f" ] }
     }
     , {
         name: "白の帝国城", rarity: "黒", cl: "白の帝国城", AW: "覚醒"
-        , stats: { rege: [ "80/秒", "30/15f" ] }
+        , stats: { rege: [ "180/秒", "90/15f" ] }
     }
     , {
         name: "玄武", rarity: "白", cl: "北の守護亀蛇", AW: "未"

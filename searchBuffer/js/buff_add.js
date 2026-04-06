@@ -716,15 +716,31 @@ buff.add = [
     }
     , {
         name: "王城", rarity: "黒", cl: "王城", AW: "未"
-        , stats: { hp: "+900", def: "+450" }
+        , stats: { hp: "+900", atk: "+450", def: "+450" }
         , target: { home: [ "王国" ] }
         , note: "最大値(HP+6|防御力+3/秒)"
     }
     , {
         name: "王城", rarity: "黒", cl: "王城", AW: "覚醒"
-        , stats: { hp: "+1200", def: "+600" }
+        , stats: { hp: "+1200", atk: "+600", def: "+600" }
         , target: { home: [ "王国" ] }
         , note: "最大値(HP+8|防御力+4/秒)"
+    }
+    , {
+        name: "英傑の塔", cl: "英傑の塔", AW: "未"
+        , stats: { atk: "50%", def: "50%" }
+        , target: { others: [ "英傑" ] }
+    }
+    , {
+        name: "塔の継承者", cl: "英傑の塔", AW: "覚1"
+        , stats: { atk: "50%", def: "50%" }
+        , target: { others: [ "英傑" ] }
+        , note: "英傑の塔系"
+    }
+    , {
+        name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒"
+        , stats: { atk: "*3" }
+        , target: { others: [ "英傑" ] }
     }
     , {
         name: "王国民的アイドル", cl: "王国民的アイドル", AW: "覚1"

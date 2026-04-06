@@ -1861,15 +1861,21 @@ buff.skill_cat = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
+        name: "ナイトメアハウス", rarity: "金", cl: "不死者たちの饗宴"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: { others: [ "アンデッド" ] }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
         name: "カカオ豆の魔物", rarity: "金", cl: "デリシャス！（自己評価）", skill: "通常(1)"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { season: [ "バレンタイン" ] }
         , note: "分類未確認"
     }
     , {
-        name: "ナイトメアハウス", rarity: "金", cl: "不死者たちの饗宴"
-        , stats: { atk: "×1.5", def: "×1.5" }
-        , target: { others: [ "アンデッド" ] }
+        name: "メカニーズヘッグ", rarity: "金", cl: "メカニーズヘッグ"
+        , stats: { atk: "×1.5" }
+        , target: { others: [ "機械", "ドラゴン" ] }
         , note: [ "範囲", "分類未確認" ]
     }
     , {
@@ -3139,7 +3145,7 @@ buff.skill_cat = [
         name: "しづり/異装", rarity: "黒", cl: "冬姫【白面金毛】", AW: "未", skill: "通常"
         , stats: { atk: "×1.2", range: "×1.2" }
         , target: [
-            { cl: [ "王子" ] }
+            { home: [ "王国" ] }
             , { race: [ "妖怪" ] }
         ]
     }
@@ -3147,7 +3153,7 @@ buff.skill_cat = [
         name: "しづり/異装", rarity: "黒", cl: "冬姫【白面金毛】", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.2", range: "×1.2" }
         , target: [
-            { cl: [ "王子" ] }
+            { home: [ "王国" ] }
             , { race: [ "妖怪" ] }
         ]
     }
@@ -3155,7 +3161,7 @@ buff.skill_cat = [
         name: "しづり/異装", rarity: "黒", cl: "冬姫【白面金毛】", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.2", range: "×1.2", cost: "-20%" }
         , target: [
-            { cl: [ "王子" ] }
+            { home: [ "王国" ] }
             , { race: [ "妖怪" ] }
         ]
     }
@@ -3267,38 +3273,56 @@ buff.skill_cat = [
     , {
         name: "剣の駒", rarity: "トークン", AW: "未", skill: "通常"
         , stats: { atk: "×1.5" }
-        , target: { race: [ "人間" ] }
-        , note: "統帥の塔"
+        , target: {
+            cl: [ "統帥の塔" ]
+            , race: [ "人間" ]
+        }
+        , note: [ "統帥の塔", "永続スキル" ]
     }
     , {
         name: "盾の駒", rarity: "トークン", AW: "未", skill: "通常"
         , stats: { def: "×1.5" }
-        , target: { race: [ "人間" ] }
-        , note: "統帥の塔"
+        , target: {
+            cl: [ "統帥の塔" ]
+            , race: [ "人間" ]
+        }
+        , note: [ "統帥の塔", "永続スキル" ]
     }
     , {
         name: "杖の駒", rarity: "トークン", AW: "未", skill: "通常"
         , stats: { atk: "×1.3", atkCd: "-?%" }
-        , target: { others: [ "魔術師" ] }
-        , note: "統帥の塔"
+        , target: {
+            cl: [ "統帥の塔" ]
+            , others: [ "魔術師" ]
+        }
+        , note: [ "統帥の塔", "永続スキル" ]
     }
     , {
         name: "統帥の剣", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.5" }
-        , target: { race: [ "人間" ] }
-        , note: [ "塔の管理者", "(統帥の塔系)" ]
+        , target: {
+            cl: [ "統帥の塔" ]
+            , race: [ "人間" ]
+        }
+        , note: [ "塔の管理者", "(統帥の塔系)", "永続スキル" ]
     }
     , {
         name: "統帥の盾", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { def: "×1.5" }
-        , target: { race: [ "人間" ] }
-        , note: [ "塔の管理者", "(統帥の塔系)" ]
+        , target: {
+            cl: [ "統帥の塔" ]
+            , race: [ "人間" ]
+        }
+        , note: [ "塔の管理者", "(統帥の塔系)", "永続スキル" ]
     }
     , {
         name: "統帥の杖", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.3", atkCd: "-?%" }
-        , target: { others: [ "魔術師" ] }
-        , note: [ "塔の管理者", "(統帥の塔系)" ]
+        , target: {
+            cl: [ "統帥の塔" ]
+            , others: [ "魔術師" ]
+        }
+        , note: [ "塔の管理者", "(統帥の塔系)", "永続スキル" ]
     }
     , {
         name: [ "暗黒学ラン騎士", "【並行世界】" ], rarity: "トークン", AW: "未", skill: "通常"
