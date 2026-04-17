@@ -1037,6 +1037,10 @@ buff.skill_gl = [
         , stats: { rege: [ "72/秒", "36/15f" ] }
     }
     , {
+        name: "ちびダークアンナ", rarity: "ちび", cl: "政務官【闇の軍勢】", skill: "通常"
+        , stats: { rege: [ "72/秒", "?/?f" ] }
+    }
+    , {
         name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "未", skill: "通常"
         , stats: { eva: "50%" }
     }

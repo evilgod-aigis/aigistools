@@ -42,6 +42,12 @@ buff.dep_area = [
         , target: { depType: [ "遠距離" ] }
     }
     , {
+        name: "メローネ/エッグハント", rarity: "白", cl: "ウィッチ", AW: "覚醒"
+        , stats: { atk: "×1.07" }
+        , target: { others: [ "魔術師" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "超発明王", cl: "発明家", AW: "覚2a"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { depType: [ "近接" ] }

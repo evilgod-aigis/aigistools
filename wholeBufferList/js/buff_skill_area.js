@@ -247,6 +247,11 @@ buff.skill_area = [
         , stats: { atk: "×1.5" }
     }
     , {
+        name: "エスネア/エッグハント", rarity: "黒", cl: "デモンルーン", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "×1.5" }
+        , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
         name: "ハリナ/水着", rarity: "黒", cl: "エンプレス", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: [

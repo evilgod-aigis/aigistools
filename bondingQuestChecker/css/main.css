@@ -165,7 +165,7 @@ img {
 }
 .table-area {
     margin-top: 40px;
-    min-width: max-content;
+    width: max-content;
 }
 .table-name {
     font-size: 18px;

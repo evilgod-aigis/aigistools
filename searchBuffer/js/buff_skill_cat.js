@@ -2868,6 +2868,11 @@ buff.skill_cat = [
         , target: { cl: [ "ダーク王子" ] }
     }
     , {
+        name: "ちびダークアンナ", rarity: "ちび", cl: "政務官【闇の軍勢】", skill: "通常"
+        , stats: { atk: "×1.3" }
+        , target: { others: [ "魔界" ] }
+    }
+    , {
         name: "デステリカ/浴衣", rarity: "黒", cl: "ガンスリンガー", AW: "覚醒", skill: "覚醒"
         , stats: { atk: "×1.2", range: "×1.2" }
         , target: [

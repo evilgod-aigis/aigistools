@@ -727,22 +727,6 @@ buff.add = [
         , note: "最大値(HP+8|防御力+4/秒)"
     }
     , {
-        name: "英傑の塔", cl: "英傑の塔", AW: "未"
-        , stats: { atk: "50%", def: "50%" }
-        , target: { others: [ "英傑" ] }
-    }
-    , {
-        name: "塔の継承者", cl: "英傑の塔", AW: "覚1"
-        , stats: { atk: "50%", def: "50%" }
-        , target: { others: [ "英傑" ] }
-        , note: "英傑の塔系"
-    }
-    , {
-        name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒"
-        , stats: { atk: "*3" }
-        , target: { others: [ "英傑" ] }
-    }
-    , {
         name: "王国民的アイドル", cl: "王国民的アイドル", AW: "覚1"
         , stats: { atk: "4%", def: "4%" }
         , target: { sex: [ "女性" ] }
@@ -1049,6 +1033,22 @@ buff.add = [
         , note: "範囲"
     }
     , {
+        name: "英傑の塔", cl: "英傑の塔", AW: "未"
+        , stats: { atk: "50%", def: "50%" }
+        , target: { others: [ "英傑" ] }
+    }
+    , {
+        name: "塔の継承者", cl: "英傑の塔", AW: "覚1"
+        , stats: { atk: "50%", def: "50%" }
+        , target: { others: [ "英傑" ] }
+        , note: "英傑の塔系"
+    }
+    , {
+        name: "英傑の塔", rarity: "黒", cl: "英傑の塔", AW: "覚醒"
+        , stats: { atk: "*3" }
+        , target: { others: [ "英傑" ] }
+    }
+    , {
         name: "政務官【闇の軍勢】", cl: "政務官【闇の軍勢】", AW: "未"
         , stats: { atk: "10%", def: "10%" }
         , target: { cl: [ "ダーク王子" ] }
@@ -1059,6 +1059,12 @@ buff.add = [
         , stats: { atk: "20%", def: "20%" }
         , target: { cl: [ "ダーク王子" ] }
         , note: [ "範囲", "政務官【闇の軍勢】系" ]
+    }
+    , {
+        name: "キリエ/学園", rarity: "黒", cl: "メディック", AW: "覚醒", skill: "覚醒"
+        , stats: { atk: "+260", range: "19" }
+        , target: { depType: [ "近接" ] }
+        , note: [ "ヒール対象(優先：攻撃力)", "継続：12.5秒", "永続スキル" ]
     }
     , {
         name: "海の家", rarity: "金", cl: "海の家"

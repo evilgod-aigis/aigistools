@@ -874,6 +874,14 @@ debuff.mixture = [
         , note: "永続スキル"
     }
     , {
+        name: "アナトリア/学園", rarity: "黒", cl: "グラディエーター", AW: "覚醒", skill: "覚醒(奇)"
+        , stats: {
+            def: { value: "-70%", type: "area" }
+        }
+        , domain: "area"
+        , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
         name: "シールインヘリット", cl: "モンスターブレイカー", AW: "覚2a"
         , stats: {
             atk: { value: "-7%", type: "noAttr" }
@@ -1089,6 +1097,22 @@ debuff.mixture = [
         }
         , domain: "area"
         , note: [ "永続スキル", "分類未確認" ]
+    }
+    , {
+        name: "エスネア/エッグハント", rarity: "黒", cl: "デモンルーン", AW: "未", skill: "通常"
+        , stats: {
+            mr: { value: "-60%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "エスネア/エッグハント", rarity: "黒", cl: "デモンルーン", AW: "覚醒", skill: "通常"
+        , stats: {
+            mr: { value: "-60%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
     }
     , {
         name: "重機関騎士", cl: "スチームナイト", AW: "覚2b", skill: [ "通常", "覚醒" ]
@@ -1849,6 +1873,14 @@ debuff.mixture = [
             mr: { value: "-40%", type: "area" }
         }
         , domain: "area"
+    }
+    , {
+        name: "メローネ/エッグハント", rarity: "白", cl: "ウィッチ", AW: "覚醒", skill: "覚醒(～3)"
+        , stats: {
+            mr: { value: "-20", type: "fixed" }
+        }
+        , domain: "global"
+        , note: "分類未確認"
     }
     , {
         name: "カリオペ/サマー", rarity: "金", cl: "ウィッチ", AW: "覚醒", skill: "覚醒"

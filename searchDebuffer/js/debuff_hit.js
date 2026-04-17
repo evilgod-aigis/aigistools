@@ -181,6 +181,18 @@ debuff.hit = [
         , atkAttr: "物理", dur: "9f"
     }
     , {
+        name: "コメット", rarity: "黒", cl: "ペガサスライダー", AW: "未", skill: "通常"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
+        name: "コメット", rarity: "黒", cl: "ペガサスライダー", AW: "覚醒", skill: "通常"
+        , stats: { def: "-30%" }
+        , atkAttr: "物理", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "アリエッタ", rarity: "青", cl: "ダークファイター", AW: "未", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "89f"

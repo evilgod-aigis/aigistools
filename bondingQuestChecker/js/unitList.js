@@ -1688,11 +1688,17 @@ const unitList = [
     , { id: 0x067b, implDate: "2026/03/26", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "呪命師", name: "イェクトリ", modifier: "命餐の巫女" }
     , { id: 0x067c, implDate: "2026/04/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "ワルキューレ", name: "ちびメーア", latent: "白の帝国" }
     , { id: 0x067d, implDate: "2026/04/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "神官戦士", name: "ちびトゥーダ", latent: "白の帝国" }
-    , { id: 0x067e, implDate: "2026/04/02", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "b" , depType: "vang", class: "復讐の暗黒騎士", name: "デシウス", modifier: "揺るがぬ黒き騎士", male: 1 }
+    , { id: 0x067e, implDate: "2026/04/02", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "b" , depType: "vang", class: "復讐の暗黒騎士", name: "デシウス", modifier: "揺るがぬ黒き騎士", male: 1 }
     , { id: 0x067f, implDate: "2026/04/02", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "オリュンポス要塞宮殿", name: "オリュンポス", qualifier: "要塞宮殿" }
     , { id: 0x0680, implDate: "2026/04/02", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "真鍮竜娘【モンスター娘TD】", name: "セレン", modifier: "ブラスドラゴン娘", collabo: 1 }
     , { id: 0x0681, implDate: "2026/04/02", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "触手少女【ルルイエ】", name: "ネオン", collabo: 1 }
     , { id: 0x0682, implDate: "2026/04/02", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "vang", class: "アビサルヘレティック", name: "カルティラ", modifier: "古き海の遣い" }
+    , { id: 0x0683, implDate: "2026/04/08", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "rear", class: "政務官【闇の軍勢】", name: "ちびダークアンナ" }
+    , { id: 0x0684, implDate: "2026/04/13", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "b" , depType: "vang", class: "ペガサスライダー", name: "コメット", modifier: "超次元槍騎士" }
+    , { id: 0x0685, implDate: "2026/04/13", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "グラディエーター", name: "アナトリア", modifier: "学生王者", derivation: "学園" }
+    , { id: 0x0686, implDate: "2026/04/13", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "デモンルーン", name: "エスネア", modifier: "魔界の黒兎", derivation: "エッグハント" }
+    , { id: 0x0687, implDate: "2026/04/13", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "ウィッチ", name: "メローネ", modifier: "兎祭の魔女", derivation: "エッグハント" }
+    , { id: 0x0688, implDate: "2026/04/13", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "b" , depType: "rear", class: "メディック", name: "キリエ", modifier: "学園保健伝", derivation: "学園" }
     
     
     
