@@ -16,20 +16,20 @@ buff.unique = [
        , note: [ "区分：ダモクレスの剣", "終了時、対象のHP-50%" ]
     }
     
-    // 死亡時
+    // 時限
     , {
         name: "レライエ", rarity: "白", cl: "デモンシャーマン", AW: "覚醒"
         , stats: { atk: "+30%" }
         , target: { race: [ "デーモン系" ] }
-        , type: "death"
-        , note: [ "区分：死亡時", "死亡時", "継続:20秒" ]
+        , type: "limit"
+        , note: [ "区分：時限", "死亡時", "継続:20秒" ]
     }
     , {
         name: "レライエ/ハロウィン", rarity: "白", cl: "デモンシャーマン", AW: "覚醒"
         , stats: { atk: "+25%", def: "+25%" }
         , target: { season: [ "ハロウィン" ] }
-        , type: "death"
-        , note: [ "区分：死亡時", "死亡時", "継続:30秒" ]
+        , type: "limit"
+        , note: [ "区分：時限", "死亡時", "継続:30秒" ]
     }
     
     // 特効
@@ -236,7 +236,7 @@ buff.unique = [
     
     type
     
-    spot_mul damocles death Lukifer nekomata
+    spot_mul damocles limit Lukifer nekomata
     
     special atk-up_mag dmg-red
     

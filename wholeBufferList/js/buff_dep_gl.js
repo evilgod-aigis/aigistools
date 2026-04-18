@@ -323,11 +323,6 @@ buff.dep_gl = [
         , note: "神官戦士系"
     }
     , {
-        name: "ルチア/新装", rarity: "黒", cl: "神官戦士", AW: "覚醒"
-        , stats: { rege: [ "150/秒", "?/?f" ] }
-        , note: "配置後45秒間"
-    }
-    , {
         name: "エーリカ", rarity: "白", cl: "メイジアーマー", AW: "覚醒"
         , stats: { cost: "+1" }
         , target: { not: [ "season" ], season: [ "ハロウィン" ] }
@@ -609,16 +604,6 @@ buff.dep_gl = [
         name: "パトリシア/水着", rarity: "白", cl: "支援工兵", AW: "覚醒"
         , stats: { other: "" }
         , note: "地形-30%"
-    }
-    , {
-        name: "レクテ/バレンタイン", rarity: "白", cl: "発明家", AW: "未"
-        , stats: { atk: "+15%" }
-        , note: [ "配置後30秒間", "分類未確認" ]
-    }
-    , {
-        name: "レクテ/バレンタイン", rarity: "白", cl: "発明家", AW: "覚醒"
-        , stats: { atk: "+20%" }
-        , note: [ "配置後30秒間", "分類未確認" ]
     }
     , {
         name: "深き海の巫女", cl: "シービショップ", AW: "覚2a"
