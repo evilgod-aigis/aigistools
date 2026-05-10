@@ -164,9 +164,21 @@ buff.team = [
         , target: { year: [ "2013年", "2025年" ] }
     }
     , {
+        name: "王子【翼蛇】", cl: "王子"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: { year: [ "2013年", "2025年" ] }
+        , note: "Lv3以上"
+    }
+    , {
         name: "王子【双鴉】", cl: "王子"
         , stats: { atk: "+10%", range: "+10" }
         , target: { others: [ "魔術師" ] }
+    }
+    , {
+        name: "王子【双鴉】", cl: "王子"
+        , stats: { atk: "+20%", range: "+10" }
+        , target: { others: [ "魔術師" ] }
+        , note: "Lv3以上"
     }
     , {
         name: "王子【神馬】", cl: "王子"
@@ -1900,9 +1912,20 @@ buff.team = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
+        name: "アイギス像", rarity: "金", cl: "女神像"
+        , stats: { hp: "+3%", atk: "+3%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "王国" ] }
+        ]
+    }
+    , {
         name: "ダイオージ", rarity: "金", cl: "試験型英雄騎"
-        , stats: { hp: "+5%" }
-        , target: { cl: [ "王子" ] }
+        , stats: { hp: "+5%", atk: "+5%", def: "+5%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "王国" ] }
+        ]
     }
     , {
         name: "ちびダイオージ", rarity: "ちび", cl: "試験型英雄騎"
@@ -1910,12 +1933,22 @@ buff.team = [
         , target: { cl: [ "王子" ] }
     }
     , {
+        name: "ジャバウォック", rarity: "金", cl: "ジャバウォック"
+        , stats: { atk: "+10%" }
+        , target: { others: [ "機械", "砲兵" ] }
+    }
+    , {
         name: "龍宮城の宴", rarity: "金", cl: "龍宮城の宴"
-        , stats: { cost: "-1" }
+        , stats: { cost: "-2" }
         , target: [
             { season: [ "サマー" ] }
             , { others: [ "深海" ] }
         ]
+    }
+    , {
+        name: "王立コロッセオ", rarity: "金", cl: "大闘技場"
+        , stats: { atk: "+7%" }
+        , target: { depType: [ "近接" ] }
     }
     , {
         name: "アーシェラ", rarity: "黒", cl: "アーチャー", AW: "覚醒"
@@ -2988,6 +3021,16 @@ buff.team = [
         name: "アヴィリコ", rarity: "白", cl: "エアセイラー", AW: "覚醒"
         , stats: { hp: "+10%", def: "+5%" }
         , target: { others: [ "機械" ] }
+    }
+    , {
+        name: "桃源郷", rarity: "金", cl: "桃源郷"
+        , stats: { atk: "+5%" }
+        , target: { home: [ "華の国" ] }
+    }
+    , {
+        name: "サンダーバード", rarity: "金", cl: "サンダーバード"
+        , stats: { atkCd: "-?%" }
+        , target: { others: [ "飛行" ] }
     }
     , {
         name: "王国演習場", rarity: "金", cl: "試しの場"

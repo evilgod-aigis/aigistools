@@ -35,6 +35,11 @@ buff.team = [
         , stats: { hp: "+15%" }
     }
     , {
+        name: "王子【雷霆】", cl: "王子"
+        , stats: { hp: "+20%" }
+        , note: "Lv3以上"
+    }
+    , {
         name: "王子【極北神剣】", cl: "王子"
         , stats: { hp: "+10%" }
     }

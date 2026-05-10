@@ -759,7 +759,10 @@ buff.add = [
     , {
         name: "王国学園", rarity: "金", cl: "王国の学び舎"
         , stats: { hp: "+600" }
-        , target: { season: [ "学園" ] }
+        , target: [
+            { home: [ "王国" ] }
+            , { season: [ "学園" ] }
+        ]
         , note: "最大値(HP+4/秒)"
     }
     , {

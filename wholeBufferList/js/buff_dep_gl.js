@@ -443,7 +443,7 @@ buff.dep_gl = [
     }
     , {
         name: "トリックオアトリート", rarity: "金", cl: "ハロウィン会場"
-        , stats: { atk: "+5%", def: "+5%" }
+        , stats: { atk: "+10%", def: "+10%" }
     }
     , {
         name: "ひな壇", rarity: "金", cl: "ひな壇"
@@ -699,7 +699,7 @@ buff.dep_gl = [
     , {
         name: "魔王の玉座", rarity: "金", cl: "魔王の玉座"
         , stats: { atk: "+5%", def: "+5%", other: "" }
-        , note: "魔界-50%"
+        , note: "魔界-70%"
     }
     , {
         name: "海の家", rarity: "金", cl: "海の家"

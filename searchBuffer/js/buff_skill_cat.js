@@ -34,6 +34,12 @@ buff.skill_cat = [
         , target: { others: [ "魔術師" ] }
     }
     , {
+        name: "王子【双鴉】", cl: "王子", skill: "通常(奇)"
+        , stats: { cost: "×0.65" }
+        , target: { others: [ "魔術師" ] }
+        , note: "Lv4"
+    }
+    , {
         name: "ちび王子", cl: "王子", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: { others: [ "ちび" ] }
@@ -1861,10 +1867,10 @@ buff.skill_cat = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
-        name: "ナイトメアハウス", rarity: "金", cl: "不死者たちの饗宴"
-        , stats: { atk: "×1.5", def: "×1.5" }
-        , target: { others: [ "アンデッド" ] }
-        , note: [ "範囲", "分類未確認" ]
+        name: "宝船", rarity: "金", cl: "宝船", skill: "通常"
+        , stats: { atk: "×2.0" }
+        , target: { others: [ "GG持ち" ] }
+        , note: "分類未確認"
     }
     , {
         name: "カカオ豆の魔物", rarity: "金", cl: "デリシャス！（自己評価）", skill: "通常(1)"
@@ -3028,6 +3034,12 @@ buff.skill_cat = [
         , note: "範囲"
     }
     , {
+        name: "ナイトメアハウス", rarity: "金", cl: "不死者たちの饗宴"
+        , stats: { atk: "×1.5", def: "×1.5" }
+        , target: { others: [ "アンデッド" ] }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
         name: "ラシティ/花嫁", rarity: "黒", cl: "スカイシューター", AW: "未", skill: "通常"
         , stats: { atk: "×1.3" }
         , target: { sex: [ "女性" ] }
@@ -3186,6 +3198,12 @@ buff.skill_cat = [
         , stats: { atk: "×1.1", def: "×1.1" }
         , target: { home: [ "王国" ] }
         , note: [ "範囲", "永続スキル", "終了時、対象のHP-90%", "分類未確認" ]
+    }
+    , {
+        name: "装着型魔導砲台", rarity: "金", cl: "装着型魔導砲台", skill: "通常"
+        , stats: { atk: "×1.2" }
+        , target: { home: [ "白の帝国" ] }
+        , note: [ "永続スキル", "分類未確認" ]
     }
     , {
         name: "イルフェイス", rarity: "金", cl: "王子の従竜", skill: "通常"

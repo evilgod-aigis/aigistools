@@ -1409,15 +1409,10 @@ buff.dep_gl = [
         , target: { race: [ "デーモン系" ] }
     }
     , {
-        name: "アイギス像", rarity: "金", cl: "女神像"
-        , stats: { hp: "+3%", atk: "+3%" }
-        , target: { cl: [ "王子" ] }
-    }
-    , {
-        name: "王国学園", rarity: "金", cl: "王国の学び舎"
-        , stats: { atk: "+15%", def: "+15%" }
-        , target: { season: [ "学園" ] }
-        , note: "無差別バフと合わせて+20%"
+        name: "村人", rarity: "金", cl: "村人"
+        , stats: { atk: "+10%", def: "+10%" }
+        , target: { home: [ "王国" ] }
+        , note: "無差別バフと合わせて+15%"
     }
     , {
         name: "アダマス像", rarity: "金", cl: "女神像"
@@ -1425,10 +1420,24 @@ buff.dep_gl = [
         , target: { home: [ "白の帝国" ] }
     }
     , {
+        name: "王国学園", rarity: "金", cl: "王国の学び舎"
+        , stats: { atk: "+15%", def: "+15%" }
+        , target: [
+            { home: [ "王国" ] }
+            , { season: [ "学園" ] }
+        ]
+        , note: "無差別バフと合わせて+20%"
+    }
+    , {
         name: "トリックオアトリート", rarity: "金", cl: "ハロウィン会場"
-        , stats: { atk: "+10%", def: "+10%" }
+        , stats: { atk: "+15%", def: "+15%" }
         , target: { season: [ "ハロウィン" ] }
-        , note: "無差別バフと合わせて+15%"
+        , note: "無差別バフと合わせて+25%"
+    }
+    , {
+        name: "要塞", rarity: "金", cl: "要塞"
+        , stats: { def: "+5%", mr: "+5" }
+        , target: { home: [ "王国" ] }
     }
     , {
         name: "ひな壇", rarity: "金", cl: "ひな壇"
@@ -1449,6 +1458,12 @@ buff.dep_gl = [
         name: "ナイトメアハウス", rarity: "金", cl: "不死者たちの饗宴"
         , stats: { cost: "-2" }
         , target: { others: [ "アンデッド" ] }
+    }
+    , {
+        name: "王立コロッセオ", rarity: "金", cl: "大闘技場"
+        , stats: { def: "+50%" }
+        , target: { depType: [ "近接" ] }
+        , note: [ "ブロック中のみ", "分類未確認" ]
     }
     , {
         name: "ソーマ/温泉", rarity: "白", cl: "アーチャー", AW: "覚醒"

@@ -41,6 +41,12 @@ debuff.hit = [
         , note: "分類未確認"
     }
     , {
+        name: "ガルヴェイン", rarity: "黒", cl: "アイングリアンの騎士", AW: "覚醒", skill: "通常"
+        , stats: { mr: "-30%" }
+        , atkAttr: "魔法", dur: "?f"
+        , note: "分類未確認"
+    }
+    , {
         name: "ユージェン", rarity: "黒", cl: "チェイスハンター", AW: "覚醒", skill: "通常"
         , stats: { atk: "-50%", def: "-20%" }
         , atkAttr: "物理", dur: "29f"
@@ -1642,7 +1648,7 @@ debuff.hit = [
     }
     , {
         name: "妖精の丘", rarity: "金", cl: "妖精の丘"
-        , stats: { def: "-15%", mr: "-15%" }
+        , stats: { def: "-25%", mr: "-25%" }
         , atkAttr: "魔法", dur: "?f"
         , note: [ "ユニットに重ねて配置", "分類未確認" ]
     }

@@ -160,6 +160,22 @@ debuff.mixture = [
         , note: "分類未確認"
     }
     , {
+        name: "ガルヴェイン", rarity: "黒", cl: "アイングリアンの騎士", AW: "覚醒", skill: "覚醒"
+        , stats: {
+            atk: { value: "-50%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ガルヴェイン", rarity: "白", cl: "アイングリアンの騎士", AW: "覚醒", skill: "通常"
+        , stats: {
+            atk: { value: "-20%", type: "noAttr" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "ソラス/水着", rarity: "白", cl: "占星術師", AW: "覚醒", skill: "覚醒(偶)"
         , stats: {
             def: { value: "-20%", type: "area" }

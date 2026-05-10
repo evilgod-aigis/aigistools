@@ -19,12 +19,17 @@ buff.skill_gl = [
         , stats: { rege: [ "100/秒", "50/15f" ] }
     }
     , {
+        name: "王子【双鴉】", cl: "王子", skill: "通常(奇)"
+        , stats: { rege: [ "150/秒", "75/15f" ] }
+        , note: "Lv4"
+    }
+    , {
         name: "王子【幼少】", cl: "王子", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
     }
     , {
         name: "トラム", rarity: "黒", cl: "銀腕の神話", AW: "覚醒", skill: "通常"
-        , stats: { rege: [ "150/秒", "75/15f" ] }
+        , stats: { rege: [ "300/秒", "150/15f" ] }
         , note: "永続スキル"
     }
     , {
@@ -58,7 +63,7 @@ buff.skill_gl = [
     }
     , {
         name: "マギステルミリトゥム", cl: "マギステルミリトゥム", AW: "覚1", skill: [ "通常", "覚醒" ]
-        , stats: { hp: "+30%" }
+        , stats: { hp: "+50%" }
     }
     , {
         name: "伏綺", rarity: "黒", cl: "開天の神話", AW: "覚醒", skill: "通常"

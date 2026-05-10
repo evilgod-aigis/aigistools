@@ -226,6 +226,16 @@ buff.own = [
         , target: { home: [ "王国" ] }
     }
     , {
+        name: "ガルヴェイン", rarity: "黒", cl: "アイングリアンの騎士", AW: "覚醒"
+        , stats: { atk: "+3%", range: "+10" }
+        , target: { others: [ "飛行" ] }
+    }
+    , {
+        name: "ガルヴェイン", rarity: "白", cl: "アイングリアンの騎士", AW: "覚醒"
+        , stats: { def: "+3%" }
+        , target: { others: [ "飛行" ] }
+    }
+    , {
         name: "ソラス", rarity: "黒", cl: "占星術師", AW: "覚醒"
         , stats: { atk: "+5%", range: "+10" }
         , target: { cl: [ "占星術師", "メイジ", "ウィッチ", "ビショップ", "サモナー", "クロノウィッチ" ] }
