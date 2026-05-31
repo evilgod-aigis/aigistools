@@ -205,6 +205,11 @@ buff.dep_gl = [
         , note: [ "地形-50%", "悪天候-50%" ]
     }
     , {
+        name: "リンネ/新装", rarity: "黒", cl: "輪廻の風水師", AW: "覚醒"
+        , stats: { other: "" }
+        , note: [ "地形-80%", "拠点ライフ減少-100%" ]
+    }
+    , {
         name: "フィネス", rarity: "黒", cl: "盤上の支配者", AW: "覚醒"
         , stats: { ct: "-50%" }
     }
@@ -459,7 +464,7 @@ buff.dep_gl = [
     }
     , {
         name: "神託巫女", cl: "シャーマン", AW: "覚2a"
-        , stats: { atk: "+5%", def: "+5%" }
+        , stats: { atk: "+10%", def: "+10%" }
         , note: "シャーマン系"
     }
     , {
@@ -695,6 +700,16 @@ buff.dep_gl = [
         name: "ルクシエ", rarity: "黒", cl: "吟遊詩人", AW: "覚醒"
         , stats: { other: "" }
         , note: "深海-70%"
+    }
+    , {
+        name: "最古の踊り子", cl: "芸能の神", AW: "覚2a"
+        , stats: { rege: [ "100/秒", "?/?f" ] }
+        , note: "芸能の神系"
+    }
+    , {
+        name: "始まりの巫女", cl: "芸能の神", AW: "覚2b"
+        , stats: { nul: "10%" }
+        , note: "芸能の神系"
     }
     , {
         name: "魔王の玉座", rarity: "金", cl: "魔王の玉座"

@@ -107,6 +107,11 @@ buff.skill_gl = [
         , note: "深海-80%"
     }
     , {
+        name: "リンネ/新装", rarity: "黒", cl: "輪廻の風水師", AW: "覚醒", skill: "覚醒"
+        , stats: { draw: "(○)", redep: "30秒" }
+        , note: "永続スキル"
+    }
+    , {
         name: "フィネス", rarity: "黒", cl: "盤上の支配者", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.2", rege: [ "80/秒", "40/15f" ], other: "" }
         , note: [ "スキルオート", "永続スキル(手動中断可能)" ]
@@ -243,12 +248,12 @@ buff.skill_gl = [
     }
     , {
         name: "アリス/バレンタイン", rarity: "黒", cl: "モンク", AW: "未", skill: "通常"
-        , stats: { rege: [ "60/秒", "30/15f" ] }
+        , stats: { rege: [ "100/秒", "50/15f" ] }
         , note: "永続スキル"
     }
     , {
         name: "アリス/バレンタイン", rarity: "黒", cl: "モンク", AW: "覚醒", skill: "通常"
-        , stats: { rege: [ "60/秒", "30/15f" ] }
+        , stats: { rege: [ "100/秒", "50/15f" ] }
         , note: "永続スキル"
     }
     , {
@@ -1323,6 +1328,16 @@ buff.skill_gl = [
         name: "王子【英雄王】(幻影)", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2", other: "" }
         , note: [ "タリエ", "スキルオート" ]
+    }
+    , {
+        name: "乙姫(幻影)", rarity: "トークン", AW: "未", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3", other: "" }
+        , note: [ "ファルタリア", "深海-100%" ]
+    }
+    , {
+        name: "乙姫(幻影)", rarity: "トークン", AW: "覚醒", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3", other: "" }
+        , note: [ "ファルタリア", "深海-100%" ]
     }
     , {
         name: "世界樹の苗", rarity: "トークン", AW: "覚醒", skill: "通常(1)"

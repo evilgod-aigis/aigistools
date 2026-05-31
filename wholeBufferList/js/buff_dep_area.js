@@ -9,6 +9,11 @@ buff.dep_area = [
         , stats: { poison: "-100%", abn: "-100%" }
     }
     , {
+        name: "輪廻の風水師", cl: "輪廻の風水師", AW: "覚1"
+        , stats: { other: "" }
+        , note: "悪天候射程-100%"
+    }
+    , {
         name: "盤上の支配者", cl: "盤上の支配者", AW: "覚1"
         , stats: { atkCd: "-35%" }
     }

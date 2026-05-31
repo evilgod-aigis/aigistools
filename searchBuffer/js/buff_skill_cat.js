@@ -324,7 +324,7 @@ buff.skill_cat = [
     }
     , {
         name: "コーネリア/クリスマス", rarity: "黒", cl: "ダークファイター", AW: "覚醒", skill: "覚醒"
-        , stats: { atk: "×1.4" }
+        , stats: { atk: "×1.5" }
         , target: { season: [ "クリスマス" ] }
     }
     , {
@@ -1253,6 +1253,46 @@ buff.skill_cat = [
         ]
     }
     , {
+        name: "マサムネ", rarity: "白", cl: "鍛冶職人", AW: "未", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "東の国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "マサムネ", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "通常"
+        , stats: { atk: "×1.2", def: "×1.2" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "東の国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "マサムネ", rarity: "白", cl: "鍛冶職人", AW: "覚1", skill: "覚醒"
+        , stats: { atk: "×1.4" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "東の国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "マサムネ", rarity: "白", cl: "鍛冶職人", AW: "覚2b", skill: "通常"
+        , stats: { atk: "×1.3", def: "×1.3" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "東の国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "マサムネ", rarity: "白", cl: "鍛冶職人", AW: "覚2b", skill: "覚醒"
+        , stats: { atk: "×1.5"/*, def: "×1.1"*/ }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "東の国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
         name: "ゴルドー", rarity: "金", cl: "鍛冶職人", AW: "未", skill: "通常"
         , stats: { atk: "×1.2", def: "×1.2" }
         , target: [
@@ -2049,6 +2089,12 @@ buff.skill_cat = [
         , target: { cl: [ "鬼" ] }
     }
     , {
+        name: "エターナー/花嫁", rarity: "黒", cl: "ビショップ", AW: "覚醒", skill: "覚醒(3～)"
+        , stats: { atk: "×1.2" }
+        , target: { season: [ "ジューンブライド" ] }
+        , note: "分類未確認"
+    }
+    , {
         name: "イリオス", rarity: "白", cl: "後衛戦術家", AW: "未", skill: "通常"
         , stats: { atk: "×1.4", def: "×1.4" }
         , target: { race: [ "デーモン系", "オーク", "ゴブリン" ] }
@@ -2550,13 +2596,13 @@ buff.skill_cat = [
     }
     , {
         name: "エレオノーラ/バニー", rarity: "黒", cl: "ルーンアコライト", AW: "未", skill: "通常"
-        , stats: { range: "×1.2" }
+        , stats: { range: "×?" }
         , target: { depType: [ "遠距離" ] }
         , note: "永続スキル"
     }
     , {
         name: "エレオノーラ/バニー", rarity: "黒", cl: "ルーンアコライト", AW: "覚醒", skill: "通常"
-        , stats: { range: "×1.2" }
+        , stats: { range: "×?" }
         , target: { depType: [ "遠距離" ] }
         , note: "永続スキル"
     }

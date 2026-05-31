@@ -46,6 +46,16 @@ debuff.takenDmg = [
         , note: "範囲"
     }
     , {
+        name: "マサムネ", rarity: "白", cl: "鍛冶職人", AW: "未", skill: "通常"
+        , stats: { value: "+15%" }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
+        name: "マサムネ", rarity: "白", cl: "鍛冶職人", AW: "覚醒", skill: "通常"
+        , stats: { value: "+15%" }
+        , note: [ "範囲", "分類未確認" ]
+    }
+    , {
         name: "アデライド/バレンタイン", rarity: "黒", cl: "グランドナイト", AW: "未"
         , stats: { value: "+5%" }
         , note: [ "範囲", "分類未確認" ]

@@ -1467,6 +1467,22 @@ buff.team = [
         ]
     }
     , {
+        name: "マサムネ", rarity: "白", cl: "鍛冶職人", AW: "未"
+        , stats: { atk: "+5%", def: "+5%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "東の国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
+        name: "マサムネ", rarity: "白", cl: "鍛冶職人", AW: "覚醒"
+        , stats: { atk: "+5%", def: "+5%", atkCd: "-?%" }
+        , target: [
+            { cl: [ "王子" ] }
+            , { home: [ "東の国" ], depType: [ "近接" ] }
+        ]
+    }
+    , {
         name: "ゴルドー", rarity: "金", cl: "鍛冶職人", AW: "未"
         , stats: { atk: "+5%", def: "+5%" }
         , target: [
@@ -2573,7 +2589,7 @@ buff.team = [
     }
     , {
         name: "邪狼の使徒", cl: "フェンリルシャーマン", AW: "覚2b"
-        , stats: { atk: "+10%", def: "+10%" }
+        , stats: { atk: "+15%", def: "+15%" }
         , target: { race: [ "獣人" ] }
         , note: "フェンリルシャーマン系"
     }

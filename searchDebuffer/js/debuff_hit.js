@@ -935,6 +935,16 @@ debuff.hit = [
         , atkAttr: "物理", dur: "?f"
     }
     , {
+        name: "ドミナ", rarity: "黒", cl: "シェリフ", AW: "未", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
+        name: "ドミナ", rarity: "黒", cl: "シェリフ", AW: "覚醒", skill: [ "通常", "覚醒" ]
+        , stats: { stop: "○" }
+        , atkAttr: "物理", dur: "?f"
+    }
+    , {
         name: "エス★エフ", rarity: "黒", cl: "小悪魔アイドル", AW: "覚醒", skill: "通常"
         , stats: { stop: "○" }
         , atkAttr: "貫通", dur: "14f"
@@ -2016,6 +2026,16 @@ debuff.hit = [
         , stats: { stop: "○" }
         , atkAttr: "魔法", dur: "19f"
         , note: [ "ユキヒメ", "ユキヒメ/学園" ]
+    }
+    , {
+        name: "ラシュマシュ(幻影)", rarity: "トークン", AW: "未", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
+    }
+    , {
+        name: "ラシュマシュ(幻影)", rarity: "トークン", AW: "覚醒", skill: "通常"
+        , stats: { stop: "○" }
+        , atkAttr: "魔法", dur: "?f"
     }
     , {
         name: "マンドラゴラ", rarity: "トークン", AW: "覚醒"

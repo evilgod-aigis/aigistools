@@ -852,6 +852,22 @@ debuff.mixture = [
         , target: { attr: [ "天使" ] }
     }
     , {
+        name: "ディアナ/水着", rarity: "黒", cl: "インペリアルナイト", AW: "未", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ディアナ/水着", rarity: "黒", cl: "インペリアルナイト", AW: "覚醒", skill: "通常"
+        , stats: {
+            def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "空神", cl: "天狗", AW: "覚2a"
         , stats: {
             def: { value: "-20%", type: "area" }
@@ -1693,6 +1709,24 @@ debuff.mixture = [
         , note: "配置時"
     }
     , {
+        name: "ドミナ", rarity: "黒", cl: "シェリフ", AW: "未", skill: "通常"
+        , stats: {
+            atk: { value: "-30%", type: "noAttr" }
+            , def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
+        name: "ドミナ", rarity: "黒", cl: "シェリフ", AW: "覚醒", skill: "通常"
+        , stats: {
+            atk: { value: "-30%", type: "noAttr" }
+            , def: { value: "-30%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "ヴィクトリア/浴衣", rarity: "白", cl: "アーチャー", AW: "未", skill: "通常"
         , stats: {
             def: { value: "-25%", type: "area" }
@@ -2289,7 +2323,7 @@ debuff.mixture = [
     , {
         name: "ロヴィニア/学園", rarity: "黒", cl: "レンジャー", AW: "覚醒", skill: "非"
         , stats: {
-            def: { value: "-15%", type: "area" }
+            def: { value: "-20%", type: "area" }
         }
         , domain: "area"
         , note: "分類未確認"
@@ -2297,7 +2331,7 @@ debuff.mixture = [
     , {
         name: "ロヴィニア/学園", rarity: "黒", cl: "レンジャー", AW: "覚醒", skill: [ "通常", "覚醒" ]
         , stats: {
-            def: { value: "-30%", type: "area" }
+            def: { value: "-40%", type: "area" }
         }
         , domain: "area"
         , note: "分類未確認"
@@ -2716,8 +2750,8 @@ debuff.mixture = [
     , {
         name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒", skill: "覚醒"
         , stats: {
-            def: { value: "-10%", type: "area" }
-            , mr: { value: "-10%", type: "area" }
+            def: { value: "-30%", type: "area" }
+            , mr: { value: "-30%", type: "area" }
         }
         , domain: "area"
         , note: "永続スキル"
@@ -3434,6 +3468,14 @@ debuff.mixture = [
         }
         , domain: "area"
         , note: "エアセイラー系"
+    }
+    , {
+        name: "泰山府君", cl: "式神使い", AW: "覚2a", skill: [ "通常", "覚醒" ]
+        , stats: {
+            mr: { value: "-10", type: "fixed" }
+        }
+        , domain: "global"
+        , note: [ "式神使い系", "分類未確認" ]
     }
     , {
         name: "桃源郷", rarity: "金", cl: "桃源郷"

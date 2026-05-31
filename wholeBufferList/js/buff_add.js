@@ -665,6 +665,36 @@ buff.add = [
         , note: "最大値(HP+15/秒)"
     }
     , {
+        name: "芸能の神", cl: "芸能の神", AW: "未"
+        , stats: { atk: "25%", def: "25%" }
+        , note: "範囲"
+    }
+    , {
+        name: "技芸の女神", cl: "芸能の神", AW: "覚1"
+        , stats: { atk: "25%", def: "25%" }
+        , note: [ "範囲", "芸能の神系" ]
+    }
+    , {
+        name: "最古の踊り子", cl: "芸能の神", AW: "覚2a"
+        , stats: { atk: "25%", def: "25%" }
+        , note: [ "範囲", "芸能の神系" ]
+    }
+    , {
+        name: "始まりの巫女", cl: "芸能の神", AW: "覚2b"
+        , stats: { atk: "25%", def: "25%" }
+        , note: [ "範囲", "芸能の神系" ]
+    }
+    , {
+        name: "天宇寿女命", rarity: "黒", cl: "芸能の神", AW: "未", skill: "通常"
+        , stats: { atk: "*2", def: "*2" }
+        , note: "範囲"
+    }
+    , {
+        name: "天宇寿女命", rarity: "黒", cl: "芸能の神", AW: "覚醒", skill: [ "通常", "覚醒" ]
+        , stats: { atk: "*2", def: "*2" }
+        , note: "範囲"
+    }
+    , {
         name: "アイドル召喚士", cl: "アイドル召喚士", AW: "覚1"
         , stats: { atk: "5%" }
         , note: "範囲"

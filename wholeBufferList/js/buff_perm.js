@@ -37,12 +37,12 @@ buff.perm = [
     }
     , {
         name: "リアナ/浴衣", rarity: "黒", cl: "ヒーラー", AW: "未"
-        , stats: { hp: "×1.05" }
+        , stats: { hp: "×1.1" }
         , note: [ "配置時", "分類未確認" ]
     }
     , {
         name: "リアナ/浴衣", rarity: "黒", cl: "ヒーラー", AW: "覚醒"
-        , stats: { hp: "×1.1" }
+        , stats: { hp: "×1.2" }
         , note: [ "配置時", "分類未確認" ]
     }
 ];

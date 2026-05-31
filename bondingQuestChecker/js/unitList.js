@@ -873,7 +873,7 @@ const unitList = [
     , { id: 0x0356, implDate: "2021/04/01", implDate_bq: null        , obtain: [ "sh"         ], rarity: "g" , depType: "vang", class: "ソルジャー", name: "アビー", modifier: "新米兵士" }
     , { id: 0x0357, implDate: "2021/04/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "ドラゴンプリンセス", name: "ちびエルドラ" }
     , { id: 0x0358, implDate: "2021/04/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "神官戦士", name: "ちびセラ" }
-    , { id: 0x0359, implDate: "2021/04/07", implDate_bq: null        , obtain: [ "ev", "else" ], rarity: "b" , depType: "vang", class: "迷宮の悪霊", name: "ニミュエ", modifier: "孤独な迷宮守", extra: { obtain: [ "tr", "rain" ] } }
+    , { id: 0x0359, implDate: "2021/04/07", implDate_bq: "2026/05/14", obtain: [ "ev", "else" ], rarity: "b" , depType: "vang", class: "迷宮の悪霊", name: "ニミュエ", modifier: "孤独な迷宮守", extra: { obtain: [ "tr", "rain" ] } }
     , { id: 0x035a, implDate: "2021/04/08", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "p" , depType: "vang", class: "オートマタ", name: "ルイン", modifier: "自動人形", extra: { obtain: [ "tr", "rain" ] } }
     , { id: 0x035b, implDate: "2021/04/08", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "デモンルーン", name: "エスネア", modifier: "魔界からの留学", derivation: "学園" }
     , { id: 0x035c, implDate: "2021/04/08", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "rear", class: "マーチャント", name: "ミネット", modifier: "ねこみみ購買部", derivation: "学園" }
@@ -1354,7 +1354,7 @@ const unitList = [
     , { id: 0x0531, implDate: "2024/04/25", implDate_bq: null        , obtain: [ "tr", "hero" ], rarity: "ph", depType: "vang", class: "祖竜", name: "アルコゥ", modifier: "頂に座す者" }
     , { id: 0x0532, implDate: "2024/05/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "vang", class: "オートマタ", name: "ちびルイン" }
     , { id: 0x0533, implDate: "2024/05/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "幻獣使い", name: "ちびシンフー" }
-    , { id: 0x0534, implDate: "2024/05/09", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "アルケミスト", name: "セリド", modifier: "詩歌と叡智の亜神" }
+    , { id: 0x0534, implDate: "2024/05/09", implDate_bq: "2026/05/14", obtain: [ "ev", "star" ], rarity: "p" , depType: "rear", class: "アルケミスト", name: "セリド", modifier: "詩歌と叡智の亜神" }
     , { id: 0x0535, implDate: "2024/05/09", implDate_bq: null        , obtain: [ "sh"         ], rarity: "p" , depType: "vang", class: "ワルキューレ", name: "チャムチャム", modifier: "魔猪騎兵" }
     , { id: 0x0536, implDate: "2024/05/09", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "ガオレオン", name: "ちびガオレオン", male: 1 }
     , { id: 0x0537, implDate: "2024/05/16", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "豊穣神", name: "オラティル", modifier: "文明の亜神" }
@@ -1705,6 +1705,15 @@ const unitList = [
     , { id: 0x068c, implDate: "2026/04/30", implDate_bq: null        , obtain: [ "tr", "evil" ], rarity: "ph", depType: "vang", class: "アイングリアンの騎士", name: "ガルヴェイン", modifier: "烈日の勇者" }
     , { id: 0x068d, implDate: "2026/05/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "幻獣使い", name: "ちびツキコ", latent: "白の帝国" }
     , { id: 0x068e, implDate: "2026/05/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "both", class: "スカイウォリアー", name: "ちびポタル" }
+    , { id: 0x068f, implDate: "2026/05/14", implDate_bq: null        , obtain: [ "ev", "star" ], rarity: "ph", depType: "vang", class: "銀腕の神話", name: "トラム", modifier: "銀光の凱旋", derivation: "聖剣" }
+    , { id: 0x0690, implDate: "2026/05/14", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "gc", depType: "vang", class: "魔竜騎士", name: "ちびアトナテス" }
+    , { id: 0x0691, implDate: "2026/05/21", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "vang", class: "シェリフ", name: "ドミナ", modifier: "荒野の保安官" }
+    , { id: 0x0692, implDate: "2026/05/21", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "幻術士", name: "ファルタリア", modifier: "虚ろの幻花" }
+    , { id: 0x0693, implDate: "2026/05/21", implDate_bq: null        , obtain: [ "tr", "mili" ], rarity: "p" , depType: "vang", class: "鍛冶職人", name: "マサムネ", modifier: "刀匠" }
+    , { id: 0x0694, implDate: "2026/05/28", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "rear", class: "芸能の神", name: "天宇寿女命" }
+    , { id: 0x0695, implDate: "2026/05/28", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "both", class: "式神使い", name: "セイメイ", modifier: "稀代の陰陽師" }
+    , { id: 0x0696, implDate: "2026/05/28", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "bh", depType: "rear", class: "輪廻の風水師", name: "リンネ", modifier: "流転の刻詠", derivation: "新装" }
+    , { id: 0x0697, implDate: "2026/05/28", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "b" , depType: "vang", class: "モンク", name: "ダン", modifier: "闘気の格闘家", derivation: "新装", male: 1 }
     
     
     

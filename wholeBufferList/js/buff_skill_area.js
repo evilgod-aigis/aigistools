@@ -72,6 +72,11 @@ buff.skill_area = [
         , note: [ "被HP回復量×2.0", "永続スキル(手動中断可能)" ]
     }
     , {
+        name: "リンネ/新装", rarity: "黒", cl: "輪廻の風水師", AW: "覚醒", skill: "覚醒"
+        , stats: { rege: [ "250/秒", "125/15f" ] }
+        , note: "永続スキル"
+    }
+    , {
         name: "アリア/新装", rarity: "黒", cl: "ソルジャー", AW: "未", skill: "通常"
         , stats: { other: "" }
         , note: "魔法化"
@@ -611,7 +616,7 @@ buff.skill_area = [
     }
     , {
         name: "リンネ/水着", rarity: "黒", cl: "風水使い", AW: "覚醒", skill: "覚醒(4～)"
-        , stats: { eva: "30%" }
+        , stats: { eva: "40%" }
     }
     , {
         name: "クーシン", rarity: "白", cl: "風水使い", AW: "未", skill: "通常"
@@ -822,7 +827,7 @@ buff.skill_area = [
     }
     , {
         name: "ラピス/お正月", rarity: "黒", cl: "デモンサモナー", AW: "覚醒", skill: "覚醒"
-        , stats: { atk: "×1.2" }
+        , stats: { atk: "×1.3" }
         , note: "永続スキル"
     }
     , {
@@ -1241,6 +1246,18 @@ buff.skill_area = [
         , stats: { hp: "+60%" }
     }
     , {
+        name: "天宇寿女命", rarity: "黒", cl: "芸能の神", AW: "未", skill: "通常"
+        , stats: { atkCd: "7f化" }
+    }
+    , {
+        name: "天宇寿女命", rarity: "黒", cl: "芸能の神", AW: "覚醒", skill: "通常"
+        , stats: { atkCd: "7f化" }
+    }
+    , {
+        name: "天宇寿女命", rarity: "黒", cl: "芸能の神", AW: "覚醒", skill: "覚醒"
+        , stats: { atkCd: "7f化" }
+    }
+    , {
         name: "戦場に集う聖霊たち", rarity: "黒", cl: "支援の聖霊", skill: "通常"
         , stats: { atk: "×1.3", def: "×1.3", rege: [ "100/秒", "50/15f" ] }
     }
@@ -1448,7 +1465,7 @@ buff.skill_area = [
     }
     , {
         name: "破魔の風鈴", rarity: "トークン", AW: "覚醒", skill: "通常"
-        , stats: { abn: "-100%", rege: [ "40/秒", "20/15f" ] }
+        , stats: { abn: "-100%", rege: [ "?/秒", "?/15f" ] }
         , note: [ "リアナ/浴衣", "スキル終了→HP0" ]
     }
     , {
@@ -1465,6 +1482,11 @@ buff.skill_area = [
         name: "ルベドアタノール", rarity: "トークン", AW: "覚醒", skill: "通常"
         , stats: { def: "×1.5" }
         , note: [ "ニコル", "永続スキル" ]
+    }
+    , {
+        name: "ヘスティス(幻影)", rarity: "黒", AW: "覚醒", skill: "通常"
+        , stats: { rege: [ "400/秒", "200/15f" ] }
+        , note: [ "ファルタリア", "永続スキル" ]
     }
     , {
         name: "アウローラ(幻影)", rarity: "トークン", AW: "未", skill: "通常"

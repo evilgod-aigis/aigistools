@@ -219,7 +219,15 @@ debuff.team = [
         , note: "廻る暗陽系"
     }
     , {
-        name: "ジャッジメント", rarity: "黒", cl: "ヴァンパイアハンター", AW: "覚2b"
+        name: "ドミナ", rarity: "黒", cl: "シェリフ", AW: "未"
+        , stats: { atk: "-8%" }
+    }
+    , {
+        name: "ドミナ", rarity: "黒", cl: "シェリフ", AW: "覚醒"
+        , stats: { atk: "-12%" }
+    }
+    , {
+        name: "ジャッジメント", cl: "ヴァンパイアハンター", AW: "覚2b"
         , stats: { atk: "-15%" }
         , target: { attr: [ "アンデッド" ] }
         , note: "ヴァンパイアハンター系"

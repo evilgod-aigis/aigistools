@@ -11,6 +11,11 @@ buff.own = [
         , target: { sex: [ "男性" ] }
     }
     , {
+        name: "ちびアトナテス", rarity: "ちび", cl: "魔竜騎士"
+        , stats: { atk: "+3%" }
+        , target: { rarity: [ "ちび" ], sex: [ "男性" ] }
+    }
+    , {
         name: "トゥアン", rarity: "黒", cl: "バーバリアンクイーン", AW: "覚醒"
         , stats: { atk: "+3%" }
         , target: { sex: [ "女性" ], depType: [ "近接" ] }
@@ -54,6 +59,11 @@ buff.own = [
         name: "トラム/水着", rarity: "白", cl: "銀腕の神話", AW: "覚醒"
         , stats: { def: "+3%" }
         , target: { season: [ "サマー" ] }
+    }
+    , {
+        name: "トラム/聖剣", rarity: "白", cl: "銀腕の神話", AW: "覚醒"
+        , stats: { atk: "+3%" }
+        , target: { race: [ "神", "半神" ] }
     }
     , {
         name: "アルヴァ", rarity: "黒", cl: "ウェポンマスター", AW: "覚醒"
@@ -382,6 +392,11 @@ buff.own = [
         name: "ウスキアス", rarity: "黒", cl: "フォーチュンルーラー", AW: "覚醒"
         , stats: { mr: "+2" }
         , target: { sex: [ "女性" ] }
+    }
+    , {
+        name: "リンネ/新装", rarity: "黒", cl: "輪廻の風水師", AW: "覚醒"
+        , stats: { hp: "+3%" }
+        , target: { depType: [ "遠距離" ] }
     }
     , {
         name: "エフトラ", rarity: "黒", cl: "異世界戦士", AW: "覚醒"
