@@ -1022,6 +1022,10 @@ buff.skill_area = [
         , note: "被HP回復量×1.3"
     }
     , {
+        name: "ちびリンクス", rarity: "ちび", cl: "ロード", skill: "通常"
+        , stats: { atk: "×1.4" }
+    }
+    , {
         name: "マギー", rarity: "白", cl: "発明家", AW: "覚醒", skill: "通常"
         , stats: { def: "×1.3" }
         , note: "分類未確認"
@@ -1247,15 +1251,15 @@ buff.skill_area = [
     }
     , {
         name: "天宇寿女命", rarity: "黒", cl: "芸能の神", AW: "未", skill: "通常"
-        , stats: { atkCd: "7f化" }
+        , stats: { atkCd: "8f化" }
     }
     , {
         name: "天宇寿女命", rarity: "黒", cl: "芸能の神", AW: "覚醒", skill: "通常"
-        , stats: { atkCd: "7f化" }
+        , stats: { atkCd: "8f化" }
     }
     , {
         name: "天宇寿女命", rarity: "黒", cl: "芸能の神", AW: "覚醒", skill: "覚醒"
-        , stats: { atkCd: "7f化" }
+        , stats: { atkCd: "8f化" }
     }
     , {
         name: "戦場に集う聖霊たち", rarity: "黒", cl: "支援の聖霊", skill: "通常"

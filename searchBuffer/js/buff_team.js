@@ -2744,6 +2744,11 @@ buff.team = [
         , target: { race: [ "獣人" ] }
     }
     , {
+        name: "ちびリンクス", rarity: "ちび", cl: "ロード"
+        , stats: { atkCd: "-25%" }
+        , target: { race: [ "獣人" ] }
+    }
+    , {
         name: "グリム/学園", rarity: "黒", cl: "異界召喚士", AW: "未"
         , stats: { mr: "+7" }
         , target: { season: [ "学園" ] }

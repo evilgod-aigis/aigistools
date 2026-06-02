@@ -3192,6 +3192,14 @@ debuff.mixture = [
         , note: "永続スキル"
     }
     , {
+        name: "ちびシルヴァーナ", rarity: "ちび", cl: "ガンスリンガー", skill: "通常"
+        , stats: {
+            def: { value: "-20%", type: "area" }
+        }
+        , domain: "area"
+        , note: "分類未確認"
+    }
+    , {
         name: "クロノシア", rarity: "黒", cl: "時の俯瞰者", AW: "覚醒", skill: "覚醒"
         , stats: {
             stop: { value: "179f", type: "global" }

@@ -1714,6 +1714,8 @@ const unitList = [
     , { id: 0x0695, implDate: "2026/05/28", implDate_bq: null        , obtain: [ "sh"         ], rarity: "b" , depType: "both", class: "式神使い", name: "セイメイ", modifier: "稀代の陰陽師" }
     , { id: 0x0696, implDate: "2026/05/28", implDate_bq: null        , obtain: [ "sp", "shop" ], rarity: "bh", depType: "rear", class: "輪廻の風水師", name: "リンネ", modifier: "流転の刻詠", derivation: "新装" }
     , { id: 0x0697, implDate: "2026/05/28", implDate_bq: null        , obtain: [ "sp", "gift" ], rarity: "b" , depType: "vang", class: "モンク", name: "ダン", modifier: "闘気の格闘家", derivation: "新装", male: 1 }
+    , { id: 0x0698, implDate: "2026/06/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ロード", name: "ちびリンクス" }
+    , { id: 0x0699, implDate: "2026/06/01", implDate_bq: null        , obtain: [ "sp", "else" ], rarity: "gc", depType: "rear", class: "ガンスリンガー", name: "ちびシルヴァーナ" }
     
     
     
